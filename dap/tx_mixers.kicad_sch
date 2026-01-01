@@ -1,0 +1,620 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "ed66352a-6924-4513-9833-3a0b2fdf2582")
+	(paper "B")
+	(title_block
+		(title "Tx Mixers")
+		(date "2025-12-31")
+		(rev "0.0")
+		(company "Andy McCann KA3KAF and Doug McCann KA3KAG")
+	)
+	(lib_symbols
+		(symbol "Analog_Switch:SN74CBT3253"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at -7.62 13.97 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "SN74CBT3253"
+				(at -11.43 -13.97 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "http://www.ti.com/lit/gpn/sn74cbt3253"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Dual 1 to 4 Analog Multiplexer"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "TTL Analog Multiplexer"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "SOIC*3.9x9.9mm*P1.27mm* TSSOP*4.4x5mm*P0.65mm* SSOP*5.3x6.2mm*P0.65mm*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "SN74CBT3253_0_1"
+				(rectangle
+					(start -7.62 12.7)
+					(end 7.62 -12.7)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(rectangle
+					(start 7.62 -12.7)
+					(end 7.62 -12.7)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "SN74CBT3253_1_1"
+				(pin bidirectional line
+					(at -10.16 10.16 0)
+					(length 2.54)
+					(name "1A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -10.16 7.62 0)
+					(length 2.54)
+					(name "2A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -10.16 0 0)
+					(length 2.54)
+					(name "S0"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "14"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -10.16 -2.54 0)
+					(length 2.54)
+					(name "S1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -10.16 -7.62 0)
+					(length 2.54)
+					(name "1~{OE}"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -10.16 -10.16 0)
+					(length 2.54)
+					(name "2~{OE}"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "15"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 15.24 270)
+					(length 2.54)
+					(name "VCC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "16"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -15.24 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 10.16 10.16 180)
+					(length 2.54)
+					(name "1B1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 10.16 7.62 180)
+					(length 2.54)
+					(name "1B2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 10.16 5.08 180)
+					(length 2.54)
+					(name "1B3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 10.16 2.54 180)
+					(length 2.54)
+					(name "1B4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 10.16 -2.54 180)
+					(length 2.54)
+					(name "2B1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 10.16 -5.08 180)
+					(length 2.54)
+					(name "2B2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 10.16 -7.62 180)
+					(length 2.54)
+					(name "2B3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 10.16 -10.16 180)
+					(length 2.54)
+					(name "2B4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "13"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(symbol
+		(lib_id "Analog_Switch:SN74CBT3253")
+		(at 121.92 63.5 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6691d02b-8cdc-4b60-a80c-2dd76d0a69b0")
+		(property "Reference" "U9"
+			(at 124.0633 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "SN74CBT3253"
+			(at 124.0633 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 121.92 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74cbt3253"
+			(at 121.92 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Dual 1 to 4 Analog Multiplexer"
+			(at 121.92 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "5"
+			(uuid "d35ace13-a9f5-42e9-83af-9e43fdc9a2af")
+		)
+		(pin "14"
+			(uuid "e95cda2f-b90e-4c2b-a42d-750caa2e97d1")
+		)
+		(pin "10"
+			(uuid "bd353aeb-5e89-42a6-a989-ba8c195b5f41")
+		)
+		(pin "2"
+			(uuid "e3f720e7-50ac-4401-8e59-3f2028febae0")
+		)
+		(pin "12"
+			(uuid "feb0a23f-4a00-4cc3-8dd4-840cacad81b7")
+		)
+		(pin "6"
+			(uuid "64739ad9-cdb7-420b-8644-9e55dc744b3e")
+		)
+		(pin "15"
+			(uuid "5a00d8b0-8422-41d7-bc9a-57fb8f823147")
+		)
+		(pin "1"
+			(uuid "55073703-69e7-421d-bb34-3a35ac477973")
+		)
+		(pin "9"
+			(uuid "04536415-2faf-41e4-a679-91293971cd0d")
+		)
+		(pin "7"
+			(uuid "ca4de67a-032e-40fb-b2b4-8fdd20ede361")
+		)
+		(pin "16"
+			(uuid "4eb3b68e-949e-4732-beba-b799d3318fbe")
+		)
+		(pin "3"
+			(uuid "85e9b029-91bb-4923-a507-cd90bd79c8ad")
+		)
+		(pin "13"
+			(uuid "c67e0ca6-8866-49ff-8f64-67fb6a9003fb")
+		)
+		(pin "8"
+			(uuid "3bfcf8a9-7a0a-44b5-b91f-a7cddbd9dab9")
+		)
+		(pin "4"
+			(uuid "5901c6a0-235a-45a9-bf36-e97fa4bb4bdc")
+		)
+		(pin "11"
+			(uuid "8d4a2211-0e81-45e5-9fab-e03e06ee865e")
+		)
+		(instances
+			(project ""
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/bcf6c722-1668-4f59-9b47-5a2e203e881a"
+					(reference "U9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Analog_Switch:SN74CBT3253")
+		(at 121.92 118.11 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6b1f7952-a44e-4bcd-aa8c-da744c71abe8")
+		(property "Reference" "U10"
+			(at 124.0633 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "SN74CBT3253"
+			(at 124.0633 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 121.92 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74cbt3253"
+			(at 121.92 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Dual 1 to 4 Analog Multiplexer"
+			(at 121.92 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "15"
+			(uuid "28bc72a8-3780-43a1-a579-ef1c43e708eb")
+		)
+		(pin "1"
+			(uuid "652f4b7b-a2f3-4e5b-8dd4-987208082347")
+		)
+		(pin "11"
+			(uuid "132a262f-6a47-4b21-8035-f41535fd4e57")
+		)
+		(pin "9"
+			(uuid "fa53e39d-3d31-4634-a2e5-ee582b2c51e5")
+		)
+		(pin "7"
+			(uuid "414343ca-bbd5-4bbd-82c0-cede0029e799")
+		)
+		(pin "12"
+			(uuid "f56fd029-ddcd-4cf2-b912-939b0bc8c104")
+		)
+		(pin "10"
+			(uuid "437cb8cc-891b-4e35-b615-901f759b89e6")
+		)
+		(pin "8"
+			(uuid "4fe5df80-11c5-4fff-bfb2-11c5d86a5e1c")
+		)
+		(pin "5"
+			(uuid "9cdbda72-edb4-4b1a-a850-060268b6b2b9")
+		)
+		(pin "4"
+			(uuid "b26174ca-bea1-4d11-bb0e-2ef150cb69b3")
+		)
+		(pin "14"
+			(uuid "99f8f4c7-c5a4-44a3-8834-5e49d7247c8e")
+		)
+		(pin "6"
+			(uuid "7d31f449-2e3d-40e4-a5a8-72f694c932d7")
+		)
+		(pin "2"
+			(uuid "11b8c547-ed0b-4d03-aac8-f216383ae7d1")
+		)
+		(pin "16"
+			(uuid "70607049-5151-4471-8fa0-98a7937b9f56")
+		)
+		(pin "13"
+			(uuid "c7f5e8ad-24e9-4bf3-8785-9196f8a8d300")
+		)
+		(pin "3"
+			(uuid "852c986a-713b-4c03-9f27-b3f0b9bff41f")
+		)
+		(instances
+			(project ""
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/bcf6c722-1668-4f59-9b47-5a2e203e881a"
+					(reference "U10")
+					(unit 1)
+				)
+			)
+		)
+	)
+)
