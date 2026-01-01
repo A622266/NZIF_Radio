@@ -1915,7 +1915,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "SN74AUC74:SN74AUC74RGYR"
+		(symbol "HMC7043:HMC7043LP7FE"
 			(pin_names
 				(offset 0.254)
 			)
@@ -1923,22 +1923,22 @@
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "U"
-				(at 33.02 10.16 0)
+				(at 35.56 12.7 0)
 				(effects
 					(font
 						(size 1.524 1.524)
 					)
 				)
 			)
-			(property "Value" "SN74AUC74RGYR"
-				(at 33.02 7.62 0)
+			(property "Value" "HMC7043LP7FE"
+				(at 35.56 10.16 0)
 				(effects
 					(font
 						(size 1.524 1.524)
 					)
 				)
 			)
-			(property "Footprint" "RGY14_2P05X2P05"
+			(property "Footprint" "HCP_48_1_ADI"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1948,7 +1948,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "https://www.ti.com/lit/gpn/sn74auc74"
+			(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/HMC7043.pdf"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1975,7 +1975,7 @@
 					)
 				)
 			)
-			(property "ki_keywords" "SN74AUC74RGYR"
+			(property "ki_keywords" "HMC7043LP7FE"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1984,7 +1984,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "RGY14_2P05X2P05"
+			(property "ki_fp_filters" "HCP_48_1_ADI HCP_48_1_ADI-M HCP_48_1_ADI-L"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1993,10 +1993,10 @@
 					(hide yes)
 				)
 			)
-			(symbol "SN74AUC74RGYR_0_1"
+			(symbol "HMC7043LP7FE_0_1"
 				(polyline
 					(pts
-						(xy 7.62 5.08) (xy 7.62 -22.86)
+						(xy 7.62 7.62) (xy 7.62 -63.5)
 					)
 					(stroke
 						(width 0.127)
@@ -2008,7 +2008,7 @@
 				)
 				(polyline
 					(pts
-						(xy 7.62 -22.86) (xy 58.42 -22.86)
+						(xy 7.62 -63.5) (xy 63.5 -63.5)
 					)
 					(stroke
 						(width 0.127)
@@ -2020,7 +2020,7 @@
 				)
 				(polyline
 					(pts
-						(xy 58.42 5.08) (xy 7.62 5.08)
+						(xy 63.5 7.62) (xy 7.62 7.62)
 					)
 					(stroke
 						(width 0.127)
@@ -2032,7 +2032,7 @@
 				)
 				(polyline
 					(pts
-						(xy 58.42 -22.86) (xy 58.42 5.08)
+						(xy 63.5 -63.5) (xy 63.5 7.62)
 					)
 					(stroke
 						(width 0.127)
@@ -2042,10 +2042,10 @@
 						(type none)
 					)
 				)
-				(pin input line
+				(pin unspecified line
 					(at 0 0 0)
 					(length 7.62)
-					(name "*1CLR"
+					(name "CLKOUT0"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2060,10 +2060,10 @@
 						)
 					)
 				)
-				(pin input line
+				(pin unspecified line
 					(at 0 -2.54 0)
 					(length 7.62)
-					(name "1D"
+					(name "CLKOUT0*"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2078,10 +2078,10 @@
 						)
 					)
 				)
-				(pin input line
+				(pin unspecified line
 					(at 0 -5.08 0)
 					(length 7.62)
-					(name "1CLK"
+					(name "SCLKOUT1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2096,10 +2096,10 @@
 						)
 					)
 				)
-				(pin input line
+				(pin unspecified line
 					(at 0 -7.62 0)
 					(length 7.62)
-					(name "*PRE"
+					(name "SCLKOUT1*"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2114,10 +2114,10 @@
 						)
 					)
 				)
-				(pin output line
+				(pin unspecified line
 					(at 0 -10.16 0)
 					(length 7.62)
-					(name "1Q"
+					(name "RESET"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2132,10 +2132,10 @@
 						)
 					)
 				)
-				(pin output line
+				(pin unspecified line
 					(at 0 -12.7 0)
 					(length 7.62)
-					(name "*1Q"
+					(name "BGAPBYP1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2150,10 +2150,10 @@
 						)
 					)
 				)
-				(pin power_in line
+				(pin unspecified line
 					(at 0 -15.24 0)
 					(length 7.62)
-					(name "GND"
+					(name "LDOBYP2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2169,135 +2169,9 @@
 					)
 				)
 				(pin unspecified line
-					(at 66.04 0 180)
+					(at 0 -17.78 0)
 					(length 7.62)
-					(name "EPAD"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "15"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 66.04 -2.54 180)
-					(length 7.62)
-					(name "VCC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "14"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 66.04 -5.08 180)
-					(length 7.62)
-					(name "*2CLR"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "13"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 66.04 -7.62 180)
-					(length 7.62)
-					(name "2D"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "12"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 66.04 -10.16 180)
-					(length 7.62)
-					(name "2CLK"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "11"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 66.04 -12.7 180)
-					(length 7.62)
-					(name "*2PRE"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "10"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 66.04 -15.24 180)
-					(length 7.62)
-					(name "2Q"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "9"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 66.04 -17.78 180)
-					(length 7.62)
-					(name "*2Q"
+					(name "VCC1_CLKDIST"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2312,99 +2186,17 @@
 						)
 					)
 				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Timer:AD9515"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "U"
-				(at -12.7 26.67 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify right)
-				)
-			)
-			(property "Value" "AD9515"
-				(at 11.43 26.67 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" "Package_CSP:LFCSP-32-1EP_5x5mm_P0.5mm_EP3.1x3.1mm"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/AD9515.pdf"
-				(at 0 15.24 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "1.6 GHz, 2 Outputs, Clock Distribution IC, Divider, Delay Adjust, LFCSP-32"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "clock distribution LVPECL LVDS CMOS"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "LFCSP*1EP*5x5mm*P0.5mm*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "AD9515_1_1"
-				(rectangle
-					(start -12.7 25.4)
-					(end 12.7 -25.4)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(pin input line
-					(at -15.24 20.32 0)
-					(length 2.54)
-					(name "S0"
+				(pin unspecified line
+					(at 0 -20.32 0)
+					(length 7.62)
+					(name "SCLKOUT3"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "25"
+					(number "9"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2412,10 +2204,118 @@
 						)
 					)
 				)
-				(pin input line
-					(at -15.24 17.78 0)
-					(length 2.54)
-					(name "S1"
+				(pin unspecified line
+					(at 0 -22.86 0)
+					(length 7.62)
+					(name "SCLKOUT3*"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 0 -25.4 0)
+					(length 7.62)
+					(name "CLKOUT2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 0 -27.94 0)
+					(length 7.62)
+					(name "CLKOUT2*"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 0 -30.48 0)
+					(length 7.62)
+					(name "VCC2_OUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "13"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 0 -33.02 0)
+					(length 7.62)
+					(name "RSV"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "14"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 0 -35.56 0)
+					(length 7.62)
+					(name "SCLKOUT5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "15"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 0 -38.1 0)
+					(length 7.62)
+					(name "SCLKOUT5*"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2430,280 +2330,10 @@
 						)
 					)
 				)
-				(pin input line
-					(at -15.24 15.24 0)
-					(length 2.54)
-					(name "S2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "15"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -15.24 12.7 0)
-					(length 2.54)
-					(name "S3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "14"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -15.24 10.16 0)
-					(length 2.54)
-					(name "S4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "13"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -15.24 7.62 0)
-					(length 2.54)
-					(name "S5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "12"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -15.24 5.08 0)
-					(length 2.54)
-					(name "S6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "11"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -15.24 2.54 0)
-					(length 2.54)
-					(name "S7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "10"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -15.24 0 0)
-					(length 2.54)
-					(name "S8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "9"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -15.24 -2.54 0)
-					(length 2.54)
-					(name "S9"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -15.24 -5.08 0)
-					(length 2.54)
-					(name "S10"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -15.24 -10.16 0)
-					(length 2.54)
-					(name "CLK"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -15.24 -12.7 0)
-					(length 2.54)
-					(name "CLKB"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -15.24 -17.78 0)
-					(length 2.54)
-					(name "SYNCB"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -15.24 -22.86 0)
-					(length 2.54)
-					(name "RSET"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "32"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at -10.16 27.94 270)
-					(length 2.54)
-					(name "VS"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at -7.62 27.94 270)
-					(length 2.54)
-					(name "VS"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at -5.08 27.94 270)
-					(length 2.54)
-					(name "VS"
+				(pin unspecified line
+					(at 0 -40.64 0)
+					(length 7.62)
+					(name "CLKOUT4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2718,35 +2348,17 @@
 						)
 					)
 				)
-				(pin power_in line
-					(at -2.54 27.94 270)
-					(length 2.54)
-					(name "VS"
+				(pin unspecified line
+					(at 0 -43.18 0)
+					(length 7.62)
+					(name "CLKOUT4*"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "20"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 0 27.94 270)
-					(length 2.54)
-					(name "VS"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "21"
+					(number "18"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2754,211 +2366,10 @@
 						)
 					)
 				)
-				(pin power_in line
-					(at 0 -27.94 90)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "31"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -27.94 90)
-					(length 2.54)
-					(hide yes)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "33"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 2.54 27.94 270)
-					(length 2.54)
-					(name "VS"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "24"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 5.08 27.94 270)
-					(length 2.54)
-					(name "VS"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "26"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 7.62 27.94 270)
-					(length 2.54)
-					(name "VS"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "29"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 10.16 27.94 270)
-					(length 2.54)
-					(name "VS"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "30"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin no_connect line
-					(at 12.7 12.7 180)
-					(length 2.54)
-					(hide yes)
-					(name "NC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "28"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin no_connect line
-					(at 12.7 10.16 180)
-					(length 2.54)
-					(hide yes)
-					(name "NC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "27"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_out line
-					(at 15.24 20.32 180)
-					(length 2.54)
-					(name "VREF"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 15.24 5.08 180)
-					(length 2.54)
-					(name "OUT0"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "23"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 15.24 2.54 180)
-					(length 2.54)
-					(name "OUT0B"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "22"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 15.24 -2.54 180)
-					(length 2.54)
-					(name "OUT1"
+				(pin unspecified line
+					(at 0 -45.72 0)
+					(length 7.62)
+					(name "VCC3_OUT"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2973,17 +2384,539 @@
 						)
 					)
 				)
-				(pin output line
-					(at 15.24 -5.08 180)
-					(length 2.54)
-					(name "OUT1B"
+				(pin unspecified line
+					(at 0 -48.26 0)
+					(length 7.62)
+					(name "CLKOUT6"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "18"
+					(number "20"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 0 -50.8 0)
+					(length 7.62)
+					(name "CLKOUT6*"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "21"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 0 -53.34 0)
+					(length 7.62)
+					(name "SCLKOUT7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "22"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 0 -55.88 0)
+					(length 7.62)
+					(name "SCLKOUT7*"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "23"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 0 -58.42 0)
+					(length 7.62)
+					(name "RSV"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "24"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 71.12 2.54 180)
+					(length 7.62)
+					(name "EP(GND)"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "49"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 71.12 0 180)
+					(length 7.62)
+					(name "VCC7_OUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "48"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 71.12 -2.54 180)
+					(length 7.62)
+					(name "CLKOUT12*"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "47"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 71.12 -5.08 180)
+					(length 7.62)
+					(name "CLKOUT12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "46"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 71.12 -7.62 180)
+					(length 7.62)
+					(name "SCLKOUT13*"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "45"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 71.12 -10.16 180)
+					(length 7.62)
+					(name "SCLKOUT13"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "44"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 71.12 -12.7 180)
+					(length 7.62)
+					(name "SCLKOUT11*"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "43"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 71.12 -15.24 180)
+					(length 7.62)
+					(name "SCLKOUT11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "42"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 71.12 -17.78 180)
+					(length 7.62)
+					(name "CLKOUT10*"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "41"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 71.12 -20.32 180)
+					(length 7.62)
+					(name "CLKOUT10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "40"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 71.12 -22.86 180)
+					(length 7.62)
+					(name "VCC6_OUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "39"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 71.12 -25.4 180)
+					(length 7.62)
+					(name "CLKOUT8*"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "38"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 71.12 -27.94 180)
+					(length 7.62)
+					(name "CLKOUT8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "37"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 71.12 -30.48 180)
+					(length 7.62)
+					(name "SCLKOUT9*"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "36"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 71.12 -33.02 180)
+					(length 7.62)
+					(name "SCLKOUT9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "35"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 71.12 -35.56 180)
+					(length 7.62)
+					(name "GPIO"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "34"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 71.12 -38.1 180)
+					(length 7.62)
+					(name "SDATA"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "33"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 71.12 -40.64 180)
+					(length 7.62)
+					(name "SCLK"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "32"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 71.12 -43.18 180)
+					(length 7.62)
+					(name "SLEN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "31"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 71.12 -45.72 180)
+					(length 7.62)
+					(name "VCC5_SYSREF"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "30"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 71.12 -48.26 180)
+					(length 7.62)
+					(name "RFSYNCIN*"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "29"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 71.12 -50.8 180)
+					(length 7.62)
+					(name "RFSYNCIN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "28"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 71.12 -53.34 180)
+					(length 7.62)
+					(name "VCC4_CLKIN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "27"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 71.12 -55.88 180)
+					(length 7.62)
+					(name "CLKIN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "26"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 71.12 -58.42 180)
+					(length 7.62)
+					(name "CLKIN*"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "25"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -8272,169 +8205,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Timer:AD9515")
-		(at 228.6 104.14 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "17e58688-7572-4bc7-9b3e-d8d0eb0e455e")
-		(property "Reference" "U3"
-			(at 230.7433 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "AD9515"
-			(at 230.7433 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_CSP:LFCSP-32-1EP_5x5mm_P0.5mm_EP3.1x3.1mm"
-			(at 228.6 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/AD9515.pdf"
-			(at 228.6 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "1.6 GHz, 2 Outputs, Clock Distribution IC, Divider, Delay Adjust, LFCSP-32"
-			(at 228.6 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "12"
-			(uuid "c4fb7228-d72c-4c87-84ec-14eb466b3417")
-		)
-		(pin "32"
-			(uuid "2f7549cd-72c3-48ea-be85-547c322191b3")
-		)
-		(pin "33"
-			(uuid "fe34d539-282f-4ff4-8b19-9d202815a7ba")
-		)
-		(pin "3"
-			(uuid "64f70626-e012-4cbc-a9c7-03d9b10a199f")
-		)
-		(pin "27"
-			(uuid "896c828e-84f2-408e-b6d9-b079ca9005aa")
-		)
-		(pin "24"
-			(uuid "ff6ee78c-3639-404b-805b-961a329b00c6")
-		)
-		(pin "18"
-			(uuid "cd7379d6-3454-42e0-90dc-9fbd2ad71046")
-		)
-		(pin "17"
-			(uuid "49f41886-2625-47a3-a721-86b62a92badf")
-		)
-		(pin "14"
-			(uuid "a68685ad-fc2b-4598-bf86-8696d6a48dc1")
-		)
-		(pin "15"
-			(uuid "14664edf-0404-4481-9a84-9d4798629712")
-		)
-		(pin "20"
-			(uuid "263a2c93-72b0-48cd-8de7-e1935057ef08")
-		)
-		(pin "31"
-			(uuid "92fd7c04-d657-490e-a966-afb148627f26")
-		)
-		(pin "19"
-			(uuid "f9eb4c9a-55a8-40aa-92a8-31693e4bc74f")
-		)
-		(pin "21"
-			(uuid "faac8d45-26bb-453b-b3b1-aeef81b45e19")
-		)
-		(pin "23"
-			(uuid "498ce614-114c-491c-b3d5-ef57a4a24367")
-		)
-		(pin "4"
-			(uuid "9fb42c21-b8ed-4c4f-8754-cdd2d5ebc5ae")
-		)
-		(pin "5"
-			(uuid "7e0e4ea3-2519-4810-a536-14f79e9f4b69")
-		)
-		(pin "2"
-			(uuid "38f18d7a-b48d-46fc-8b07-d22fc9ec7b68")
-		)
-		(pin "28"
-			(uuid "17b2c6ff-f128-4147-870d-101c84f7723e")
-		)
-		(pin "9"
-			(uuid "60bb1284-a1e3-496c-94bc-296502d04a34")
-		)
-		(pin "25"
-			(uuid "b097e652-8378-47e7-9db7-de6651df53da")
-		)
-		(pin "16"
-			(uuid "b0d4aba0-7801-461b-8c1d-745e126aa955")
-		)
-		(pin "7"
-			(uuid "7a7df961-18aa-4f02-82e3-12cda240931e")
-		)
-		(pin "6"
-			(uuid "e668d150-3223-4aa1-9fdc-68c3b6f04393")
-		)
-		(pin "30"
-			(uuid "8eb82f8b-6d4d-4c7c-810a-5594bc190f83")
-		)
-		(pin "26"
-			(uuid "9889c827-09d9-456f-bef2-d934ec402c09")
-		)
-		(pin "22"
-			(uuid "69abf6bc-cdb8-49f2-8a64-485854439b51")
-		)
-		(pin "29"
-			(uuid "4fd85892-e210-4ec6-9cdd-36137bb3935d")
-		)
-		(pin "13"
-			(uuid "0af196ba-9dfc-407c-904f-39cc8f4da8f3")
-		)
-		(pin "10"
-			(uuid "b5cc01fc-886a-4b8a-8c85-7f73856a2070")
-		)
-		(pin "1"
-			(uuid "126700d1-4a6f-47cb-a58b-33dec54766c2")
-		)
-		(pin "8"
-			(uuid "bce4cb5b-7d80-4179-a944-e8ebab1f1a1b")
-		)
-		(pin "11"
-			(uuid "b03ec2fc-2695-4bbc-9fd2-c6b929e96047")
-		)
-		(instances
-			(project ""
-				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/79014999-6129-417a-b831-cb9e4a5873fe"
-					(reference "U3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R_Small_US")
 		(at 184.15 -90.17 90)
 		(unit 1)
@@ -10068,115 +9838,6 @@
 		)
 	)
 	(symbol
-		(lib_id "SN74AUC74:SN74AUC74RGYR")
-		(at 83.82 182.88 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "4f82fde1-7303-4348-bef8-1652d72fd301")
-		(property "Reference" "U5"
-			(at 116.84 172.72 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Value" "SN74AUC74RGYR"
-			(at 116.84 175.26 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Footprint" "RGY14_2P05X2P05"
-			(at 83.82 182.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.ti.com/lit/gpn/sn74auc74"
-			(at 83.82 182.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 83.82 182.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "15"
-			(uuid "2a10403b-f731-4afc-8ab7-1600ddf16710")
-		)
-		(pin "6"
-			(uuid "74e64c2e-28fa-4e8c-9730-270834920da4")
-		)
-		(pin "4"
-			(uuid "b18f7d9b-dff3-4ed2-abc4-b8dff6fc9363")
-		)
-		(pin "3"
-			(uuid "b55fbf69-ad98-4690-89c3-60a0db25608a")
-		)
-		(pin "1"
-			(uuid "cc40a833-f75d-4719-b6a1-b47a267b43f4")
-		)
-		(pin "2"
-			(uuid "f16bf9aa-4a8f-4363-bc7c-3b3120da35ae")
-		)
-		(pin "5"
-			(uuid "5002e68b-a07e-417c-8e4d-116a7130eaf1")
-		)
-		(pin "11"
-			(uuid "383d6d88-8525-4d61-8c56-f568716db24d")
-		)
-		(pin "13"
-			(uuid "3a152d58-1e4d-4c32-b259-7b1f1c920318")
-		)
-		(pin "10"
-			(uuid "42c0fa89-de2d-4bf3-a83c-5b33ddafad4f")
-		)
-		(pin "7"
-			(uuid "a6cd0a1a-1a65-4901-939d-a8915ffcf618")
-		)
-		(pin "9"
-			(uuid "2b38af1b-d04d-4d69-8dcf-ccd000583c50")
-		)
-		(pin "8"
-			(uuid "1d2de228-be77-4edb-b38e-570ce2a8f4f7")
-		)
-		(pin "12"
-			(uuid "5faf60bb-4add-4147-90e5-b57ebb69a7eb")
-		)
-		(pin "14"
-			(uuid "69210124-6973-478f-bec0-e8702d6d0a1c")
-		)
-		(instances
-			(project ""
-				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/79014999-6129-417a-b831-cb9e4a5873fe"
-					(reference "U5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C_Small")
 		(at 181.61 -21.59 270)
 		(mirror x)
@@ -10965,6 +10626,217 @@
 			(project "dap"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/79014999-6129-417a-b831-cb9e4a5873fe"
 					(reference "C59")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "HMC7043:HMC7043LP7FE")
+		(at 142.24 113.03 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "66764267-4a32-46f4-8a41-3519a8fae3f8")
+		(property "Reference" "U15"
+			(at 177.8 100.33 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Value" "HMC7043LP7FE"
+			(at 177.8 102.87 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Footprint" "HCP_48_1_ADI"
+			(at 142.24 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/HMC7043.pdf"
+			(at 142.24 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 142.24 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "27"
+			(uuid "5b72da4a-d1a8-46a4-b615-80c47982d055")
+		)
+		(pin "5"
+			(uuid "9298a153-c6d0-4d90-90b2-d262aff8c047")
+		)
+		(pin "34"
+			(uuid "84b54843-30d0-47b4-a6c4-2fef3d7d2261")
+		)
+		(pin "26"
+			(uuid "7b1a2d34-c1d4-4c5e-a55c-174c328a1d6f")
+		)
+		(pin "2"
+			(uuid "c82f421d-7dc5-4e74-a9bc-a63b7f6abff1")
+		)
+		(pin "25"
+			(uuid "f0cab94e-1f83-4e50-8831-dec75322c676")
+		)
+		(pin "47"
+			(uuid "17effbf1-3dd6-4372-be9a-e400cb86a191")
+		)
+		(pin "9"
+			(uuid "b0957536-95db-4e8e-8510-eb0d87d3ba9b")
+		)
+		(pin "36"
+			(uuid "a3d872df-6a23-409d-9af9-cd6c62b1a1a7")
+		)
+		(pin "6"
+			(uuid "7df44156-0763-4a7e-b761-b82e1144132e")
+		)
+		(pin "23"
+			(uuid "2b2e7e0a-ed3e-4b30-9e7f-bb7f0a7f48d3")
+		)
+		(pin "4"
+			(uuid "c78df244-539a-4a6d-b832-405556c70ed5")
+		)
+		(pin "45"
+			(uuid "0fe91f01-6418-452b-a2ba-2a3e8421beaa")
+		)
+		(pin "18"
+			(uuid "0d9f71bc-03a0-42dd-968f-b5866f461546")
+		)
+		(pin "44"
+			(uuid "cb15cdcb-c760-4ca0-b4b3-5a3a8e9081ba")
+		)
+		(pin "42"
+			(uuid "8db687ce-233c-4726-af49-37cc2cf34d4e")
+		)
+		(pin "16"
+			(uuid "b7eb4ecb-3cac-4a9d-9e6a-8e52f7fdade8")
+		)
+		(pin "38"
+			(uuid "e210d4f6-aa8b-4a3c-be39-67d52444a24a")
+		)
+		(pin "28"
+			(uuid "d8df9f78-352a-4f1d-a97c-27f2c227f958")
+		)
+		(pin "40"
+			(uuid "0c0863fb-5ffb-4d4b-9d39-0dbe2c1ed19e")
+		)
+		(pin "29"
+			(uuid "f026c78b-4093-48a5-8e09-63b4a84d3edf")
+		)
+		(pin "24"
+			(uuid "03acfa96-ebb8-4093-aa52-7e4d6f98cfd7")
+		)
+		(pin "48"
+			(uuid "562fb162-d909-4611-9463-30d6f94f05a8")
+		)
+		(pin "21"
+			(uuid "1802a557-1c0f-439e-883e-c3146c0f648b")
+		)
+		(pin "33"
+			(uuid "bfa148d5-070e-4952-abdc-9c74a3ca5bf2")
+		)
+		(pin "20"
+			(uuid "156565ed-af63-4d0f-aee3-27dd13d6d9e0")
+		)
+		(pin "39"
+			(uuid "f7195aea-5bd7-4aa8-a535-9bfeb3a44b41")
+		)
+		(pin "13"
+			(uuid "24cbec20-5827-4f84-bf49-8b664b0e9d82")
+		)
+		(pin "41"
+			(uuid "24c0c02e-b31c-43dc-9d65-143d7f22e384")
+		)
+		(pin "17"
+			(uuid "cea9c39e-0741-444e-9f4b-a09c642771ed")
+		)
+		(pin "1"
+			(uuid "c50abfb5-d6e3-44a6-9cad-35f045d8d7a9")
+		)
+		(pin "31"
+			(uuid "41640cbf-a985-447d-976f-448a638e2a0d")
+		)
+		(pin "3"
+			(uuid "198923fc-9eb4-46e5-8650-c75114b19b34")
+		)
+		(pin "8"
+			(uuid "30cb9a43-1841-4410-bd62-a05f14a8bddf")
+		)
+		(pin "35"
+			(uuid "64f41ec8-f0f1-4d1b-bad0-bb59923b717f")
+		)
+		(pin "7"
+			(uuid "e42ebf21-8863-44b7-9e90-e7a67f1fc9ab")
+		)
+		(pin "43"
+			(uuid "b298c94e-be19-451e-931a-e71f929e7b98")
+		)
+		(pin "32"
+			(uuid "f5a6120f-f935-4837-95da-372b2dfe21ad")
+		)
+		(pin "14"
+			(uuid "45ebab66-c99c-45e1-82f5-a2b3bc92ec22")
+		)
+		(pin "15"
+			(uuid "e412280a-0d3d-45fd-884d-8e1aba9ded80")
+		)
+		(pin "37"
+			(uuid "9b2d930b-9f34-4878-bc5a-0822048be7e3")
+		)
+		(pin "12"
+			(uuid "afabed7e-d08f-40ee-a829-f8d9fad6558e")
+		)
+		(pin "49"
+			(uuid "385033d2-17c6-4a4a-b4d2-1ad4026da580")
+		)
+		(pin "19"
+			(uuid "669b3162-b351-4637-8a53-206ebe7d2d2b")
+		)
+		(pin "22"
+			(uuid "ea3a0dfe-a868-4679-ba33-8341e8de2443")
+		)
+		(pin "11"
+			(uuid "542e0ce0-9a8c-4fb3-9a58-72bd929edc92")
+		)
+		(pin "10"
+			(uuid "22b5ab1c-0210-4f37-aab0-ace536a825e1")
+		)
+		(pin "46"
+			(uuid "37f39a32-efbd-4dec-98da-1cd4ca5a5079")
+		)
+		(pin "30"
+			(uuid "20fdb99e-f4b7-4dd2-b1fc-8cf493e5ee9a")
+		)
+		(instances
+			(project ""
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/79014999-6129-417a-b831-cb9e4a5873fe"
+					(reference "U15")
 					(unit 1)
 				)
 			)
@@ -13105,115 +12977,6 @@
 			(project "dap"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/79014999-6129-417a-b831-cb9e4a5873fe"
 					(reference "#PWR0108")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "SN74AUC74:SN74AUC74RGYR")
-		(at 201.93 182.88 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a1c6a0e5-25a6-4e4f-9a78-d54de1eae222")
-		(property "Reference" "U6"
-			(at 234.95 172.72 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Value" "SN74AUC74RGYR"
-			(at 234.95 175.26 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Footprint" "RGY14_2P05X2P05"
-			(at 201.93 182.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.ti.com/lit/gpn/sn74auc74"
-			(at 201.93 182.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 201.93 182.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "7b4b3a71-20aa-4592-936e-664f282c90c7")
-		)
-		(pin "14"
-			(uuid "7028164a-dbe9-469b-b82a-a5edb061d1d5")
-		)
-		(pin "12"
-			(uuid "09d05604-a84d-479e-ae8b-245f0c6a357a")
-		)
-		(pin "9"
-			(uuid "921ff1d1-4eed-43b8-bdaa-088d5ba7e498")
-		)
-		(pin "15"
-			(uuid "9e71b288-d27a-44dc-a7ab-ae19ceb7373b")
-		)
-		(pin "6"
-			(uuid "d2bd33a3-06f2-4d57-9315-60387daac00e")
-		)
-		(pin "5"
-			(uuid "488672f9-a9af-4a5a-a889-82361b58bcf4")
-		)
-		(pin "7"
-			(uuid "86db1e18-e52a-4641-ab96-3e8889a1a99d")
-		)
-		(pin "13"
-			(uuid "b7b0c338-7b94-4521-986c-c804668a92a8")
-		)
-		(pin "10"
-			(uuid "2283f0da-79f8-4385-8975-7713bb4e8a51")
-		)
-		(pin "2"
-			(uuid "4143cd84-f811-4db4-b63c-ac6d21ecb6ac")
-		)
-		(pin "1"
-			(uuid "a3691141-94c3-44c3-9d2f-693c94bab4bf")
-		)
-		(pin "4"
-			(uuid "b360f450-6364-448c-aed9-f702bc42f5b4")
-		)
-		(pin "11"
-			(uuid "1a623532-0f90-4c51-9850-79c9e68cc64e")
-		)
-		(pin "8"
-			(uuid "48e88335-c6ed-4826-9b6f-f439a7b0dfc9")
-		)
-		(instances
-			(project ""
-				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/79014999-6129-417a-b831-cb9e4a5873fe"
-					(reference "U6")
 					(unit 1)
 				)
 			)
