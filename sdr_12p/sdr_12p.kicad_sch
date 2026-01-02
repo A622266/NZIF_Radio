@@ -2839,14 +2839,20 @@
 		(uuid "5db8cf1b-c01b-437b-a56b-afb9618810fd")
 	)
 	(junction
-		(at 363.22 217.17)
+		(at 396.24 226.06)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "793797df-4a21-4bb2-91ab-57cbbe3dc34a")
+	)
+	(junction
+		(at 396.24 222.25)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "bcc6172d-cf50-46db-a371-1efdb4848103")
 	)
 	(wire
 		(pts
-			(xy 368.3 222.25) (xy 363.22 222.25)
+			(xy 401.32 227.33) (xy 396.24 227.33)
 		)
 		(stroke
 			(width 0)
@@ -2856,17 +2862,27 @@
 	)
 	(wire
 		(pts
-			(xy 363.22 217.17) (xy 363.22 222.25)
+			(xy 396.24 226.06) (xy 396.24 227.33)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "20c89ea6-11ac-4432-9c9d-a9c5352df5cc")
+		(uuid "1be95db1-f66e-47fa-8472-84749787d2b0")
 	)
 	(wire
 		(pts
-			(xy 368.3 219.71) (xy 368.3 222.25)
+			(xy 396.24 222.25) (xy 396.24 226.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "39dc4a12-7dac-482a-ac81-95e9063a861e")
+	)
+	(wire
+		(pts
+			(xy 401.32 224.79) (xy 401.32 227.33)
 		)
 		(stroke
 			(width 0)
@@ -2876,7 +2892,7 @@
 	)
 	(wire
 		(pts
-			(xy 356.87 209.55) (xy 356.87 217.17)
+			(xy 389.89 214.63) (xy 389.89 222.25)
 		)
 		(stroke
 			(width 0)
@@ -2886,7 +2902,27 @@
 	)
 	(wire
 		(pts
-			(xy 356.87 217.17) (xy 363.22 217.17)
+			(xy 354.33 189.23) (xy 354.33 199.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6c83496e-fdef-4373-b441-7f0458140d80")
+	)
+	(wire
+		(pts
+			(xy 365.76 226.06) (xy 396.24 226.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bafbf0f6-31aa-4e3e-882b-8088c09422fb")
+	)
+	(wire
+		(pts
+			(xy 389.89 222.25) (xy 396.24 222.25)
 		)
 		(stroke
 			(width 0)
@@ -2896,7 +2932,7 @@
 	)
 	(wire
 		(pts
-			(xy 363.22 210.82) (xy 363.22 217.17)
+			(xy 396.24 215.9) (xy 396.24 222.25)
 		)
 		(stroke
 			(width 0)
@@ -2904,9 +2940,19 @@
 		)
 		(uuid "df6a1578-1949-4898-979b-73383b507605")
 	)
+	(wire
+		(pts
+			(xy 359.41 189.23) (xy 359.41 199.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f27a838e-2694-4075-9950-8105cab920f0")
+	)
 	(global_label "6 - 20V"
 		(shape input)
-		(at 363.22 210.82 90)
+		(at 396.24 215.9 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2916,7 +2962,7 @@
 		)
 		(uuid "d2c4fb87-e3a6-44bb-8e6c-a61cf7d0d035")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 363.22 199.6101 90)
+			(at 396.24 204.6901 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2928,7 +2974,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Screw_Terminal_01x02")
-		(at 368.3 214.63 90)
+		(at 401.32 219.71 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2937,7 +2983,7 @@
 		(fields_autoplaced yes)
 		(uuid "0dcc0d1e-d41a-44cf-a65e-2b37f6ea8866")
 		(property "Reference" "J4"
-			(at 365.76 215.9001 90)
+			(at 398.78 220.9801 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2946,7 +2992,7 @@
 			)
 		)
 		(property "Value" "6V"
-			(at 365.76 213.3601 90)
+			(at 398.78 218.4401 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2955,7 +3001,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 368.3 214.63 0)
+			(at 401.32 219.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2964,7 +3010,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 368.3 214.63 0)
+			(at 401.32 219.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2973,7 +3019,7 @@
 			)
 		)
 		(property "Description" "Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 368.3 214.63 0)
+			(at 401.32 219.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3836,7 +3882,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 370.84 219.71 0)
+		(at 403.86 224.79 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3845,7 +3891,7 @@
 		(fields_autoplaced yes)
 		(uuid "b651b1e7-eb79-42fb-8d55-cec679fb3871")
 		(property "Reference" "#PWR033"
-			(at 370.84 226.06 0)
+			(at 403.86 231.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3854,7 +3900,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 370.84 224.79 0)
+			(at 403.86 229.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3862,7 +3908,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 370.84 219.71 0)
+			(at 403.86 224.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3871,7 +3917,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 370.84 219.71 0)
+			(at 403.86 224.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3880,7 +3926,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 370.84 219.71 0)
+			(at 403.86 224.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3982,7 +4028,7 @@
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 356.87 209.55 0)
+		(at 389.89 214.63 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3991,7 +4037,7 @@
 		(fields_autoplaced yes)
 		(uuid "ca834c06-d39c-4d37-a8b1-297ee87b5b92")
 		(property "Reference" "#FLG01"
-			(at 356.87 207.645 0)
+			(at 389.89 212.725 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4000,7 +4046,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 356.87 204.47 0)
+			(at 389.89 209.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4008,7 +4054,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 356.87 209.55 0)
+			(at 389.89 214.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4017,7 +4063,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 356.87 209.55 0)
+			(at 389.89 214.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4026,7 +4072,7 @@
 			)
 		)
 		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 356.87 209.55 0)
+			(at 389.89 214.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4131,8 +4177,8 @@
 		)
 	)
 	(sheet
-		(at 322.58 198.755)
-		(size 29.845 33.02)
+		(at 322.58 199.39)
+		(size 43.18 33.02)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -4147,7 +4193,7 @@
 		)
 		(uuid "3655e9dc-6764-4ce9-aa9b-ed58af2a1dde")
 		(property "Sheetname" "Power_Switching_Reg"
-			(at 322.58 198.0434 0)
+			(at 322.58 198.6784 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4162,6 +4208,36 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "MAIN" input
+			(at 365.76 226.06 0)
+			(uuid "a9e109fd-7dc0-4516-b988-8ad180fcc5e3")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "3.6V" input
+			(at 354.33 199.39 90)
+			(uuid "86be5c4a-e7e0-4c33-a47d-e83ec1359793")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "5.5V" input
+			(at 359.41 199.39 90)
+			(uuid "ae501890-9393-4607-896c-d23ee21db83a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 		(instances
@@ -4341,7 +4417,7 @@
 		)
 	)
 	(sheet
-		(at 321.31 149.225)
+		(at 321.31 149.86)
 		(size 45.72 39.37)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4357,7 +4433,7 @@
 		)
 		(uuid "d4c01834-d6af-4d30-af20-fd2ca7dc8dcd")
 		(property "Sheetname" "Power_LDOs"
-			(at 321.31 148.5134 0)
+			(at 321.31 149.1484 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4366,12 +4442,112 @@
 			)
 		)
 		(property "Sheetfile" "power_ldos.kicad_sch"
-			(at 321.31 189.1796 0)
+			(at 321.31 189.8146 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "5V_TX_Mixer" input
+			(at 321.31 180.34 180)
+			(uuid "85fe392b-f144-4f54-82a9-c4258cd9b43c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "5.5V" input
+			(at 359.41 189.23 270)
+			(uuid "09b13f0c-fbdf-4581-bbc1-85a099ef7c6c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "3.6V" input
+			(at 354.33 189.23 270)
+			(uuid "523c35bb-8e67-4a6e-abf8-d9879bf7fef0")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "3.3V_ADCs" input
+			(at 321.31 160.02 180)
+			(uuid "812d15ab-24ee-44ba-aa8d-4ee5765a7488")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "3.3V_DACs" input
+			(at 321.31 162.56 180)
+			(uuid "9b2e7235-0219-4835-b6e1-86ed58d7ed5e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "3.3V_DSP" input
+			(at 321.31 165.1 180)
+			(uuid "56398930-dc9a-4a4e-ba0b-3e112c72b0fa")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "3.3V_PLL" input
+			(at 321.31 167.64 180)
+			(uuid "04ba9fe3-1a34-49c6-be28-be0d5d7991c3")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "3.3V_RX_CLK" input
+			(at 321.31 168.91 180)
+			(uuid "eb08ddd5-f564-462c-9f58-e75f5a5693d8")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "3.3V_TX_CLK" input
+			(at 321.31 172.72 180)
+			(uuid "33cdf8f2-6b95-4985-aabc-24b90ea720b6")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "5V_RX_Mixer" input
+			(at 321.31 176.53 180)
+			(uuid "38ae2c36-00fb-4494-9f3d-3bfe9711610a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 		(instances

@@ -1865,71 +1865,38 @@
 		)
 		(uuid "fffcf4e1-a190-4769-8eab-91e0f7f8174e")
 	)
-	(global_label "5.5V"
-		(shape input)
-		(at 196.85 48.26 90)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "1263d053-3175-47eb-9b22-235d59846788")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 196.85 41.1624 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "3.6V"
-		(shape input)
-		(at 200.66 97.79 90)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "1d297c56-0718-49a5-92ea-718a67bfbe0b")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 200.66 90.6924 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "6 - 20V"
+	(hierarchical_label "MAIN"
 		(shape input)
 		(at 69.85 87.63 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
 		)
-		(uuid "7b245bdd-4249-43e8-b544-2648a5086f18")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 58.6401 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
+		(uuid "2db21e4d-1f28-46ef-ab88-b7cf62e90ce3")
+	)
+	(hierarchical_label "3.6V"
+		(shape input)
+		(at 200.66 97.79 90)
+		(effects
+			(font
+				(size 1.27 1.27)
 			)
+			(justify left)
 		)
+		(uuid "40970cb5-6f4d-48ae-a851-8f13db136c1f")
+	)
+	(hierarchical_label "5.5V"
+		(shape input)
+		(at 196.85 48.26 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "e8bbe64c-4c8e-44d9-9238-2cb3fd0ab68e")
 	)
 	(symbol
 		(lib_id "power:GND")
