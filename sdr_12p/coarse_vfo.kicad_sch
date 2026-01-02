@@ -3,7 +3,13 @@
 	(generator "eeschema")
 	(generator_version "9.0")
 	(uuid "afb03079-dce4-49ba-80a9-794cb150e1fe")
-	(paper "A4")
+	(paper "B")
+	(title_block
+		(title "Coarse VFO")
+		(date "2026-01-02")
+		(rev "0.0")
+		(company "Andy McCann KA3KAF and Doug McCann KA3KAG")
+	)
 	(lib_symbols
 		(symbol "Timer_PLL:ADF4351"
 			(pin_names
@@ -687,7 +693,7 @@
 	)
 	(symbol
 		(lib_id "Timer_PLL:ADF4351")
-		(at 134.62 90.17 0)
+		(at 228.6 123.19 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -696,7 +702,7 @@
 		(fields_autoplaced yes)
 		(uuid "2d48898f-9bd2-4c0d-a942-6455cd1e5401")
 		(property "Reference" "U8"
-			(at 144.3833 59.69 0)
+			(at 238.3633 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -705,7 +711,7 @@
 			)
 		)
 		(property "Value" "ADF4351"
-			(at 144.3833 62.23 0)
+			(at 238.3633 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -714,7 +720,7 @@
 			)
 		)
 		(property "Footprint" "Package_CSP:LFCSP-32-1EP_5x5mm_P0.5mm_EP3.25x3.25mm"
-			(at 134.62 90.17 0)
+			(at 228.6 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -723,7 +729,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/ADF4351.pdf"
-			(at 134.62 90.17 0)
+			(at 228.6 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -732,7 +738,7 @@
 			)
 		)
 		(property "Description" "35-4400MHz fractional-N PLL, LFCSP-32"
-			(at 134.62 90.17 0)
+			(at 228.6 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -840,6 +846,12 @@
 			(uuid "ff36ed4d-ed21-4a74-9ff1-39e3357753cb")
 		)
 		(instances
+			(project "coarse_vfo"
+				(path "/afb03079-dce4-49ba-80a9-794cb150e1fe"
+					(reference "U?")
+					(unit 1)
+				)
+			)
 			(project "sdr_12p"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/8e9b59d6-8c0d-4684-98b0-c19302bc7c8e"
 					(reference "U8")
@@ -848,4 +860,10 @@
 			)
 		)
 	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
 )
