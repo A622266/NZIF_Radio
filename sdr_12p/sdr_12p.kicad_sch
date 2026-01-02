@@ -2264,7 +2264,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Transformer:ADT4-6T"
+		(symbol "Transformer:ADT1-1WT"
 			(pin_names
 				(hide yes)
 			)
@@ -2279,15 +2279,15 @@
 					)
 				)
 			)
-			(property "Value" "ADT4-6T"
-				(at 0 -6.35 0)
+			(property "Value" "ADT1-1WT"
+				(at 0 -6.985 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Footprint" "RF_Mini-Circuits:Mini-Circuits_CD637_H5.23mm"
+			(property "Footprint" "RF_Mini-Circuits:Mini-Circuits_CD542_H2.84mm"
 				(at 0 -8.89 0)
 				(effects
 					(font
@@ -2296,7 +2296,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "https://www.minicircuits.com/pdfs/ADT4-6T+.pdf"
+			(property "Datasheet" "https://www.minicircuits.com/pdfs/ADT1-1WT.pdf"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2305,7 +2305,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "1.5-70MHz 1:4 RF Transformer, Unbalanced to Balanced Center Tap, CD637"
+			(property "Description" "0.005-125MHz 1:1 RF Transformer, Unbalanced to Balanced Center Tap, CD542"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2323,7 +2323,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "Mini?Circuits*CD637*"
+			(property "ki_fp_filters" "Mini?Circuits*CD542*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2332,7 +2332,18 @@
 					(hide yes)
 				)
 			)
-			(symbol "ADT4-6T_0_1"
+			(symbol "ADT1-1WT_0_1"
+				(circle
+					(center -3.81 3.81)
+					(radius 0.635)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
 				(polyline
 					(pts
 						(xy -2.54 5.08) (xy -1.524 5.08) (xy -1.524 3.048)
@@ -2489,8 +2500,19 @@
 						(type none)
 					)
 				)
+				(circle
+					(center 3.81 3.81)
+					(radius 0.635)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
 			)
-			(symbol "ADT4-6T_1_1"
+			(symbol "ADT1-1WT_1_1"
 				(pin passive line
 					(at -5.08 5.08 0)
 					(length 2.54)
@@ -2527,6 +2549,25 @@
 						)
 					)
 				)
+				(pin no_connect line
+					(at -2.54 0 0)
+					(length 2.54)
+					(hide yes)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 				(pin passive line
 					(at 5.08 5.08 180)
 					(length 2.54)
@@ -2537,7 +2578,7 @@
 							)
 						)
 					)
-					(number "4"
+					(number "6"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2555,7 +2596,7 @@
 							)
 						)
 					)
-					(number "5"
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2573,7 +2614,7 @@
 							)
 						)
 					)
-					(number "6"
+					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2798,12 +2839,6 @@
 		(uuid "5db8cf1b-c01b-437b-a56b-afb9618810fd")
 	)
 	(junction
-		(at 64.77 30.48)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "0f2f4062-bc19-4139-970c-d9ed436e28a6")
-	)
-	(junction
 		(at 24.13 30.48)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2827,16 +2862,6 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 35.56) (xy 64.77 35.56)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0cd3d493-e866-48b4-82a4-762e460d42d3")
-	)
-	(wire
-		(pts
 			(xy 39.37 24.13) (xy 39.37 30.48)
 		)
 		(stroke
@@ -2844,16 +2869,6 @@
 			(type default)
 		)
 		(uuid "15281bcc-d978-4e4f-829e-4db5bf437923")
-	)
-	(wire
-		(pts
-			(xy 59.69 30.48) (xy 64.77 30.48)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "20bfde57-85e8-47e9-af12-ff2b3e34c381")
 	)
 	(wire
 		(pts
@@ -2884,16 +2899,6 @@
 			(type default)
 		)
 		(uuid "444b58b6-9e4c-469a-952e-d25624038da9")
-	)
-	(wire
-		(pts
-			(xy 71.12 33.02) (xy 71.12 35.56)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4a49f28f-04c1-4cf6-b2d4-865ab4dffaf0")
 	)
 	(wire
 		(pts
@@ -2937,16 +2942,6 @@
 	)
 	(wire
 		(pts
-			(xy 64.77 35.56) (xy 64.77 30.48)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a94487fd-21fb-403c-9306-cad3a6c2863e")
-	)
-	(wire
-		(pts
 			(xy 29.21 35.56) (xy 24.13 35.56)
 		)
 		(stroke
@@ -2964,26 +2959,6 @@
 			(type default)
 		)
 		(uuid "b18c67ed-0377-486c-90c6-819d7f523ad8")
-	)
-	(wire
-		(pts
-			(xy 59.69 24.13) (xy 59.69 30.48)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c221305f-4260-4d31-bcfc-d897fbe85268")
-	)
-	(wire
-		(pts
-			(xy 64.77 30.48) (xy 64.77 25.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d0f2dddf-970c-42ee-9035-07f72afb2f9a")
 	)
 	(wire
 		(pts
@@ -3030,28 +3005,6 @@
 		(uuid "4f5b6ee2-3eb8-470e-9bb4-664e2746296c")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 24.13 18.8467 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "2V"
-		(shape input)
-		(at 64.77 25.4 90)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "ec085d9a-29eb-4dd7-b634-47457856db38")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 64.77 20.1167 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3126,76 +3079,6 @@
 			(project "dap"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f"
 					(reference "J5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:Screw_Terminal_01x02")
-		(at 71.12 27.94 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "07eb2c06-fc1a-4204-acd3-ec5e4d2ba2cc")
-		(property "Reference" "J4"
-			(at 68.58 29.2101 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "2V"
-			(at 68.58 26.6701 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 71.12 27.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 71.12 27.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 71.12 27.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "44d87a46-f5d0-4412-a530-741d86bcf31a")
-		)
-		(pin "1"
-			(uuid "4552b93c-c06c-49ab-9f55-235327a3d8c9")
-		)
-		(instances
-			(project "dap"
-				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f"
-					(reference "J4")
 					(unit 1)
 				)
 			)
@@ -3630,6 +3513,86 @@
 		)
 	)
 	(symbol
+		(lib_id "Transformer:ADT1-1WT")
+		(at 59.69 182.88 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4f40bc87-1914-405c-a8a2-b9884f53145d")
+		(property "Reference" "TR2"
+			(at 59.69 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "ADT1-1WT"
+			(at 59.69 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "RF_Mini-Circuits:Mini-Circuits_CD542_H2.84mm"
+			(at 59.69 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.minicircuits.com/pdfs/ADT1-1WT.pdf"
+			(at 59.69 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "0.005-125MHz 1:1 RF Transformer, Unbalanced to Balanced Center Tap, CD542"
+			(at 59.69 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "b0f941a9-ea35-4237-88e1-2a9e93ef3cad")
+		)
+		(pin "3"
+			(uuid "7ad97f85-7f64-4f60-8df1-6bcd59567417")
+		)
+		(pin "5"
+			(uuid "a278000c-7f28-4a38-8213-4d8e19a6938a")
+		)
+		(pin "4"
+			(uuid "1ccd738c-13e0-4636-a22d-7f256d46e93f")
+		)
+		(pin "6"
+			(uuid "7eb3bac3-cb24-4803-ba1f-d0a96929bb0e")
+		)
+		(pin "1"
+			(uuid "9e97f748-9250-4cfb-b161-d4292c164b45")
+		)
+		(instances
+			(project ""
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f"
+					(reference "TR2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:Conn_Coaxial_Small")
 		(at 36.83 82.55 180)
 		(unit 1)
@@ -3692,149 +3655,6 @@
 			(project ""
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f"
 					(reference "J1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 73.66 33.02 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "695de776-7697-48a7-95bd-6fe961ec4813")
-		(property "Reference" "#PWR02"
-			(at 73.66 39.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 73.66 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 73.66 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 73.66 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 73.66 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "a133fe75-1564-4edc-9187-8dcae92ac3d9")
-		)
-		(instances
-			(project ""
-				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f"
-					(reference "#PWR02")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Transformer:ADT4-6T")
-		(at 49.53 80.01 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8ea4b125-7337-43cc-8c19-cca482433d15")
-		(property "Reference" "TR4"
-			(at 49.53 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "ADT4-6T"
-			(at 49.53 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "RF_Mini-Circuits:Mini-Circuits_CD637_H5.23mm"
-			(at 49.53 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.minicircuits.com/pdfs/ADT4-6T+.pdf"
-			(at 49.53 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "1.5-70MHz 1:4 RF Transformer, Unbalanced to Balanced Center Tap, CD637"
-			(at 49.53 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "5"
-			(uuid "688e573c-7864-4601-bbec-1646c14b31dd")
-		)
-		(pin "4"
-			(uuid "0f6a9d5f-1747-4c42-afc1-51aefaa27913")
-		)
-		(pin "1"
-			(uuid "752f9b2f-3ee9-4725-a982-48f18685eab4")
-		)
-		(pin "6"
-			(uuid "f2f38b0d-e669-488c-8f78-366b166eef0c")
-		)
-		(pin "3"
-			(uuid "d694df4d-d823-4d21-85d9-ccbe95f9752a")
-		)
-		(instances
-			(project ""
-				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f"
-					(reference "TR4")
 					(unit 1)
 				)
 			)
@@ -4305,17 +4125,33 @@
 		)
 	)
 	(symbol
-		(lib_id "power:PWR_FLAG")
-		(at 59.69 24.13 0)
+		(lib_id "Transformer:ADT1-1WT")
+		(at 49.53 80.01 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "c37803d3-4240-49b4-b63a-31db8673558f")
-		(property "Reference" "#FLG01"
-			(at 59.69 22.225 0)
+		(uuid "c0f4986d-cb6e-4167-9a8b-501b58e00a9f")
+		(property "Reference" "TR1"
+			(at 49.53 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "ADT1-1WT"
+			(at 49.53 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "RF_Mini-Circuits:Mini-Circuits_CD542_H2.84mm"
+			(at 49.53 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4323,16 +4159,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "PWR_FLAG"
-			(at 59.69 19.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 59.69 24.13 0)
+		(property "Datasheet" "https://www.minicircuits.com/pdfs/ADT1-1WT.pdf"
+			(at 49.53 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4340,8 +4168,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 59.69 24.13 0)
+		(property "Description" "0.005-125MHz 1:1 RF Transformer, Unbalanced to Balanced Center Tap, CD542"
+			(at 49.53 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4349,22 +4177,28 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 59.69 24.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
+		(pin "5"
+			(uuid "ac9ece00-c5d2-4564-a89d-429f11acdd7e")
+		)
+		(pin "3"
+			(uuid "38b9b651-0216-46e9-831b-e255f5609155")
+		)
+		(pin "6"
+			(uuid "a2644036-251c-48fa-8a69-50ded8b25245")
+		)
+		(pin "4"
+			(uuid "172e1e7b-1097-4ece-af4e-ddc1733410db")
+		)
+		(pin "2"
+			(uuid "7dc04257-5edd-4e61-821b-a35f9e98b698")
 		)
 		(pin "1"
-			(uuid "03e7b376-7569-411c-afb8-ce0c7ec60932")
+			(uuid "a0f14680-d604-4a1e-afc6-3aadb775f37e")
 		)
 		(instances
 			(project ""
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f"
-					(reference "#FLG01")
+					(reference "TR1")
 					(unit 1)
 				)
 			)
@@ -4431,83 +4265,6 @@
 			(project ""
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f"
 					(reference "#FLG02")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Transformer:ADT4-6T")
-		(at 62.23 181.61 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e5aeba5f-93aa-440b-8788-aabac862b09a")
-		(property "Reference" "TR3"
-			(at 62.23 171.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "ADT4-6T"
-			(at 62.23 173.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "RF_Mini-Circuits:Mini-Circuits_CD637_H5.23mm"
-			(at 62.23 190.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.minicircuits.com/pdfs/ADT4-6T+.pdf"
-			(at 62.23 181.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "1.5-70MHz 1:4 RF Transformer, Unbalanced to Balanced Center Tap, CD637"
-			(at 62.23 181.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "4"
-			(uuid "f8f3e5a0-1b66-4b0e-bf42-35258fed70b2")
-		)
-		(pin "3"
-			(uuid "9041ddda-5eaf-4552-be25-014292b9445b")
-		)
-		(pin "5"
-			(uuid "7d136a26-8340-49e2-86b5-e6ae0aa90ec8")
-		)
-		(pin "6"
-			(uuid "2931cd01-1960-49d0-b4ab-26ed6dfc2563")
-		)
-		(pin "1"
-			(uuid "74527ee9-bd18-4913-a682-879cbd55da29")
-		)
-		(instances
-			(project ""
-				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f"
-					(reference "TR3")
 					(unit 1)
 				)
 			)
