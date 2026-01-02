@@ -5,7 +5,7 @@
 	(uuid "fe42ca2f-2bb8-4d5a-9e84-807788ed632f")
 	(paper "B")
 	(title_block
-		(title "HF Software Defined Radio with 32 Phase Polyphase Mixer")
+		(title "HF Software Defined Radio with Polyphase Mixer (12 Phase)")
 		(date "2025-12-31")
 		(rev "0.0")
 		(company "Andy McCann KA3KAF and Doug McCann KA3KAG")
@@ -2839,40 +2839,14 @@
 		(uuid "5db8cf1b-c01b-437b-a56b-afb9618810fd")
 	)
 	(junction
-		(at 24.13 30.48)
+		(at 401.32 214.63)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "5d7b3ab1-d3bb-487e-9961-6e2b42408d73")
 	)
-	(junction
-		(at 44.45 30.48)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "db07b327-4ef4-4946-92a7-01dc139c9fe3")
-	)
 	(wire
 		(pts
-			(xy 39.37 30.48) (xy 44.45 30.48)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0787329c-11b3-4c8c-ac02-86df9a02f327")
-	)
-	(wire
-		(pts
-			(xy 39.37 24.13) (xy 39.37 30.48)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "15281bcc-d978-4e4f-829e-4db5bf437923")
-	)
-	(wire
-		(pts
-			(xy 24.13 30.48) (xy 24.13 35.56)
+			(xy 401.32 214.63) (xy 401.32 219.71)
 		)
 		(stroke
 			(width 0)
@@ -2882,7 +2856,7 @@
 	)
 	(wire
 		(pts
-			(xy 17.78 22.86) (xy 17.78 30.48)
+			(xy 394.97 207.01) (xy 394.97 214.63)
 		)
 		(stroke
 			(width 0)
@@ -2892,7 +2866,7 @@
 	)
 	(wire
 		(pts
-			(xy 17.78 30.48) (xy 24.13 30.48)
+			(xy 394.97 214.63) (xy 401.32 214.63)
 		)
 		(stroke
 			(width 0)
@@ -2902,17 +2876,7 @@
 	)
 	(wire
 		(pts
-			(xy 50.8 33.02) (xy 50.8 35.56)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6bc5874b-5eff-414c-aae3-dc57f96fd68f")
-	)
-	(wire
-		(pts
-			(xy 24.13 24.13) (xy 24.13 30.48)
+			(xy 401.32 208.28) (xy 401.32 214.63)
 		)
 		(stroke
 			(width 0)
@@ -2922,27 +2886,7 @@
 	)
 	(wire
 		(pts
-			(xy 50.8 35.56) (xy 44.45 35.56)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "78831cd5-fdf9-4f53-a4bc-6943524f2acc")
-	)
-	(wire
-		(pts
-			(xy 44.45 25.4) (xy 44.45 30.48)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9535c57a-f3a2-41da-a7c0-bb91f76484dd")
-	)
-	(wire
-		(pts
-			(xy 29.21 35.56) (xy 24.13 35.56)
+			(xy 406.4 219.71) (xy 401.32 219.71)
 		)
 		(stroke
 			(width 0)
@@ -2952,17 +2896,7 @@
 	)
 	(wire
 		(pts
-			(xy 44.45 30.48) (xy 44.45 35.56)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b18c67ed-0377-486c-90c6-819d7f523ad8")
-	)
-	(wire
-		(pts
-			(xy 29.21 33.02) (xy 29.21 35.56)
+			(xy 406.4 217.17) (xy 406.4 219.71)
 		)
 		(stroke
 			(width 0)
@@ -2970,31 +2904,9 @@
 		)
 		(uuid "f6c4d6ee-8f83-4f9c-8f76-62a06ffa240b")
 	)
-	(global_label "4V"
+	(global_label "6 - 20V"
 		(shape input)
-		(at 44.45 25.4 90)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "2bd2a79d-827f-4f5f-b7e1-2f10665b20e8")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 44.45 20.1167 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "6V"
-		(shape input)
-		(at 24.13 24.13 90)
+		(at 401.32 208.28 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3004,89 +2916,19 @@
 		)
 		(uuid "4f5b6ee2-3eb8-470e-9bb4-664e2746296c")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 24.13 18.8467 90)
+			(at 401.32 197.0701 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 				(hide yes)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:Screw_Terminal_01x02")
-		(at 50.8 27.94 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "01c7143b-0e6f-4544-aa52-969b05ca1ac6")
-		(property "Reference" "J5"
-			(at 48.26 29.2101 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "4V"
-			(at 48.26 26.6701 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 50.8 27.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 50.8 27.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 50.8 27.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "e0743810-0f8b-41ac-9297-2c6388bd4d9e")
-		)
-		(pin "1"
-			(uuid "71899bf0-261f-4443-9d80-2f61ef5742d6")
-		)
-		(instances
-			(project "dap"
-				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f"
-					(reference "J5")
-					(unit 1)
-				)
 			)
 		)
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 17.78 22.86 0)
+		(at 394.97 207.01 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3095,7 +2937,7 @@
 		(fields_autoplaced yes)
 		(uuid "0f79f941-0f50-4b18-bb82-c63f4bb2285e")
 		(property "Reference" "#FLG03"
-			(at 17.78 20.955 0)
+			(at 394.97 205.105 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3104,7 +2946,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 17.78 17.78 0)
+			(at 394.97 201.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3112,7 +2954,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 17.78 22.86 0)
+			(at 394.97 207.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3121,7 +2963,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 17.78 22.86 0)
+			(at 394.97 207.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3130,7 +2972,7 @@
 			)
 		)
 		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 17.78 22.86 0)
+			(at 394.97 207.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3152,7 +2994,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_02x08_Odd_Even")
-		(at 121.92 250.19 90)
+		(at 138.43 257.81 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3161,7 +3003,7 @@
 		(fields_autoplaced yes)
 		(uuid "1aaedc9a-be1c-4ae8-98c5-84d34a7b7078")
 		(property "Reference" "J6"
-			(at 111.76 247.6499 90)
+			(at 128.27 255.2699 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3170,7 +3012,7 @@
 			)
 		)
 		(property "Value" "Microcontroller"
-			(at 111.76 250.1899 90)
+			(at 128.27 257.8099 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3179,7 +3021,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 121.92 250.19 0)
+			(at 138.43 257.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3188,7 +3030,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 121.92 250.19 0)
+			(at 138.43 257.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3197,7 +3039,7 @@
 			)
 		)
 		(property "Description" "Generic connector, double row, 02x08, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 121.92 250.19 0)
+			(at 138.43 257.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3264,7 +3106,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_02x05_Odd_Even")
-		(at 191.77 250.19 90)
+		(at 166.37 256.54 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3273,7 +3115,7 @@
 		(fields_autoplaced yes)
 		(uuid "1f5a0761-0a23-4615-8eae-19563bd1e276")
 		(property "Reference" "J7"
-			(at 199.39 247.6499 90)
+			(at 173.99 253.9999 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3282,7 +3124,7 @@
 			)
 		)
 		(property "Value" "USBi"
-			(at 199.39 250.1899 90)
+			(at 173.99 256.5399 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3291,7 +3133,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 191.77 250.19 0)
+			(at 166.37 256.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3300,7 +3142,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 191.77 250.19 0)
+			(at 166.37 256.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3309,7 +3151,7 @@
 			)
 		)
 		(property "Description" "Generic connector, double row, 02x05, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 191.77 250.19 0)
+			(at 166.37 256.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3358,7 +3200,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Screw_Terminal_01x02")
-		(at 29.21 27.94 90)
+		(at 406.4 212.09 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3367,7 +3209,7 @@
 		(fields_autoplaced yes)
 		(uuid "2f8f14ff-baf2-4e66-8d53-82363aab1ab7")
 		(property "Reference" "J3"
-			(at 26.67 29.2101 90)
+			(at 403.86 213.3601 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3376,7 +3218,7 @@
 			)
 		)
 		(property "Value" "6V"
-			(at 26.67 26.6701 90)
+			(at 403.86 210.8201 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3385,7 +3227,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 29.21 27.94 0)
+			(at 406.4 212.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3394,7 +3236,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 29.21 27.94 0)
+			(at 406.4 212.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3403,7 +3245,7 @@
 			)
 		)
 		(property "Description" "Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 29.21 27.94 0)
+			(at 406.4 212.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3428,7 +3270,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_02x04_Odd_Even")
-		(at 400.05 109.22 0)
+		(at 400.05 63.5 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3437,7 +3279,7 @@
 		(fields_autoplaced yes)
 		(uuid "31d2861f-a865-4d0a-b8d9-9b3a990f84bf")
 		(property "Reference" "J9"
-			(at 401.32 100.33 0)
+			(at 401.32 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3445,7 +3287,7 @@
 			)
 		)
 		(property "Value" "I2S1"
-			(at 401.32 102.87 0)
+			(at 401.32 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3453,7 +3295,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 400.05 109.22 0)
+			(at 400.05 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3462,7 +3304,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 400.05 109.22 0)
+			(at 400.05 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3471,7 +3313,7 @@
 			)
 		)
 		(property "Description" "Generic connector, double row, 02x04, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 400.05 109.22 0)
+			(at 400.05 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3730,7 +3572,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_02x04_Odd_Even")
-		(at 400.05 78.74 0)
+		(at 398.78 41.91 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3739,7 +3581,7 @@
 		(fields_autoplaced yes)
 		(uuid "9d6d591e-5550-4f90-a660-77dde8ca33f7")
 		(property "Reference" "J8"
-			(at 401.32 69.85 0)
+			(at 400.05 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3747,7 +3589,7 @@
 			)
 		)
 		(property "Value" "I2S2"
-			(at 401.32 72.39 0)
+			(at 400.05 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3755,7 +3597,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 400.05 78.74 0)
+			(at 398.78 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3764,7 +3606,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 400.05 78.74 0)
+			(at 398.78 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3773,7 +3615,7 @@
 			)
 		)
 		(property "Description" "Generic connector, double row, 02x04, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 400.05 78.74 0)
+			(at 398.78 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3816,7 +3658,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_02x10_Odd_Even")
-		(at 398.78 195.58 0)
+		(at 398.78 129.54 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3825,7 +3667,7 @@
 		(fields_autoplaced yes)
 		(uuid "9dc65ee0-6222-44e9-bfd8-40e6851b3a3c")
 		(property "Reference" "J11"
-			(at 400.05 179.07 0)
+			(at 400.05 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3833,7 +3675,7 @@
 			)
 		)
 		(property "Value" "ADAU1467_AUX_ADCS"
-			(at 400.05 181.61 0)
+			(at 400.05 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3841,7 +3683,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 398.78 195.58 0)
+			(at 398.78 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3850,7 +3692,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 398.78 195.58 0)
+			(at 398.78 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3859,7 +3701,7 @@
 			)
 		)
 		(property "Description" "Generic connector, double row, 02x10, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 398.78 195.58 0)
+			(at 398.78 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3938,7 +3780,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_02x10_Odd_Even")
-		(at 400.05 157.48 0)
+		(at 400.05 91.44 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3947,7 +3789,7 @@
 		(fields_autoplaced yes)
 		(uuid "aaf2775d-662d-41f2-855b-06af83fbf2af")
 		(property "Reference" "J10"
-			(at 401.32 140.97 0)
+			(at 401.32 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3955,7 +3797,7 @@
 			)
 		)
 		(property "Value" "ADAU1467_GPIOS"
-			(at 401.32 143.51 0)
+			(at 401.32 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3963,7 +3805,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 400.05 157.48 0)
+			(at 400.05 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3972,7 +3814,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 400.05 157.48 0)
+			(at 400.05 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3981,7 +3823,7 @@
 			)
 		)
 		(property "Description" "Generic connector, double row, 02x10, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 400.05 157.48 0)
+			(at 400.05 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4053,72 +3895,6 @@
 			(project ""
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f"
 					(reference "J10")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 53.34 33.02 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ab55016c-9b59-4068-9b3e-331866c9a733")
-		(property "Reference" "#PWR01"
-			(at 53.34 39.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 53.34 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 53.34 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 53.34 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 53.34 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "a4890b6e-0c7b-4403-b20b-adbf58c951cf")
-		)
-		(instances
-			(project ""
-				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f"
-					(reference "#PWR01")
 					(unit 1)
 				)
 			)
@@ -4205,74 +3981,8 @@
 		)
 	)
 	(symbol
-		(lib_id "power:PWR_FLAG")
-		(at 39.37 24.13 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d8ef6306-2bc6-4b70-8de4-42645286e6d5")
-		(property "Reference" "#FLG02"
-			(at 39.37 22.225 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "PWR_FLAG"
-			(at 39.37 19.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 39.37 24.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 39.37 24.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 39.37 24.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "ab0b3dbd-3d9b-4fd7-bf13-43cf5196e68a")
-		)
-		(instances
-			(project ""
-				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f"
-					(reference "#FLG02")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
-		(at 31.75 33.02 0)
+		(at 408.94 217.17 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4281,7 +3991,7 @@
 		(fields_autoplaced yes)
 		(uuid "f3f8d643-f76e-40cb-ade8-f69eb3f3242c")
 		(property "Reference" "#PWR03"
-			(at 31.75 39.37 0)
+			(at 408.94 223.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4290,7 +4000,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 31.75 38.1 0)
+			(at 408.94 222.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4298,7 +4008,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 31.75 33.02 0)
+			(at 408.94 217.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4307,7 +4017,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 31.75 33.02 0)
+			(at 408.94 217.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4316,7 +4026,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 31.75 33.02 0)
+			(at 408.94 217.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4337,7 +4047,7 @@
 		)
 	)
 	(sheet
-		(at 217.17 182.88)
+		(at 240.03 146.05)
 		(size 50.8 38.1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4353,7 +4063,7 @@
 		)
 		(uuid "1097e363-2947-4914-97f0-a09e0bb38c3a")
 		(property "Sheetname" "ADAU1962A"
-			(at 217.17 182.1684 0)
+			(at 240.03 145.3384 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4362,7 +4072,7 @@
 			)
 		)
 		(property "Sheetfile" "adau1962a.kicad_sch"
-			(at 217.17 221.5646 0)
+			(at 240.03 184.7346 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4371,7 +4081,7 @@
 			)
 		)
 		(instances
-			(project "dap"
+			(project "sdr_12p"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f"
 					(page "3")
 				)
@@ -4379,7 +4089,49 @@
 		)
 	)
 	(sheet
-		(at 161.29 104.14)
+		(at 128.27 213.36)
+		(size 172.72 27.94)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "27cecad5-c0fc-4afc-95d0-cabdd6a56668")
+		(property "Sheetname" "Microcontroller"
+			(at 128.27 212.6484 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "microcontroller.kicad_sch"
+			(at 128.27 241.8846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "sdr_12p"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f"
+					(page "10")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 144.78 80.01)
 		(size 72.39 39.37)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4395,7 +4147,7 @@
 		)
 		(uuid "79014999-6129-417a-b831-cb9e4a5873fe")
 		(property "Sheetname" "Clock_Tree"
-			(at 161.29 103.4284 0)
+			(at 144.78 79.2984 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4404,7 +4156,7 @@
 			)
 		)
 		(property "Sheetfile" "clock_tree.kicad_sch"
-			(at 161.29 144.0946 0)
+			(at 144.78 119.9646 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4413,7 +4165,7 @@
 			)
 		)
 		(instances
-			(project "dap"
+			(project "sdr_12p"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f"
 					(page "7")
 				)
@@ -4421,7 +4173,49 @@
 		)
 	)
 	(sheet
-		(at 121.92 182.88)
+		(at 245.11 81.28)
+		(size 41.91 36.83)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "8e9b59d6-8c0d-4684-98b0-c19302bc7c8e")
+		(property "Sheetname" "Coarse_VFO"
+			(at 245.11 80.5684 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "coarse_vfo.kicad_sch"
+			(at 245.11 118.6946 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "sdr_12p"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f"
+					(page "8")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 133.35 147.32)
 		(size 62.23 39.37)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4437,7 +4231,7 @@
 		)
 		(uuid "bcf6c722-1668-4f59-9b47-5a2e203e881a")
 		(property "Sheetname" "Tx_Mixers"
-			(at 121.92 182.1684 0)
+			(at 133.35 146.6084 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4446,7 +4240,7 @@
 			)
 		)
 		(property "Sheetfile" "tx_mixers.kicad_sch"
-			(at 121.92 222.8346 0)
+			(at 133.35 187.2746 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4455,7 +4249,7 @@
 			)
 		)
 		(instances
-			(project "dap"
+			(project "sdr_12p"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f"
 					(page "6")
 				)
@@ -4463,7 +4257,7 @@
 		)
 	)
 	(sheet
-		(at 223.52 39.37)
+		(at 238.76 25.4)
 		(size 49.53 33.02)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4478,8 +4272,8 @@
 			(color 0 0 0 0.0000)
 		)
 		(uuid "d1b276aa-cc76-4829-b01b-98095216e3ce")
-		(property "Sheetname" "TRIPLE_ADAU1979"
-			(at 223.52 38.6584 0)
+		(property "Sheetname" "TRIPLE_ADAU1978"
+			(at 238.76 24.6884 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4487,8 +4281,8 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "triple_adau1979.kicad_sch"
-			(at 223.52 72.9746 0)
+		(property "Sheetfile" "triple_adau1978.kicad_sch"
+			(at 238.76 59.0046 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4497,7 +4291,7 @@
 			)
 		)
 		(instances
-			(project "dap"
+			(project "sdr_12p"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f"
 					(page "2")
 				)
@@ -4505,7 +4299,49 @@
 		)
 	)
 	(sheet
-		(at 125.73 38.1)
+		(at 341.63 190.5)
+		(size 45.72 39.37)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "d4c01834-d6af-4d30-af20-fd2ca7dc8dcd")
+		(property "Sheetname" "Power_Mgmt"
+			(at 341.63 189.7884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "power_mgmt.kicad_sch"
+			(at 341.63 230.4546 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "sdr_12p"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f"
+					(page "9")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 138.43 24.13)
 		(size 55.88 34.29)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4521,7 +4357,7 @@
 		)
 		(uuid "d923ed07-1122-4091-b99e-c24c264ea9d2")
 		(property "Sheetname" "Rx_Mixers"
-			(at 125.73 37.3884 0)
+			(at 138.43 23.4184 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4530,7 +4366,7 @@
 			)
 		)
 		(property "Sheetfile" "rx_mixers.kicad_sch"
-			(at 125.73 72.9746 0)
+			(at 138.43 59.0046 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4539,7 +4375,7 @@
 			)
 		)
 		(instances
-			(project "dap"
+			(project "sdr_12p"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f"
 					(page "5")
 				)
@@ -4547,8 +4383,8 @@
 		)
 	)
 	(sheet
-		(at 303.53 58.42)
-		(size 48.26 144.78)
+		(at 304.8 25.4)
+		(size 48.26 152.4)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -4563,7 +4399,7 @@
 		)
 		(uuid "fa60d9db-5fbc-4f32-9a00-e3130bb41db9")
 		(property "Sheetname" "ADAU1467"
-			(at 303.53 57.7084 0)
+			(at 304.8 24.6884 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4572,7 +4408,7 @@
 			)
 		)
 		(property "Sheetfile" "adau1467.kicad_sch"
-			(at 303.53 203.7846 0)
+			(at 304.8 178.3846 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4581,7 +4417,7 @@
 			)
 		)
 		(instances
-			(project "dap"
+			(project "sdr_12p"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f"
 					(page "4")
 				)
