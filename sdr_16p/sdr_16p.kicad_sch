@@ -2264,367 +2264,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Transformer:ADT1-1WT"
-			(pin_names
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "TR"
-				(at 0 6.35 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "ADT1-1WT"
-				(at 0 -6.985 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "RF_Mini-Circuits:Mini-Circuits_CD542_H2.84mm"
-				(at 0 -8.89 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://www.minicircuits.com/pdfs/ADT1-1WT.pdf"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "0.005-125MHz 1:1 RF Transformer, Unbalanced to Balanced Center Tap, CD542"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "Mini-Circuits RF Transformer"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "Mini?Circuits*CD542*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "ADT1-1WT_0_1"
-				(circle
-					(center -3.81 3.81)
-					(radius 0.635)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy -2.54 5.08) (xy -1.524 5.08) (xy -1.524 3.048)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start -1.524 3.048)
-					(mid -0.7653 2.286)
-					(end -1.524 1.524)
-					(stroke
-						(width 0.2032)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start -1.524 1.524)
-					(mid -0.7653 0.762)
-					(end -1.524 0)
-					(stroke
-						(width 0.2032)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start -1.524 0)
-					(mid -0.7653 -0.762)
-					(end -1.524 -1.524)
-					(stroke
-						(width 0.2032)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start -1.524 -1.524)
-					(mid -0.7653 -2.286)
-					(end -1.524 -3.048)
-					(stroke
-						(width 0.2032)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.524 -3.048) (xy -1.524 -5.08) (xy -2.54 -5.08)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.524 3.048) (xy 1.524 5.08) (xy 2.54 5.08)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 1.524 1.524)
-					(mid 0.7653 2.286)
-					(end 1.524 3.048)
-					(stroke
-						(width 0.2032)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 1.524 0)
-					(mid 0.7653 0.762)
-					(end 1.524 1.524)
-					(stroke
-						(width 0.2032)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 1.524 -1.524)
-					(mid 0.7653 -0.762)
-					(end 1.524 0)
-					(stroke
-						(width 0.2032)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 1.524 -3.048)
-					(mid 0.7653 -2.286)
-					(end 1.524 -1.524)
-					(stroke
-						(width 0.2032)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 0) (xy 1.27 0)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 -5.08) (xy 1.524 -5.08) (xy 1.524 -3.048)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 3.81 3.81)
-					(radius 0.635)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-			)
-			(symbol "ADT1-1WT_1_1"
-				(pin passive line
-					(at -5.08 5.08 0)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 -5.08 0)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin no_connect line
-					(at -2.54 0 0)
-					(length 2.54)
-					(hide yes)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 5.08 180)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 0 180)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 -5.08 180)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "power:GND"
 			(power)
 			(pin_numbers
@@ -2827,16 +2466,6 @@
 			)
 			(embedded_fonts no)
 		)
-	)
-	(text "use ada4807 to buffer vref from adau1979"
-		(exclude_from_sim no)
-		(at 82.296 57.912 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "5db8cf1b-c01b-437b-a56b-afb9618810fd")
 	)
 	(junction
 		(at 396.24 226.06)
@@ -3335,88 +2964,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Transformer:ADT1-1WT")
-		(at 74.93 151.13 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "4f40bc87-1914-405c-a8a2-b9884f53145d")
-		(property "Reference" "TR2"
-			(at 74.93 140.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "ADT1-1WT"
-			(at 74.93 143.51 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "RF_Mini-Circuits:Mini-Circuits_CD542_H2.84mm"
-			(at 74.93 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.minicircuits.com/pdfs/ADT1-1WT.pdf"
-			(at 74.93 151.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "0.005-125MHz 1:1 RF Transformer, Unbalanced to Balanced Center Tap, CD542"
-			(at 74.93 151.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "b0f941a9-ea35-4237-88e1-2a9e93ef3cad")
-		)
-		(pin "3"
-			(uuid "7ad97f85-7f64-4f60-8df1-6bcd59567417")
-		)
-		(pin "5"
-			(uuid "a278000c-7f28-4a38-8213-4d8e19a6938a")
-		)
-		(pin "4"
-			(uuid "1ccd738c-13e0-4636-a22d-7f256d46e93f")
-		)
-		(pin "6"
-			(uuid "7eb3bac3-cb24-4803-ba1f-d0a96929bb0e")
-		)
-		(pin "1"
-			(uuid "9e97f748-9250-4cfb-b161-d4292c164b45")
-		)
-		(instances
-			(project ""
-				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f"
-					(reference "TR2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Connector:Conn_Coaxial_Small")
-		(at 52.07 50.8 180)
+		(at 41.91 102.87 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3425,7 +2974,7 @@
 		(fields_autoplaced yes)
 		(uuid "689854ab-4b11-4f2b-97a8-1449ec32f795")
 		(property "Reference" "J1"
-			(at 52.5895 44.45 0)
+			(at 42.4295 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3433,7 +2982,7 @@
 			)
 		)
 		(property "Value" "Rx"
-			(at 52.5895 46.99 0)
+			(at 42.4295 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3441,7 +2990,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 52.07 50.8 0)
+			(at 41.91 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3450,7 +2999,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 52.07 50.8 0)
+			(at 41.91 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3459,7 +3008,7 @@
 			)
 		)
 		(property "Description" "small coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)"
-			(at 52.07 50.8 0)
+			(at 41.91 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3477,74 +3026,6 @@
 			(project ""
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f"
 					(reference "J1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:Conn_Coaxial_Small")
-		(at 62.23 149.86 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "98e2fd65-c235-4c0a-b69c-6a73f5508616")
-		(property "Reference" "J2"
-			(at 62.7495 143.51 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Tx"
-			(at 62.7495 146.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 62.23 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 62.23 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "small coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)"
-			(at 62.23 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "87ad80c6-3d88-4472-b299-1f7050f1c49d")
-		)
-		(pin "1"
-			(uuid "325ec5ce-2d10-4581-b479-9e06b73d7738")
-		)
-		(instances
-			(project ""
-				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f"
-					(reference "J2")
 					(unit 1)
 				)
 			)
@@ -3947,86 +3428,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Transformer:ADT1-1WT")
-		(at 64.77 48.26 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c0f4986d-cb6e-4167-9a8b-501b58e00a9f")
-		(property "Reference" "TR1"
-			(at 64.77 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "ADT1-1WT"
-			(at 64.77 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "RF_Mini-Circuits:Mini-Circuits_CD542_H2.84mm"
-			(at 64.77 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.minicircuits.com/pdfs/ADT1-1WT.pdf"
-			(at 64.77 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "0.005-125MHz 1:1 RF Transformer, Unbalanced to Balanced Center Tap, CD542"
-			(at 64.77 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "5"
-			(uuid "ac9ece00-c5d2-4564-a89d-429f11acdd7e")
-		)
-		(pin "3"
-			(uuid "38b9b651-0216-46e9-831b-e255f5609155")
-		)
-		(pin "6"
-			(uuid "a2644036-251c-48fa-8a69-50ded8b25245")
-		)
-		(pin "4"
-			(uuid "172e1e7b-1097-4ece-af4e-ddc1733410db")
-		)
-		(pin "2"
-			(uuid "7dc04257-5edd-4e61-821b-a35f9e98b698")
-		)
-		(pin "1"
-			(uuid "a0f14680-d604-4a1e-afc6-3aadb775f37e")
-		)
-		(instances
-			(project ""
-				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f"
-					(reference "TR1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:PWR_FLAG")
 		(at 389.89 214.63 0)
 		(unit 1)
@@ -4127,7 +3528,7 @@
 			)
 		)
 		(instances
-			(project "sdr_12p"
+			(project "sdr_16p"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f"
 					(page "3")
 				)
@@ -4169,7 +3570,7 @@
 			)
 		)
 		(instances
-			(project "sdr_12p"
+			(project "sdr_16p"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f"
 					(page "10")
 				)
@@ -4241,7 +3642,7 @@
 			)
 		)
 		(instances
-			(project "sdr_12p"
+			(project "sdr_16p"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f"
 					(page "11")
 				)
@@ -4249,7 +3650,7 @@
 		)
 	)
 	(sheet
-		(at 134.62 71.755)
+		(at 146.05 71.12)
 		(size 45.085 39.37)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4265,7 +3666,7 @@
 		)
 		(uuid "79014999-6129-417a-b831-cb9e4a5873fe")
 		(property "Sheetname" "Clock_Tree"
-			(at 134.62 71.0434 0)
+			(at 146.05 70.4084 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4274,7 +3675,7 @@
 			)
 		)
 		(property "Sheetfile" "clock_tree.kicad_sch"
-			(at 134.62 111.7096 0)
+			(at 146.05 111.0746 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4283,7 +3684,7 @@
 			)
 		)
 		(instances
-			(project "sdr_12p"
+			(project "sdr_16p"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f"
 					(page "7")
 				)
@@ -4325,51 +3726,9 @@
 			)
 		)
 		(instances
-			(project "sdr_12p"
+			(project "sdr_16p"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f"
 					(page "8")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 123.19 139.065)
-		(size 43.815 39.37)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "bcf6c722-1668-4f59-9b47-5a2e203e881a")
-		(property "Sheetname" "Tx_Mixers"
-			(at 123.19 138.3534 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "tx_mixers.kicad_sch"
-			(at 123.19 179.0196 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(instances
-			(project "sdr_12p"
-				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f"
-					(page "6")
 				)
 			)
 		)
@@ -4409,7 +3768,7 @@
 			)
 		)
 		(instances
-			(project "sdr_12p"
+			(project "sdr_16p"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f"
 					(page "2")
 				)
@@ -4551,7 +3910,7 @@
 			)
 		)
 		(instances
-			(project "sdr_12p"
+			(project "sdr_16p"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f"
 					(page "9")
 				)
@@ -4559,7 +3918,7 @@
 		)
 	)
 	(sheet
-		(at 128.27 15.875)
+		(at 51.435 85.09)
 		(size 43.18 34.29)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4574,8 +3933,8 @@
 			(color 0 0 0 0.0000)
 		)
 		(uuid "d923ed07-1122-4091-b99e-c24c264ea9d2")
-		(property "Sheetname" "Rx_Mixers"
-			(at 128.27 15.1634 0)
+		(property "Sheetname" "Rx_Tx_Mixers"
+			(at 51.435 84.3784 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4583,8 +3942,8 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "rx_mixers.kicad_sch"
-			(at 128.27 50.7496 0)
+		(property "Sheetfile" "rx_tx_mixers.kicad_sch"
+			(at 51.435 119.9646 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4593,9 +3952,93 @@
 			)
 		)
 		(instances
-			(project "sdr_12p"
+			(project "sdr_16p"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f"
 					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 137.795 136.525)
+		(size 45.72 33.02)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "df005acb-f213-4fcc-ac34-4381ff2002b3")
+		(property "Sheetname" "TX_Driver_Amps"
+			(at 137.795 135.8134 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "tx_driver_amps.kicad_sch"
+			(at 137.795 170.1296 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "sdr_16p"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f"
+					(page "12")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 134.62 19.05)
+		(size 41.91 39.37)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "e205b7df-8868-4193-af84-e6054aca82af")
+		(property "Sheetname" "RX_Driver_Amps"
+			(at 134.62 18.3384 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "rx_driver_amps.kicad_sch"
+			(at 134.62 59.0046 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "sdr_16p"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f"
+					(page "11")
 				)
 			)
 		)
@@ -4635,7 +4078,7 @@
 			)
 		)
 		(instances
-			(project "sdr_12p"
+			(project "sdr_16p"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f"
 					(page "4")
 				)
