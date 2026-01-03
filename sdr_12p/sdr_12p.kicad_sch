@@ -2965,7 +2965,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_Coaxial_Small")
-		(at 41.91 102.87 180)
+		(at 17.78 102.87 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2974,7 +2974,7 @@
 		(fields_autoplaced yes)
 		(uuid "689854ab-4b11-4f2b-97a8-1449ec32f795")
 		(property "Reference" "J1"
-			(at 42.4295 96.52 0)
+			(at 18.2995 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2982,7 +2982,7 @@
 			)
 		)
 		(property "Value" "Rx"
-			(at 42.4295 99.06 0)
+			(at 18.2995 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2990,7 +2990,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 41.91 102.87 0)
+			(at 17.78 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2999,7 +2999,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 41.91 102.87 0)
+			(at 17.78 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3008,7 +3008,7 @@
 			)
 		)
 		(property "Description" "small coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)"
-			(at 41.91 102.87 0)
+			(at 17.78 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3536,6 +3536,48 @@
 		)
 	)
 	(sheet
+		(at 87.63 78.105)
+		(size 37.465 36.195)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "173d5eca-f61f-4af5-84ba-0d581841d6d2")
+		(property "Sheetname" "Crosspoint"
+			(at 87.63 77.3934 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "crosspoint.kicad_sch"
+			(at 87.63 114.8846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "sdr_12p"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f"
+					(page "13")
+				)
+			)
+		)
+	)
+	(sheet
 		(at 120.65 197.485)
 		(size 116.84 27.94)
 		(exclude_from_sim no)
@@ -3918,7 +3960,7 @@
 		)
 	)
 	(sheet
-		(at 51.435 85.09)
+		(at 27.305 85.09)
 		(size 43.18 34.29)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3934,7 +3976,7 @@
 		)
 		(uuid "d923ed07-1122-4091-b99e-c24c264ea9d2")
 		(property "Sheetname" "Mixers"
-			(at 51.435 84.3784 0)
+			(at 27.305 84.3784 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3943,7 +3985,7 @@
 			)
 		)
 		(property "Sheetfile" "mixers.kicad_sch"
-			(at 51.435 119.9646 0)
+			(at 27.305 119.9646 0)
 			(effects
 				(font
 					(size 1.27 1.27)
