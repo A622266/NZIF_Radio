@@ -2264,6 +2264,367 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Transformer:ADT9-1T"
+			(pin_names
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "TR"
+				(at 0 6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "ADT9-1T"
+				(at 0 -6.985 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "RF_Mini-Circuits:Mini-Circuits_CD542_H2.84mm"
+				(at 0 -8.89 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.minicircuits.com/pdfs/ADT9-1T+.pdf"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "1-250MHz 1:9 RF Transformer, Unbalanced to Balanced Center Tap, CD542"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "Mini-Circuits RF Transformer"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Mini?Circuits*CD542*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "ADT9-1T_0_1"
+				(circle
+					(center -3.81 3.81)
+					(radius 0.635)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 5.08) (xy -1.524 5.08) (xy -1.524 3.048)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -1.524 3.048)
+					(mid -0.7653 2.286)
+					(end -1.524 1.524)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -1.524 1.524)
+					(mid -0.7653 0.762)
+					(end -1.524 0)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -1.524 0)
+					(mid -0.7653 -0.762)
+					(end -1.524 -1.524)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -1.524 -1.524)
+					(mid -0.7653 -2.286)
+					(end -1.524 -3.048)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.524 -3.048) (xy -1.524 -5.08) (xy -2.54 -5.08)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.524 3.048) (xy 1.524 5.08) (xy 2.54 5.08)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 1.524 1.524)
+					(mid 0.7653 2.286)
+					(end 1.524 3.048)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 1.524 0)
+					(mid 0.7653 0.762)
+					(end 1.524 1.524)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 1.524 -1.524)
+					(mid 0.7653 -0.762)
+					(end 1.524 0)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 1.524 -3.048)
+					(mid 0.7653 -2.286)
+					(end 1.524 -1.524)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 0) (xy 1.27 0)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 -5.08) (xy 1.524 -5.08) (xy 1.524 -3.048)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 3.81 3.81)
+					(radius 0.635)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+			)
+			(symbol "ADT9-1T_1_1"
+				(pin passive line
+					(at -5.08 5.08 0)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -5.08 0)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin no_connect line
+					(at -2.54 0 0)
+					(length 2.54)
+					(hide yes)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 5.08 180)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -5.08 180)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:GND"
 			(power)
 			(pin_numbers
@@ -3240,6 +3601,86 @@
 		)
 	)
 	(symbol
+		(lib_id "Transformer:ADT9-1T")
+		(at 27.94 104.14 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a04ddf03-7dc1-45f2-ba67-07fabe7f51ab")
+		(property "Reference" "TR1"
+			(at 27.94 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "ADT9-1T"
+			(at 27.94 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "RF_Mini-Circuits:Mini-Circuits_CD542_H2.84mm"
+			(at 27.94 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.minicircuits.com/pdfs/ADT9-1T+.pdf"
+			(at 27.94 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "1-250MHz 1:9 RF Transformer, Unbalanced to Balanced Center Tap, CD542"
+			(at 27.94 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "6"
+			(uuid "df276e8f-14c2-4c5b-9223-d773404e7e5d")
+		)
+		(pin "4"
+			(uuid "81baf92a-aa8d-4c21-8e3e-219f7477ea93")
+		)
+		(pin "3"
+			(uuid "0751ca70-d034-4c4c-a653-db804eeab161")
+		)
+		(pin "5"
+			(uuid "da75aa5b-5e0e-498f-afc4-5ebac72fb2f3")
+		)
+		(pin "1"
+			(uuid "67fb11fb-66e1-4e81-a16c-1433ae47080e")
+		)
+		(pin "2"
+			(uuid "415cf243-670c-4f29-845b-e9391c636e88")
+		)
+		(instances
+			(project ""
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f"
+					(reference "TR1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector_Generic:Conn_02x10_Odd_Even")
 		(at 346.71 78.74 0)
 		(unit 1)
@@ -3528,7 +3969,7 @@
 			)
 		)
 		(instances
-			(project "sdr_12p"
+			(project "sdr_16p"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f"
 					(page "3")
 				)
@@ -3570,7 +4011,7 @@
 			)
 		)
 		(instances
-			(project "sdr_12p"
+			(project "sdr_16p"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f"
 					(page "13")
 				)
@@ -3612,7 +4053,7 @@
 			)
 		)
 		(instances
-			(project "sdr_12p"
+			(project "sdr_16p"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f"
 					(page "10")
 				)
@@ -3684,7 +4125,7 @@
 			)
 		)
 		(instances
-			(project "sdr_12p"
+			(project "sdr_16p"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f"
 					(page "11")
 				)
@@ -3726,7 +4167,7 @@
 			)
 		)
 		(instances
-			(project "sdr_12p"
+			(project "sdr_16p"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f"
 					(page "7")
 				)
@@ -3768,9 +4209,51 @@
 			)
 		)
 		(instances
-			(project "sdr_12p"
+			(project "sdr_16p"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f"
 					(page "8")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 259.715 189.23)
+		(size 41.91 36.195)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "91ace161-62c2-4ad0-a80e-f8c3c9bc5e50")
+		(property "Sheetname" "Audio_Subsystem"
+			(at 259.715 188.5184 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "audio_subsystem.kicad_sch"
+			(at 259.715 226.0096 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "sdr_16p"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f"
+					(page "15")
 				)
 			)
 		)
@@ -3810,7 +4293,7 @@
 			)
 		)
 		(instances
-			(project "sdr_12p"
+			(project "sdr_16p"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f"
 					(page "2")
 				)
@@ -3952,7 +4435,7 @@
 			)
 		)
 		(instances
-			(project "sdr_12p"
+			(project "sdr_16p"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f"
 					(page "9")
 				)
@@ -3960,7 +4443,7 @@
 		)
 	)
 	(sheet
-		(at 27.305 85.09)
+		(at 40.64 78.74)
 		(size 43.18 34.29)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3976,7 +4459,7 @@
 		)
 		(uuid "d923ed07-1122-4091-b99e-c24c264ea9d2")
 		(property "Sheetname" "Mixers"
-			(at 27.305 84.3784 0)
+			(at 40.64 78.0284 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3985,7 +4468,7 @@
 			)
 		)
 		(property "Sheetfile" "mixers.kicad_sch"
-			(at 27.305 119.9646 0)
+			(at 40.64 113.6146 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3994,7 +4477,7 @@
 			)
 		)
 		(instances
-			(project "sdr_12p"
+			(project "sdr_16p"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f"
 					(page "5")
 				)
@@ -4036,7 +4519,7 @@
 			)
 		)
 		(instances
-			(project "sdr_12p"
+			(project "sdr_16p"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f"
 					(page "12")
 				)
@@ -4078,7 +4561,7 @@
 			)
 		)
 		(instances
-			(project "sdr_12p"
+			(project "sdr_16p"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f"
 					(page "11")
 				)
@@ -4086,8 +4569,50 @@
 		)
 	)
 	(sheet
-		(at 259.08 17.78)
-		(size 48.26 152.4)
+		(at 257.175 19.05)
+		(size 48.895 31.115)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "ea1efef5-9a17-4347-a6bd-c783dedda463")
+		(property "Sheetname" "Audio_Clock_Fanout"
+			(at 257.175 18.3384 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "audio_clock_fanout.kicad_sch"
+			(at 257.175 50.7496 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "sdr_16p"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f"
+					(page "14")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 259.08 57.15)
+		(size 48.26 113.03)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -4102,7 +4627,7 @@
 		)
 		(uuid "fa60d9db-5fbc-4f32-9a00-e3130bb41db9")
 		(property "Sheetname" "DAP"
-			(at 259.08 17.0684 0)
+			(at 259.08 56.4384 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4120,7 +4645,7 @@
 			)
 		)
 		(instances
-			(project "sdr_12p"
+			(project "sdr_16p"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f"
 					(page "4")
 				)
