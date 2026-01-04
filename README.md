@@ -1,2 +1,2 @@
-# SDR_Radio
-16 Phase Mixer Implementation to suppress up to the 15th harmonic
+# NZIF_Radio
+A near zero-if radio architecture using a polyphase mixer
