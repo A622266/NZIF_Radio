@@ -1,2 +1,2 @@
 # SDR_Radio
-32 Phase Mixer Implementation
+16 Phase Mixer Implementation to suppress up to the 15th harmonic
