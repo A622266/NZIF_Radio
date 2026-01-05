@@ -11,30 +11,30 @@
 		(company "Andy McCann KA3KAF and Doug McCann KA3KAG")
 	)
 	(lib_symbols
-		(symbol "AD8467:AD8476ACPZ-R7"
+		(symbol "nzif_radio_symbol_library:AD8476ARMZ"
 			(pin_names
-				(offset 0.254)
+				(offset 1.016)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "U"
-				(at 27.94 10.16 0)
+				(at 0 12.7 0)
 				(effects
 					(font
-						(size 1.524 1.524)
+						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Value" "AD8476ACPZ-R7"
-				(at 27.94 7.62 0)
+			(property "Value" "AD8476ARMZ"
+				(at 0 -12.7 0)
 				(effects
 					(font
-						(size 1.524 1.524)
+						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Footprint" "CP_16_25_ADI"
+			(property "Footprint" "nzif_footprints:RM_8_ADI"
 				(at 0 0 0)
 				(effects
 					(font
@@ -54,7 +54,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" ""
+			(property "Description" "Low Noise, Fully Differential ADC Driver, MSOP-8"
 				(at 0 0 0)
 				(effects
 					(font
@@ -63,15 +63,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_locked" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "AD8476ACPZ-R7"
+			(property "ki_keywords" "differential amplifier fully differential ADC driver"
 				(at 0 0 0)
 				(effects
 					(font
@@ -80,7 +72,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "CP_16_25_ADI CP_16_25_ADI-M CP_16_25_ADI-L"
+			(property "ki_fp_filters" "RM_8_ADI*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -89,59 +81,24 @@
 					(hide yes)
 				)
 			)
-			(symbol "AD8476ACPZ-R7_0_1"
-				(polyline
-					(pts
-						(xy 7.62 5.08) (xy 7.62 -25.4)
-					)
+			(symbol "AD8476ARMZ_0_1"
+				(rectangle
+					(start -10.16 10.16)
+					(end 10.16 -10.16)
 					(stroke
-						(width 0.127)
+						(width 0.254)
 						(type default)
 					)
 					(fill
-						(type none)
+						(type background)
 					)
 				)
-				(polyline
-					(pts
-						(xy 7.62 -25.4) (xy 48.26 -25.4)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 48.26 5.08) (xy 7.62 5.08)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 48.26 -25.4) (xy 48.26 5.08)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
+			)
+			(symbol "AD8476ARMZ_1_1"
 				(pin input line
-					(at 0 0 0)
-					(length 7.62)
-					(name "INP"
+					(at -12.7 5.08 0)
+					(length 2.54)
+					(name "INN"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -157,8 +114,8 @@
 					)
 				)
 				(pin input line
-					(at 0 -2.54 0)
-					(length 7.62)
+					(at -12.7 2.54 0)
+					(length 2.54)
 					(name "INP"
 						(effects
 							(font
@@ -166,7 +123,7 @@
 							)
 						)
 					)
-					(number "2"
+					(number "8"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -174,64 +131,11 @@
 						)
 					)
 				)
-				(pin input line
-					(at 0 -5.08 0)
-					(length 7.62)
-					(name "INN"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 0 -7.62 0)
-					(length 7.62)
-					(name "INN"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 0 -10.16 0)
-					(length 7.62)
-					(name "VS+"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 0 -12.7 0)
-					(length 7.62)
-					(name "VS+"
+				(pin no_connect line
+					(at -10.16 -7.62 0)
+					(length 2.54)
+					(hide yes)
+					(name "NC"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -247,9 +151,27 @@
 					)
 				)
 				(pin power_in line
-					(at 0 -15.24 0)
-					(length 7.62)
+					(at 0 12.7 270)
+					(length 2.54)
 					(name "VS+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -12.7 90)
+					(length 2.54)
+					(name "VS-"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -264,135 +186,9 @@
 						)
 					)
 				)
-				(pin power_in line
-					(at 0 -17.78 0)
-					(length 7.62)
-					(name "VS+"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 55.88 0 180)
-					(length 7.62)
-					(name "EPAD"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "HTAB"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 55.88 -2.54 180)
-					(length 7.62)
-					(name "VS-"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "16"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 55.88 -5.08 180)
-					(length 7.62)
-					(name "VS-"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "15"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 55.88 -7.62 180)
-					(length 7.62)
-					(name "VS-"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "14"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 55.88 -10.16 180)
-					(length 7.62)
-					(name "VS-"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "13"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin no_connect line
-					(at 55.88 -12.7 180)
-					(length 7.62)
-					(name "NC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "12"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
 				(pin output line
-					(at 55.88 -15.24 180)
-					(length 7.62)
+					(at 12.7 7.62 180)
+					(length 2.54)
 					(name "OUT-"
 						(effects
 							(font
@@ -400,7 +196,7 @@
 							)
 						)
 					)
-					(number "11"
+					(number "5"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -409,8 +205,8 @@
 					)
 				)
 				(pin output line
-					(at 55.88 -17.78 180)
-					(length 7.62)
+					(at 12.7 5.08 180)
+					(length 2.54)
 					(name "OUT+"
 						(effects
 							(font
@@ -418,7 +214,7 @@
 							)
 						)
 					)
-					(number "10"
+					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -427,8 +223,8 @@
 					)
 				)
 				(pin output line
-					(at 55.88 -20.32 180)
-					(length 7.62)
+					(at 12.7 0 180)
+					(length 2.54)
 					(name "VOCM"
 						(effects
 							(font
@@ -436,7 +232,7 @@
 							)
 						)
 					)
-					(number "9"
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -449,33 +245,35 @@
 		)
 	)
 	(symbol
-		(lib_id "AD8467:AD8476ACPZ-R7")
-		(at 71.12 44.45 0)
+		(lib_id "nzif_radio_symbol_library:AD8476ARMZ")
+		(at 191.77 96.52 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "34854ce7-e2bc-44d5-8308-eaea5abdca84")
-		(property "Reference" "U46"
-			(at 99.06 34.29 0)
+		(uuid "e9dc78d6-9d49-443e-9492-b2d7c1adfeeb")
+		(property "Reference" "U202"
+			(at 193.9133 81.28 0)
 			(effects
 				(font
-					(size 1.524 1.524)
+					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "AD8476ACPZ-R7"
-			(at 99.06 36.83 0)
+		(property "Value" "AD8476ARMZ"
+			(at 193.9133 83.82 0)
 			(effects
 				(font
-					(size 1.524 1.524)
+					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Footprint" "CP_16_25_ADI"
-			(at 71.12 44.45 0)
+		(property "Footprint" "nzif_footprints:RM_8_ADI"
+			(at 191.77 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -485,7 +283,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/AD8476.pdf"
-			(at 71.12 44.45 0)
+			(at 191.77 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -494,8 +292,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 71.12 44.45 0)
+		(property "Description" "Low Noise, Fully Differential ADC Driver, MSOP-8"
+			(at 191.77 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -503,61 +301,34 @@
 				(hide yes)
 			)
 		)
-		(pin "16"
-			(uuid "cbd6b5cd-83dc-42a9-a2b0-8b6265caea9c")
-		)
-		(pin "11"
-			(uuid "047cd494-a311-42ea-baad-768d6557271f")
-		)
-		(pin "3"
-			(uuid "89eb269b-60db-431e-8c22-98ccb8354530")
-		)
-		(pin "2"
-			(uuid "0a94680d-23c4-4a8c-a7df-5eedbfa0f3a0")
-		)
-		(pin "1"
-			(uuid "090a8093-cfb5-44ba-aa1a-a505416a9ae2")
-		)
-		(pin "7"
-			(uuid "55454e11-a8ad-4015-a057-d099bdf11bdf")
-		)
-		(pin "6"
-			(uuid "66a8519e-18fa-4082-8660-4e78d5171a0a")
-		)
 		(pin "5"
-			(uuid "ca336b98-42f7-4002-8e7f-5b744ac7e882")
-		)
-		(pin "14"
-			(uuid "667dbb49-23a2-48e1-8b8b-d2f454a4da72")
-		)
-		(pin "HTAB"
-			(uuid "ceee07d0-2725-478e-aed7-e53bfc4324e9")
+			(uuid "5fce83b4-26ac-431c-959e-c9c12da9681f")
 		)
 		(pin "8"
-			(uuid "d7284295-efca-49d1-a107-3129612603a5")
+			(uuid "a4824eed-db9a-4ac0-bb7c-a0f5b5f4924e")
 		)
-		(pin "10"
-			(uuid "eb03a375-1f71-4af1-8d38-4ed284d98f33")
+		(pin "6"
+			(uuid "17e3c612-0a24-4745-9c42-5844e6b9ef30")
 		)
-		(pin "13"
-			(uuid "44b3e517-79e1-4839-bf24-7ade435f6144")
+		(pin "2"
+			(uuid "cbec2115-527e-4959-975d-fffc00a1048c")
 		)
-		(pin "12"
-			(uuid "a414d4dd-2d77-4096-a159-b9f0d865983a")
+		(pin "7"
+			(uuid "7c0528e8-4241-49e0-80ca-0a9025649ef0")
 		)
-		(pin "15"
-			(uuid "d1387c82-4d00-4a7f-b2e7-4a77cc111fb0")
-		)
-		(pin "9"
-			(uuid "984f05f4-bc12-4bab-b072-531edfe6a598")
+		(pin "1"
+			(uuid "4fbadc18-6165-4dda-ab49-8737919a3316")
 		)
 		(pin "4"
-			(uuid "7720a5a8-d636-4513-850f-de48c3c7d076")
+			(uuid "30f79ac3-c411-4a79-b218-7f1579de3cc0")
+		)
+		(pin "3"
+			(uuid "1136784b-2426-42f4-ae37-f3c09c95c94e")
 		)
 		(instances
 			(project ""
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/e205b7df-8868-4193-af84-e6054aca82af"
-					(reference "U46")
+					(reference "U202")
 					(unit 1)
 				)
 			)
