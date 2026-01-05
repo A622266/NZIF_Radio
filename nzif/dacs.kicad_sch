@@ -11,30 +11,27 @@
 		(company "Andy McCann KA3KAF and Doug McCann KA3KAG")
 	)
 	(lib_symbols
-		(symbol "ADAU1966:ADAU1966AWBSTZ"
-			(pin_names
-				(offset 0.254)
-			)
+		(symbol "nzif_radio_symbol_library:ADAU1966AWBSTZ"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "U"
-				(at 38.1 25.4 0)
+				(at 0 48.26 0)
 				(effects
 					(font
-						(size 1.524 1.524)
+						(size 1.27 1.27)
 					)
 				)
 			)
 			(property "Value" "ADAU1966AWBSTZ"
-				(at 38.1 22.86 0)
+				(at 0 -48.26 0)
 				(effects
 					(font
-						(size 1.524 1.524)
+						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Footprint" "ST_80_2_ADI"
+			(property "Footprint" "nzif_footprints:ST_80_2_ADI"
 				(at 0 0 0)
 				(effects
 					(font
@@ -54,7 +51,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" ""
+			(property "Description" "16-Channel High Performance Audio DAC, 112dB SNR, I2C/SPI Control, ST-80-2"
 				(at 0 0 0)
 				(effects
 					(font
@@ -63,15 +60,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_locked" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "ADAU1966AWBSTZ"
+			(property "ki_keywords" "audio DAC multichannel ADI analog-devices digital-analog-converter"
 				(at 0 0 0)
 				(effects
 					(font
@@ -90,56 +79,19 @@
 				)
 			)
 			(symbol "ADAU1966AWBSTZ_0_1"
-				(polyline
-					(pts
-						(xy 7.62 20.32) (xy 7.62 -68.58)
-					)
+				(rectangle
+					(start -54.61 44.45)
+					(end 54.61 -44.45)
 					(stroke
-						(width 0.127)
+						(width 0.254)
 						(type default)
 					)
 					(fill
-						(type none)
+						(type background)
 					)
 				)
-				(polyline
-					(pts
-						(xy 7.62 -68.58) (xy 116.84 -68.58)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 116.84 20.32) (xy 7.62 20.32)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 116.84 -68.58) (xy 116.84 20.32)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin unspecified line
-					(at 0 0 0)
+				(pin passive line
+					(at -62.23 24.13 0)
 					(length 7.62)
 					(name "DAC_BIAS3"
 						(effects
@@ -156,8 +108,8 @@
 						)
 					)
 				)
-				(pin unspecified line
-					(at 0 -2.54 0)
+				(pin passive line
+					(at -62.23 21.59 0)
 					(length 7.62)
 					(name "DAC_BIAS4"
 						(effects
@@ -174,8 +126,8 @@
 						)
 					)
 				)
-				(pin unspecified line
-					(at 0 -5.08 0)
+				(pin power_in line
+					(at -62.23 19.05 0)
 					(length 7.62)
 					(name "AVDD3"
 						(effects
@@ -192,8 +144,8 @@
 						)
 					)
 				)
-				(pin unspecified line
-					(at 0 -7.62 0)
+				(pin output line
+					(at -62.23 16.51 0)
 					(length 7.62)
 					(name "DAC13P"
 						(effects
@@ -210,8 +162,8 @@
 						)
 					)
 				)
-				(pin unspecified line
-					(at 0 -10.16 0)
+				(pin output line
+					(at -62.23 13.97 0)
 					(length 7.62)
 					(name "DAC13N"
 						(effects
@@ -228,8 +180,8 @@
 						)
 					)
 				)
-				(pin unspecified line
-					(at 0 -12.7 0)
+				(pin output line
+					(at -62.23 11.43 0)
 					(length 7.62)
 					(name "DAC14P"
 						(effects
@@ -246,8 +198,8 @@
 						)
 					)
 				)
-				(pin unspecified line
-					(at 0 -15.24 0)
+				(pin output line
+					(at -62.23 8.89 0)
 					(length 7.62)
 					(name "DAC14N"
 						(effects
@@ -264,8 +216,8 @@
 						)
 					)
 				)
-				(pin unspecified line
-					(at 0 -17.78 0)
+				(pin output line
+					(at -62.23 6.35 0)
 					(length 7.62)
 					(name "DAC15P"
 						(effects
@@ -282,8 +234,8 @@
 						)
 					)
 				)
-				(pin unspecified line
-					(at 0 -20.32 0)
+				(pin output line
+					(at -62.23 3.81 0)
 					(length 7.62)
 					(name "DAC15N"
 						(effects
@@ -300,8 +252,8 @@
 						)
 					)
 				)
-				(pin unspecified line
-					(at 0 -22.86 0)
+				(pin output line
+					(at -62.23 1.27 0)
 					(length 7.62)
 					(name "DAC16P"
 						(effects
@@ -318,8 +270,8 @@
 						)
 					)
 				)
-				(pin unspecified line
-					(at 0 -25.4 0)
+				(pin output line
+					(at -62.23 -1.27 0)
 					(length 7.62)
 					(name "DAC16N"
 						(effects
@@ -336,8 +288,8 @@
 						)
 					)
 				)
-				(pin unspecified line
-					(at 0 -27.94 0)
+				(pin power_in line
+					(at -62.23 -3.81 0)
 					(length 7.62)
 					(name "AVDD4"
 						(effects
@@ -354,8 +306,8 @@
 						)
 					)
 				)
-				(pin unspecified line
-					(at 0 -30.48 0)
+				(pin power_in line
+					(at -62.23 -6.35 0)
 					(length 7.62)
 					(name "AGND4"
 						(effects
@@ -372,8 +324,8 @@
 						)
 					)
 				)
-				(pin unspecified line
-					(at 0 -33.02 0)
+				(pin power_in line
+					(at -62.23 -8.89 0)
 					(length 7.62)
 					(name "PLLGND"
 						(effects
@@ -390,8 +342,8 @@
 						)
 					)
 				)
-				(pin unspecified line
-					(at 0 -35.56 0)
+				(pin passive line
+					(at -62.23 -11.43 0)
 					(length 7.62)
 					(name "LF"
 						(effects
@@ -408,8 +360,8 @@
 						)
 					)
 				)
-				(pin unspecified line
-					(at 0 -38.1 0)
+				(pin power_in line
+					(at -62.23 -13.97 0)
 					(length 7.62)
 					(name "PLLVDD"
 						(effects
@@ -426,8 +378,8 @@
 						)
 					)
 				)
-				(pin unspecified line
-					(at 0 -40.64 0)
+				(pin input line
+					(at -62.23 -16.51 0)
 					(length 7.62)
 					(name "MCLKI/XTALI"
 						(effects
@@ -444,8 +396,8 @@
 						)
 					)
 				)
-				(pin unspecified line
-					(at 0 -43.18 0)
+				(pin output line
+					(at -62.23 -19.05 0)
 					(length 7.62)
 					(name "XTALO"
 						(effects
@@ -462,8 +414,8 @@
 						)
 					)
 				)
-				(pin unspecified line
-					(at 0 -45.72 0)
+				(pin output line
+					(at -62.23 -21.59 0)
 					(length 7.62)
 					(name "MCLKO"
 						(effects
@@ -480,8 +432,8 @@
 						)
 					)
 				)
-				(pin unspecified line
-					(at 0 -48.26 0)
+				(pin power_in line
+					(at -62.23 -24.13 0)
 					(length 7.62)
 					(name "DVDD"
 						(effects
@@ -498,8 +450,8 @@
 						)
 					)
 				)
-				(pin unspecified line
-					(at 38.1 27.94 270)
+				(pin power_in line
+					(at -24.13 52.07 270)
 					(length 7.62)
 					(name "AGND3"
 						(effects
@@ -516,8 +468,8 @@
 						)
 					)
 				)
-				(pin unspecified line
-					(at 38.1 -76.2 90)
+				(pin power_in line
+					(at -24.13 -52.07 90)
 					(length 7.62)
 					(name "DGND"
 						(effects
@@ -534,8 +486,8 @@
 						)
 					)
 				)
-				(pin unspecified line
-					(at 40.64 27.94 270)
+				(pin output line
+					(at -21.59 52.07 270)
 					(length 7.62)
 					(name "DAC12N"
 						(effects
@@ -552,8 +504,8 @@
 						)
 					)
 				)
-				(pin unspecified line
-					(at 40.64 -76.2 90)
+				(pin power_in line
+					(at -21.59 -52.07 90)
 					(length 7.62)
 					(name "IOVDD"
 						(effects
@@ -570,8 +522,8 @@
 						)
 					)
 				)
-				(pin unspecified line
-					(at 43.18 27.94 270)
+				(pin output line
+					(at -19.05 52.07 270)
 					(length 7.62)
 					(name "DAC12P"
 						(effects
@@ -588,8 +540,8 @@
 						)
 					)
 				)
-				(pin unspecified line
-					(at 43.18 -76.2 90)
+				(pin input line
+					(at -19.05 -52.07 90)
 					(length 7.62)
 					(name "VSENSE"
 						(effects
@@ -606,8 +558,8 @@
 						)
 					)
 				)
-				(pin unspecified line
-					(at 45.72 27.94 270)
+				(pin output line
+					(at -16.51 52.07 270)
 					(length 7.62)
 					(name "DAC11N"
 						(effects
@@ -624,8 +576,8 @@
 						)
 					)
 				)
-				(pin unspecified line
-					(at 45.72 -76.2 90)
+				(pin power_in line
+					(at -16.51 -52.07 90)
 					(length 7.62)
 					(name "VDRIVE"
 						(effects
@@ -642,8 +594,8 @@
 						)
 					)
 				)
-				(pin unspecified line
-					(at 48.26 27.94 270)
+				(pin output line
+					(at -13.97 52.07 270)
 					(length 7.62)
 					(name "DAC11P"
 						(effects
@@ -660,8 +612,8 @@
 						)
 					)
 				)
-				(pin unspecified line
-					(at 48.26 -76.2 90)
+				(pin power_in line
+					(at -13.97 -52.07 90)
 					(length 7.62)
 					(name "VSUPPLY"
 						(effects
@@ -678,8 +630,8 @@
 						)
 					)
 				)
-				(pin unspecified line
-					(at 50.8 27.94 270)
+				(pin output line
+					(at -11.43 52.07 270)
 					(length 7.62)
 					(name "DAC10N"
 						(effects
@@ -696,8 +648,8 @@
 						)
 					)
 				)
-				(pin unspecified line
-					(at 50.8 -76.2 90)
+				(pin power_in line
+					(at -11.43 -52.07 90)
 					(length 7.62)
 					(name "DGND"
 						(effects
@@ -714,8 +666,8 @@
 						)
 					)
 				)
-				(pin unspecified line
-					(at 53.34 27.94 270)
+				(pin output line
+					(at -8.89 52.07 270)
 					(length 7.62)
 					(name "DAC10P"
 						(effects
@@ -732,8 +684,8 @@
 						)
 					)
 				)
-				(pin unspecified line
-					(at 53.34 -76.2 90)
+				(pin input line
+					(at -8.89 -52.07 90)
 					(length 7.62)
 					(name "DBCLK"
 						(effects
@@ -750,8 +702,8 @@
 						)
 					)
 				)
-				(pin unspecified line
-					(at 55.88 27.94 270)
+				(pin output line
+					(at -6.35 52.07 270)
 					(length 7.62)
 					(name "DAC9N"
 						(effects
@@ -768,8 +720,8 @@
 						)
 					)
 				)
-				(pin unspecified line
-					(at 55.88 -76.2 90)
+				(pin input line
+					(at -6.35 -52.07 90)
 					(length 7.62)
 					(name "DLRCLK"
 						(effects
@@ -786,8 +738,8 @@
 						)
 					)
 				)
-				(pin unspecified line
-					(at 58.42 27.94 270)
+				(pin output line
+					(at -3.81 52.07 270)
 					(length 7.62)
 					(name "DAC9P"
 						(effects
@@ -804,8 +756,8 @@
 						)
 					)
 				)
-				(pin unspecified line
-					(at 58.42 -76.2 90)
+				(pin power_in line
+					(at -3.81 -52.07 90)
 					(length 7.62)
 					(name "DVDD"
 						(effects
@@ -822,8 +774,8 @@
 						)
 					)
 				)
-				(pin unspecified line
-					(at 60.96 27.94 270)
+				(pin output line
+					(at -1.27 52.07 270)
 					(length 7.62)
 					(name "DAC8N"
 						(effects
@@ -840,8 +792,8 @@
 						)
 					)
 				)
-				(pin unspecified line
-					(at 60.96 -76.2 90)
+				(pin power_in line
+					(at -1.27 -52.07 90)
 					(length 7.62)
 					(name "DGND"
 						(effects
@@ -858,8 +810,8 @@
 						)
 					)
 				)
-				(pin unspecified line
-					(at 63.5 27.94 270)
+				(pin output line
+					(at 1.27 52.07 270)
 					(length 7.62)
 					(name "DAC8P"
 						(effects
@@ -876,8 +828,8 @@
 						)
 					)
 				)
-				(pin unspecified line
-					(at 63.5 -76.2 90)
+				(pin input line
+					(at 1.27 -52.07 90)
 					(length 7.62)
 					(name "SA1"
 						(effects
@@ -894,8 +846,8 @@
 						)
 					)
 				)
-				(pin unspecified line
-					(at 66.04 27.94 270)
+				(pin output line
+					(at 3.81 52.07 270)
 					(length 7.62)
 					(name "DAC7N"
 						(effects
@@ -912,8 +864,8 @@
 						)
 					)
 				)
-				(pin unspecified line
-					(at 66.04 -76.2 90)
+				(pin input line
+					(at 3.81 -52.07 90)
 					(length 7.62)
 					(name "SA2"
 						(effects
@@ -930,8 +882,8 @@
 						)
 					)
 				)
-				(pin unspecified line
-					(at 68.58 27.94 270)
+				(pin output line
+					(at 6.35 52.07 270)
 					(length 7.62)
 					(name "DAC7P"
 						(effects
@@ -948,8 +900,8 @@
 						)
 					)
 				)
-				(pin unspecified line
-					(at 68.58 -76.2 90)
+				(pin input line
+					(at 6.35 -52.07 90)
 					(length 7.62)
 					(name "DSDATA6"
 						(effects
@@ -966,8 +918,8 @@
 						)
 					)
 				)
-				(pin unspecified line
-					(at 71.12 27.94 270)
+				(pin output line
+					(at 8.89 52.07 270)
 					(length 7.62)
 					(name "DAC6N"
 						(effects
@@ -984,8 +936,8 @@
 						)
 					)
 				)
-				(pin unspecified line
-					(at 71.12 -76.2 90)
+				(pin input line
+					(at 8.89 -52.07 90)
 					(length 7.62)
 					(name "DSDATA5"
 						(effects
@@ -1002,8 +954,8 @@
 						)
 					)
 				)
-				(pin unspecified line
-					(at 73.66 27.94 270)
+				(pin output line
+					(at 11.43 52.07 270)
 					(length 7.62)
 					(name "DAC6P"
 						(effects
@@ -1020,8 +972,8 @@
 						)
 					)
 				)
-				(pin unspecified line
-					(at 73.66 -76.2 90)
+				(pin input line
+					(at 11.43 -52.07 90)
 					(length 7.62)
 					(name "DSDATA4"
 						(effects
@@ -1038,8 +990,8 @@
 						)
 					)
 				)
-				(pin unspecified line
-					(at 76.2 27.94 270)
+				(pin output line
+					(at 13.97 52.07 270)
 					(length 7.62)
 					(name "DAC5N"
 						(effects
@@ -1056,8 +1008,8 @@
 						)
 					)
 				)
-				(pin unspecified line
-					(at 76.2 -76.2 90)
+				(pin input line
+					(at 13.97 -52.07 90)
 					(length 7.62)
 					(name "DSDATA3"
 						(effects
@@ -1074,8 +1026,8 @@
 						)
 					)
 				)
-				(pin unspecified line
-					(at 78.74 27.94 270)
+				(pin output line
+					(at 16.51 52.07 270)
 					(length 7.62)
 					(name "DAC5P"
 						(effects
@@ -1092,8 +1044,8 @@
 						)
 					)
 				)
-				(pin unspecified line
-					(at 78.74 -76.2 90)
+				(pin input line
+					(at 16.51 -52.07 90)
 					(length 7.62)
 					(name "DSDATA2"
 						(effects
@@ -1110,8 +1062,8 @@
 						)
 					)
 				)
-				(pin unspecified line
-					(at 81.28 27.94 270)
+				(pin passive line
+					(at 19.05 52.07 270)
 					(length 7.62)
 					(name "TS_REF"
 						(effects
@@ -1128,8 +1080,8 @@
 						)
 					)
 				)
-				(pin unspecified line
-					(at 81.28 -76.2 90)
+				(pin input line
+					(at 19.05 -52.07 90)
 					(length 7.62)
 					(name "DSDATA1"
 						(effects
@@ -1146,8 +1098,8 @@
 						)
 					)
 				)
-				(pin unspecified line
-					(at 83.82 27.94 270)
+				(pin passive line
+					(at 21.59 52.07 270)
 					(length 7.62)
 					(name "CM"
 						(effects
@@ -1164,8 +1116,8 @@
 						)
 					)
 				)
-				(pin unspecified line
-					(at 83.82 -76.2 90)
+				(pin power_in line
+					(at 21.59 -52.07 90)
 					(length 7.62)
 					(name "IOVDD"
 						(effects
@@ -1182,8 +1134,8 @@
 						)
 					)
 				)
-				(pin unspecified line
-					(at 86.36 27.94 270)
+				(pin power_in line
+					(at 24.13 52.07 270)
 					(length 7.62)
 					(name "AGND2"
 						(effects
@@ -1200,8 +1152,8 @@
 						)
 					)
 				)
-				(pin unspecified line
-					(at 86.36 -76.2 90)
+				(pin power_in line
+					(at 24.13 -52.07 90)
 					(length 7.62)
 					(name "DGND"
 						(effects
@@ -1218,8 +1170,8 @@
 						)
 					)
 				)
-				(pin unspecified line
-					(at 124.46 0 180)
+				(pin passive line
+					(at 62.23 24.13 180)
 					(length 7.62)
 					(name "DAC_BIAS2"
 						(effects
@@ -1236,8 +1188,8 @@
 						)
 					)
 				)
-				(pin unspecified line
-					(at 124.46 -2.54 180)
+				(pin passive line
+					(at 62.23 21.59 180)
 					(length 7.62)
 					(name "DAC_BIAS1"
 						(effects
@@ -1254,8 +1206,8 @@
 						)
 					)
 				)
-				(pin unspecified line
-					(at 124.46 -5.08 180)
+				(pin power_in line
+					(at 62.23 19.05 180)
 					(length 7.62)
 					(name "AVDD2"
 						(effects
@@ -1272,8 +1224,8 @@
 						)
 					)
 				)
-				(pin unspecified line
-					(at 124.46 -7.62 180)
+				(pin output line
+					(at 62.23 16.51 180)
 					(length 7.62)
 					(name "DAC4N"
 						(effects
@@ -1290,8 +1242,8 @@
 						)
 					)
 				)
-				(pin unspecified line
-					(at 124.46 -10.16 180)
+				(pin output line
+					(at 62.23 13.97 180)
 					(length 7.62)
 					(name "DAC4P"
 						(effects
@@ -1308,8 +1260,8 @@
 						)
 					)
 				)
-				(pin unspecified line
-					(at 124.46 -12.7 180)
+				(pin output line
+					(at 62.23 11.43 180)
 					(length 7.62)
 					(name "DAC3N"
 						(effects
@@ -1326,8 +1278,8 @@
 						)
 					)
 				)
-				(pin unspecified line
-					(at 124.46 -15.24 180)
+				(pin output line
+					(at 62.23 8.89 180)
 					(length 7.62)
 					(name "DAC3P"
 						(effects
@@ -1344,8 +1296,8 @@
 						)
 					)
 				)
-				(pin unspecified line
-					(at 124.46 -17.78 180)
+				(pin output line
+					(at 62.23 6.35 180)
 					(length 7.62)
 					(name "DAC2N"
 						(effects
@@ -1362,8 +1314,8 @@
 						)
 					)
 				)
-				(pin unspecified line
-					(at 124.46 -20.32 180)
+				(pin output line
+					(at 62.23 3.81 180)
 					(length 7.62)
 					(name "DAC2P"
 						(effects
@@ -1380,8 +1332,8 @@
 						)
 					)
 				)
-				(pin unspecified line
-					(at 124.46 -22.86 180)
+				(pin output line
+					(at 62.23 1.27 180)
 					(length 7.62)
 					(name "DAC1N"
 						(effects
@@ -1398,8 +1350,8 @@
 						)
 					)
 				)
-				(pin unspecified line
-					(at 124.46 -25.4 180)
+				(pin output line
+					(at 62.23 -1.27 180)
 					(length 7.62)
 					(name "DAC1P"
 						(effects
@@ -1416,8 +1368,8 @@
 						)
 					)
 				)
-				(pin unspecified line
-					(at 124.46 -27.94 180)
+				(pin power_in line
+					(at 62.23 -3.81 180)
 					(length 7.62)
 					(name "AVDD1"
 						(effects
@@ -1434,8 +1386,8 @@
 						)
 					)
 				)
-				(pin unspecified line
-					(at 124.46 -30.48 180)
+				(pin power_in line
+					(at 62.23 -6.35 180)
 					(length 7.62)
 					(name "AGND1"
 						(effects
@@ -1452,8 +1404,8 @@
 						)
 					)
 				)
-				(pin unspecified line
-					(at 124.46 -33.02 180)
+				(pin input line
+					(at 62.23 -8.89 180)
 					(length 7.62)
 					(name "PU/*RST"
 						(effects
@@ -1470,8 +1422,8 @@
 						)
 					)
 				)
-				(pin unspecified line
-					(at 124.46 -35.56 180)
+				(pin input line
+					(at 62.23 -11.43 180)
 					(length 7.62)
 					(name "SA_MODE"
 						(effects
@@ -1488,8 +1440,8 @@
 						)
 					)
 				)
-				(pin unspecified line
-					(at 124.46 -38.1 180)
+				(pin bidirectional line
+					(at 62.23 -13.97 180)
 					(length 7.62)
 					(name "*SS/ADDR0/SA"
 						(effects
@@ -1506,8 +1458,8 @@
 						)
 					)
 				)
-				(pin unspecified line
-					(at 124.46 -40.64 180)
+				(pin input line
+					(at 62.23 -16.51 180)
 					(length 7.62)
 					(name "SCLK/SCL"
 						(effects
@@ -1524,8 +1476,8 @@
 						)
 					)
 				)
-				(pin unspecified line
-					(at 124.46 -43.18 180)
+				(pin bidirectional line
+					(at 62.23 -19.05 180)
 					(length 7.62)
 					(name "MISO/SDA/SA"
 						(effects
@@ -1542,8 +1494,8 @@
 						)
 					)
 				)
-				(pin unspecified line
-					(at 124.46 -45.72 180)
+				(pin bidirectional line
+					(at 62.23 -21.59 180)
 					(length 7.62)
 					(name "MOSI/ADDR1/SA"
 						(effects
@@ -1560,8 +1512,8 @@
 						)
 					)
 				)
-				(pin unspecified line
-					(at 124.46 -48.26 180)
+				(pin power_in line
+					(at 62.23 -24.13 180)
 					(length 7.62)
 					(name "DVDD"
 						(effects
@@ -1583,8 +1535,8 @@
 		)
 	)
 	(symbol
-		(lib_id "ADAU1966:ADAU1966AWBSTZ")
-		(at 143.51 92.71 0)
+		(lib_id "nzif_radio_symbol_library:ADAU1966AWBSTZ")
+		(at 195.58 138.43 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1593,7 +1545,7 @@
 		(fields_autoplaced yes)
 		(uuid "011928d7-f6c4-4904-b3b8-7b5d2448a0ea")
 		(property "Reference" "U5"
-			(at 271.78 86.2898 0)
+			(at 261.62 107.8798 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -1601,15 +1553,15 @@
 			)
 		)
 		(property "Value" "ADAU1966AWBSTZ"
-			(at 271.78 88.8298 0)
+			(at 261.62 110.4198 0)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
 			)
 		)
-		(property "Footprint" "ST_80_2_ADI"
-			(at 143.51 92.71 0)
+		(property "Footprint" "nzif_footprints:ST_80_2_ADI"
+			(at 195.58 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1619,7 +1571,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/ADAU1966A.pdf"
-			(at 143.51 92.71 0)
+			(at 195.58 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1628,8 +1580,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 143.51 92.71 0)
+		(property "Description" "16-Channel High Performance Audio DAC, 112dB SNR, I2C/SPI Control, ST-80-2"
+			(at 195.58 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
