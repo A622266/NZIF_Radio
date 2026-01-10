@@ -11,7 +11,7 @@
 		(company "Andy McCann KA3KAF and Doug McCann KA3KAG")
 	)
 	(lib_symbols
-		(symbol "Audio:ADAU1978xBCP"
+		(symbol "Audio:ADAU1979xBCP"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -23,7 +23,7 @@
 					)
 				)
 			)
-			(property "Value" "ADAU1978xBCP"
+			(property "Value" "ADAU1979xBCP"
 				(at 12.7 22.86 0)
 				(effects
 					(font
@@ -40,7 +40,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/ADAU1978.pdf"
+			(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/ADAU1979.pdf"
 				(at 0 -2.54 0)
 				(effects
 					(font
@@ -49,7 +49,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Quad Analog-to-Digital Converter, 2Vrms differential inputs, LFCSP-40"
+			(property "Description" "Quad Analog-to-Digital Converter, 4.5Vrms differential inputs, LFCSP-40"
 				(at 0 0 0)
 				(effects
 					(font
@@ -76,7 +76,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "ADAU1978xBCP_0_1"
+			(symbol "ADAU1979xBCP_0_1"
 				(rectangle
 					(start -12.7 20.32)
 					(end 12.7 -20.32)
@@ -89,7 +89,7 @@
 					)
 				)
 			)
-			(symbol "ADAU1978xBCP_1_1"
+			(symbol "ADAU1979xBCP_1_1"
 				(pin input line
 					(at -15.24 15.24 0)
 					(length 2.54)
@@ -2427,7 +2427,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "01d9b366-d2e1-4cd2-8082-4752d25262e4")
-		(property "Reference" "C201"
+		(property "Reference" "C?"
 			(at 81.788 90.424 90)
 			(effects
 				(font
@@ -2477,6 +2477,12 @@
 			(uuid "5adf8e09-e610-4ab3-a5bd-eca2e7630870")
 		)
 		(instances
+			(project "adcs"
+				(path "/96c136a7-3067-46c2-bf4e-e04595fcea78"
+					(reference "C?")
+					(unit 1)
+				)
+			)
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d1b276aa-cc76-4829-b01b-98095216e3ce"
 					(reference "C201")
@@ -2495,7 +2501,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "11f46dd1-5a0c-47b5-9dcc-5fd156eb38d9")
-		(property "Reference" "#PWR0207"
+		(property "Reference" "#PWR?"
 			(at 152.4 92.71 0)
 			(effects
 				(font
@@ -2543,6 +2549,12 @@
 			(uuid "1e30fd03-3d63-4460-8b4a-4f1b7bb3acf2")
 		)
 		(instances
+			(project "adcs"
+				(path "/96c136a7-3067-46c2-bf4e-e04595fcea78"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d1b276aa-cc76-4829-b01b-98095216e3ce"
 					(reference "#PWR0207")
@@ -2561,7 +2573,7 @@
 		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "192849a4-5a55-48ff-8704-8b2280f7cf27")
-		(property "Reference" "C204"
+		(property "Reference" "C?"
 			(at 101.6 107.9435 0)
 			(effects
 				(font
@@ -2613,6 +2625,12 @@
 			(uuid "5ae8307e-aea3-4661-b0b8-b22b0fe5cf29")
 		)
 		(instances
+			(project "adcs"
+				(path "/96c136a7-3067-46c2-bf4e-e04595fcea78"
+					(reference "C?")
+					(unit 1)
+				)
+			)
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d1b276aa-cc76-4829-b01b-98095216e3ce"
 					(reference "C204")
@@ -2630,7 +2648,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "29c4e662-bc27-4641-8c86-5ef8124f6a8b")
-		(property "Reference" "C202"
+		(property "Reference" "C?"
 			(at 81.534 97.79 90)
 			(effects
 				(font
@@ -2680,6 +2698,12 @@
 			(uuid "a2664f09-8506-44fc-8b86-f8762867969c")
 		)
 		(instances
+			(project "adcs"
+				(path "/96c136a7-3067-46c2-bf4e-e04595fcea78"
+					(reference "C?")
+					(unit 1)
+				)
+			)
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d1b276aa-cc76-4829-b01b-98095216e3ce"
 					(reference "C202")
@@ -2697,7 +2721,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "30973db7-039f-45d6-9297-1bf732bc83d6")
-		(property "Reference" "R203"
+		(property "Reference" "R?"
 			(at 135.636 67.818 90)
 			(effects
 				(font
@@ -2749,6 +2773,12 @@
 			(uuid "94fdb9a0-53ba-404f-a794-243067938b03")
 		)
 		(instances
+			(project "adcs"
+				(path "/96c136a7-3067-46c2-bf4e-e04595fcea78"
+					(reference "R?")
+					(unit 1)
+				)
+			)
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d1b276aa-cc76-4829-b01b-98095216e3ce"
 					(reference "R203")
@@ -2767,7 +2797,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "31e108a3-b3e9-469b-b886-be0e60f4e3b8")
-		(property "Reference" "#PWR0205"
+		(property "Reference" "#PWR?"
 			(at 135.89 129.54 0)
 			(effects
 				(font
@@ -2815,9 +2845,202 @@
 			(uuid "0cc9dcfe-6678-4e87-b20c-5746fee1a4ca")
 		)
 		(instances
+			(project "adcs"
+				(path "/96c136a7-3067-46c2-bf4e-e04595fcea78"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d1b276aa-cc76-4829-b01b-98095216e3ce"
 					(reference "#PWR0205")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Audio:ADAU1979xBCP")
+		(at 118.11 78.74 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "32851b2c-b7b1-40b4-aa4a-dc542d50141f")
+		(property "Reference" "U1"
+			(at 122.7933 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "ADAU1979xBCP"
+			(at 122.7933 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_CSP:LFCSP-40-1EP_6x6mm_P0.5mm_EP3.9x3.9mm"
+			(at 118.11 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/ADAU1979.pdf"
+			(at 118.11 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Quad Analog-to-Digital Converter, 4.5Vrms differential inputs, LFCSP-40"
+			(at 118.11 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "6"
+			(uuid "5f8903fe-8583-4c8a-b308-159ef274ee36")
+		)
+		(pin "30"
+			(uuid "55c0a7ee-c652-4419-905f-02869bcd08ea")
+		)
+		(pin "15"
+			(uuid "40f48066-7672-4094-acb6-6dc0f062b1bd")
+		)
+		(pin "4"
+			(uuid "b0f19d85-687d-4137-a7f2-303f900a6c74")
+		)
+		(pin "5"
+			(uuid "6218a8a4-f7b5-4f22-a29d-1f474562542d")
+		)
+		(pin "13"
+			(uuid "8365a59f-0b21-4e59-b363-f343dd311b93")
+		)
+		(pin "8"
+			(uuid "8cc2f7c0-1d35-4b90-b349-886582a349c4")
+		)
+		(pin "16"
+			(uuid "9f7225d0-0e9f-4641-a937-e2a4a017f5c4")
+		)
+		(pin "29"
+			(uuid "d5218ce4-1d20-40d8-b4b2-90da6f809b68")
+		)
+		(pin "7"
+			(uuid "221d05cd-a23e-4cd1-a9c8-8e32a731e15d")
+		)
+		(pin "14"
+			(uuid "3987e73f-9b53-4472-b5fd-ec3fd8591395")
+		)
+		(pin "25"
+			(uuid "de7c1a88-89e5-499a-bdd5-6c2e7e08d9f5")
+		)
+		(pin "36"
+			(uuid "add5582f-f28a-49a4-811c-9d3a5722eb13")
+		)
+		(pin "10"
+			(uuid "4798ed20-0f35-4ddb-8b07-8d775292b09a")
+		)
+		(pin "37"
+			(uuid "63ce08f9-5cff-477d-a99f-00297e1e04d4")
+		)
+		(pin "35"
+			(uuid "89862e94-aaee-4a10-9aee-44bbea5132eb")
+		)
+		(pin "17"
+			(uuid "b2f4e434-95ca-4adb-89c8-d6a069edb8b0")
+		)
+		(pin "38"
+			(uuid "dbe68e24-0ca8-4011-b46a-3680de08c66f")
+		)
+		(pin "34"
+			(uuid "a0289a29-ab86-43c2-9031-4b79874b6dfc")
+		)
+		(pin "41"
+			(uuid "5906d828-3cd0-4812-8965-584e15abbf2e")
+		)
+		(pin "32"
+			(uuid "bce5acec-e1cc-4a8c-bec1-798358f84ba8")
+		)
+		(pin "33"
+			(uuid "2e72e949-0219-49f4-b0d9-23952733c6db")
+		)
+		(pin "40"
+			(uuid "5891de89-3f15-42c3-9be9-f46fda300627")
+		)
+		(pin "23"
+			(uuid "8c105a4f-b3ff-4fa0-b08d-8f13c4c58ddf")
+		)
+		(pin "3"
+			(uuid "361d3964-6a54-46d2-bc4e-5d1b33a2e859")
+		)
+		(pin "2"
+			(uuid "30b8267d-fefc-473e-ae10-997e44f4376d")
+		)
+		(pin "21"
+			(uuid "7cf853fa-695f-4171-bc4d-bd7f18a0604f")
+		)
+		(pin "12"
+			(uuid "fb8d5e38-af5b-40ca-8a6f-b81e62e79027")
+		)
+		(pin "22"
+			(uuid "dc8f7290-99b4-40df-81ef-510320a09a9a")
+		)
+		(pin "39"
+			(uuid "201e8270-b464-464d-b0f9-39eec65c46e0")
+		)
+		(pin "20"
+			(uuid "18cb5fc9-8d64-4939-8e93-7d806c3ab8c9")
+		)
+		(pin "9"
+			(uuid "3ebc7374-9676-4ae3-9c39-07b20a30bcf6")
+		)
+		(pin "1"
+			(uuid "b79c0fc0-607b-4783-bef7-c0b5fa31a9b8")
+		)
+		(pin "27"
+			(uuid "8fbafc20-70ff-45d8-9cca-a6a9564a33b3")
+		)
+		(pin "31"
+			(uuid "fe7dff12-6613-4f61-96ea-39517a0d2290")
+		)
+		(pin "26"
+			(uuid "e2a856a6-9d38-4a0f-95c7-8630027077d0")
+		)
+		(pin "18"
+			(uuid "cc07339e-bebc-4f66-9a41-8be3a7b754ed")
+		)
+		(pin "19"
+			(uuid "75c812f8-262d-41e2-bb98-db405a77b12a")
+		)
+		(pin "28"
+			(uuid "d7427db8-e891-42f0-b08f-5de2d5c9c3ef")
+		)
+		(pin "11"
+			(uuid "208e27fd-3249-4caa-8afe-6a8c41a397c2")
+		)
+		(pin "24"
+			(uuid "a91aa6fe-fa0e-4c43-8c85-4df8f6f7ab1b")
+		)
+		(instances
+			(project ""
+				(path "/96c136a7-3067-46c2-bf4e-e04595fcea78"
+					(reference "U1")
 					(unit 1)
 				)
 			)
@@ -2833,7 +3056,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "419e99e9-4894-42ba-9d51-bd912c76321e")
-		(property "Reference" "#PWR0204"
+		(property "Reference" "#PWR?"
 			(at 132.08 55.88 0)
 			(effects
 				(font
@@ -2881,6 +3104,12 @@
 			(uuid "c983d75c-48c2-462e-9870-1c646f5b0c79")
 		)
 		(instances
+			(project "adcs"
+				(path "/96c136a7-3067-46c2-bf4e-e04595fcea78"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d1b276aa-cc76-4829-b01b-98095216e3ce"
 					(reference "#PWR0204")
@@ -2899,7 +3128,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "45b8b407-dc62-40d1-8e1a-f95d5d5404fc")
-		(property "Reference" "C207"
+		(property "Reference" "C?"
 			(at 127 113.0237 90)
 			(effects
 				(font
@@ -2949,6 +3178,12 @@
 			(uuid "03d6e432-ec51-4895-91ef-5d0f49045115")
 		)
 		(instances
+			(project "adcs"
+				(path "/96c136a7-3067-46c2-bf4e-e04595fcea78"
+					(reference "C?")
+					(unit 1)
+				)
+			)
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d1b276aa-cc76-4829-b01b-98095216e3ce"
 					(reference "C207")
@@ -2967,7 +3202,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4a765509-a1a8-4166-999d-cfec210da46b")
-		(property "Reference" "#PWR0202"
+		(property "Reference" "#PWR?"
 			(at 104.14 55.88 0)
 			(effects
 				(font
@@ -3015,6 +3250,12 @@
 			(uuid "49d5aebd-bd1c-4c05-a3c3-ba45a8733f0d")
 		)
 		(instances
+			(project "adcs"
+				(path "/96c136a7-3067-46c2-bf4e-e04595fcea78"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d1b276aa-cc76-4829-b01b-98095216e3ce"
 					(reference "#PWR0202")
@@ -3033,7 +3274,7 @@
 		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "4e035e9c-ba41-4086-bc5d-2e97ce88bcb5")
-		(property "Reference" "R201"
+		(property "Reference" "R?"
 			(at 101.6 118.1099 0)
 			(effects
 				(font
@@ -3085,6 +3326,12 @@
 			(uuid "720cf23b-7e12-49a3-b4c3-14dbeda6096b")
 		)
 		(instances
+			(project "adcs"
+				(path "/96c136a7-3067-46c2-bf4e-e04595fcea78"
+					(reference "R?")
+					(unit 1)
+				)
+			)
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d1b276aa-cc76-4829-b01b-98095216e3ce"
 					(reference "R201")
@@ -3103,7 +3350,7 @@
 		(on_board yes)
 		(dnp yes)
 		(uuid "56558ed9-4784-4743-a5d4-bfaa55fa45db")
-		(property "Reference" "C203"
+		(property "Reference" "C?"
 			(at 91.44 113.0235 0)
 			(effects
 				(font
@@ -3155,6 +3402,12 @@
 			(uuid "cd7d5901-e95b-4ef9-ab64-835e2f5852ee")
 		)
 		(instances
+			(project "adcs"
+				(path "/96c136a7-3067-46c2-bf4e-e04595fcea78"
+					(reference "C?")
+					(unit 1)
+				)
+			)
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d1b276aa-cc76-4829-b01b-98095216e3ce"
 					(reference "C203")
@@ -3172,7 +3425,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "627943e1-8252-49c5-8791-701c89f9d7e7")
-		(property "Reference" "R204"
+		(property "Reference" "R?"
 			(at 135.636 70.358 90)
 			(effects
 				(font
@@ -3224,6 +3477,12 @@
 			(uuid "544382a3-07fe-44c3-81d0-9a0d1e665743")
 		)
 		(instances
+			(project "adcs"
+				(path "/96c136a7-3067-46c2-bf4e-e04595fcea78"
+					(reference "R?")
+					(unit 1)
+				)
+			)
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d1b276aa-cc76-4829-b01b-98095216e3ce"
 					(reference "R204")
@@ -3242,7 +3501,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "764bec95-43e4-453f-8844-62fb7b0dec66")
-		(property "Reference" "R208"
+		(property "Reference" "R?"
 			(at 191.77 86.3599 0)
 			(effects
 				(font
@@ -3294,6 +3553,12 @@
 			(uuid "4e6104e5-3b8e-4558-b021-d8c7f8debc11")
 		)
 		(instances
+			(project "adcs"
+				(path "/96c136a7-3067-46c2-bf4e-e04595fcea78"
+					(reference "R?")
+					(unit 1)
+				)
+			)
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d1b276aa-cc76-4829-b01b-98095216e3ce"
 					(reference "R208")
@@ -3312,7 +3577,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8d6341a6-52d6-47bb-aa2e-c864d5a476a9")
-		(property "Reference" "#PWR0203"
+		(property "Reference" "#PWR?"
 			(at 118.11 113.03 0)
 			(effects
 				(font
@@ -3360,6 +3625,12 @@
 			(uuid "63f314cb-e69a-4c6e-900b-3c89821dcdb1")
 		)
 		(instances
+			(project "adcs"
+				(path "/96c136a7-3067-46c2-bf4e-e04595fcea78"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d1b276aa-cc76-4829-b01b-98095216e3ce"
 					(reference "#PWR0203")
@@ -3378,7 +3649,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9ac33b71-05f1-4a8e-8e4b-8ac67e4ced18")
-		(property "Reference" "C208"
+		(property "Reference" "C?"
 			(at 142.24 113.0237 90)
 			(effects
 				(font
@@ -3428,195 +3699,15 @@
 			(uuid "11d6f8cc-f48e-43e0-b9ca-0b948495f2b1")
 		)
 		(instances
-			(project "nzif"
-				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d1b276aa-cc76-4829-b01b-98095216e3ce"
-					(reference "C208")
+			(project "adcs"
+				(path "/96c136a7-3067-46c2-bf4e-e04595fcea78"
+					(reference "C?")
 					(unit 1)
 				)
 			)
-		)
-	)
-	(symbol
-		(lib_id "Audio:ADAU1978xBCP")
-		(at 118.11 78.74 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "ccaa0708-e188-4168-ae42-1ff74a573d6d")
-		(property "Reference" "U201"
-			(at 115.57 82.042 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "ADAU1978xBCP"
-			(at 117.602 86.614 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_CSP:LFCSP-40-1EP_6x6mm_P0.5mm_EP3.9x3.9mm"
-			(at 118.11 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/ADAU1978.pdf"
-			(at 118.11 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Quad Analog-to-Digital Converter, 2Vrms differential inputs, LFCSP-40"
-			(at 118.11 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "31"
-			(uuid "3c9a4348-0c74-4bc0-a00e-d8ba9a01e047")
-		)
-		(pin "25"
-			(uuid "30ca5f91-611b-44c5-8321-05d26968d94d")
-		)
-		(pin "8"
-			(uuid "6ed74f20-c033-4a00-a72a-b79353582c2f")
-		)
-		(pin "15"
-			(uuid "63d76a6b-2034-4164-8766-c20020ef65aa")
-		)
-		(pin "1"
-			(uuid "a61c1415-079a-4a14-a7e3-61ac47846ff8")
-		)
-		(pin "12"
-			(uuid "d2250deb-ac1a-4380-8444-9b6709066860")
-		)
-		(pin "6"
-			(uuid "4a9f78ab-f48e-4221-9ef8-cc0ac9ee5431")
-		)
-		(pin "7"
-			(uuid "7a10bfa3-5d47-45a1-88eb-91cf3bedd7a7")
-		)
-		(pin "41"
-			(uuid "a463997a-05ac-4ec0-8dab-b0a1d6e3fa18")
-		)
-		(pin "33"
-			(uuid "d8506a91-d5cc-4ff6-9dd1-431c38a85f4b")
-		)
-		(pin "26"
-			(uuid "9e842260-e06e-48ac-ab79-1e008b8f570c")
-		)
-		(pin "10"
-			(uuid "bd069860-b63a-4d94-af0e-eef946b01362")
-		)
-		(pin "5"
-			(uuid "b35a79ba-e503-476c-8cca-5195d2508b3a")
-		)
-		(pin "9"
-			(uuid "609abeae-1520-4cbd-9afb-1a531d036017")
-		)
-		(pin "27"
-			(uuid "e6303d1a-1be3-4fe1-af62-7d1933a0e09f")
-		)
-		(pin "38"
-			(uuid "26a3117d-ce32-47da-9cda-bc57f47bc8d6")
-		)
-		(pin "39"
-			(uuid "e43ff70e-2e22-468d-8d9a-2146ee9a1a88")
-		)
-		(pin "36"
-			(uuid "9e4f274c-abdc-4303-b385-f7907d46e2b4")
-		)
-		(pin "37"
-			(uuid "fa73f614-d660-48fa-9cf2-715ae5ce6826")
-		)
-		(pin "4"
-			(uuid "6bd32954-32c0-456e-be86-91b0224c069e")
-		)
-		(pin "24"
-			(uuid "8a794a85-fe28-4546-ba3e-227cfb771d71")
-		)
-		(pin "23"
-			(uuid "865a9c83-0a24-40e4-be25-210bb109a3d8")
-		)
-		(pin "30"
-			(uuid "b943b6c8-6937-4ef5-a7ce-16acb935ac63")
-		)
-		(pin "14"
-			(uuid "ab90fe27-e243-48c1-9222-f27a8dbbe043")
-		)
-		(pin "17"
-			(uuid "dc912835-91a1-445c-b225-171aeb6102af")
-		)
-		(pin "2"
-			(uuid "0c1ce8d2-d5d2-42fc-8806-6b5a9e2455ee")
-		)
-		(pin "40"
-			(uuid "f2e8e2f2-2f81-42d5-bc41-376217e8dd09")
-		)
-		(pin "19"
-			(uuid "19d6792e-56fc-4738-8ae8-2a3bb5ddee6e")
-		)
-		(pin "20"
-			(uuid "893973ac-d386-428a-ae2f-6e500f72d382")
-		)
-		(pin "3"
-			(uuid "3369965b-54e1-4f04-aa95-74b9d29c15a0")
-		)
-		(pin "22"
-			(uuid "1bfd046c-4ead-4fd0-aa8a-51526c7e3243")
-		)
-		(pin "11"
-			(uuid "de76f7b6-779b-40f2-b9fc-ee7cc8e47a21")
-		)
-		(pin "13"
-			(uuid "2267530a-f53d-4c02-85a1-d1dcb889bb4d")
-		)
-		(pin "29"
-			(uuid "b5917448-e504-4b2b-a809-79a236276e6f")
-		)
-		(pin "28"
-			(uuid "3837b345-d22d-41cf-abf7-fafd4e556665")
-		)
-		(pin "16"
-			(uuid "48cd24bf-e90d-431c-914e-3ea0c38080b7")
-		)
-		(pin "18"
-			(uuid "e1aecde5-f8e2-41b0-805b-06c2475c9f50")
-		)
-		(pin "34"
-			(uuid "b0ea1164-0fc1-45ef-bd64-a9b2caaa0d89")
-		)
-		(pin "35"
-			(uuid "ea8e2e9a-8131-4164-836c-7fee7e39d6a4")
-		)
-		(pin "32"
-			(uuid "55aa5889-c4d8-4f96-8df6-11497df68ac9")
-		)
-		(pin "21"
-			(uuid "5e4cb146-ccc6-48f3-8199-1446fd400b76")
-		)
-		(instances
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d1b276aa-cc76-4829-b01b-98095216e3ce"
-					(reference "U201")
+					(reference "C208")
 					(unit 1)
 				)
 			)
@@ -3632,7 +3723,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d321b9c0-c49e-4021-8932-5f0b9f9d20a3")
-		(property "Reference" "C205"
+		(property "Reference" "C?"
 			(at 110.4836 40.64 90)
 			(effects
 				(font
@@ -3682,6 +3773,12 @@
 			(uuid "84735947-7342-4f50-bf25-b9b6d8e50e4f")
 		)
 		(instances
+			(project "adcs"
+				(path "/96c136a7-3067-46c2-bf4e-e04595fcea78"
+					(reference "C?")
+					(unit 1)
+				)
+			)
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d1b276aa-cc76-4829-b01b-98095216e3ce"
 					(reference "C205")
@@ -3699,7 +3796,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d523e4fe-1fc3-4ff5-b757-59613104164e")
-		(property "Reference" "R202"
+		(property "Reference" "R?"
 			(at 135.636 65.278 90)
 			(effects
 				(font
@@ -3751,6 +3848,12 @@
 			(uuid "825c1854-de75-4d55-ab19-c51a1243eeac")
 		)
 		(instances
+			(project "adcs"
+				(path "/96c136a7-3067-46c2-bf4e-e04595fcea78"
+					(reference "R?")
+					(unit 1)
+				)
+			)
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d1b276aa-cc76-4829-b01b-98095216e3ce"
 					(reference "R202")
@@ -3768,7 +3871,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "da6794c1-eec1-4888-8b68-25cef463d5bc")
-		(property "Reference" "R206"
+		(property "Reference" "R?"
 			(at 173.736 72.39 90)
 			(effects
 				(font
@@ -3820,6 +3923,12 @@
 			(uuid "6928db18-3f17-47f1-8f87-78462af3417a")
 		)
 		(instances
+			(project "adcs"
+				(path "/96c136a7-3067-46c2-bf4e-e04595fcea78"
+					(reference "R?")
+					(unit 1)
+				)
+			)
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d1b276aa-cc76-4829-b01b-98095216e3ce"
 					(reference "R206")
@@ -3838,7 +3947,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ebb7ae34-805f-4882-89dc-e6d3eb80a6b5")
-		(property "Reference" "C206"
+		(property "Reference" "C?"
 			(at 125.7363 40.64 90)
 			(effects
 				(font
@@ -3888,6 +3997,12 @@
 			(uuid "6ce3ee25-280f-4b5d-8838-27f73317dc22")
 		)
 		(instances
+			(project "adcs"
+				(path "/96c136a7-3067-46c2-bf4e-e04595fcea78"
+					(reference "C?")
+					(unit 1)
+				)
+			)
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d1b276aa-cc76-4829-b01b-98095216e3ce"
 					(reference "C206")
@@ -3906,7 +4021,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f3057780-0689-4567-a95b-c7370a8bc87a")
-		(property "Reference" "#PWR0206"
+		(property "Reference" "#PWR?"
 			(at 147.32 105.41 0)
 			(effects
 				(font
@@ -3954,6 +4069,12 @@
 			(uuid "2a2af365-86c1-42b7-90de-25221d7401fb")
 		)
 		(instances
+			(project "adcs"
+				(path "/96c136a7-3067-46c2-bf4e-e04595fcea78"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d1b276aa-cc76-4829-b01b-98095216e3ce"
 					(reference "#PWR0206")
@@ -3971,7 +4092,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f5a79791-cc81-49a5-9ea2-3a9ac7fd3ab2")
-		(property "Reference" "R207"
+		(property "Reference" "R?"
 			(at 181.864 72.898 90)
 			(effects
 				(font
@@ -4023,6 +4144,12 @@
 			(uuid "ec0e30e5-2078-48ae-ae5f-5c421b3880c5")
 		)
 		(instances
+			(project "adcs"
+				(path "/96c136a7-3067-46c2-bf4e-e04595fcea78"
+					(reference "R?")
+					(unit 1)
+				)
+			)
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d1b276aa-cc76-4829-b01b-98095216e3ce"
 					(reference "R207")
@@ -4040,7 +4167,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f5e8d84f-3432-4242-93cc-01a47cf861a4")
-		(property "Reference" "R205"
+		(property "Reference" "R?"
 			(at 135.636 72.898 90)
 			(effects
 				(font
@@ -4092,6 +4219,12 @@
 			(uuid "8155af41-266b-4d2b-8e6b-d6af3a3fb82b")
 		)
 		(instances
+			(project "adcs"
+				(path "/96c136a7-3067-46c2-bf4e-e04595fcea78"
+					(reference "R?")
+					(unit 1)
+				)
+			)
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d1b276aa-cc76-4829-b01b-98095216e3ce"
 					(reference "R205")
@@ -4110,7 +4243,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fe238c1b-ef9e-4086-9543-4b70d71c2cd2")
-		(property "Reference" "#PWR0201"
+		(property "Reference" "#PWR?"
 			(at 73.66 104.14 0)
 			(effects
 				(font
@@ -4158,6 +4291,12 @@
 			(uuid "8b60b5fa-a195-4cfe-a2df-dc900dbf615e")
 		)
 		(instances
+			(project "adcs"
+				(path "/96c136a7-3067-46c2-bf4e-e04595fcea78"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d1b276aa-cc76-4829-b01b-98095216e3ce"
 					(reference "#PWR0201")
@@ -4166,4 +4305,10 @@
 			)
 		)
 	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
 )
