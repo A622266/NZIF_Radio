@@ -4703,11 +4703,8 @@
 		)
 		(embedded_fonts no)
 	)
-<<<<<<< HEAD
 	(symbol "ADM811TARTZ-REEL7"
-=======
 	(symbol "ADAU1962AWBSTZ-RL"
->>>>>>> master
 		(pin_names
 			(offset 0.254)
 		)
@@ -4715,7 +4712,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "U"
-<<<<<<< HEAD
 			(at 2.54 11.43 0)
 			(effects
 				(font
@@ -4733,7 +4729,6 @@
 		)
 		(property "Footprint" "hf-transceiver:RA_4_ADI"
 			(at -27.94 1.27 0)
-=======
 			(at 0 78.74 0)
 			(effects
 				(font
@@ -4751,7 +4746,6 @@
 		)
 		(property "Footprint" "nzif_footprints:ST_80_2_ADI"
 			(at 0 0 0)
->>>>>>> master
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4760,13 +4754,10 @@
 				(hide yes)
 			)
 		)
-<<<<<<< HEAD
 		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/ADM811_812.pdf"
 			(at -27.94 1.27 0)
-=======
 		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/ADAU1962A.pdf"
 			(at 0 0 0)
->>>>>>> master
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4775,11 +4766,8 @@
 				(hide yes)
 			)
 		)
-<<<<<<< HEAD
 		(property "Description" ""
-=======
 		(property "Description" "12-Channel, 192 kHz Audio DAC with 112 dB DNR"
->>>>>>> master
 			(at 0 0 0)
 			(effects
 				(font
@@ -4788,9 +4776,7 @@
 				(hide yes)
 			)
 		)
-<<<<<<< HEAD
 		(property "ki_keywords" "ADM811TARTZ-REEL7"
-=======
 		(property "ki_locked" ""
 			(at 0 0 0)
 			(effects
@@ -4800,7 +4786,6 @@
 			)
 		)
 		(property "ki_keywords" "ADAU1962AWBSTZ-RL"
->>>>>>> master
 			(at 0 0 0)
 			(effects
 				(font
@@ -4809,11 +4794,8 @@
 				(hide yes)
 			)
 		)
-<<<<<<< HEAD
 		(property "ki_fp_filters" "RA_4_ADI"
-=======
 		(property "ki_fp_filters" "ST_80_2_ADI"
->>>>>>> master
 			(at 0 0 0)
 			(effects
 				(font
@@ -4822,13 +4804,11 @@
 				(hide yes)
 			)
 		)
-<<<<<<< HEAD
 		(symbol "ADM811TARTZ-REEL7_0_1"
 			(pin passive line
 				(at -11.43 2.54 0)
 				(length 3.81)
 				(name "GND"
-=======
 		(symbol "ADAU1962AWBSTZ-RL_1_1"
 			(rectangle
 				(start -30.48 76.2)
@@ -5025,7 +5005,6 @@
 				(at -33.02 11.43 0)
 				(length 2.54)
 				(name "DAC_BIAS3"
->>>>>>> master
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -5040,7 +5019,6 @@
 					)
 				)
 			)
-<<<<<<< HEAD
 			(pin passive line
 				(at 11.43 -2.54 180)
 				(length 3.81)
@@ -5094,12 +5072,10 @@
 				(at 11.43 2.54 180)
 				(length 3.81)
 				(name "RESET*"
-=======
 			(pin input line
 				(at -33.02 7.62 0)
 				(length 2.54)
 				(name "DAC_BIAS4"
->>>>>>> master
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -5114,12 +5090,10 @@
 					)
 				)
 			)
-<<<<<<< HEAD
 		)
 		(embedded_fonts no)
 	)
 	(symbol "ADP3338"
-=======
 			(pin bidirectional line
 				(at -33.02 -1.27 0)
 				(length 2.54)
@@ -6372,38 +6346,29 @@
 		(pin_names
 			(offset 0.254)
 		)
->>>>>>> master
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "U"
-<<<<<<< HEAD
 			(at 0 0.254 0)
-=======
 			(at 0 -7.62 0)
->>>>>>> master
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-<<<<<<< HEAD
 		(property "Value" "ADP3338"
 			(at 0 0 0)
-=======
 		(property "Value" "LT3094EDD-PBF"
 			(at 0 -10.16 0)
->>>>>>> master
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-<<<<<<< HEAD
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-223"
-=======
 		(property "Footprint" "nzif_footprints:DD_05-08-1725_ADI"
 			(at 0 2.54 0)
 			(effects
@@ -6425,7 +6390,6 @@
 			)
 		)
 		(property "Description" "Ultralow Noise, Ultrahigh PSRR Negative Linear Regulator"
->>>>>>> master
 			(at 0 0 0)
 			(effects
 				(font
@@ -6434,11 +6398,8 @@
 				(hide yes)
 			)
 		)
-<<<<<<< HEAD
 		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/ADP3338.pdf"
-=======
 		(property "ki_keywords" "LT3094EDD#PBF"
->>>>>>> master
 			(at 0 0 0)
 			(effects
 				(font
@@ -6447,11 +6408,8 @@
 				(hide yes)
 			)
 		)
-<<<<<<< HEAD
 		(property "Description" "Low Dropout Regulator, SOT-223"
-=======
 		(property "ki_fp_filters" "DD_05-08-1725_ADI DD_05-08-1725_ADI-M DD_05-08-1725_ADI-L"
->>>>>>> master
 			(at 0 0 0)
 			(effects
 				(font
@@ -6460,7 +6418,6 @@
 				(hide yes)
 			)
 		)
-<<<<<<< HEAD
 		(property "ki_keywords" "LDO"
 			(at 0 0 0)
 			(effects
@@ -6484,13 +6441,11 @@
 				(at -10.16 0 0)
 				(length 2.54)
 				(name "In"
-=======
 		(symbol "LT3094EDD-PBF_0_1"
 			(pin input line
 				(at -15.24 7.62 0)
 				(length 2.54)
 				(name "EN/UV"
->>>>>>> master
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -6506,11 +6461,9 @@
 				)
 			)
 			(pin input line
-<<<<<<< HEAD
 				(at 0 -7.62 90)
 				(length 2.54)
 				(name "GND"
-=======
 				(at -15.24 5.08 0)
 				(length 2.54)
 				(name "PGFB"
@@ -6568,7 +6521,6 @@
 				(at -2.54 15.24 270)
 				(length 2.54)
 				(name "IN"
->>>>>>> master
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -6583,17 +6535,14 @@
 					)
 				)
 			)
-<<<<<<< HEAD
 			(pin power_out line
 				(at 10.16 2.54 180)
 				(length 2.54)
 				(name "Out"
-=======
 			(pin power_in line
 				(at 0 15.24 270)
 				(length 2.54)
 				(name "IN"
->>>>>>> master
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -6609,11 +6558,9 @@
 				)
 			)
 			(pin power_out line
-<<<<<<< HEAD
 				(at 10.16 -2.54 180)
 				(length 2.54)
 				(name "Out"
-=======
 				(at 0 -20.32 90)
 				(length 2.54)
 				(name "GND"
@@ -6707,7 +6654,6 @@
 				(at 15.24 -2.54 180)
 				(length 2.54)
 				(name "PG"
->>>>>>> master
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -6723,17 +6669,14 @@
 				)
 			)
 		)
-<<<<<<< HEAD
 		(symbol "ADP3338_0_1"
 			(rectangle
 				(start -7.62 5.08)
 				(end 7.62 -5.08)
-=======
 		(symbol "LT3094EDD-PBF_1_1"
 			(rectangle
 				(start -12.7 12.7)
 				(end 12.7 -12.7)
->>>>>>> master
 				(stroke
 					(width 0)
 					(type default)
@@ -6742,12 +6685,10 @@
 					(type background)
 				)
 			)
-<<<<<<< HEAD
 		)
 		(embedded_fonts no)
 	)
 	(symbol "STD2805T4"
-=======
 			(pin input line
 				(at -15.24 0 0)
 				(length 2.54)
@@ -6770,14 +6711,12 @@
 		(embedded_fonts no)
 	)
 	(symbol "LT5400ACMS8E-4-PBF"
->>>>>>> master
 		(pin_names
 			(offset 0.254)
 		)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-<<<<<<< HEAD
 		(property "Reference" "Q"
 			(at 10.16 2.54 0)
 			(effects
@@ -6795,7 +6734,6 @@
 			)
 		)
 		(property "Footprint" "hf-transceiver:DPAKTO-252_TYPEA_STM"
-=======
 		(property "Reference" "U"
 			(at 0 15 0)
 			(effects
@@ -6823,7 +6761,6 @@
 			)
 		)
 		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/5400fc.pdf"
->>>>>>> master
 			(at 0 0 0)
 			(effects
 				(font
@@ -6833,7 +6770,6 @@
 				(hide yes)
 			)
 		)
-<<<<<<< HEAD
 		(property "Datasheet" "https://www.st.com/resource/en/datasheet/std2805t4.pdf"
 			(at 0 0 0)
 			(effects
@@ -6845,9 +6781,7 @@
 			)
 		)
 		(property "Description" ""
-=======
 		(property "Description" "Quad Matched Resistor Network, 0.01% Matching"
->>>>>>> master
 			(at 0 0 0)
 			(effects
 				(font
@@ -6856,11 +6790,8 @@
 				(hide yes)
 			)
 		)
-<<<<<<< HEAD
 		(property "ki_keywords" "STD2805T4"
-=======
 		(property "ki_keywords" "LT5400ACMS8E-4#PBF"
->>>>>>> master
 			(at 0 0 0)
 			(effects
 				(font
@@ -6869,11 +6800,8 @@
 				(hide yes)
 			)
 		)
-<<<<<<< HEAD
 		(property "ki_fp_filters" "DPAKTO-252_TYPEA_STM DPAKTO-252_TYPEA_STM-M DPAKTO-252_TYPEA_STM-L"
-=======
 		(property "ki_fp_filters" "MSOP-8_MS_LIT"
->>>>>>> master
 			(at 0 0 0)
 			(effects
 				(font
@@ -6882,7 +6810,6 @@
 				(hide yes)
 			)
 		)
-<<<<<<< HEAD
 		(symbol "STD2805T4_0_1"
 			(polyline
 				(pts
@@ -6983,24 +6910,19 @@
 				(at 0 0 0)
 				(length 2.54)
 				(name "Base"
-=======
 		(symbol "LT5400ACMS8E-4-PBF_0_1"
 			(pin passive line
 				(at 7.62 5.08 180)
 				(length 2.54)
 				(name "R1"
->>>>>>> master
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-<<<<<<< HEAD
 				(number "1"
-=======
 				(number "8"
->>>>>>> master
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -7009,15 +6931,12 @@
 				)
 			)
 			(pin passive line
-<<<<<<< HEAD
 				(at 7.62 5.08 270)
 				(length 2.54)
 				(name "Collector"
-=======
 				(at 7.62 2.54 180)
 				(length 2.54)
 				(name "R2"
->>>>>>> master
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -7033,11 +6952,9 @@
 				)
 			)
 			(pin passive line
-<<<<<<< HEAD
 				(at 7.62 -5.08 90)
 				(length 2.54)
 				(name "Emitter"
-=======
 				(at 7.62 0 180)
 				(length 2.54)
 				(name "R2"
@@ -7059,7 +6976,6 @@
 				(at 7.62 -2.54 180)
 				(length 2.54)
 				(name "R3"
->>>>>>> master
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -7074,8 +6990,6 @@
 					)
 				)
 			)
-<<<<<<< HEAD
-=======
 			(pin passive line
 				(at 7.62 -5.08 180)
 				(length 2.54)
@@ -8151,7 +8065,6 @@
 					)
 				)
 			)
->>>>>>> master
 		)
 		(embedded_fonts no)
 	)
