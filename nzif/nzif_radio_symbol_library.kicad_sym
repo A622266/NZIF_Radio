@@ -2845,80 +2845,26 @@
 					(type background)
 				)
 			)
+			(pin bidirectional line
+				(at -38.1 63.5 0)
+				(length 2.54)
+				(name "SDATA_IN0"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "75"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
 			(pin input line
 				(at -38.1 60.96 0)
-				(length 2.54)
-				(name "BCLK_IN0"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "73"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at -38.1 58.42 0)
-				(length 2.54)
-				(name "BCLK_IN1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "76"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at -38.1 55.88 0)
-				(length 2.54)
-				(name "BCLK_IN2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "81"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at -38.1 53.34 0)
-				(length 2.54)
-				(name "BCLK_IN3"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "84"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at -38.1 50.8 0)
 				(length 2.54)
 				(name "LRCLK_IN0/MP10"
 					(effects
@@ -2936,7 +2882,43 @@
 				)
 			)
 			(pin input line
-				(at -38.1 48.26 0)
+				(at -38.1 58.42 0)
+				(length 2.54)
+				(name "BCLK_IN0"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "73"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -38.1 53.34 0)
+				(length 2.54)
+				(name "SDATA_IN1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "78"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -38.1 50.8 0)
 				(length 2.54)
 				(name "LRCLK_IN1/MP11"
 					(effects
@@ -2954,7 +2936,43 @@
 				)
 			)
 			(pin input line
-				(at -38.1 45.72 0)
+				(at -38.1 48.26 0)
+				(length 2.54)
+				(name "BCLK_IN1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "76"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -38.1 43.18 0)
+				(length 2.54)
+				(name "SDATA_IN2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "83"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -38.1 40.64 0)
 				(length 2.54)
 				(name "LRCLK_IN2/MP12"
 					(effects
@@ -2972,7 +2990,43 @@
 				)
 			)
 			(pin input line
-				(at -38.1 43.18 0)
+				(at -38.1 38.1 0)
+				(length 2.54)
+				(name "BCLK_IN2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "81"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -38.1 33.02 0)
+				(length 2.54)
+				(name "SDATA_IN3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "86"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -38.1 30.48 0)
 				(length 2.54)
 				(name "LRCLK_IN3/MP13"
 					(effects
@@ -2989,71 +3043,17 @@
 					)
 				)
 			)
-			(pin bidirectional line
-				(at -38.1 38.1 0)
+			(pin input line
+				(at -38.1 27.94 0)
 				(length 2.54)
-				(name "SDATA_IN0"
+				(name "BCLK_IN3"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "75"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at -38.1 35.56 0)
-				(length 2.54)
-				(name "SDATA_IN1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "78"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at -38.1 33.02 0)
-				(length 2.54)
-				(name "SDATA_IN2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "83"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at -38.1 30.48 0)
-				(length 2.54)
-				(name "SDATA_IN3"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "86"
+				(number "84"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -3584,79 +3584,25 @@
 				)
 			)
 			(pin output line
+				(at 38.1 63.5 180)
+				(length 2.54)
+				(name "SDATA_OUT0"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "49"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
 				(at 38.1 60.96 180)
-				(length 2.54)
-				(name "BCLK_OUT0"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "48"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin output line
-				(at 38.1 58.42 180)
-				(length 2.54)
-				(name "BCLK_OUT1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "51"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin output line
-				(at 38.1 55.88 180)
-				(length 2.54)
-				(name "BCLK_OUT2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "56"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin output line
-				(at 38.1 53.34 180)
-				(length 2.54)
-				(name "BCLK_OUT3"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "59"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin output line
-				(at 38.1 50.8 180)
 				(length 2.54)
 				(name "LRCLK_OUT0/MP4"
 					(effects
@@ -3674,7 +3620,43 @@
 				)
 			)
 			(pin output line
-				(at 38.1 48.26 180)
+				(at 38.1 58.42 180)
+				(length 2.54)
+				(name "BCLK_OUT0"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "48"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 38.1 53.34 180)
+				(length 2.54)
+				(name "SDATA_OUT1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "52"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at 38.1 50.8 180)
 				(length 2.54)
 				(name "LRCLK_OUT1/MP5"
 					(effects
@@ -3692,7 +3674,43 @@
 				)
 			)
 			(pin output line
-				(at 38.1 45.72 180)
+				(at 38.1 48.26 180)
+				(length 2.54)
+				(name "BCLK_OUT1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "51"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 38.1 43.18 180)
+				(length 2.54)
+				(name "SDATA_OUT2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "57"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at 38.1 40.64 180)
 				(length 2.54)
 				(name "LRCLK_OUT2/MP8"
 					(effects
@@ -3710,52 +3728,16 @@
 				)
 			)
 			(pin output line
-				(at 38.1 43.18 180)
-				(length 2.54)
-				(name "LRCLK_OUT3/MP9"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "58"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin output line
 				(at 38.1 38.1 180)
 				(length 2.54)
-				(name "SDATA_OUT0"
+				(name "BCLK_OUT2"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "49"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at 38.1 35.56 180)
-				(length 2.54)
-				(name "SDATA_OUT1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "52"
+				(number "56"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -3766,24 +3748,6 @@
 			(pin bidirectional line
 				(at 38.1 33.02 180)
 				(length 2.54)
-				(name "SDATA_OUT2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "57"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at 38.1 30.48 180)
-				(length 2.54)
 				(name "SDATA_OUT3"
 					(effects
 						(font
@@ -3792,6 +3756,42 @@
 					)
 				)
 				(number "60"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at 38.1 30.48 180)
+				(length 2.54)
+				(name "BCLK_OUT3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "59"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at 38.1 27.94 180)
+				(length 2.54)
+				(name "LRCLK_OUT3/MP9"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "58"
 					(effects
 						(font
 							(size 1.27 1.27)
