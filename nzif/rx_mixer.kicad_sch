@@ -2754,7 +2754,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "002aa367-58fa-4118-a376-33ca367be598")
-		(property "Reference" "C?"
+		(property "Reference" "C18"
 			(at 332.74 129.5335 0)
 			(effects
 				(font
@@ -2830,7 +2830,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0731c72b-52ac-4025-8579-e337854f55b3")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR026"
 			(at 356.87 147.32 0)
 			(effects
 				(font
@@ -2902,7 +2902,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "077d71b5-2720-4a5e-b864-054947a5c261")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR012"
 			(at 81.28 124.46 0)
 			(effects
 				(font
@@ -2965,6 +2965,94 @@
 		)
 	)
 	(symbol
+		(lib_id "nzif_radio_symbol_library:ADA4620-2ARZ")
+		(at 228.6 95.25 0)
+		(unit 2)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0abc161f-52f9-4dad-afb7-db312b0431a7")
+		(property "Reference" "U3"
+			(at 228.6 82.55 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Value" "ADA4620-2ARZ"
+			(at 228.6 85.09 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Footprint" "nzif_footprints:R-8_ADI"
+			(at 228.6 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/ada4620.pdf"
+			(at 228.6 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Dual, Precision, Low Noise, Rail-to-Rail I/O Op Amp, 14MHz GBW, SOIC-8"
+			(at 228.6 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "27c82643-b34d-44dd-8e95-89871bd02327")
+		)
+		(pin "2"
+			(uuid "b18a5285-cf36-4f13-9063-150f6afaacae")
+		)
+		(pin "3"
+			(uuid "de4b5dac-b3ea-40be-9d5a-2ec84e348a7c")
+		)
+		(pin "7"
+			(uuid "8faeac02-514c-4dfd-bf56-a22f59d6dc02")
+		)
+		(pin "8"
+			(uuid "f6721dc5-7ede-4d73-a744-379998e14e03")
+		)
+		(pin "1"
+			(uuid "575808c1-0ee7-4977-afd4-71327a6c5fb1")
+		)
+		(pin "5"
+			(uuid "2ee1210c-c928-4d3e-8955-ff33ae2084e1")
+		)
+		(pin "6"
+			(uuid "e4c042aa-6890-4533-930b-c93c847afddf")
+		)
+		(instances
+			(project ""
+				(path "/7cc72b98-3836-4c2a-8199-0c423deb5fd0"
+					(reference "U3")
+					(unit 2)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 339.09 133.35 0)
 		(unit 1)
@@ -2974,7 +3062,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0cd41cb5-1710-4ede-a542-85b695ec012b")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR024"
 			(at 339.09 139.7 0)
 			(effects
 				(font
@@ -3038,34 +3126,32 @@
 	)
 	(symbol
 		(lib_id "nzif_radio_symbol_library:ADA4620-2ARZ")
-		(at 246.38 40.64 0)
-		(unit 3)
+		(at 232.41 161.29 0)
+		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "0ee7a387-b3ae-416c-a8bc-c1fee10eae86")
-		(property "Reference" "U202"
-			(at 247.65 39.3699 0)
+		(uuid "0d6fd33a-8dd5-4000-82ae-8b94f43e8bc9")
+		(property "Reference" "U4"
+			(at 232.41 148.59 0)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(justify left)
 			)
 		)
 		(property "Value" "ADA4620-2ARZ"
-			(at 247.65 41.9099 0)
+			(at 232.41 151.13 0)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" "nzif_footprints:R-8_ADI"
-			(at 246.38 40.64 0)
+			(at 232.41 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3075,7 +3161,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/ada4620.pdf"
-			(at 246.38 40.64 0)
+			(at 232.41 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3085,7 +3171,7 @@
 			)
 		)
 		(property "Description" "Dual, Precision, Low Noise, Rail-to-Rail I/O Op Amp, 14MHz GBW, SOIC-8"
-			(at 246.38 40.64 0)
+			(at 232.41 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3093,34 +3179,124 @@
 				(hide yes)
 			)
 		)
-		(pin "8"
-			(uuid "dd70a9d9-4856-46d7-a66f-00ac7f7cb310")
+		(pin "4"
+			(uuid "7b1e173e-27e5-4319-8d32-396cd6b6f456")
 		)
 		(pin "7"
-			(uuid "11cfac21-0c8c-4443-acf9-3eb09ecc057b")
-		)
-		(pin "6"
-			(uuid "48bc6415-276e-4689-8d75-b1e07990456c")
-		)
-		(pin "4"
-			(uuid "32f227e3-cd60-4fcf-bd83-d1575f8a61e1")
+			(uuid "6d89681e-3186-407f-9d9b-ab7992da3818")
 		)
 		(pin "5"
-			(uuid "fed5169a-158a-45e7-a6d0-d5f931d2aeef")
+			(uuid "99b20ad1-79ef-46bd-a7c8-a9818eea3f2e")
+		)
+		(pin "8"
+			(uuid "52ee71c8-29ef-41c8-9918-0c50e5a128aa")
 		)
 		(pin "1"
-			(uuid "89847247-1c58-4288-bb1b-1c07a85b4b04")
+			(uuid "06bf30dd-fc3d-49d7-aa5c-d9c405be7231")
+		)
+		(pin "6"
+			(uuid "11c59d7b-5499-4ba0-8e7e-f8e84b59cbaf")
 		)
 		(pin "2"
-			(uuid "54dc78c5-61f4-48ae-9b5e-2f99e5fde966")
+			(uuid "3405d600-efc1-4b9d-a5ae-c11f19107334")
 		)
 		(pin "3"
-			(uuid "95d75fc8-6a61-4a7b-aad1-360778fa97f8")
+			(uuid "0b927a68-ac29-4781-9c29-34e60377803a")
 		)
 		(instances
 			(project ""
-				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
-					(reference "U202")
+				(path "/7cc72b98-3836-4c2a-8199-0c423deb5fd0"
+					(reference "U4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "nzif_radio_symbol_library:ADA4620-2ARZ")
+		(at 250.19 133.35 0)
+		(unit 3)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0e0629a4-1615-487f-9b20-3b84d3b8c4ac")
+		(property "Reference" "U4"
+			(at 251.46 132.0799 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "ADA4620-2ARZ"
+			(at 251.46 134.6199 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "nzif_footprints:R-8_ADI"
+			(at 250.19 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/ada4620.pdf"
+			(at 250.19 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Dual, Precision, Low Noise, Rail-to-Rail I/O Op Amp, 14MHz GBW, SOIC-8"
+			(at 250.19 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "7b1e173e-27e5-4319-8d32-396cd6b6f457")
+		)
+		(pin "7"
+			(uuid "6d89681e-3186-407f-9d9b-ab7992da3819")
+		)
+		(pin "5"
+			(uuid "99b20ad1-79ef-46bd-a7c8-a9818eea3f2f")
+		)
+		(pin "8"
+			(uuid "52ee71c8-29ef-41c8-9918-0c50e5a128ab")
+		)
+		(pin "1"
+			(uuid "06bf30dd-fc3d-49d7-aa5c-d9c405be7232")
+		)
+		(pin "6"
+			(uuid "11c59d7b-5499-4ba0-8e7e-f8e84b59cbb0")
+		)
+		(pin "2"
+			(uuid "3405d600-efc1-4b9d-a5ae-c11f19107335")
+		)
+		(pin "3"
+			(uuid "0b927a68-ac29-4781-9c29-34e60377803b")
+		)
+		(instances
+			(project ""
+				(path "/7cc72b98-3836-4c2a-8199-0c423deb5fd0"
+					(reference "U4")
 					(unit 3)
 				)
 			)
@@ -3136,7 +3312,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "124440c6-df5d-4e5b-8c2b-b4da05f8221b")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR023"
 			(at 335.28 46.99 0)
 			(effects
 				(font
@@ -3208,7 +3384,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "127317c1-d2a7-4266-8006-41e81392726f")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR010"
 			(at 53.34 82.55 0)
 			(effects
 				(font
@@ -3280,7 +3456,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "19957489-b7d5-4554-a77e-2a874cd255e9")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR02"
 			(at 54.61 157.48 0)
 			(effects
 				(font
@@ -3343,6 +3519,96 @@
 		)
 	)
 	(symbol
+		(lib_id "nzif_radio_symbol_library:ADA4620-2ARZ")
+		(at 356.87 133.35 0)
+		(unit 3)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1f587a39-1490-4b6b-a965-333916a08dee")
+		(property "Reference" "U6"
+			(at 358.14 132.0799 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "ADA4620-2ARZ"
+			(at 358.14 134.6199 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "nzif_footprints:R-8_ADI"
+			(at 356.87 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/ada4620.pdf"
+			(at 356.87 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Dual, Precision, Low Noise, Rail-to-Rail I/O Op Amp, 14MHz GBW, SOIC-8"
+			(at 356.87 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5505506f-df2c-44f3-af28-ce5ac99eda0f")
+		)
+		(pin "2"
+			(uuid "dbf7307b-45f5-4de1-9bf5-8a47fdec791a")
+		)
+		(pin "3"
+			(uuid "9f0d4338-0744-42ec-a3c5-655bd0c42d17")
+		)
+		(pin "6"
+			(uuid "8100e776-9dea-4811-8eee-623e22e66824")
+		)
+		(pin "7"
+			(uuid "d77d9554-565d-46aa-8193-e6f5410637d9")
+		)
+		(pin "8"
+			(uuid "3fb23fa5-0d98-4c5b-8906-d0f5db1236c1")
+		)
+		(pin "4"
+			(uuid "30beacfd-dc78-436f-8396-1bd24a7952b7")
+		)
+		(pin "5"
+			(uuid "1aae3530-4453-45af-85f8-ae574c7b1ce9")
+		)
+		(instances
+			(project ""
+				(path "/7cc72b98-3836-4c2a-8199-0c423deb5fd0"
+					(reference "U6")
+					(unit 3)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Small")
 		(at 92.71 182.88 180)
 		(unit 1)
@@ -3352,7 +3618,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "23268181-a962-453a-aa94-61f315104b62")
-		(property "Reference" "C?"
+		(property "Reference" "C14"
 			(at 95.25 181.6035 0)
 			(effects
 				(font
@@ -3428,7 +3694,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "25651411-ea8f-47e6-953e-731f9d192024")
-		(property "Reference" "C?"
+		(property "Reference" "C8"
 			(at 113.03 91.4335 0)
 			(effects
 				(font
@@ -3504,7 +3770,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "30fbc97c-f836-410f-95ce-dcc8e1ccfb05")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR017"
 			(at 219.71 46.99 0)
 			(effects
 				(font
@@ -3576,7 +3842,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "32268ea5-aef9-4835-9cf9-3bd1e7c40e6e")
-		(property "Reference" "C?"
+		(property "Reference" "C3"
 			(at 46.99 72.3835 0)
 			(effects
 				(font
@@ -3644,16 +3910,16 @@
 	)
 	(symbol
 		(lib_id "nzif_radio_symbol_library:ADA4620-2ARZ")
-		(at 339.09 161.29 0)
-		(unit 1)
+		(at 335.28 95.25 0)
+		(unit 2)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "34a8ec51-0527-4915-b6ba-8c9d86be75c2")
-		(property "Reference" "U207"
-			(at 339.09 149.86 0)
+		(uuid "338f4a9a-9825-441c-bbf8-880ce30ce432")
+		(property "Reference" "U5"
+			(at 335.28 82.55 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -3661,7 +3927,7 @@
 			)
 		)
 		(property "Value" "ADA4620-2ARZ"
-			(at 339.09 152.4 0)
+			(at 335.28 85.09 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -3669,7 +3935,7 @@
 			)
 		)
 		(property "Footprint" "nzif_footprints:R-8_ADI"
-			(at 339.09 161.29 0)
+			(at 335.28 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3679,7 +3945,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/ada4620.pdf"
-			(at 339.09 161.29 0)
+			(at 335.28 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3689,7 +3955,7 @@
 			)
 		)
 		(property "Description" "Dual, Precision, Low Noise, Rail-to-Rail I/O Op Amp, 14MHz GBW, SOIC-8"
-			(at 339.09 161.29 0)
+			(at 335.28 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3697,35 +3963,123 @@
 				(hide yes)
 			)
 		)
-		(pin "8"
-			(uuid "dd70a9d9-4856-46d7-a66f-00ac7f7cb312")
-		)
-		(pin "7"
-			(uuid "11cfac21-0c8c-4443-acf9-3eb09ecc057d")
-		)
-		(pin "6"
-			(uuid "48bc6415-276e-4689-8d75-b1e07990456e")
-		)
 		(pin "4"
-			(uuid "32f227e3-cd60-4fcf-bd83-d1575f8a61e3")
+			(uuid "1fc830fc-f233-481f-8248-07d1ea002840")
 		)
 		(pin "5"
-			(uuid "fed5169a-158a-45e7-a6d0-d5f931d2aef1")
-		)
-		(pin "1"
-			(uuid "7943e90c-5622-42c1-959f-b0dc72370226")
+			(uuid "656d7e46-3377-484e-9329-bedefaa011c3")
 		)
 		(pin "2"
-			(uuid "4454fc51-0fc7-45c8-9c69-952a51486724")
+			(uuid "b3b7fb65-d059-4204-8ad3-2dfecf28c943")
 		)
 		(pin "3"
-			(uuid "5bacac92-e6ff-4ad9-a578-3e47f7c9fc1a")
+			(uuid "8fa1b2f9-6417-439c-af88-9d12b5ebc270")
+		)
+		(pin "8"
+			(uuid "cb9148c6-1e62-4122-ac36-35582831db46")
+		)
+		(pin "7"
+			(uuid "1ab07a22-024b-49eb-bb2a-75c136a00d98")
+		)
+		(pin "6"
+			(uuid "3784c4e9-7ee6-4174-b1d0-ed14bf2eb763")
+		)
+		(pin "1"
+			(uuid "238820c9-3f47-493d-bd3f-72141e5a1557")
 		)
 		(instances
-			(project "nzif"
-				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
-					(reference "U207")
-					(unit 1)
+			(project ""
+				(path "/7cc72b98-3836-4c2a-8199-0c423deb5fd0"
+					(reference "U5")
+					(unit 2)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "nzif_radio_symbol_library:ADA4620-2ARZ")
+		(at 232.41 187.96 0)
+		(unit 2)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "382ec628-6d5b-4c64-a5b0-a7956e951459")
+		(property "Reference" "U4"
+			(at 232.41 175.26 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Value" "ADA4620-2ARZ"
+			(at 232.41 177.8 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Footprint" "nzif_footprints:R-8_ADI"
+			(at 232.41 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/ada4620.pdf"
+			(at 232.41 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Dual, Precision, Low Noise, Rail-to-Rail I/O Op Amp, 14MHz GBW, SOIC-8"
+			(at 232.41 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "7b1e173e-27e5-4319-8d32-396cd6b6f458")
+		)
+		(pin "7"
+			(uuid "6d89681e-3186-407f-9d9b-ab7992da381a")
+		)
+		(pin "5"
+			(uuid "99b20ad1-79ef-46bd-a7c8-a9818eea3f30")
+		)
+		(pin "8"
+			(uuid "52ee71c8-29ef-41c8-9918-0c50e5a128ac")
+		)
+		(pin "1"
+			(uuid "06bf30dd-fc3d-49d7-aa5c-d9c405be7233")
+		)
+		(pin "6"
+			(uuid "11c59d7b-5499-4ba0-8e7e-f8e84b59cbb1")
+		)
+		(pin "2"
+			(uuid "3405d600-efc1-4b9d-a5ae-c11f19107336")
+		)
+		(pin "3"
+			(uuid "0b927a68-ac29-4781-9c29-34e60377803c")
+		)
+		(instances
+			(project ""
+				(path "/7cc72b98-3836-4c2a-8199-0c423deb5fd0"
+					(reference "U4")
+					(unit 2)
 				)
 			)
 		)
@@ -3740,7 +4094,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "387a8f07-e38a-4a39-9062-df74ebe5d5d9")
-		(property "Reference" "C?"
+		(property "Reference" "C20"
 			(at 341.63 129.5335 0)
 			(effects
 				(font
@@ -3816,7 +4170,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "390dbc0d-320c-4dd9-90be-acc39dfa502a")
-		(property "Reference" "C?"
+		(property "Reference" "C1"
 			(at 48.26 147.3135 0)
 			(effects
 				(font
@@ -3892,7 +4246,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3b85e0be-a8c5-4610-9388-ab93dcdd7256")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR06"
 			(at 102.87 184.15 0)
 			(effects
 				(font
@@ -3964,7 +4318,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3d172bc4-31a7-499e-936d-c1735b5c9ead")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR08"
 			(at 246.38 54.61 0)
 			(effects
 				(font
@@ -4027,94 +4381,6 @@
 		)
 	)
 	(symbol
-		(lib_id "nzif_radio_symbol_library:ADA4620-2ARZ")
-		(at 228.6 68.58 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3fee8259-77c6-4ebd-87fb-52e01da5adf6")
-		(property "Reference" "U202"
-			(at 228.6 57.15 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Value" "ADA4620-2ARZ"
-			(at 228.6 59.69 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Footprint" "nzif_footprints:R-8_ADI"
-			(at 228.6 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/ada4620.pdf"
-			(at 228.6 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Dual, Precision, Low Noise, Rail-to-Rail I/O Op Amp, 14MHz GBW, SOIC-8"
-			(at 228.6 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "8"
-			(uuid "dd70a9d9-4856-46d7-a66f-00ac7f7cb310")
-		)
-		(pin "7"
-			(uuid "11cfac21-0c8c-4443-acf9-3eb09ecc057b")
-		)
-		(pin "6"
-			(uuid "48bc6415-276e-4689-8d75-b1e07990456c")
-		)
-		(pin "4"
-			(uuid "32f227e3-cd60-4fcf-bd83-d1575f8a61e1")
-		)
-		(pin "5"
-			(uuid "fed5169a-158a-45e7-a6d0-d5f931d2aeef")
-		)
-		(pin "1"
-			(uuid "89847247-1c58-4288-bb1b-1c07a85b4b04")
-		)
-		(pin "2"
-			(uuid "54dc78c5-61f4-48ae-9b5e-2f99e5fde966")
-		)
-		(pin "3"
-			(uuid "95d75fc8-6a61-4a7b-aad1-360778fa97f8")
-		)
-		(instances
-			(project ""
-				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
-					(reference "U202")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 353.06 48.26 0)
 		(unit 1)
@@ -4124,7 +4390,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "41266098-1b62-45fa-bcd2-0e0de1ec1b69")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR025"
 			(at 353.06 54.61 0)
 			(effects
 				(font
@@ -4196,7 +4462,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "46cb51c7-c79a-46ba-9763-45aac6c4ba57")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR05"
 			(at 92.71 191.77 0)
 			(effects
 				(font
@@ -4268,7 +4534,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "49cb4713-412c-48ca-9563-3a502c291685")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR022"
 			(at 330.2 139.7 0)
 			(effects
 				(font
@@ -4332,16 +4598,16 @@
 	)
 	(symbol
 		(lib_id "nzif_radio_symbol_library:ADA4620-2ARZ")
-		(at 232.41 161.29 0)
+		(at 335.28 68.58 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "5572409c-f0b4-4b79-884b-1e250b828d3f")
-		(property "Reference" "U206"
-			(at 232.41 149.86 0)
+		(uuid "6bddfabc-9946-462d-bdd4-2c6ec965652c")
+		(property "Reference" "U5"
+			(at 335.28 55.88 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -4349,7 +4615,7 @@
 			)
 		)
 		(property "Value" "ADA4620-2ARZ"
-			(at 232.41 152.4 0)
+			(at 335.28 58.42 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -4357,7 +4623,7 @@
 			)
 		)
 		(property "Footprint" "nzif_footprints:R-8_ADI"
-			(at 232.41 161.29 0)
+			(at 335.28 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4367,7 +4633,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/ada4620.pdf"
-			(at 232.41 161.29 0)
+			(at 335.28 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4377,7 +4643,7 @@
 			)
 		)
 		(property "Description" "Dual, Precision, Low Noise, Rail-to-Rail I/O Op Amp, 14MHz GBW, SOIC-8"
-			(at 232.41 161.29 0)
+			(at 335.28 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4385,34 +4651,34 @@
 				(hide yes)
 			)
 		)
-		(pin "8"
-			(uuid "dd70a9d9-4856-46d7-a66f-00ac7f7cb312")
-		)
-		(pin "7"
-			(uuid "11cfac21-0c8c-4443-acf9-3eb09ecc057d")
-		)
-		(pin "6"
-			(uuid "48bc6415-276e-4689-8d75-b1e07990456e")
-		)
 		(pin "4"
-			(uuid "32f227e3-cd60-4fcf-bd83-d1575f8a61e3")
+			(uuid "1fc830fc-f233-481f-8248-07d1ea002840")
 		)
 		(pin "5"
-			(uuid "fed5169a-158a-45e7-a6d0-d5f931d2aef1")
-		)
-		(pin "1"
-			(uuid "05ba938c-b436-4898-8353-a7bf6721bae8")
+			(uuid "656d7e46-3377-484e-9329-bedefaa011c3")
 		)
 		(pin "2"
-			(uuid "6f9f48ed-6ec3-484c-94cd-69214f46989b")
+			(uuid "b3b7fb65-d059-4204-8ad3-2dfecf28c943")
 		)
 		(pin "3"
-			(uuid "329946fd-8065-42f7-9a2f-ad8ee66077f5")
+			(uuid "8fa1b2f9-6417-439c-af88-9d12b5ebc270")
+		)
+		(pin "8"
+			(uuid "cb9148c6-1e62-4122-ac36-35582831db46")
+		)
+		(pin "7"
+			(uuid "1ab07a22-024b-49eb-bb2a-75c136a00d98")
+		)
+		(pin "6"
+			(uuid "3784c4e9-7ee6-4174-b1d0-ed14bf2eb763")
+		)
+		(pin "1"
+			(uuid "238820c9-3f47-493d-bd3f-72141e5a1557")
 		)
 		(instances
-			(project "nzif"
-				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
-					(reference "U206")
+			(project ""
+				(path "/7cc72b98-3836-4c2a-8199-0c423deb5fd0"
+					(reference "U5")
 					(unit 1)
 				)
 			)
@@ -4428,7 +4694,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "72e094c9-4916-4ade-b79a-48a8897fb829")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR07"
 			(at 111.76 176.53 0)
 			(effects
 				(font
@@ -4500,7 +4766,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7b9e311e-91ea-4ae7-937f-b03c7daa70d5")
-		(property "Reference" "C?"
+		(property "Reference" "C2"
 			(at 57.15 147.3135 0)
 			(effects
 				(font
@@ -4568,16 +4834,16 @@
 	)
 	(symbol
 		(lib_id "nzif_radio_symbol_library:ADA4620-2ARZ")
-		(at 250.19 133.35 0)
+		(at 246.38 40.64 0)
 		(unit 3)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "8315b355-d552-4bc8-b5d7-f7087089f3a1")
-		(property "Reference" "U206"
-			(at 251.46 132.0799 0)
+		(uuid "80b62c6e-c486-4bd5-8077-f1ad2bae1017")
+		(property "Reference" "U3"
+			(at 247.65 39.3699 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -4586,7 +4852,7 @@
 			)
 		)
 		(property "Value" "ADA4620-2ARZ"
-			(at 251.46 134.6199 0)
+			(at 247.65 41.9099 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -4595,7 +4861,7 @@
 			)
 		)
 		(property "Footprint" "nzif_footprints:R-8_ADI"
-			(at 250.19 133.35 0)
+			(at 246.38 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4605,7 +4871,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/ada4620.pdf"
-			(at 250.19 133.35 0)
+			(at 246.38 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4615,7 +4881,7 @@
 			)
 		)
 		(property "Description" "Dual, Precision, Low Noise, Rail-to-Rail I/O Op Amp, 14MHz GBW, SOIC-8"
-			(at 250.19 133.35 0)
+			(at 246.38 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4623,34 +4889,34 @@
 				(hide yes)
 			)
 		)
-		(pin "8"
-			(uuid "dbc885ce-e85d-46b2-8031-5e902723794b")
-		)
-		(pin "7"
-			(uuid "11cfac21-0c8c-4443-acf9-3eb09ecc057c")
-		)
-		(pin "6"
-			(uuid "48bc6415-276e-4689-8d75-b1e07990456d")
-		)
 		(pin "4"
-			(uuid "c0b51619-4153-458f-8fa9-fee3f3b6d336")
-		)
-		(pin "5"
-			(uuid "fed5169a-158a-45e7-a6d0-d5f931d2aef0")
-		)
-		(pin "1"
-			(uuid "89847247-1c58-4288-bb1b-1c07a85b4b05")
+			(uuid "27c82643-b34d-44dd-8e95-89871bd02328")
 		)
 		(pin "2"
-			(uuid "54dc78c5-61f4-48ae-9b5e-2f99e5fde967")
+			(uuid "b18a5285-cf36-4f13-9063-150f6afaacaf")
 		)
 		(pin "3"
-			(uuid "95d75fc8-6a61-4a7b-aad1-360778fa97f9")
+			(uuid "de4b5dac-b3ea-40be-9d5a-2ec84e348a7d")
+		)
+		(pin "7"
+			(uuid "8faeac02-514c-4dfd-bf56-a22f59d6dc03")
+		)
+		(pin "8"
+			(uuid "f6721dc5-7ede-4d73-a744-379998e14e04")
+		)
+		(pin "1"
+			(uuid "575808c1-0ee7-4977-afd4-71327a6c5fb2")
+		)
+		(pin "5"
+			(uuid "2ee1210c-c928-4d3e-8955-ff33ae2084e2")
+		)
+		(pin "6"
+			(uuid "e4c042aa-6890-4533-930b-c93c847afde0")
 		)
 		(instances
-			(project "nzif"
-				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
-					(reference "U206")
+			(project ""
+				(path "/7cc72b98-3836-4c2a-8199-0c423deb5fd0"
+					(reference "U3")
 					(unit 3)
 				)
 			)
@@ -4666,7 +4932,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "848c6cc1-5b86-43d7-a507-f65dc6de9575")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR01"
 			(at 45.72 157.48 0)
 			(effects
 				(font
@@ -4738,7 +5004,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8763ddff-4950-4442-a787-2c895876049b")
-		(property "Reference" "C?"
+		(property "Reference" "C15"
 			(at 105.41 173.9835 0)
 			(effects
 				(font
@@ -4814,7 +5080,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8a833095-3ddd-46d4-8ff9-6f5cebe18878")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR018"
 			(at 228.6 46.99 0)
 			(effects
 				(font
@@ -4886,7 +5152,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8a916add-8e03-4a37-bdc2-61d14011d714")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR015"
 			(at 110.49 101.6 0)
 			(effects
 				(font
@@ -4958,7 +5224,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8b0f795f-0717-4c2b-a922-2aa6bd9688ed")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR016"
 			(at 223.52 139.7 0)
 			(effects
 				(font
@@ -5030,7 +5296,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8b64b65b-4767-4e3b-8119-16623b4fb30f")
-		(property "Reference" "C?"
+		(property "Reference" "C9"
 			(at 222.25 36.8235 0)
 			(effects
 				(font
@@ -5106,7 +5372,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8d92bbc9-ca2f-4860-9f7d-a086850f483c")
-		(property "Reference" "C?"
+		(property "Reference" "C11"
 			(at 226.06 129.5335 0)
 			(effects
 				(font
@@ -5173,94 +5439,6 @@
 		)
 	)
 	(symbol
-		(lib_id "nzif_radio_symbol_library:ADA4620-2ARZ")
-		(at 335.28 68.58 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "97354149-1fbf-452f-aeb1-f86ecb0b0898")
-		(property "Reference" "U205"
-			(at 335.28 57.15 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Value" "ADA4620-2ARZ"
-			(at 335.28 59.69 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Footprint" "nzif_footprints:R-8_ADI"
-			(at 335.28 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/ada4620.pdf"
-			(at 335.28 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Dual, Precision, Low Noise, Rail-to-Rail I/O Op Amp, 14MHz GBW, SOIC-8"
-			(at 335.28 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "8"
-			(uuid "dd70a9d9-4856-46d7-a66f-00ac7f7cb312")
-		)
-		(pin "7"
-			(uuid "11cfac21-0c8c-4443-acf9-3eb09ecc057d")
-		)
-		(pin "6"
-			(uuid "48bc6415-276e-4689-8d75-b1e07990456e")
-		)
-		(pin "4"
-			(uuid "32f227e3-cd60-4fcf-bd83-d1575f8a61e3")
-		)
-		(pin "5"
-			(uuid "fed5169a-158a-45e7-a6d0-d5f931d2aef1")
-		)
-		(pin "1"
-			(uuid "802d6006-6416-4c19-bf7e-978eaef30150")
-		)
-		(pin "2"
-			(uuid "707e17c4-fba8-4029-af9d-19ae230be4ca")
-		)
-		(pin "3"
-			(uuid "ebe46284-d9ef-4eef-8066-f513d5b4918b")
-		)
-		(instances
-			(project "nzif"
-				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
-					(reference "U205")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C_Small")
 		(at 232.41 130.81 180)
 		(unit 1)
@@ -5270,7 +5448,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "97eeae81-9182-4be9-9848-e69516f4b600")
-		(property "Reference" "C?"
+		(property "Reference" "C12"
 			(at 234.95 129.5335 0)
 			(effects
 				(font
@@ -5346,7 +5524,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9a7f02ae-110f-438f-9f9a-e014cb978db0")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR011"
 			(at 60.96 127 0)
 			(effects
 				(font
@@ -5409,94 +5587,6 @@
 		)
 	)
 	(symbol
-		(lib_id "nzif_radio_symbol_library:ADA4620-2ARZ")
-		(at 228.6 95.25 0)
-		(unit 2)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "9ad7092c-b1f8-4fa6-b17c-acce7cfe7126")
-		(property "Reference" "U202"
-			(at 228.6 83.82 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Value" "ADA4620-2ARZ"
-			(at 228.6 86.36 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Footprint" "nzif_footprints:R-8_ADI"
-			(at 228.6 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/ada4620.pdf"
-			(at 228.6 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Dual, Precision, Low Noise, Rail-to-Rail I/O Op Amp, 14MHz GBW, SOIC-8"
-			(at 228.6 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "8"
-			(uuid "dd70a9d9-4856-46d7-a66f-00ac7f7cb310")
-		)
-		(pin "7"
-			(uuid "11cfac21-0c8c-4443-acf9-3eb09ecc057b")
-		)
-		(pin "6"
-			(uuid "48bc6415-276e-4689-8d75-b1e07990456c")
-		)
-		(pin "4"
-			(uuid "32f227e3-cd60-4fcf-bd83-d1575f8a61e1")
-		)
-		(pin "5"
-			(uuid "fed5169a-158a-45e7-a6d0-d5f931d2aeef")
-		)
-		(pin "1"
-			(uuid "89847247-1c58-4288-bb1b-1c07a85b4b04")
-		)
-		(pin "2"
-			(uuid "54dc78c5-61f4-48ae-9b5e-2f99e5fde966")
-		)
-		(pin "3"
-			(uuid "95d75fc8-6a61-4a7b-aad1-360778fa97f8")
-		)
-		(instances
-			(project ""
-				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
-					(reference "U202")
-					(unit 2)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 91.44 110.49 0)
 		(unit 1)
@@ -5506,7 +5596,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9f33db22-9835-4f9e-9c7a-59c16734de9c")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR013"
 			(at 91.44 116.84 0)
 			(effects
 				(font
@@ -5578,7 +5668,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a053f856-9815-4ee3-9b4a-38936660b32b")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR020"
 			(at 250.19 147.32 0)
 			(effects
 				(font
@@ -5650,7 +5740,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a109961b-1c8d-42f7-859c-867584b6ad0a")
-		(property "Reference" "C?"
+		(property "Reference" "C6"
 			(at 93.98 106.6735 0)
 			(effects
 				(font
@@ -5726,7 +5816,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a28ed1e9-cb91-44b7-b562-8fca89dbb8b8")
-		(property "Reference" "C?"
+		(property "Reference" "C7"
 			(at 104.14 99.0535 0)
 			(effects
 				(font
@@ -5802,7 +5892,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a2a0956c-eef7-48e8-b6eb-2f8454ee3879")
-		(property "Reference" "C?"
+		(property "Reference" "C13"
 			(at 85.09 189.2235 0)
 			(effects
 				(font
@@ -5869,6 +5959,94 @@
 		)
 	)
 	(symbol
+		(lib_id "nzif_radio_symbol_library:ADA4620-2ARZ")
+		(at 339.09 161.29 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a57fbbce-7d4e-4010-acc9-b1c1bc79b8c0")
+		(property "Reference" "U6"
+			(at 339.09 148.59 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Value" "ADA4620-2ARZ"
+			(at 339.09 151.13 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Footprint" "nzif_footprints:R-8_ADI"
+			(at 339.09 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/ada4620.pdf"
+			(at 339.09 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Dual, Precision, Low Noise, Rail-to-Rail I/O Op Amp, 14MHz GBW, SOIC-8"
+			(at 339.09 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5505506f-df2c-44f3-af28-ce5ac99eda0f")
+		)
+		(pin "2"
+			(uuid "dbf7307b-45f5-4de1-9bf5-8a47fdec791a")
+		)
+		(pin "3"
+			(uuid "9f0d4338-0744-42ec-a3c5-655bd0c42d17")
+		)
+		(pin "6"
+			(uuid "8100e776-9dea-4811-8eee-623e22e66824")
+		)
+		(pin "7"
+			(uuid "d77d9554-565d-46aa-8193-e6f5410637d9")
+		)
+		(pin "8"
+			(uuid "3fb23fa5-0d98-4c5b-8906-d0f5db1236c1")
+		)
+		(pin "4"
+			(uuid "30beacfd-dc78-436f-8396-1bd24a7952b7")
+		)
+		(pin "5"
+			(uuid "1aae3530-4453-45af-85f8-ae574c7b1ce9")
+		)
+		(instances
+			(project ""
+				(path "/7cc72b98-3836-4c2a-8199-0c423deb5fd0"
+					(reference "U6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Small")
 		(at 335.28 38.1 180)
 		(unit 1)
@@ -5878,7 +6056,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a863f55a-611f-4dba-9e66-9bac0d9753fe")
-		(property "Reference" "C?"
+		(property "Reference" "C19"
 			(at 337.82 36.8235 0)
 			(effects
 				(font
@@ -5954,7 +6132,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b3693e6c-ccbf-444c-88d7-e2306627058a")
-		(property "Reference" "C?"
+		(property "Reference" "C5"
 			(at 83.82 114.2935 0)
 			(effects
 				(font
@@ -6030,7 +6208,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b6a13bd4-0521-414a-b2bf-731c7734dfa4")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR03"
 			(at 62.23 201.93 0)
 			(effects
 				(font
@@ -6093,6 +6271,94 @@
 		)
 	)
 	(symbol
+		(lib_id "nzif_radio_symbol_library:ADA4620-2ARZ")
+		(at 339.09 187.96 0)
+		(unit 2)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bb6ad615-ae49-4b28-8bbf-4015246f92b1")
+		(property "Reference" "U6"
+			(at 339.09 175.26 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Value" "ADA4620-2ARZ"
+			(at 339.09 177.8 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Footprint" "nzif_footprints:R-8_ADI"
+			(at 339.09 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/ada4620.pdf"
+			(at 339.09 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Dual, Precision, Low Noise, Rail-to-Rail I/O Op Amp, 14MHz GBW, SOIC-8"
+			(at 339.09 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5505506f-df2c-44f3-af28-ce5ac99eda0f")
+		)
+		(pin "2"
+			(uuid "dbf7307b-45f5-4de1-9bf5-8a47fdec791a")
+		)
+		(pin "3"
+			(uuid "9f0d4338-0744-42ec-a3c5-655bd0c42d17")
+		)
+		(pin "6"
+			(uuid "8100e776-9dea-4811-8eee-623e22e66824")
+		)
+		(pin "7"
+			(uuid "d77d9554-565d-46aa-8193-e6f5410637d9")
+		)
+		(pin "8"
+			(uuid "3fb23fa5-0d98-4c5b-8906-d0f5db1236c1")
+		)
+		(pin "4"
+			(uuid "30beacfd-dc78-436f-8396-1bd24a7952b7")
+		)
+		(pin "5"
+			(uuid "1aae3530-4453-45af-85f8-ae574c7b1ce9")
+		)
+		(instances
+			(project ""
+				(path "/7cc72b98-3836-4c2a-8199-0c423deb5fd0"
+					(reference "U6")
+					(unit 2)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Small")
 		(at 326.39 38.1 180)
 		(unit 1)
@@ -6102,7 +6368,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c1f2af1b-6eb0-4bd8-a13c-18ff0ae40a4e")
-		(property "Reference" "C?"
+		(property "Reference" "C17"
 			(at 328.93 36.8235 0)
 			(effects
 				(font
@@ -6169,94 +6435,6 @@
 		)
 	)
 	(symbol
-		(lib_id "nzif_radio_symbol_library:ADA4620-2ARZ")
-		(at 339.09 187.96 0)
-		(unit 2)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c22ac9fa-c2b0-4c15-9cd5-ef44d631225f")
-		(property "Reference" "U207"
-			(at 339.09 176.53 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Value" "ADA4620-2ARZ"
-			(at 339.09 179.07 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Footprint" "nzif_footprints:R-8_ADI"
-			(at 339.09 187.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/ada4620.pdf"
-			(at 339.09 187.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Dual, Precision, Low Noise, Rail-to-Rail I/O Op Amp, 14MHz GBW, SOIC-8"
-			(at 339.09 187.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "8"
-			(uuid "dd70a9d9-4856-46d7-a66f-00ac7f7cb310")
-		)
-		(pin "7"
-			(uuid "f837b9c6-b7a5-44b2-9df2-b881868bb203")
-		)
-		(pin "6"
-			(uuid "456ab532-c663-4ec9-b746-e8aaa4b6c264")
-		)
-		(pin "4"
-			(uuid "32f227e3-cd60-4fcf-bd83-d1575f8a61e1")
-		)
-		(pin "5"
-			(uuid "dacf74eb-cddd-4ba9-9507-0f73a53810a9")
-		)
-		(pin "1"
-			(uuid "89847247-1c58-4288-bb1b-1c07a85b4b04")
-		)
-		(pin "2"
-			(uuid "54dc78c5-61f4-48ae-9b5e-2f99e5fde966")
-		)
-		(pin "3"
-			(uuid "95d75fc8-6a61-4a7b-aad1-360778fa97f8")
-		)
-		(instances
-			(project "nzif"
-				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
-					(reference "U207")
-					(unit 2)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 82.55 193.04 0)
 		(unit 1)
@@ -6266,7 +6444,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c48e5de6-e124-449f-ac24-a84d88c54d1d")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR04"
 			(at 82.55 199.39 0)
 			(effects
 				(font
@@ -6338,7 +6516,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cb82e77b-37b2-424f-9a5b-16e303207050")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR09"
 			(at 44.45 82.55 0)
 			(effects
 				(font
@@ -6410,7 +6588,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d84ba451-bc23-4937-b4c1-8d4654438199")
-		(property "Reference" "U?"
+		(property "Reference" "U2"
 			(at 64.3733 152.4 0)
 			(effects
 				(font
@@ -6515,94 +6693,6 @@
 		)
 	)
 	(symbol
-		(lib_id "nzif_radio_symbol_library:ADA4620-2ARZ")
-		(at 232.41 187.96 0)
-		(unit 2)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "db3e5cca-457f-4cf2-b22f-fbba1ec3de50")
-		(property "Reference" "U206"
-			(at 232.41 176.53 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Value" "ADA4620-2ARZ"
-			(at 232.41 179.07 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Footprint" "nzif_footprints:R-8_ADI"
-			(at 232.41 187.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/ada4620.pdf"
-			(at 232.41 187.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Dual, Precision, Low Noise, Rail-to-Rail I/O Op Amp, 14MHz GBW, SOIC-8"
-			(at 232.41 187.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "8"
-			(uuid "dd70a9d9-4856-46d7-a66f-00ac7f7cb310")
-		)
-		(pin "7"
-			(uuid "733a241e-c58e-434e-b21a-d72412427f48")
-		)
-		(pin "6"
-			(uuid "26349087-e421-4364-a60e-aeda05527f4c")
-		)
-		(pin "4"
-			(uuid "32f227e3-cd60-4fcf-bd83-d1575f8a61e1")
-		)
-		(pin "5"
-			(uuid "db9e109f-50ec-43ba-9bea-b19fdf9f053f")
-		)
-		(pin "1"
-			(uuid "89847247-1c58-4288-bb1b-1c07a85b4b04")
-		)
-		(pin "2"
-			(uuid "54dc78c5-61f4-48ae-9b5e-2f99e5fde966")
-		)
-		(pin "3"
-			(uuid "95d75fc8-6a61-4a7b-aad1-360778fa97f8")
-		)
-		(instances
-			(project "nzif"
-				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
-					(reference "U206")
-					(unit 2)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C_Small")
 		(at 53.34 73.66 180)
 		(unit 1)
@@ -6612,7 +6702,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "dddb9680-e21a-40d5-83ec-314153cda26e")
-		(property "Reference" "C?"
+		(property "Reference" "C4"
 			(at 55.88 72.3835 0)
 			(effects
 				(font
@@ -6688,7 +6778,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "de43a258-2e9b-47a1-bab1-ca1546f9554c")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR014"
 			(at 101.6 109.22 0)
 			(effects
 				(font
@@ -6760,7 +6850,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "de9d18ac-7085-440c-8e8e-68fec7f7107e")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR019"
 			(at 232.41 139.7 0)
 			(effects
 				(font
@@ -6832,7 +6922,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e29a5e1d-ba0e-4fd7-a3b7-b08e03179e3b")
-		(property "Reference" "C?"
+		(property "Reference" "C16"
 			(at 114.3 166.3635 0)
 			(effects
 				(font
@@ -6908,7 +6998,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e66372e1-0bb2-4570-b1a7-478ce7b7fc70")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR021"
 			(at 326.39 46.99 0)
 			(effects
 				(font
@@ -6979,8 +7069,8 @@
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "eecdfa1c-5b24-4c79-a594-409c3436d168")
-		(property "Reference" "U205"
+		(uuid "eb932ea6-e612-45f3-a8a6-3e6c21904673")
+		(property "Reference" "U5"
 			(at 354.33 39.3699 0)
 			(effects
 				(font
@@ -7027,34 +7117,34 @@
 				(hide yes)
 			)
 		)
-		(pin "8"
-			(uuid "f11f3c76-c591-46dd-a420-fc2535b60885")
-		)
-		(pin "7"
-			(uuid "11cfac21-0c8c-4443-acf9-3eb09ecc057c")
-		)
-		(pin "6"
-			(uuid "48bc6415-276e-4689-8d75-b1e07990456d")
-		)
 		(pin "4"
-			(uuid "f3dffe8d-7732-4cd7-9834-1b0a13161f97")
+			(uuid "1fc830fc-f233-481f-8248-07d1ea002840")
 		)
 		(pin "5"
-			(uuid "fed5169a-158a-45e7-a6d0-d5f931d2aef0")
-		)
-		(pin "1"
-			(uuid "89847247-1c58-4288-bb1b-1c07a85b4b05")
+			(uuid "656d7e46-3377-484e-9329-bedefaa011c3")
 		)
 		(pin "2"
-			(uuid "54dc78c5-61f4-48ae-9b5e-2f99e5fde967")
+			(uuid "b3b7fb65-d059-4204-8ad3-2dfecf28c943")
 		)
 		(pin "3"
-			(uuid "95d75fc8-6a61-4a7b-aad1-360778fa97f9")
+			(uuid "8fa1b2f9-6417-439c-af88-9d12b5ebc270")
+		)
+		(pin "8"
+			(uuid "cb9148c6-1e62-4122-ac36-35582831db46")
+		)
+		(pin "7"
+			(uuid "1ab07a22-024b-49eb-bb2a-75c136a00d98")
+		)
+		(pin "6"
+			(uuid "3784c4e9-7ee6-4174-b1d0-ed14bf2eb763")
+		)
+		(pin "1"
+			(uuid "238820c9-3f47-493d-bd3f-72141e5a1557")
 		)
 		(instances
-			(project "nzif"
-				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
-					(reference "U205")
+			(project ""
+				(path "/7cc72b98-3836-4c2a-8199-0c423deb5fd0"
+					(reference "U5")
 					(unit 3)
 				)
 			)
@@ -7062,16 +7152,16 @@
 	)
 	(symbol
 		(lib_id "nzif_radio_symbol_library:ADA4620-2ARZ")
-		(at 335.28 95.25 0)
-		(unit 2)
+		(at 228.6 68.58 0)
+		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "f1e23da9-51e3-42d3-bd22-bc66565055fd")
-		(property "Reference" "U205"
-			(at 335.28 83.82 0)
+		(uuid "eed1cbcb-9b8e-40c4-9d50-ebd4efd1df2c")
+		(property "Reference" "U3"
+			(at 228.6 55.88 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -7079,7 +7169,7 @@
 			)
 		)
 		(property "Value" "ADA4620-2ARZ"
-			(at 335.28 86.36 0)
+			(at 228.6 58.42 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -7087,7 +7177,7 @@
 			)
 		)
 		(property "Footprint" "nzif_footprints:R-8_ADI"
-			(at 335.28 95.25 0)
+			(at 228.6 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7097,7 +7187,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/ada4620.pdf"
-			(at 335.28 95.25 0)
+			(at 228.6 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7107,7 +7197,7 @@
 			)
 		)
 		(property "Description" "Dual, Precision, Low Noise, Rail-to-Rail I/O Op Amp, 14MHz GBW, SOIC-8"
-			(at 335.28 95.25 0)
+			(at 228.6 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7115,35 +7205,35 @@
 				(hide yes)
 			)
 		)
-		(pin "8"
-			(uuid "dd70a9d9-4856-46d7-a66f-00ac7f7cb310")
-		)
-		(pin "7"
-			(uuid "9a643820-f361-46b2-b3a5-d57b7a337c4f")
-		)
-		(pin "6"
-			(uuid "85cac246-a555-4ba6-be84-4673aceadd57")
-		)
 		(pin "4"
-			(uuid "32f227e3-cd60-4fcf-bd83-d1575f8a61e1")
-		)
-		(pin "5"
-			(uuid "bafa472d-197d-4bea-8268-f1cf4694c744")
-		)
-		(pin "1"
-			(uuid "89847247-1c58-4288-bb1b-1c07a85b4b04")
+			(uuid "27c82643-b34d-44dd-8e95-89871bd02329")
 		)
 		(pin "2"
-			(uuid "54dc78c5-61f4-48ae-9b5e-2f99e5fde966")
+			(uuid "b18a5285-cf36-4f13-9063-150f6afaacb0")
 		)
 		(pin "3"
-			(uuid "95d75fc8-6a61-4a7b-aad1-360778fa97f8")
+			(uuid "de4b5dac-b3ea-40be-9d5a-2ec84e348a7e")
+		)
+		(pin "7"
+			(uuid "8faeac02-514c-4dfd-bf56-a22f59d6dc04")
+		)
+		(pin "8"
+			(uuid "f6721dc5-7ede-4d73-a744-379998e14e05")
+		)
+		(pin "1"
+			(uuid "575808c1-0ee7-4977-afd4-71327a6c5fb3")
+		)
+		(pin "5"
+			(uuid "2ee1210c-c928-4d3e-8955-ff33ae2084e3")
+		)
+		(pin "6"
+			(uuid "e4c042aa-6890-4533-930b-c93c847afde1")
 		)
 		(instances
-			(project "nzif"
-				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
-					(reference "U205")
-					(unit 2)
+			(project ""
+				(path "/7cc72b98-3836-4c2a-8199-0c423deb5fd0"
+					(reference "U3")
+					(unit 1)
 				)
 			)
 		)
@@ -7158,7 +7248,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fa8aa1d2-b501-44a7-a825-f3288bbd456a")
-		(property "Reference" "U?"
+		(property "Reference" "U1"
 			(at 63.1033 77.47 0)
 			(effects
 				(font
@@ -7263,96 +7353,6 @@
 		)
 	)
 	(symbol
-		(lib_id "nzif_radio_symbol_library:ADA4620-2ARZ")
-		(at 356.87 133.35 0)
-		(unit 3)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "fcc7f7b4-59a3-48ff-aa66-777a0dd7318b")
-		(property "Reference" "U207"
-			(at 358.14 132.0799 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "ADA4620-2ARZ"
-			(at 358.14 134.6199 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "nzif_footprints:R-8_ADI"
-			(at 356.87 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/ada4620.pdf"
-			(at 356.87 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Dual, Precision, Low Noise, Rail-to-Rail I/O Op Amp, 14MHz GBW, SOIC-8"
-			(at 356.87 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "8"
-			(uuid "47afddbe-38f0-4db0-973e-e0713e2db979")
-		)
-		(pin "7"
-			(uuid "11cfac21-0c8c-4443-acf9-3eb09ecc057c")
-		)
-		(pin "6"
-			(uuid "48bc6415-276e-4689-8d75-b1e07990456d")
-		)
-		(pin "4"
-			(uuid "5201f041-dc8e-4ffc-85e2-6e8bc5dc4b62")
-		)
-		(pin "5"
-			(uuid "fed5169a-158a-45e7-a6d0-d5f931d2aef0")
-		)
-		(pin "1"
-			(uuid "89847247-1c58-4288-bb1b-1c07a85b4b05")
-		)
-		(pin "2"
-			(uuid "54dc78c5-61f4-48ae-9b5e-2f99e5fde967")
-		)
-		(pin "3"
-			(uuid "95d75fc8-6a61-4a7b-aad1-360778fa97f9")
-		)
-		(instances
-			(project "nzif"
-				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
-					(reference "U207")
-					(unit 3)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C_Small")
 		(at 228.6 38.1 180)
 		(unit 1)
@@ -7362,7 +7362,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "feef831c-6dfb-499e-8c4b-ef9cf2bdcd0a")
-		(property "Reference" "C?"
+		(property "Reference" "C10"
 			(at 231.14 36.8235 0)
 			(effects
 				(font
