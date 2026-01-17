@@ -602,16 +602,6 @@
 		)
 		(uuid "5db7bf62-d3f8-4389-877f-de3f3af36b7d")
 	)
-	(text "Blocking Caps"
-		(exclude_from_sim no)
-		(at 215.646 59.69 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "904c6268-f0ed-46f9-b005-f0e642444fc6")
-	)
 	(text "RF Holding Caps"
 		(exclude_from_sim no)
 		(at 186.944 60.198 0)
@@ -622,15 +612,15 @@
 		)
 		(uuid "af0a3198-33fc-4c67-9817-79480a90656d")
 	)
-	(text "Blocking Caps"
+	(text "Revised Rx Math (1:1 Ratio):\n\n    Rsource​=50Ω\n\n    Rswitch​=7Ω\n\n    Rtotal​=57Ω\n\n    N=8\n\n    Effective R for bandwidth: 8×57Ω=456Ω\n\n    For 96 kHz BW: C=2π⋅456⋅960001​≈3.6 nF (Use 3.3 nF or 3.9 nF standard values)."
 		(exclude_from_sim no)
-		(at 216.916 134.62 0)
+		(at 277.876 113.03 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 		)
-		(uuid "d8b9d49b-174d-4f8e-85fc-70dda5080866")
+		(uuid "e4ece5f6-bc4f-4667-8423-a5c38ae0a118")
 	)
 	(junction
 		(at 121.92 49.53)
@@ -643,6 +633,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "0a6ba478-bc2f-40c3-85d8-fa48262f4505")
+	)
+	(junction
+		(at 160.02 168.91)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1ee4f44f-8243-416d-a749-566ae8e7214d")
 	)
 	(junction
 		(at 170.18 161.29)
@@ -661,12 +657,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3c16aa70-1291-4148-8b87-ef3673b636e5")
-	)
-	(junction
-		(at 160.02 168.91)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "5a4322b6-1b3b-487e-815d-a09e16993b47")
 	)
 	(junction
 		(at 189.23 146.05)
@@ -716,7 +706,7 @@
 	)
 	(wire
 		(pts
-			(xy 189.23 146.05) (xy 218.44 146.05)
+			(xy 189.23 146.05) (xy 232.41 146.05)
 		)
 		(stroke
 			(width 0)
@@ -733,16 +723,6 @@
 			(type default)
 		)
 		(uuid "1a46b513-39fa-48c1-a03e-fa97f8f14c13")
-	)
-	(wire
-		(pts
-			(xy 209.55 161.29) (xy 232.41 161.29)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1fcf504a-e9a1-4174-8773-ae1b75e9761e")
 	)
 	(wire
 		(pts
@@ -766,16 +746,6 @@
 	)
 	(wire
 		(pts
-			(xy 222.25 71.12) (xy 231.14 71.12)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2ddeb07f-bfb4-4009-9b1e-801cbd2ff691")
-	)
-	(wire
-		(pts
 			(xy 132.08 124.46) (xy 132.08 127)
 		)
 		(stroke
@@ -796,7 +766,7 @@
 	)
 	(wire
 		(pts
-			(xy 180.34 153.67) (xy 212.09 153.67)
+			(xy 180.34 153.67) (xy 232.41 153.67)
 		)
 		(stroke
 			(width 0)
@@ -806,17 +776,7 @@
 	)
 	(wire
 		(pts
-			(xy 223.52 146.05) (xy 232.41 146.05)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3f7ab1fb-51c4-48a9-b47b-9f9780bc0e3d")
-	)
-	(wire
-		(pts
-			(xy 187.96 71.12) (xy 217.17 71.12)
+			(xy 187.96 71.12) (xy 231.14 71.12)
 		)
 		(stroke
 			(width 0)
@@ -876,16 +836,6 @@
 	)
 	(wire
 		(pts
-			(xy 217.17 153.67) (xy 232.41 153.67)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "70a4cb74-67f4-43cb-b57b-48734b085539")
-	)
-	(wire
-		(pts
 			(xy 153.67 71.12) (xy 187.96 71.12)
 		)
 		(stroke
@@ -926,16 +876,6 @@
 	)
 	(wire
 		(pts
-			(xy 201.93 93.98) (xy 231.14 93.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8552299d-6330-4e5e-8e54-2446b661d9a5")
-	)
-	(wire
-		(pts
 			(xy 118.11 146.05) (xy 124.46 146.05)
 		)
 		(stroke
@@ -953,16 +893,6 @@
 			(type default)
 		)
 		(uuid "87d9bd78-5c9c-4fc7-ae38-ec436154c5d1")
-	)
-	(wire
-		(pts
-			(xy 215.9 78.74) (xy 231.14 78.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "88e43801-d664-49b4-8373-39ea3eacdcce")
 	)
 	(wire
 		(pts
@@ -986,7 +916,7 @@
 	)
 	(wire
 		(pts
-			(xy 168.91 86.36) (xy 203.2 86.36)
+			(xy 168.91 86.36) (xy 231.14 86.36)
 		)
 		(stroke
 			(width 0)
@@ -1026,7 +956,7 @@
 	)
 	(wire
 		(pts
-			(xy 158.75 93.98) (xy 196.85 93.98)
+			(xy 158.75 93.98) (xy 231.14 93.98)
 		)
 		(stroke
 			(width 0)
@@ -1046,23 +976,13 @@
 	)
 	(wire
 		(pts
-			(xy 170.18 161.29) (xy 204.47 161.29)
+			(xy 170.18 161.29) (xy 232.41 161.29)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "9bdd39a2-8b70-4fef-b257-7ecd631cbf8e")
-	)
-	(wire
-		(pts
-			(xy 208.28 86.36) (xy 231.14 86.36)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a3442904-eb97-4f6e-a40a-4bc317edb74e")
 	)
 	(wire
 		(pts
@@ -1073,6 +993,16 @@
 			(type default)
 		)
 		(uuid "a46dd2f4-d9ec-42d5-aa1c-cad2d1a69b92")
+	)
+	(wire
+		(pts
+			(xy 160.02 168.91) (xy 232.41 168.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a6b55bee-d78a-4331-86a9-6432ca9ad0ea")
 	)
 	(wire
 		(pts
@@ -1093,16 +1023,6 @@
 			(type default)
 		)
 		(uuid "b1fc05f9-074a-49d8-bdfa-9f1ca4e044cd")
-	)
-	(wire
-		(pts
-			(xy 160.02 168.91) (xy 198.12 168.91)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b59363b8-6745-4365-9b8c-fbca9f18d224")
 	)
 	(wire
 		(pts
@@ -1136,23 +1056,13 @@
 	)
 	(wire
 		(pts
-			(xy 179.07 78.74) (xy 210.82 78.74)
+			(xy 179.07 78.74) (xy 231.14 78.74)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "cc964ef4-d28a-4ebd-8123-946c6a6a8204")
-	)
-	(wire
-		(pts
-			(xy 203.2 168.91) (xy 232.41 168.91)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d55e7670-b194-41e6-ab46-29aaec4ba689")
 	)
 	(wire
 		(pts
@@ -1203,6 +1113,16 @@
 			(type default)
 		)
 		(uuid "f5b331fc-c144-4f01-accf-eaa1be06c470")
+	)
+	(wire
+		(pts
+			(xy 232.41 166.37) (xy 232.41 168.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f8ec1622-9419-4eed-9075-66b0490f6f8f")
 	)
 	(wire
 		(pts
@@ -1290,7 +1210,7 @@
 		)
 		(uuid "2e15f1ad-7c15-44a0-847b-7865f68c5430")
 	)
-	(hierarchical_label "P_0-"
+	(hierarchical_label "P_45-"
 		(shape input)
 		(at 232.41 153.67 0)
 		(effects
@@ -1400,7 +1320,7 @@
 		)
 		(uuid "6fa3b050-1eda-4a53-a64c-3ca9a47349c6")
 	)
-	(hierarchical_label "P_0+"
+	(hierarchical_label "P_45+"
 		(shape input)
 		(at 232.41 146.05 0)
 		(effects
@@ -1422,7 +1342,7 @@
 		)
 		(uuid "a18169a2-b2ce-407c-823c-a5b40f10c813")
 	)
-	(hierarchical_label "P_90+"
+	(hierarchical_label "P_135+"
 		(shape input)
 		(at 232.41 161.29 0)
 		(effects
@@ -1466,7 +1386,7 @@
 		)
 		(uuid "c63512ea-a9eb-4d9a-a31b-84d26a9da9eb")
 	)
-	(hierarchical_label "P_90-"
+	(hierarchical_label "P_135-"
 		(shape input)
 		(at 232.41 168.91 0)
 		(effects
@@ -1728,154 +1648,6 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 219.71 71.12 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "2287fd7c-e62a-4dc8-9d61-7ab90cdb1136")
-		(property "Reference" "C?"
-			(at 219.7036 64.77 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "10u"
-			(at 219.7036 67.31 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
-			(at 219.71 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 219.71 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 219.71 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "b7fb1fb5-4090-4285-a75c-dc10e390656d")
-		)
-		(pin "2"
-			(uuid "56d1552c-3abf-4b73-98ac-a18f2b28f40d")
-		)
-		(instances
-			(project "rx_mixer"
-				(path "/7cc72b98-3836-4c2a-8199-0c423deb5fd0"
-					(reference "C12")
-					(unit 1)
-				)
-			)
-			(project "nzif"
-				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
-					(reference "C?")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 220.98 146.05 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "22b570c2-401d-4171-9870-b61dbdac0e3a")
-		(property "Reference" "C?"
-			(at 220.9736 139.7 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "10u"
-			(at 220.9736 142.24 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
-			(at 220.98 146.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 220.98 146.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 220.98 146.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "a8403d66-8829-42c6-9b96-84539897c81e")
-		)
-		(pin "2"
-			(uuid "f8d726ab-5e65-43bd-9cf1-fbc049d0bd7d")
-		)
-		(instances
-			(project "rx_mixer"
-				(path "/7cc72b98-3836-4c2a-8199-0c423deb5fd0"
-					(reference "C20")
-					(unit 1)
-				)
-			)
-			(project "nzif"
-				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
-					(reference "C?")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
 		(at 170.18 163.83 180)
 		(unit 1)
 		(exclude_from_sim no)
@@ -1893,7 +1665,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "33p"
+		(property "Value" "3.3n"
 			(at 172.72 165.0935 0)
 			(effects
 				(font
@@ -1952,80 +1724,6 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 200.66 168.91 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "24ff5c2c-c98d-410f-82d2-0b9540fd3c37")
-		(property "Reference" "C?"
-			(at 200.6536 162.56 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "10u"
-			(at 200.6536 165.1 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
-			(at 200.66 168.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 200.66 168.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 200.66 168.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "1c0904dc-3015-40df-bc3d-b5bde657a2af")
-		)
-		(pin "2"
-			(uuid "156c43b6-510a-4cfc-b2bc-067c20b4d0c8")
-		)
-		(instances
-			(project "rx_mixer"
-				(path "/7cc72b98-3836-4c2a-8199-0c423deb5fd0"
-					(reference "C17")
-					(unit 1)
-				)
-			)
-			(project "nzif"
-				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
-					(reference "C?")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
 		(at 187.96 73.66 180)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2043,7 +1741,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "33p"
+		(property "Value" "3.3n"
 			(at 190.5 74.9235 0)
 			(effects
 				(font
@@ -2325,80 +2023,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Small")
-		(at 214.63 153.67 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3bbad66d-a368-4e03-8f9c-759cefbb1f9d")
-		(property "Reference" "C?"
-			(at 214.6236 147.32 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "10u"
-			(at 214.6236 149.86 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
-			(at 214.63 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 214.63 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 214.63 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "7dfdad0a-2c4e-4148-a4c5-628c98abd6d3")
-		)
-		(pin "2"
-			(uuid "30674d39-7201-45aa-9caf-095c8d060ccd")
-		)
-		(instances
-			(project "rx_mixer"
-				(path "/7cc72b98-3836-4c2a-8199-0c423deb5fd0"
-					(reference "C19")
-					(unit 1)
-				)
-			)
-			(project "nzif"
-				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
-					(reference "C?")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 170.18 166.37 0)
 		(unit 1)
@@ -2465,80 +2089,6 @@
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
 					(reference "#PWR?")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 213.36 78.74 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "50e8c87b-8be7-4577-8ed4-71f1ec3f2201")
-		(property "Reference" "C?"
-			(at 213.3536 72.39 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "10u"
-			(at 213.3536 74.93 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
-			(at 213.36 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 213.36 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 213.36 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "93ce6935-88be-443b-b717-cc31490b5141")
-		)
-		(pin "2"
-			(uuid "bd3c8055-3e03-4e11-a387-6102e769c16e")
-		)
-		(instances
-			(project "rx_mixer"
-				(path "/7cc72b98-3836-4c2a-8199-0c423deb5fd0"
-					(reference "C11")
-					(unit 1)
-				)
-			)
-			(project "nzif"
-				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
-					(reference "C?")
 					(unit 1)
 				)
 			)
@@ -2783,7 +2333,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "33p"
+		(property "Value" "3.3n"
 			(at 182.88 157.4735 0)
 			(effects
 				(font
@@ -2907,80 +2457,6 @@
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
 					(reference "#PWR?")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 205.74 86.36 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "923226ad-f89b-4862-abdd-36242ec04aef")
-		(property "Reference" "C?"
-			(at 205.7336 80.01 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "10u"
-			(at 205.7336 82.55 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
-			(at 205.74 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 205.74 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 205.74 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "4f138c77-1d49-4b57-915f-632f20e19120")
-		)
-		(pin "2"
-			(uuid "abec4252-4150-434a-86ec-1c573fb67564")
-		)
-		(instances
-			(project "rx_mixer"
-				(path "/7cc72b98-3836-4c2a-8199-0c423deb5fd0"
-					(reference "C10")
-					(unit 1)
-				)
-			)
-			(project "nzif"
-				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
-					(reference "C?")
 					(unit 1)
 				)
 			)
@@ -3149,7 +2625,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "33p"
+		(property "Value" "3.3n"
 			(at 171.45 90.1635 0)
 			(effects
 				(font
@@ -3225,7 +2701,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "33p"
+		(property "Value" "3.3n"
 			(at 181.61 82.5435 0)
 			(effects
 				(font
@@ -3301,7 +2777,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "33p"
+		(property "Value" "3.3n"
 			(at 162.56 172.7135 0)
 			(effects
 				(font
@@ -3360,80 +2836,6 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 199.39 93.98 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a84904cd-e1b2-4702-9df2-32fe8f6135a6")
-		(property "Reference" "C?"
-			(at 199.3836 87.63 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "10u"
-			(at 199.3836 90.17 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
-			(at 199.39 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 199.39 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 199.39 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "3f131bdd-99ba-499d-affa-796927a849ca")
-		)
-		(pin "2"
-			(uuid "ff701980-e0dd-4a78-848a-1f5ab7aa2427")
-		)
-		(instances
-			(project "rx_mixer"
-				(path "/7cc72b98-3836-4c2a-8199-0c423deb5fd0"
-					(reference "C9")
-					(unit 1)
-				)
-			)
-			(project "nzif"
-				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
-					(reference "C?")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
 		(at 158.75 96.52 180)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3451,7 +2853,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "33p"
+		(property "Value" "3.3n"
 			(at 161.29 97.7835 0)
 			(effects
 				(font
@@ -3575,80 +2977,6 @@
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
 					(reference "#PWR?")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 207.01 161.29 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "be06729b-2153-4a72-ae38-ac676be8d73c")
-		(property "Reference" "C?"
-			(at 207.0036 154.94 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "10u"
-			(at 207.0036 157.48 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
-			(at 207.01 161.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 207.01 161.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 207.01 161.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "62ce09b8-b9c1-4654-8e2b-a31d8de70143")
-		)
-		(pin "2"
-			(uuid "c4e81b82-5034-492c-963d-e96af377b4b8")
-		)
-		(instances
-			(project "rx_mixer"
-				(path "/7cc72b98-3836-4c2a-8199-0c423deb5fd0"
-					(reference "C18")
-					(unit 1)
-				)
-			)
-			(project "nzif"
-				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
-					(reference "C?")
 					(unit 1)
 				)
 			)
@@ -4079,7 +3407,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "33p"
+		(property "Value" "3.3n"
 			(at 191.77 149.8535 0)
 			(effects
 				(font
