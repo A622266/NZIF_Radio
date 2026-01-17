@@ -5572,6 +5572,48 @@
 		)
 	)
 	(sheet
+		(at 66.04 137.16)
+		(size 54.61 31.75)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "2802166e-37f5-44e9-af25-f372a0fd0bf8")
+		(property "Sheetname" "Tx_mixer"
+			(at 66.04 136.4484 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "tx_mixer.kicad_sch"
+			(at 66.04 169.4946 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "nzif"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f"
+					(page "13")
+				)
+			)
+		)
+	)
+	(sheet
 		(at 322.58 199.39)
 		(size 43.18 33.02)
 		(exclude_from_sim no)
