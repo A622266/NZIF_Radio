@@ -2587,7 +2587,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Transformer:ADT2-1T"
+		(symbol "Transformer:ADT1-6T"
 			(pin_names
 				(hide yes)
 			)
@@ -2602,15 +2602,15 @@
 					)
 				)
 			)
-			(property "Value" "ADT2-1T"
-				(at 0 -6.985 0)
+			(property "Value" "ADT1-6T"
+				(at 0 -6.35 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Footprint" "RF_Mini-Circuits:Mini-Circuits_CD542_H2.84mm"
+			(property "Footprint" "RF_Mini-Circuits:Mini-Circuits_CD637_H5.23mm"
 				(at 0 -8.89 0)
 				(effects
 					(font
@@ -2619,7 +2619,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "https://www.minicircuits.com/pdfs/ADT2-1T+.pdf"
+			(property "Datasheet" "https://www.minicircuits.com/pdfs/ADT1-6T+.pdf"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2628,7 +2628,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "0.40-450MHz 1:2 RF Transformer, Unbalanced to Balanced Center Tap, CD542"
+			(property "Description" "0.06-160MHz 1:1 RF Transformer, Unbalanced to Balanced Center Tap, CD542"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2646,7 +2646,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "Mini?Circuits*CD542*"
+			(property "ki_fp_filters" "Mini?Circuits*CD637*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2655,18 +2655,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "ADT2-1T_0_1"
-				(circle
-					(center -3.81 3.81)
-					(radius 0.635)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
+			(symbol "ADT1-6T_0_1"
 				(polyline
 					(pts
 						(xy -2.54 5.08) (xy -1.524 5.08) (xy -1.524 3.048)
@@ -2823,19 +2812,8 @@
 						(type none)
 					)
 				)
-				(circle
-					(center 3.81 3.81)
-					(radius 0.635)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
 			)
-			(symbol "ADT2-1T_1_1"
+			(symbol "ADT1-6T_1_1"
 				(pin passive line
 					(at -5.08 5.08 0)
 					(length 2.54)
@@ -2872,25 +2850,6 @@
 						)
 					)
 				)
-				(pin no_connect line
-					(at -2.54 0 0)
-					(length 2.54)
-					(hide yes)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
 				(pin passive line
 					(at 5.08 5.08 180)
 					(length 2.54)
@@ -2901,7 +2860,7 @@
 							)
 						)
 					)
-					(number "6"
+					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2937,7 +2896,7 @@
 							)
 						)
 					)
-					(number "4"
+					(number "6"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4270,86 +4229,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Transformer:ADT2-1T")
-		(at 41.91 38.1 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "458a3e8f-ac72-477f-8dc8-3c7e467f3c41")
-		(property "Reference" "TR201"
-			(at 41.91 27.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "ADT2-1T"
-			(at 41.91 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "RF_Mini-Circuits:Mini-Circuits_CD542_H2.84mm"
-			(at 41.91 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.minicircuits.com/pdfs/ADT2-1T+.pdf"
-			(at 41.91 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "0.40-450MHz 1:2 RF Transformer, Unbalanced to Balanced Center Tap, CD542"
-			(at 41.91 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "4cd29efd-329f-4b21-8ae5-e8645a0db101")
-		)
-		(pin "6"
-			(uuid "9a1fccc3-9614-4add-84c3-bd14e3f61bf3")
-		)
-		(pin "5"
-			(uuid "54eb1642-3ed9-4239-8cd9-e6ff46937c7e")
-		)
-		(pin "4"
-			(uuid "0de8ea50-1905-4601-a973-c68ce0b210f8")
-		)
-		(pin "3"
-			(uuid "80d82cb2-81f8-464e-b39d-ce0491d5c46d")
-		)
-		(pin "1"
-			(uuid "16de0d1e-27bb-4b33-8e49-52442c2d661a")
-		)
-		(instances
-			(project ""
-				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f"
-					(reference "TR201")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Connector:Conn_Coaxial_Small")
 		(at 30.48 36.83 180)
 		(unit 1)
@@ -4412,6 +4291,83 @@
 			(project ""
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f"
 					(reference "J1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transformer:ADT1-6T")
+		(at 41.91 154.94 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8e01e4bc-ff80-475f-aaff-006507de9919")
+		(property "Reference" "TR202"
+			(at 41.91 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "ADT1-6T"
+			(at 41.91 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "RF_Mini-Circuits:Mini-Circuits_CD637_H5.23mm"
+			(at 41.91 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.minicircuits.com/pdfs/ADT1-6T+.pdf"
+			(at 41.91 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "0.06-160MHz 1:1 RF Transformer, Unbalanced to Balanced Center Tap, CD542"
+			(at 41.91 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "97d1554b-8fcb-4123-b92c-d06d556cc572")
+		)
+		(pin "5"
+			(uuid "3c6c7d0d-d4d2-4c12-92ed-c46f67b335a4")
+		)
+		(pin "4"
+			(uuid "9c49731d-0f18-4e89-91ce-6f10c191d8a4")
+		)
+		(pin "6"
+			(uuid "6a50c90f-f38f-4744-be69-e50d7a98c445")
+		)
+		(pin "3"
+			(uuid "80e69e34-20b9-4bcc-917d-7f19032347f3")
+		)
+		(instances
+			(project "nzif"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f"
+					(reference "TR202")
 					(unit 1)
 				)
 			)
@@ -4687,6 +4643,83 @@
 			(project "dap"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f"
 					(reference "J11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transformer:ADT1-6T")
+		(at 43.18 39.37 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a5c51254-8bbd-4675-af57-d4605db688fe")
+		(property "Reference" "TR201"
+			(at 43.18 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "ADT1-6T"
+			(at 43.18 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "RF_Mini-Circuits:Mini-Circuits_CD637_H5.23mm"
+			(at 43.18 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.minicircuits.com/pdfs/ADT1-6T+.pdf"
+			(at 43.18 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "0.06-160MHz 1:1 RF Transformer, Unbalanced to Balanced Center Tap, CD542"
+			(at 43.18 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8991bc1a-759b-4558-89b4-97892fd000e7")
+		)
+		(pin "5"
+			(uuid "11651939-5ccf-4c51-8403-1f8b73e6764f")
+		)
+		(pin "4"
+			(uuid "fd898bb9-fa57-45c3-82ed-fb3e2fb345e8")
+		)
+		(pin "6"
+			(uuid "45ad04d3-7815-4a3c-aee2-3500eafab3ab")
+		)
+		(pin "3"
+			(uuid "7b9c4fb1-60a6-4016-aa0c-ec1f71fa5133")
+		)
+		(instances
+			(project ""
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f"
+					(reference "TR201")
 					(unit 1)
 				)
 			)
@@ -5113,6 +5146,74 @@
 			(project "sdr_12p"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f"
 					(reference "#FLG01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_Coaxial_Small")
+		(at 29.21 152.4 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cedf7a2b-e3d4-48a8-b4e0-f0bbb514653f")
+		(property "Reference" "J201"
+			(at 29.7295 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Rx"
+			(at 29.7295 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 29.21 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 29.21 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "small coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)"
+			(at 29.21 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "0ee7272c-f7e9-4cb2-aead-1758e53bf3f0")
+		)
+		(pin "1"
+			(uuid "fc6a998a-ea1c-42f0-b3b0-59c71cf9f520")
+		)
+		(instances
+			(project "nzif"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f"
+					(reference "J201")
 					(unit 1)
 				)
 			)
