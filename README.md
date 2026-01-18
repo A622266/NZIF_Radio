@@ -1,6 +1,26 @@
 # NZIF_Radio
 A near zero-if radio architecture using a polyphase mixer
 
+## Rx Mixer Subsystem (First Stage)
+
+The Rx Mixer is the first stage of the receiver chain, performing direct conversion of the incoming RF signal to baseband using a polyphase mixer architecture. This approach enables image rejection and quadrature demodulation in a single stage without the need for intermediate IF filters.
+
+### Architecture:
+- **Differential RF Input (RF+/RF-)**: Accepts balanced RF signals from the antenna and front-end amplifiers
+- **FET-Based Mixer Switches**: SN74CBT3125CPW quad FET bus switches act as the mixer elements, providing low-distortion switching with minimal insertion loss
+- **Multi-Phase Local Oscillator**: Multiple LO phases (typically 12 phases) drive the FET switches to create a polyphase mixer that suppresses unwanted sidebands and harmonics
+- **I/Q Baseband Outputs**: The mixer produces in-phase (I) and quadrature (Q) outputs that are summed through resistor networks to create the final differential baseband signals
+- **Baseband Amplifiers**: ADA4620-2 dual precision op amps provide buffering and gain for the low-level baseband signals before they reach the ADCs
+
+### Operation:
+The polyphase mixer works by switching the RF signal with multiple phases of the local oscillator (LO), typically 12 phases spaced 30° apart. Each phase drives a separate FET switch that samples the RF input at a slightly different time. The outputs are combined with weighted resistors to produce the I and Q channels. This multi-phase technique provides:
+- **Image rejection** through phase cancellation of unwanted mixing products
+- **Harmonic suppression** as odd harmonics are cancelled by the polyphase summation
+- **Direct conversion** from RF to baseband without intermediate IF stages
+- **Quadrature outputs** for complex signal processing and SSB demodulation
+
+The baseband I/Q signals are then passed to the ADC subsystem for digitization and DSP processing.
+
 ## DSP Subsystem Operation
 
 The heart of the NZIF radio is the ADAU1467 SigmaDSP audio processor, a 300MHz programmable DSP with integrated ADC/DAC interfaces. This chip performs all digital signal processing functions including filtering, demodulation, AGC, and audio routing.
