@@ -4144,7 +4144,7 @@
 	)
 	(symbol
 		(lib_id "Transformer:ADT4-6T")
-		(at 46.99 144.78 0)
+		(at 128.27 102.87 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4153,7 +4153,7 @@
 		(fields_autoplaced yes)
 		(uuid "26727d9c-599c-4da0-b084-114f61534160")
 		(property "Reference" "TR202"
-			(at 46.99 134.62 0)
+			(at 128.27 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4161,7 +4161,7 @@
 			)
 		)
 		(property "Value" "ADT4-6T"
-			(at 46.99 137.16 0)
+			(at 128.27 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4169,7 +4169,7 @@
 			)
 		)
 		(property "Footprint" "RF_Mini-Circuits:Mini-Circuits_CD637_H5.23mm"
-			(at 46.99 153.67 0)
+			(at 128.27 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4178,7 +4178,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.minicircuits.com/pdfs/ADT4-6T+.pdf"
-			(at 46.99 144.78 0)
+			(at 128.27 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4187,7 +4187,7 @@
 			)
 		)
 		(property "Description" "1.5-70MHz 1:4 RF Transformer, Unbalanced to Balanced Center Tap, CD637"
-			(at 46.99 144.78 0)
+			(at 128.27 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4837,74 +4837,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Conn_Coaxial_Small")
-		(at 29.21 166.37 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b9a6aef3-daf2-4058-84aa-1d01e97eb89c")
-		(property "Reference" "J202"
-			(at 29.7295 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Rx"
-			(at 29.7295 162.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 29.21 166.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 29.21 166.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "small coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)"
-			(at 29.21 166.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "b56ae54a-2001-4c8d-a585-fb6754db7a06")
-		)
-		(pin "1"
-			(uuid "8ce1d069-8ec8-4b59-ac28-8a71a78db30e")
-		)
-		(instances
-			(project "nzif"
-				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f"
-					(reference "J202")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:LED_Small_Filled")
 		(at 403.86 49.53 90)
 		(unit 1)
@@ -5144,7 +5076,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_Coaxial_Small")
-		(at 29.21 143.51 180)
+		(at 29.21 111.76 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5153,7 +5085,7 @@
 		(fields_autoplaced yes)
 		(uuid "cedf7a2b-e3d4-48a8-b4e0-f0bbb514653f")
 		(property "Reference" "J201"
-			(at 29.7295 137.16 0)
+			(at 29.7295 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5161,7 +5093,7 @@
 			)
 		)
 		(property "Value" "Rx"
-			(at 29.7295 139.7 0)
+			(at 29.7295 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5169,7 +5101,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 29.21 143.51 0)
+			(at 29.21 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5178,7 +5110,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 29.21 143.51 0)
+			(at 29.21 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5187,7 +5119,7 @@
 			)
 		)
 		(property "Description" "small coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)"
-			(at 29.21 143.51 0)
+			(at 29.21 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5344,7 +5276,7 @@
 	)
 	(symbol
 		(lib_id "Transformer:ADT4-6T")
-		(at 46.99 163.83 0)
+		(at 127 121.92 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5353,7 +5285,7 @@
 		(fields_autoplaced yes)
 		(uuid "e9f087fb-55ba-41b9-a4e1-ab8c333b0b3b")
 		(property "Reference" "TR203"
-			(at 46.99 153.67 0)
+			(at 127 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5361,7 +5293,7 @@
 			)
 		)
 		(property "Value" "ADT4-6T"
-			(at 46.99 156.21 0)
+			(at 127 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5369,7 +5301,7 @@
 			)
 		)
 		(property "Footprint" "RF_Mini-Circuits:Mini-Circuits_CD637_H5.23mm"
-			(at 46.99 172.72 0)
+			(at 127 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5378,7 +5310,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.minicircuits.com/pdfs/ADT4-6T+.pdf"
-			(at 46.99 163.83 0)
+			(at 127 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5387,7 +5319,7 @@
 			)
 		)
 		(property "Description" "1.5-70MHz 1:4 RF Transformer, Unbalanced to Balanced Center Tap, CD637"
-			(at 46.99 163.83 0)
+			(at 127 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5487,7 +5419,7 @@
 	)
 	(symbol
 		(lib_id "Transformer:ADT4-6T")
-		(at 43.18 36.83 0)
+		(at 102.87 40.64 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5496,7 +5428,7 @@
 		(fields_autoplaced yes)
 		(uuid "f80897ec-c959-44c1-98b8-3cdabe031e9c")
 		(property "Reference" "TR201"
-			(at 43.18 26.67 0)
+			(at 102.87 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5504,7 +5436,7 @@
 			)
 		)
 		(property "Value" "ADT4-6T"
-			(at 43.18 29.21 0)
+			(at 102.87 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5512,7 +5444,7 @@
 			)
 		)
 		(property "Footprint" "RF_Mini-Circuits:Mini-Circuits_CD637_H5.23mm"
-			(at 43.18 45.72 0)
+			(at 102.87 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5521,7 +5453,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.minicircuits.com/pdfs/ADT4-6T+.pdf"
-			(at 43.18 36.83 0)
+			(at 102.87 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5530,7 +5462,7 @@
 			)
 		)
 		(property "Description" "1.5-70MHz 1:4 RF Transformer, Unbalanced to Balanced Center Tap, CD637"
-			(at 43.18 36.83 0)
+			(at 102.87 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5717,7 +5649,7 @@
 		)
 	)
 	(sheet
-		(at 140.97 96.52)
+		(at 166.37 93.98)
 		(size 54.61 31.75)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5733,7 +5665,7 @@
 		)
 		(uuid "2802166e-37f5-44e9-af25-f372a0fd0bf8")
 		(property "Sheetname" "Tx_mixer"
-			(at 140.97 95.8084 0)
+			(at 166.37 93.2684 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5742,7 +5674,7 @@
 			)
 		)
 		(property "Sheetfile" "tx_mixer.kicad_sch"
-			(at 140.97 128.8546 0)
+			(at 166.37 126.3146 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5826,6 +5758,48 @@
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f"
 					(page "11")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 45.72 87.63)
+		(size 45.72 43.18)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "439e100a-b249-4938-91f0-35bc70ca73c3")
+		(property "Sheetname" "Reconstruction_Filters"
+			(at 45.72 86.9184 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "reconstruction_filters.kicad_sch"
+			(at 45.72 131.3946 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "nzif"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f"
+					(page "13")
 				)
 			)
 		)
