@@ -21,5 +21,10 @@ Minimal USB CDC prototype for Kenwood-style CAT commands over a COM port.
    - Configure: `cmake -G "Ninja" ..`
    - Build: `cmake --build .`
 
+## Quick CAT test (Windows)
+Use the PowerShell script in [scripts/cat_test.ps1](scripts/cat_test.ps1):
+
+- Example: `powershell -File .\scripts\cat_test.ps1 -Port COM5`
+
 ## Notes
 This is a bring-up stub meant to confirm USB CDC and basic CAT parsing. The `IF` response is structured but still simplified and should be expanded for full compatibility.
