@@ -3,12 +3,17 @@
 Minimal USB CDC prototype for Kenwood-style CAT commands over a COM port.
 
 ## Supported commands (initial)
-- `FA` (get/set frequency in Hz, 11 digits)
+- `FA` / `FB` (get/set VFO A/B frequency in Hz, 11 digits)
+- `FR` / `FT` (select RX/TX VFO)
 - `MD` (get/set mode)
 - `TX` / `RX` (PTT)
 - `ID` (returns Kenwood TS-2000 ID)
 - `AI` (auto information off)
-- `IF` (placeholder response)
+- `IF` (structured response)
+- `AG` / `RG` (AF/RF gain)
+- `SM` (S-meter)
+- `GT` (AGC)
+- `KS` / `KY` (keyer speed / CW text ack)
 
 ## Build (Windows)
 1. Install Pico SDK and set `PICO_SDK_PATH`.
@@ -17,4 +22,4 @@ Minimal USB CDC prototype for Kenwood-style CAT commands over a COM port.
    - Build: `cmake --build .`
 
 ## Notes
-This is a bring-up stub meant to confirm USB CDC and basic CAT parsing. The `IF` response is intentionally minimal and should be expanded for full compatibility.
+This is a bring-up stub meant to confirm USB CDC and basic CAT parsing. The `IF` response is structured but still simplified and should be expanded for full compatibility.
