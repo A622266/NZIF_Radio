@@ -14,8 +14,8 @@ add_executable(nzif_usb_cdc
 
 target_link_libraries(nzif_usb_cdc
     pico_stdlib
-    tinyusb_device
 )
+
 
 pico_enable_stdio_usb(nzif_usb_cdc 1)
 pico_enable_stdio_uart(nzif_usb_cdc 0)

@@ -1,6 +1,16 @@
 # NZIF_Radio
 A near zero-if radio architecture using a polyphase mixer
 
+## Pico USB CAT Bring-up (High Level)
+We added a small Raspberry Pi Pico firmware that exposes a USB virtual serial port and responds to basic Kenwood-style CAT commands. This lets us confirm the USB connection, command parsing, and expected replies before tying into full radio hardware or logging software.
+
+In short:
+- The Pico connects via micro USB only (no pin headers required).
+- Flashing is done by holding BOOTSEL and copying a .uf2 file to the Pico's USB drive.
+- A simple test script sends CAT commands and prints the replies.
+
+Details and step-by-step instructions are in [firmware/usb_cdc/README.md](firmware/usb_cdc/README.md).
+
 ## Rx Mixer Subsystem (First Stage)
 
 The Rx Mixer is the first stage of the receiver chain, performing direct conversion of the incoming RF signal to baseband using a polyphase mixer architecture. This approach enables image rejection and quadrature demodulation in a single stage without the need for intermediate IF filters.

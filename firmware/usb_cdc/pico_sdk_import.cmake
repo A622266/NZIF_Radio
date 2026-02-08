@@ -11,4 +11,4 @@ if (NOT PICO_SDK_PATH)
     message(FATAL_ERROR "PICO_SDK_PATH is not set. Set it to your Pico SDK path.")
 endif()
 
-include(${PICO_SDK_PATH}/external/pico_sdk_init.cmake)
+include(${PICO_SDK_PATH}/pico_sdk_init.cmake)
