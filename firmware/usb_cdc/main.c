@@ -61,11 +61,11 @@ static void cat_write_tx(void) {
 }
 
 static void cat_write_if(void) {
-    // Kenwood-style IF response (minimal but structured).
+    // Kenwood-style IF response (hamlib expects 37 data chars after trimming ';').
     // IF[11]=freq [4]=step [5]=rit [5]=xit [1]=rit_on [1]=xit_on [1]=tx
-    // [1]=mode [1]=vfo [1]=scan [1]=split [1]=tone
+    // [1]=mode [1]=vfo [1]=scan [1]=split [1]=tone [2]=reserved (+1 pad for hamlib)
     char reply[64];
-    snprintf(reply, sizeof(reply), "IF%011llu%04d%05d%05d%d%d%d%d%d%d%d;",
+    snprintf(reply, sizeof(reply), "IF%011llu%04d%05d%05d%d%d%d%d%d%d%d000;",
              (unsigned long long)current_rx_freq_hz(),
              0, 0, 0,
              0, 0,
@@ -117,6 +117,7 @@ static void handle_command(const char *cmd) {
             if (val > 0) {
                 g_vfo_a_hz = val;
             }
+            return;
         }
         cat_write_fa();
         return;
@@ -128,6 +129,7 @@ static void handle_command(const char *cmd) {
             if (val > 0) {
                 g_vfo_b_hz = val;
             }
+            return;
         }
         cat_write_fb();
         return;
@@ -139,6 +141,7 @@ static void handle_command(const char *cmd) {
             if (val > 0) {
                 g_mode = val;
             }
+            return;
         }
         cat_write_md();
         return;
@@ -147,8 +150,7 @@ static void handle_command(const char *cmd) {
     if (c0 == 'T' && c1 == 'X') {
         if (*args) {
             g_ptt = (atoi(args) != 0);
-        } else {
-            g_ptt = true;
+            return;
         }
         cat_write_tx();
         return;
@@ -156,7 +158,6 @@ static void handle_command(const char *cmd) {
 
     if (c0 == 'R' && c1 == 'X') {
         g_ptt = false;
-        cat_write("RX;");
         return;
     }
 
@@ -176,6 +177,7 @@ static void handle_command(const char *cmd) {
             if (val >= 0 && val <= 255) {
                 g_af_gain = val;
             }
+            return;
         }
         cat_write_ag();
         return;
@@ -187,6 +189,7 @@ static void handle_command(const char *cmd) {
             if (val >= 0 && val <= 255) {
                 g_rf_gain = val;
             }
+            return;
         }
         cat_write_rg();
         return;
@@ -203,6 +206,7 @@ static void handle_command(const char *cmd) {
             if (val >= 0 && val <= 3) {
                 g_agc = val;
             }
+            return;
         }
         cat_write_gt();
         return;
@@ -214,6 +218,7 @@ static void handle_command(const char *cmd) {
             if (val >= 5 && val <= 60) {
                 g_keyer_wpm = val;
             }
+            return;
         }
         char reply[16];
         snprintf(reply, sizeof(reply), "KS%03d;", g_keyer_wpm);
@@ -230,6 +235,7 @@ static void handle_command(const char *cmd) {
     if (c0 == 'F' && c1 == 'R') {
         if (*args) {
             g_active_vfo_b = (atoi(args) != 0);
+            return;
         }
         cat_write(g_active_vfo_b ? "FR1;" : "FR0;");
         return;
@@ -238,6 +244,8 @@ static void handle_command(const char *cmd) {
     if (c0 == 'F' && c1 == 'T') {
         if (*args) {
             g_tx_vfo_b = (atoi(args) != 0);
+            g_split = (g_tx_vfo_b != g_active_vfo_b);
+            return;
         }
         g_split = (g_tx_vfo_b != g_active_vfo_b);
         cat_write(g_tx_vfo_b ? "FT1;" : "FT0;");
@@ -246,6 +254,12 @@ static void handle_command(const char *cmd) {
 
     if (c0 == 'I' && c1 == 'F') {
         cat_write_if();
+        return;
+    }
+
+    if (c0 == 'S' && c1 == 'A') {
+        // Satellite mode query: return off.
+        cat_write("SA0;");
         return;
     }
 

@@ -9,13 +9,29 @@ $serial = New-Object System.IO.Ports.SerialPort $Port, $Baud, 'None', 8, 'One'
 $serial.NewLine = ";"
 $serial.ReadTimeout = 1000
 $serial.WriteTimeout = 1000
+$serial.DtrEnable = $true
+$serial.RtsEnable = $true
 
 try {
     $serial.Open()
+    Start-Sleep -Milliseconds 250
 
     function Send-Cat($cmd) {
         Write-Host "=> $cmd" -ForegroundColor Cyan
-        $serial.Write($cmd + ";")
+        $attempt = 0
+        $maxAttempts = 3
+        while ($true) {
+            try {
+                $serial.Write($cmd + ";")
+                break
+            } catch [System.IO.IOException] {
+                $attempt++
+                if ($attempt -ge $maxAttempts) {
+                    throw
+                }
+                Start-Sleep -Milliseconds 200
+            }
+        }
         Start-Sleep -Milliseconds 50
         $response = $serial.ReadExisting()
         if ($response) {
