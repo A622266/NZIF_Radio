@@ -561,326 +561,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Transformer:ADT16-6T"
-			(pin_names
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "TR"
-				(at 0 6.35 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "ADT16-6T"
-				(at 0 -6.35 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "RF_Mini-Circuits:Mini-Circuits_CD637_H5.23mm"
-				(at 0 -8.89 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://www.minicircuits.com/pdfs/ADT16-6T+.pdf"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "0.10-400MHz 1:16 RF Transformer, Unbalanced to Balanced Center Tap, CD542"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "Mini-Circuits RF Transformer"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "Mini?Circuits*CD637*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "ADT16-6T_0_1"
-				(polyline
-					(pts
-						(xy -2.54 5.08) (xy -1.524 5.08) (xy -1.524 3.048)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start -1.524 3.048)
-					(mid -0.7653 2.286)
-					(end -1.524 1.524)
-					(stroke
-						(width 0.2032)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start -1.524 1.524)
-					(mid -0.7653 0.762)
-					(end -1.524 0)
-					(stroke
-						(width 0.2032)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start -1.524 0)
-					(mid -0.7653 -0.762)
-					(end -1.524 -1.524)
-					(stroke
-						(width 0.2032)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start -1.524 -1.524)
-					(mid -0.7653 -2.286)
-					(end -1.524 -3.048)
-					(stroke
-						(width 0.2032)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.524 -3.048) (xy -1.524 -5.08) (xy -2.54 -5.08)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.524 3.048) (xy 1.524 5.08) (xy 2.54 5.08)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 1.524 1.524)
-					(mid 0.7653 2.286)
-					(end 1.524 3.048)
-					(stroke
-						(width 0.2032)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 1.524 0)
-					(mid 0.7653 0.762)
-					(end 1.524 1.524)
-					(stroke
-						(width 0.2032)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 1.524 -1.524)
-					(mid 0.7653 -0.762)
-					(end 1.524 0)
-					(stroke
-						(width 0.2032)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 1.524 -3.048)
-					(mid 0.7653 -2.286)
-					(end 1.524 -1.524)
-					(stroke
-						(width 0.2032)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 0) (xy 1.27 0)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 -5.08) (xy 1.524 -5.08) (xy 1.524 -3.048)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "ADT16-6T_1_1"
-				(pin passive line
-					(at -5.08 5.08 0)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 -5.08 0)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 5.08 180)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 0 180)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 -5.08 180)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Transistor_FET:EPC2037"
 			(pin_names
 				(offset 0)
@@ -2259,16 +1939,6 @@
 	)
 	(wire
 		(pts
-			(xy 33.02 114.3) (xy 33.02 121.92)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0e02cf37-68dc-410c-931e-2dcbd9073d8c")
-	)
-	(wire
-		(pts
 			(xy 180.34 102.87) (xy 180.34 93.98)
 		)
 		(stroke
@@ -2339,16 +2009,6 @@
 	)
 	(wire
 		(pts
-			(xy 21.59 68.58) (xy 33.02 68.58)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "185d58de-9a4c-458d-b9cb-41eb5be27bb9")
-	)
-	(wire
-		(pts
 			(xy 219.71 120.65) (xy 224.79 120.65)
 		)
 		(stroke
@@ -2406,16 +2066,6 @@
 			(type default)
 		)
 		(uuid "1a91b932-415b-4ec6-9465-d3ec33d28252")
-	)
-	(wire
-		(pts
-			(xy 29.21 132.08) (xy 29.21 137.16)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1a9b1fbb-b261-431d-9bea-45885b9b7b5e")
 	)
 	(wire
 		(pts
@@ -2876,16 +2526,6 @@
 			(type default)
 		)
 		(uuid "41294d50-ad63-430b-9fc0-49f6402df5be")
-	)
-	(wire
-		(pts
-			(xy 43.18 86.36) (xy 52.07 86.36)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "42eed69e-560c-489f-bfb3-6c65bfdfc38b")
 	)
 	(wire
 		(pts
@@ -3469,16 +3109,6 @@
 	)
 	(wire
 		(pts
-			(xy 43.18 132.08) (xy 52.07 132.08)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "816dfb75-72ed-4667-adf9-8c8b005a3bb8")
-	)
-	(wire
-		(pts
 			(xy 115.57 68.58) (xy 121.92 68.58)
 		)
 		(stroke
@@ -3709,16 +3339,6 @@
 	)
 	(wire
 		(pts
-			(xy 43.18 114.3) (xy 52.07 114.3)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a0cac884-ab65-41a5-b4cb-b9b7e3125abc")
-	)
-	(wire
-		(pts
 			(xy 171.45 16.51) (xy 171.45 19.05)
 		)
 		(stroke
@@ -3759,16 +3379,6 @@
 	)
 	(wire
 		(pts
-			(xy 33.02 78.74) (xy 33.02 86.36)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a9d10c50-7124-4745-b2ae-6690f6c463f6")
-	)
-	(wire
-		(pts
 			(xy 313.69 120.65) (xy 313.69 123.19)
 		)
 		(stroke
@@ -3786,16 +3396,6 @@
 			(type default)
 		)
 		(uuid "aa912d95-0f73-4439-817a-4e05276ab8cd")
-	)
-	(wire
-		(pts
-			(xy 43.18 96.52) (xy 52.07 96.52)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "acd3ddd9-4ffd-4138-85b5-8cb169f94e23")
 	)
 	(wire
 		(pts
@@ -3916,16 +3516,6 @@
 			(type default)
 		)
 		(uuid "bb51045f-24d5-4a7c-bc2b-1e453fa7085e")
-	)
-	(wire
-		(pts
-			(xy 33.02 96.52) (xy 33.02 104.14)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bc8ca7b4-dfaf-45fd-bf25-5f671bd13c43")
 	)
 	(wire
 		(pts
@@ -4269,16 +3859,6 @@
 	)
 	(wire
 		(pts
-			(xy 43.18 68.58) (xy 52.07 68.58)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e5b9a36a-7055-4410-a533-e3aac79c70c5")
-	)
-	(wire
-		(pts
 			(xy 119.38 187.96) (xy 119.38 185.42)
 		)
 		(stroke
@@ -4306,16 +3886,6 @@
 			(type default)
 		)
 		(uuid "eacfcfa1-24ab-4d11-aa9f-b3ec39824f0e")
-	)
-	(wire
-		(pts
-			(xy 43.18 78.74) (xy 52.07 78.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "eb28d4b8-da71-4ae8-afa7-cd880d76f0ba")
 	)
 	(wire
 		(pts
@@ -4459,16 +4029,6 @@
 	)
 	(wire
 		(pts
-			(xy 43.18 104.14) (xy 52.07 104.14)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f460ffab-6f68-4157-b542-ef683a562ccc")
-	)
-	(wire
-		(pts
 			(xy 157.48 246.38) (xy 177.8 246.38)
 		)
 		(stroke
@@ -4516,26 +4076,6 @@
 			(type default)
 		)
 		(uuid "f9d45f96-8801-4db3-bc7e-f3999cf12e47")
-	)
-	(wire
-		(pts
-			(xy 43.18 121.92) (xy 52.07 121.92)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fa7ed1f1-6c3f-44d5-b765-49f41807d7e9")
-	)
-	(wire
-		(pts
-			(xy 33.02 132.08) (xy 29.21 132.08)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fd9c3aac-fa9b-426d-a24c-9c3db522e1ea")
 	)
 	(wire
 		(pts
@@ -4607,16 +4147,6 @@
 		)
 		(uuid "16bc4252-56b9-4009-a749-7df5c6ae252c")
 	)
-	(label "RF_N90"
-		(at 52.07 96.52 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "21feee8a-d3f1-4ba5-b00f-719e8c2ed185")
-	)
 	(label "Baseband_135"
 		(at 96.52 246.38 0)
 		(effects
@@ -4627,27 +4157,7 @@
 		)
 		(uuid "2a6db3bc-0aa2-4f39-9bb5-84d096564174")
 	)
-	(label "RF_P270"
-		(at 52.07 121.92 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "2abf340f-1b86-437d-a3bf-cf749f87eb4a")
-	)
-	(label "RF_N180"
-		(at 52.07 114.3 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "2b8926f8-33d2-4c30-baaf-09ef0e181621")
-	)
-	(label "RF_P0"
+	(label "RF+"
 		(at 207.01 76.2 0)
 		(effects
 			(font
@@ -4667,17 +4177,7 @@
 		)
 		(uuid "44c8aa12-da2e-4484-a7f7-04d57d00e46c")
 	)
-	(label "RF_N270"
-		(at 52.07 132.08 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "518e5259-eb66-4ad8-9da5-41a5a331b514")
-	)
-	(label "RF_P0"
+	(label "RF+"
 		(at 295.91 76.2 0)
 		(effects
 			(font
@@ -4707,7 +4207,7 @@
 		)
 		(uuid "5bb427ee-c720-458c-9d35-a61b811f85ee")
 	)
-	(label "RF_P0"
+	(label "RF-"
 		(at 386.08 153.67 0)
 		(effects
 			(font
@@ -4726,16 +4226,6 @@
 			(justify left bottom)
 		)
 		(uuid "5d61abd7-29f8-4e7d-9020-de5bb607d755")
-	)
-	(label "RF_P90"
-		(at 52.07 86.36 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "5db5bdca-ee5a-44a1-b38b-091c63ebaf10")
 	)
 	(label "Baseband_0"
 		(at 157.48 226.06 0)
@@ -4757,7 +4247,7 @@
 		)
 		(uuid "6eb63f34-9dcc-43d4-8793-b8d14792dfc9")
 	)
-	(label "RF_P0"
+	(label "RF-"
 		(at 207.01 153.67 0)
 		(effects
 			(font
@@ -4787,7 +4277,7 @@
 		)
 		(uuid "7559d8af-36b5-4af2-b8fe-bc6457882f81")
 	)
-	(label "RF_P0"
+	(label "RF-"
 		(at 295.91 153.67 0)
 		(effects
 			(font
@@ -4797,7 +4287,7 @@
 		)
 		(uuid "76256f98-9080-4c83-bb7d-f1d766d986a0")
 	)
-	(label "RF_P0"
+	(label "RF-"
 		(at 116.84 153.67 0)
 		(effects
 			(font
@@ -4837,16 +4327,6 @@
 		)
 		(uuid "8b35b106-eaeb-410c-b093-d90e38015c35")
 	)
-	(label "RF_P180"
-		(at 52.07 104.14 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "8dc9e7e7-61c0-4c45-8a2d-158eff50ce6f")
-	)
 	(label "12V"
 		(at 64.77 185.42 180)
 		(effects
@@ -4877,7 +4357,7 @@
 		)
 		(uuid "a6540b72-3dff-4b7e-98ba-2e765b9b0845")
 	)
-	(label "RF_P0"
+	(label "RF+"
 		(at 116.84 76.2 0)
 		(effects
 			(font
@@ -4917,7 +4397,7 @@
 		)
 		(uuid "c2b245fb-3176-435b-8ffc-f2cf6b2a85e5")
 	)
-	(label "RF_P0"
+	(label "RF+"
 		(at 386.08 76.2 0)
 		(effects
 			(font
@@ -4997,16 +4477,6 @@
 		)
 		(uuid "e3e6ab7f-a110-4491-86c2-d34e5ac50bf6")
 	)
-	(label "RF_P0"
-		(at 52.07 68.58 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "e64d3804-63b6-4522-9647-9d54a71fcbdd")
-	)
 	(label "Baseband_90"
 		(at 326.39 43.18 180)
 		(effects
@@ -5026,16 +4496,6 @@
 			(justify left bottom)
 		)
 		(uuid "fba38a23-3be6-4289-a76c-a147ede351d2")
-	)
-	(label "RF_N0"
-		(at 52.07 78.74 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "ff2985ba-c308-434c-948f-0a2e77282480")
 	)
 	(hierarchical_label "BB_90"
 		(shape output)
@@ -5080,17 +4540,6 @@
 			(justify right)
 		)
 		(uuid "555f4740-2d25-4968-a9f3-3c4e579bc7f1")
-	)
-	(hierarchical_label "RF_INPUT"
-		(shape input)
-		(at 21.59 68.58 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "55b6fc22-070d-4a9c-ab15-0d5da857cc81")
 	)
 	(hierarchical_label "CLK_P135"
 		(shape input)
@@ -5234,7 +4683,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "00730e02-5cc5-4bde-8fe5-5da451fe66f1")
-		(property "Reference" "C27"
+		(property "Reference" "C?"
 			(at 406.4 46.9962 0)
 			(effects
 				(font
@@ -5292,6 +4741,12 @@
 					(unit 1)
 				)
 			)
+			(project "nzif"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
+					(reference "C?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -5304,7 +4759,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "06bc89dc-eabe-47e0-9510-13c7d4cac485")
-		(property "Reference" "R1"
+		(property "Reference" "R?"
 			(at 118.11 59.69 90)
 			(effects
 				(font
@@ -5360,6 +4815,101 @@
 					(unit 1)
 				)
 			)
+			(project "nzif"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
+					(reference "R?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Amplifier_Operational:ADA4625-2ARDZ")
+		(at 250.19 248.92 0)
+		(unit 2)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0a3ed897-2f50-4651-b785-645d42be0124")
+		(property "Reference" "U219"
+			(at 250.19 238.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "ADA4625-2ARDZ"
+			(at 250.19 241.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm"
+			(at 248.92 256.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/ADA4625-1-4625-2.pdf"
+			(at 250.19 248.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Dual 5V..36V/±2.5V..±18V supply, 18 MHz, 48V/µs slew rate, ±80 µV offset, RRO, Fast-settling JFET Op Amp, SOIC-8-1EP"
+			(at 250.19 248.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "7"
+			(uuid "a6917589-05a3-465f-9ce5-619d70184766")
+		)
+		(pin "2"
+			(uuid "d2a249fb-b0eb-4ffa-8bef-3a77b42ea05f")
+		)
+		(pin "6"
+			(uuid "b01dee1b-6261-420a-b8af-4bb58afd4459")
+		)
+		(pin "4"
+			(uuid "8b00b521-f6b9-439e-ac08-c634e1d3e00b")
+		)
+		(pin "3"
+			(uuid "b0259de9-cfee-4775-9cb2-7f9db40548dd")
+		)
+		(pin "8"
+			(uuid "00447f5e-3aa4-4340-a1c1-73aba3b2175f")
+		)
+		(pin "1"
+			(uuid "212a3c5e-bd4f-4f4e-a4c9-5349202cdb24")
+		)
+		(pin "5"
+			(uuid "870b9cc2-13df-4000-afb8-e68db36d1bff")
+		)
+		(pin "9"
+			(uuid "a8407188-6a76-490f-85e9-2f6856bd4b73")
+		)
+		(instances
+			(project ""
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
+					(reference "U219")
+					(unit 2)
+				)
+			)
 		)
 	)
 	(symbol
@@ -5372,7 +4922,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0a5a1a11-ddf5-4c18-b095-21610a05f176")
-		(property "Reference" "U6"
+		(property "Reference" "U?"
 			(at 276.4633 153.67 0)
 			(effects
 				(font
@@ -5462,92 +5012,9 @@
 					(unit 1)
 				)
 			)
-		)
-	)
-	(symbol
-		(lib_id "Amplifier_Operational:ADA4625-2ARDZ")
-		(at 124.46 228.6 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "0cc208fa-67d0-40cb-8a1c-516aeb766c98")
-		(property "Reference" "U10"
-			(at 124.46 218.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "ADA4625-2ARDZ"
-			(at 124.46 220.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm"
-			(at 123.19 236.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/ADA4625-1-4625-2.pdf"
-			(at 124.46 228.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Dual 5V..36V/±2.5V..±18V supply, 18 MHz, 48V/µs slew rate, ±80 µV offset, RRO, Fast-settling JFET Op Amp, SOIC-8-1EP"
-			(at 124.46 228.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "8"
-			(uuid "6013008c-b242-4910-b334-d0130449b5d2")
-		)
-		(pin "3"
-			(uuid "29f8dc0d-fa8f-445b-9db6-1e7c02b44c8e")
-		)
-		(pin "2"
-			(uuid "1022225b-eacf-47a5-a24e-9364ceb7d9bd")
-		)
-		(pin "1"
-			(uuid "0fbedd75-9588-48d1-9de3-044007bd7a04")
-		)
-		(pin "4"
-			(uuid "8a84d28f-d7b1-46ba-a5f6-fd2fd9229167")
-		)
-		(pin "9"
-			(uuid "fd3a6a96-d81d-48fe-917b-8c0a7b2214b7")
-		)
-		(pin "7"
-			(uuid "f3ef40c7-7b3c-4794-b4c4-3e037c69ee8d")
-		)
-		(pin "6"
-			(uuid "e7b031a3-5e06-4ac3-ae48-2d4d7cc3b476")
-		)
-		(pin "5"
-			(uuid "4d42bc41-495f-48cb-ab1e-0427c2292761")
-		)
-		(instances
-			(project "rx_mixer"
-				(path "/7cc72b98-3836-4c2a-8199-0c423deb5fd0"
-					(reference "U10")
+			(project "nzif"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
+					(reference "U?")
 					(unit 1)
 				)
 			)
@@ -5563,7 +5030,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0ea8129a-2b78-41cf-8e7f-dea1cfae8fc9")
-		(property "Reference" "#PWR036"
+		(property "Reference" "#PWR?"
 			(at 403.86 57.15 0)
 			(effects
 				(font
@@ -5617,6 +5084,12 @@
 					(unit 1)
 				)
 			)
+			(project "nzif"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -5628,7 +5101,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "10e84273-8f6b-4d27-8eea-60297ae6da60")
-		(property "Reference" "#PWR044"
+		(property "Reference" "#PWR?"
 			(at 182.88 209.55 0)
 			(effects
 				(font
@@ -5682,6 +5155,12 @@
 					(unit 1)
 				)
 			)
+			(project "nzif"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -5694,7 +5173,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "12133336-552b-433d-8e26-517f55f80a94")
-		(property "Reference" "#PWR027"
+		(property "Reference" "#PWR?"
 			(at 274.32 165.1 0)
 			(effects
 				(font
@@ -5748,6 +5227,12 @@
 					(unit 1)
 				)
 			)
+			(project "nzif"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -5760,7 +5245,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "127317c1-d2a7-4266-8006-41e81392726f")
-		(property "Reference" "#PWR010"
+		(property "Reference" "#PWR?"
 			(at 81.28 30.48 0)
 			(effects
 				(font
@@ -5832,7 +5317,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "139febc6-9f0d-4772-b865-8f11f1fcf1b0")
-		(property "Reference" "C26"
+		(property "Reference" "C?"
 			(at 353.06 97.7835 0)
 			(effects
 				(font
@@ -5890,6 +5375,12 @@
 					(unit 1)
 				)
 			)
+			(project "nzif"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
+					(reference "C?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -5902,7 +5393,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "14222454-f850-462c-a4bd-4816e7f46a3c")
-		(property "Reference" "#PWR022"
+		(property "Reference" "#PWR?"
 			(at 251.46 30.48 0)
 			(effects
 				(font
@@ -5956,6 +5447,12 @@
 					(unit 1)
 				)
 			)
+			(project "nzif"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -5968,7 +5465,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "185caa31-99ea-492a-b38a-0b4f4e5ef6a6")
-		(property "Reference" "U1"
+		(property "Reference" "U?"
 			(at 97.3933 76.2 0)
 			(effects
 				(font
@@ -6058,6 +5555,12 @@
 					(unit 1)
 				)
 			)
+			(project "nzif"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
+					(reference "U?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -6070,7 +5573,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1affd57e-37a8-4650-9c64-1660a4afc98e")
-		(property "Reference" "#PWR023"
+		(property "Reference" "#PWR?"
 			(at 251.46 107.95 0)
 			(effects
 				(font
@@ -6124,80 +5627,9 @@
 					(unit 1)
 				)
 			)
-		)
-	)
-	(symbol
-		(lib_id "Transformer:ADT16-6T")
-		(at 38.1 73.66 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "1cad400e-f03e-47d4-85cb-a46b6e444a57")
-		(property "Reference" "TR1"
-			(at 38.1 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "ADT16-6T"
-			(at 38.1 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "RF_Mini-Circuits:Mini-Circuits_CD637_H5.23mm"
-			(at 38.1 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.minicircuits.com/pdfs/ADT16-6T+.pdf"
-			(at 38.1 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "0.10-400MHz 1:16 RF Transformer, Unbalanced to Balanced Center Tap, CD542"
-			(at 38.1 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "ec5d5cc3-9b14-4d61-bfcd-2fba9f6f9f05")
-		)
-		(pin "6"
-			(uuid "2b7afedb-8890-47bd-a0e0-1bb8b3b7f162")
-		)
-		(pin "3"
-			(uuid "ea5a4f3e-befe-4de5-9ddb-46887b61f053")
-		)
-		(pin "5"
-			(uuid "0815964a-b8d5-4709-93fa-d68a08ab16bb")
-		)
-		(pin "4"
-			(uuid "3b51aa94-a1bd-4f49-9b81-a5922e0180e5")
-		)
-		(instances
-			(project ""
-				(path "/7cc72b98-3836-4c2a-8199-0c423deb5fd0"
-					(reference "TR1")
+			(project "nzif"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
+					(reference "#PWR?")
 					(unit 1)
 				)
 			)
@@ -6213,7 +5645,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1fce2dfc-ba3b-4400-9c23-e91e9a0d83e5")
-		(property "Reference" "U4"
+		(property "Reference" "U?"
 			(at 187.5633 153.67 0)
 			(effects
 				(font
@@ -6303,93 +5735,10 @@
 					(unit 1)
 				)
 			)
-		)
-	)
-	(symbol
-		(lib_id "Amplifier_Operational:ADA4625-2ARDZ")
-		(at 185.42 248.92 0)
-		(unit 2)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "2289ab14-1cc5-4c6a-9bc2-89cee7e15185")
-		(property "Reference" "U11"
-			(at 185.42 238.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "ADA4625-2ARDZ"
-			(at 185.42 241.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm"
-			(at 184.15 256.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/ADA4625-1-4625-2.pdf"
-			(at 185.42 248.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Dual 5V..36V/±2.5V..±18V supply, 18 MHz, 48V/µs slew rate, ±80 µV offset, RRO, Fast-settling JFET Op Amp, SOIC-8-1EP"
-			(at 185.42 248.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "8"
-			(uuid "6013008c-b242-4910-b334-d0130449b5d1")
-		)
-		(pin "3"
-			(uuid "e12609ea-f9b4-4f80-85cf-0f2b20d819db")
-		)
-		(pin "2"
-			(uuid "0284e9e3-94cd-4fb0-a758-6593d1058cd5")
-		)
-		(pin "1"
-			(uuid "24a7031d-b1b8-4ce0-87ad-13071451b501")
-		)
-		(pin "4"
-			(uuid "8a84d28f-d7b1-46ba-a5f6-fd2fd9229166")
-		)
-		(pin "9"
-			(uuid "fd3a6a96-d81d-48fe-917b-8c0a7b2214b6")
-		)
-		(pin "7"
-			(uuid "85d921ce-074c-479f-9f4c-adb02edc2bb3")
-		)
-		(pin "6"
-			(uuid "a5405015-5595-43f8-8fe7-62233fb77d3f")
-		)
-		(pin "5"
-			(uuid "153f31f6-f7ce-4b50-8b03-7442fb67429a")
-		)
-		(instances
-			(project "rx_mixer"
-				(path "/7cc72b98-3836-4c2a-8199-0c423deb5fd0"
-					(reference "U11")
-					(unit 2)
+			(project "nzif"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
+					(reference "U?")
+					(unit 1)
 				)
 			)
 		)
@@ -6404,7 +5753,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "240be203-0fdf-4bfd-9c57-1cb2467fd122")
-		(property "Reference" "#PWR035"
+		(property "Reference" "#PWR?"
 			(at 364.49 165.1 0)
 			(effects
 				(font
@@ -6458,6 +5807,12 @@
 					(unit 1)
 				)
 			)
+			(project "nzif"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -6470,7 +5825,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "27081d3f-86d6-499f-a283-109de0801729")
-		(property "Reference" "#PWR028"
+		(property "Reference" "#PWR?"
 			(at 313.69 57.15 0)
 			(effects
 				(font
@@ -6524,6 +5879,12 @@
 					(unit 1)
 				)
 			)
+			(project "nzif"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -6536,7 +5897,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2745839d-222c-4dbe-bfa6-f81fa2d394bd")
-		(property "Reference" "#PWR029"
+		(property "Reference" "#PWR?"
 			(at 313.69 134.62 0)
 			(effects
 				(font
@@ -6590,6 +5951,12 @@
 					(unit 1)
 				)
 			)
+			(project "nzif"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -6602,7 +5969,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2a1852df-f6b2-457e-acc7-3b75133609f4")
-		(property "Reference" "#PWR07"
+		(property "Reference" "#PWR?"
 			(at 134.62 134.62 0)
 			(effects
 				(font
@@ -6656,6 +6023,101 @@
 					(unit 1)
 				)
 			)
+			(project "nzif"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Amplifier_Operational:ADA4625-2ARDZ")
+		(at 60.96 228.6 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2a40e0e7-a60a-42e3-9651-a85f31072a05")
+		(property "Reference" "U216"
+			(at 60.96 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "ADA4625-2ARDZ"
+			(at 60.96 220.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm"
+			(at 59.69 236.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/ADA4625-1-4625-2.pdf"
+			(at 60.96 228.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Dual 5V..36V/±2.5V..±18V supply, 18 MHz, 48V/µs slew rate, ±80 µV offset, RRO, Fast-settling JFET Op Amp, SOIC-8-1EP"
+			(at 60.96 228.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "9"
+			(uuid "e1746740-bd8a-4ed3-af8a-b76579ce2e16")
+		)
+		(pin "1"
+			(uuid "40f39c6d-9c86-447e-b9d8-02f02effba26")
+		)
+		(pin "7"
+			(uuid "c357b926-2494-4752-995c-77052cab791c")
+		)
+		(pin "3"
+			(uuid "a206f206-03c9-4a89-a30d-b7a7caed3fc9")
+		)
+		(pin "2"
+			(uuid "3b8364ac-efc3-4006-b62d-f03554142b9e")
+		)
+		(pin "5"
+			(uuid "ef9e1d98-41ee-461d-8390-a242a44ee96f")
+		)
+		(pin "6"
+			(uuid "ff0b05d3-1719-414c-9f02-896bfabfbee9")
+		)
+		(pin "4"
+			(uuid "302ae88b-1158-4ccd-b78d-593d8fe53acf")
+		)
+		(pin "8"
+			(uuid "16873998-0c51-4c06-8cc4-ee244c22a826")
+		)
+		(instances
+			(project ""
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
+					(reference "U216")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -6668,7 +6130,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2be9c062-656f-40d0-ae4b-cd523d2230a3")
-		(property "Reference" "C14"
+		(property "Reference" "C?"
 			(at 173.99 97.7835 0)
 			(effects
 				(font
@@ -6726,6 +6188,12 @@
 					(unit 1)
 				)
 			)
+			(project "nzif"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
+					(reference "C?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -6738,7 +6206,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "30bf6053-42d9-4ec8-8cda-bd668946d27c")
-		(property "Reference" "R8"
+		(property "Reference" "R?"
 			(at 387.35 137.16 90)
 			(effects
 				(font
@@ -6794,6 +6262,12 @@
 					(unit 1)
 				)
 			)
+			(project "nzif"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
+					(reference "R?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -6806,7 +6280,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "31482eba-f84f-4a36-92dd-ce2cbd464896")
-		(property "Reference" "C2"
+		(property "Reference" "C?"
 			(at 74.93 97.7835 0)
 			(effects
 				(font
@@ -6864,6 +6338,12 @@
 					(unit 1)
 				)
 			)
+			(project "nzif"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
+					(reference "C?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -6876,7 +6356,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "32268ea5-aef9-4835-9cf9-3bd1e7c40e6e")
-		(property "Reference" "C3"
+		(property "Reference" "C?"
 			(at 74.93 20.3135 0)
 			(effects
 				(font
@@ -6943,6 +6423,97 @@
 		)
 	)
 	(symbol
+		(lib_id "Amplifier_Operational:ADA4625-2ARDZ")
+		(at 247.65 195.58 0)
+		(unit 3)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "33992515-2e22-4b6c-b159-cae0685751c0")
+		(property "Reference" "U219"
+			(at 248.92 194.3099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "ADA4625-2ARDZ"
+			(at 248.92 196.8499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm"
+			(at 246.38 203.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/ADA4625-1-4625-2.pdf"
+			(at 247.65 195.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Dual 5V..36V/±2.5V..±18V supply, 18 MHz, 48V/µs slew rate, ±80 µV offset, RRO, Fast-settling JFET Op Amp, SOIC-8-1EP"
+			(at 247.65 195.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "7"
+			(uuid "a6917589-05a3-465f-9ce5-619d70184766")
+		)
+		(pin "2"
+			(uuid "d2a249fb-b0eb-4ffa-8bef-3a77b42ea05f")
+		)
+		(pin "6"
+			(uuid "b01dee1b-6261-420a-b8af-4bb58afd4459")
+		)
+		(pin "4"
+			(uuid "8b00b521-f6b9-439e-ac08-c634e1d3e00b")
+		)
+		(pin "3"
+			(uuid "b0259de9-cfee-4775-9cb2-7f9db40548dd")
+		)
+		(pin "8"
+			(uuid "00447f5e-3aa4-4340-a1c1-73aba3b2175f")
+		)
+		(pin "1"
+			(uuid "212a3c5e-bd4f-4f4e-a4c9-5349202cdb24")
+		)
+		(pin "5"
+			(uuid "870b9cc2-13df-4000-afb8-e68db36d1bff")
+		)
+		(pin "9"
+			(uuid "a8407188-6a76-490f-85e9-2f6856bd4b73")
+		)
+		(instances
+			(project ""
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
+					(reference "U219")
+					(unit 3)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Small")
 		(at 313.69 125.73 0)
 		(unit 1)
@@ -6952,7 +6523,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "36b8d307-6bb4-427f-889c-d1202ac86fe8")
-		(property "Reference" "C22"
+		(property "Reference" "C?"
 			(at 316.23 124.4662 0)
 			(effects
 				(font
@@ -7010,6 +6581,12 @@
 					(unit 1)
 				)
 			)
+			(project "nzif"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
+					(reference "C?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -7022,7 +6599,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3ccb093e-6d09-4605-aff0-4143b4733a49")
-		(property "Reference" "R5"
+		(property "Reference" "R?"
 			(at 297.18 59.69 90)
 			(effects
 				(font
@@ -7078,92 +6655,9 @@
 					(unit 1)
 				)
 			)
-		)
-	)
-	(symbol
-		(lib_id "Amplifier_Operational:ADA4625-2ARDZ")
-		(at 60.96 228.6 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3f376a2a-34b5-481c-9b2a-5e551d18eb41")
-		(property "Reference" "U9"
-			(at 60.96 218.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "ADA4625-2ARDZ"
-			(at 60.96 220.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm"
-			(at 59.69 236.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/ADA4625-1-4625-2.pdf"
-			(at 60.96 228.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Dual 5V..36V/±2.5V..±18V supply, 18 MHz, 48V/µs slew rate, ±80 µV offset, RRO, Fast-settling JFET Op Amp, SOIC-8-1EP"
-			(at 60.96 228.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "8"
-			(uuid "6013008c-b242-4910-b334-d0130449b5d0")
-		)
-		(pin "3"
-			(uuid "e12609ea-f9b4-4f80-85cf-0f2b20d819da")
-		)
-		(pin "2"
-			(uuid "0284e9e3-94cd-4fb0-a758-6593d1058cd4")
-		)
-		(pin "1"
-			(uuid "24a7031d-b1b8-4ce0-87ad-13071451b500")
-		)
-		(pin "4"
-			(uuid "8a84d28f-d7b1-46ba-a5f6-fd2fd9229165")
-		)
-		(pin "9"
-			(uuid "fd3a6a96-d81d-48fe-917b-8c0a7b2214b5")
-		)
-		(pin "7"
-			(uuid "f3ef40c7-7b3c-4794-b4c4-3e037c69ee8b")
-		)
-		(pin "6"
-			(uuid "e7b031a3-5e06-4ac3-ae48-2d4d7cc3b474")
-		)
-		(pin "5"
-			(uuid "4d42bc41-495f-48cb-ab1e-0427c229275f")
-		)
-		(instances
-			(project ""
-				(path "/7cc72b98-3836-4c2a-8199-0c423deb5fd0"
-					(reference "U9")
+			(project "nzif"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
+					(reference "R?")
 					(unit 1)
 				)
 			)
@@ -7171,16 +6665,16 @@
 	)
 	(symbol
 		(lib_id "Amplifier_Operational:ADA4625-2ARDZ")
-		(at 250.19 248.92 0)
+		(at 185.42 248.92 0)
 		(unit 2)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "3f9f5ece-d6ad-4a1d-b3e0-99b119fe80c2")
-		(property "Reference" "U12"
-			(at 250.19 238.76 0)
+		(uuid "41f4dc97-8e0b-4be0-af79-2cdcb44a67e4")
+		(property "Reference" "U218"
+			(at 185.42 238.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7188,7 +6682,7 @@
 			)
 		)
 		(property "Value" "ADA4625-2ARDZ"
-			(at 250.19 241.3 0)
+			(at 185.42 241.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7196,7 +6690,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm"
-			(at 248.92 256.54 0)
+			(at 184.15 256.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7205,7 +6699,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/ADA4625-1-4625-2.pdf"
-			(at 250.19 248.92 0)
+			(at 185.42 248.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7214,7 +6708,7 @@
 			)
 		)
 		(property "Description" "Dual 5V..36V/±2.5V..±18V supply, 18 MHz, 48V/µs slew rate, ±80 µV offset, RRO, Fast-settling JFET Op Amp, SOIC-8-1EP"
-			(at 250.19 248.92 0)
+			(at 185.42 248.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7222,37 +6716,37 @@
 				(hide yes)
 			)
 		)
-		(pin "8"
-			(uuid "6013008c-b242-4910-b334-d0130449b5d1")
+		(pin "2"
+			(uuid "f57e84a8-f48b-472c-941b-b3031563210b")
 		)
 		(pin "3"
-			(uuid "e12609ea-f9b4-4f80-85cf-0f2b20d819db")
+			(uuid "217d10eb-575d-4938-8749-e3d8d215425e")
 		)
-		(pin "2"
-			(uuid "0284e9e3-94cd-4fb0-a758-6593d1058cd5")
-		)
-		(pin "1"
-			(uuid "24a7031d-b1b8-4ce0-87ad-13071451b501")
+		(pin "8"
+			(uuid "8ab85510-66b7-45ed-8fca-d0d3f9b4cc84")
 		)
 		(pin "4"
-			(uuid "8a84d28f-d7b1-46ba-a5f6-fd2fd9229166")
-		)
-		(pin "9"
-			(uuid "fd3a6a96-d81d-48fe-917b-8c0a7b2214b6")
-		)
-		(pin "7"
-			(uuid "372a9009-bf8c-4d02-8d99-a5e7b1f8afd9")
-		)
-		(pin "6"
-			(uuid "9537f73a-0cf2-46c5-bc10-ea9e300ffb0b")
+			(uuid "d627e383-47e5-4b82-9042-0aaa9dcb5185")
 		)
 		(pin "5"
-			(uuid "0ac77c9d-b1e0-49ce-aa39-f312ab450f29")
+			(uuid "3f9d8b0f-c54d-43f6-9ee3-44b21987ea58")
+		)
+		(pin "9"
+			(uuid "e7c20c6f-68be-43e0-86d0-cb68c4f22e10")
+		)
+		(pin "7"
+			(uuid "ecef33a7-51a2-40af-9180-f426c29ce228")
+		)
+		(pin "1"
+			(uuid "df4af278-0802-4dbf-a051-dc9ef038f5f1")
+		)
+		(pin "6"
+			(uuid "7c63a383-32f9-49be-854f-7f2dbe26ea44")
 		)
 		(instances
-			(project "rx_mixer"
-				(path "/7cc72b98-3836-4c2a-8199-0c423deb5fd0"
-					(reference "U12")
+			(project ""
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
+					(reference "U218")
 					(unit 2)
 				)
 			)
@@ -7268,7 +6762,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "424a7012-a9d7-48d3-b403-774b4fc8cf1d")
-		(property "Reference" "#PWR039"
+		(property "Reference" "#PWR?"
 			(at 321.31 135.89 0)
 			(effects
 				(font
@@ -7322,6 +6816,12 @@
 					(unit 1)
 				)
 			)
+			(project "nzif"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -7334,7 +6834,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "42e57abd-3d02-400d-874a-d95df86005cc")
-		(property "Reference" "#PWR015"
+		(property "Reference" "#PWR?"
 			(at 142.24 135.89 0)
 			(effects
 				(font
@@ -7388,93 +6888,10 @@
 					(unit 1)
 				)
 			)
-		)
-	)
-	(symbol
-		(lib_id "Amplifier_Operational:ADA4625-2ARDZ")
-		(at 60.96 248.92 0)
-		(unit 2)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "4474ac2a-06d0-4c94-9312-42afaf415286")
-		(property "Reference" "U9"
-			(at 60.96 238.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "ADA4625-2ARDZ"
-			(at 60.96 241.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm"
-			(at 59.69 256.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/ADA4625-1-4625-2.pdf"
-			(at 60.96 248.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Dual 5V..36V/±2.5V..±18V supply, 18 MHz, 48V/µs slew rate, ±80 µV offset, RRO, Fast-settling JFET Op Amp, SOIC-8-1EP"
-			(at 60.96 248.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "8"
-			(uuid "6013008c-b242-4910-b334-d0130449b5d0")
-		)
-		(pin "3"
-			(uuid "e12609ea-f9b4-4f80-85cf-0f2b20d819da")
-		)
-		(pin "2"
-			(uuid "0284e9e3-94cd-4fb0-a758-6593d1058cd4")
-		)
-		(pin "1"
-			(uuid "24a7031d-b1b8-4ce0-87ad-13071451b500")
-		)
-		(pin "4"
-			(uuid "8a84d28f-d7b1-46ba-a5f6-fd2fd9229165")
-		)
-		(pin "9"
-			(uuid "fd3a6a96-d81d-48fe-917b-8c0a7b2214b5")
-		)
-		(pin "7"
-			(uuid "f3ef40c7-7b3c-4794-b4c4-3e037c69ee8b")
-		)
-		(pin "6"
-			(uuid "e7b031a3-5e06-4ac3-ae48-2d4d7cc3b474")
-		)
-		(pin "5"
-			(uuid "4d42bc41-495f-48cb-ab1e-0427c229275f")
-		)
-		(instances
-			(project ""
-				(path "/7cc72b98-3836-4c2a-8199-0c423deb5fd0"
-					(reference "U9")
-					(unit 2)
+			(project "nzif"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
+					(reference "#PWR?")
+					(unit 1)
 				)
 			)
 		)
@@ -7489,7 +6906,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "457c5f27-b929-458b-8a31-26778f59ccd3")
-		(property "Reference" "#PWR05"
+		(property "Reference" "#PWR?"
 			(at 81.28 107.95 0)
 			(effects
 				(font
@@ -7543,6 +6960,12 @@
 					(unit 1)
 				)
 			)
+			(project "nzif"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -7555,7 +6978,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "46bdf6df-acda-4e20-a57d-78a5462e8311")
-		(property "Reference" "#PWR025"
+		(property "Reference" "#PWR?"
 			(at 260.35 107.95 0)
 			(effects
 				(font
@@ -7609,6 +7032,12 @@
 					(unit 1)
 				)
 			)
+			(project "nzif"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -7621,7 +7050,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4fefab58-6089-4159-8121-1ff068b92d24")
-		(property "Reference" "U2"
+		(property "Reference" "U?"
 			(at 97.3933 153.67 0)
 			(effects
 				(font
@@ -7711,6 +7140,12 @@
 					(unit 1)
 				)
 			)
+			(project "nzif"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
+					(reference "U?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -7723,7 +7158,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5001520f-397b-4fcc-a73b-ba908125f039")
-		(property "Reference" "#PWR034"
+		(property "Reference" "#PWR?"
 			(at 364.49 87.63 0)
 			(effects
 				(font
@@ -7777,6 +7212,12 @@
 					(unit 1)
 				)
 			)
+			(project "nzif"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -7789,7 +7230,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5222d153-19c5-4162-9ba1-180b0d623146")
-		(property "Reference" "C19"
+		(property "Reference" "C?"
 			(at 262.89 20.3135 0)
 			(effects
 				(font
@@ -7847,6 +7288,12 @@
 					(unit 1)
 				)
 			)
+			(project "nzif"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
+					(reference "C?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -7860,7 +7307,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5322fce8-a6e6-4ca8-a49f-c814316353e9")
-		(property "Reference" "Q6"
+		(property "Reference" "Q?"
 			(at 311.15 147.8281 0)
 			(effects
 				(font
@@ -7927,92 +7374,9 @@
 					(unit 1)
 				)
 			)
-		)
-	)
-	(symbol
-		(lib_id "Amplifier_Operational:ADA4625-2ARDZ")
-		(at 185.42 228.6 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "53c72a90-e001-419e-ad77-c389f619526a")
-		(property "Reference" "U11"
-			(at 185.42 218.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "ADA4625-2ARDZ"
-			(at 185.42 220.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm"
-			(at 184.15 236.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/ADA4625-1-4625-2.pdf"
-			(at 185.42 228.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Dual 5V..36V/±2.5V..±18V supply, 18 MHz, 48V/µs slew rate, ±80 µV offset, RRO, Fast-settling JFET Op Amp, SOIC-8-1EP"
-			(at 185.42 228.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "8"
-			(uuid "6013008c-b242-4910-b334-d0130449b5d2")
-		)
-		(pin "3"
-			(uuid "8828c764-55b9-45c6-9015-ab51724d9378")
-		)
-		(pin "2"
-			(uuid "7f32efdb-0dec-4fe5-91ab-242a23be6938")
-		)
-		(pin "1"
-			(uuid "adb92a7d-7fce-445e-97b6-9e33dec83f30")
-		)
-		(pin "4"
-			(uuid "8a84d28f-d7b1-46ba-a5f6-fd2fd9229167")
-		)
-		(pin "9"
-			(uuid "fd3a6a96-d81d-48fe-917b-8c0a7b2214b7")
-		)
-		(pin "7"
-			(uuid "f3ef40c7-7b3c-4794-b4c4-3e037c69ee8d")
-		)
-		(pin "6"
-			(uuid "e7b031a3-5e06-4ac3-ae48-2d4d7cc3b476")
-		)
-		(pin "5"
-			(uuid "4d42bc41-495f-48cb-ab1e-0427c2292761")
-		)
-		(instances
-			(project "rx_mixer"
-				(path "/7cc72b98-3836-4c2a-8199-0c423deb5fd0"
-					(reference "U11")
+			(project "nzif"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
+					(reference "Q?")
 					(unit 1)
 				)
 			)
@@ -8028,7 +7392,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "56ed9cb3-75d8-414c-854f-4451f4a888b3")
-		(property "Reference" "C16"
+		(property "Reference" "C?"
 			(at 227.33 124.4662 0)
 			(effects
 				(font
@@ -8086,6 +7450,12 @@
 					(unit 1)
 				)
 			)
+			(project "nzif"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
+					(reference "C?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -8098,7 +7468,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "59fdfaca-136d-4317-9415-13984d2e5311")
-		(property "Reference" "#PWR03"
+		(property "Reference" "#PWR?"
 			(at 134.62 57.15 0)
 			(effects
 				(font
@@ -8152,6 +7522,12 @@
 					(unit 1)
 				)
 			)
+			(project "nzif"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -8164,7 +7540,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5a6988c1-5aed-40f2-8504-2d3c335a2182")
-		(property "Reference" "C24"
+		(property "Reference" "C?"
 			(at 344.17 97.7835 0)
 			(effects
 				(font
@@ -8222,6 +7598,12 @@
 					(unit 1)
 				)
 			)
+			(project "nzif"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
+					(reference "C?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -8234,7 +7616,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5bbc8580-4997-41a2-a45d-f46ca965d5a9")
-		(property "Reference" "#PWR031"
+		(property "Reference" "#PWR?"
 			(at 341.63 107.95 0)
 			(effects
 				(font
@@ -8288,6 +7670,12 @@
 					(unit 1)
 				)
 			)
+			(project "nzif"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -8299,7 +7687,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "60498305-a85f-4b0d-9c2a-a1d9eb01d325")
-		(property "Reference" "#PWR043"
+		(property "Reference" "#PWR?"
 			(at 121.92 209.55 0)
 			(effects
 				(font
@@ -8353,6 +7741,12 @@
 					(unit 1)
 				)
 			)
+			(project "nzif"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -8365,7 +7759,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "60e83de4-7926-43fd-a6a9-a1ec584016f8")
-		(property "Reference" "R16"
+		(property "Reference" "R?"
 			(at 325.12 48.2599 0)
 			(effects
 				(font
@@ -8423,6 +7817,12 @@
 					(unit 1)
 				)
 			)
+			(project "nzif"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
+					(reference "R?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -8435,7 +7835,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "60efc163-8459-4935-a025-591d994e6af0")
-		(property "Reference" "U8"
+		(property "Reference" "U?"
 			(at 366.6333 153.67 0)
 			(effects
 				(font
@@ -8525,93 +7925,10 @@
 					(unit 1)
 				)
 			)
-		)
-	)
-	(symbol
-		(lib_id "Amplifier_Operational:ADA4625-2ARDZ")
-		(at 124.46 248.92 0)
-		(unit 2)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "61f0a518-c7a8-4fbc-a3cb-6121f5fda7f0")
-		(property "Reference" "U10"
-			(at 124.46 238.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "ADA4625-2ARDZ"
-			(at 124.46 241.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm"
-			(at 123.19 256.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/ADA4625-1-4625-2.pdf"
-			(at 124.46 248.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Dual 5V..36V/±2.5V..±18V supply, 18 MHz, 48V/µs slew rate, ±80 µV offset, RRO, Fast-settling JFET Op Amp, SOIC-8-1EP"
-			(at 124.46 248.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "8"
-			(uuid "6013008c-b242-4910-b334-d0130449b5d1")
-		)
-		(pin "3"
-			(uuid "e12609ea-f9b4-4f80-85cf-0f2b20d819db")
-		)
-		(pin "2"
-			(uuid "0284e9e3-94cd-4fb0-a758-6593d1058cd5")
-		)
-		(pin "1"
-			(uuid "24a7031d-b1b8-4ce0-87ad-13071451b501")
-		)
-		(pin "4"
-			(uuid "8a84d28f-d7b1-46ba-a5f6-fd2fd9229166")
-		)
-		(pin "9"
-			(uuid "fd3a6a96-d81d-48fe-917b-8c0a7b2214b6")
-		)
-		(pin "7"
-			(uuid "6f49c729-116b-41b6-bc72-ac5ef14960e1")
-		)
-		(pin "6"
-			(uuid "1decb57e-bc10-4dd3-84e3-cad4ebe620d9")
-		)
-		(pin "5"
-			(uuid "54726358-9f08-4de0-90a9-debc298df4b1")
-		)
-		(instances
-			(project "rx_mixer"
-				(path "/7cc72b98-3836-4c2a-8199-0c423deb5fd0"
-					(reference "U10")
-					(unit 2)
+			(project "nzif"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
+					(reference "U?")
+					(unit 1)
 				)
 			)
 		)
@@ -8626,7 +7943,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "68309054-ec9d-4646-88fa-4460de390179")
-		(property "Reference" "C17"
+		(property "Reference" "C?"
 			(at 254 20.3135 0)
 			(effects
 				(font
@@ -8684,6 +8001,12 @@
 					(unit 1)
 				)
 			)
+			(project "nzif"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
+					(reference "C?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -8696,7 +8019,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "685d9397-a79b-4ef0-99c0-ecde561291cf")
-		(property "Reference" "#PWR014"
+		(property "Reference" "#PWR?"
 			(at 143.51 58.42 0)
 			(effects
 				(font
@@ -8750,6 +8073,12 @@
 					(unit 1)
 				)
 			)
+			(project "nzif"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -8762,7 +8091,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "69a3a721-af9d-40e8-925d-c2485d2e9cc9")
-		(property "Reference" "#PWR037"
+		(property "Reference" "#PWR?"
 			(at 403.86 134.62 0)
 			(effects
 				(font
@@ -8816,6 +8145,12 @@
 					(unit 1)
 				)
 			)
+			(project "nzif"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -8828,7 +8163,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "69ad3b61-3693-4096-8023-803c35396a02")
-		(property "Reference" "#PWR011"
+		(property "Reference" "#PWR?"
 			(at 162.56 107.95 0)
 			(effects
 				(font
@@ -8882,6 +8217,101 @@
 					(unit 1)
 				)
 			)
+			(project "nzif"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Amplifier_Operational:ADA4625-2ARDZ")
+		(at 60.96 248.92 0)
+		(unit 2)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6fd5dfd8-6fdf-4bdc-9275-71404c36339f")
+		(property "Reference" "U216"
+			(at 60.96 238.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "ADA4625-2ARDZ"
+			(at 60.96 241.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm"
+			(at 59.69 256.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/ADA4625-1-4625-2.pdf"
+			(at 60.96 248.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Dual 5V..36V/±2.5V..±18V supply, 18 MHz, 48V/µs slew rate, ±80 µV offset, RRO, Fast-settling JFET Op Amp, SOIC-8-1EP"
+			(at 60.96 248.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "9"
+			(uuid "e1746740-bd8a-4ed3-af8a-b76579ce2e16")
+		)
+		(pin "1"
+			(uuid "40f39c6d-9c86-447e-b9d8-02f02effba26")
+		)
+		(pin "7"
+			(uuid "c357b926-2494-4752-995c-77052cab791c")
+		)
+		(pin "3"
+			(uuid "a206f206-03c9-4a89-a30d-b7a7caed3fc9")
+		)
+		(pin "2"
+			(uuid "3b8364ac-efc3-4006-b62d-f03554142b9e")
+		)
+		(pin "5"
+			(uuid "ef9e1d98-41ee-461d-8390-a242a44ee96f")
+		)
+		(pin "6"
+			(uuid "ff0b05d3-1719-414c-9f02-896bfabfbee9")
+		)
+		(pin "4"
+			(uuid "302ae88b-1158-4ccd-b78d-593d8fe53acf")
+		)
+		(pin "8"
+			(uuid "16873998-0c51-4c06-8cc4-ee244c22a826")
+		)
+		(instances
+			(project ""
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
+					(reference "U216")
+					(unit 2)
+				)
+			)
 		)
 	)
 	(symbol
@@ -8894,7 +8324,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "70ff1e24-ac4c-4a68-8b3b-6d991d78c354")
-		(property "Reference" "C12"
+		(property "Reference" "C?"
 			(at 165.1 97.7835 0)
 			(effects
 				(font
@@ -8952,38 +8382,42 @@
 					(unit 1)
 				)
 			)
+			(project "nzif"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
+					(reference "C?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
 		(lib_id "Amplifier_Operational:ADA4625-2ARDZ")
-		(at 247.65 195.58 0)
-		(unit 3)
+		(at 124.46 248.92 0)
+		(unit 2)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "72019334-4cfd-4c02-8726-24409f37c177")
-		(property "Reference" "U12"
-			(at 248.92 194.3099 0)
+		(uuid "72ec683f-c37e-4036-ae9c-3a559fb413db")
+		(property "Reference" "U217"
+			(at 124.46 238.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Value" "ADA4625-2ARDZ"
-			(at 248.92 196.8499 0)
+			(at 124.46 241.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm"
-			(at 246.38 203.2 0)
+			(at 123.19 256.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8992,7 +8426,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/ADA4625-1-4625-2.pdf"
-			(at 247.65 195.58 0)
+			(at 124.46 248.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9001,7 +8435,7 @@
 			)
 		)
 		(property "Description" "Dual 5V..36V/±2.5V..±18V supply, 18 MHz, 48V/µs slew rate, ±80 µV offset, RRO, Fast-settling JFET Op Amp, SOIC-8-1EP"
-			(at 247.65 195.58 0)
+			(at 124.46 248.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9009,38 +8443,38 @@
 				(hide yes)
 			)
 		)
+		(pin "1"
+			(uuid "c4aed3d7-76e5-4f02-b639-83c7291c7162")
+		)
 		(pin "8"
-			(uuid "728a29a1-47f2-494d-a086-bdc187a0034d")
+			(uuid "5a3001cb-0441-469e-903c-b1def090b04c")
 		)
 		(pin "3"
-			(uuid "e12609ea-f9b4-4f80-85cf-0f2b20d819da")
+			(uuid "e3ef66a5-b6e8-429e-88fa-7b27324c363c")
 		)
 		(pin "2"
-			(uuid "0284e9e3-94cd-4fb0-a758-6593d1058cd4")
-		)
-		(pin "1"
-			(uuid "24a7031d-b1b8-4ce0-87ad-13071451b500")
-		)
-		(pin "4"
-			(uuid "9e7c486e-a258-461e-9e2f-2da5e7e60f4b")
-		)
-		(pin "9"
-			(uuid "8db6cf30-bad9-442f-b5d0-6e6a2717c6e9")
-		)
-		(pin "7"
-			(uuid "f3ef40c7-7b3c-4794-b4c4-3e037c69ee8b")
-		)
-		(pin "6"
-			(uuid "e7b031a3-5e06-4ac3-ae48-2d4d7cc3b474")
+			(uuid "09d2b3d8-bae2-4648-a80e-0842176e5d72")
 		)
 		(pin "5"
-			(uuid "4d42bc41-495f-48cb-ab1e-0427c229275f")
+			(uuid "99e63c9e-c78f-4711-882e-f7c23e000387")
+		)
+		(pin "6"
+			(uuid "eac14f92-55be-41b0-81c2-7a0b1a95d127")
+		)
+		(pin "7"
+			(uuid "491efefc-02b7-4bd5-a246-bfad09c2333e")
+		)
+		(pin "4"
+			(uuid "25d1b192-7f66-455f-b06f-264db2bd5528")
+		)
+		(pin "9"
+			(uuid "71cf8b2b-80d6-4d15-86b2-08843c1e43c8")
 		)
 		(instances
-			(project "rx_mixer"
-				(path "/7cc72b98-3836-4c2a-8199-0c423deb5fd0"
-					(reference "U12")
-					(unit 3)
+			(project ""
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
+					(reference "U217")
+					(unit 2)
 				)
 			)
 		)
@@ -9055,7 +8489,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "73643dd3-c16c-4934-950b-4a132afc7df9")
-		(property "Reference" "#PWR017"
+		(property "Reference" "#PWR?"
 			(at 171.45 107.95 0)
 			(effects
 				(font
@@ -9109,6 +8543,12 @@
 					(unit 1)
 				)
 			)
+			(project "nzif"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -9121,7 +8561,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "746d92ee-55ed-41c9-be7d-30b147850f9b")
-		(property "Reference" "R9"
+		(property "Reference" "R?"
 			(at 236.22 125.7299 0)
 			(effects
 				(font
@@ -9179,6 +8619,12 @@
 					(unit 1)
 				)
 			)
+			(project "nzif"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
+					(reference "R?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -9191,7 +8637,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "77b5f04f-a0db-47bb-8375-94fd81241970")
-		(property "Reference" "C9"
+		(property "Reference" "C?"
 			(at 83.82 97.7835 0)
 			(effects
 				(font
@@ -9249,6 +8695,12 @@
 					(unit 1)
 				)
 			)
+			(project "nzif"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
+					(reference "C?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -9261,7 +8713,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "78759f2c-2371-47dc-9a73-85a511481b03")
-		(property "Reference" "C18"
+		(property "Reference" "C?"
 			(at 254 97.7835 0)
 			(effects
 				(font
@@ -9319,6 +8771,101 @@
 					(unit 1)
 				)
 			)
+			(project "nzif"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
+					(reference "C?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Amplifier_Operational:ADA4625-2ARDZ")
+		(at 250.19 228.6 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "787cf27d-d5b9-4990-8d20-0d380d4e2215")
+		(property "Reference" "U219"
+			(at 250.19 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "ADA4625-2ARDZ"
+			(at 250.19 220.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm"
+			(at 248.92 236.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/ADA4625-1-4625-2.pdf"
+			(at 250.19 228.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Dual 5V..36V/±2.5V..±18V supply, 18 MHz, 48V/µs slew rate, ±80 µV offset, RRO, Fast-settling JFET Op Amp, SOIC-8-1EP"
+			(at 250.19 228.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "7"
+			(uuid "a6917589-05a3-465f-9ce5-619d70184766")
+		)
+		(pin "2"
+			(uuid "d2a249fb-b0eb-4ffa-8bef-3a77b42ea05f")
+		)
+		(pin "6"
+			(uuid "b01dee1b-6261-420a-b8af-4bb58afd4459")
+		)
+		(pin "4"
+			(uuid "8b00b521-f6b9-439e-ac08-c634e1d3e00b")
+		)
+		(pin "3"
+			(uuid "b0259de9-cfee-4775-9cb2-7f9db40548dd")
+		)
+		(pin "8"
+			(uuid "00447f5e-3aa4-4340-a1c1-73aba3b2175f")
+		)
+		(pin "1"
+			(uuid "212a3c5e-bd4f-4f4e-a4c9-5349202cdb24")
+		)
+		(pin "5"
+			(uuid "870b9cc2-13df-4000-afb8-e68db36d1bff")
+		)
+		(pin "9"
+			(uuid "a8407188-6a76-490f-85e9-2f6856bd4b73")
+		)
+		(instances
+			(project ""
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
+					(reference "U219")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -9331,7 +8878,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "78bb6df7-ed6b-4498-a80c-a61b2b954162")
-		(property "Reference" "R3"
+		(property "Reference" "R?"
 			(at 208.28 59.69 90)
 			(effects
 				(font
@@ -9387,6 +8934,12 @@
 					(unit 1)
 				)
 			)
+			(project "nzif"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
+					(reference "R?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -9399,7 +8952,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7bab68be-e17d-4244-8c6d-8f0d4737ec64")
-		(property "Reference" "C15"
+		(property "Reference" "C?"
 			(at 227.33 46.9962 0)
 			(effects
 				(font
@@ -9457,6 +9010,12 @@
 					(unit 1)
 				)
 			)
+			(project "nzif"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
+					(reference "C?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -9468,7 +9027,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "7f0a15e4-5bba-48fd-83ce-69763f4d20b0")
-		(property "Reference" "#PWR013"
+		(property "Reference" "#PWR?"
 			(at 58.42 209.55 0)
 			(effects
 				(font
@@ -9522,6 +9081,103 @@
 					(unit 1)
 				)
 			)
+			(project "nzif"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Amplifier_Operational:ADA4625-2ARDZ")
+		(at 121.92 195.58 0)
+		(unit 3)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "80ae8f9a-290f-4d3e-a830-f2e9d321348a")
+		(property "Reference" "U217"
+			(at 123.19 194.3099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "ADA4625-2ARDZ"
+			(at 123.19 196.8499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm"
+			(at 120.65 203.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/ADA4625-1-4625-2.pdf"
+			(at 121.92 195.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Dual 5V..36V/±2.5V..±18V supply, 18 MHz, 48V/µs slew rate, ±80 µV offset, RRO, Fast-settling JFET Op Amp, SOIC-8-1EP"
+			(at 121.92 195.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c4aed3d7-76e5-4f02-b639-83c7291c7162")
+		)
+		(pin "8"
+			(uuid "5a3001cb-0441-469e-903c-b1def090b04c")
+		)
+		(pin "3"
+			(uuid "e3ef66a5-b6e8-429e-88fa-7b27324c363c")
+		)
+		(pin "2"
+			(uuid "09d2b3d8-bae2-4648-a80e-0842176e5d72")
+		)
+		(pin "5"
+			(uuid "99e63c9e-c78f-4711-882e-f7c23e000387")
+		)
+		(pin "6"
+			(uuid "eac14f92-55be-41b0-81c2-7a0b1a95d127")
+		)
+		(pin "7"
+			(uuid "491efefc-02b7-4bd5-a246-bfad09c2333e")
+		)
+		(pin "4"
+			(uuid "25d1b192-7f66-455f-b06f-264db2bd5528")
+		)
+		(pin "9"
+			(uuid "71cf8b2b-80d6-4d15-86b2-08843c1e43c8")
+		)
+		(instances
+			(project ""
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
+					(reference "U217")
+					(unit 3)
+				)
+			)
 		)
 	)
 	(symbol
@@ -9534,7 +9190,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "80bf5760-e587-42c5-991a-cf08608449d9")
-		(property "Reference" "U5"
+		(property "Reference" "U?"
 			(at 276.4633 76.2 0)
 			(effects
 				(font
@@ -9624,6 +9280,12 @@
 					(unit 1)
 				)
 			)
+			(project "nzif"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
+					(reference "U?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -9636,7 +9298,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "817f3a4c-fc29-4172-b1ec-7859dc7c4819")
-		(property "Reference" "#PWR04"
+		(property "Reference" "#PWR?"
 			(at 72.39 107.95 0)
 			(effects
 				(font
@@ -9690,6 +9352,12 @@
 					(unit 1)
 				)
 			)
+			(project "nzif"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -9702,7 +9370,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "81dbea54-27b2-407c-b72f-bd6b1c697753")
-		(property "Reference" "#PWR041"
+		(property "Reference" "#PWR?"
 			(at 411.48 58.42 0)
 			(effects
 				(font
@@ -9756,6 +9424,12 @@
 					(unit 1)
 				)
 			)
+			(project "nzif"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -9768,7 +9442,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "84cca64a-7200-4e5b-b91e-049abee20070")
-		(property "Reference" "C1"
+		(property "Reference" "C?"
 			(at 137.16 46.9962 0)
 			(effects
 				(font
@@ -9826,6 +9500,12 @@
 					(unit 1)
 				)
 			)
+			(project "nzif"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
+					(reference "C?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -9838,7 +9518,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "864be64a-fc2b-48e2-bfd1-5a8c1fbeac02")
-		(property "Reference" "R10"
+		(property "Reference" "R?"
 			(at 146.05 48.2599 0)
 			(effects
 				(font
@@ -9896,6 +9576,12 @@
 					(unit 1)
 				)
 			)
+			(project "nzif"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
+					(reference "R?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -9909,7 +9595,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "88bb06dc-0dfe-4e4f-93ad-335e7c41696c")
-		(property "Reference" "Q3"
+		(property "Reference" "Q?"
 			(at 222.25 70.3581 0)
 			(effects
 				(font
@@ -9976,6 +9662,12 @@
 					(unit 1)
 				)
 			)
+			(project "nzif"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
+					(reference "Q?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -9989,7 +9681,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8a6c0c17-1b94-4c26-84ea-6ceafbe0b518")
-		(property "Reference" "Q5"
+		(property "Reference" "Q?"
 			(at 311.15 70.3581 0)
 			(effects
 				(font
@@ -10056,6 +9748,12 @@
 					(unit 1)
 				)
 			)
+			(project "nzif"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
+					(reference "Q?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -10068,7 +9766,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8f414eb1-ae1e-4cc5-9b31-d09e8c6e8331")
-		(property "Reference" "C10"
+		(property "Reference" "C?"
 			(at 137.16 124.4662 0)
 			(effects
 				(font
@@ -10126,6 +9824,103 @@
 					(unit 1)
 				)
 			)
+			(project "nzif"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
+					(reference "C?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Amplifier_Operational:ADA4625-2ARDZ")
+		(at 182.88 195.58 0)
+		(unit 3)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "980eef2c-dc72-4185-9ff3-f25ac1f310b1")
+		(property "Reference" "U218"
+			(at 184.15 194.3099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "ADA4625-2ARDZ"
+			(at 184.15 196.8499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm"
+			(at 181.61 203.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/ADA4625-1-4625-2.pdf"
+			(at 182.88 195.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Dual 5V..36V/±2.5V..±18V supply, 18 MHz, 48V/µs slew rate, ±80 µV offset, RRO, Fast-settling JFET Op Amp, SOIC-8-1EP"
+			(at 182.88 195.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "f57e84a8-f48b-472c-941b-b3031563210b")
+		)
+		(pin "3"
+			(uuid "217d10eb-575d-4938-8749-e3d8d215425e")
+		)
+		(pin "8"
+			(uuid "8ab85510-66b7-45ed-8fca-d0d3f9b4cc84")
+		)
+		(pin "4"
+			(uuid "d627e383-47e5-4b82-9042-0aaa9dcb5185")
+		)
+		(pin "5"
+			(uuid "3f9d8b0f-c54d-43f6-9ee3-44b21987ea58")
+		)
+		(pin "9"
+			(uuid "e7c20c6f-68be-43e0-86d0-cb68c4f22e10")
+		)
+		(pin "7"
+			(uuid "ecef33a7-51a2-40af-9180-f426c29ce228")
+		)
+		(pin "1"
+			(uuid "df4af278-0802-4dbf-a051-dc9ef038f5f1")
+		)
+		(pin "6"
+			(uuid "7c63a383-32f9-49be-854f-7f2dbe26ea44")
+		)
+		(instances
+			(project ""
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
+					(reference "U218")
+					(unit 3)
+				)
+			)
 		)
 	)
 	(symbol
@@ -10138,7 +9933,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "984fa8d4-0050-454c-889b-20ba8dce86d4")
-		(property "Reference" "R12"
+		(property "Reference" "R?"
 			(at 236.22 48.2599 0)
 			(effects
 				(font
@@ -10196,6 +9991,12 @@
 					(unit 1)
 				)
 			)
+			(project "nzif"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
+					(reference "R?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -10208,7 +10009,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "997b6fa6-627a-4391-aec2-3488c38cb4e7")
-		(property "Reference" "U3"
+		(property "Reference" "U?"
 			(at 187.5633 76.2 0)
 			(effects
 				(font
@@ -10298,6 +10099,12 @@
 					(unit 1)
 				)
 			)
+			(project "nzif"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
+					(reference "U?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -10310,7 +10117,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9d8f8b5d-c540-4a0c-a35d-0a9daaf5c2c9")
-		(property "Reference" "#PWR024"
+		(property "Reference" "#PWR?"
 			(at 260.35 30.48 0)
 			(effects
 				(font
@@ -10364,6 +10171,12 @@
 					(unit 1)
 				)
 			)
+			(project "nzif"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -10376,7 +10189,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9d9fe224-6dfd-4495-86bf-daff1f58bb7a")
-		(property "Reference" "C20"
+		(property "Reference" "C?"
 			(at 262.89 97.7835 0)
 			(effects
 				(font
@@ -10434,6 +10247,12 @@
 					(unit 1)
 				)
 			)
+			(project "nzif"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
+					(reference "C?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -10446,7 +10265,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9e7ce415-6cea-4e95-8e79-fcdac3299f80")
-		(property "Reference" "#PWR026"
+		(property "Reference" "#PWR?"
 			(at 274.32 87.63 0)
 			(effects
 				(font
@@ -10500,6 +10319,12 @@
 					(unit 1)
 				)
 			)
+			(project "nzif"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -10512,7 +10337,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9e7ec342-2940-4643-8a7f-7f403e9dd570")
-		(property "Reference" "#PWR019"
+		(property "Reference" "#PWR?"
 			(at 185.42 165.1 0)
 			(effects
 				(font
@@ -10566,6 +10391,12 @@
 					(unit 1)
 				)
 			)
+			(project "nzif"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -10578,7 +10409,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9fbb1585-e8eb-47b6-b528-25cdba387325")
-		(property "Reference" "#PWR032"
+		(property "Reference" "#PWR?"
 			(at 350.52 30.48 0)
 			(effects
 				(font
@@ -10632,6 +10463,12 @@
 					(unit 1)
 				)
 			)
+			(project "nzif"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -10644,7 +10481,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a06a21be-2aa5-486b-9daa-d039343bfc05")
-		(property "Reference" "R2"
+		(property "Reference" "R?"
 			(at 118.11 137.16 90)
 			(effects
 				(font
@@ -10700,6 +10537,12 @@
 					(unit 1)
 				)
 			)
+			(project "nzif"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
+					(reference "R?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -10712,7 +10555,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a288bc49-ac56-427f-836b-29debd0d91a2")
-		(property "Reference" "#PWR012"
+		(property "Reference" "#PWR?"
 			(at 233.68 135.89 0)
 			(effects
 				(font
@@ -10766,20 +10609,26 @@
 					(unit 1)
 				)
 			)
+			(project "nzif"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
 		(lib_id "Amplifier_Operational:ADA4625-2ARDZ")
-		(at 121.92 195.58 0)
+		(at 58.42 195.58 0)
 		(unit 3)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "a51fd865-1199-4aee-849a-e8230ab11bca")
-		(property "Reference" "U10"
-			(at 123.19 194.3099 0)
+		(uuid "a628e7ee-4cd8-4f7d-a31e-0c19d0b2fea5")
+		(property "Reference" "U216"
+			(at 59.69 194.3099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10788,7 +10637,7 @@
 			)
 		)
 		(property "Value" "ADA4625-2ARDZ"
-			(at 123.19 196.8499 0)
+			(at 59.69 196.8499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10797,7 +10646,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm"
-			(at 120.65 203.2 0)
+			(at 57.15 203.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10806,7 +10655,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/ADA4625-1-4625-2.pdf"
-			(at 121.92 195.58 0)
+			(at 58.42 195.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10815,7 +10664,7 @@
 			)
 		)
 		(property "Description" "Dual 5V..36V/±2.5V..±18V supply, 18 MHz, 48V/µs slew rate, ±80 µV offset, RRO, Fast-settling JFET Op Amp, SOIC-8-1EP"
-			(at 121.92 195.58 0)
+			(at 58.42 195.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10823,37 +10672,37 @@
 				(hide yes)
 			)
 		)
-		(pin "8"
-			(uuid "ae9b0f59-b7fc-413f-b47d-2bb761555201")
-		)
-		(pin "3"
-			(uuid "e12609ea-f9b4-4f80-85cf-0f2b20d819da")
-		)
-		(pin "2"
-			(uuid "0284e9e3-94cd-4fb0-a758-6593d1058cd4")
+		(pin "9"
+			(uuid "e1746740-bd8a-4ed3-af8a-b76579ce2e16")
 		)
 		(pin "1"
-			(uuid "24a7031d-b1b8-4ce0-87ad-13071451b500")
-		)
-		(pin "4"
-			(uuid "015e88d8-807f-40f7-8afb-0339a78f35a7")
-		)
-		(pin "9"
-			(uuid "5da486de-7112-4d9a-bfa5-834ec3bc0b9d")
+			(uuid "40f39c6d-9c86-447e-b9d8-02f02effba26")
 		)
 		(pin "7"
-			(uuid "f3ef40c7-7b3c-4794-b4c4-3e037c69ee8b")
+			(uuid "c357b926-2494-4752-995c-77052cab791c")
 		)
-		(pin "6"
-			(uuid "e7b031a3-5e06-4ac3-ae48-2d4d7cc3b474")
+		(pin "3"
+			(uuid "a206f206-03c9-4a89-a30d-b7a7caed3fc9")
+		)
+		(pin "2"
+			(uuid "3b8364ac-efc3-4006-b62d-f03554142b9e")
 		)
 		(pin "5"
-			(uuid "4d42bc41-495f-48cb-ab1e-0427c229275f")
+			(uuid "ef9e1d98-41ee-461d-8390-a242a44ee96f")
+		)
+		(pin "6"
+			(uuid "ff0b05d3-1719-414c-9f02-896bfabfbee9")
+		)
+		(pin "4"
+			(uuid "302ae88b-1158-4ccd-b78d-593d8fe53acf")
+		)
+		(pin "8"
+			(uuid "16873998-0c51-4c06-8cc4-ee244c22a826")
 		)
 		(instances
-			(project "rx_mixer"
-				(path "/7cc72b98-3836-4c2a-8199-0c423deb5fd0"
-					(reference "U10")
+			(project ""
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
+					(reference "U216")
 					(unit 3)
 				)
 			)
@@ -10869,7 +10718,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a636a9bf-ddfc-4677-97a0-e9a48824044a")
-		(property "Reference" "R13"
+		(property "Reference" "R?"
 			(at 323.85 125.7299 0)
 			(effects
 				(font
@@ -10927,6 +10776,12 @@
 					(unit 1)
 				)
 			)
+			(project "nzif"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
+					(reference "R?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -10939,7 +10794,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ab4eb204-a148-4d96-92dd-902f5b7ce531")
-		(property "Reference" "C21"
+		(property "Reference" "C?"
 			(at 316.23 46.9962 0)
 			(effects
 				(font
@@ -10997,6 +10852,101 @@
 					(unit 1)
 				)
 			)
+			(project "nzif"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
+					(reference "C?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Amplifier_Operational:ADA4625-2ARDZ")
+		(at 185.42 228.6 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ac10dfb4-5301-4759-a2ad-d3c12feb68df")
+		(property "Reference" "U218"
+			(at 185.42 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "ADA4625-2ARDZ"
+			(at 185.42 220.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm"
+			(at 184.15 236.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/ADA4625-1-4625-2.pdf"
+			(at 185.42 228.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Dual 5V..36V/±2.5V..±18V supply, 18 MHz, 48V/µs slew rate, ±80 µV offset, RRO, Fast-settling JFET Op Amp, SOIC-8-1EP"
+			(at 185.42 228.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "f57e84a8-f48b-472c-941b-b3031563210b")
+		)
+		(pin "3"
+			(uuid "217d10eb-575d-4938-8749-e3d8d215425e")
+		)
+		(pin "8"
+			(uuid "8ab85510-66b7-45ed-8fca-d0d3f9b4cc84")
+		)
+		(pin "4"
+			(uuid "d627e383-47e5-4b82-9042-0aaa9dcb5185")
+		)
+		(pin "5"
+			(uuid "3f9d8b0f-c54d-43f6-9ee3-44b21987ea58")
+		)
+		(pin "9"
+			(uuid "e7c20c6f-68be-43e0-86d0-cb68c4f22e10")
+		)
+		(pin "7"
+			(uuid "ecef33a7-51a2-40af-9180-f426c29ce228")
+		)
+		(pin "1"
+			(uuid "df4af278-0802-4dbf-a051-dc9ef038f5f1")
+		)
+		(pin "6"
+			(uuid "7c63a383-32f9-49be-854f-7f2dbe26ea44")
+		)
+		(instances
+			(project ""
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
+					(reference "U218")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -11009,7 +10959,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "af6e97a3-16ff-450e-8f6d-fcc12db3eef0")
-		(property "Reference" "#PWR033"
+		(property "Reference" "#PWR?"
 			(at 350.52 107.95 0)
 			(effects
 				(font
@@ -11063,6 +11013,12 @@
 					(unit 1)
 				)
 			)
+			(project "nzif"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -11076,7 +11032,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b24b2754-a757-4143-b84e-7f00476ab518")
-		(property "Reference" "Q1"
+		(property "Reference" "Q?"
 			(at 132.08 70.3581 0)
 			(effects
 				(font
@@ -11143,6 +11099,12 @@
 					(unit 1)
 				)
 			)
+			(project "nzif"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
+					(reference "Q?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -11155,7 +11117,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b27a1efa-1196-4339-a80c-b1cbfec7d2a4")
-		(property "Reference" "#PWR08"
+		(property "Reference" "#PWR?"
 			(at 162.56 30.48 0)
 			(effects
 				(font
@@ -11209,92 +11171,9 @@
 					(unit 1)
 				)
 			)
-		)
-	)
-	(symbol
-		(lib_id "Amplifier_Operational:ADA4625-2ARDZ")
-		(at 250.19 228.6 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b4ed8ed6-d4b4-4e3d-ae57-7a26f2902121")
-		(property "Reference" "U12"
-			(at 250.19 218.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "ADA4625-2ARDZ"
-			(at 250.19 220.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm"
-			(at 248.92 236.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/ADA4625-1-4625-2.pdf"
-			(at 250.19 228.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Dual 5V..36V/±2.5V..±18V supply, 18 MHz, 48V/µs slew rate, ±80 µV offset, RRO, Fast-settling JFET Op Amp, SOIC-8-1EP"
-			(at 250.19 228.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "8"
-			(uuid "6013008c-b242-4910-b334-d0130449b5d2")
-		)
-		(pin "3"
-			(uuid "a1b2b3ac-79b1-4bd4-b86e-d8dba5c36a55")
-		)
-		(pin "2"
-			(uuid "480953d8-33be-4d49-8d56-95512f8e03fa")
-		)
-		(pin "1"
-			(uuid "d41c7a4e-f842-4e38-9215-ffe3aac3dfca")
-		)
-		(pin "4"
-			(uuid "8a84d28f-d7b1-46ba-a5f6-fd2fd9229167")
-		)
-		(pin "9"
-			(uuid "fd3a6a96-d81d-48fe-917b-8c0a7b2214b7")
-		)
-		(pin "7"
-			(uuid "f3ef40c7-7b3c-4794-b4c4-3e037c69ee8d")
-		)
-		(pin "6"
-			(uuid "e7b031a3-5e06-4ac3-ae48-2d4d7cc3b476")
-		)
-		(pin "5"
-			(uuid "4d42bc41-495f-48cb-ab1e-0427c2292761")
-		)
-		(instances
-			(project "rx_mixer"
-				(path "/7cc72b98-3836-4c2a-8199-0c423deb5fd0"
-					(reference "U12")
+			(project "nzif"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
+					(reference "#PWR?")
 					(unit 1)
 				)
 			)
@@ -11310,7 +11189,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b696a222-307d-433c-99bc-2332f7caddfe")
-		(property "Reference" "C28"
+		(property "Reference" "C?"
 			(at 406.4 124.4662 0)
 			(effects
 				(font
@@ -11368,6 +11247,12 @@
 					(unit 1)
 				)
 			)
+			(project "nzif"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
+					(reference "C?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -11380,7 +11265,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b8656370-329b-4c8a-98f1-23ddadc1b492")
-		(property "Reference" "#PWR040"
+		(property "Reference" "#PWR?"
 			(at 411.48 135.89 0)
 			(effects
 				(font
@@ -11434,80 +11319,9 @@
 					(unit 1)
 				)
 			)
-		)
-	)
-	(symbol
-		(lib_id "Transformer:ADT16-6T")
-		(at 38.1 127 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "bc2b4440-1d9e-45b8-9093-23ee2c55af0a")
-		(property "Reference" "TR4"
-			(at 38.1 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "ADT16-6T"
-			(at 38.1 119.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "RF_Mini-Circuits:Mini-Circuits_CD637_H5.23mm"
-			(at 38.1 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.minicircuits.com/pdfs/ADT16-6T+.pdf"
-			(at 38.1 127 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "0.10-400MHz 1:16 RF Transformer, Unbalanced to Balanced Center Tap, CD542"
-			(at 38.1 127 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "c070ebc7-dc58-4866-98a9-c8cededc48fb")
-		)
-		(pin "6"
-			(uuid "33e9e7a1-a1c7-473b-b9e1-da5ae075e0b2")
-		)
-		(pin "3"
-			(uuid "0ea60977-9fce-44d7-b2aa-40a8d47215f8")
-		)
-		(pin "5"
-			(uuid "ac6f5c78-acde-493f-bbfd-ddce5dce0c27")
-		)
-		(pin "4"
-			(uuid "7ca1f856-100b-493a-8967-671dab90f3b4")
-		)
-		(instances
-			(project "rx_mixer"
-				(path "/7cc72b98-3836-4c2a-8199-0c423deb5fd0"
-					(reference "TR4")
+			(project "nzif"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
+					(reference "#PWR?")
 					(unit 1)
 				)
 			)
@@ -11523,7 +11337,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c43496e2-c6e4-4c8b-a579-8a00176b5054")
-		(property "Reference" "#PWR020"
+		(property "Reference" "#PWR?"
 			(at 224.79 57.15 0)
 			(effects
 				(font
@@ -11577,6 +11391,12 @@
 					(unit 1)
 				)
 			)
+			(project "nzif"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -11590,7 +11410,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c8a681c4-8307-4b75-83b9-102e7c1cf164")
-		(property "Reference" "Q7"
+		(property "Reference" "Q?"
 			(at 401.32 70.3581 0)
 			(effects
 				(font
@@ -11657,6 +11477,12 @@
 					(unit 1)
 				)
 			)
+			(project "nzif"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
+					(reference "Q?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -11669,7 +11495,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cb82e77b-37b2-424f-9a5b-16e303207050")
-		(property "Reference" "#PWR09"
+		(property "Reference" "#PWR?"
 			(at 72.39 30.48 0)
 			(effects
 				(font
@@ -11741,7 +11567,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cdbec6c2-e7d7-4616-9cb4-7cbe09559196")
-		(property "Reference" "R7"
+		(property "Reference" "R?"
 			(at 387.35 59.69 90)
 			(effects
 				(font
@@ -11797,6 +11623,12 @@
 					(unit 1)
 				)
 			)
+			(project "nzif"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
+					(reference "R?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -11809,7 +11641,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cecd9d78-54b4-40f0-9c43-a3c404fbd01f")
-		(property "Reference" "C13"
+		(property "Reference" "C?"
 			(at 173.99 20.3135 0)
 			(effects
 				(font
@@ -11867,80 +11699,9 @@
 					(unit 1)
 				)
 			)
-		)
-	)
-	(symbol
-		(lib_id "Transformer:ADT16-6T")
-		(at 38.1 91.44 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d0e24e4c-344f-4d61-ba6b-fdf741904c38")
-		(property "Reference" "TR2"
-			(at 38.1 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "ADT16-6T"
-			(at 38.1 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "RF_Mini-Circuits:Mini-Circuits_CD637_H5.23mm"
-			(at 38.1 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.minicircuits.com/pdfs/ADT16-6T+.pdf"
-			(at 38.1 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "0.10-400MHz 1:16 RF Transformer, Unbalanced to Balanced Center Tap, CD542"
-			(at 38.1 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "bc459e8e-963a-4523-9e78-d20cf313f054")
-		)
-		(pin "6"
-			(uuid "f93357d4-b7e4-4204-b901-df3ab749cc60")
-		)
-		(pin "3"
-			(uuid "2e0d0918-783c-4d74-bb37-7df9bb70db8a")
-		)
-		(pin "5"
-			(uuid "bfb69f32-fbc3-402a-8f33-88cc71ddbde2")
-		)
-		(pin "4"
-			(uuid "0537a5f7-10c9-4b76-a911-d9192ea3f487")
-		)
-		(instances
-			(project "rx_mixer"
-				(path "/7cc72b98-3836-4c2a-8199-0c423deb5fd0"
-					(reference "TR2")
+			(project "nzif"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
+					(reference "C?")
 					(unit 1)
 				)
 			)
@@ -11957,7 +11718,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d17910cd-6551-4c3e-8ef3-9794b9e18c2b")
-		(property "Reference" "Q2"
+		(property "Reference" "Q?"
 			(at 132.08 147.8281 0)
 			(effects
 				(font
@@ -12024,6 +11785,101 @@
 					(unit 1)
 				)
 			)
+			(project "nzif"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
+					(reference "Q?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Amplifier_Operational:ADA4625-2ARDZ")
+		(at 124.46 228.6 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d3a7b7a9-5d61-4c49-b345-784e59231d84")
+		(property "Reference" "U217"
+			(at 124.46 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "ADA4625-2ARDZ"
+			(at 124.46 220.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm"
+			(at 123.19 236.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/ADA4625-1-4625-2.pdf"
+			(at 124.46 228.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Dual 5V..36V/±2.5V..±18V supply, 18 MHz, 48V/µs slew rate, ±80 µV offset, RRO, Fast-settling JFET Op Amp, SOIC-8-1EP"
+			(at 124.46 228.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c4aed3d7-76e5-4f02-b639-83c7291c7162")
+		)
+		(pin "8"
+			(uuid "5a3001cb-0441-469e-903c-b1def090b04c")
+		)
+		(pin "3"
+			(uuid "e3ef66a5-b6e8-429e-88fa-7b27324c363c")
+		)
+		(pin "2"
+			(uuid "09d2b3d8-bae2-4648-a80e-0842176e5d72")
+		)
+		(pin "5"
+			(uuid "99e63c9e-c78f-4711-882e-f7c23e000387")
+		)
+		(pin "6"
+			(uuid "eac14f92-55be-41b0-81c2-7a0b1a95d127")
+		)
+		(pin "7"
+			(uuid "491efefc-02b7-4bd5-a246-bfad09c2333e")
+		)
+		(pin "4"
+			(uuid "25d1b192-7f66-455f-b06f-264db2bd5528")
+		)
+		(pin "9"
+			(uuid "71cf8b2b-80d6-4d15-86b2-08843c1e43c8")
+		)
+		(instances
+			(project ""
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
+					(reference "U217")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -12036,7 +11892,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d564c58d-404a-4203-8fcd-778f1d725b49")
-		(property "Reference" "#PWR018"
+		(property "Reference" "#PWR?"
 			(at 185.42 87.63 0)
 			(effects
 				(font
@@ -12090,6 +11946,12 @@
 					(unit 1)
 				)
 			)
+			(project "nzif"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -12102,7 +11964,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d577b992-123f-4aca-a6e1-dcebfb826f70")
-		(property "Reference" "R14"
+		(property "Reference" "R?"
 			(at 414.02 125.7299 0)
 			(effects
 				(font
@@ -12160,146 +12022,9 @@
 					(unit 1)
 				)
 			)
-		)
-	)
-	(symbol
-		(lib_id "Transformer:ADT16-6T")
-		(at 38.1 109.22 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d61b1aae-9238-4ee1-a91a-314a39fa4961")
-		(property "Reference" "TR3"
-			(at 38.1 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "ADT16-6T"
-			(at 38.1 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "RF_Mini-Circuits:Mini-Circuits_CD637_H5.23mm"
-			(at 38.1 118.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.minicircuits.com/pdfs/ADT16-6T+.pdf"
-			(at 38.1 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "0.10-400MHz 1:16 RF Transformer, Unbalanced to Balanced Center Tap, CD542"
-			(at 38.1 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "46ed0ff8-5e20-41c9-bbb3-14ee1623e9cb")
-		)
-		(pin "6"
-			(uuid "878cc4cc-d525-4aa9-8db2-45f58e5b0489")
-		)
-		(pin "3"
-			(uuid "af122007-679f-4dbb-9b03-a0b9a4c06c08")
-		)
-		(pin "5"
-			(uuid "eb220f29-38c1-47fc-91ff-3dfdc9e8ce61")
-		)
-		(pin "4"
-			(uuid "1838fbf2-117c-4a13-88fc-d85947814ed0")
-		)
-		(instances
-			(project "rx_mixer"
-				(path "/7cc72b98-3836-4c2a-8199-0c423deb5fd0"
-					(reference "TR3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 29.21 137.16 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d876f95c-31d0-47a3-829b-e5a491475640")
-		(property "Reference" "#PWR01"
-			(at 29.21 143.51 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 29.21 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 29.21 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 29.21 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 29.21 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "0dfb26d3-36b5-4770-a6c2-88de44ea34ce")
-		)
-		(instances
-			(project "rx_mixer"
-				(path "/7cc72b98-3836-4c2a-8199-0c423deb5fd0"
-					(reference "#PWR01")
+			(project "nzif"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
+					(reference "R?")
 					(unit 1)
 				)
 			)
@@ -12315,7 +12040,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "db6de39a-835c-4295-baf0-1298aad653e7")
-		(property "Reference" "C25"
+		(property "Reference" "C?"
 			(at 353.06 20.3135 0)
 			(effects
 				(font
@@ -12373,6 +12098,12 @@
 					(unit 1)
 				)
 			)
+			(project "nzif"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
+					(reference "C?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -12385,7 +12116,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "dd8cb417-044a-473c-b3c7-4157f4d9cf8d")
-		(property "Reference" "R11"
+		(property "Reference" "R?"
 			(at 144.78 125.7299 0)
 			(effects
 				(font
@@ -12443,6 +12174,12 @@
 					(unit 1)
 				)
 			)
+			(project "nzif"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
+					(reference "R?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -12455,7 +12192,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "dddb9680-e21a-40d5-83ec-314153cda26e")
-		(property "Reference" "C4"
+		(property "Reference" "C?"
 			(at 83.82 20.3135 0)
 			(effects
 				(font
@@ -12522,97 +12259,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Amplifier_Operational:ADA4625-2ARDZ")
-		(at 58.42 195.58 0)
-		(unit 3)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e095b24d-e6d1-451e-b2fb-ab4fe65988c4")
-		(property "Reference" "U9"
-			(at 59.69 194.3099 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "ADA4625-2ARDZ"
-			(at 59.69 196.8499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm"
-			(at 57.15 203.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/ADA4625-1-4625-2.pdf"
-			(at 58.42 195.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Dual 5V..36V/±2.5V..±18V supply, 18 MHz, 48V/µs slew rate, ±80 µV offset, RRO, Fast-settling JFET Op Amp, SOIC-8-1EP"
-			(at 58.42 195.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "8"
-			(uuid "6013008c-b242-4910-b334-d0130449b5d0")
-		)
-		(pin "3"
-			(uuid "e12609ea-f9b4-4f80-85cf-0f2b20d819da")
-		)
-		(pin "2"
-			(uuid "0284e9e3-94cd-4fb0-a758-6593d1058cd4")
-		)
-		(pin "1"
-			(uuid "24a7031d-b1b8-4ce0-87ad-13071451b500")
-		)
-		(pin "4"
-			(uuid "8a84d28f-d7b1-46ba-a5f6-fd2fd9229165")
-		)
-		(pin "9"
-			(uuid "fd3a6a96-d81d-48fe-917b-8c0a7b2214b5")
-		)
-		(pin "7"
-			(uuid "f3ef40c7-7b3c-4794-b4c4-3e037c69ee8b")
-		)
-		(pin "6"
-			(uuid "e7b031a3-5e06-4ac3-ae48-2d4d7cc3b474")
-		)
-		(pin "5"
-			(uuid "4d42bc41-495f-48cb-ab1e-0427c229275f")
-		)
-		(instances
-			(project ""
-				(path "/7cc72b98-3836-4c2a-8199-0c423deb5fd0"
-					(reference "U9")
-					(unit 3)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 95.25 158.75 0)
 		(unit 1)
@@ -12622,7 +12268,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e5110b7d-0880-4d62-a476-68f85c7f0c10")
-		(property "Reference" "#PWR06"
+		(property "Reference" "#PWR?"
 			(at 95.25 165.1 0)
 			(effects
 				(font
@@ -12676,95 +12322,10 @@
 					(unit 1)
 				)
 			)
-		)
-	)
-	(symbol
-		(lib_id "Amplifier_Operational:ADA4625-2ARDZ")
-		(at 182.88 195.58 0)
-		(unit 3)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e9d10853-4b11-4721-849f-da386ffc77c7")
-		(property "Reference" "U11"
-			(at 184.15 194.3099 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "ADA4625-2ARDZ"
-			(at 184.15 196.8499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm"
-			(at 181.61 203.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/ADA4625-1-4625-2.pdf"
-			(at 182.88 195.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Dual 5V..36V/±2.5V..±18V supply, 18 MHz, 48V/µs slew rate, ±80 µV offset, RRO, Fast-settling JFET Op Amp, SOIC-8-1EP"
-			(at 182.88 195.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "8"
-			(uuid "54dfa9d4-1195-45e4-91a6-b2e97c00a3d6")
-		)
-		(pin "3"
-			(uuid "e12609ea-f9b4-4f80-85cf-0f2b20d819da")
-		)
-		(pin "2"
-			(uuid "0284e9e3-94cd-4fb0-a758-6593d1058cd4")
-		)
-		(pin "1"
-			(uuid "24a7031d-b1b8-4ce0-87ad-13071451b500")
-		)
-		(pin "4"
-			(uuid "fd634bdf-74c3-4187-bc3e-5a00a5a6b92f")
-		)
-		(pin "9"
-			(uuid "bfa2043b-27d3-44e0-84e2-134c51fea27d")
-		)
-		(pin "7"
-			(uuid "f3ef40c7-7b3c-4794-b4c4-3e037c69ee8b")
-		)
-		(pin "6"
-			(uuid "e7b031a3-5e06-4ac3-ae48-2d4d7cc3b474")
-		)
-		(pin "5"
-			(uuid "4d42bc41-495f-48cb-ab1e-0427c229275f")
-		)
-		(instances
-			(project "rx_mixer"
-				(path "/7cc72b98-3836-4c2a-8199-0c423deb5fd0"
-					(reference "U11")
-					(unit 3)
+			(project "nzif"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
+					(reference "#PWR?")
+					(unit 1)
 				)
 			)
 		)
@@ -12780,7 +12341,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "eb8f30bb-f86c-4cde-aa06-e7d4f18f4bcd")
-		(property "Reference" "Q4"
+		(property "Reference" "Q?"
 			(at 222.25 147.8281 0)
 			(effects
 				(font
@@ -12847,6 +12408,12 @@
 					(unit 1)
 				)
 			)
+			(project "nzif"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
+					(reference "Q?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -12859,7 +12426,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "eba67db5-dc18-4b70-8a3d-5ac2127bc9c5")
-		(property "Reference" "C11"
+		(property "Reference" "C?"
 			(at 165.1 20.3135 0)
 			(effects
 				(font
@@ -12917,6 +12484,12 @@
 					(unit 1)
 				)
 			)
+			(project "nzif"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
+					(reference "C?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -12929,7 +12502,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ec7b0a9a-e03b-4b1a-b6c9-cdd8c2d1ebb5")
-		(property "Reference" "R6"
+		(property "Reference" "R?"
 			(at 297.18 137.16 90)
 			(effects
 				(font
@@ -12985,6 +12558,12 @@
 					(unit 1)
 				)
 			)
+			(project "nzif"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
+					(reference "R?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -12997,7 +12576,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ecb1956a-686e-46ca-b1f0-ce3edcb18621")
-		(property "Reference" "#PWR02"
+		(property "Reference" "#PWR?"
 			(at 95.25 87.63 0)
 			(effects
 				(font
@@ -13051,6 +12630,12 @@
 					(unit 1)
 				)
 			)
+			(project "nzif"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -13063,7 +12648,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ecfde050-54df-489c-9519-d411c0e54765")
-		(property "Reference" "#PWR021"
+		(property "Reference" "#PWR?"
 			(at 224.79 134.62 0)
 			(effects
 				(font
@@ -13117,6 +12702,12 @@
 					(unit 1)
 				)
 			)
+			(project "nzif"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -13128,7 +12719,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "ee7d579b-dddc-4665-929e-647aeb27c363")
-		(property "Reference" "#PWR045"
+		(property "Reference" "#PWR?"
 			(at 247.65 209.55 0)
 			(effects
 				(font
@@ -13182,6 +12773,12 @@
 					(unit 1)
 				)
 			)
+			(project "nzif"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -13194,7 +12791,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "eeb97e51-46de-44e9-9b04-c5fd571a8c5b")
-		(property "Reference" "#PWR016"
+		(property "Reference" "#PWR?"
 			(at 171.45 30.48 0)
 			(effects
 				(font
@@ -13248,6 +12845,12 @@
 					(unit 1)
 				)
 			)
+			(project "nzif"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -13260,7 +12863,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ef8a625f-dbac-4cab-963b-3af6ea85ec28")
-		(property "Reference" "#PWR042"
+		(property "Reference" "#PWR?"
 			(at 322.58 58.42 0)
 			(effects
 				(font
@@ -13314,6 +12917,12 @@
 					(unit 1)
 				)
 			)
+			(project "nzif"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -13326,7 +12935,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f20344a5-661f-4bf0-a431-537e4d6872ad")
-		(property "Reference" "U7"
+		(property "Reference" "U?"
 			(at 366.6333 76.2 0)
 			(effects
 				(font
@@ -13416,6 +13025,12 @@
 					(unit 1)
 				)
 			)
+			(project "nzif"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
+					(reference "U?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -13428,7 +13043,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f204f90b-6a4c-4070-9171-5a666984a4a5")
-		(property "Reference" "#PWR030"
+		(property "Reference" "#PWR?"
 			(at 341.63 30.48 0)
 			(effects
 				(font
@@ -13482,6 +13097,12 @@
 					(unit 1)
 				)
 			)
+			(project "nzif"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -13494,7 +13115,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f467bbf4-a977-49ba-885c-5d4c05aa5bc7")
-		(property "Reference" "#PWR038"
+		(property "Reference" "#PWR?"
 			(at 233.68 58.42 0)
 			(effects
 				(font
@@ -13548,6 +13169,12 @@
 					(unit 1)
 				)
 			)
+			(project "nzif"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -13560,7 +13187,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f55d9ae8-24f5-480c-9e22-6fe00f50a09a")
-		(property "Reference" "R15"
+		(property "Reference" "R?"
 			(at 414.02 48.2599 0)
 			(effects
 				(font
@@ -13618,6 +13245,12 @@
 					(unit 1)
 				)
 			)
+			(project "nzif"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
+					(reference "R?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -13630,7 +13263,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f62c22d6-c201-45c5-ac39-e591addb17e3")
-		(property "Reference" "C23"
+		(property "Reference" "C?"
 			(at 344.17 20.3135 0)
 			(effects
 				(font
@@ -13688,6 +13321,12 @@
 					(unit 1)
 				)
 			)
+			(project "nzif"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
+					(reference "C?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -13700,7 +13339,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f746a16e-6278-46fb-807f-ae0b27c1a99c")
-		(property "Reference" "R4"
+		(property "Reference" "R?"
 			(at 208.28 137.16 90)
 			(effects
 				(font
@@ -13756,6 +13395,12 @@
 					(unit 1)
 				)
 			)
+			(project "nzif"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
+					(reference "R?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -13769,7 +13414,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fd664262-bd6a-4728-94a4-94230b0b00ce")
-		(property "Reference" "Q8"
+		(property "Reference" "Q?"
 			(at 401.32 147.8281 0)
 			(effects
 				(font
@@ -13833,6 +13478,12 @@
 			(project "rx_mixer"
 				(path "/7cc72b98-3836-4c2a-8199-0c423deb5fd0"
 					(reference "Q8")
+					(unit 1)
+				)
+			)
+			(project "nzif"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
+					(reference "Q?")
 					(unit 1)
 				)
 			)
