@@ -4589,6 +4589,115 @@
 				(hide yes)
 			)
 		)
+		(symbol "ADA4945-1_0_1"
+			(polyline
+				(pts
+					(xy -12.446 15.24) (xy 2.286 15.24) (xy 2.286 14.478)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -12.446 7.62) (xy 2.286 7.62) (xy 2.286 8.382)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -12.192 12.954) (xy -6.096 12.954)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -12.192 10.16) (xy -6.096 10.16)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -6.096 17.526) (xy -6.096 5.334) (xy 3.81 11.43) (xy -6.096 17.526)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -6.096 11.43) (xy -9.652 11.43) (xy -9.652 4.318) (xy 10.922 4.318) (xy 10.922 5.08) (xy 11.684 5.08)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -0.762 8.382) (xy 11.43 8.382)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(circle
+				(center 0.254 14.478)
+				(radius 0.568)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 1.016 14.478) (xy 11.43 14.478)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
 		(symbol "ADA4945-1_1_1"
 			(rectangle
 				(start -17.78 22.86)
@@ -4599,6 +4708,22 @@
 				)
 				(fill
 					(type background)
+				)
+			)
+			(text "+"
+				(at -5.08 12.954 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(text "-"
+				(at -5.08 10.16 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
 				)
 			)
 			(pin input line
@@ -4800,7 +4925,7 @@
 				)
 			)
 			(pin power_in line
-				(at 0 -27.94 90)
+				(at 0 -30.48 90)
 				(length 7.62)
 				(name "DGND"
 					(effects
@@ -4854,24 +4979,6 @@
 				)
 			)
 			(pin output line
-				(at 25.4 17.78 180)
-				(length 7.62)
-				(name "+OUT"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "10"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin output line
 				(at 25.4 15.24 180)
 				(length 7.62)
 				(name "-OUT"
@@ -4882,6 +4989,24 @@
 					)
 				)
 				(number "11"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at 25.4 7.62 180)
+				(length 7.62)
+				(name "+OUT"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "10"
 					(effects
 						(font
 							(size 1.27 1.27)

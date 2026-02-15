@@ -13,23 +13,62 @@ Details and step-by-step instructions are in [firmware/usb_cdc/README.md](firmwa
 
 ## Rx Mixer Subsystem (First Stage)
 
-The Rx Mixer is the first stage of the receiver chain, performing direct conversion of the incoming RF signal to baseband using a polyphase mixer architecture. This approach enables image rejection and quadrature demodulation in a single stage without the need for intermediate IF filters.
+Think of the mixer as a “signal shifter.” It takes the high-frequency radio signal coming in from the antenna and shifts it down to a much slower signal that is easier to process. This is like using a gear to make a fast spinning wheel turn slower so you can measure it.
 
-### Architecture:
-- **Differential RF Input (RF+/RF-)**: Accepts balanced RF signals from the antenna and front-end amplifiers
-- **FET-Based Mixer Switches**: SN74CBT3125CPW quad FET bus switches act as the mixer elements, providing low-distortion switching with minimal insertion loss
-- **Multi-Phase Local Oscillator**: Multiple LO phases (typically 12 phases) drive the FET switches to create a polyphase mixer that suppresses unwanted sidebands and harmonics
-- **I/Q Baseband Outputs**: The mixer produces in-phase (I) and quadrature (Q) outputs that are summed through resistor networks to create the final differential baseband signals
-- **Baseband Amplifiers**: ADA4620-2 dual precision op amps provide buffering and gain for the low-level baseband signals before they reach the ADCs
+### What it does in simple terms:
+- **Takes the RF input** (the tiny signal from the antenna).
+- **Uses a local oscillator (LO)** as a timing signal, kind of like a strobe light, to sample the RF.
+- **Creates two versions of the signal** called I and Q. These are the same signal, just shifted in time by a quarter cycle, which helps computers figure out the exact frequency and phase.
 
-### Operation:
-The polyphase mixer works by switching the RF signal with multiple phases of the local oscillator (LO), typically 12 phases spaced 30° apart. Each phase drives a separate FET switch that samples the RF input at a slightly different time. The outputs are combined with weighted resistors to produce the I and Q channels. This multi-phase technique provides:
-- **Image rejection** through phase cancellation of unwanted mixing products
-- **Harmonic suppression** as odd harmonics are cancelled by the polyphase summation
-- **Direct conversion** from RF to baseband without intermediate IF stages
-- **Quadrature outputs** for complex signal processing and SSB demodulation
+### How it is built:
+- **Switches (SN74CBT3125)** act like very fast on/off gates.
+- **Multiple LO phases** (many evenly spaced timing signals) drive the switches to reduce unwanted mixing noise.
+- **Resistor networks** add the pieces together to form clean I and Q outputs.
+- **Op amps (ADA4620-2)** buffer and boost the tiny signals so the ADC can read them.
 
-The baseband I/Q signals are then passed to the ADC subsystem for digitization and DSP processing.
+### Netnames and signal path (current schematic):
+- **RF input:** The transformer outputs land on `RF+` and `RF-` and feed the six EPC2037 switching transistors.
+- **Gate drive:** `LT8418ACBZ-R7` takes the LO phase nets (`CLK_P0`, `CLK_P45`, `CLK_P90`, `CLK_P135`, `CLK_P180`, `CLK_P225`, `CLK_P270`, `CLK_P315`) and drives the EPC2037 gates with fast, low-impedance edges so they sample the RF cleanly.
+- **Sample/hold:** Each EPC2037 output charges a capacitor that holds the instantaneous voltage on the baseband nodes (`Baseband_0`, `Baseband_45`, `Baseband_90`, `Baseband_135`, `Baseband_180`, `Baseband_225`, `Baseband_270`, `Baseband_315`).
+- **Buffer pickup:** The ADA4625-2ARDZ buffer amps read those held voltages and pass them forward to the driver amp inputs (`P0_IN+/-`, `P1_IN+/-`, `P2_IN+/-`, `P3_IN+/-`).
+
+After this stage, the I and Q signals go to the ADCs so the DSP can do the rest of the radio processing.
+
+## Rx Driver Amps (Signal Conditioning)
+
+The Rx driver amps are like the “volume and protection” stage before the ADCs. They make sure the I and Q signals are the right size, clean, and safe for the converter.
+
+### What they do in simple terms:
+- **Boost or trim the signal level** so the ADC sees a strong, usable signal (not too weak, not too big).
+- **Filter out unwanted noise** so the ADC samples a cleaner waveform.
+- **Protect the ADC** by clamping or limiting signals that get too large.
+
+### How it is built:
+- **Fully differential amplifiers (ADA4945-1)** handle the I/Q pairs and keep noise low.
+- **Clamp circuits and resistors** set the maximum signal swing.
+- **Local power and decoupling** keep the amplifier stable and quiet.
+
+### Netnames and signal path (driver amps to ADC):
+- **Inputs from mixer buffers:** The driver stage receives four differential pairs on `P0_IN+/-`, `P1_IN+/-`, `P2_IN+/-`, and `P3_IN+/-`.
+- **Gain/feedback routing:** Each channel has feedback nets `P*_FB+/-`, and the switchable gain path uses `P*_SW+/-` with `Gain_Mode` selecting which path is active.
+- **Common-mode and clamps:** `VREF_BUF` sets the output common-mode for the ADA4945-1, while `+VCLAMP`/`-VCLAMP` limit large swings before the ADC.
+- **Outputs to ADC sheet:** The driver amps export differential outputs on `P0_FDA+/-`, `P1_FDA+/-`, `P2_FDA+/-`, and `P3_FDA+/-`, which route to the ADC inputs (`AIN1P/N` ... `AIN4P/N`) on the ADC sheet.
+
+This stage ensures the ADC gets a clean, correctly sized signal so the DSP can process it accurately.
+
+## ADC Subsystem Operation
+
+The ADC subsystem digitizes the four analog IF channels (I/Q from both receivers) for processing by the DSP. The design uses a multi-channel audio ADC configured for high-performance analog-to-digital conversion.
+
+### Key Features:
+- **4 Differential Analog Inputs**: Each receiver's I and Q channels are captured as differential pairs (AIN1P/N through AIN4P/N)
+- **Digital Audio Interface**: Serial data output on SDATAOUT1 and SDATAOUT2 pins with BCLK (bit clock) and LRCLK (left/right clock) synchronization
+- **Master Clock Input**: MCLKIN provides the sampling clock, distributed through series termination resistors (R202-R205, 49.9Ω) to minimize reflections
+- **I2C Control**: Configuration and control via I2C interface (SDA/SCL) with 10kΩ pull-up resistors
+- **Power Supply**: Separate analog (AVDD) and digital (DVDD/IOVDD) supplies with local decoupling capacitors for optimal noise performance
+- **Reference Voltage**: External VREF pin allows precision voltage reference for improved accuracy
+
+The ADC operates in slave mode, synchronized to the system master clock. Data is output in a time-division multiplexed format on the serial interface, allowing the DSP to process all four channels for quadrature demodulation and signal processing.
 
 ## DSP Subsystem Operation
 
@@ -62,17 +101,3 @@ Processed audio and transmit signals are sent to DACs via TDM outputs:
 - **Multipurpose Pins**: Flexible GPIO for AGC control, PTT sensing, and system coordination
 
 The DSP performs real-time processing at audio sample rates (typically 48kHz or 96kHz), with sufficient MIPS to handle multiple receiver channels, filtering, AGC, and audio routing simultaneously.
-
-## ADC Subsystem Operation
-
-The ADC subsystem digitizes the four analog IF channels (I/Q from both receivers) for processing by the DSP. The design uses a multi-channel audio ADC configured for high-performance analog-to-digital conversion.
-
-### Key Features:
-- **4 Differential Analog Inputs**: Each receiver's I and Q channels are captured as differential pairs (AIN1P/N through AIN4P/N)
-- **Digital Audio Interface**: Serial data output on SDATAOUT1 and SDATAOUT2 pins with BCLK (bit clock) and LRCLK (left/right clock) synchronization
-- **Master Clock Input**: MCLKIN provides the sampling clock, distributed through series termination resistors (R202-R205, 49.9Ω) to minimize reflections
-- **I2C Control**: Configuration and control via I2C interface (SDA/SCL) with 10kΩ pull-up resistors
-- **Power Supply**: Separate analog (AVDD) and digital (DVDD/IOVDD) supplies with local decoupling capacitors for optimal noise performance
-- **Reference Voltage**: External VREF pin allows precision voltage reference for improved accuracy
-
-The ADC operates in slave mode, synchronized to the system master clock. Data is output in a time-division multiplexed format on the serial interface, allowing the DSP to process all four channels for quadrature demodulation and signal processing.
