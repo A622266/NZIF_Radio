@@ -1,0 +1,44 @@
+* SN74CBT3125C - datasheet-based behavioral macro-model (LTspice-compatible, no math functions)
+* Quad bidirectional FET bus switch, each channel enabled when OEn = 0 (active LOW)
+* Pins: 1OE 1A 1B 2OE 2A 2B GND 3B 3A 3OE 4B 4A 4OE VCC
+*
+* Approximations:
+* - Ron modeled with SW element (typ ~3 ohm)
+* - Off leakage modeled via Roff
+* - Port capacitance modeled as fixed COFF to ground at each port (typ ~5 pF)
+*   (Using fixed COFF avoids unsupported behavioral C expressions in LTspice.)
+
+.SUBCKT SN74CBT3125C 1OE 1A 1B 2OE 2A 2B GND 3B 3A 3OE 4B 4A 4OE VCC
+XCH1 1A 1B 1OE GND VCC CBT_CH
+XCH2 2A 2B 2OE GND VCC CBT_CH
+XCH3 3A 3B 3OE GND VCC CBT_CH
+XCH4 4A 4B 4OE GND VCC CBT_CH
+.ENDS SN74CBT3125C
+
+
+* One channel: bidirectional analog switch with active-low enable + simple clamps + fixed port C
+* Pins: A B OE GND VCC
+.SUBCKT CBT_CH A B OE GND VCC
+.PARAM RON=3 ROFF=1e12
+.PARAM COFF=5p
+.PARAM VTH=1.4 VHYS=0.2
+
+* EN = VCC - OE (OE low => EN high => ON)
+BEN EN GND V={ V(VCC,GND) - V(OE,GND) }
+
+* Switch
+SAB A B EN GND SWMOD
+.MODEL SWMOD SW(Ron={RON} Roff={ROFF} Vt={VTH} Vh={VHYS})
+
+* Clamp diodes (simplified)
+DAGN GND A DCL
+DBGN GND B DCL
+DAPS A VCC DCL
+DBPS B VCC DCL
+.MODEL DCL D(Is=1e-14 N=1 Rs=0.5 Cjo=1p)
+
+* Fixed off-state port capacitance (typical)
+CA A GND {COFF}
+CB B GND {COFF}
+
+.ENDS CBT_CH
