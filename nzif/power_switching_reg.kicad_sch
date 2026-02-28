@@ -1908,13 +1908,13 @@
 		(lib_id "power:GND")
 		(at 226.06 101.6 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0d2d4e95-f908-4f88-88f3-c3dab98b6172")
-		(property "Reference" "#PWR036"
+		(property "Reference" "#PWR0365"
 			(at 226.06 107.95 0)
 			(effects
 				(font
@@ -1963,7 +1963,7 @@
 		(instances
 			(project "sdr_12p"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/3655e9dc-6764-4ce9-aa9b-ed58af2a1dde"
-					(reference "#PWR036")
+					(reference "#PWR0365")
 					(unit 1)
 				)
 			)
@@ -1973,12 +1973,12 @@
 		(lib_id "Device:C_Small")
 		(at 165.1 96.52 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "123279c4-4b90-47d6-a6a2-0cb483761a1a")
-		(property "Reference" "C34"
+		(property "Reference" "C339"
 			(at 161.29 94.996 0)
 			(effects
 				(font
@@ -2031,7 +2031,7 @@
 		(instances
 			(project "sdr_12p"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/3655e9dc-6764-4ce9-aa9b-ed58af2a1dde"
-					(reference "C34")
+					(reference "C339")
 					(unit 1)
 				)
 			)
@@ -2041,13 +2041,13 @@
 		(lib_id "power:GND")
 		(at 165.1 100.33 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "159dd982-0ec5-4efd-b6ee-5f2de5e81c2e")
-		(property "Reference" "#PWR032"
+		(property "Reference" "#PWR0359"
 			(at 165.1 106.68 0)
 			(effects
 				(font
@@ -2096,7 +2096,7 @@
 		(instances
 			(project "sdr_12p"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/3655e9dc-6764-4ce9-aa9b-ed58af2a1dde"
-					(reference "#PWR032")
+					(reference "#PWR0359")
 					(unit 1)
 				)
 			)
@@ -2106,12 +2106,12 @@
 		(lib_id "Device:R_Small_US")
 		(at 173.99 101.6 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "23877ae0-945b-4ca4-af77-e330123995f9")
-		(property "Reference" "R3"
+		(property "Reference" "R241"
 			(at 170.18 100.33 0)
 			(effects
 				(font
@@ -2164,7 +2164,7 @@
 		(instances
 			(project "sdr_12p"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/3655e9dc-6764-4ce9-aa9b-ed58af2a1dde"
-					(reference "R3")
+					(reference "R241")
 					(unit 1)
 				)
 			)
@@ -2174,12 +2174,12 @@
 		(lib_id "Device:R_Small_US")
 		(at 266.7 105.41 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "259563f7-e0c0-4936-9e0a-abb32cae5b00")
-		(property "Reference" "R4"
+		(property "Reference" "R244"
 			(at 262.89 104.14 0)
 			(effects
 				(font
@@ -2232,7 +2232,7 @@
 		(instances
 			(project "sdr_12p"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/3655e9dc-6764-4ce9-aa9b-ed58af2a1dde"
-					(reference "R4")
+					(reference "R244")
 					(unit 1)
 				)
 			)
@@ -2242,12 +2242,12 @@
 		(lib_id "Device:R_Small_US")
 		(at 270.51 147.32 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "304d0bfd-9d3f-4062-9865-d491c96a73ce")
-		(property "Reference" "R6"
+		(property "Reference" "R245"
 			(at 266.7 146.05 0)
 			(effects
 				(font
@@ -2300,7 +2300,7 @@
 		(instances
 			(project "sdr_12p"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/3655e9dc-6764-4ce9-aa9b-ed58af2a1dde"
-					(reference "R6")
+					(reference "R245")
 					(unit 1)
 				)
 			)
@@ -2310,12 +2310,12 @@
 		(lib_id "Device:R_Small_US")
 		(at 266.7 97.79 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "3175e07b-7feb-47e4-abd0-de20982f0f27")
-		(property "Reference" "R2"
+		(property "Reference" "R243"
 			(at 262.89 96.52 0)
 			(effects
 				(font
@@ -2368,7 +2368,7 @@
 		(instances
 			(project "sdr_12p"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/3655e9dc-6764-4ce9-aa9b-ed58af2a1dde"
-					(reference "R2")
+					(reference "R243")
 					(unit 1)
 				)
 			)
@@ -2378,13 +2378,13 @@
 		(lib_id "power:GND")
 		(at 237.49 101.6 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "33455479-eceb-4dfc-b8d2-26ff6bc51a87")
-		(property "Reference" "#PWR037"
+		(property "Reference" "#PWR0367"
 			(at 237.49 107.95 0)
 			(effects
 				(font
@@ -2433,7 +2433,7 @@
 		(instances
 			(project "sdr_12p"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/3655e9dc-6764-4ce9-aa9b-ed58af2a1dde"
-					(reference "#PWR037")
+					(reference "#PWR0367")
 					(unit 1)
 				)
 			)
@@ -2443,12 +2443,12 @@
 		(lib_id "Device:C_Small")
 		(at 237.49 99.06 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "3885f861-0dd3-4df3-a765-0e154d9430d7")
-		(property "Reference" "C37"
+		(property "Reference" "C345"
 			(at 239.268 97.028 0)
 			(effects
 				(font
@@ -2501,7 +2501,7 @@
 		(instances
 			(project "sdr_12p"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/3655e9dc-6764-4ce9-aa9b-ed58af2a1dde"
-					(reference "C37")
+					(reference "C345")
 					(unit 1)
 				)
 			)
@@ -2511,13 +2511,13 @@
 		(lib_id "Device:L_Small")
 		(at 219.71 93.98 90)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4c97ecf6-e57e-4755-9d69-ede15814c323")
-		(property "Reference" "L2"
+		(property "Reference" "L103"
 			(at 219.71 89.662 90)
 			(effects
 				(font
@@ -2568,7 +2568,7 @@
 		(instances
 			(project "sdr_12p"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/3655e9dc-6764-4ce9-aa9b-ed58af2a1dde"
-					(reference "L2")
+					(reference "L103")
 					(unit 1)
 				)
 			)
@@ -2578,12 +2578,12 @@
 		(lib_id "Device:C_Small")
 		(at 252.73 148.59 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "54ad97a8-0613-4864-a9c2-85c7c9a96698")
-		(property "Reference" "C72"
+		(property "Reference" "C348"
 			(at 254.508 146.558 0)
 			(effects
 				(font
@@ -2636,7 +2636,7 @@
 		(instances
 			(project "sdr_12p"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/3655e9dc-6764-4ce9-aa9b-ed58af2a1dde"
-					(reference "C72")
+					(reference "C348")
 					(unit 1)
 				)
 			)
@@ -2646,13 +2646,13 @@
 		(lib_id "Diode:B330")
 		(at 214.63 154.94 270)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5c4f654a-0804-4676-b7d1-f58e19d5d0cd")
-		(property "Reference" "D5"
+		(property "Reference" "D104"
 			(at 217.17 153.9875 90)
 			(effects
 				(font
@@ -2705,7 +2705,7 @@
 		(instances
 			(project "sdr_12p"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/3655e9dc-6764-4ce9-aa9b-ed58af2a1dde"
-					(reference "D5")
+					(reference "D104")
 					(unit 1)
 				)
 			)
@@ -2715,13 +2715,13 @@
 		(lib_id "power:GND")
 		(at 241.3 151.13 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "628bc183-e2a8-4bd6-9987-ffdf6c5c34f4")
-		(property "Reference" "#PWR046"
+		(property "Reference" "#PWR0368"
 			(at 241.3 157.48 0)
 			(effects
 				(font
@@ -2770,7 +2770,7 @@
 		(instances
 			(project "sdr_12p"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/3655e9dc-6764-4ce9-aa9b-ed58af2a1dde"
-					(reference "#PWR046")
+					(reference "#PWR0368")
 					(unit 1)
 				)
 			)
@@ -2780,12 +2780,12 @@
 		(lib_id "Device:C_Small")
 		(at 214.63 146.05 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "64f743aa-fcfb-4646-b6c1-4c7583aea0cb")
-		(property "Reference" "C40"
+		(property "Reference" "C342"
 			(at 216.408 144.018 0)
 			(effects
 				(font
@@ -2838,7 +2838,7 @@
 		(instances
 			(project "sdr_12p"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/3655e9dc-6764-4ce9-aa9b-ed58af2a1dde"
-					(reference "C40")
+					(reference "C342")
 					(unit 1)
 				)
 			)
@@ -2848,13 +2848,13 @@
 		(lib_id "Regulator_Switching:ADP2303ARDZ")
 		(at 191.77 99.06 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "678d3d01-9ddf-4b6b-98c0-8b74e710e1a1")
-		(property "Reference" "U36"
+		(property "Reference" "U166"
 			(at 191.77 86.36 0)
 			(effects
 				(font
@@ -2928,7 +2928,7 @@
 		(instances
 			(project ""
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/3655e9dc-6764-4ce9-aa9b-ed58af2a1dde"
-					(reference "U36")
+					(reference "U166")
 					(unit 1)
 				)
 			)
@@ -2938,12 +2938,12 @@
 		(lib_id "Device:C_Small")
 		(at 210.82 96.52 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "67e46205-b142-4f75-98ac-090010e72d6c")
-		(property "Reference" "C35"
+		(property "Reference" "C341"
 			(at 212.598 94.488 0)
 			(effects
 				(font
@@ -2996,7 +2996,7 @@
 		(instances
 			(project "sdr_12p"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/3655e9dc-6764-4ce9-aa9b-ed58af2a1dde"
-					(reference "C35")
+					(reference "C341")
 					(unit 1)
 				)
 			)
@@ -3006,12 +3006,12 @@
 		(lib_id "Device:C_Small")
 		(at 226.06 99.06 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "6af6d57a-9fe9-4aed-83a2-41cd2a6aa521")
-		(property "Reference" "C36"
+		(property "Reference" "C343"
 			(at 227.838 97.028 0)
 			(effects
 				(font
@@ -3064,7 +3064,7 @@
 		(instances
 			(project "sdr_12p"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/3655e9dc-6764-4ce9-aa9b-ed58af2a1dde"
-					(reference "C36")
+					(reference "C343")
 					(unit 1)
 				)
 			)
@@ -3074,13 +3074,13 @@
 		(lib_id "power:GND")
 		(at 198.12 161.29 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7405f8a4-ffd9-4a03-ab1a-13f34f69ca11")
-		(property "Reference" "#PWR043"
+		(property "Reference" "#PWR0362"
 			(at 198.12 167.64 0)
 			(effects
 				(font
@@ -3129,7 +3129,7 @@
 		(instances
 			(project "sdr_12p"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/3655e9dc-6764-4ce9-aa9b-ed58af2a1dde"
-					(reference "#PWR043")
+					(reference "#PWR0362")
 					(unit 1)
 				)
 			)
@@ -3139,12 +3139,12 @@
 		(lib_id "Device:R_Small_US")
 		(at 270.51 154.94 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "7c50213b-94b1-464c-9e24-cedcb540998e")
-		(property "Reference" "R7"
+		(property "Reference" "R246"
 			(at 266.7 153.67 0)
 			(effects
 				(font
@@ -3197,7 +3197,7 @@
 		(instances
 			(project "sdr_12p"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/3655e9dc-6764-4ce9-aa9b-ed58af2a1dde"
-					(reference "R7")
+					(reference "R246")
 					(unit 1)
 				)
 			)
@@ -3207,12 +3207,12 @@
 		(lib_id "Device:C_Small")
 		(at 248.92 99.06 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "8041da57-8f2e-4a5a-9287-e9e308cc3f13")
-		(property "Reference" "C38"
+		(property "Reference" "C347"
 			(at 250.698 97.028 0)
 			(effects
 				(font
@@ -3265,7 +3265,7 @@
 		(instances
 			(project "sdr_12p"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/3655e9dc-6764-4ce9-aa9b-ed58af2a1dde"
-					(reference "C38")
+					(reference "C347")
 					(unit 1)
 				)
 			)
@@ -3275,13 +3275,13 @@
 		(lib_id "power:GND")
 		(at 214.63 158.75 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8c24686f-980c-49eb-a1bc-49ac877d0cd4")
-		(property "Reference" "#PWR044"
+		(property "Reference" "#PWR0364"
 			(at 214.63 165.1 0)
 			(effects
 				(font
@@ -3330,7 +3330,7 @@
 		(instances
 			(project "sdr_12p"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/3655e9dc-6764-4ce9-aa9b-ed58af2a1dde"
-					(reference "#PWR044")
+					(reference "#PWR0364")
 					(unit 1)
 				)
 			)
@@ -3340,13 +3340,13 @@
 		(lib_id "power:GND")
 		(at 168.91 149.86 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "91ca1b6b-6eb5-4a39-a957-aac13a795de1")
-		(property "Reference" "#PWR041"
+		(property "Reference" "#PWR0360"
 			(at 168.91 156.21 0)
 			(effects
 				(font
@@ -3395,7 +3395,7 @@
 		(instances
 			(project "sdr_12p"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/3655e9dc-6764-4ce9-aa9b-ed58af2a1dde"
-					(reference "#PWR041")
+					(reference "#PWR0360")
 					(unit 1)
 				)
 			)
@@ -3405,13 +3405,13 @@
 		(lib_id "power:GND")
 		(at 229.87 151.13 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "af6c3d30-db9d-4bf4-9b9e-d32a42f8a78f")
-		(property "Reference" "#PWR045"
+		(property "Reference" "#PWR0366"
 			(at 229.87 157.48 0)
 			(effects
 				(font
@@ -3460,7 +3460,7 @@
 		(instances
 			(project "sdr_12p"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/3655e9dc-6764-4ce9-aa9b-ed58af2a1dde"
-					(reference "#PWR045")
+					(reference "#PWR0366")
 					(unit 1)
 				)
 			)
@@ -3470,12 +3470,12 @@
 		(lib_id "Device:C_Small")
 		(at 168.91 146.05 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "b735967f-a9e6-4dd3-866c-03d20ab9e68c")
-		(property "Reference" "C39"
+		(property "Reference" "C340"
 			(at 165.1 144.526 0)
 			(effects
 				(font
@@ -3528,7 +3528,7 @@
 		(instances
 			(project "sdr_12p"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/3655e9dc-6764-4ce9-aa9b-ed58af2a1dde"
-					(reference "C39")
+					(reference "C340")
 					(unit 1)
 				)
 			)
@@ -3538,13 +3538,13 @@
 		(lib_id "Device:L_Small")
 		(at 223.52 143.51 90)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b8359a52-17f7-48e9-8f92-6963c8098038")
-		(property "Reference" "L1"
+		(property "Reference" "L104"
 			(at 223.52 139.192 90)
 			(effects
 				(font
@@ -3595,7 +3595,7 @@
 		(instances
 			(project "sdr_12p"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/3655e9dc-6764-4ce9-aa9b-ed58af2a1dde"
-					(reference "L1")
+					(reference "L104")
 					(unit 1)
 				)
 			)
@@ -3605,13 +3605,13 @@
 		(lib_id "power:GND")
 		(at 270.51 161.29 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "bed647e1-e319-4bf3-935e-f80142f52148")
-		(property "Reference" "#PWR049"
+		(property "Reference" "#PWR0372"
 			(at 270.51 167.64 0)
 			(effects
 				(font
@@ -3660,7 +3660,7 @@
 		(instances
 			(project "sdr_12p"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/3655e9dc-6764-4ce9-aa9b-ed58af2a1dde"
-					(reference "#PWR049")
+					(reference "#PWR0372")
 					(unit 1)
 				)
 			)
@@ -3670,12 +3670,12 @@
 		(lib_id "Device:C_Small")
 		(at 229.87 148.59 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "d68b051a-f113-4c99-8bfb-2006f04cef2d")
-		(property "Reference" "C43"
+		(property "Reference" "C344"
 			(at 231.648 146.558 0)
 			(effects
 				(font
@@ -3728,7 +3728,7 @@
 		(instances
 			(project "sdr_12p"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/3655e9dc-6764-4ce9-aa9b-ed58af2a1dde"
-					(reference "C43")
+					(reference "C344")
 					(unit 1)
 				)
 			)
@@ -3738,12 +3738,12 @@
 		(lib_id "Device:C_Small")
 		(at 241.3 148.59 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "d6e653de-13d9-4c24-a559-292b84b03689")
-		(property "Reference" "C71"
+		(property "Reference" "C346"
 			(at 243.078 146.558 0)
 			(effects
 				(font
@@ -3796,7 +3796,7 @@
 		(instances
 			(project "sdr_12p"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/3655e9dc-6764-4ce9-aa9b-ed58af2a1dde"
-					(reference "C71")
+					(reference "C346")
 					(unit 1)
 				)
 			)
@@ -3806,13 +3806,13 @@
 		(lib_id "power:GND")
 		(at 210.82 109.22 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "db6bb500-b974-41e2-ae0c-f7eb1eb66e1f")
-		(property "Reference" "#PWR035"
+		(property "Reference" "#PWR0363"
 			(at 210.82 115.57 0)
 			(effects
 				(font
@@ -3861,7 +3861,7 @@
 		(instances
 			(project "sdr_12p"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/3655e9dc-6764-4ce9-aa9b-ed58af2a1dde"
-					(reference "#PWR035")
+					(reference "#PWR0363")
 					(unit 1)
 				)
 			)
@@ -3871,13 +3871,13 @@
 		(lib_id "Diode:B330")
 		(at 210.82 105.41 270)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "dda16411-9a42-43a1-b56a-c722284e2cbb")
-		(property "Reference" "D4"
+		(property "Reference" "D103"
 			(at 213.36 104.4575 90)
 			(effects
 				(font
@@ -3930,7 +3930,7 @@
 		(instances
 			(project "sdr_12p"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/3655e9dc-6764-4ce9-aa9b-ed58af2a1dde"
-					(reference "D4")
+					(reference "D103")
 					(unit 1)
 				)
 			)
@@ -3940,13 +3940,13 @@
 		(lib_id "power:GND")
 		(at 194.31 111.76 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e90045a6-c27d-41ef-a01a-18a0f66d5507")
-		(property "Reference" "#PWR034"
+		(property "Reference" "#PWR0361"
 			(at 194.31 118.11 0)
 			(effects
 				(font
@@ -3995,7 +3995,7 @@
 		(instances
 			(project "sdr_12p"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/3655e9dc-6764-4ce9-aa9b-ed58af2a1dde"
-					(reference "#PWR034")
+					(reference "#PWR0361")
 					(unit 1)
 				)
 			)
@@ -4005,13 +4005,13 @@
 		(lib_id "Regulator_Switching:ADP2303ARDZ")
 		(at 195.58 148.59 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "edf8eab0-09b2-4e74-8381-d351deb503d1")
-		(property "Reference" "U37"
+		(property "Reference" "U167"
 			(at 195.58 135.89 0)
 			(effects
 				(font
@@ -4085,7 +4085,7 @@
 		(instances
 			(project ""
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/3655e9dc-6764-4ce9-aa9b-ed58af2a1dde"
-					(reference "U37")
+					(reference "U167")
 					(unit 1)
 				)
 			)
@@ -4095,12 +4095,12 @@
 		(lib_id "Device:R_Small_US")
 		(at 177.8 151.13 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "f532c98b-76b6-4a07-af99-c65edddd3e58")
-		(property "Reference" "R5"
+		(property "Reference" "R242"
 			(at 173.99 149.86 0)
 			(effects
 				(font
@@ -4153,7 +4153,7 @@
 		(instances
 			(project "sdr_12p"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/3655e9dc-6764-4ce9-aa9b-ed58af2a1dde"
-					(reference "R5")
+					(reference "R242")
 					(unit 1)
 				)
 			)
@@ -4163,13 +4163,13 @@
 		(lib_id "power:GND")
 		(at 252.73 151.13 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f6b54235-ab33-4ac7-a86e-82cbf79fa420")
-		(property "Reference" "#PWR047"
+		(property "Reference" "#PWR0370"
 			(at 252.73 157.48 0)
 			(effects
 				(font
@@ -4218,7 +4218,7 @@
 		(instances
 			(project "sdr_12p"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/3655e9dc-6764-4ce9-aa9b-ed58af2a1dde"
-					(reference "#PWR047")
+					(reference "#PWR0370")
 					(unit 1)
 				)
 			)
@@ -4228,13 +4228,13 @@
 		(lib_id "power:GND")
 		(at 248.92 101.6 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fad46cdd-be17-46ae-9018-4bc7d32605a6")
-		(property "Reference" "#PWR038"
+		(property "Reference" "#PWR0369"
 			(at 248.92 107.95 0)
 			(effects
 				(font
@@ -4283,7 +4283,7 @@
 		(instances
 			(project "sdr_12p"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/3655e9dc-6764-4ce9-aa9b-ed58af2a1dde"
-					(reference "#PWR038")
+					(reference "#PWR0369")
 					(unit 1)
 				)
 			)
@@ -4293,13 +4293,13 @@
 		(lib_id "power:GND")
 		(at 266.7 111.76 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fc3adc6a-46be-46e7-98ee-b400f94de06b")
-		(property "Reference" "#PWR040"
+		(property "Reference" "#PWR0371"
 			(at 266.7 118.11 0)
 			(effects
 				(font
@@ -4348,7 +4348,7 @@
 		(instances
 			(project "sdr_12p"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/3655e9dc-6764-4ce9-aa9b-ed58af2a1dde"
-					(reference "#PWR040")
+					(reference "#PWR0371")
 					(unit 1)
 				)
 			)

@@ -1130,13 +1130,13 @@
 		(lib_id "MCU_RaspberryPi:RP2040")
 		(at 195.58 124.46 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d16b5bf7-70e8-4d98-87cb-20dae15f2311")
-		(property "Reference" "U1"
+		(property "Reference" "U165"
 			(at 197.7233 168.91 0)
 			(effects
 				(font
@@ -1355,7 +1355,7 @@
 		(instances
 			(project ""
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/27cecad5-c0fc-4afc-95d0-cabdd6a56668"
-					(reference "U1")
+					(reference "U165")
 					(unit 1)
 				)
 			)

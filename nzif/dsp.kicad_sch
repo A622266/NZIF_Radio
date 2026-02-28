@@ -7003,13 +7003,13 @@
 		(lib_id "power:GND")
 		(at 111.76 115.57 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "03004108-f36e-4378-8c4f-2d6ec2a2845e")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR0215"
 			(at 111.76 121.92 0)
 			(effects
 				(font
@@ -7065,7 +7065,7 @@
 			)
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/fa60d9db-5fbc-4f32-9a00-e3130bb41db9"
-					(reference "#PWR?")
+					(reference "#PWR0215")
 					(unit 1)
 				)
 			)
@@ -7075,12 +7075,12 @@
 		(lib_id "Device:R_Small_US")
 		(at 360.68 35.56 270)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "03420e6a-2b10-4c7d-8f29-b99de9061f64")
-		(property "Reference" "R210"
+		(property "Reference" "R155"
 			(at 355.6 34.544 90)
 			(effects
 				(font
@@ -7138,7 +7138,7 @@
 			)
 			(project ""
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/fa60d9db-5fbc-4f32-9a00-e3130bb41db9"
-					(reference "R210")
+					(reference "R155")
 					(unit 1)
 				)
 			)
@@ -7148,13 +7148,13 @@
 		(lib_id "Device:C_Small")
 		(at 55.88 196.85 180)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "09d76d0b-f0f8-4ff8-9c5c-780c86984928")
-		(property "Reference" "C?"
+		(property "Reference" "C163"
 			(at 53.34 195.5735 0)
 			(effects
 				(font
@@ -7214,7 +7214,7 @@
 			)
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/fa60d9db-5fbc-4f32-9a00-e3130bb41db9"
-					(reference "C?")
+					(reference "C163")
 					(unit 1)
 				)
 			)
@@ -7224,13 +7224,13 @@
 		(lib_id "power:GND")
 		(at 80.01 177.8 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0d447815-0c8b-4528-bc25-bf9c74ddcbc0")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR0204"
 			(at 80.01 184.15 0)
 			(effects
 				(font
@@ -7286,7 +7286,7 @@
 			)
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/fa60d9db-5fbc-4f32-9a00-e3130bb41db9"
-					(reference "#PWR?")
+					(reference "#PWR0204")
 					(unit 1)
 				)
 			)
@@ -7297,12 +7297,12 @@
 		(at 147.32 236.22 0)
 		(mirror x)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "0df76c38-d5cc-416b-b420-cc5f5bcf94d4")
-		(property "Reference" "R207"
+		(property "Reference" "R147"
 			(at 144.78 234.9499 0)
 			(effects
 				(font
@@ -7362,7 +7362,7 @@
 			)
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/fa60d9db-5fbc-4f32-9a00-e3130bb41db9"
-					(reference "R207")
+					(reference "R147")
 					(unit 1)
 				)
 			)
@@ -7372,13 +7372,13 @@
 		(lib_id "Device:C_Small")
 		(at 73.66 196.85 180)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1828a008-005d-41df-bf1c-207ee59ecbed")
-		(property "Reference" "C?"
+		(property "Reference" "C167"
 			(at 71.12 195.5735 0)
 			(effects
 				(font
@@ -7438,7 +7438,7 @@
 			)
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/fa60d9db-5fbc-4f32-9a00-e3130bb41db9"
-					(reference "C?")
+					(reference "C167")
 					(unit 1)
 				)
 			)
@@ -7449,12 +7449,12 @@
 		(at 156.21 190.5 90)
 		(mirror x)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "1d9c6714-68ec-46eb-a76e-6642aa90126d")
-		(property "Reference" "R209"
+		(property "Reference" "R148"
 			(at 156.21 196.85 90)
 			(effects
 				(font
@@ -7512,7 +7512,7 @@
 			)
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/fa60d9db-5fbc-4f32-9a00-e3130bb41db9"
-					(reference "R209")
+					(reference "R148")
 					(unit 1)
 				)
 			)
@@ -7522,13 +7522,13 @@
 		(lib_id "Device:C_Small")
 		(at 100.33 196.85 180)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1dc39a6b-e59d-4717-81e6-a1b28cf88a17")
-		(property "Reference" "C?"
+		(property "Reference" "C174"
 			(at 97.79 195.5735 0)
 			(effects
 				(font
@@ -7588,7 +7588,7 @@
 			)
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/fa60d9db-5fbc-4f32-9a00-e3130bb41db9"
-					(reference "C?")
+					(reference "C174")
 					(unit 1)
 				)
 			)
@@ -7598,12 +7598,12 @@
 		(lib_id "Device:R_Small_US")
 		(at 360.68 68.58 270)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "1efa2f3a-829e-42b5-939c-846244138ff2")
-		(property "Reference" "R217"
+		(property "Reference" "R165"
 			(at 355.6 67.564 90)
 			(effects
 				(font
@@ -7661,7 +7661,7 @@
 			)
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/fa60d9db-5fbc-4f32-9a00-e3130bb41db9"
-					(reference "R217")
+					(reference "R165")
 					(unit 1)
 				)
 			)
@@ -7671,13 +7671,13 @@
 		(lib_id "power:GND")
 		(at 71.12 177.8 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1fea40ed-8a63-4bc8-9667-5172cd1a541f")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR0202"
 			(at 71.12 184.15 0)
 			(effects
 				(font
@@ -7733,7 +7733,7 @@
 			)
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/fa60d9db-5fbc-4f32-9a00-e3130bb41db9"
-					(reference "#PWR?")
+					(reference "#PWR0202")
 					(unit 1)
 				)
 			)
@@ -7743,12 +7743,12 @@
 		(lib_id "Device:C_Small")
 		(at 102.87 134.62 180)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "202963d2-cfcb-45f3-84ec-30851f45c67d")
-		(property "Reference" "C?"
+		(property "Reference" "C176"
 			(at 100.33 133.3435 0)
 			(effects
 				(font
@@ -7808,7 +7808,7 @@
 			)
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/fa60d9db-5fbc-4f32-9a00-e3130bb41db9"
-					(reference "C?")
+					(reference "C176")
 					(unit 1)
 				)
 			)
@@ -7818,13 +7818,13 @@
 		(lib_id "Device:C_Small")
 		(at 111.76 113.03 180)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "22af27f2-9fc1-46e3-b717-e0066f4ff369")
-		(property "Reference" "C?"
+		(property "Reference" "C179"
 			(at 109.22 111.7535 0)
 			(effects
 				(font
@@ -7884,7 +7884,7 @@
 			)
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/fa60d9db-5fbc-4f32-9a00-e3130bb41db9"
-					(reference "C?")
+					(reference "C179")
 					(unit 1)
 				)
 			)
@@ -7894,12 +7894,12 @@
 		(lib_id "Device:R_Small_US")
 		(at 266.7 63.5 270)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "28a30471-7a8e-4570-8cd0-d67c715dade5")
-		(property "Reference" "R225"
+		(property "Reference" "R152"
 			(at 261.62 62.484 90)
 			(effects
 				(font
@@ -7957,7 +7957,7 @@
 			)
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/fa60d9db-5fbc-4f32-9a00-e3130bb41db9"
-					(reference "R225")
+					(reference "R152")
 					(unit 1)
 				)
 			)
@@ -7967,13 +7967,13 @@
 		(lib_id "power:GND")
 		(at 88.9 177.8 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "28a90747-d468-44de-8a8f-9b2a6d05ccfc")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR0206"
 			(at 88.9 184.15 0)
 			(effects
 				(font
@@ -8029,7 +8029,7 @@
 			)
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/fa60d9db-5fbc-4f32-9a00-e3130bb41db9"
-					(reference "#PWR?")
+					(reference "#PWR0206")
 					(unit 1)
 				)
 			)
@@ -8039,13 +8039,13 @@
 		(lib_id "power:GND")
 		(at 102.87 115.57 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2949d26e-8cb2-4ae0-904e-046b212ad266")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR0211"
 			(at 102.87 121.92 0)
 			(effects
 				(font
@@ -8101,7 +8101,7 @@
 			)
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/fa60d9db-5fbc-4f32-9a00-e3130bb41db9"
-					(reference "#PWR?")
+					(reference "#PWR0211")
 					(unit 1)
 				)
 			)
@@ -8111,12 +8111,12 @@
 		(lib_id "Device:R_Small_US")
 		(at 266.7 68.58 270)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "2a01fa1f-b60e-49c8-872f-ecddb3d152e1")
-		(property "Reference" "R?"
+		(property "Reference" "R154"
 			(at 261.62 67.564 90)
 			(effects
 				(font
@@ -8174,7 +8174,7 @@
 			)
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/fa60d9db-5fbc-4f32-9a00-e3130bb41db9"
-					(reference "R?")
+					(reference "R154")
 					(unit 1)
 				)
 			)
@@ -8184,12 +8184,12 @@
 		(lib_id "Device:R_Small_US")
 		(at 360.68 63.5 270)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "2f6a8088-bb94-4685-bcf9-7c6012284f5c")
-		(property "Reference" "R220"
+		(property "Reference" "R163"
 			(at 355.6 62.484 90)
 			(effects
 				(font
@@ -8247,7 +8247,7 @@
 			)
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/fa60d9db-5fbc-4f32-9a00-e3130bb41db9"
-					(reference "R220")
+					(reference "R163")
 					(unit 1)
 				)
 			)
@@ -8257,13 +8257,13 @@
 		(lib_id "power:GND")
 		(at 53.34 177.8 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "37803a87-58d5-4f54-b246-2d3e818d0d42")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR0197"
 			(at 53.34 184.15 0)
 			(effects
 				(font
@@ -8319,7 +8319,7 @@
 			)
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/fa60d9db-5fbc-4f32-9a00-e3130bb41db9"
-					(reference "#PWR?")
+					(reference "#PWR0197")
 					(unit 1)
 				)
 			)
@@ -8329,13 +8329,13 @@
 		(lib_id "power:GND")
 		(at 109.22 199.39 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "383e540a-084e-44b7-884f-64fd10de00c2")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR0214"
 			(at 109.22 205.74 0)
 			(effects
 				(font
@@ -8391,7 +8391,7 @@
 			)
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/fa60d9db-5fbc-4f32-9a00-e3130bb41db9"
-					(reference "#PWR?")
+					(reference "#PWR0214")
 					(unit 1)
 				)
 			)
@@ -8401,13 +8401,13 @@
 		(lib_id "power:GND")
 		(at 46.99 199.39 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3b00c071-17e6-41ed-bed5-8adc5963eaa1")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR0196"
 			(at 46.99 205.74 0)
 			(effects
 				(font
@@ -8463,7 +8463,7 @@
 			)
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/fa60d9db-5fbc-4f32-9a00-e3130bb41db9"
-					(reference "#PWR?")
+					(reference "#PWR0196")
 					(unit 1)
 				)
 			)
@@ -8473,13 +8473,13 @@
 		(lib_id "power:GND")
 		(at 91.44 236.22 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3b08a2c4-5069-4cf5-870e-f0279d040f54")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR0208"
 			(at 91.44 242.57 0)
 			(effects
 				(font
@@ -8535,7 +8535,7 @@
 			)
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/fa60d9db-5fbc-4f32-9a00-e3130bb41db9"
-					(reference "#PWR?")
+					(reference "#PWR0208")
 					(unit 1)
 				)
 			)
@@ -8545,13 +8545,13 @@
 		(lib_id "power:GND")
 		(at 144.78 264.16 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3ee3d0a1-aef8-4e54-ad61-1aceecca2d99")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR0221"
 			(at 144.78 270.51 0)
 			(effects
 				(font
@@ -8608,7 +8608,7 @@
 			)
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/fa60d9db-5fbc-4f32-9a00-e3130bb41db9"
-					(reference "#PWR?")
+					(reference "#PWR0221")
 					(unit 1)
 				)
 			)
@@ -8618,13 +8618,13 @@
 		(lib_id "power:GND")
 		(at 64.77 199.39 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "44dfd1f7-7409-4290-818f-04901dcfb93c")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR0200"
 			(at 64.77 205.74 0)
 			(effects
 				(font
@@ -8680,7 +8680,7 @@
 			)
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/fa60d9db-5fbc-4f32-9a00-e3130bb41db9"
-					(reference "#PWR?")
+					(reference "#PWR0200")
 					(unit 1)
 				)
 			)
@@ -8690,13 +8690,13 @@
 		(lib_id "power:GND")
 		(at 124.46 177.8 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "48ed64b9-c80f-496c-8d59-2aebb98cfe2e")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR0220"
 			(at 124.46 184.15 0)
 			(effects
 				(font
@@ -8752,7 +8752,7 @@
 			)
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/fa60d9db-5fbc-4f32-9a00-e3130bb41db9"
-					(reference "#PWR?")
+					(reference "#PWR0220")
 					(unit 1)
 				)
 			)
@@ -8762,13 +8762,13 @@
 		(lib_id "power:GND")
 		(at 44.45 177.8 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4b328eab-5d24-452e-bc0a-cc9c4b33a233")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR0195"
 			(at 44.45 184.15 0)
 			(effects
 				(font
@@ -8824,7 +8824,7 @@
 			)
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/fa60d9db-5fbc-4f32-9a00-e3130bb41db9"
-					(reference "#PWR?")
+					(reference "#PWR0195")
 					(unit 1)
 				)
 			)
@@ -8835,12 +8835,12 @@
 		(at 130.81 246.38 0)
 		(mirror x)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "50b751ec-bd09-4fa3-a766-91dacf3d9c77")
-		(property "Reference" "U?"
+		(property "Reference" "U133"
 			(at 130.81 257.81 0)
 			(effects
 				(font
@@ -8906,7 +8906,7 @@
 			)
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/fa60d9db-5fbc-4f32-9a00-e3130bb41db9"
-					(reference "U?")
+					(reference "U133")
 					(unit 1)
 				)
 			)
@@ -8916,13 +8916,13 @@
 		(lib_id "Device:C_Small")
 		(at 124.46 175.26 180)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5917dd12-f840-4af5-b046-286d612106b0")
-		(property "Reference" "C?"
+		(property "Reference" "C186"
 			(at 121.92 173.9835 0)
 			(effects
 				(font
@@ -8982,7 +8982,7 @@
 			)
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/fa60d9db-5fbc-4f32-9a00-e3130bb41db9"
-					(reference "C?")
+					(reference "C186")
 					(unit 1)
 				)
 			)
@@ -8992,13 +8992,13 @@
 		(lib_id "Device:C_Small")
 		(at 71.12 175.26 180)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5aaa2bdd-c8f6-4ce5-ad55-4afaa0764129")
-		(property "Reference" "C?"
+		(property "Reference" "C166"
 			(at 68.58 173.9835 0)
 			(effects
 				(font
@@ -9058,7 +9058,7 @@
 			)
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/fa60d9db-5fbc-4f32-9a00-e3130bb41db9"
-					(reference "C?")
+					(reference "C166")
 					(unit 1)
 				)
 			)
@@ -9068,13 +9068,13 @@
 		(lib_id "power:GND")
 		(at 91.44 199.39 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5abc08af-ee6e-4393-b703-aca3fe42e33e")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR0207"
 			(at 91.44 205.74 0)
 			(effects
 				(font
@@ -9130,7 +9130,7 @@
 			)
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/fa60d9db-5fbc-4f32-9a00-e3130bb41db9"
-					(reference "#PWR?")
+					(reference "#PWR0207")
 					(unit 1)
 				)
 			)
@@ -9140,13 +9140,13 @@
 		(lib_id "Device:C_Small")
 		(at 120.65 113.03 180)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5acff6fe-47e8-4b69-9ce7-e8c1f540c4e0")
-		(property "Reference" "C?"
+		(property "Reference" "C184"
 			(at 118.11 111.7535 0)
 			(effects
 				(font
@@ -9206,7 +9206,7 @@
 			)
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/fa60d9db-5fbc-4f32-9a00-e3130bb41db9"
-					(reference "C?")
+					(reference "C184")
 					(unit 1)
 				)
 			)
@@ -9216,13 +9216,13 @@
 		(lib_id "power:GND")
 		(at 40.64 259.08 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5b275ac9-17c5-4db1-a7db-0424175cb62b")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR0194"
 			(at 40.64 265.43 0)
 			(effects
 				(font
@@ -9278,7 +9278,7 @@
 			)
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/fa60d9db-5fbc-4f32-9a00-e3130bb41db9"
-					(reference "#PWR?")
+					(reference "#PWR0194")
 					(unit 1)
 				)
 			)
@@ -9288,13 +9288,13 @@
 		(lib_id "power:GND")
 		(at 111.76 137.16 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "65374cf2-9127-4b4f-b142-345fa1b13336")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR0216"
 			(at 111.76 143.51 0)
 			(effects
 				(font
@@ -9350,7 +9350,7 @@
 			)
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/fa60d9db-5fbc-4f32-9a00-e3130bb41db9"
-					(reference "#PWR?")
+					(reference "#PWR0216")
 					(unit 1)
 				)
 			)
@@ -9360,13 +9360,13 @@
 		(lib_id "Device:C_Small")
 		(at 111.76 134.62 180)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6d1cb55f-a457-40b7-b284-acc3d39e9380")
-		(property "Reference" "C?"
+		(property "Reference" "C180"
 			(at 109.22 133.3435 0)
 			(effects
 				(font
@@ -9426,7 +9426,7 @@
 			)
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/fa60d9db-5fbc-4f32-9a00-e3130bb41db9"
-					(reference "C?")
+					(reference "C180")
 					(unit 1)
 				)
 			)
@@ -9436,13 +9436,13 @@
 		(lib_id "power:GND")
 		(at 62.23 177.8 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6d8849d3-7ade-4a3b-84e3-7d3b33422894")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR0199"
 			(at 62.23 184.15 0)
 			(effects
 				(font
@@ -9498,7 +9498,7 @@
 			)
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/fa60d9db-5fbc-4f32-9a00-e3130bb41db9"
-					(reference "#PWR?")
+					(reference "#PWR0199")
 					(unit 1)
 				)
 			)
@@ -9508,13 +9508,13 @@
 		(lib_id "power:GND")
 		(at 55.88 199.39 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "72fa9a13-f2c7-435f-98cb-6dea2ae3e42f")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR0198"
 			(at 55.88 205.74 0)
 			(effects
 				(font
@@ -9570,7 +9570,7 @@
 			)
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/fa60d9db-5fbc-4f32-9a00-e3130bb41db9"
-					(reference "#PWR?")
+					(reference "#PWR0198")
 					(unit 1)
 				)
 			)
@@ -9580,13 +9580,13 @@
 		(lib_id "Device:C_Small")
 		(at 88.9 175.26 180)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "74398ca4-611d-472a-8755-c8c59c93cd7f")
-		(property "Reference" "C?"
+		(property "Reference" "C171"
 			(at 86.36 173.9835 0)
 			(effects
 				(font
@@ -9646,7 +9646,7 @@
 			)
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/fa60d9db-5fbc-4f32-9a00-e3130bb41db9"
-					(reference "C?")
+					(reference "C171")
 					(unit 1)
 				)
 			)
@@ -9656,12 +9656,12 @@
 		(lib_id "Device:R_Small_US")
 		(at 266.7 53.34 270)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "748ba82d-618e-4691-a13e-7c3549ad9eef")
-		(property "Reference" "R224"
+		(property "Reference" "R151"
 			(at 261.62 52.324 90)
 			(effects
 				(font
@@ -9719,7 +9719,7 @@
 			)
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/fa60d9db-5fbc-4f32-9a00-e3130bb41db9"
-					(reference "R224")
+					(reference "R151")
 					(unit 1)
 				)
 			)
@@ -9729,13 +9729,13 @@
 		(lib_id "power:GND")
 		(at 69.85 143.51 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "75a24550-7a10-49d2-b5ba-658c7979a608")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR0201"
 			(at 69.85 149.86 0)
 			(effects
 				(font
@@ -9791,7 +9791,7 @@
 			)
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/fa60d9db-5fbc-4f32-9a00-e3130bb41db9"
-					(reference "#PWR?")
+					(reference "#PWR0201")
 					(unit 1)
 				)
 			)
@@ -9801,13 +9801,13 @@
 		(lib_id "Device:R_Small_US")
 		(at 40.64 241.3 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "78203725-64cb-44f7-be69-91049470fb88")
-		(property "Reference" "R?"
+		(property "Reference" "R145"
 			(at 43.18 240.0299 0)
 			(effects
 				(font
@@ -9867,7 +9867,7 @@
 			)
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/fa60d9db-5fbc-4f32-9a00-e3130bb41db9"
-					(reference "R?")
+					(reference "R145")
 					(unit 1)
 				)
 			)
@@ -9877,13 +9877,13 @@
 		(lib_id "Device:C_Small")
 		(at 111.76 134.62 180)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "782723ac-24cf-4697-8107-6c25205b8602")
-		(property "Reference" "C?"
+		(property "Reference" "C181"
 			(at 109.22 133.3435 0)
 			(effects
 				(font
@@ -9945,7 +9945,7 @@
 			)
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/fa60d9db-5fbc-4f32-9a00-e3130bb41db9"
-					(reference "C?")
+					(reference "C181")
 					(unit 1)
 				)
 			)
@@ -9955,13 +9955,13 @@
 		(lib_id "Connector:TestPoint")
 		(at 153.67 182.88 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7aa62963-70f0-480e-93e0-7be58ff3b39e")
-		(property "Reference" "TP201"
+		(property "Reference" "TP101"
 			(at 156.21 178.3079 0)
 			(effects
 				(font
@@ -10020,7 +10020,7 @@
 			)
 			(project ""
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/fa60d9db-5fbc-4f32-9a00-e3130bb41db9"
-					(reference "TP201")
+					(reference "TP101")
 					(unit 1)
 				)
 			)
@@ -10030,13 +10030,13 @@
 		(lib_id "Device:C_Small")
 		(at 53.34 175.26 180)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7c46e562-5dd1-4793-bc3b-2d0e118167cc")
-		(property "Reference" "C?"
+		(property "Reference" "C162"
 			(at 50.8 173.9835 0)
 			(effects
 				(font
@@ -10096,7 +10096,7 @@
 			)
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/fa60d9db-5fbc-4f32-9a00-e3130bb41db9"
-					(reference "C?")
+					(reference "C162")
 					(unit 1)
 				)
 			)
@@ -10106,13 +10106,13 @@
 		(lib_id "Device:C_Small_US")
 		(at 198.12 254 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7d8d3d27-e6f4-4d0e-a2e6-d096abffcca7")
-		(property "Reference" "C231"
+		(property "Reference" "C188"
 			(at 200.66 252.8569 0)
 			(effects
 				(font
@@ -10172,7 +10172,7 @@
 			)
 			(project ""
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/fa60d9db-5fbc-4f32-9a00-e3130bb41db9"
-					(reference "C231")
+					(reference "C188")
 					(unit 1)
 				)
 			)
@@ -10182,13 +10182,13 @@
 		(lib_id "Device:C_Small")
 		(at 91.44 196.85 180)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7e4a5fa5-8cac-4a3e-9d09-5d71b2722943")
-		(property "Reference" "C?"
+		(property "Reference" "C172"
 			(at 88.9 195.5735 0)
 			(effects
 				(font
@@ -10248,7 +10248,7 @@
 			)
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/fa60d9db-5fbc-4f32-9a00-e3130bb41db9"
-					(reference "C?")
+					(reference "C172")
 					(unit 1)
 				)
 			)
@@ -10258,13 +10258,13 @@
 		(lib_id "nzif_radio_symbol_library:ADAU1467WBCPZ300")
 		(at 46.99 134.62 90)
 		(unit 2)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7fa4c7b7-6af2-4cdc-a546-a3afd648db07")
-		(property "Reference" "U?"
+		(property "Reference" "U131"
 			(at 45.72 101.6 90)
 			(effects
 				(font
@@ -10585,7 +10585,7 @@
 			)
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/fa60d9db-5fbc-4f32-9a00-e3130bb41db9"
-					(reference "U?")
+					(reference "U131")
 					(unit 2)
 				)
 			)
@@ -10595,13 +10595,13 @@
 		(lib_id "Device:LED")
 		(at 31.75 226.06 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "811b649e-77a3-442b-b97d-406042041d14")
-		(property "Reference" "D?"
+		(property "Reference" "D102"
 			(at 30.1625 219.71 0)
 			(effects
 				(font
@@ -10668,7 +10668,7 @@
 			)
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/fa60d9db-5fbc-4f32-9a00-e3130bb41db9"
-					(reference "D?")
+					(reference "D102")
 					(unit 1)
 				)
 			)
@@ -10678,13 +10678,13 @@
 		(lib_id "power:GND")
 		(at 120.65 137.16 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "81249433-9c27-4d31-9661-8fba3126bfb7")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR0219"
 			(at 120.65 143.51 0)
 			(effects
 				(font
@@ -10740,7 +10740,7 @@
 			)
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/fa60d9db-5fbc-4f32-9a00-e3130bb41db9"
-					(reference "#PWR?")
+					(reference "#PWR0219")
 					(unit 1)
 				)
 			)
@@ -10750,13 +10750,13 @@
 		(lib_id "Device:C_Small")
 		(at 109.22 196.85 180)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "83e2ac92-fd00-49bb-a45b-ad743a98972e")
-		(property "Reference" "C?"
+		(property "Reference" "C178"
 			(at 106.68 195.5735 0)
 			(effects
 				(font
@@ -10816,7 +10816,7 @@
 			)
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/fa60d9db-5fbc-4f32-9a00-e3130bb41db9"
-					(reference "C?")
+					(reference "C178")
 					(unit 1)
 				)
 			)
@@ -10826,13 +10826,13 @@
 		(lib_id "Switch:SW_SPST")
 		(at 40.64 226.06 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8cfe6e80-2639-40d6-a535-90930997d8f5")
-		(property "Reference" "SW?"
+		(property "Reference" "SW101"
 			(at 40.64 219.71 0)
 			(effects
 				(font
@@ -10890,7 +10890,7 @@
 			)
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/fa60d9db-5fbc-4f32-9a00-e3130bb41db9"
-					(reference "SW?")
+					(reference "SW101")
 					(unit 1)
 				)
 			)
@@ -10900,13 +10900,13 @@
 		(lib_id "power:GND")
 		(at 97.79 177.8 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "92a0a35b-9507-4e16-a6bb-6347d0ed251b")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR0209"
 			(at 97.79 184.15 0)
 			(effects
 				(font
@@ -10962,7 +10962,7 @@
 			)
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/fa60d9db-5fbc-4f32-9a00-e3130bb41db9"
-					(reference "#PWR?")
+					(reference "#PWR0209")
 					(unit 1)
 				)
 			)
@@ -10972,13 +10972,13 @@
 		(lib_id "Switch:SW_Push")
 		(at 157.48 243.84 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "92d4bb92-737b-477f-9b9a-a3dbfe6ccac2")
-		(property "Reference" "SW?"
+		(property "Reference" "SW102"
 			(at 157.48 236.22 0)
 			(effects
 				(font
@@ -11036,7 +11036,7 @@
 			)
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/fa60d9db-5fbc-4f32-9a00-e3130bb41db9"
-					(reference "SW?")
+					(reference "SW102")
 					(unit 1)
 				)
 			)
@@ -11046,13 +11046,13 @@
 		(lib_id "Device:C_Small")
 		(at 111.76 246.38 180)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "94e3ceab-f244-453c-8d06-068130b7d90e")
-		(property "Reference" "C?"
+		(property "Reference" "C182"
 			(at 109.22 245.1035 0)
 			(effects
 				(font
@@ -11112,7 +11112,7 @@
 			)
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/fa60d9db-5fbc-4f32-9a00-e3130bb41db9"
-					(reference "C?")
+					(reference "C182")
 					(unit 1)
 				)
 			)
@@ -11122,12 +11122,12 @@
 		(lib_id "Device:R_Small_US")
 		(at 360.68 55.88 270)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "9d90cb67-00c5-4a36-abec-edc1c8ed6a77")
-		(property "Reference" "R214"
+		(property "Reference" "R161"
 			(at 355.6 54.864 90)
 			(effects
 				(font
@@ -11185,7 +11185,7 @@
 			)
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/fa60d9db-5fbc-4f32-9a00-e3130bb41db9"
-					(reference "R214")
+					(reference "R161")
 					(unit 1)
 				)
 			)
@@ -11195,13 +11195,13 @@
 		(lib_id "Connector:TestPoint")
 		(at 166.37 190.5 270)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a04a9f6d-7540-425c-8014-21d227131ec5")
-		(property "Reference" "TP202"
+		(property "Reference" "TP102"
 			(at 170.9421 193.04 0)
 			(effects
 				(font
@@ -11260,7 +11260,7 @@
 			)
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/fa60d9db-5fbc-4f32-9a00-e3130bb41db9"
-					(reference "TP202")
+					(reference "TP102")
 					(unit 1)
 				)
 			)
@@ -11270,13 +11270,13 @@
 		(lib_id "power:GND")
 		(at 100.33 199.39 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a74f3826-8ba6-4a8e-9124-3685556569e3")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR0210"
 			(at 100.33 205.74 0)
 			(effects
 				(font
@@ -11332,7 +11332,7 @@
 			)
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/fa60d9db-5fbc-4f32-9a00-e3130bb41db9"
-					(reference "#PWR?")
+					(reference "#PWR0210")
 					(unit 1)
 				)
 			)
@@ -11342,13 +11342,13 @@
 		(lib_id "power:GND")
 		(at 120.65 115.57 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a810fc80-1692-4cbe-a59b-b03a333ec93e")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR0218"
 			(at 120.65 121.92 0)
 			(effects
 				(font
@@ -11404,7 +11404,7 @@
 			)
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/fa60d9db-5fbc-4f32-9a00-e3130bb41db9"
-					(reference "#PWR?")
+					(reference "#PWR0218")
 					(unit 1)
 				)
 			)
@@ -11414,13 +11414,13 @@
 		(lib_id "Device:C_Small")
 		(at 102.87 113.03 180)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ad5204ee-7b4d-47e2-ad57-ba8675a7a8c0")
-		(property "Reference" "C?"
+		(property "Reference" "C175"
 			(at 100.33 111.7535 0)
 			(effects
 				(font
@@ -11480,7 +11480,7 @@
 			)
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/fa60d9db-5fbc-4f32-9a00-e3130bb41db9"
-					(reference "C?")
+					(reference "C175")
 					(unit 1)
 				)
 			)
@@ -11490,12 +11490,12 @@
 		(lib_id "Device:C_Small")
 		(at 38.1 196.85 180)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "aee9f808-af20-4804-abb0-2ee5c19c5414")
-		(property "Reference" "C?"
+		(property "Reference" "C159"
 			(at 35.56 195.5735 0)
 			(effects
 				(font
@@ -11555,7 +11555,7 @@
 			)
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/fa60d9db-5fbc-4f32-9a00-e3130bb41db9"
-					(reference "C?")
+					(reference "C159")
 					(unit 1)
 				)
 			)
@@ -11565,12 +11565,12 @@
 		(lib_id "Device:R_Small_US")
 		(at 360.68 45.72 270)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "afd7a856-0948-4edb-8927-8688f94a2fa7")
-		(property "Reference" "R212"
+		(property "Reference" "R158"
 			(at 355.6 44.704 90)
 			(effects
 				(font
@@ -11628,7 +11628,7 @@
 			)
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/fa60d9db-5fbc-4f32-9a00-e3130bb41db9"
-					(reference "R212")
+					(reference "R158")
 					(unit 1)
 				)
 			)
@@ -11638,12 +11638,12 @@
 		(lib_id "Device:R_Small_US")
 		(at 360.68 58.42 270)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "b88283f0-22c3-4e49-aada-e63de28f83e1")
-		(property "Reference" "R215"
+		(property "Reference" "R162"
 			(at 355.6 57.404 90)
 			(effects
 				(font
@@ -11701,7 +11701,7 @@
 			)
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/fa60d9db-5fbc-4f32-9a00-e3130bb41db9"
-					(reference "R215")
+					(reference "R162")
 					(unit 1)
 				)
 			)
@@ -11711,12 +11711,12 @@
 		(lib_id "nzif_radio_symbol_library:STD2805T4")
 		(at 158.75 182.88 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "b9015fd7-39bd-4e1c-a4e3-a590bb3c7b7a")
-		(property "Reference" "Q?"
+		(property "Reference" "Q101"
 			(at 161.544 174.752 0)
 			(effects
 				(font
@@ -11781,7 +11781,7 @@
 			)
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/fa60d9db-5fbc-4f32-9a00-e3130bb41db9"
-					(reference "Q?")
+					(reference "Q101")
 					(unit 1)
 				)
 			)
@@ -11791,13 +11791,13 @@
 		(lib_id "power:GND")
 		(at 73.66 199.39 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "baed9bbe-3a5c-4d99-84a9-9129361a25fc")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR0203"
 			(at 73.66 205.74 0)
 			(effects
 				(font
@@ -11853,7 +11853,7 @@
 			)
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/fa60d9db-5fbc-4f32-9a00-e3130bb41db9"
-					(reference "#PWR?")
+					(reference "#PWR0203")
 					(unit 1)
 				)
 			)
@@ -11863,12 +11863,12 @@
 		(lib_id "Device:C_Small")
 		(at 35.56 175.26 180)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "baf8dc15-e5bc-43f4-95a6-491477bd881e")
-		(property "Reference" "C?"
+		(property "Reference" "C158"
 			(at 33.02 173.9835 0)
 			(effects
 				(font
@@ -11928,7 +11928,7 @@
 			)
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/fa60d9db-5fbc-4f32-9a00-e3130bb41db9"
-					(reference "C?")
+					(reference "C158")
 					(unit 1)
 				)
 			)
@@ -11938,12 +11938,12 @@
 		(lib_id "Device:R_Small_US")
 		(at 360.68 53.34 270)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "bbbe052a-1a2e-4332-9ac3-cded67c87f9d")
-		(property "Reference" "R221"
+		(property "Reference" "R160"
 			(at 355.6 52.324 90)
 			(effects
 				(font
@@ -12001,7 +12001,7 @@
 			)
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/fa60d9db-5fbc-4f32-9a00-e3130bb41db9"
-					(reference "R221")
+					(reference "R160")
 					(unit 1)
 				)
 			)
@@ -12011,13 +12011,13 @@
 		(lib_id "Device:C_Small")
 		(at 44.45 175.26 180)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "bc781d70-590a-45ec-a468-83a3f8e5a2b6")
-		(property "Reference" "C?"
+		(property "Reference" "C160"
 			(at 41.91 173.9835 0)
 			(effects
 				(font
@@ -12077,7 +12077,7 @@
 			)
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/fa60d9db-5fbc-4f32-9a00-e3130bb41db9"
-					(reference "C?")
+					(reference "C160")
 					(unit 1)
 				)
 			)
@@ -12087,13 +12087,13 @@
 		(lib_id "Device:C_Small")
 		(at 82.55 196.85 180)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "bd9a223f-9bbd-4aa1-a669-6d135c2e5e76")
-		(property "Reference" "C?"
+		(property "Reference" "C169"
 			(at 80.01 195.5735 0)
 			(effects
 				(font
@@ -12153,7 +12153,7 @@
 			)
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/fa60d9db-5fbc-4f32-9a00-e3130bb41db9"
-					(reference "C?")
+					(reference "C169")
 					(unit 1)
 				)
 			)
@@ -12163,12 +12163,12 @@
 		(lib_id "Device:R_Small_US")
 		(at 20.32 232.41 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "c0662c15-5e06-46fa-b954-9e18e560adb7")
-		(property "Reference" "R228"
+		(property "Reference" "R143"
 			(at 22.86 231.1399 0)
 			(effects
 				(font
@@ -12228,7 +12228,7 @@
 			)
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/fa60d9db-5fbc-4f32-9a00-e3130bb41db9"
-					(reference "R228")
+					(reference "R143")
 					(unit 1)
 				)
 			)
@@ -12238,12 +12238,12 @@
 		(lib_id "Device:R_Small_US")
 		(at 360.68 48.26 270)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "c1f394d7-57be-44b3-ad6d-ada918b17534")
-		(property "Reference" "R213"
+		(property "Reference" "R159"
 			(at 355.6 47.244 90)
 			(effects
 				(font
@@ -12301,7 +12301,7 @@
 			)
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/fa60d9db-5fbc-4f32-9a00-e3130bb41db9"
-					(reference "R213")
+					(reference "R159")
 					(unit 1)
 				)
 			)
@@ -12312,12 +12312,12 @@
 		(at 185.42 254 0)
 		(mirror x)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "c53efe41-c3ce-4aa7-9f69-043469ef01ee")
-		(property "Reference" "R226"
+		(property "Reference" "R149"
 			(at 182.88 252.7299 0)
 			(effects
 				(font
@@ -12377,7 +12377,7 @@
 			)
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/fa60d9db-5fbc-4f32-9a00-e3130bb41db9"
-					(reference "R226")
+					(reference "R149")
 					(unit 1)
 				)
 			)
@@ -12387,13 +12387,13 @@
 		(lib_id "Device:C_Small")
 		(at 86.36 233.68 90)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c843e270-f6d0-4600-a599-55376fd213b8")
-		(property "Reference" "C?"
+		(property "Reference" "C170"
 			(at 86.3663 227.33 90)
 			(effects
 				(font
@@ -12451,7 +12451,7 @@
 			)
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/fa60d9db-5fbc-4f32-9a00-e3130bb41db9"
-					(reference "C?")
+					(reference "C170")
 					(unit 1)
 				)
 			)
@@ -12461,13 +12461,13 @@
 		(lib_id "Device:C_Small")
 		(at 115.57 175.26 180)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c99ff64e-7c67-43db-ab77-df089c48ef70")
-		(property "Reference" "C?"
+		(property "Reference" "C183"
 			(at 113.03 173.9835 0)
 			(effects
 				(font
@@ -12527,7 +12527,7 @@
 			)
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/fa60d9db-5fbc-4f32-9a00-e3130bb41db9"
-					(reference "C?")
+					(reference "C183")
 					(unit 1)
 				)
 			)
@@ -12537,12 +12537,12 @@
 		(lib_id "Device:R_Small_US")
 		(at 360.68 43.18 270)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "cc0def3b-4305-4368-be2e-f58ff2b9724f")
-		(property "Reference" "R222"
+		(property "Reference" "R157"
 			(at 355.6 42.164 90)
 			(effects
 				(font
@@ -12600,7 +12600,7 @@
 			)
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/fa60d9db-5fbc-4f32-9a00-e3130bb41db9"
-					(reference "R222")
+					(reference "R157")
 					(unit 1)
 				)
 			)
@@ -12610,13 +12610,13 @@
 		(lib_id "Device:C_Small")
 		(at 120.65 134.62 180)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ce2db5cb-8597-4c20-b75d-bbe4c90e1bb8")
-		(property "Reference" "C?"
+		(property "Reference" "C185"
 			(at 118.11 133.3435 0)
 			(effects
 				(font
@@ -12676,7 +12676,7 @@
 			)
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/fa60d9db-5fbc-4f32-9a00-e3130bb41db9"
-					(reference "C?")
+					(reference "C185")
 					(unit 1)
 				)
 			)
@@ -12686,12 +12686,12 @@
 		(lib_id "Device:R_Small_US")
 		(at 360.68 66.04 270)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "ce51c16f-d75e-4eae-91f5-543031611e04")
-		(property "Reference" "R216"
+		(property "Reference" "R164"
 			(at 355.6 65.024 90)
 			(effects
 				(font
@@ -12749,7 +12749,7 @@
 			)
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/fa60d9db-5fbc-4f32-9a00-e3130bb41db9"
-					(reference "R216")
+					(reference "R164")
 					(unit 1)
 				)
 			)
@@ -12760,12 +12760,12 @@
 		(at 35.56 241.3 0)
 		(mirror y)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "d2f67d3d-fc12-482a-be4a-1a6671b4bedb")
-		(property "Reference" "R227"
+		(property "Reference" "R144"
 			(at 33.02 240.0299 0)
 			(effects
 				(font
@@ -12825,7 +12825,7 @@
 			)
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/fa60d9db-5fbc-4f32-9a00-e3130bb41db9"
-					(reference "R227")
+					(reference "R144")
 					(unit 1)
 				)
 			)
@@ -12835,12 +12835,12 @@
 		(lib_id "Device:R_Small_US")
 		(at 266.7 66.04 270)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "d5c19544-1b0f-4952-b172-e119845529d3")
-		(property "Reference" "R?"
+		(property "Reference" "R153"
 			(at 261.62 65.024 90)
 			(effects
 				(font
@@ -12898,7 +12898,7 @@
 			)
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/fa60d9db-5fbc-4f32-9a00-e3130bb41db9"
-					(reference "R?")
+					(reference "R153")
 					(unit 1)
 				)
 			)
@@ -12908,13 +12908,13 @@
 		(lib_id "power:GND")
 		(at 82.55 199.39 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d5dd1f98-b6c8-4865-96e8-d955656e121a")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR0205"
 			(at 82.55 205.74 0)
 			(effects
 				(font
@@ -12970,7 +12970,7 @@
 			)
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/fa60d9db-5fbc-4f32-9a00-e3130bb41db9"
-					(reference "#PWR?")
+					(reference "#PWR0205")
 					(unit 1)
 				)
 			)
@@ -12980,13 +12980,13 @@
 		(lib_id "Device:C_Small")
 		(at 80.01 175.26 180)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d91613c6-d223-499f-be86-42e756f32928")
-		(property "Reference" "C?"
+		(property "Reference" "C168"
 			(at 77.47 173.9835 0)
 			(effects
 				(font
@@ -13046,7 +13046,7 @@
 			)
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/fa60d9db-5fbc-4f32-9a00-e3130bb41db9"
-					(reference "C?")
+					(reference "C168")
 					(unit 1)
 				)
 			)
@@ -13056,12 +13056,12 @@
 		(lib_id "Device:R_Small_US")
 		(at 266.7 33.02 270)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "db123f6c-e968-4598-ab2d-e64d76bdd71b")
-		(property "Reference" "R223"
+		(property "Reference" "R150"
 			(at 261.62 32.004 90)
 			(effects
 				(font
@@ -13119,7 +13119,7 @@
 			)
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/fa60d9db-5fbc-4f32-9a00-e3130bb41db9"
-					(reference "R223")
+					(reference "R150")
 					(unit 1)
 				)
 			)
@@ -13129,13 +13129,13 @@
 		(lib_id "power:GND")
 		(at 102.87 137.16 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "db308089-ebc3-43c9-8d20-0c5811387fda")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR0212"
 			(at 102.87 143.51 0)
 			(effects
 				(font
@@ -13191,7 +13191,7 @@
 			)
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/fa60d9db-5fbc-4f32-9a00-e3130bb41db9"
-					(reference "#PWR?")
+					(reference "#PWR0212")
 					(unit 1)
 				)
 			)
@@ -13201,13 +13201,13 @@
 		(lib_id "Device:C_Small")
 		(at 46.99 196.85 180)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "dd7bf703-a5a4-4a6c-89b7-4eeb690e5cc0")
-		(property "Reference" "C?"
+		(property "Reference" "C161"
 			(at 44.45 195.5735 0)
 			(effects
 				(font
@@ -13267,7 +13267,7 @@
 			)
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/fa60d9db-5fbc-4f32-9a00-e3130bb41db9"
-					(reference "C?")
+					(reference "C161")
 					(unit 1)
 				)
 			)
@@ -13277,13 +13277,13 @@
 		(lib_id "Device:C_Small")
 		(at 62.23 175.26 180)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "df9cf8e9-11bd-4fde-8c06-6456adc26b1c")
-		(property "Reference" "C?"
+		(property "Reference" "C164"
 			(at 59.69 173.9835 0)
 			(effects
 				(font
@@ -13343,7 +13343,7 @@
 			)
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/fa60d9db-5fbc-4f32-9a00-e3130bb41db9"
-					(reference "C?")
+					(reference "C164")
 					(unit 1)
 				)
 			)
@@ -13353,13 +13353,13 @@
 		(lib_id "power:GND")
 		(at 38.1 199.39 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e013e31d-3973-44e1-8e99-524a9fb9ae3c")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR0193"
 			(at 38.1 205.74 0)
 			(effects
 				(font
@@ -13415,7 +13415,7 @@
 			)
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/fa60d9db-5fbc-4f32-9a00-e3130bb41db9"
-					(reference "#PWR?")
+					(reference "#PWR0193")
 					(unit 1)
 				)
 			)
@@ -13425,13 +13425,13 @@
 		(lib_id "Device:C_Small")
 		(at 106.68 175.26 180)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e106f34b-887c-4c63-9b79-24bbe5f7ae84")
-		(property "Reference" "C?"
+		(property "Reference" "C177"
 			(at 104.14 173.9835 0)
 			(effects
 				(font
@@ -13491,7 +13491,7 @@
 			)
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/fa60d9db-5fbc-4f32-9a00-e3130bb41db9"
-					(reference "C?")
+					(reference "C177")
 					(unit 1)
 				)
 			)
@@ -13501,12 +13501,12 @@
 		(lib_id "Device:R_Small_US")
 		(at 360.68 38.1 270)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "e415788c-89a9-4c00-9b13-b1372799e53e")
-		(property "Reference" "R211"
+		(property "Reference" "R156"
 			(at 355.6 37.084 90)
 			(effects
 				(font
@@ -13564,7 +13564,7 @@
 			)
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/fa60d9db-5fbc-4f32-9a00-e3130bb41db9"
-					(reference "R211")
+					(reference "R156")
 					(unit 1)
 				)
 			)
@@ -13574,13 +13574,13 @@
 		(lib_id "power:GND")
 		(at 35.56 177.8 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e628332c-dbcd-4823-a414-b8bc07c1e5a6")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR0192"
 			(at 35.56 184.15 0)
 			(effects
 				(font
@@ -13636,7 +13636,7 @@
 			)
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/fa60d9db-5fbc-4f32-9a00-e3130bb41db9"
-					(reference "#PWR?")
+					(reference "#PWR0192")
 					(unit 1)
 				)
 			)
@@ -13646,12 +13646,12 @@
 		(lib_id "nzif_radio_symbol_library:25AA1024-I_MF")
 		(at 60.96 252.73 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "ebac11ee-85a0-4e4d-8a3f-3ec1ca3d74fc")
-		(property "Reference" "U?"
+		(property "Reference" "U132"
 			(at 60.96 241.3 0)
 			(effects
 				(font
@@ -13729,7 +13729,7 @@
 			)
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/fa60d9db-5fbc-4f32-9a00-e3130bb41db9"
-					(reference "U?")
+					(reference "U132")
 					(unit 1)
 				)
 			)
@@ -13739,13 +13739,13 @@
 		(lib_id "Device:C_Small")
 		(at 97.79 175.26 180)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ecc08d1a-53a6-417c-9f32-276dbcb0f15b")
-		(property "Reference" "C?"
+		(property "Reference" "C173"
 			(at 95.25 173.9835 0)
 			(effects
 				(font
@@ -13805,7 +13805,7 @@
 			)
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/fa60d9db-5fbc-4f32-9a00-e3130bb41db9"
-					(reference "C?")
+					(reference "C173")
 					(unit 1)
 				)
 			)
@@ -13815,13 +13815,13 @@
 		(lib_id "Device:C_Small_US")
 		(at 190.5 251.46 90)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "eceb13da-6874-49c6-bfa4-e2ca646f6ecd")
-		(property "Reference" "C232"
+		(property "Reference" "C187"
 			(at 190.627 245.11 90)
 			(effects
 				(font
@@ -13879,7 +13879,7 @@
 			)
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/fa60d9db-5fbc-4f32-9a00-e3130bb41db9"
-					(reference "C232")
+					(reference "C187")
 					(unit 1)
 				)
 			)
@@ -13889,13 +13889,13 @@
 		(lib_id "Device:C_Small")
 		(at 64.77 196.85 180)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f105aa1a-6911-431a-94f7-b2bf49232e94")
-		(property "Reference" "C?"
+		(property "Reference" "C165"
 			(at 62.23 195.5735 0)
 			(effects
 				(font
@@ -13955,7 +13955,7 @@
 			)
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/fa60d9db-5fbc-4f32-9a00-e3130bb41db9"
-					(reference "C?")
+					(reference "C165")
 					(unit 1)
 				)
 			)
@@ -13965,13 +13965,13 @@
 		(lib_id "power:GND")
 		(at 115.57 177.8 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f2fe792f-c532-4eff-ae7f-e8fb66fd7a85")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR0217"
 			(at 115.57 184.15 0)
 			(effects
 				(font
@@ -14027,7 +14027,7 @@
 			)
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/fa60d9db-5fbc-4f32-9a00-e3130bb41db9"
-					(reference "#PWR?")
+					(reference "#PWR0217")
 					(unit 1)
 				)
 			)
@@ -14037,13 +14037,13 @@
 		(lib_id "power:GND")
 		(at 106.68 177.8 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f51aed7b-211a-4235-b52a-30c58dfe498e")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR0213"
 			(at 106.68 184.15 0)
 			(effects
 				(font
@@ -14099,7 +14099,7 @@
 			)
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/fa60d9db-5fbc-4f32-9a00-e3130bb41db9"
-					(reference "#PWR?")
+					(reference "#PWR0213")
 					(unit 1)
 				)
 			)
@@ -14110,13 +14110,13 @@
 		(at 20.32 234.95 0)
 		(mirror y)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fb1fcca8-b360-4730-b587-fe5a09ff9856")
-		(property "Reference" "#PWR0220"
+		(property "Reference" "#PWR0191"
 			(at 20.32 241.3 0)
 			(effects
 				(font
@@ -14172,7 +14172,7 @@
 			)
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/fa60d9db-5fbc-4f32-9a00-e3130bb41db9"
-					(reference "#PWR0220")
+					(reference "#PWR0191")
 					(unit 1)
 				)
 			)
@@ -14182,13 +14182,13 @@
 		(lib_id "Device:R_Small_US")
 		(at 144.78 256.54 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fc9c53d9-7878-4c70-bcb2-5e06bdf2b6c2")
-		(property "Reference" "R?"
+		(property "Reference" "R146"
 			(at 147.32 255.2699 0)
 			(effects
 				(font
@@ -14248,7 +14248,7 @@
 			)
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/fa60d9db-5fbc-4f32-9a00-e3130bb41db9"
-					(reference "R?")
+					(reference "R146")
 					(unit 1)
 				)
 			)
@@ -14258,13 +14258,13 @@
 		(lib_id "nzif_radio_symbol_library:ADAU1467WBCPZ300")
 		(at 312.42 96.52 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fce51dc8-62d3-479c-bb8f-4528d5eb04d2")
-		(property "Reference" "U?"
+		(property "Reference" "U131"
 			(at 312.42 22.86 0)
 			(effects
 				(font
@@ -14585,7 +14585,7 @@
 			)
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/fa60d9db-5fbc-4f32-9a00-e3130bb41db9"
-					(reference "U?")
+					(reference "U131")
 					(unit 1)
 				)
 			)
@@ -14595,13 +14595,13 @@
 		(lib_id "Connector:TestPoint")
 		(at 176.53 177.8 180)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fd708b96-522a-4e23-adb6-c04b2d78e5c1")
-		(property "Reference" "TP203"
+		(property "Reference" "TP103"
 			(at 173.99 182.3721 0)
 			(effects
 				(font
@@ -14660,7 +14660,7 @@
 			)
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/fa60d9db-5fbc-4f32-9a00-e3130bb41db9"
-					(reference "TP203")
+					(reference "TP103")
 					(unit 1)
 				)
 			)

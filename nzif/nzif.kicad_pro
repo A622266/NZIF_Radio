@@ -331,7 +331,7 @@
     "page_layout_descr_file": ""
   },
   "schematic": {
-    "annotate_start_num": 200,
+    "annotate_start_num": 100,
     "bom_export_filename": "${PROJECTNAME}.csv",
     "bom_fmt_presets": [],
     "bom_fmt_settings": {
@@ -449,24 +449,32 @@
       "Root"
     ],
     [
-      "d1b276aa-cc76-4829-b01b-98095216e3ce",
-      "ADCs"
+      "d923ed07-1122-4091-b99e-c24c264ea9d2",
+      "Rx_mixer"
     ],
     [
-      "1097e363-2947-4914-97f0-a09e0bb38c3a",
-      "DACs"
+      "e205b7df-8868-4193-af84-e6054aca82af",
+      "RX_Driver_Amps"
+    ],
+    [
+      "d1b276aa-cc76-4829-b01b-98095216e3ce",
+      "ADCs"
     ],
     [
       "fa60d9db-5fbc-4f32-9a00-e3130bb41db9",
       "DSP"
     ],
     [
-      "d923ed07-1122-4091-b99e-c24c264ea9d2",
-      "Rx_mixer"
+      "1097e363-2947-4914-97f0-a09e0bb38c3a",
+      "DACs"
     ],
     [
       "79014999-6129-417a-b831-cb9e4a5873fe",
       "Clock_Tree"
+    ],
+    [
+      "2802166e-37f5-44e9-af25-f372a0fd0bf8",
+      "Tx_mixer"
     ],
     [
       "d4c01834-d6af-4d30-af20-fd2ca7dc8dcd",
@@ -477,16 +485,8 @@
       "Microcontroller"
     ],
     [
-      "e205b7df-8868-4193-af84-e6054aca82af",
-      "RX_Driver_Amps"
-    ],
-    [
       "3655e9dc-6764-4ce9-aa9b-ed58af2a1dde",
       "Power_Switching_Reg"
-    ],
-    [
-      "2802166e-37f5-44e9-af25-f372a0fd0bf8",
-      "Tx_mixer"
     ],
     [
       "91ace161-62c2-4ad0-a80e-f8c3c9bc5e50",
