@@ -1,0 +1,45 @@
+* NZIF RX chain testbench: EPC2037 -> LT8418 -> ADA4625 -> LT5400 -> ADA4945
+
+* --- Includes (update paths and subckt names to match vendor models)
+*.include ".\models\EPC2037.lib"
+*.include ".\models\LT8418.lib"
+*.include ".\models\ADA4625.lib"
+*.include ".\models\LT5400.lib"
+*.include ".\models\ADA4945.lib"
+
+* --- Sources
+VCC   VCC   0   5
+VEE   VEE   0  -5
+VINP  INP   0   SIN(0 0.1 1MEG)
+VINN  INN   0   SIN(0 0.1 1MEG 0 0 180)
+
+* --- Stage 1: EPC2037 (placeholder)
+* XU1 INP INN VCC VEE OUT1P OUT1N EPC2037_SUBCKT
+* If EPC2037 is a FET, replace with appropriate driver + device model.
+
+* --- Stage 2: LT8418 (placeholder)
+* XU2 OUT1P OUT1N VCC VEE OUT2P OUT2N LT8418_SUBCKT
+
+* --- Stage 3: ADA4625 buffer (placeholder)
+* XU3 OUT2P OUT2N VCC VEE OUT3P OUT3N ADA4625_SUBCKT
+
+* --- Stage 4: LT5400 switch/attenuator (placeholder)
+* XU4 OUT3P OUT3N CTRL VCC VEE OUT4P OUT4N LT5400_SUBCKT
+VCTRL CTRL 0 PULSE(0 5 1u 1n 1n 5u 10u)
+
+* --- Stage 5: ADA4945 output (placeholder)
+* XU5 OUT4P OUT4N VCC VEE OUTP OUTN ADA4945_SUBCKT
+
+* --- Loads
+RLOADP OUTP 0 200
+RLOADN OUTN 0 200
+
+* --- Analyses
+.tran 0 20u 0 10n
+.ac dec 100 1k 100Meg
+
+* --- Probes
+*.plot tran V(OUTP) V(OUTN)
+*.plot ac  V(OUTP) V(OUTN)
+
+.end
