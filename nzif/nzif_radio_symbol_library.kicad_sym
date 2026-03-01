@@ -9532,7 +9532,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(property "Reference" "X"
-			(at 0 10.16 0)
+			(at 0 0 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9540,7 +9540,7 @@
 			)
 		)
 		(property "Value" "CTS_535_TCXO"
-			(at 0 -10.16 0)
+			(at 0 0 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9576,8 +9576,8 @@
 		)
 		(symbol "CTS_535_TCXO_0_0"
 			(rectangle
-				(start -5.08 7.62)
-				(end 5.08 -7.62)
+				(start -5.08 10.16)
+				(end 5.08 -10.16)
 				(stroke
 					(width 0.254)
 					(type default)
@@ -9587,7 +9587,7 @@
 				)
 			)
 			(pin input line
-				(at -10.16 5.08 0)
+				(at -10.16 7.62 0)
 				(length 5.08)
 				(name "Vc"
 					(effects
@@ -9605,7 +9605,7 @@
 				)
 			)
 			(pin input line
-				(at -10.16 2.286 0)
+				(at -10.16 5.08 0)
 				(length 5.08)
 				(name "EOH"
 					(effects
@@ -9622,8 +9622,28 @@
 					)
 				)
 			)
-			(pin passive line
-				(at -7.62 -5.842 0)
+		)
+		(symbol "CTS_535_TCXO_1_0"
+			(pin input line
+				(at -10.16 2.54 0)
+				(length 5.08)
+				(name "VcFilter"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin no_connect line
+				(at -7.62 -5.08 0)
 				(length 2.54)
 				(hide yes)
 				(name "NC"
@@ -9641,8 +9661,8 @@
 					)
 				)
 			)
-			(pin passive line
-				(at -7.62 -5.842 0)
+			(pin no_connect line
+				(at -7.62 -5.08 0)
 				(length 2.54)
 				(hide yes)
 				(name "NC"
@@ -9660,8 +9680,8 @@
 					)
 				)
 			)
-			(pin passive line
-				(at -7.62 -5.842 0)
+			(pin no_connect line
+				(at -7.62 -5.08 0)
 				(length 2.54)
 				(hide yes)
 				(name "NC"
@@ -9679,28 +9699,8 @@
 					)
 				)
 			)
-		)
-		(symbol "CTS_535_TCXO_1_0"
-			(pin input line
-				(at -10.16 -0.254 0)
-				(length 5.08)
-				(name "VcFilter"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "7"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at -7.62 -5.842 0)
+			(pin no_connect line
+				(at -7.62 -5.08 0)
 				(length 2.54)
 				(hide yes)
 				(name "NC"
@@ -9719,7 +9719,7 @@
 				)
 			)
 			(pin power_in line
-				(at 0 12.7 270)
+				(at 0 15.24 270)
 				(length 5.08)
 				(name "Vcc"
 					(effects
@@ -9737,7 +9737,7 @@
 				)
 			)
 			(pin power_in line
-				(at 0 -12.7 90)
+				(at 0 -15.24 90)
 				(length 5.08)
 				(name "GND"
 					(effects
@@ -9755,7 +9755,7 @@
 				)
 			)
 			(pin output line
-				(at 10.16 -2.286 180)
+				(at 10.16 -2.54 180)
 				(length 5.08)
 				(name "Output"
 					(effects
