@@ -241,5 +241,16 @@
 		(size 1.0 0.6)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 	)
+	(model "${KIPRJMOD}/nzif_3D_models/CTS_535_TCXO.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
 	(embedded_fonts no)
 )
