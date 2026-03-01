@@ -3540,7 +3540,7 @@
 	(symbol
 		(lib_id "Amplifier_Operational:ADA4625-2ARDZ")
 		(at 185.42 248.92 0)
-		(unit 1)
+		(unit 2)
 		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
@@ -3627,7 +3627,7 @@
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
 					(reference "U111")
-					(unit 1)
+					(unit 2)
 				)
 			)
 		)
@@ -4021,7 +4021,7 @@
 	(symbol
 		(lib_id "Amplifier_Operational:ADA4625-2ARDZ")
 		(at 250.19 248.92 0)
-		(unit 1)
+		(unit 2)
 		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
@@ -4108,7 +4108,7 @@
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
 					(reference "U116")
-					(unit 1)
+					(unit 2)
 				)
 			)
 		)
@@ -4116,7 +4116,7 @@
 	(symbol
 		(lib_id "Amplifier_Operational:ADA4625-2ARDZ")
 		(at 60.96 248.92 0)
-		(unit 1)
+		(unit 2)
 		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
@@ -4203,7 +4203,7 @@
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
 					(reference "U103")
-					(unit 1)
+					(unit 2)
 				)
 			)
 		)
@@ -4825,7 +4825,7 @@
 	(symbol
 		(lib_id "Amplifier_Operational:ADA4625-2ARDZ")
 		(at 124.46 248.92 0)
-		(unit 1)
+		(unit 2)
 		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
@@ -4912,7 +4912,7 @@
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
 					(reference "U106")
-					(unit 1)
+					(unit 2)
 				)
 			)
 		)
@@ -4920,7 +4920,7 @@
 	(symbol
 		(lib_id "Amplifier_Operational:ADA4625-2ARDZ")
 		(at 247.65 195.58 0)
-		(unit 1)
+		(unit 3)
 		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
@@ -5009,7 +5009,7 @@
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
 					(reference "U114")
-					(unit 1)
+					(unit 3)
 				)
 			)
 		)
@@ -5744,7 +5744,7 @@
 	(symbol
 		(lib_id "Amplifier_Operational:ADA4625-2ARDZ")
 		(at 121.92 195.58 0)
-		(unit 1)
+		(unit 3)
 		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
@@ -5833,7 +5833,7 @@
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
 					(reference "U104")
-					(unit 1)
+					(unit 3)
 				)
 			)
 		)
@@ -6251,7 +6251,7 @@
 	(symbol
 		(lib_id "Amplifier_Operational:ADA4625-2ARDZ")
 		(at 250.19 228.6 0)
-		(unit 1)
+		(unit 2)
 		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
@@ -6338,7 +6338,7 @@
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
 					(reference "U115")
-					(unit 1)
+					(unit 2)
 				)
 			)
 		)
@@ -6467,6 +6467,42 @@
 		)
 		(property "Description" "Quad FET Bus Switch with Enable"
 			(at 133.35 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Library" "C:\\Ham Radio\\NZIF_Radio\\spice_models\\models\\sn74cbt3125c.sub"
+			(at 130.81 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Name" "SN74CBT3125C"
+			(at 130.81 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "SUBCKT"
+			(at 130.81 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=1OE 2=1A 3=1B 4=2OE 5=2A 6=2B 7=GND 8=3B 9=3A 10=3OE 11=4B 12=4A 13=4OE 14=VCC"
+			(at 130.81 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7333,7 +7369,7 @@
 	(symbol
 		(lib_id "Amplifier_Operational:ADA4625-2ARDZ")
 		(at 58.42 195.58 0)
-		(unit 1)
+		(unit 3)
 		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
@@ -7422,7 +7458,7 @@
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
 					(reference "U101")
-					(unit 1)
+					(unit 3)
 				)
 			)
 		)
@@ -7430,7 +7466,7 @@
 	(symbol
 		(lib_id "Amplifier_Operational:ADA4625-2ARDZ")
 		(at 182.88 195.58 0)
-		(unit 1)
+		(unit 3)
 		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
@@ -7519,7 +7555,7 @@
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
 					(reference "U109")
-					(unit 1)
+					(unit 3)
 				)
 			)
 		)
