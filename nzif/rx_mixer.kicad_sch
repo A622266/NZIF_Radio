@@ -11,7 +11,7 @@
 		(company "Andy McCann KA3KAF and Doug McCann KA3KAG")
 	)
 	(lib_symbols
-		(symbol "Amplifier_Operational:ADA4898-2"
+		(symbol "Amplifier_Operational:ADA4625-2ARDZ"
 			(pin_names
 				(offset 0.127)
 			)
@@ -27,7 +27,7 @@
 					(justify left)
 				)
 			)
-			(property "Value" "ADA4898-2"
+			(property "Value" "ADA4625-2ARDZ"
 				(at 0 -5.08 0)
 				(effects
 					(font
@@ -36,7 +36,7 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.41x3.81mm"
+			(property "Footprint" "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm"
 				(at -1.27 -7.62 0)
 				(effects
 					(font
@@ -45,7 +45,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/ada4898-1_4898-2.pdf"
+			(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/ADA4625-1-4625-2.pdf"
 				(at 0 0 0)
 				(effects
 					(font
@@ -54,7 +54,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Dual High Voltage, Low Noise, Low Distortion, Unity-Gain Stable, High Speed Op Amp, SOIC-8-1EP"
+			(property "Description" "Dual 5V..36V/±2.5V..±18V supply, 18 MHz, 48V/µs slew rate, ±80 µV offset, RRO, Fast-settling JFET Op Amp, SOIC-8-1EP"
 				(at 0 0 0)
 				(effects
 					(font
@@ -71,7 +71,7 @@
 					)
 				)
 			)
-			(property "ki_keywords" "opamp dual low noise low distortion"
+			(property "ki_keywords" "analog-devices adi operational amplifier"
 				(at 0 0 0)
 				(effects
 					(font
@@ -89,7 +89,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "ADA4898-2_1_1"
+			(symbol "ADA4625-2ARDZ_1_1"
 				(polyline
 					(pts
 						(xy -5.08 5.08) (xy 5.08 0) (xy -5.08 -5.08) (xy -5.08 5.08)
@@ -157,7 +157,7 @@
 					)
 				)
 			)
-			(symbol "ADA4898-2_2_1"
+			(symbol "ADA4625-2ARDZ_2_1"
 				(polyline
 					(pts
 						(xy -5.08 5.08) (xy 5.08 0) (xy -5.08 -5.08) (xy -5.08 5.08)
@@ -225,7 +225,7 @@
 					)
 				)
 			)
-			(symbol "ADA4898-2_3_1"
+			(symbol "ADA4625-2ARDZ_3_1"
 				(pin power_in line
 					(at -2.54 7.62 270)
 					(length 3.81)
@@ -1008,12 +1008,6 @@
 		(uuid "9dd7ecb5-d86d-4c6a-99e2-8ad51bd41d10")
 	)
 	(junction
-		(at 113.03 248.92)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "9ff8dd7f-6a09-4f08-bffa-14e6f96447e1")
-	)
-	(junction
 		(at 120.65 99.06)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1048,12 +1042,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c8b58af2-02d8-4d7b-ac4c-87ba39d2b598")
-	)
-	(junction
-		(at 113.03 254)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "e08c2376-041c-47e9-af58-ed6e7b4d64dc")
 	)
 	(wire
 		(pts
@@ -1547,7 +1535,7 @@
 	)
 	(wire
 		(pts
-			(xy 111.76 254) (xy 113.03 254)
+			(xy 111.76 254) (xy 114.3 254)
 		)
 		(stroke
 			(width 0)
@@ -2187,7 +2175,7 @@
 	)
 	(wire
 		(pts
-			(xy 113.03 248.92) (xy 114.3 248.92)
+			(xy 93.98 248.92) (xy 114.3 248.92)
 		)
 		(stroke
 			(width 0)
@@ -2394,16 +2382,6 @@
 			(type default)
 		)
 		(uuid "c48c32bd-f39d-429b-8df2-0ecceeb1b756")
-	)
-	(wire
-		(pts
-			(xy 113.03 254) (xy 114.3 254)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c53c99a6-ef96-4a02-a18a-9fce268a2f13")
 	)
 	(wire
 		(pts
@@ -2667,16 +2645,6 @@
 	)
 	(wire
 		(pts
-			(xy 93.98 248.92) (xy 113.03 248.92)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f4eff4c5-fb2a-4e50-9cad-e7dd505ee51d")
-	)
-	(wire
-		(pts
 			(xy 266.7 58.42) (xy 266.7 50.8)
 		)
 		(stroke
@@ -2765,7 +2733,7 @@
 		)
 		(uuid "10368264-4475-4bdf-8756-e92feef35967")
 	)
-	(label "-12V"
+	(label "-3.5V"
 		(at 165.1 212.09 0)
 		(effects
 			(font
@@ -2773,7 +2741,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "1a37937e-7a26-4bd3-9d65-a0be222b9967")
+		(uuid "183126ac-4d68-4754-a413-b5f309a969ae")
 	)
 	(label "Baseband_270"
 		(at 280.67 124.46 180)
@@ -2825,7 +2793,7 @@
 		)
 		(uuid "2c97c3b6-1242-428c-83c1-14769b7923f3")
 	)
-	(label "-12V"
+	(label "-3.5V"
 		(at 115.57 210.82 0)
 		(effects
 			(font
@@ -2833,27 +2801,17 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "34e3e671-f574-44a9-9969-dfc31e03b487")
+		(uuid "3a00e0ca-0a0a-4247-8438-228eb0e4112c")
 	)
-	(label "12V"
-		(at 114.3 186.69 0)
+	(label "-3.5V"
+		(at 224.79 214.63 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
-		(uuid "55500116-066c-4c1d-9355-4156d1d727e1")
-	)
-	(label "12V"
-		(at 223.52 190.5 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "58bd6c33-5998-409e-8481-58c58047e19b")
+		(uuid "608621ff-8667-4c86-974f-4aaf3e741f90")
 	)
 	(label "Baseband_90"
 		(at 93.98 228.6 0)
@@ -2884,16 +2842,6 @@
 			(justify right bottom)
 		)
 		(uuid "68ac4f1b-556c-478f-9101-605d32d6e6ca")
-	)
-	(label "12V"
-		(at 163.83 187.96 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "6bfa02ff-33b3-4b3e-8f37-9b583d1529f2")
 	)
 	(label "Baseband_315"
 		(at 222.25 246.38 0)
@@ -2935,6 +2883,16 @@
 		)
 		(uuid "79365c13-5bb2-4e44-b0fc-b1fb6b7f55b2")
 	)
+	(label "6.5V"
+		(at 223.52 190.5 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "7b6c7089-46f2-401e-97cc-9c4e723e0550")
+	)
 	(label "5V"
 		(at 219.71 26.67 0)
 		(effects
@@ -2975,16 +2933,6 @@
 		)
 		(uuid "af8d00d3-d1a1-4fd2-91a0-a6b234f7eb6a")
 	)
-	(label "-12V"
-		(at 224.79 214.63 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "ba414194-5d2c-49a0-a7bd-eab8ff4e6f1d")
-	)
 	(label "Baseband_90"
 		(at 163.83 64.77 180)
 		(effects
@@ -2994,6 +2942,16 @@
 			(justify right bottom)
 		)
 		(uuid "c7df09b5-885e-404e-88bb-3a6266caacc3")
+	)
+	(label "6.5V"
+		(at 163.83 187.96 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d425b0e6-d64c-4571-bcb8-8ab533786095")
 	)
 	(label "Baseband_45"
 		(at 157.48 227.33 0)
@@ -3005,7 +2963,17 @@
 		)
 		(uuid "d851029a-018a-4ebe-9445-43d1cb6bfa80")
 	)
-	(label "12V"
+	(label "6.5V"
+		(at 114.3 186.69 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e9b4b73d-ad32-44cd-9892-b58f892c3abe")
+	)
+	(label "6.5V"
 		(at 80.01 187.96 0)
 		(effects
 			(font
@@ -3015,7 +2983,7 @@
 		)
 		(uuid "f2be997a-8c58-4642-ab96-899229121742")
 	)
-	(label "-12V"
+	(label "-3.5V"
 		(at 81.28 212.09 0)
 		(effects
 			(font
@@ -3552,6 +3520,103 @@
 		)
 	)
 	(symbol
+		(lib_id "Amplifier_Operational:ADA4625-2ARDZ")
+		(at 90.17 200.66 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1164722d-25f9-4907-b2c4-e19655876734")
+		(property "Reference" "U?"
+			(at 91.44 199.3899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "ADA4625-2ARDZ"
+			(at 91.44 201.9299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm"
+			(at 88.9 208.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/ADA4625-1-4625-2.pdf"
+			(at 90.17 200.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Dual 5V..36V/±2.5V..±18V supply, 18 MHz, 48V/µs slew rate, ±80 µV offset, RRO, Fast-settling JFET Op Amp, SOIC-8-1EP"
+			(at 90.17 200.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "5"
+			(uuid "2fd67298-2cf0-4f04-9428-96bf34def373")
+		)
+		(pin "9"
+			(uuid "6c04a223-9ef5-4ac6-8d7a-c77366023a36")
+		)
+		(pin "1"
+			(uuid "ff069008-a70c-4194-9c68-acb50d385bc9")
+		)
+		(pin "2"
+			(uuid "58ee04f4-da5d-4bf5-bc16-ee357677d327")
+		)
+		(pin "4"
+			(uuid "d9541d9f-f4f3-4b3a-a8d8-7e60bbcf6b00")
+		)
+		(pin "3"
+			(uuid "522f6dfc-28c2-48b0-ad64-3433bd9c41e3")
+		)
+		(pin "7"
+			(uuid "34d8398f-7705-4e79-ac90-d5f3dc4988f1")
+		)
+		(pin "8"
+			(uuid "9a87434b-c918-4d18-9ddb-488b739850a8")
+		)
+		(pin "6"
+			(uuid "80914f48-d20c-45a3-b713-76e07a047ef1")
+		)
+		(instances
+			(project ""
+				(path "/7cc72b98-3836-4c2a-8199-0c423deb5fd0"
+					(reference "U9")
+					(unit 3)
+				)
+			)
+			(project "nzif"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
+					(reference "U?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Small")
 		(at 111.76 105.41 0)
 		(unit 1)
@@ -3628,42 +3693,33 @@
 		)
 	)
 	(symbol
-		(lib_id "Amplifier_Operational:ADA4898-2")
-		(at 120.65 251.46 0)
+		(lib_id "Amplifier_Operational:ADA4625-2ARDZ")
+		(at 60.96 248.92 0)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "1fd2e200-ef18-497e-8e74-5aeb2f0e896c")
+		(uuid "1f5d3fa3-3044-438b-9c47-8d9d0bb8152f")
 		(property "Reference" "U?"
-			(at 120.65 241.3 0)
+			(at 60.96 238.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "ADA4898-2"
-			(at 120.65 243.84 0)
+		(property "Value" "ADA4625-2ARDZ"
+			(at 60.96 241.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.41x3.81mm"
-			(at 119.38 259.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/ada4898-1_4898-2.pdf"
-			(at 120.65 251.46 0)
+		(property "Footprint" "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm"
+			(at 59.69 256.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3671,8 +3727,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Dual High Voltage, Low Noise, Low Distortion, Unity-Gain Stable, High Speed Op Amp, SOIC-8-1EP"
-			(at 120.65 251.46 0)
+		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/ADA4625-1-4625-2.pdf"
+			(at 60.96 248.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3680,133 +3736,47 @@
 				(hide yes)
 			)
 		)
-		(pin "6"
-			(uuid "d3f529ab-2f8b-4c58-a300-e5e61fab8808")
+		(property "Description" "Dual 5V..36V/±2.5V..±18V supply, 18 MHz, 48V/µs slew rate, ±80 µV offset, RRO, Fast-settling JFET Op Amp, SOIC-8-1EP"
+			(at 60.96 248.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
 		)
 		(pin "5"
-			(uuid "f9747abd-d547-4d4f-91d5-a1a1ae3ad0ee")
-		)
-		(pin "1"
-			(uuid "7a6ea41d-f4ac-40d6-9423-01c71ecf7a78")
+			(uuid "2fd67298-2cf0-4f04-9428-96bf34def374")
 		)
 		(pin "9"
-			(uuid "2d78a6f1-b2e5-4eb8-ba74-ae3495ba9351")
+			(uuid "6c04a223-9ef5-4ac6-8d7a-c77366023a37")
 		)
-		(pin "7"
-			(uuid "f3e22e0a-28e3-481e-b73b-183337736c4b")
-		)
-		(pin "8"
-			(uuid "afdebb1d-d231-43b9-9887-e6c02d67274e")
-		)
-		(pin "3"
-			(uuid "911fe631-2b01-4a12-833d-2128e6297ca7")
-		)
-		(pin "4"
-			(uuid "3b5aa51f-a5fd-4296-8202-43e65c131d5b")
+		(pin "1"
+			(uuid "ff069008-a70c-4194-9c68-acb50d385bca")
 		)
 		(pin "2"
-			(uuid "a46ef41f-5fc3-44f7-8174-028dd0464223")
+			(uuid "58ee04f4-da5d-4bf5-bc16-ee357677d328")
+		)
+		(pin "4"
+			(uuid "d9541d9f-f4f3-4b3a-a8d8-7e60bbcf6b01")
+		)
+		(pin "3"
+			(uuid "522f6dfc-28c2-48b0-ad64-3433bd9c41e4")
+		)
+		(pin "7"
+			(uuid "34d8398f-7705-4e79-ac90-d5f3dc4988f2")
+		)
+		(pin "8"
+			(uuid "9a87434b-c918-4d18-9ddb-488b739850a9")
+		)
+		(pin "6"
+			(uuid "80914f48-d20c-45a3-b713-76e07a047ef2")
 		)
 		(instances
 			(project ""
 				(path "/7cc72b98-3836-4c2a-8199-0c423deb5fd0"
-					(reference "U5")
+					(reference "U9")
 					(unit 2)
-				)
-			)
-			(project "nzif"
-				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
-					(reference "U?")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Amplifier_Operational:ADA4898-2")
-		(at 185.42 229.87 0)
-		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "23b75ab6-7dba-4b5e-ac0a-898fc9f24d03")
-		(property "Reference" "U?"
-			(at 185.42 219.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "ADA4898-2"
-			(at 185.42 222.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.41x3.81mm"
-			(at 184.15 237.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/ada4898-1_4898-2.pdf"
-			(at 185.42 229.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Dual High Voltage, Low Noise, Low Distortion, Unity-Gain Stable, High Speed Op Amp, SOIC-8-1EP"
-			(at 185.42 229.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "796bf2c0-7bff-4135-bc4d-d4722510f90d")
-		)
-		(pin "5"
-			(uuid "b98c6be5-eed3-4a3e-a1d3-f44f8cd2e452")
-		)
-		(pin "1"
-			(uuid "4f7c6697-3b00-469f-b9ff-d26f921e518f")
-		)
-		(pin "2"
-			(uuid "f055aa2e-d735-40d8-a9af-e5a7baf1549a")
-		)
-		(pin "4"
-			(uuid "b4fc0500-93f7-4d42-a052-8e86bbfbf32c")
-		)
-		(pin "7"
-			(uuid "29ae433f-c51b-4e33-b359-8d0b766bc29f")
-		)
-		(pin "9"
-			(uuid "08055915-95df-40da-93da-88959cdeadfb")
-		)
-		(pin "6"
-			(uuid "ca42cdcf-3797-4718-a72a-ea4c65d42de9")
-		)
-		(pin "8"
-			(uuid "5c4e664b-49be-40d1-be87-f0b2aad88517")
-		)
-		(instances
-			(project ""
-				(path "/7cc72b98-3836-4c2a-8199-0c423deb5fd0"
-					(reference "U6")
-					(unit 1)
 				)
 			)
 			(project "nzif"
@@ -4038,103 +4008,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Amplifier_Operational:ADA4898-2")
-		(at 233.68 203.2 0)
-		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3c6b951b-b406-4b3f-a16d-b3b4a475683c")
-		(property "Reference" "U?"
-			(at 234.95 201.9299 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "ADA4898-2"
-			(at 234.95 204.4699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.41x3.81mm"
-			(at 232.41 210.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/ada4898-1_4898-2.pdf"
-			(at 233.68 203.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Dual High Voltage, Low Noise, Low Distortion, Unity-Gain Stable, High Speed Op Amp, SOIC-8-1EP"
-			(at 233.68 203.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "7"
-			(uuid "7abb33b3-9121-45bb-944a-7aca4b409f5b")
-		)
-		(pin "9"
-			(uuid "1927868d-8198-4deb-86c5-c2d76d1e3188")
-		)
-		(pin "8"
-			(uuid "6f0b04dd-e349-4497-8611-6c49e31006a5")
-		)
-		(pin "4"
-			(uuid "47eee59f-7883-4ed7-8b3a-3005d1923bd7")
-		)
-		(pin "3"
-			(uuid "a33baa67-10e0-49ef-8482-19523fd4e402")
-		)
-		(pin "2"
-			(uuid "a7574e78-0987-48ff-8c4e-cc01c21a6f95")
-		)
-		(pin "6"
-			(uuid "d3e7e942-a58b-401b-acb2-7842893bf3eb")
-		)
-		(pin "5"
-			(uuid "a244c89b-6209-4042-bdd5-4c207608ac5a")
-		)
-		(pin "1"
-			(uuid "fc3286e3-ccbf-4810-9478-8b88ca25091d")
-		)
-		(instances
-			(project ""
-				(path "/7cc72b98-3836-4c2a-8199-0c423deb5fd0"
-					(reference "U8")
-					(unit 3)
-				)
-			)
-			(project "nzif"
-				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
-					(reference "U?")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C_Small")
 		(at 227.33 33.02 0)
 		(unit 1)
@@ -4205,103 +4078,6 @@
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
 					(reference "C105")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Amplifier_Operational:ADA4898-2")
-		(at 90.17 200.66 0)
-		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "472d8a2e-efc8-4923-bda8-47b08762e27d")
-		(property "Reference" "U?"
-			(at 91.44 199.3899 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "ADA4898-2"
-			(at 91.44 201.9299 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.41x3.81mm"
-			(at 88.9 208.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/ada4898-1_4898-2.pdf"
-			(at 90.17 200.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Dual High Voltage, Low Noise, Low Distortion, Unity-Gain Stable, High Speed Op Amp, SOIC-8-1EP"
-			(at 90.17 200.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "5"
-			(uuid "3af15e5a-522d-4b76-92c4-1d2effed8a5c")
-		)
-		(pin "4"
-			(uuid "eae9c9d9-93e3-49f6-99f1-78b08c1a6871")
-		)
-		(pin "1"
-			(uuid "1b1de35a-0c13-4704-9034-5dce8dd9dbf6")
-		)
-		(pin "8"
-			(uuid "c84ffbe4-dc77-481e-8703-c10c723c9193")
-		)
-		(pin "9"
-			(uuid "0e794e0b-f884-424e-9512-2cff98714fec")
-		)
-		(pin "6"
-			(uuid "46f1f5d1-775d-4342-8e89-77aad4eb05bb")
-		)
-		(pin "7"
-			(uuid "098a3dd9-11bf-4d07-b056-84da6ca9c2ba")
-		)
-		(pin "3"
-			(uuid "f366e8b9-84a7-436a-845f-929e418a0253")
-		)
-		(pin "2"
-			(uuid "bedf9651-1e34-4a20-af95-7382f003daca")
-		)
-		(instances
-			(project ""
-				(path "/7cc72b98-3836-4c2a-8199-0c423deb5fd0"
-					(reference "U7")
-					(unit 3)
-				)
-			)
-			(project "nzif"
-				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
-					(reference "U?")
 					(unit 1)
 				)
 			)
@@ -4680,42 +4456,33 @@
 		)
 	)
 	(symbol
-		(lib_id "Amplifier_Operational:ADA4898-2")
-		(at 60.96 248.92 0)
+		(lib_id "Amplifier_Operational:ADA4625-2ARDZ")
+		(at 185.42 229.87 0)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "5e7c32ca-83f0-47af-8cdf-a6e9967747e7")
+		(uuid "60cefc22-d1e8-4b25-86d0-10a62f4e8ec1")
 		(property "Reference" "U?"
-			(at 60.96 238.76 0)
+			(at 185.42 219.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "ADA4898-2"
-			(at 60.96 241.3 0)
+		(property "Value" "ADA4625-2ARDZ"
+			(at 185.42 222.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.41x3.81mm"
-			(at 59.69 256.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/ada4898-1_4898-2.pdf"
-			(at 60.96 248.92 0)
+		(property "Footprint" "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm"
+			(at 184.15 237.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4723,8 +4490,17 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Dual High Voltage, Low Noise, Low Distortion, Unity-Gain Stable, High Speed Op Amp, SOIC-8-1EP"
-			(at 60.96 248.92 0)
+		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/ADA4625-1-4625-2.pdf"
+			(at 185.42 229.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Dual 5V..36V/±2.5V..±18V supply, 18 MHz, 48V/µs slew rate, ±80 µV offset, RRO, Fast-settling JFET Op Amp, SOIC-8-1EP"
+			(at 185.42 229.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4733,36 +4509,131 @@
 			)
 		)
 		(pin "5"
-			(uuid "3af15e5a-522d-4b76-92c4-1d2effed8a5d")
-		)
-		(pin "4"
-			(uuid "eae9c9d9-93e3-49f6-99f1-78b08c1a6872")
-		)
-		(pin "1"
-			(uuid "1b1de35a-0c13-4704-9034-5dce8dd9dbf7")
-		)
-		(pin "8"
-			(uuid "c84ffbe4-dc77-481e-8703-c10c723c9194")
-		)
-		(pin "9"
-			(uuid "0e794e0b-f884-424e-9512-2cff98714fed")
-		)
-		(pin "6"
-			(uuid "46f1f5d1-775d-4342-8e89-77aad4eb05bc")
-		)
-		(pin "7"
-			(uuid "098a3dd9-11bf-4d07-b056-84da6ca9c2bb")
+			(uuid "535c9351-97e6-44a5-98a4-fc5ecc5934b4")
 		)
 		(pin "3"
-			(uuid "f366e8b9-84a7-436a-845f-929e418a0254")
+			(uuid "458be3fe-1eb3-4e1b-9946-e4ebdf050e5c")
+		)
+		(pin "1"
+			(uuid "7b1d03a2-e582-422e-8d88-508ae902ec5d")
+		)
+		(pin "9"
+			(uuid "d0b6df3d-587d-4c9e-858f-8cff311fea81")
 		)
 		(pin "2"
-			(uuid "bedf9651-1e34-4a20-af95-7382f003dacb")
+			(uuid "26a929f4-7573-4630-a9c1-6809122686af")
+		)
+		(pin "6"
+			(uuid "e0dd1d28-0da5-48f4-9d2c-4f36d52b7cb5")
+		)
+		(pin "4"
+			(uuid "2ec30c35-155d-4690-9b17-3a6d80755a0d")
+		)
+		(pin "8"
+			(uuid "3b5e53cf-77bb-4350-a6a5-15fbd03de31c")
+		)
+		(pin "7"
+			(uuid "e9d0e4b7-1247-4933-afd8-d2e92e210053")
 		)
 		(instances
 			(project ""
 				(path "/7cc72b98-3836-4c2a-8199-0c423deb5fd0"
-					(reference "U7")
+					(reference "U6")
+					(unit 1)
+				)
+			)
+			(project "nzif"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
+					(reference "U?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Amplifier_Operational:ADA4625-2ARDZ")
+		(at 121.92 251.46 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6878068f-a96e-4359-9c81-bbabb8a35dea")
+		(property "Reference" "U?"
+			(at 121.92 241.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "ADA4625-2ARDZ"
+			(at 121.92 243.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm"
+			(at 120.65 259.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/ADA4625-1-4625-2.pdf"
+			(at 121.92 251.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Dual 5V..36V/±2.5V..±18V supply, 18 MHz, 48V/µs slew rate, ±80 µV offset, RRO, Fast-settling JFET Op Amp, SOIC-8-1EP"
+			(at 121.92 251.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "6"
+			(uuid "febcc101-7952-44ee-9767-d00eabeff1ef")
+		)
+		(pin "3"
+			(uuid "96053a15-7d69-4a86-9d6e-86e62dd48bfe")
+		)
+		(pin "5"
+			(uuid "ab9fc727-22a8-4c39-a19c-8593b108e621")
+		)
+		(pin "1"
+			(uuid "71cfcae8-b236-4080-8e85-4572b98c9179")
+		)
+		(pin "2"
+			(uuid "6d1411f7-9247-4005-b4ca-9ee78017f716")
+		)
+		(pin "9"
+			(uuid "38ffc6ec-5148-4e30-81a3-fe3a448d465d")
+		)
+		(pin "4"
+			(uuid "da8e964b-c873-498f-8157-d4e1531e2871")
+		)
+		(pin "8"
+			(uuid "307d6733-ce8c-4ebc-aac9-b9e09b29722e")
+		)
+		(pin "7"
+			(uuid "8f53e588-702d-4646-b29d-6c881bbb9ba8")
+		)
+		(instances
+			(project ""
+				(path "/7cc72b98-3836-4c2a-8199-0c423deb5fd0"
+					(reference "U5")
 					(unit 2)
 				)
 			)
@@ -4913,103 +4784,6 @@
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
 					(reference "#PWR0122")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Amplifier_Operational:ADA4898-2")
-		(at 124.46 199.39 0)
-		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "7906c21d-01b9-4d0d-8956-10c554d51441")
-		(property "Reference" "U?"
-			(at 125.73 198.1199 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "ADA4898-2"
-			(at 125.73 200.6599 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.41x3.81mm"
-			(at 123.19 207.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/ada4898-1_4898-2.pdf"
-			(at 124.46 199.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Dual High Voltage, Low Noise, Low Distortion, Unity-Gain Stable, High Speed Op Amp, SOIC-8-1EP"
-			(at 124.46 199.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "6"
-			(uuid "d3f529ab-2f8b-4c58-a300-e5e61fab8809")
-		)
-		(pin "5"
-			(uuid "f9747abd-d547-4d4f-91d5-a1a1ae3ad0ef")
-		)
-		(pin "1"
-			(uuid "7a6ea41d-f4ac-40d6-9423-01c71ecf7a79")
-		)
-		(pin "9"
-			(uuid "2d78a6f1-b2e5-4eb8-ba74-ae3495ba9352")
-		)
-		(pin "7"
-			(uuid "f3e22e0a-28e3-481e-b73b-183337736c4c")
-		)
-		(pin "8"
-			(uuid "afdebb1d-d231-43b9-9887-e6c02d67274f")
-		)
-		(pin "3"
-			(uuid "911fe631-2b01-4a12-833d-2128e6297ca8")
-		)
-		(pin "4"
-			(uuid "3b5aa51f-a5fd-4296-8202-43e65c131d5c")
-		)
-		(pin "2"
-			(uuid "a46ef41f-5fc3-44f7-8174-028dd0464224")
-		)
-		(instances
-			(project ""
-				(path "/7cc72b98-3836-4c2a-8199-0c423deb5fd0"
-					(reference "U5")
-					(unit 3)
-				)
-			)
-			(project "nzif"
-				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
-					(reference "U?")
 					(unit 1)
 				)
 			)
@@ -5236,101 +5010,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Amplifier_Operational:ADA4898-2")
-		(at 250.19 248.92 0)
-		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8aa40669-cf2c-47ba-948a-8cff9491be17")
-		(property "Reference" "U?"
-			(at 250.19 238.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "ADA4898-2"
-			(at 250.19 241.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.41x3.81mm"
-			(at 248.92 256.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/ada4898-1_4898-2.pdf"
-			(at 250.19 248.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Dual High Voltage, Low Noise, Low Distortion, Unity-Gain Stable, High Speed Op Amp, SOIC-8-1EP"
-			(at 250.19 248.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "7"
-			(uuid "7abb33b3-9121-45bb-944a-7aca4b409f5c")
-		)
-		(pin "9"
-			(uuid "1927868d-8198-4deb-86c5-c2d76d1e3189")
-		)
-		(pin "8"
-			(uuid "6f0b04dd-e349-4497-8611-6c49e31006a6")
-		)
-		(pin "4"
-			(uuid "47eee59f-7883-4ed7-8b3a-3005d1923bd8")
-		)
-		(pin "3"
-			(uuid "a33baa67-10e0-49ef-8482-19523fd4e403")
-		)
-		(pin "2"
-			(uuid "a7574e78-0987-48ff-8c4e-cc01c21a6f96")
-		)
-		(pin "6"
-			(uuid "d3e7e942-a58b-401b-acb2-7842893bf3ec")
-		)
-		(pin "5"
-			(uuid "a244c89b-6209-4042-bdd5-4c207608ac5b")
-		)
-		(pin "1"
-			(uuid "fc3286e3-ccbf-4810-9478-8b88ca25091e")
-		)
-		(instances
-			(project ""
-				(path "/7cc72b98-3836-4c2a-8199-0c423deb5fd0"
-					(reference "U8")
-					(unit 2)
-				)
-			)
-			(project "nzif"
-				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
-					(reference "U?")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 289.56 139.7 90)
 		(unit 1)
@@ -5477,196 +5156,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Amplifier_Operational:ADA4898-2")
-		(at 185.42 250.19 0)
-		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "9763457d-70f5-4de6-81d8-b1632b5b78ac")
-		(property "Reference" "U?"
-			(at 185.42 240.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "ADA4898-2"
-			(at 185.42 242.57 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.41x3.81mm"
-			(at 184.15 257.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/ada4898-1_4898-2.pdf"
-			(at 185.42 250.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Dual High Voltage, Low Noise, Low Distortion, Unity-Gain Stable, High Speed Op Amp, SOIC-8-1EP"
-			(at 185.42 250.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "796bf2c0-7bff-4135-bc4d-d4722510f90e")
-		)
-		(pin "5"
-			(uuid "b98c6be5-eed3-4a3e-a1d3-f44f8cd2e453")
-		)
-		(pin "1"
-			(uuid "4f7c6697-3b00-469f-b9ff-d26f921e5190")
-		)
-		(pin "2"
-			(uuid "f055aa2e-d735-40d8-a9af-e5a7baf1549b")
-		)
-		(pin "4"
-			(uuid "b4fc0500-93f7-4d42-a052-8e86bbfbf32d")
-		)
-		(pin "7"
-			(uuid "29ae433f-c51b-4e33-b359-8d0b766bc2a0")
-		)
-		(pin "9"
-			(uuid "08055915-95df-40da-93da-88959cdeadfc")
-		)
-		(pin "6"
-			(uuid "ca42cdcf-3797-4718-a72a-ea4c65d42dea")
-		)
-		(pin "8"
-			(uuid "5c4e664b-49be-40d1-be87-f0b2aad88518")
-		)
-		(instances
-			(project ""
-				(path "/7cc72b98-3836-4c2a-8199-0c423deb5fd0"
-					(reference "U6")
-					(unit 2)
-				)
-			)
-			(project "nzif"
-				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
-					(reference "U?")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Amplifier_Operational:ADA4898-2")
-		(at 250.19 228.6 0)
-		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "9bd2cc25-57ef-4f4c-b623-268266109882")
-		(property "Reference" "U?"
-			(at 250.19 218.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "ADA4898-2"
-			(at 250.19 220.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.41x3.81mm"
-			(at 248.92 236.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/ada4898-1_4898-2.pdf"
-			(at 250.19 228.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Dual High Voltage, Low Noise, Low Distortion, Unity-Gain Stable, High Speed Op Amp, SOIC-8-1EP"
-			(at 250.19 228.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "7"
-			(uuid "7abb33b3-9121-45bb-944a-7aca4b409f5d")
-		)
-		(pin "9"
-			(uuid "1927868d-8198-4deb-86c5-c2d76d1e318a")
-		)
-		(pin "8"
-			(uuid "6f0b04dd-e349-4497-8611-6c49e31006a7")
-		)
-		(pin "4"
-			(uuid "47eee59f-7883-4ed7-8b3a-3005d1923bd9")
-		)
-		(pin "3"
-			(uuid "a33baa67-10e0-49ef-8482-19523fd4e404")
-		)
-		(pin "2"
-			(uuid "a7574e78-0987-48ff-8c4e-cc01c21a6f97")
-		)
-		(pin "6"
-			(uuid "d3e7e942-a58b-401b-acb2-7842893bf3ed")
-		)
-		(pin "5"
-			(uuid "a244c89b-6209-4042-bdd5-4c207608ac5c")
-		)
-		(pin "1"
-			(uuid "fc3286e3-ccbf-4810-9478-8b88ca25091f")
-		)
-		(instances
-			(project ""
-				(path "/7cc72b98-3836-4c2a-8199-0c423deb5fd0"
-					(reference "U8")
-					(unit 1)
-				)
-			)
-			(project "nzif"
-				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
-					(reference "U?")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C_Small")
 		(at 171.45 138.43 90)
 		(unit 1)
@@ -5735,6 +5224,101 @@
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
 					(reference "HC_104")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Amplifier_Operational:ADA4625-2ARDZ")
+		(at 250.19 248.92 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9dcf0d62-0477-4e29-89ef-9862f86af05e")
+		(property "Reference" "U?"
+			(at 250.19 238.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "ADA4625-2ARDZ"
+			(at 250.19 241.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm"
+			(at 248.92 256.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/ADA4625-1-4625-2.pdf"
+			(at 250.19 248.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Dual 5V..36V/±2.5V..±18V supply, 18 MHz, 48V/µs slew rate, ±80 µV offset, RRO, Fast-settling JFET Op Amp, SOIC-8-1EP"
+			(at 250.19 248.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "9"
+			(uuid "e5dcfb1e-30b5-4ca5-b7cd-95365d43f26e")
+		)
+		(pin "8"
+			(uuid "0ec6efaf-4f00-4ba9-80c4-c5b18b8c2ada")
+		)
+		(pin "7"
+			(uuid "19c3ac3b-d6a9-4d2f-982b-70dc929facb6")
+		)
+		(pin "4"
+			(uuid "143edd9d-30d0-4df5-b40c-c3c86d8db825")
+		)
+		(pin "2"
+			(uuid "19cc4db8-bee7-4b88-90b2-f9e8d6469d0a")
+		)
+		(pin "6"
+			(uuid "1dda8326-6de8-49a5-a4e5-00c0f503b1e0")
+		)
+		(pin "5"
+			(uuid "0d01abc4-fa56-4b5d-80c3-8515e5a42abf")
+		)
+		(pin "3"
+			(uuid "d044c652-fafb-4711-b100-5c3d02552b64")
+		)
+		(pin "1"
+			(uuid "6a8f1265-08e3-4a43-a9e3-a91147a20c60")
+		)
+		(instances
+			(project ""
+				(path "/7cc72b98-3836-4c2a-8199-0c423deb5fd0"
+					(reference "U7")
+					(unit 2)
+				)
+			)
+			(project "nzif"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
+					(reference "U?")
 					(unit 1)
 				)
 			)
@@ -6075,6 +5659,103 @@
 		)
 	)
 	(symbol
+		(lib_id "Amplifier_Operational:ADA4625-2ARDZ")
+		(at 173.99 200.66 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ac5c4754-1524-47ad-bfa0-59dac9a62131")
+		(property "Reference" "U?"
+			(at 175.26 199.3899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "ADA4625-2ARDZ"
+			(at 175.26 201.9299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm"
+			(at 172.72 208.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/ADA4625-1-4625-2.pdf"
+			(at 173.99 200.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Dual 5V..36V/±2.5V..±18V supply, 18 MHz, 48V/µs slew rate, ±80 µV offset, RRO, Fast-settling JFET Op Amp, SOIC-8-1EP"
+			(at 173.99 200.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "5"
+			(uuid "535c9351-97e6-44a5-98a4-fc5ecc5934b5")
+		)
+		(pin "3"
+			(uuid "458be3fe-1eb3-4e1b-9946-e4ebdf050e5d")
+		)
+		(pin "1"
+			(uuid "7b1d03a2-e582-422e-8d88-508ae902ec5e")
+		)
+		(pin "9"
+			(uuid "d0b6df3d-587d-4c9e-858f-8cff311fea82")
+		)
+		(pin "2"
+			(uuid "26a929f4-7573-4630-a9c1-6809122686b0")
+		)
+		(pin "6"
+			(uuid "e0dd1d28-0da5-48f4-9d2c-4f36d52b7cb6")
+		)
+		(pin "4"
+			(uuid "2ec30c35-155d-4690-9b17-3a6d80755a0e")
+		)
+		(pin "8"
+			(uuid "3b5e53cf-77bb-4350-a6a5-15fbd03de31d")
+		)
+		(pin "7"
+			(uuid "e9d0e4b7-1247-4933-afd8-d2e92e210054")
+		)
+		(instances
+			(project ""
+				(path "/7cc72b98-3836-4c2a-8199-0c423deb5fd0"
+					(reference "U6")
+					(unit 3)
+				)
+			)
+			(project "nzif"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
+					(reference "U?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Small")
 		(at 170.18 64.77 90)
 		(unit 1)
@@ -6143,6 +5824,101 @@
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
 					(reference "HC_102")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Amplifier_Operational:ADA4625-2ARDZ")
+		(at 60.96 228.6 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b37dc66e-1499-48f5-9a8a-5c0e64ff1a14")
+		(property "Reference" "U?"
+			(at 60.96 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "ADA4625-2ARDZ"
+			(at 60.96 220.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm"
+			(at 59.69 236.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/ADA4625-1-4625-2.pdf"
+			(at 60.96 228.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Dual 5V..36V/±2.5V..±18V supply, 18 MHz, 48V/µs slew rate, ±80 µV offset, RRO, Fast-settling JFET Op Amp, SOIC-8-1EP"
+			(at 60.96 228.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "5"
+			(uuid "2fd67298-2cf0-4f04-9428-96bf34def375")
+		)
+		(pin "9"
+			(uuid "6c04a223-9ef5-4ac6-8d7a-c77366023a38")
+		)
+		(pin "1"
+			(uuid "ff069008-a70c-4194-9c68-acb50d385bcb")
+		)
+		(pin "2"
+			(uuid "58ee04f4-da5d-4bf5-bc16-ee357677d329")
+		)
+		(pin "4"
+			(uuid "d9541d9f-f4f3-4b3a-a8d8-7e60bbcf6b02")
+		)
+		(pin "3"
+			(uuid "522f6dfc-28c2-48b0-ad64-3433bd9c41e5")
+		)
+		(pin "7"
+			(uuid "34d8398f-7705-4e79-ac90-d5f3dc4988f3")
+		)
+		(pin "8"
+			(uuid "9a87434b-c918-4d18-9ddb-488b739850aa")
+		)
+		(pin "6"
+			(uuid "80914f48-d20c-45a3-b713-76e07a047ef3")
+		)
+		(instances
+			(project ""
+				(path "/7cc72b98-3836-4c2a-8199-0c423deb5fd0"
+					(reference "U9")
+					(unit 1)
+				)
+			)
+			(project "nzif"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
+					(reference "U?")
 					(unit 1)
 				)
 			)
@@ -6291,103 +6067,6 @@
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
 					(reference "HC_101")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Amplifier_Operational:ADA4898-2")
-		(at 173.99 200.66 0)
-		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b97a8e78-067c-46ff-ba9d-2dd5dda87de7")
-		(property "Reference" "U?"
-			(at 175.26 199.3899 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "ADA4898-2"
-			(at 175.26 201.9299 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.41x3.81mm"
-			(at 172.72 208.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/ada4898-1_4898-2.pdf"
-			(at 173.99 200.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Dual High Voltage, Low Noise, Low Distortion, Unity-Gain Stable, High Speed Op Amp, SOIC-8-1EP"
-			(at 173.99 200.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "796bf2c0-7bff-4135-bc4d-d4722510f90f")
-		)
-		(pin "5"
-			(uuid "b98c6be5-eed3-4a3e-a1d3-f44f8cd2e454")
-		)
-		(pin "1"
-			(uuid "4f7c6697-3b00-469f-b9ff-d26f921e5191")
-		)
-		(pin "2"
-			(uuid "f055aa2e-d735-40d8-a9af-e5a7baf1549c")
-		)
-		(pin "4"
-			(uuid "b4fc0500-93f7-4d42-a052-8e86bbfbf32e")
-		)
-		(pin "7"
-			(uuid "29ae433f-c51b-4e33-b359-8d0b766bc2a1")
-		)
-		(pin "9"
-			(uuid "08055915-95df-40da-93da-88959cdeadfd")
-		)
-		(pin "6"
-			(uuid "ca42cdcf-3797-4718-a72a-ea4c65d42deb")
-		)
-		(pin "8"
-			(uuid "5c4e664b-49be-40d1-be87-f0b2aad88519")
-		)
-		(instances
-			(project ""
-				(path "/7cc72b98-3836-4c2a-8199-0c423deb5fd0"
-					(reference "U6")
-					(unit 3)
-				)
-			)
-			(project "nzif"
-				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
-					(reference "U?")
 					(unit 1)
 				)
 			)
@@ -6834,42 +6513,33 @@
 		)
 	)
 	(symbol
-		(lib_id "Amplifier_Operational:ADA4898-2")
-		(at 121.92 231.14 0)
+		(lib_id "Amplifier_Operational:ADA4625-2ARDZ")
+		(at 185.42 250.19 0)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "c6fdf5ce-612c-4d03-b387-54e4b164a616")
+		(uuid "c5059aea-fb7d-47b5-a0cb-306b7a112e82")
 		(property "Reference" "U?"
-			(at 121.92 220.98 0)
+			(at 185.42 240.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "ADA4898-2"
-			(at 121.92 223.52 0)
+		(property "Value" "ADA4625-2ARDZ"
+			(at 185.42 242.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.41x3.81mm"
-			(at 120.65 238.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/ada4898-1_4898-2.pdf"
-			(at 121.92 231.14 0)
+		(property "Footprint" "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm"
+			(at 184.15 257.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6877,8 +6547,114 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Dual High Voltage, Low Noise, Low Distortion, Unity-Gain Stable, High Speed Op Amp, SOIC-8-1EP"
-			(at 121.92 231.14 0)
+		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/ADA4625-1-4625-2.pdf"
+			(at 185.42 250.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Dual 5V..36V/±2.5V..±18V supply, 18 MHz, 48V/µs slew rate, ±80 µV offset, RRO, Fast-settling JFET Op Amp, SOIC-8-1EP"
+			(at 185.42 250.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "5"
+			(uuid "535c9351-97e6-44a5-98a4-fc5ecc5934b6")
+		)
+		(pin "3"
+			(uuid "458be3fe-1eb3-4e1b-9946-e4ebdf050e5e")
+		)
+		(pin "1"
+			(uuid "7b1d03a2-e582-422e-8d88-508ae902ec5f")
+		)
+		(pin "9"
+			(uuid "d0b6df3d-587d-4c9e-858f-8cff311fea83")
+		)
+		(pin "2"
+			(uuid "26a929f4-7573-4630-a9c1-6809122686b1")
+		)
+		(pin "6"
+			(uuid "e0dd1d28-0da5-48f4-9d2c-4f36d52b7cb7")
+		)
+		(pin "4"
+			(uuid "2ec30c35-155d-4690-9b17-3a6d80755a0f")
+		)
+		(pin "8"
+			(uuid "3b5e53cf-77bb-4350-a6a5-15fbd03de31e")
+		)
+		(pin "7"
+			(uuid "e9d0e4b7-1247-4933-afd8-d2e92e210055")
+		)
+		(instances
+			(project ""
+				(path "/7cc72b98-3836-4c2a-8199-0c423deb5fd0"
+					(reference "U6")
+					(unit 2)
+				)
+			)
+			(project "nzif"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
+					(reference "U?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Amplifier_Operational:ADA4625-2ARDZ")
+		(at 124.46 199.39 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c5895bae-eb74-4d6f-88a5-6c7271fb946b")
+		(property "Reference" "U?"
+			(at 125.73 198.1199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "ADA4625-2ARDZ"
+			(at 125.73 200.6599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm"
+			(at 123.19 207.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/ADA4625-1-4625-2.pdf"
+			(at 124.46 199.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Dual 5V..36V/±2.5V..±18V supply, 18 MHz, 48V/µs slew rate, ±80 µV offset, RRO, Fast-settling JFET Op Amp, SOIC-8-1EP"
+			(at 124.46 199.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6887,37 +6663,37 @@
 			)
 		)
 		(pin "6"
-			(uuid "d3f529ab-2f8b-4c58-a300-e5e61fab880a")
-		)
-		(pin "5"
-			(uuid "f9747abd-d547-4d4f-91d5-a1a1ae3ad0f0")
-		)
-		(pin "1"
-			(uuid "7a6ea41d-f4ac-40d6-9423-01c71ecf7a7a")
-		)
-		(pin "9"
-			(uuid "2d78a6f1-b2e5-4eb8-ba74-ae3495ba9353")
-		)
-		(pin "7"
-			(uuid "f3e22e0a-28e3-481e-b73b-183337736c4d")
-		)
-		(pin "8"
-			(uuid "afdebb1d-d231-43b9-9887-e6c02d672750")
+			(uuid "febcc101-7952-44ee-9767-d00eabeff1f0")
 		)
 		(pin "3"
-			(uuid "911fe631-2b01-4a12-833d-2128e6297ca9")
+			(uuid "96053a15-7d69-4a86-9d6e-86e62dd48bff")
 		)
-		(pin "4"
-			(uuid "3b5aa51f-a5fd-4296-8202-43e65c131d5d")
+		(pin "5"
+			(uuid "ab9fc727-22a8-4c39-a19c-8593b108e622")
+		)
+		(pin "1"
+			(uuid "71cfcae8-b236-4080-8e85-4572b98c917a")
 		)
 		(pin "2"
-			(uuid "a46ef41f-5fc3-44f7-8174-028dd0464225")
+			(uuid "6d1411f7-9247-4005-b4ca-9ee78017f717")
+		)
+		(pin "9"
+			(uuid "38ffc6ec-5148-4e30-81a3-fe3a448d465e")
+		)
+		(pin "4"
+			(uuid "da8e964b-c873-498f-8157-d4e1531e2872")
+		)
+		(pin "8"
+			(uuid "307d6733-ce8c-4ebc-aac9-b9e09b29722f")
+		)
+		(pin "7"
+			(uuid "8f53e588-702d-4646-b29d-6c881bbb9ba9")
 		)
 		(instances
 			(project ""
 				(path "/7cc72b98-3836-4c2a-8199-0c423deb5fd0"
 					(reference "U5")
-					(unit 1)
+					(unit 3)
 				)
 			)
 			(project "nzif"
@@ -7001,42 +6777,35 @@
 		)
 	)
 	(symbol
-		(lib_id "Amplifier_Operational:ADA4898-2")
-		(at 60.96 228.6 0)
+		(lib_id "Amplifier_Operational:ADA4625-2ARDZ")
+		(at 233.68 203.2 0)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "cd1426a4-58d3-4a46-a892-37f1dcf387c6")
+		(uuid "d03f038d-6d4d-4513-94ed-7197fffd39a6")
 		(property "Reference" "U?"
-			(at 60.96 218.44 0)
+			(at 234.95 201.9299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "ADA4898-2"
-			(at 60.96 220.98 0)
+		(property "Value" "ADA4625-2ARDZ"
+			(at 234.95 204.4699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Footprint" "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.41x3.81mm"
-			(at 59.69 236.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/ada4898-1_4898-2.pdf"
-			(at 60.96 228.6 0)
+		(property "Footprint" "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm"
+			(at 232.41 210.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7044,8 +6813,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Dual High Voltage, Low Noise, Low Distortion, Unity-Gain Stable, High Speed Op Amp, SOIC-8-1EP"
-			(at 60.96 228.6 0)
+		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/ADA4625-1-4625-2.pdf"
+			(at 233.68 203.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7053,38 +6822,47 @@
 				(hide yes)
 			)
 		)
-		(pin "5"
-			(uuid "3af15e5a-522d-4b76-92c4-1d2effed8a5e")
-		)
-		(pin "4"
-			(uuid "eae9c9d9-93e3-49f6-99f1-78b08c1a6873")
-		)
-		(pin "1"
-			(uuid "1b1de35a-0c13-4704-9034-5dce8dd9dbf8")
-		)
-		(pin "8"
-			(uuid "c84ffbe4-dc77-481e-8703-c10c723c9195")
+		(property "Description" "Dual 5V..36V/±2.5V..±18V supply, 18 MHz, 48V/µs slew rate, ±80 µV offset, RRO, Fast-settling JFET Op Amp, SOIC-8-1EP"
+			(at 233.68 203.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
 		)
 		(pin "9"
-			(uuid "0e794e0b-f884-424e-9512-2cff98714fee")
+			(uuid "e5dcfb1e-30b5-4ca5-b7cd-95365d43f26f")
 		)
-		(pin "6"
-			(uuid "46f1f5d1-775d-4342-8e89-77aad4eb05bd")
+		(pin "8"
+			(uuid "0ec6efaf-4f00-4ba9-80c4-c5b18b8c2adb")
 		)
 		(pin "7"
-			(uuid "098a3dd9-11bf-4d07-b056-84da6ca9c2bc")
+			(uuid "19c3ac3b-d6a9-4d2f-982b-70dc929facb7")
 		)
-		(pin "3"
-			(uuid "f366e8b9-84a7-436a-845f-929e418a0255")
+		(pin "4"
+			(uuid "143edd9d-30d0-4df5-b40c-c3c86d8db826")
 		)
 		(pin "2"
-			(uuid "bedf9651-1e34-4a20-af95-7382f003dacc")
+			(uuid "19cc4db8-bee7-4b88-90b2-f9e8d6469d0b")
+		)
+		(pin "6"
+			(uuid "1dda8326-6de8-49a5-a4e5-00c0f503b1e1")
+		)
+		(pin "5"
+			(uuid "0d01abc4-fa56-4b5d-80c3-8515e5a42ac0")
+		)
+		(pin "3"
+			(uuid "d044c652-fafb-4711-b100-5c3d02552b65")
+		)
+		(pin "1"
+			(uuid "6a8f1265-08e3-4a43-a9e3-a91147a20c61")
 		)
 		(instances
 			(project ""
 				(path "/7cc72b98-3836-4c2a-8199-0c423deb5fd0"
 					(reference "U7")
-					(unit 1)
+					(unit 3)
 				)
 			)
 			(project "nzif"
@@ -7456,6 +7234,196 @@
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
 					(reference "HC_108")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Amplifier_Operational:ADA4625-2ARDZ")
+		(at 250.19 228.6 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "df28974a-8dc6-4e73-9e57-8fdfd3519a7c")
+		(property "Reference" "U?"
+			(at 250.19 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "ADA4625-2ARDZ"
+			(at 250.19 220.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm"
+			(at 248.92 236.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/ADA4625-1-4625-2.pdf"
+			(at 250.19 228.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Dual 5V..36V/±2.5V..±18V supply, 18 MHz, 48V/µs slew rate, ±80 µV offset, RRO, Fast-settling JFET Op Amp, SOIC-8-1EP"
+			(at 250.19 228.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "9"
+			(uuid "e5dcfb1e-30b5-4ca5-b7cd-95365d43f270")
+		)
+		(pin "8"
+			(uuid "0ec6efaf-4f00-4ba9-80c4-c5b18b8c2adc")
+		)
+		(pin "7"
+			(uuid "19c3ac3b-d6a9-4d2f-982b-70dc929facb8")
+		)
+		(pin "4"
+			(uuid "143edd9d-30d0-4df5-b40c-c3c86d8db827")
+		)
+		(pin "2"
+			(uuid "19cc4db8-bee7-4b88-90b2-f9e8d6469d0c")
+		)
+		(pin "6"
+			(uuid "1dda8326-6de8-49a5-a4e5-00c0f503b1e2")
+		)
+		(pin "5"
+			(uuid "0d01abc4-fa56-4b5d-80c3-8515e5a42ac1")
+		)
+		(pin "3"
+			(uuid "d044c652-fafb-4711-b100-5c3d02552b66")
+		)
+		(pin "1"
+			(uuid "6a8f1265-08e3-4a43-a9e3-a91147a20c62")
+		)
+		(instances
+			(project ""
+				(path "/7cc72b98-3836-4c2a-8199-0c423deb5fd0"
+					(reference "U7")
+					(unit 1)
+				)
+			)
+			(project "nzif"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
+					(reference "U?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Amplifier_Operational:ADA4625-2ARDZ")
+		(at 121.92 231.14 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e29f1dfd-9d89-4f0b-8d44-fe65f8969d2d")
+		(property "Reference" "U?"
+			(at 121.92 220.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "ADA4625-2ARDZ"
+			(at 121.92 223.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm"
+			(at 120.65 238.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/ADA4625-1-4625-2.pdf"
+			(at 121.92 231.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Dual 5V..36V/±2.5V..±18V supply, 18 MHz, 48V/µs slew rate, ±80 µV offset, RRO, Fast-settling JFET Op Amp, SOIC-8-1EP"
+			(at 121.92 231.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "6"
+			(uuid "febcc101-7952-44ee-9767-d00eabeff1f1")
+		)
+		(pin "3"
+			(uuid "96053a15-7d69-4a86-9d6e-86e62dd48c00")
+		)
+		(pin "5"
+			(uuid "ab9fc727-22a8-4c39-a19c-8593b108e623")
+		)
+		(pin "1"
+			(uuid "71cfcae8-b236-4080-8e85-4572b98c917b")
+		)
+		(pin "2"
+			(uuid "6d1411f7-9247-4005-b4ca-9ee78017f718")
+		)
+		(pin "9"
+			(uuid "38ffc6ec-5148-4e30-81a3-fe3a448d465f")
+		)
+		(pin "4"
+			(uuid "da8e964b-c873-498f-8157-d4e1531e2873")
+		)
+		(pin "8"
+			(uuid "307d6733-ce8c-4ebc-aac9-b9e09b297230")
+		)
+		(pin "7"
+			(uuid "8f53e588-702d-4646-b29d-6c881bbb9baa")
+		)
+		(instances
+			(project ""
+				(path "/7cc72b98-3836-4c2a-8199-0c423deb5fd0"
+					(reference "U5")
+					(unit 1)
+				)
+			)
+			(project "nzif"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/d923ed07-1122-4091-b99e-c24c264ea9d2"
+					(reference "U?")
 					(unit 1)
 				)
 			)

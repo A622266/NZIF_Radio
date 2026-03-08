@@ -3339,12 +3339,6 @@
 		(uuid "6933b18e-351c-40a8-b8d6-3aeb92a614ec")
 	)
 	(junction
-		(at 396.24 226.06)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "793797df-4a21-4bb2-91ab-57cbbe3dc34a")
-	)
-	(junction
 		(at 353.06 36.83)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3372,7 +3366,7 @@
 	)
 	(wire
 		(pts
-			(xy 396.24 226.06) (xy 396.24 227.33)
+			(xy 396.24 222.25) (xy 396.24 227.33)
 		)
 		(stroke
 			(width 0)
@@ -3399,16 +3393,6 @@
 			(type default)
 		)
 		(uuid "2dd7f243-b63e-4ae3-9ebb-2f8bf1222659")
-	)
-	(wire
-		(pts
-			(xy 396.24 222.25) (xy 396.24 226.06)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "39dc4a12-7dac-482a-ac81-95e9063a861e")
 	)
 	(wire
 		(pts
@@ -3479,16 +3463,6 @@
 			(type default)
 		)
 		(uuid "5a58adaf-a87d-4549-a252-67d0f834f8f6")
-	)
-	(wire
-		(pts
-			(xy 354.33 189.23) (xy 354.33 199.39)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6c83496e-fdef-4373-b441-7f0458140d80")
 	)
 	(wire
 		(pts
@@ -3582,16 +3556,6 @@
 	)
 	(wire
 		(pts
-			(xy 365.76 226.06) (xy 396.24 226.06)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bafbf0f6-31aa-4e3e-882b-8088c09422fb")
-	)
-	(wire
-		(pts
 			(xy 403.86 45.72) (xy 403.86 46.99)
 		)
 		(stroke
@@ -3669,16 +3633,6 @@
 			(type default)
 		)
 		(uuid "df6a1578-1949-4898-979b-73383b507605")
-	)
-	(wire
-		(pts
-			(xy 359.41 189.23) (xy 359.41 199.39)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f27a838e-2694-4075-9950-8105cab920f0")
 	)
 	(wire
 		(pts
@@ -5694,36 +5648,6 @@
 				(justify left top)
 			)
 		)
-		(pin "MAIN" input
-			(at 365.76 226.06 0)
-			(uuid "a9e109fd-7dc0-4516-b988-8ad180fcc5e3")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "3.6V" input
-			(at 354.33 199.39 90)
-			(uuid "86be5c4a-e7e0-4c33-a47d-e83ec1359793")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "5.5V" input
-			(at 359.41 199.39 90)
-			(uuid "ae501890-9393-4607-896c-d23ee21db83a")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
 		(instances
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f"
@@ -5890,76 +5814,6 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
-			)
-		)
-		(pin "5V_TX_Mixer" input
-			(at 321.31 180.34 180)
-			(uuid "85fe392b-f144-4f54-82a9-c4258cd9b43c")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "5.5V" input
-			(at 359.41 189.23 270)
-			(uuid "09b13f0c-fbdf-4581-bbc1-85a099ef7c6c")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "3.6V" input
-			(at 354.33 189.23 270)
-			(uuid "523c35bb-8e67-4a6e-abf8-d9879bf7fef0")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "3.3V_ADCs" input
-			(at 321.31 160.02 180)
-			(uuid "812d15ab-24ee-44ba-aa8d-4ee5765a7488")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "3.3V_DACs" input
-			(at 321.31 162.56 180)
-			(uuid "9b2e7235-0219-4835-b6e1-86ed58d7ed5e")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "3.3V_DSP" input
-			(at 321.31 165.1 180)
-			(uuid "56398930-dc9a-4a4e-ba0b-3e112c72b0fa")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "5V_RX_Mixer" input
-			(at 321.31 176.53 180)
-			(uuid "38ae2c36-00fb-4494-9f3d-3bfe9711610a")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
 			)
 		)
 		(instances
