@@ -424,9 +424,6 @@
 			(embedded_fonts no)
 		)
 		(symbol "nzif_radio_symbol_library:SN74CBT3125CPW"
-			(pin_names
-				(offset 0.254)
-			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -446,7 +443,7 @@
 					)
 				)
 			)
-			(property "Footprint" "nzif_footprints:PW14"
+			(property "Footprint" "Package_SO:TSSOP-14-1EP_4.4x5mm_P0.65mm"
 				(at -48.26 25.4 0)
 				(effects
 					(font
@@ -484,7 +481,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "PW14"
+			(property "ki_fp_filters" "TSSOP*14*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -498,7 +495,7 @@
 					(start -12.7 17.78)
 					(end 12.7 -17.78)
 					(stroke
-						(width 0)
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -4407,7 +4404,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "nzif_footprints:PW14"
+		(property "Footprint" "Package_SO:TSSOP-14-1EP_4.4x5mm_P0.65mm"
 			(at 82.55 107.95 0)
 			(effects
 				(font
@@ -4602,7 +4599,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "nzif_footprints:PW14"
+		(property "Footprint" "Package_SO:TSSOP-14-1EP_4.4x5mm_P0.65mm"
 			(at 198.12 35.56 0)
 			(effects
 				(font
@@ -6002,7 +5999,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "nzif_footprints:PW14"
+		(property "Footprint" "Package_SO:TSSOP-14-1EP_4.4x5mm_P0.65mm"
 			(at 198.12 109.22 0)
 			(effects
 				(font
@@ -6637,7 +6634,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "nzif_footprints:PW14"
+		(property "Footprint" "Package_SO:TSSOP-14-1EP_4.4x5mm_P0.65mm"
 			(at 82.55 34.29 0)
 			(effects
 				(font
