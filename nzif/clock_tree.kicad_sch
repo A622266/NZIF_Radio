@@ -6248,6 +6248,38 @@
 			(embedded_fonts no)
 		)
 	)
+	(rectangle
+		(start 12.7 12.7)
+		(end 73.66 41.91)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(fill
+			(type none)
+		)
+		(uuid fa426dae-985f-460b-bd76-d9b4329e6051)
+	)
+	(text "Rx switches are 5V"
+		(exclude_from_sim no)
+		(at 296.672 17.78 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "3e1d4ff3-9d2a-4332-b24a-4ca1268f9c38")
+	)
+	(text "Tx switches are 3V"
+		(exclude_from_sim no)
+		(at 395.732 17.78 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "7dfaa151-05be-449a-94a3-2e1735607c2a")
+	)
 	(text "1Q8"
 		(exclude_from_sim no)
 		(at 248.412 81.534 0)
@@ -10486,7 +10518,7 @@
 		)
 		(uuid "b5038d0e-f573-4fd9-9067-44faa3c4bab1")
 	)
-	(label "5V"
+	(label "3V"
 		(at 408.94 20.32 180)
 		(effects
 			(font
