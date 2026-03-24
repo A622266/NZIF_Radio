@@ -1,0 +1,240 @@
+
+--- page 2 ---
+LT8330
+2
+Rev. D For more information www.analog.com
+ABSOLUTE MAXIMUM RATINGS
+SW ............................................................................60V
+VIN, EN/UVLO ............................................................40V
+EN/UVLO Pin Above VIN Pin ........................................6V
+INTVCC (Note 2) ..........................................................4V
+FBX ...........................................................................±4V
+(Note 1)
+ORDER INFORMATION
+Lead Free Finish
+TAPE AND REEL (MINI) TAPE AND REEL PART MARKING* PACKAGE DESCRIPTION TEMPERATURE RANGE
+LT8330ES6#TRMPBF LT8330ES6#TRPBF L TGMQ 6-Lead Plastic TSOT-23 –40°C to 125°C
+LT8330IS6#TRMPBF LT8330IS6#TRPBF L TGMQ 6-Lead Plastic TSOT-23 –40°C to 125°C
+LT8330JS6#TRMPBF LT8330JS6#TRPBF L TGMQ 6-Lead Plastic TSOT-23 –40°C to 150°C
+LT8330HS6#TRMPBF LT8330HS6#TRPBF L TGMQ 6-Lead Plastic TSOT-23 –40°C to 150°C
+LT8330EDDB#TRMPBF LT8330EDDB#TRPBF LGRC 8-Lead (3mm × 2mm) Plastic DFN –40°C to 125°C
+LT8330IDDB#TRMPBF LT8330IDDB#TRPBF LGRC 8-Lead (3mm × 2mm) Plastic DFN –40°C to 125°C
+LT8330JDDB#TRMPBF LT8330JDDB#TRPBF LGRC 8-Lead (3mm × 2mm) Plastic DFN –40°C to 150°C
+LT8330HDDB#TRMPBF LT8330HDDB#TRPBF LGRC 8-Lead (3mm × 2mm) Plastic DFN –40°C to 150°C
+AUTOMOTIVE PRODUCTS**
+LT8330EDDB#WTRMPBF LT8330EDDB#WTRPBF LGRC 8-Lead (3mm × 2mm) Plastic DFN –40°C to 125°C
+LT8330IDDB#WTRMPBF LT8330IDDB#WTRPBF LGRC 8-Lead (3mm × 2mm) Plastic DFN –40°C to 125°C
+LT8330JDDB#WTRMPBF LT8330JDDB#WTRPBF LGRC 8-Lead (3mm × 2mm) Plastic DFN –40°C to 150°C
+LT8330HDDB#WTRMPBF LT8330HDDB#WTRPBF LGRC 8-Lead (3mm × 2mm) Plastic DFN –40°C to 150°C
+TRM = 500 pieces. *Temperature grades are identified by a label on the shipping container.
+Contact the factory for parts specified with wider operating temperature ranges. 
+Contact the factory for information on lead based finish parts.
+Tape and reel specifications. Some packages are available in 500 unit reels through designated sales channels with #TRMPBF suffix.
+**Versions of this part are available with controlled manufacturing to support the quality and reliability requirements of automotive applications. These 
+models are designated with a #W suffix. Only the automotive grade products shown are available for use in automotive applications. Contact your local 
+Analog Devices account representative for specific product ordering information and to obtain the specific Automotive Reliability reports for these  models.
+TOP VIEW
+9
+DDB PACKAGE
+8-LEAD (3mm × 2mm) PLASTIC DFN
+θJA = 60°C/W
+EXPOSED PAD (PIN 9) IS GND, MUST BE SOLDERED TO PCB
+5
+6
+7
+8
+4
+3
+2
+1FBX
+NC
+SW
+SW
+EN/UVLO
+INTVCC
+VIN
+GND
+1
+2
+3
+6
+5
+4
+TOP VIEW
+S6 PACKAGE
+6-LEAD PLASTIC TSOT-23
+θJA = 125°C/W , θJC = 102°C/W
+VIN
+INTVCC
+EN/UVLO
+SW
+GND
+FBX
+PIN CONFIGURATION
+Operating Junction Temperature (Note 3)
+ LT8330E, LT8330I ............................. –40°C to 125°C 
+LT8330J, LT8330H ............................–40°C to 150°C
+Storage Temperature Range .................. –65°C to 150°C
+
+--- page 6 ---
+LT8330
+6
+Rev. D For more information www.analog.com
+PIN FUNCTIONS
+EN/UVLO: Shutdown and Undervoltage Detect Pin . The 
+LT8330 is shut down when this pin is low and active 
+when this pin is high. Below an accurate 1.6V threshold 
+the part enters undervoltage lockout and stops switching. 
+This allows an undervoltage lockout (UVLO) threshold to 
+be programmed for system input voltage  by resistively 
+dividing down system input voltage to the EN/UVLO pin. 
+An 80mV pin hysteresis ensures part switching resumes 
+when the pin exceeds 1.68V. EN/UVLO pin voltage below 
+0.2V reduces V IN current below 1µA. If shutdown and 
+UVLO features are not required, the pin can be tied directly 
+to system input.
+FBX: Voltage Regulation Feedback Pin for Positive or 
+Negative Outputs. Connect this pin to a resistor divider 
+between the output and GND. FBX reduces the switching 
+frequency during start-up and fault conditions when FBX 
+is close to GND.
+GND: Ground Connection for the LT8330. The DFN pack-
+age has the best thermal performance due to an exposed 
+pad (Pin 9) on the bottom of the package . This exposed 
+pad must be soldered to a ground plane. Pin 5 of the DFN 
+package (and Pin 2 of the TSOT package) should also be 
+connected to a ground plane. The ground plane should be 
+connected to large copper layers to spread heat dissipated 
+by the LT8330.
+INTVCC: Regulated 3V Supply for Internal Loads . The  
+INTVCC pin must be bypassed with a minimum 1µF low ESR 
+ceramic capacitor to ground. No additional components 
+or loading is allowed on this pin.
+NC: No Internal Connection. Tie directly to local ground.
+SW: The Output of Internal Power Switch . Minimize the 
+metal trace area connected to this pin to reduce EMI.
+VIN: Input Supply. This pin must be locally bypassed. Be 
+sure to place the positive terminal of the input capacitor as 
+close as possible to the VIN pin, and the negative terminal 
+as close as possible to the GND pin.
+
+--- page 13 ---
+LT8330
+13
+Rev. DFor more information www.analog.com
+APPLICATIONS INFORMATION
+THERMAL CONSIDERATIONS
+Care should be taken in the layout of the PCB to ensure 
+good heat sinking of the LT8330. The DFN package has the 
+best thermal performance due to an exposed pad (Pin 9) 
+on the bottom of the package. This exposed pad must be 
+soldered to a ground plane. Pin 5 of the DFN package (and 
+Pin 2 of the TSOT package) should also be connected to a 
+ground plane. The ground plane should be connected to 
+large copper layers to spread heat dissipated by the LT8330 
+and to further reduce the thermal resistance (θJA) values 
+listed in the Pin Configuration section. Power dissipation 
+within the LT8330 (PDISS_LT8330) can be estimated by 
+subtracting the inductor and Schottky diode power losses 
+from the total power losses calculated in an efficiency 
+measurement. The junction temperature of LT8330 can 
+then be estimated by,
+ TJ (LT8330) = TA + θJA • PDISS_LT8330
+ADDITIONAL TOPOLOGIES : SEPIC AND INVERTING
+In addition to the Boost topology , the LT8330 can be  
+configured in a SEPIC or Inverting topology . SEPIC and 
+Inverting converters are analyzed below.
+SEPIC CONVERTER APPLICATIONS
+The LT8330 can be configured as a SEPIC (single-ended 
+primary inductance converter), as shown in Figure 5. This 
+topology allows for the input to be higher, equal, or lower 
+than the desired output voltage. The conversion ratio as 
+a function of duty cycle is:
+  
+VOUT + VD
+VIN
+= D
+1– D
+in continuous conduction mode (CCM).
+In a SEPIC converter, no DC path exists between the input  
+and output. This is an advantage over the boost converter 
+for applications requiring the output to be disconnected 
+from the input source when the circuit is in shutdown.
+SEPIC Converter: Switch Duty Cycle and Frequency
+For a SEPIC converter operating in CCM , the duty cycle 
+of the main switch can be calculated based on the output 
+voltage (VOUT), the input voltage (VIN) and the diode 
+forward voltage (VD).
+The maximum duty cycle (DMAX) occurs when the converter 
+operates at the minimum input voltage:
+  
+DMAX = VOUT + VD
+VIN(MIN) + VOUT + VD
+Conversely, the minimum duty cycle (DMIN) occurs when 
+the converter operates at the maximum input voltage:
+  
+DMIN = VOUT + VD
+VIN(MAX) + VOUT + VD
+Be sure to check that DMAX and DMIN obey:
+DMAX < 1-Minimum Off-Time(MAX) • fOSC(MAX)
+and
+DMIN > Minimum On-Time(MAX) • fOSC(MAX)
+where Minimum Off-Time , Minimum On-Time and f OSC 
+are specified in the Electrical Characteristics table.
+SEPIC Converter: The Maximum Output Current 
+Capability and Inductor Selection
+As shown in Figure 5, the SEPIC converter contains two 
+inductors: L1 and L2. L1 and L2 can be independent, but can 
+Figure 5. LT8330 Configured in a SEPIC Topology
+L1
+L2
+V
+OUT
+V
+IN
+SW
+FBX
+GND
+EN/UVLO
+L T8330
+V
+IN
+V
+CC
+INT
+D1
+C
+IN
+C
+OUT
+C
+DC
+8330 F05
+
+--- page 23 ---
+LT8330
+23
+Rev. DFor more information www.analog.com
+Information furnished by Analog Devices is believed to be accurate and reliable . However , no responsibility is assumed by Analog 
+Devices for its use , nor for any infringements of patents or other rights of third parties that may result from its use . Specifications 
+subject to change without notice. No license is granted by implication or otherwise under any patent or patent rights of Analog Devices .
+REVISION HISTORY
+REV DATE DESCRIPTION PAGE NUMBER
+A 03/16 Corrected VIN Quiescent Current.
+Corrected Typographic Errors.
+3
+2, 22, 23
+B 09/19 Added automotive models.
+Updated Equations in Inverting Converter Applications.
+2
+15
+C 04/21 Updated description.
+Added J-Grade.
+Changed EN/UVLO Pin Current spec from 40nA to 100nA.
+1
+2, 3
+3
+D 06/25 Updated Features.
+Updated Order Information.
+1
+2
