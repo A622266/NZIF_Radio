@@ -2,6 +2,46 @@
 
 A near zero-if radio architecture using a polyphase mixer
 
+## Receive Signal Path (J101 to ADC)
+
+This is the receive chain on the top sheet for the `J101` input path:
+
+1. **RF input connector (`J101`)**  
+	The external receive signal enters as a single-ended RF input at `J101`.
+
+2. **Input transformer (`TR102`, ADT1-1WT)**  
+	`TR102` converts the single-ended RF input into a differential pair for the mixer front end.  
+	The transformer secondary center tap is planned to be biased at **2.5 V**.
+
+3. **Differential RF into mixer (`RF+`, `RF-`)**  
+	The top sheet routes the transformer outputs to `RF+` and `RF-`, which feed the `Rx_mixer` sheet.
+
+4. **Polyphase downconversion (`Rx_mixer`)**  
+	The mixer uses LO phase inputs (`phase_0`, `phase_45`, `phase_90`, `phase_135`, `phase_180`, `phase_225`, `phase_270`, `phase_315`) and generates baseband phase outputs:
+	- `BB_0`, `BB_45`, `BB_90`, `BB_135`
+	- `BB_180`, `BB_225`, `BB_270`, `BB_315`
+
+5. **Baseband phase pairing into driver amps (`RX_Driver_Amps`)**  
+	The top sheet pairs opposite phases into differential driver inputs:
+	- `BB_0` / `BB_180` → `P0_IN+` / `P0_IN-`
+	- `BB_45` / `BB_225` → `P45_IN+` / `P45_IN-`
+	- `BB_90` / `BB_270` → `P90_IN+` / `P90_IN-`
+	- `BB_135` / `BB_315` → `P135_IN+` / `P135_IN-`
+
+6. **Driver amplification and ADC drive**  
+	`RX_Driver_Amps` conditions these signals and outputs:
+	- `P0_FDA+/-`, `P45_FDA+/-`, `P90_FDA+/-`, `P135_FDA+/-`
+
+7. **Routing into ADC channels (`ADCs` sheet)**  
+	On the top sheet, driver outputs map into ADC differential inputs as:
+	- `P0_FDA+` → `AIN1N`, `P0_FDA-` → `AIN1P`
+	- `P45_FDA+` → `AIN2N`, `P45_FDA-` → `AIN2P`
+	- `P90_FDA+` → `AIN3N`, `P90_FDA-` → `AIN3P`
+	- `P135_FDA+` → `AIN4N`, `P135_FDA-` → `AIN4P`
+
+8. **Digitization**  
+	The ADC converts the four differential analog channels into serial digital audio data for downstream DSP processing.
+
 ## Pico USB CAT Bring-up (High Level)
 
 We added a small Raspberry Pi Pico firmware that exposes a USB virtual serial port and responds to basic Kenwood-style CAT commands. This lets us confirm the USB connection, command parsing, and expected replies before tying into full radio hardware or logging software.
