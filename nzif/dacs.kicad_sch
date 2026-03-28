@@ -8054,17 +8054,6 @@
 		)
 		(uuid "1d2f47ba-a80c-4a15-b598-c42a294b94c7")
 	)
-	(hierarchical_label "DLRCLK"
-		(shape input)
-		(at 133.35 106.68 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "2063b3dd-4e8b-41b3-b09a-4ad05f6d9a2a")
-	)
 	(hierarchical_label "DAC_MONITOR1"
 		(shape output)
 		(at 251.46 114.3 0)
@@ -8097,17 +8086,6 @@
 			(justify right)
 		)
 		(uuid "3b301338-264a-499c-85cb-8ac237b12edb")
-	)
-	(hierarchical_label "DBCLK"
-		(shape input)
-		(at 133.35 104.14 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "4fdd54d0-ab2c-4b1e-a3cb-cd2da6d5393e")
 	)
 	(hierarchical_label "DAC_P315+"
 		(shape output)
@@ -8142,6 +8120,17 @@
 		)
 		(uuid "6d1dec0f-3fc0-443b-8b7d-94dbe7933db4")
 	)
+	(hierarchical_label "DAC_BCLK"
+		(shape input)
+		(at 133.35 104.14 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "74861156-c499-4f13-a026-b2652bd2f0cd")
+	)
 	(hierarchical_label "DAC_P315-"
 		(shape output)
 		(at 306.07 101.6 0)
@@ -8163,6 +8152,17 @@
 			(justify left)
 		)
 		(uuid "7a8e7065-8b83-49a0-82ab-0a5dbc5b6e1e")
+	)
+	(hierarchical_label "DAC_LRCLK"
+		(shape input)
+		(at 133.35 106.68 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "8bc8f135-0343-460a-badc-1a2775567820")
 	)
 	(hierarchical_label "DAC_P135+"
 		(shape output)
