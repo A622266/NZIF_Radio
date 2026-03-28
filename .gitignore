@@ -15,7 +15,18 @@ build/
 *-backups/
 fp-info-cache
 *.kicad_pcb-bak
+*.kicad_sch-bak
 *.sch-bak
+*.bak
 _autosave-*
+
+# VS Code workspace files
+*.code-workspace
+
+# SPICE simulation outputs
+*.log
+*.raw
+*.op.raw
+*.plt
 
 .gitignore
