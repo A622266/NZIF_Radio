@@ -151,6 +151,194 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:L_Iron_Small"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "L"
+				(at 1.27 1.016 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "L_Iron_Small"
+				(at 1.27 -1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Inductor with iron core, small symbol"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "inductor choke coil reactor magnetic"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Choke_* *Coil* Inductor_* L_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "L_Iron_Small_0_1"
+				(arc
+					(start 0 2.032)
+					(mid 0.5058 1.524)
+					(end 0 1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 1.016)
+					(mid 0.5058 0.508)
+					(end 0 0)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 0)
+					(mid 0.5058 -0.508)
+					(end 0 -1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 -1.016)
+					(mid 0.5058 -1.524)
+					(end 0 -2.032)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 2.032) (xy 0.762 -2.032)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.016 -2.032) (xy 1.016 2.032)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "L_Iron_Small_1_1"
+				(pin passive line
+					(at 0 2.54 270)
+					(length 0.508)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 0.508)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:L_Small"
 			(pin_numbers
 				(hide yes)
@@ -436,6 +624,173 @@
 					(at 0 -2.54 90)
 					(length 1.016)
 					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Diode:1N4148WT"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "1N4148WT"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Diode_SMD:D_SOD-523"
+				(at 0 -4.445 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.diodes.com/assets/Datasheets/ds30396.pdf"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "75V 0.15A Fast switching Diode, SOD-523"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Device" "D"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Pins" "1=K 2=A"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "D*SOD?523*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "1N4148WT_0_1"
+				(polyline
+					(pts
+						(xy -1.27 1.27) (xy -1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy -1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "1N4148WT_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -851,6 +1206,194 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "nzif_radio_symbol_library:LT8330xS6"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at 0 8.89 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "LT8330xS6"
+				(at 0 -8.89 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Package_TO_SOT_SMD:TSOT-23-6"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/lt8330.pdf"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Low IQ boost/SEPIC/inverting converter with 1A, 60V switch"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "LT8330 boost sepic inverting"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "TSOT*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "LT8330xS6_0_0"
+				(rectangle
+					(start -7.62 7.62)
+					(end 7.62 -7.62)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin input line
+					(at -10.16 2.54 0)
+					(length 2.54)
+					(name "EN/UVLO"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -10.16 -2.54 0)
+					(length 2.54)
+					(name "FBX"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 10.16 270)
+					(length 2.54)
+					(name "VIN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -10.16 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 10.16 2.54 180)
+					(length 2.54)
+					(name "SW"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 10.16 -2.54 180)
+					(length 2.54)
+					(name "INTVCC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:GND"
 			(power)
 			(pin_numbers
@@ -982,6 +1525,18 @@
 		(uuid "1d1f9b6f-6587-492c-bdfb-4a60adfe3d82")
 	)
 	(junction
+		(at 143.51 184.15)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "22d9ef73-af0f-45b2-8068-3a84a74286bf")
+	)
+	(junction
+		(at 213.36 184.15)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "31106fef-1cde-4c36-8f12-64404edd2295")
+	)
+	(junction
 		(at 167.64 35.56)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -994,16 +1549,40 @@
 		(uuid "35ada53f-2c8d-43e0-b3c1-c28d4dd85159")
 	)
 	(junction
+		(at 111.76 207.01)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "363d1e29-5806-4c29-bce0-f47950f528e3")
+	)
+	(junction
 		(at 111.76 63.5)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "39c6a90a-14ca-47fb-9f91-340a84a54535")
 	)
 	(junction
+		(at 199.39 218.44)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "40d423f6-aa98-470e-b2b2-b2aa156d1259")
+	)
+	(junction
 		(at 227.33 78.74)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "4162ceef-5fcb-437e-aa17-616a1c8b97f3")
+	)
+	(junction
+		(at 213.36 198.12)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "45e4aa0a-e664-432d-96ee-e0da0d909d1b")
+	)
+	(junction
+		(at 124.46 184.15)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4632867b-8ee8-4c79-9f20-b59a31a6bf20")
 	)
 	(junction
 		(at 154.94 144.78)
@@ -1034,6 +1613,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "55a648c7-cdf3-4f06-81eb-51416e9992ec")
+	)
+	(junction
+		(at 111.76 125.73)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "59cf603c-a801-4b9c-a04d-24bb11338a8e")
 	)
 	(junction
 		(at 130.81 34.29)
@@ -1126,6 +1711,12 @@
 		(uuid "b9789d2b-6085-4e06-b794-24a0f5f1b564")
 	)
 	(junction
+		(at 154.94 184.15)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c16e528a-1907-4575-88eb-67e5cf984ce8")
+	)
+	(junction
 		(at 186.69 128.27)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1138,10 +1729,22 @@
 		(uuid "c80fef79-6970-4b61-a08d-e8885ffd3ac2")
 	)
 	(junction
+		(at 199.39 209.55)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c9fa02c1-2411-41d5-8dec-713ff39e90bd")
+	)
+	(junction
 		(at 121.92 26.67)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d0fd3fc5-05af-4da6-bbb1-13f1602cdc42")
+	)
+	(junction
+		(at 111.76 172.72)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d4a44038-9c56-4f1b-9917-622829c8f77a")
 	)
 	(junction
 		(at 134.62 78.74)
@@ -1156,10 +1759,22 @@
 		(uuid "dc8a0fc9-3b34-4b9c-9c01-240dd8d57c66")
 	)
 	(junction
+		(at 171.45 184.15)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "dc8ef3de-c0ad-46d3-9ade-f91b212b0c08")
+	)
+	(junction
 		(at 167.64 29.21)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e9d729b1-f5ff-4d21-8c55-932e4e75e377")
+	)
+	(junction
+		(at 199.39 184.15)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fb324660-68a5-4258-aef3-bc59d2a7636e")
 	)
 	(junction
 		(at 151.13 45.72)
@@ -1215,6 +1830,16 @@
 	)
 	(wire
 		(pts
+			(xy 143.51 184.15) (xy 146.05 184.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0d70e83d-d20e-469f-9592-2ac2f4026f17")
+	)
+	(wire
+		(pts
 			(xy 134.62 133.35) (xy 139.7 133.35)
 		)
 		(stroke
@@ -1255,6 +1880,46 @@
 	)
 	(wire
 		(pts
+			(xy 143.51 199.39) (xy 143.51 184.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "129880e8-7d16-4604-b570-a587e55c4270")
+	)
+	(wire
+		(pts
+			(xy 199.39 218.44) (xy 172.72 218.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "138309ff-5e90-4dd0-9263-0fdd3d91547f")
+	)
+	(wire
+		(pts
+			(xy 153.67 212.09) (xy 160.02 212.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "14258976-0852-4fdf-84ab-35ea074ef272")
+	)
+	(wire
+		(pts
+			(xy 111.76 205.74) (xy 111.76 207.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "14325658-a530-4b56-b6bb-00d723480319")
+	)
+	(wire
+		(pts
 			(xy 151.13 45.72) (xy 151.13 46.99)
 		)
 		(stroke
@@ -1282,6 +1947,26 @@
 			(type default)
 		)
 		(uuid "1a04c5db-6b5d-461a-82d3-357f98766064")
+	)
+	(wire
+		(pts
+			(xy 217.17 212.09) (xy 217.17 209.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1a51185e-24e4-4453-958e-85e7cbbed66e")
+	)
+	(wire
+		(pts
+			(xy 154.94 184.15) (xy 160.02 184.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1bd969f1-a59d-46b9-8d3e-a02d09283157")
 	)
 	(wire
 		(pts
@@ -1325,6 +2010,16 @@
 	)
 	(wire
 		(pts
+			(xy 172.72 218.44) (xy 172.72 228.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "280f01f7-d6fa-42ff-bd6d-f74714b0a23a")
+	)
+	(wire
+		(pts
 			(xy 111.76 76.2) (xy 111.76 125.73)
 		)
 		(stroke
@@ -1342,6 +2037,16 @@
 			(type default)
 		)
 		(uuid "2b25f431-97c9-45b2-a927-a3d631b0d874")
+	)
+	(wire
+		(pts
+			(xy 111.76 172.72) (xy 111.76 200.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2beefa6e-fe2f-4c4b-9703-62523e2b576d")
 	)
 	(wire
 		(pts
@@ -1375,6 +2080,26 @@
 	)
 	(wire
 		(pts
+			(xy 111.76 207.01) (xy 111.76 208.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "31f3497c-da1f-410d-bfe9-6703a9992195")
+	)
+	(wire
+		(pts
+			(xy 129.54 212.09) (xy 129.54 228.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "34b647fd-264f-4014-88ff-a68c1ae58848")
+	)
+	(wire
+		(pts
 			(xy 134.62 83.82) (xy 134.62 78.74)
 		)
 		(stroke
@@ -1382,6 +2107,16 @@
 			(type default)
 		)
 		(uuid "35f8c7ec-d456-48e2-a143-04b3df27d492")
+	)
+	(wire
+		(pts
+			(xy 199.39 209.55) (xy 199.39 212.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3975c519-df4a-4369-a77b-a499401b8677")
 	)
 	(wire
 		(pts
@@ -1455,6 +2190,36 @@
 	)
 	(wire
 		(pts
+			(xy 154.94 207.01) (xy 154.94 184.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "468f0534-1f12-443f-8d8b-8b181ff79fd7")
+	)
+	(wire
+		(pts
+			(xy 171.45 189.23) (xy 171.45 184.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "46a33798-54dc-4c2d-9553-6773fb1967cb")
+	)
+	(wire
+		(pts
+			(xy 199.39 224.79) (xy 199.39 228.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "480e047c-3d0a-4a30-a673-50dddd6cf933")
+	)
+	(wire
+		(pts
 			(xy 223.52 30.48) (xy 223.52 29.21)
 		)
 		(stroke
@@ -1462,6 +2227,36 @@
 			(type default)
 		)
 		(uuid "4ce7cb7f-ea70-49dc-b7f9-6622ba54753b")
+	)
+	(wire
+		(pts
+			(xy 165.1 184.15) (xy 171.45 184.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4cf39c72-8113-488a-ba56-7bce7a6196b3")
+	)
+	(wire
+		(pts
+			(xy 153.67 207.01) (xy 154.94 207.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4d243bd6-265d-4308-90d9-6402ee7c4a7e")
+	)
+	(wire
+		(pts
+			(xy 194.31 184.15) (xy 199.39 184.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4d3d4007-1535-4012-918c-7827ba4c79ec")
 	)
 	(wire
 		(pts
@@ -1535,6 +2330,16 @@
 	)
 	(wire
 		(pts
+			(xy 217.17 218.44) (xy 199.39 218.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "55ac5357-901b-449f-9a82-0613ca8238c0")
+	)
+	(wire
+		(pts
 			(xy 111.76 63.5) (xy 96.52 63.5)
 		)
 		(stroke
@@ -1605,6 +2410,26 @@
 	)
 	(wire
 		(pts
+			(xy 213.36 193.04) (xy 213.36 198.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "653266c5-cd5f-440c-ad8e-493076eb20f9")
+	)
+	(wire
+		(pts
+			(xy 133.35 212.09) (xy 129.54 212.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "66dd8b00-7870-455d-ba3c-c64d74afd724")
+	)
+	(wire
+		(pts
 			(xy 171.45 128.27) (xy 177.8 128.27)
 		)
 		(stroke
@@ -1622,6 +2447,16 @@
 			(type default)
 		)
 		(uuid "682a3989-95b5-4d63-91a5-bf027b5297e4")
+	)
+	(wire
+		(pts
+			(xy 213.36 184.15) (xy 213.36 187.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "682d3eba-6370-4b05-841c-5a4591772a3a")
 	)
 	(wire
 		(pts
@@ -1652,6 +2487,16 @@
 			(type default)
 		)
 		(uuid "6a293fc2-deb7-4c66-8cdb-930e5f11803c")
+	)
+	(wire
+		(pts
+			(xy 199.39 184.15) (xy 213.36 184.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6a7787ca-213d-4622-9a35-8e1f282f3234")
 	)
 	(wire
 		(pts
@@ -1695,6 +2540,16 @@
 	)
 	(wire
 		(pts
+			(xy 143.51 184.15) (xy 124.46 184.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7090887d-afe2-4166-a049-e7bda58df9e1")
+	)
+	(wire
+		(pts
 			(xy 182.88 128.27) (xy 186.69 128.27)
 		)
 		(stroke
@@ -1732,6 +2587,26 @@
 			(type default)
 		)
 		(uuid "756ec05e-d0eb-4be8-ae52-840cdfa8fb1c")
+	)
+	(wire
+		(pts
+			(xy 160.02 212.09) (xy 160.02 213.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7599903b-ec1f-4045-9045-af2a27a039d5")
+	)
+	(wire
+		(pts
+			(xy 171.45 184.15) (xy 189.23 184.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7897ca84-8fe8-47e2-b553-ea48f84f316e")
 	)
 	(wire
 		(pts
@@ -1805,6 +2680,16 @@
 	)
 	(wire
 		(pts
+			(xy 199.39 218.44) (xy 199.39 219.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8e09cc0e-6bc8-4d97-b71f-7a3164894448")
+	)
+	(wire
+		(pts
 			(xy 130.81 34.29) (xy 135.89 34.29)
 		)
 		(stroke
@@ -1832,6 +2717,26 @@
 			(type default)
 		)
 		(uuid "90342bcf-348d-4ced-b4cd-8ae12608e7a0")
+	)
+	(wire
+		(pts
+			(xy 224.79 177.8) (xy 213.36 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "93f173b3-954c-4e44-8b77-46b81e84b40c")
+	)
+	(wire
+		(pts
+			(xy 217.17 209.55) (xy 199.39 209.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "94b13033-aba0-474c-b2d6-d5a7b53ffaca")
 	)
 	(wire
 		(pts
@@ -1885,6 +2790,16 @@
 	)
 	(wire
 		(pts
+			(xy 124.46 184.15) (xy 124.46 172.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "98d13f52-1c45-4424-8b7c-9f9ec67c0573")
+	)
+	(wire
+		(pts
 			(xy 227.33 128.27) (xy 209.55 128.27)
 		)
 		(stroke
@@ -1892,6 +2807,16 @@
 			(type default)
 		)
 		(uuid "99a71be0-ae36-4b04-8ad8-90a96ad9aaf4")
+	)
+	(wire
+		(pts
+			(xy 124.46 172.72) (xy 111.76 172.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9b14ad12-3891-4d0d-9c91-7ff65b81b287")
 	)
 	(wire
 		(pts
@@ -1965,6 +2890,16 @@
 	)
 	(wire
 		(pts
+			(xy 124.46 187.96) (xy 124.46 184.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a8f8fc3f-8f16-4f83-876b-bdd3ccd79ffb")
+	)
+	(wire
+		(pts
 			(xy 163.83 35.56) (xy 167.64 35.56)
 		)
 		(stroke
@@ -1995,6 +2930,16 @@
 	)
 	(wire
 		(pts
+			(xy 171.45 198.12) (xy 213.36 198.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ac4f42cf-2ea1-41f7-b29a-78f69ff8e392")
+	)
+	(wire
+		(pts
 			(xy 227.33 85.09) (xy 227.33 86.36)
 		)
 		(stroke
@@ -2002,6 +2947,16 @@
 			(type default)
 		)
 		(uuid "aecddf2b-b92b-4b17-8965-f5a73f086eed")
+	)
+	(wire
+		(pts
+			(xy 154.94 184.15) (xy 151.13 184.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "af752749-e918-40f8-a3f4-ec7af3f0ef97")
 	)
 	(wire
 		(pts
@@ -2075,6 +3030,26 @@
 	)
 	(wire
 		(pts
+			(xy 172.72 228.6) (xy 129.54 228.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c1dfbac2-7320-4143-a6b7-c4397cfe5ce9")
+	)
+	(wire
+		(pts
+			(xy 111.76 213.36) (xy 111.76 217.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c7214c26-50ac-45ce-9f61-d8cdfb55b799")
+	)
+	(wire
+		(pts
 			(xy 182.88 29.21) (xy 194.31 29.21)
 		)
 		(stroke
@@ -2092,6 +3067,16 @@
 			(type default)
 		)
 		(uuid "c83fede2-8d3f-4221-894c-1995d28389e6")
+	)
+	(wire
+		(pts
+			(xy 111.76 172.72) (xy 111.76 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c9114825-9f2f-4344-a88b-b07461e4ac90")
 	)
 	(wire
 		(pts
@@ -2125,6 +3110,16 @@
 	)
 	(wire
 		(pts
+			(xy 213.36 177.8) (xy 213.36 184.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d04642dd-0f7b-4971-8638-bc19981739e1")
+	)
+	(wire
+		(pts
 			(xy 222.25 151.13) (xy 222.25 135.89)
 		)
 		(stroke
@@ -2145,6 +3140,16 @@
 	)
 	(wire
 		(pts
+			(xy 217.17 217.17) (xy 217.17 218.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d6cb58e9-2987-432e-8753-8ad65cb65137")
+	)
+	(wire
+		(pts
 			(xy 125.73 76.2) (xy 125.73 78.74)
 		)
 		(stroke
@@ -2152,6 +3157,16 @@
 			(type default)
 		)
 		(uuid "d8007e3a-8285-4d47-b486-835044b0f92d")
+	)
+	(wire
+		(pts
+			(xy 213.36 198.12) (xy 213.36 199.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d84f345f-bfa0-42e0-9604-26b365f83d64")
 	)
 	(wire
 		(pts
@@ -2202,6 +3217,16 @@
 			(type default)
 		)
 		(uuid "da558103-312a-4628-97fc-51336557e2e7")
+	)
+	(wire
+		(pts
+			(xy 199.39 184.15) (xy 199.39 209.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "df402dfd-14c2-4436-b41c-261cbfb6c08a")
 	)
 	(wire
 		(pts
@@ -2265,6 +3290,16 @@
 	)
 	(wire
 		(pts
+			(xy 199.39 217.17) (xy 199.39 218.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ed87d989-ff72-4cf4-8cf3-ccb8ba4bfe68")
+	)
+	(wire
+		(pts
 			(xy 161.29 29.21) (xy 167.64 29.21)
 		)
 		(stroke
@@ -2282,6 +3317,16 @@
 			(type default)
 		)
 		(uuid "ef08bf38-42ea-49cc-8818-ade3ceb24689")
+	)
+	(wire
+		(pts
+			(xy 111.76 207.01) (xy 133.35 207.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f0f5d672-a077-407e-8bd8-f0afca854b31")
 	)
 	(wire
 		(pts
@@ -2322,6 +3367,16 @@
 			(type default)
 		)
 		(uuid "f7239aca-e2b7-4167-bea8-c45dd738bdad")
+	)
+	(wire
+		(pts
+			(xy 171.45 196.85) (xy 171.45 198.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f7954042-7288-4701-ba32-6d7f3fad2abc")
 	)
 	(wire
 		(pts
@@ -3278,6 +4333,17 @@
 		)
 		(uuid "2db21e4d-1f28-46ef-ab88-b7cf62e90ce3")
 	)
+	(hierarchical_label "-5V_SW"
+		(shape input)
+		(at 224.79 177.8 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "ab138459-8558-4a09-920a-ea9e492fea92")
+	)
 	(hierarchical_label "+8V_SW"
 		(shape input)
 		(at 233.68 123.19 0)
@@ -3299,6 +4365,100 @@
 			(justify left)
 		)
 		(uuid "fd6810bd-0ab6-4073-bc8c-b17c7af09119")
+	)
+	(symbol
+		(lib_id "Diode:1N4148WT")
+		(at 171.45 193.04 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "078d2f62-15f6-4757-a24c-c5af18b6b827")
+		(property "Reference" "D?"
+			(at 173.99 191.7699 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "NXP PMEG6010CEJ"
+			(at 173.99 194.3099 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 175.895 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 171.45 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 171.45 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 171.45 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 171.45 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "db8d2cc1-0430-42a5-9749-619a560facfb")
+		)
+		(pin "1"
+			(uuid "0ac6aad7-67d1-42c7-83ed-b7b7296eb594")
+		)
+		(instances
+			(project ""
+				(path "/c493ce63-5f0e-4f7e-8352-532a4eb9255e"
+					(reference "D1")
+					(unit 1)
+				)
+			)
+			(project "nzif"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/3655e9dc-6764-4ce9-aa9b-ed58af2a1dde"
+					(reference "D?")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -3357,6 +4517,12 @@
 			(uuid "91ab4982-0337-4804-9315-7ffae07fdd10")
 		)
 		(instances
+			(project "power_switching_reg"
+				(path "/c493ce63-5f0e-4f7e-8352-532a4eb9255e"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 			(project "sdr_12p"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/3655e9dc-6764-4ce9-aa9b-ed58af2a1dde"
 					(reference "#PWR01110")
@@ -3434,6 +4600,12 @@
 			(uuid "ecde6c82-5432-4900-babb-bc1b08c3aaaa")
 		)
 		(instances
+			(project "power_switching_reg"
+				(path "/c493ce63-5f0e-4f7e-8352-532a4eb9255e"
+					(reference "R?")
+					(unit 1)
+				)
+			)
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/3655e9dc-6764-4ce9-aa9b-ed58af2a1dde"
 					(reference "R1109")
@@ -3512,9 +4684,181 @@
 			(uuid "06a68f89-618c-4f38-af92-c28d0c9dba76")
 		)
 		(instances
+			(project "power_switching_reg"
+				(path "/c493ce63-5f0e-4f7e-8352-532a4eb9255e"
+					(reference "D?")
+					(unit 1)
+				)
+			)
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/3655e9dc-6764-4ce9-aa9b-ed58af2a1dde"
 					(reference "D1103")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 160.02 215.9 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "111568ba-0c45-485a-b805-744d59d0b730")
+		(property "Reference" "C?"
+			(at 156.21 214.376 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1u"
+			(at 152.908 215.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 160.02 215.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 160.02 215.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 160.02 215.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey Part #" ""
+			(at 160.02 215.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b0802fc8-fa16-4712-a8f7-f444f379b337")
+		)
+		(pin "2"
+			(uuid "ae5b06fb-3dc9-4aba-8520-de90072d76a4")
+		)
+		(instances
+			(project "power_switching_reg"
+				(path "/c493ce63-5f0e-4f7e-8352-532a4eb9255e"
+					(reference "C2")
+					(unit 1)
+				)
+			)
+			(project "nzif"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/3655e9dc-6764-4ce9-aa9b-ed58af2a1dde"
+					(reference "C?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 217.17 214.63 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1158e210-9d11-4b54-8112-b1f25fdf8c5d")
+		(property "Reference" "C?"
+			(at 213.36 213.106 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "4.7p"
+			(at 210.058 214.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 217.17 214.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 217.17 214.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 217.17 214.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey Part #" ""
+			(at 217.17 214.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "342b1c3c-259f-4f6b-a8ee-3d3e423af78a")
+		)
+		(pin "2"
+			(uuid "89c73e5f-b9f1-411f-9e48-cb402960fb5e")
+		)
+		(instances
+			(project "power_switching_reg"
+				(path "/c493ce63-5f0e-4f7e-8352-532a4eb9255e"
+					(reference "C5")
+					(unit 1)
+				)
+			)
+			(project "nzif"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/3655e9dc-6764-4ce9-aa9b-ed58af2a1dde"
+					(reference "C?")
 					(unit 1)
 				)
 			)
@@ -3589,6 +4933,12 @@
 			(uuid "53f23218-f92c-4334-b13b-3847fdcec7b8")
 		)
 		(instances
+			(project "power_switching_reg"
+				(path "/c493ce63-5f0e-4f7e-8352-532a4eb9255e"
+					(reference "C?")
+					(unit 1)
+				)
+			)
 			(project "sdr_12p"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/3655e9dc-6764-4ce9-aa9b-ed58af2a1dde"
 					(reference "C1101")
@@ -3654,6 +5004,12 @@
 			(uuid "331c64ba-a056-4001-a29b-e42b7d6c0865")
 		)
 		(instances
+			(project "power_switching_reg"
+				(path "/c493ce63-5f0e-4f7e-8352-532a4eb9255e"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 			(project "sdr_12p"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/3655e9dc-6764-4ce9-aa9b-ed58af2a1dde"
 					(reference "#PWR01101")
@@ -3731,6 +5087,12 @@
 			(uuid "87a78809-9465-47fe-aad2-eb21a2dd93ca")
 		)
 		(instances
+			(project "power_switching_reg"
+				(path "/c493ce63-5f0e-4f7e-8352-532a4eb9255e"
+					(reference "R?")
+					(unit 1)
+				)
+			)
 			(project "sdr_12p"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/3655e9dc-6764-4ce9-aa9b-ed58af2a1dde"
 					(reference "R1101")
@@ -3808,9 +5170,89 @@
 			(uuid "e017e807-ac2f-4eee-a1ad-c5e923a79b0a")
 		)
 		(instances
+			(project "power_switching_reg"
+				(path "/c493ce63-5f0e-4f7e-8352-532a4eb9255e"
+					(reference "R?")
+					(unit 1)
+				)
+			)
 			(project "sdr_12p"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/3655e9dc-6764-4ce9-aa9b-ed58af2a1dde"
 					(reference "R1105")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:L_Iron_Small")
+		(at 191.77 184.15 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2e6327cd-8f3e-4a84-8176-59f926d6f33a")
+		(property "Reference" "L?"
+			(at 191.77 177.8 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "2.7u Wurth WE-TDC 8018 74489430027"
+			(at 191.77 180.34 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 191.77 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 191.77 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Inductor with iron core, small symbol"
+			(at 191.77 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "a68a209f-27a6-45a2-818b-291035ca4bf3")
+		)
+		(pin "1"
+			(uuid "dc9bd7b4-c8fb-475e-919d-bdaed4312ba8")
+		)
+		(instances
+			(project "power_switching_reg"
+				(path "/c493ce63-5f0e-4f7e-8352-532a4eb9255e"
+					(reference "L1")
+					(unit 1)
+				)
+			)
+			(project "nzif"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/3655e9dc-6764-4ce9-aa9b-ed58af2a1dde"
+					(reference "L?")
 					(unit 1)
 				)
 			)
@@ -3885,6 +5327,12 @@
 			(uuid "d75caf50-402b-42e8-8c1a-56a2d669b199")
 		)
 		(instances
+			(project "power_switching_reg"
+				(path "/c493ce63-5f0e-4f7e-8352-532a4eb9255e"
+					(reference "R?")
+					(unit 1)
+				)
+			)
 			(project "sdr_12p"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/3655e9dc-6764-4ce9-aa9b-ed58af2a1dde"
 					(reference "R1106")
@@ -3962,6 +5410,12 @@
 			(uuid "1ef92e7c-52c6-4942-b130-247e89e434b1")
 		)
 		(instances
+			(project "power_switching_reg"
+				(path "/c493ce63-5f0e-4f7e-8352-532a4eb9255e"
+					(reference "R?")
+					(unit 1)
+				)
+			)
 			(project "sdr_12p"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/3655e9dc-6764-4ce9-aa9b-ed58af2a1dde"
 					(reference "R1104")
@@ -4027,9 +5481,103 @@
 			(uuid "7026effb-e45a-4e27-a4c5-7513c1512424")
 		)
 		(instances
+			(project "power_switching_reg"
+				(path "/c493ce63-5f0e-4f7e-8352-532a4eb9255e"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 			(project "sdr_12p"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/3655e9dc-6764-4ce9-aa9b-ed58af2a1dde"
 					(reference "#PWR01113")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "nzif_radio_symbol_library:LT8330xS6")
+		(at 143.51 209.55 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "34512c6b-5262-4f13-b255-3b72f9120717")
+		(property "Reference" "U?"
+			(at 145.6533 196.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "LT8330xS6"
+			(at 145.6533 199.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:TSOT-23-6"
+			(at 143.51 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/lt8330.pdf"
+			(at 143.51 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Low IQ boost/SEPIC/inverting converter with 1A, 60V switch"
+			(at 143.51 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "583d4bab-d991-4c4c-97b0-2dd4cfce5d8d")
+		)
+		(pin "4"
+			(uuid "9ccba0f4-8651-4acb-b098-58261a86d900")
+		)
+		(pin "1"
+			(uuid "a32c2a89-0720-4a82-8509-b979857fbb8f")
+		)
+		(pin "2"
+			(uuid "824d0359-4966-43dc-b445-6009b907b4b0")
+		)
+		(pin "5"
+			(uuid "ed060e41-12f1-4f8e-86cb-2e28783d53ff")
+		)
+		(pin "6"
+			(uuid "4158313b-3ce4-4e98-90f2-5047f14d9179")
+		)
+		(instances
+			(project ""
+				(path "/c493ce63-5f0e-4f7e-8352-532a4eb9255e"
+					(reference "U1")
+					(unit 1)
+				)
+			)
+			(project "nzif"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/3655e9dc-6764-4ce9-aa9b-ed58af2a1dde"
+					(reference "U?")
 					(unit 1)
 				)
 			)
@@ -4104,6 +5652,12 @@
 			(uuid "9eff0ea5-9a83-41d6-b9e5-760d24bd1d33")
 		)
 		(instances
+			(project "power_switching_reg"
+				(path "/c493ce63-5f0e-4f7e-8352-532a4eb9255e"
+					(reference "C?")
+					(unit 1)
+				)
+			)
 			(project "sdr_12p"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/3655e9dc-6764-4ce9-aa9b-ed58af2a1dde"
 					(reference "C1110")
@@ -4181,9 +5735,98 @@
 			(uuid "b0ffda24-e1a0-4f32-8948-6ae17fa8d116")
 		)
 		(instances
+			(project "power_switching_reg"
+				(path "/c493ce63-5f0e-4f7e-8352-532a4eb9255e"
+					(reference "R?")
+					(unit 1)
+				)
+			)
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/3655e9dc-6764-4ce9-aa9b-ed58af2a1dde"
 					(reference "R1103")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 199.39 214.63 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "43d3a788-f25a-4650-8009-5ab37c3dc23b")
+		(property "Reference" "R?"
+			(at 195.58 213.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1M"
+			(at 200.66 214.376 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 199.39 214.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 199.39 214.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 199.39 214.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey Part #" ""
+			(at 199.39 214.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b501a192-0d17-4ce4-8280-e949d93ff481")
+		)
+		(pin "2"
+			(uuid "ec80d08d-9489-4d50-b2e9-3e509051cc28")
+		)
+		(instances
+			(project "power_switching_reg"
+				(path "/c493ce63-5f0e-4f7e-8352-532a4eb9255e"
+					(reference "R3")
+					(unit 1)
+				)
+			)
+			(project "nzif"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/3655e9dc-6764-4ce9-aa9b-ed58af2a1dde"
+					(reference "R?")
 					(unit 1)
 				)
 			)
@@ -4257,9 +5900,86 @@
 			(uuid "11d03399-71a9-41dd-8441-287fadfd3e35")
 		)
 		(instances
+			(project "power_switching_reg"
+				(path "/c493ce63-5f0e-4f7e-8352-532a4eb9255e"
+					(reference "L?")
+					(unit 1)
+				)
+			)
 			(project "sdr_12p"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/3655e9dc-6764-4ce9-aa9b-ed58af2a1dde"
 					(reference "L1101")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 111.76 217.17 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "535a3480-3c6c-4586-a4de-02a584e34c5d")
+		(property "Reference" "#PWR?"
+			(at 111.76 223.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 111.76 222.758 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 111.76 217.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 111.76 217.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 111.76 217.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "6767d310-ddf8-4ca9-8e39-ad2a52a876f3")
+		)
+		(instances
+			(project "power_switching_reg"
+				(path "/c493ce63-5f0e-4f7e-8352-532a4eb9255e"
+					(reference "#PWR02")
+					(unit 1)
+				)
+			)
+			(project "nzif"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/3655e9dc-6764-4ce9-aa9b-ed58af2a1dde"
+					(reference "#PWR?")
 					(unit 1)
 				)
 			)
@@ -4334,6 +6054,12 @@
 			(uuid "64aa4cdf-79de-405d-bd6c-a810970f1fc9")
 		)
 		(instances
+			(project "power_switching_reg"
+				(path "/c493ce63-5f0e-4f7e-8352-532a4eb9255e"
+					(reference "C?")
+					(unit 1)
+				)
+			)
 			(project "sdr_12p"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/3655e9dc-6764-4ce9-aa9b-ed58af2a1dde"
 					(reference "C1114")
@@ -4412,9 +6138,98 @@
 			(uuid "45c19c0b-8510-4cc4-92c0-f22c3a11822e")
 		)
 		(instances
+			(project "power_switching_reg"
+				(path "/c493ce63-5f0e-4f7e-8352-532a4eb9255e"
+					(reference "D?")
+					(unit 1)
+				)
+			)
 			(project "sdr_12p"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/3655e9dc-6764-4ce9-aa9b-ed58af2a1dde"
 					(reference "D1102")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 124.46 190.5 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5f43df98-bf38-46d4-aa42-fc65781b02c3")
+		(property "Reference" "C?"
+			(at 120.65 188.976 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "4.7u"
+			(at 114.554 192.532 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 124.46 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 124.46 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 124.46 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey Part #" ""
+			(at 124.46 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6b6d4906-47c6-4c94-a8ff-a1279ee8cadb")
+		)
+		(pin "2"
+			(uuid "8de04a4e-8c55-4f2c-b51f-6b29f43eccd8")
+		)
+		(instances
+			(project "power_switching_reg"
+				(path "/c493ce63-5f0e-4f7e-8352-532a4eb9255e"
+					(reference "C1")
+					(unit 1)
+				)
+			)
+			(project "nzif"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/3655e9dc-6764-4ce9-aa9b-ed58af2a1dde"
+					(reference "C?")
 					(unit 1)
 				)
 			)
@@ -4477,6 +6292,12 @@
 			(uuid "c79d140f-acff-480b-bfe4-1a77ba5a2fe5")
 		)
 		(instances
+			(project "power_switching_reg"
+				(path "/c493ce63-5f0e-4f7e-8352-532a4eb9255e"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 			(project "sdr_12p"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/3655e9dc-6764-4ce9-aa9b-ed58af2a1dde"
 					(reference "#PWR01114")
@@ -4553,6 +6374,12 @@
 			(uuid "a60daebf-c43d-42bb-8e3d-eefd5c06052d")
 		)
 		(instances
+			(project "power_switching_reg"
+				(path "/c493ce63-5f0e-4f7e-8352-532a4eb9255e"
+					(reference "L?")
+					(unit 1)
+				)
+			)
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/3655e9dc-6764-4ce9-aa9b-ed58af2a1dde"
 					(reference "L1103")
@@ -4630,6 +6457,12 @@
 			(uuid "3083a24c-f910-49db-a0df-71e6a197eeb3")
 		)
 		(instances
+			(project "power_switching_reg"
+				(path "/c493ce63-5f0e-4f7e-8352-532a4eb9255e"
+					(reference "C?")
+					(unit 1)
+				)
+			)
 			(project "sdr_12p"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/3655e9dc-6764-4ce9-aa9b-ed58af2a1dde"
 					(reference "C1105")
@@ -4729,6 +6562,12 @@
 			(uuid "c7e1c396-70bd-47c7-9ee0-2d4d76387267")
 		)
 		(instances
+			(project "power_switching_reg"
+				(path "/c493ce63-5f0e-4f7e-8352-532a4eb9255e"
+					(reference "U?")
+					(unit 1)
+				)
+			)
 			(project ""
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/3655e9dc-6764-4ce9-aa9b-ed58af2a1dde"
 					(reference "U1101")
@@ -4806,6 +6645,12 @@
 			(uuid "32a03b66-23d8-48ea-9241-4e7b8637db8c")
 		)
 		(instances
+			(project "power_switching_reg"
+				(path "/c493ce63-5f0e-4f7e-8352-532a4eb9255e"
+					(reference "C?")
+					(unit 1)
+				)
+			)
 			(project "sdr_12p"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/3655e9dc-6764-4ce9-aa9b-ed58af2a1dde"
 					(reference "C1104")
@@ -4883,9 +6728,98 @@
 			(uuid "705020fa-3031-4a7b-916f-2a82dd8c6d66")
 		)
 		(instances
+			(project "power_switching_reg"
+				(path "/c493ce63-5f0e-4f7e-8352-532a4eb9255e"
+					(reference "C?")
+					(unit 1)
+				)
+			)
 			(project "sdr_12p"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/3655e9dc-6764-4ce9-aa9b-ed58af2a1dde"
 					(reference "C1107")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 199.39 222.25 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "71da4848-e0d4-4608-8999-8173912a75c1")
+		(property "Reference" "R?"
+			(at 195.58 220.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "191k"
+			(at 200.914 222.504 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 199.39 222.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 199.39 222.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 199.39 222.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey Part #" ""
+			(at 199.39 222.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d0398455-6657-4194-bc9c-3716df2340c9")
+		)
+		(pin "2"
+			(uuid "5d02f628-200e-4eb9-9de3-33ae637d1eb7")
+		)
+		(instances
+			(project "power_switching_reg"
+				(path "/c493ce63-5f0e-4f7e-8352-532a4eb9255e"
+					(reference "R4")
+					(unit 1)
+				)
+			)
+			(project "nzif"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/3655e9dc-6764-4ce9-aa9b-ed58af2a1dde"
+					(reference "R?")
 					(unit 1)
 				)
 			)
@@ -4948,6 +6882,12 @@
 			(uuid "e81c5b65-0adb-4225-8d63-b1087c3ea014")
 		)
 		(instances
+			(project "power_switching_reg"
+				(path "/c493ce63-5f0e-4f7e-8352-532a4eb9255e"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/3655e9dc-6764-4ce9-aa9b-ed58af2a1dde"
 					(reference "#PWR01103")
@@ -5013,9 +6953,86 @@
 			(uuid "d847a656-e804-4e77-9ce5-44ce371d7366")
 		)
 		(instances
+			(project "power_switching_reg"
+				(path "/c493ce63-5f0e-4f7e-8352-532a4eb9255e"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 			(project "sdr_12p"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/3655e9dc-6764-4ce9-aa9b-ed58af2a1dde"
 					(reference "#PWR01105")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 213.36 199.39 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "767ef462-a4ed-4767-a383-ac6819a8eaca")
+		(property "Reference" "#PWR?"
+			(at 213.36 205.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 213.36 204.978 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 213.36 199.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 213.36 199.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 213.36 199.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "08f29670-176c-4abc-a227-7bf7b7d9e8eb")
+		)
+		(instances
+			(project "power_switching_reg"
+				(path "/c493ce63-5f0e-4f7e-8352-532a4eb9255e"
+					(reference "#PWR05")
+					(unit 1)
+				)
+			)
+			(project "nzif"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/3655e9dc-6764-4ce9-aa9b-ed58af2a1dde"
+					(reference "#PWR?")
 					(unit 1)
 				)
 			)
@@ -5078,6 +7095,12 @@
 			(uuid "330bd831-bbbd-4d35-83bc-20eea3ab9023")
 		)
 		(instances
+			(project "power_switching_reg"
+				(path "/c493ce63-5f0e-4f7e-8352-532a4eb9255e"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/3655e9dc-6764-4ce9-aa9b-ed58af2a1dde"
 					(reference "#PWR01115")
@@ -5155,6 +7178,12 @@
 			(uuid "1b4e8940-8b2c-41aa-9bbe-b9f604a8e77d")
 		)
 		(instances
+			(project "power_switching_reg"
+				(path "/c493ce63-5f0e-4f7e-8352-532a4eb9255e"
+					(reference "R?")
+					(unit 1)
+				)
+			)
 			(project "sdr_12p"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/3655e9dc-6764-4ce9-aa9b-ed58af2a1dde"
 					(reference "R1107")
@@ -5232,9 +7261,98 @@
 			(uuid "d38f11c9-bc6e-4d15-85ba-fd9c6002f82a")
 		)
 		(instances
+			(project "power_switching_reg"
+				(path "/c493ce63-5f0e-4f7e-8352-532a4eb9255e"
+					(reference "C?")
+					(unit 1)
+				)
+			)
 			(project "sdr_12p"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/3655e9dc-6764-4ce9-aa9b-ed58af2a1dde"
 					(reference "C1113")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 162.56 184.15 90)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "84df1758-e4cb-469e-bbc5-90df701fbc5e")
+		(property "Reference" "C?"
+			(at 160.528 182.372 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1u"
+			(at 164.338 182.626 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 162.56 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 162.56 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 162.56 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey Part #" ""
+			(at 162.56 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2e7a1515-c082-47fd-a4bd-4c28f17c5efb")
+		)
+		(pin "2"
+			(uuid "da06f564-0b16-46c0-bd20-e072d9f430e0")
+		)
+		(instances
+			(project "power_switching_reg"
+				(path "/c493ce63-5f0e-4f7e-8352-532a4eb9255e"
+					(reference "C3")
+					(unit 1)
+				)
+			)
+			(project "nzif"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/3655e9dc-6764-4ce9-aa9b-ed58af2a1dde"
+					(reference "C?")
 					(unit 1)
 				)
 			)
@@ -5309,9 +7427,86 @@
 			(uuid "87d1113b-687b-4cf2-8cbf-1f06fa5f6e39")
 		)
 		(instances
+			(project "power_switching_reg"
+				(path "/c493ce63-5f0e-4f7e-8352-532a4eb9255e"
+					(reference "C?")
+					(unit 1)
+				)
+			)
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/3655e9dc-6764-4ce9-aa9b-ed58af2a1dde"
 					(reference "C1109")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 124.46 193.04 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8939f199-2a5f-4b06-863f-6fc9299cfdc4")
+		(property "Reference" "#PWR?"
+			(at 124.46 199.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 124.46 198.628 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 124.46 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 124.46 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 124.46 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c5eee540-5223-476e-930e-d31d5ea9500f")
+		)
+		(instances
+			(project "power_switching_reg"
+				(path "/c493ce63-5f0e-4f7e-8352-532a4eb9255e"
+					(reference "#PWR01")
+					(unit 1)
+				)
+			)
+			(project "nzif"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/3655e9dc-6764-4ce9-aa9b-ed58af2a1dde"
+					(reference "#PWR?")
 					(unit 1)
 				)
 			)
@@ -5374,6 +7569,12 @@
 			(uuid "906974ac-cad5-4a00-98f9-0e6d73a7a073")
 		)
 		(instances
+			(project "power_switching_reg"
+				(path "/c493ce63-5f0e-4f7e-8352-532a4eb9255e"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 			(project "sdr_12p"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/3655e9dc-6764-4ce9-aa9b-ed58af2a1dde"
 					(reference "#PWR01108")
@@ -5451,6 +7652,12 @@
 			(uuid "84b6b182-f006-49d8-9b98-a964babfc101")
 		)
 		(instances
+			(project "power_switching_reg"
+				(path "/c493ce63-5f0e-4f7e-8352-532a4eb9255e"
+					(reference "C?")
+					(unit 1)
+				)
+			)
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/3655e9dc-6764-4ce9-aa9b-ed58af2a1dde"
 					(reference "C1112")
@@ -5528,6 +7735,12 @@
 			(uuid "4ae662d8-9ef1-4795-bc41-a2f178a2526e")
 		)
 		(instances
+			(project "power_switching_reg"
+				(path "/c493ce63-5f0e-4f7e-8352-532a4eb9255e"
+					(reference "C?")
+					(unit 1)
+				)
+			)
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/3655e9dc-6764-4ce9-aa9b-ed58af2a1dde"
 					(reference "C1106")
@@ -5593,6 +7806,12 @@
 			(uuid "4cbd07ef-899c-4457-88ac-866ea24e3f3f")
 		)
 		(instances
+			(project "power_switching_reg"
+				(path "/c493ce63-5f0e-4f7e-8352-532a4eb9255e"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 			(project "sdr_12p"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/3655e9dc-6764-4ce9-aa9b-ed58af2a1dde"
 					(reference "#PWR01102")
@@ -5658,9 +7877,157 @@
 			(uuid "6fe04328-6376-44bf-9ec7-11a00427e7bb")
 		)
 		(instances
+			(project "power_switching_reg"
+				(path "/c493ce63-5f0e-4f7e-8352-532a4eb9255e"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/3655e9dc-6764-4ce9-aa9b-ed58af2a1dde"
 					(reference "#PWR01109")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 143.51 219.71 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "aaf9b7de-5d41-4a93-a25e-7a6fd02a610b")
+		(property "Reference" "#PWR?"
+			(at 143.51 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 143.51 225.298 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 143.51 219.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 143.51 219.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 143.51 219.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "dc6d3991-459b-425a-9266-511939f04219")
+		)
+		(instances
+			(project "power_switching_reg"
+				(path "/c493ce63-5f0e-4f7e-8352-532a4eb9255e"
+					(reference "#PWR03")
+					(unit 1)
+				)
+			)
+			(project "nzif"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/3655e9dc-6764-4ce9-aa9b-ed58af2a1dde"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 160.02 218.44 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ad86f7c8-fc88-4e51-896e-a1a9fb40ec73")
+		(property "Reference" "#PWR?"
+			(at 160.02 224.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 160.02 224.028 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 160.02 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 160.02 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 160.02 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "4f06e135-870a-4838-8c08-f92b2cee2aba")
+		)
+		(instances
+			(project "power_switching_reg"
+				(path "/c493ce63-5f0e-4f7e-8352-532a4eb9255e"
+					(reference "#PWR04")
+					(unit 1)
+				)
+			)
+			(project "nzif"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/3655e9dc-6764-4ce9-aa9b-ed58af2a1dde"
+					(reference "#PWR?")
 					(unit 1)
 				)
 			)
@@ -5723,6 +8090,12 @@
 			(uuid "46030d3f-0105-477b-8f86-51a802bab0e0")
 		)
 		(instances
+			(project "power_switching_reg"
+				(path "/c493ce63-5f0e-4f7e-8352-532a4eb9255e"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 			(project "sdr_12p"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/3655e9dc-6764-4ce9-aa9b-ed58af2a1dde"
 					(reference "#PWR01111")
@@ -5788,9 +8161,86 @@
 			(uuid "da746ebd-ae14-44df-8726-04bbfe825c0e")
 		)
 		(instances
+			(project "power_switching_reg"
+				(path "/c493ce63-5f0e-4f7e-8352-532a4eb9255e"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/3655e9dc-6764-4ce9-aa9b-ed58af2a1dde"
 					(reference "#PWR01118")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 199.39 228.6 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b49cc0ce-50cb-4284-8fe7-2067bf806487")
+		(property "Reference" "#PWR?"
+			(at 199.39 234.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 199.39 234.188 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 199.39 228.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 199.39 228.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 199.39 228.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e8b7c59a-4675-457b-99fd-689b071ab1f2")
+		)
+		(instances
+			(project "power_switching_reg"
+				(path "/c493ce63-5f0e-4f7e-8352-532a4eb9255e"
+					(reference "#PWR06")
+					(unit 1)
+				)
+			)
+			(project "nzif"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/3655e9dc-6764-4ce9-aa9b-ed58af2a1dde"
+					(reference "#PWR?")
 					(unit 1)
 				)
 			)
@@ -5865,6 +8315,12 @@
 			(uuid "841e0a0c-2a16-4202-b635-fb9586d3ea30")
 		)
 		(instances
+			(project "power_switching_reg"
+				(path "/c493ce63-5f0e-4f7e-8352-532a4eb9255e"
+					(reference "C?")
+					(unit 1)
+				)
+			)
 			(project "sdr_12p"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/3655e9dc-6764-4ce9-aa9b-ed58af2a1dde"
 					(reference "C1102")
@@ -5941,6 +8397,12 @@
 			(uuid "16790472-007a-4164-81ff-fe1afd3df5c5")
 		)
 		(instances
+			(project "power_switching_reg"
+				(path "/c493ce63-5f0e-4f7e-8352-532a4eb9255e"
+					(reference "L?")
+					(unit 1)
+				)
+			)
 			(project "sdr_12p"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/3655e9dc-6764-4ce9-aa9b-ed58af2a1dde"
 					(reference "L1102")
@@ -6006,6 +8468,12 @@
 			(uuid "b1d1d63e-6f60-40a7-9b1f-62dbf1ccac14")
 		)
 		(instances
+			(project "power_switching_reg"
+				(path "/c493ce63-5f0e-4f7e-8352-532a4eb9255e"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 			(project "sdr_12p"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/3655e9dc-6764-4ce9-aa9b-ed58af2a1dde"
 					(reference "#PWR01120")
@@ -6083,6 +8551,12 @@
 			(uuid "b241a55a-e0b2-47a0-8b04-7db25ddc0ad1")
 		)
 		(instances
+			(project "power_switching_reg"
+				(path "/c493ce63-5f0e-4f7e-8352-532a4eb9255e"
+					(reference "C?")
+					(unit 1)
+				)
+			)
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/3655e9dc-6764-4ce9-aa9b-ed58af2a1dde"
 					(reference "C1115")
@@ -6160,6 +8634,12 @@
 			(uuid "93d6909d-ec36-4b2b-a7fa-cddc75616c42")
 		)
 		(instances
+			(project "power_switching_reg"
+				(path "/c493ce63-5f0e-4f7e-8352-532a4eb9255e"
+					(reference "C?")
+					(unit 1)
+				)
+			)
 			(project "sdr_12p"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/3655e9dc-6764-4ce9-aa9b-ed58af2a1dde"
 					(reference "C1108")
@@ -6237,6 +8717,12 @@
 			(uuid "2e2836a6-9610-4174-8b49-7f3493f3becd")
 		)
 		(instances
+			(project "power_switching_reg"
+				(path "/c493ce63-5f0e-4f7e-8352-532a4eb9255e"
+					(reference "C?")
+					(unit 1)
+				)
+			)
 			(project "sdr_12p"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/3655e9dc-6764-4ce9-aa9b-ed58af2a1dde"
 					(reference "C1111")
@@ -6302,6 +8788,12 @@
 			(uuid "4d6c40a0-ea39-4fc2-b15f-8c641777ecd5")
 		)
 		(instances
+			(project "power_switching_reg"
+				(path "/c493ce63-5f0e-4f7e-8352-532a4eb9255e"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 			(project "sdr_12p"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/3655e9dc-6764-4ce9-aa9b-ed58af2a1dde"
 					(reference "#PWR01107")
@@ -6380,6 +8872,12 @@
 			(uuid "c9738ddb-5bc9-415b-9bcd-1bcac673c71d")
 		)
 		(instances
+			(project "power_switching_reg"
+				(path "/c493ce63-5f0e-4f7e-8352-532a4eb9255e"
+					(reference "D?")
+					(unit 1)
+				)
+			)
 			(project "sdr_12p"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/3655e9dc-6764-4ce9-aa9b-ed58af2a1dde"
 					(reference "D1101")
@@ -6457,9 +8955,98 @@
 			(uuid "d14af665-043c-445c-b2cb-00d871b9938c")
 		)
 		(instances
+			(project "power_switching_reg"
+				(path "/c493ce63-5f0e-4f7e-8352-532a4eb9255e"
+					(reference "C?")
+					(unit 1)
+				)
+			)
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/3655e9dc-6764-4ce9-aa9b-ed58af2a1dde"
 					(reference "C1103")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 213.36 190.5 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e5435750-a79a-49e2-893f-969015cec853")
+		(property "Reference" "C?"
+			(at 209.55 188.976 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "4.7u Murata GRM21BR71C475k"
+			(at 215.392 186.944 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 213.36 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 213.36 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 213.36 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey Part #" ""
+			(at 213.36 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "add81745-ea3a-41bc-aead-4b4b320ae989")
+		)
+		(pin "2"
+			(uuid "25e4f6e3-60eb-4e8b-b0d1-7c13d4b26b4b")
+		)
+		(instances
+			(project "power_switching_reg"
+				(path "/c493ce63-5f0e-4f7e-8352-532a4eb9255e"
+					(reference "C4")
+					(unit 1)
+				)
+			)
+			(project "nzif"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/3655e9dc-6764-4ce9-aa9b-ed58af2a1dde"
+					(reference "C?")
 					(unit 1)
 				)
 			)
@@ -6534,6 +9121,12 @@
 			(uuid "bed6736e-e9b4-40ca-afa7-0a9d3c7ef631")
 		)
 		(instances
+			(project "power_switching_reg"
+				(path "/c493ce63-5f0e-4f7e-8352-532a4eb9255e"
+					(reference "R?")
+					(unit 1)
+				)
+			)
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/3655e9dc-6764-4ce9-aa9b-ed58af2a1dde"
 					(reference "R1108")
@@ -6599,6 +9192,12 @@
 			(uuid "66cf5e20-233b-45ed-8e4b-d8d8dcaf7e46")
 		)
 		(instances
+			(project "power_switching_reg"
+				(path "/c493ce63-5f0e-4f7e-8352-532a4eb9255e"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/3655e9dc-6764-4ce9-aa9b-ed58af2a1dde"
 					(reference "#PWR01106")
@@ -6664,6 +9263,12 @@
 			(uuid "30c8e37f-62de-4466-8af0-0d1ea9dc9b1f")
 		)
 		(instances
+			(project "power_switching_reg"
+				(path "/c493ce63-5f0e-4f7e-8352-532a4eb9255e"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/3655e9dc-6764-4ce9-aa9b-ed58af2a1dde"
 					(reference "#PWR01121")
@@ -6729,6 +9334,12 @@
 			(uuid "a27ec021-7bff-4e8f-a285-1f24a50f1661")
 		)
 		(instances
+			(project "power_switching_reg"
+				(path "/c493ce63-5f0e-4f7e-8352-532a4eb9255e"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 			(project "sdr_12p"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/3655e9dc-6764-4ce9-aa9b-ed58af2a1dde"
 					(reference "#PWR01104")
@@ -6794,6 +9405,12 @@
 			(uuid "c5694bb9-04b7-4fcd-b678-2a0e927933bc")
 		)
 		(instances
+			(project "power_switching_reg"
+				(path "/c493ce63-5f0e-4f7e-8352-532a4eb9255e"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/3655e9dc-6764-4ce9-aa9b-ed58af2a1dde"
 					(reference "#PWR01112")
@@ -6893,6 +9510,12 @@
 			(uuid "56db71ff-ba21-4158-8a14-faf409732ea2")
 		)
 		(instances
+			(project "power_switching_reg"
+				(path "/c493ce63-5f0e-4f7e-8352-532a4eb9255e"
+					(reference "U?")
+					(unit 1)
+				)
+			)
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/3655e9dc-6764-4ce9-aa9b-ed58af2a1dde"
 					(reference "U1103")
@@ -6992,6 +9615,12 @@
 			(uuid "d094a855-71f8-4fd5-adcc-02e7c1162286")
 		)
 		(instances
+			(project "power_switching_reg"
+				(path "/c493ce63-5f0e-4f7e-8352-532a4eb9255e"
+					(reference "U?")
+					(unit 1)
+				)
+			)
 			(project ""
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/3655e9dc-6764-4ce9-aa9b-ed58af2a1dde"
 					(reference "U1102")
@@ -7069,6 +9698,12 @@
 			(uuid "60bf8907-bb21-455b-b1b5-634263387fdb")
 		)
 		(instances
+			(project "power_switching_reg"
+				(path "/c493ce63-5f0e-4f7e-8352-532a4eb9255e"
+					(reference "R?")
+					(unit 1)
+				)
+			)
 			(project "sdr_12p"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/3655e9dc-6764-4ce9-aa9b-ed58af2a1dde"
 					(reference "R1102")
@@ -7134,6 +9769,12 @@
 			(uuid "8844dcaa-d244-42cf-acb1-fd2e47972f59")
 		)
 		(instances
+			(project "power_switching_reg"
+				(path "/c493ce63-5f0e-4f7e-8352-532a4eb9255e"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 			(project "sdr_12p"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/3655e9dc-6764-4ce9-aa9b-ed58af2a1dde"
 					(reference "#PWR01117")
@@ -7199,6 +9840,12 @@
 			(uuid "cf9ddfcb-6138-49c3-95f1-78fdbbde3eb9")
 		)
 		(instances
+			(project "power_switching_reg"
+				(path "/c493ce63-5f0e-4f7e-8352-532a4eb9255e"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 			(project "sdr_12p"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/3655e9dc-6764-4ce9-aa9b-ed58af2a1dde"
 					(reference "#PWR01116")
@@ -7264,6 +9911,12 @@
 			(uuid "f92dd4ab-6e39-4bf9-a612-fa46385a3148")
 		)
 		(instances
+			(project "power_switching_reg"
+				(path "/c493ce63-5f0e-4f7e-8352-532a4eb9255e"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 			(project "sdr_12p"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/3655e9dc-6764-4ce9-aa9b-ed58af2a1dde"
 					(reference "#PWR01119")
@@ -7272,4 +9925,250 @@
 			)
 		)
 	)
+	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 111.76 203.2 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "fdc85d92-0c87-4cc1-abc4-440b185bb4d1")
+		(property "Reference" "R?"
+			(at 107.95 201.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1M"
+			(at 113.03 202.946 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 111.76 203.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 111.76 203.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 111.76 203.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey Part #" ""
+			(at 111.76 203.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f8e8e2e9-af5c-438a-97d8-9d5a7250623b")
+		)
+		(pin "2"
+			(uuid "d7394de8-8206-44ec-9804-70b6eed44618")
+		)
+		(instances
+			(project "power_switching_reg"
+				(path "/c493ce63-5f0e-4f7e-8352-532a4eb9255e"
+					(reference "R1")
+					(unit 1)
+				)
+			)
+			(project "nzif"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/3655e9dc-6764-4ce9-aa9b-ed58af2a1dde"
+					(reference "R?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 111.76 210.82 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ff899b1c-f24e-4626-a6f3-c116d65523dc")
+		(property "Reference" "R?"
+			(at 107.95 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "806k"
+			(at 113.284 211.074 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 111.76 210.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 111.76 210.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 111.76 210.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey Part #" ""
+			(at 111.76 210.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e1c0078e-7685-45b6-9d06-32b95ab6c700")
+		)
+		(pin "2"
+			(uuid "b5c9b912-e67b-4da5-9536-0914f607fbb6")
+		)
+		(instances
+			(project "power_switching_reg"
+				(path "/c493ce63-5f0e-4f7e-8352-532a4eb9255e"
+					(reference "R2")
+					(unit 1)
+				)
+			)
+			(project "nzif"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/3655e9dc-6764-4ce9-aa9b-ed58af2a1dde"
+					(reference "R?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:L_Iron_Small")
+		(at 148.59 184.15 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ffef5bb3-2d25-471e-b4e6-2c1538db2b64")
+		(property "Reference" "L?"
+			(at 148.59 177.8 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "2.7u Wurth WE-TDC 8018 74489430027"
+			(at 148.59 180.34 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 148.59 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 148.59 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Inductor with iron core, small symbol"
+			(at 148.59 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "46e31ed6-8e31-4035-844d-91614530daa7")
+		)
+		(pin "1"
+			(uuid "4b0828a5-902d-4509-a772-31d48ca15e01")
+		)
+		(instances
+			(project ""
+				(path "/c493ce63-5f0e-4f7e-8352-532a4eb9255e"
+					(reference "L2")
+					(unit 1)
+				)
+			)
+			(project "nzif"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/3655e9dc-6764-4ce9-aa9b-ed58af2a1dde"
+					(reference "L?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
 )
