@@ -1,52 +1,21 @@
-# KiCad lock files
-*.lck
+# IDE and Tooling
+.history/
+.vscode/
+*.swp
 
-# KiCad autosave files
-*-save.kicad_*
-*-save.pro
-*-save.sch
-*-save.pcb
+# OS generated files
+.DS_Store
+thumbs.db
 
-# KiCad backup files
-*.bak
-*.bck
+# Build artifacts (if any)
+build/
+
+# KiCad
+*.kicad_prl
 *-backups/
-*~
+fp-info-cache
+*.kicad_pcb-bak
+*.sch-bak
 _autosave-*
 
-# KiCad local project settings
-*.kicad_prl
-
-# KiCad rescue libraries (auto-generated)
-*-rescue.lib
-*-rescue.dcm
-*-rescue.kicad_sym
-
-# Footprint cache
-fp-info-cache
-
-# Netlists (auto-generated)
-*.net
-*.xml
-
-# Archive files
-*.zip
-*.rar
-*.7z
-
-# OS files
-.DS_Store
-Thumbs.db
-*.tmp
-
-#vscode files
-*.vscode
-NZIF_Radio.code-workspace
-
-# Pico build output
-firmware/usb_cdc/build/
-
-# LTspice outputs
-*.raw
-*.log
-*.plt
+.gitignore
