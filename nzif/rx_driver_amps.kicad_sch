@@ -2788,7 +2788,7 @@
 	)
 	(wire
 		(pts
-			(xy 147.32 17.78) (xy 149.86 17.78)
+			(xy 147.32 17.78) (xy 151.13 17.78)
 		)
 		(stroke
 			(width 0)
@@ -3478,6 +3478,16 @@
 	)
 	(wire
 		(pts
+			(xy 334.01 139.7) (xy 334.01 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "666e10a5-0263-4081-b525-70a954cb4d44")
+	)
+	(wire
+		(pts
 			(xy 252.73 17.78) (xy 252.73 59.69)
 		)
 		(stroke
@@ -3568,6 +3578,16 @@
 	)
 	(wire
 		(pts
+			(xy 151.13 17.78) (xy 151.13 16.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6effb1ae-90ee-4fb2-b64d-95ab79616490")
+	)
+	(wire
+		(pts
 			(xy 266.7 83.82) (xy 215.9 83.82)
 		)
 		(stroke
@@ -3608,7 +3628,7 @@
 	)
 	(wire
 		(pts
-			(xy 346.71 17.78) (xy 349.25 17.78)
+			(xy 346.71 17.78) (xy 353.06 17.78)
 		)
 		(stroke
 			(width 0)
@@ -4228,6 +4248,16 @@
 	)
 	(wire
 		(pts
+			(xy 154.94 138.43) (xy 154.94 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a4d1220b-2947-4a6b-9de6-a30b80d36f7b")
+	)
+	(wire
+		(pts
 			(xy 316.23 139.7) (xy 327.66 139.7)
 		)
 		(stroke
@@ -4385,6 +4415,16 @@
 			(type default)
 		)
 		(uuid "aeefe489-cb40-4893-946f-be71ba8c1efc")
+	)
+	(wire
+		(pts
+			(xy 353.06 17.78) (xy 353.06 16.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "af31f4d4-b432-4dca-a39d-00214f4f7f70")
 	)
 	(wire
 		(pts
@@ -4898,7 +4938,7 @@
 	)
 	(wire
 		(pts
-			(xy 327.66 139.7) (xy 330.2 139.7)
+			(xy 327.66 139.7) (xy 334.01 139.7)
 		)
 		(stroke
 			(width 0)
@@ -5158,7 +5198,7 @@
 	)
 	(wire
 		(pts
-			(xy 149.86 138.43) (xy 152.4 138.43)
+			(xy 149.86 138.43) (xy 154.94 138.43)
 		)
 		(stroke
 			(width 0)
@@ -6553,17 +6593,6 @@
 		)
 		(uuid "2d27b825-fa1d-4a91-85e5-27f71ee64ecf")
 	)
-	(hierarchical_label "-3.5V"
-		(shape input)
-		(at 330.2 139.7 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "37e03510-b285-427b-aedf-4ef67a5440e2")
-	)
 	(hierarchical_label "P135_IN-"
 		(shape input)
 		(at 223.52 173.99 0)
@@ -6607,17 +6636,6 @@
 			(justify left)
 		)
 		(uuid "6bc5ecde-df5d-4c1c-ba41-6eed51644fab")
-	)
-	(hierarchical_label "-3.5V"
-		(shape input)
-		(at 349.25 17.78 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "6e048bb6-053b-40ca-9035-1c238ce9a5ec")
 	)
 	(hierarchical_label "P90_IN+"
 		(shape input)
@@ -6684,28 +6702,6 @@
 			(justify left)
 		)
 		(uuid "97c98d6d-1039-4144-9c61-dfe08b7aed48")
-	)
-	(hierarchical_label "-3.5V"
-		(shape input)
-		(at 149.86 17.78 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "aeb93094-be09-4750-b0b4-abecfdad21f2")
-	)
-	(hierarchical_label "-3.5V"
-		(shape input)
-		(at 152.4 138.43 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "c0a21474-ef0d-4b86-b58d-a6a648090e23")
 	)
 	(hierarchical_label "uC_GAIN_SEL"
 		(shape input)
@@ -6783,6 +6779,77 @@
 			(justify left)
 		)
 		(uuid "fb6eebdc-f320-4fc4-a625-ab03a6fe3c96")
+	)
+	(symbol
+		(lib_id "power:+6V")
+		(at 151.13 16.51 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "02cde705-3843-4d2e-952d-ab4085479118")
+		(property "Reference" "#PWR?"
+			(at 151.13 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "-3.5V_RX_OPAMPS"
+			(at 161.036 13.208 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 151.13 16.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 151.13 16.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+6V\""
+			(at 151.13 16.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9df38b8f-2d30-4f26-9b24-81c915c1001e")
+		)
+		(instances
+			(project "rx_driver_amps"
+				(path "/cb3fab6e-a757-4199-afa5-bf686be52cbe"
+					(reference "#PWR039")
+					(unit 1)
+				)
+			)
+			(project "nzif"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/e205b7df-8868-4193-af84-e6054aca82af"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "Device:C_Small")
@@ -10365,6 +10432,77 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+6V")
+		(at 154.94 134.62 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4a7df32e-523a-4ec6-955a-9701a807b820")
+		(property "Reference" "#PWR?"
+			(at 154.94 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "-3.5V_RX_OPAMPS"
+			(at 164.846 131.318 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 154.94 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 154.94 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+6V\""
+			(at 154.94 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a2d5c8bb-da58-4c26-962c-b4078c5454d0")
+		)
+		(instances
+			(project "rx_driver_amps"
+				(path "/cb3fab6e-a757-4199-afa5-bf686be52cbe"
+					(reference "#PWR040")
+					(unit 1)
+				)
+			)
+			(project "nzif"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/e205b7df-8868-4193-af84-e6054aca82af"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Small")
 		(at 267.97 22.86 0)
 		(unit 1)
@@ -11965,6 +12103,77 @@
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/e205b7df-8868-4193-af84-e6054aca82af"
 					(reference "R322")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+6V")
+		(at 334.01 135.89 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "658e0724-c4e2-413b-88f1-60e08dda8281")
+		(property "Reference" "#PWR?"
+			(at 334.01 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "-3.5V_RX_OPAMPS"
+			(at 343.916 132.588 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 334.01 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 334.01 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+6V\""
+			(at 334.01 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "785565f5-c5c1-4030-95a9-c8ea58f1b271")
+		)
+		(instances
+			(project "rx_driver_amps"
+				(path "/cb3fab6e-a757-4199-afa5-bf686be52cbe"
+					(reference "#PWR041")
+					(unit 1)
+				)
+			)
+			(project "nzif"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/e205b7df-8868-4193-af84-e6054aca82af"
+					(reference "#PWR?")
 					(unit 1)
 				)
 			)
@@ -18231,6 +18440,77 @@
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/e205b7df-8868-4193-af84-e6054aca82af"
 					(reference "#PWR0348")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+6V")
+		(at 353.06 16.51 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ec0f65b2-be4b-454b-be21-3553ca7b7b13")
+		(property "Reference" "#PWR?"
+			(at 353.06 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "-3.5V_RX_OPAMPS"
+			(at 362.966 13.208 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 353.06 16.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 353.06 16.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+6V\""
+			(at 353.06 16.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1d3387c5-3fa0-4e38-9c8c-8b8998868ed8")
+		)
+		(instances
+			(project "rx_driver_amps"
+				(path "/cb3fab6e-a757-4199-afa5-bf686be52cbe"
+					(reference "#PWR042")
+					(unit 1)
+				)
+			)
+			(project "nzif"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/e205b7df-8868-4193-af84-e6054aca82af"
+					(reference "#PWR?")
 					(unit 1)
 				)
 			)
