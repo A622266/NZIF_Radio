@@ -777,6 +777,16 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "Make sure these are the 3.3V version of the switches.  \nTx needs 3.3V, Rx needs 5V"
+		(exclude_from_sim no)
+		(at 163.83 96.012 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "71faa074-ab9d-4505-b0e4-4473f3d2e0a1")
+	)
 	(junction
 		(at 97.79 97.79)
 		(diameter 0)
@@ -2962,7 +2972,7 @@
 				)
 			)
 		)
-		(property "Value" "+5V_TX_MIXER"
+		(property "Value" "+3.3V_TX_MIXER"
 			(at 81.28 90.17 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3046,7 +3056,7 @@
 				)
 			)
 		)
-		(property "Value" "+5V_TX_MIXER"
+		(property "Value" "+3.3V_TX_MIXER"
 			(at 80.01 26.67 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5920,7 +5930,7 @@
 				)
 			)
 		)
-		(property "Value" "+5V_TX_MIXER"
+		(property "Value" "+3.3V_TX_MIXER"
 			(at 201.93 88.9 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6385,7 +6395,7 @@
 				)
 			)
 		)
-		(property "Value" "+5V_TX_MIXER"
+		(property "Value" "+3.3V_TX_MIXER"
 			(at 203.2 25.4 0)
 			(show_name no)
 			(do_not_autoplace no)

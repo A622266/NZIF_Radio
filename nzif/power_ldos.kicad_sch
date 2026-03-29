@@ -1400,7 +1400,7 @@
 		)
 		(uuid "330120f6-5c41-4a28-8b69-ef2aa798467b")
 	)
-	(text "5V Power for Tx Switches"
+	(text "3.3V Power for Tx Switches"
 		(exclude_from_sim no)
 		(at 131.572 18.288 0)
 		(effects
@@ -1470,7 +1470,7 @@
 		)
 		(uuid "98becdc8-c16e-47fc-b452-64034c249162")
 	)
-	(text "Resistor sets 5V output\nUse high quality cap such as COG"
+	(text "Resistor sets 3.3V output\nUse high quality cap such as COG"
 		(exclude_from_sim no)
 		(at 172.212 74.93 0)
 		(effects
@@ -11515,13 +11515,14 @@
 			)
 		)
 		(property "Value" "+5V_RX_MIXER"
-			(at 95.25 27.94 0)
+			(at 97.79 31.7499 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -11598,7 +11599,7 @@
 				)
 			)
 		)
-		(property "Value" "+5V_TX_MIXER"
+		(property "Value" "+3.3V_TX_MIXER"
 			(at 195.58 27.94 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11682,7 +11683,7 @@
 				)
 			)
 		)
-		(property "Value" "+5V_LOUDSPEAKER"
+		(property "Value" "+3.3V_LOUDSPEAKER"
 			(at 195.58 101.6 0)
 			(show_name no)
 			(do_not_autoplace no)

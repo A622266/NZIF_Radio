@@ -4304,6 +4304,10 @@
 		(uuid "8bce47fd-7e21-4ddd-900b-46d399e98814")
 	)
 	(no_connect
+		(at 350.52 154.94)
+		(uuid "8ccd8e3c-dc81-4421-bac6-6a710dc42f53")
+	)
+	(no_connect
 		(at 350.52 139.7)
 		(uuid "8ea088ea-873e-417c-b765-1ba81ea889f9")
 	)
@@ -4968,16 +4972,6 @@
 			(type default)
 		)
 		(uuid "42fe750f-8858-465e-b788-1c42ee9c9faf")
-	)
-	(wire
-		(pts
-			(xy 350.52 154.94) (xy 370.84 154.94)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "438880d9-706d-41fe-8208-49b6eaca4f9b")
 	)
 	(wire
 		(pts
@@ -6480,12 +6474,12 @@
 		(uuid "00a769bb-45cb-4044-b7db-80c98fe8c5be")
 	)
 	(label "VDrive"
-		(at 266.7 152.4 180)
+		(at 266.7 152.4 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
 		(uuid "106e28d9-bb7a-4cb0-8475-f572ce277301")
 	)
@@ -6500,12 +6494,12 @@
 		(uuid "21e18715-8e00-46f0-9b96-82bc7752793a")
 	)
 	(label "PLL_FILT"
-		(at 264.16 96.52 180)
+		(at 264.16 96.52 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
 		(uuid "23c9478b-f894-4a4f-a20e-d722f270314c")
 	)
@@ -6530,22 +6524,22 @@
 		(uuid "2ba6f8d7-6c91-439d-a036-cba4d3abb2a8")
 	)
 	(label "MOSI_M"
-		(at 266.7 114.3 180)
+		(at 266.7 114.3 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
 		(uuid "2bed47e5-baf2-4fe8-8720-41d852362f49")
 	)
 	(label "~{RESET}"
-		(at 264.16 99.06 180)
+		(at 264.16 99.06 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
 		(uuid "35544dea-c743-4dfa-93bb-af34826beed7")
 	)
@@ -6570,12 +6564,12 @@
 		(uuid "490bb4da-00f2-4aef-ab7c-57af547db823")
 	)
 	(label "SCLK_M"
-		(at 266.7 119.38 180)
+		(at 266.7 119.38 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
 		(uuid "512b580e-a40b-4def-b75b-df75ce370fd3")
 	)
@@ -6600,12 +6594,12 @@
 		(uuid "63c52e44-c015-4e90-bae6-4c8014bd5fc3")
 	)
 	(label "SELFBOOT"
-		(at 370.84 144.78 0)
+		(at 370.84 144.78 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "790af9c5-62ce-4a95-920f-f7a23db68d8e")
 	)
@@ -6680,12 +6674,12 @@
 		(uuid "bdc2b236-6dc1-45fe-afb7-5e31e5ed6085")
 	)
 	(label "SS_M"
-		(at 266.7 111.76 180)
+		(at 266.7 111.76 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
 		(uuid "c1378d0e-ca23-49a0-8619-7a1d24ef3187")
 	)
@@ -6700,12 +6694,12 @@
 		(uuid "c3d94ff7-d8b2-4475-af06-225e0d945e45")
 	)
 	(label "MiSO_M"
-		(at 266.7 121.92 180)
+		(at 266.7 121.92 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
 		(uuid "c3df309b-e4d0-4462-af62-ceb6d1bde2cf")
 	)
@@ -6887,7 +6881,7 @@
 		)
 		(uuid "3ea8f160-29c8-4814-b4d0-bed8517ac3a3")
 	)
-	(hierarchical_label "MOSI"
+	(hierarchical_label "ADDR1"
 		(shape input)
 		(at 266.7 132.08 180)
 		(effects
@@ -6898,7 +6892,7 @@
 		)
 		(uuid "3f6a988a-6fdb-4640-b12c-207c486ffe64")
 	)
-	(hierarchical_label "SS"
+	(hierarchical_label "ADDR0"
 		(shape input)
 		(at 266.7 134.62 180)
 		(effects
@@ -7019,7 +7013,7 @@
 		)
 		(uuid "72fbd05f-77b8-4f92-89fc-f42fbb0bb3d8")
 	)
-	(hierarchical_label "MISO"
+	(hierarchical_label "SDA"
 		(shape output)
 		(at 266.7 127 180)
 		(effects
@@ -7140,7 +7134,7 @@
 		)
 		(uuid "bc20eea3-ddab-4568-b8f7-ba13a8847e9e")
 	)
-	(hierarchical_label "SCLK"
+	(hierarchical_label "SCL"
 		(shape input)
 		(at 266.7 129.54 180)
 		(effects
@@ -7161,17 +7155,6 @@
 			(justify left)
 		)
 		(uuid "c7ba423f-1911-49c2-b89a-6551f88b5618")
-	)
-	(hierarchical_label "DSP_MCLK"
-		(shape input)
-		(at 370.84 154.94 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "ca3ec996-ccec-4139-9ae1-9356166806b8")
 	)
 	(hierarchical_label "TDM3_SDATA_IN_HEAD"
 		(shape input)
