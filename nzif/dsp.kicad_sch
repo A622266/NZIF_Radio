@@ -5215,6 +5215,16 @@
 	)
 	(wire
 		(pts
+			(xy 256.54 160.02) (xy 261.62 160.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "68c64b22-d325-43c2-8133-168790e6665d")
+	)
+	(wire
+		(pts
 			(xy 80.01 172.72) (xy 80.01 170.18)
 		)
 		(stroke
@@ -6916,7 +6926,7 @@
 	)
 	(hierarchical_label "MCLK"
 		(shape input)
-		(at 266.7 160.02 180)
+		(at 256.54 160.02 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -13034,6 +13044,86 @@
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/fa60d9db-5fbc-4f32-9a00-e3130bb41db9"
 					(reference "C502")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 264.16 160.02 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "af0e67fb-91ce-4305-b796-6815ee260254")
+		(property "Reference" "R1215"
+			(at 264.16 153.67 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "49.9"
+			(at 264.16 156.21 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 264.16 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 264.16 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor, small US symbol"
+			(at 264.16 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d5a4f50a-fc24-4732-b1f7-fe1ec9f27f22")
+		)
+		(pin "2"
+			(uuid "6fa04ff4-ae4f-4b97-9bd2-fa18a4b6f65e")
+		)
+		(instances
+			(project "nzif"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/fa60d9db-5fbc-4f32-9a00-e3130bb41db9"
+					(reference "R1215")
 					(unit 1)
 				)
 			)

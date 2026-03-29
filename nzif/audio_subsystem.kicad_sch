@@ -2175,6 +2175,16 @@
 	)
 	(wire
 		(pts
+			(xy 172.72 99.06) (xy 176.53 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "607b056e-e7f8-4a31-a929-226c4e47e5ba")
+	)
+	(wire
+		(pts
 			(xy 264.16 180.34) (xy 264.16 177.8)
 		)
 		(stroke
@@ -2272,16 +2282,6 @@
 			(type default)
 		)
 		(uuid "7411221b-31c1-460f-8a2b-185e16e050a5")
-	)
-	(wire
-		(pts
-			(xy 173.99 99.06) (xy 184.15 99.06)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "77413afe-bc53-49d3-a0ce-b8a8c56732eb")
 	)
 	(wire
 		(pts
@@ -2482,6 +2482,16 @@
 			(type default)
 		)
 		(uuid "be7f564b-bcad-491e-9b8b-b191018f3648")
+	)
+	(wire
+		(pts
+			(xy 181.61 99.06) (xy 184.15 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c0b9de22-5adb-45a4-84f4-99d6cae5d92f")
 	)
 	(wire
 		(pts
@@ -2899,7 +2909,7 @@
 	)
 	(hierarchical_label "MCLK"
 		(shape input)
-		(at 173.99 99.06 180)
+		(at 172.72 99.06 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3281,6 +3291,85 @@
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/91ace161-62c2-4ad0-a80e-f8c3c9bc5e50"
 					(reference "C1204")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 179.07 99.06 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "190513f2-7405-422e-bb40-8147f641ce7a")
+		(property "Reference" "R1216"
+			(at 173.99 97.282 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "49.9"
+			(at 181.102 97.028 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 179.07 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 179.07 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor, small US symbol"
+			(at 179.07 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "95bc641a-8a24-4efd-9301-6d1311cc34c4")
+		)
+		(pin "2"
+			(uuid "e22c0dfc-c1b1-4a22-b14b-95054f06209b")
+		)
+		(instances
+			(project "nzif"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/91ace161-62c2-4ad0-a80e-f8c3c9bc5e50"
+					(reference "R1216")
 					(unit 1)
 				)
 			)
