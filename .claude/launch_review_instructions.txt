@@ -1,0 +1,8 @@
+Run a full schematic review. Use each domain expert in parallel on the relevant sheets:
+- audio-review on nzif/audio_subsystem.kicad_sch
+- clock-review on nzif/clock_tree.kicad_sch
+- power-review on nzif/power_ldos.kicad_sch and nzif/power_switching_reg.kicad_sch
+- precision-review on nzif/adcs.kicad_sch and nzif/dacs.kicad_sch
+- rf-review on nzif/rx_mixer.kicad_sch, nzif/tx_mixer.kicad_sch, and nzif/rx_driver_amps.kicad_sch
+- hf-architecture-review on nzif/nzif.kicad_sch, nzif/dsp.kicad_sch, and nzif/microcontroller.kicad_sch
+Then use review-coordinator to consolidate all findings.
