@@ -1,0 +1,107 @@
+
+body { 
+  background: white;
+  margin: 0em;
+  position: relative;
+}
+h1 { width: calc(100vw - 200px) ;}
+h2 { clear:both }
+
+img, div.sidebar { 
+  clear:both; 
+  border-style:solid; border-width:1px; padding:0.3em; border-color:grey; 
+  background: white;
+  margin:2px; 
+  display:block;
+}
+
+div.sidebar {
+  font-size: 80%;
+  max-width:800px;
+  background: #eeeeee;
+  float:right;
+  margin-left:12px;
+  margin-right:calc(-100vw + 55em);
+}
+
+@media (min-width:1024px) {   /* assuming I never use images of more than 1024 px width */
+  img, div.withoverlay {
+    float:right;
+    margin-left:12px;
+    margin-right:calc(-100vw + 44em);
+  }
+}
+
+img.big, div.big {      /* don't float big images */
+  float:none;
+  border:none;
+  margin:3px;
+  margin-left:0px; margin-right:0px;
+}
+
+pre { 
+  clear:both; 
+  border-style:solid; border-width:1px; border-color:grey; 
+  padding:5px;
+  background-color:#f7f7f7;
+  margin:12px; 
+  margin-left:0px; margin-right:0px;
+}
+
+img.nopad {
+  padding: 0px;
+}
+
+div.withoverlay { position:relative; clear:both; display:block; }
+div.withoverlay { position:relative; clear:both; display:block; }
+img.withoverlay0 { border-width:1px; border-style:solid; border-color:grey; margin:0px; margin-right:0px; clear:none; float:none; padding:0px; top:0px; left:0px; }
+img.withoverlay1, img.withoverlay2 { margin:0px; margin-right:0px; clear:none; float:none; border-width:0px; padding:0px; margin-top: 0px; position:absolute; background:transparent; top:1px; left:1px; }
+img.withoverlay1:hover { opacity:0; }
+img.withoverlay2:not(:hover) { opacity:0; }
+
+table img {
+  clear:none;
+  float:none;
+  margin:0px;
+  padding:0px;
+  border:none;
+}
+
+li { margin-top: 8px; }
+
+.main { max-width: 40em; background: white; padding: 1em; 
+}
+.footer { padding: 1em; clear:both; }
+
+.menu { 
+  width: 100%; 
+  padding: 5px; 
+  background: black;
+  color: #ffffee;
+  z-index:3;
+  overflow:hidden;
+}
+.menu a:link { color: #ffffdd; }
+.menu a:visited { color: #ffff77; }
+.menu > ul { display: inline; list-style: none; padding:3px; }
+.menu li { display: inline; position:relative; }
+.menu > ul > li:before { content: ">"; }
+.menu ul li ul { 
+  position:absolute; left:0px; top:0px; 
+  padding:3px; padding-left: 1em; 
+  background:black;
+  width:100vw;
+}
+.menu > ul > li > ul:before { content: "......"; }
+.menu li li { display:block; padding:2px; background:black; }
+.menu:hover { overflow:visible; z-index:10;}
+
+table {
+  border: 1px solid black; 
+  border-collapse: collapse;
+}
+td, th {
+  border: 1px solid black;
+  padding: 3px;
+  border-collapse: collapse;
+}

@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>The polyphase mixer</title>
+<link rel="stylesheet" type="text/css" href="The%20polyphase%20mixer_files/tn2.css">
+</head>
+
+
+<body><div class="menu">
+<a href="https://pa3fwm.nl/">PA3FWM's amateur radio website</a>
+<ul>
+<li> <a href="https://pa3fwm.nl/technotes/">Technical Notes</a>
+
+</li><li>
+  <ul>
+  <li><a href="https://pa3fwm.nl/technotes/tn05.html#ssbfm">Single-sideband FM</a>
+  </li><li><a href="https://pa3fwm.nl/technotes/tn05.html#soundcard">Soundcards for SDR</a>
+  </li><li><a href="https://pa3fwm.nl/technotes/tn05.html#cap">Capacitance measurement</a>
+  </li><li><a href="https://pa3fwm.nl/technotes/tn05.html#trap">Coaxial traps</a>
+  </li><li><a href="https://pa3fwm.nl/technotes/tn05.html#lpf">Input filter for an active antenna</a>
+  </li><li><a href="https://pa3fwm.nl/technotes/tn06.html">Chirp reception and interpretation</a>
+  </li><li><a href="https://pa3fwm.nl/technotes/tn07.html">Fundamentals of the MiniWhip antenna</a>
+  </li><li><a href="https://pa3fwm.nl/technotes/tn08a.html">Exponentially switchable coil</a>
+  </li><li><a href="https://pa3fwm.nl/technotes/tn08b.html">Capacitance of antenna elements</a>
+  </li><li><a href="https://pa3fwm.nl/technotes/tn08c.html">Alternative use of a sugar cube</a>
+  </li><li><a href="https://pa3fwm.nl/technotes/tn09b.html">Signal/noise ratio of digital amateur modes</a>
+  </li><li><a href="https://pa3fwm.nl/technotes/tn09c.html">Cone-shaped roller inductor</a>
+  </li><li><a href="https://pa3fwm.nl/technotes/tn09d.html">Grounding of MiniWhip and other active whip antennas.</a>
+  </li><li><a href="https://pa3fwm.nl/technotes/tn10b.html">The Gyrator</a>
+  </li><li><a href="https://pa3fwm.nl/technotes/tn10c.html">Integrating signals, and some moonbounce history</a>
+  </li><li><a href="https://pa3fwm.nl/technotes/tn11b.html">Measuring small inductances and capacitance with the "AVR transistortester"</a>
+  </li><li><a href="https://pa3fwm.nl/technotes/tn11c.html">The "Flevo" medium wave transmitting station</a>
+  </li><li><a href="https://pa3fwm.nl/technotes/tn11d.html">Mediumwave musings</a>
+  </li><li><a href="https://pa3fwm.nl/technotes/tn11e.html">Spiral-shaped variable inductor</a>
+  </li><li><a href="https://pa3fwm.nl/technotes/tn13a.html">Quartz crystals</a>
+  </li><li><a href="https://pa3fwm.nl/technotes/tn13b.html">Measuring quartz crystals with the AVR transistor tester</a>
+  </li><li><a href="https://pa3fwm.nl/technotes/tn13c.html">Arecibo in the Netherlands</a>
+  </li><li><a href="https://pa3fwm.nl/technotes/tn13d.html">An experimental new digimode: EbNaut</a>
+  </li><li><a href="https://pa3fwm.nl/technotes/tn14b.html">Transformer-coupled source follower in an active antenna</a>
+  </li><li><a href="https://pa3fwm.nl/technotes/tn14e.html">Passive FM receivers</a>
+  </li><li><a href="https://pa3fwm.nl/technotes/tn14f.html">Measuring tape as antenna material</a>
+  </li><li><a href="https://pa3fwm.nl/technotes/tn14h.html">Nano-crystalline toroidal cores</a>
+  </li><li><a href="https://pa3fwm.nl/technotes/tn15a.html">The "kitchen SDR"</a>
+  </li><li><a href="https://pa3fwm.nl/technotes/tn15b.html">Demonstrating AM sidebands</a>
+  </li><li><a href="https://pa3fwm.nl/technotes/tn15c.html">Single-sideband jubilees, and SSB with full break-in?</a>
+  </li><li><a href="https://pa3fwm.nl/technotes/tn15d.html">Silence on 162 kHz</a>
+  </li><li><a href="https://pa3fwm.nl/technotes/tn15e.html">Taking bearings near a longwave yagi</a>
+  </li><li><a href="https://pa3fwm.nl/technotes/tn15f.html">Digital noise reduction</a>
+  </li><li><a href="https://pa3fwm.nl/technotes/tn16a.html">Antenna with a French twist</a>
+  </li><li><a href="https://pa3fwm.nl/technotes/tn16b.html">Solar flare on September 6, 2017</a>
+  </li><li><a href="https://pa3fwm.nl/technotes/tn16c.html">A Mini-Whip antenna's DXCC score</a>
+  </li><li><a href="https://pa3fwm.nl/technotes/tn16d.html">Patented RF choke</a>
+  </li><li><a href="https://pa3fwm.nl/technotes/tn16e.html">Squelch algorithms</a>
+  </li><li><a href="https://pa3fwm.nl/technotes/tn16f.html">New squelch algorithm for the WebSDR</a>
+  </li><li><a href="https://pa3fwm.nl/technotes/tn17a.html">Relay contacts and "fritting"</a>
+  </li><li><a href="https://pa3fwm.nl/technotes/tn17c.html">The polyphase mixer used in the Airspy HF+</a>
+  </li><li><a href="https://pa3fwm.nl/technotes/tn17d.html">Automatic tuning of digital noise reduction</a>
+  </li><li><a href="https://pa3fwm.nl/technotes/tn17e.html">Musings about a portable LCD TV screen</a>
+  </li><li><a href="https://pa3fwm.nl/technotes/tn19a.html">1008 kHz QRT</a>
+  </li><li><a href="https://pa3fwm.nl/technotes/tn19b.html">Selective fading on longwave</a>
+  </li><li><a href="https://pa3fwm.nl/technotes/tn19c.html">Where did the A, B and C layers go?</a>
+  </li><li><a href="https://pa3fwm.nl/technotes/tn19d.html">Phase and frequency modulation</a>
+  </li><li><a href="https://pa3fwm.nl/technotes/tn19e.html">Tubes for phase modulation</a>
+  </li><li><a href="https://pa3fwm.nl/technotes/tn19f.html">Oscillograms cast in stone</a>
+  </li><li><a href="https://pa3fwm.nl/technotes/tn20.html">How RTL-SDR dongles work</a>
+  </li><li><a href="https://pa3fwm.nl/technotes/tn21-how-does-a-waveguide-work.html">How does a waveguide work?</a>
+  </li><li><a href="https://pa3fwm.nl/technotes/tn22a-strange-resistors.html">Strange resistors</a>
+  </li><li><a href="https://pa3fwm.nl/technotes/tn22d-streetlight-via-the-ionosphere.html">Streetlight via the ionosphere</a>
+  </li><li><a href="https://pa3fwm.nl/technotes/tn24-fm-noise.html">Noise in FM reception</a>
+  </li><li><a href="https://pa3fwm.nl/technotes/tn25a-dipole-radiation.html">Which part of a dipole antenna radiates most?</a>
+  </li><li><a href="https://pa3fwm.nl/technotes/tn25b-near-far-field.html">Near and far fields</a>
+  </li><li><a href="https://pa3fwm.nl/technotes/tn26-sidebands-demo.html">Mandelstam's demonstration of sidebands</a>
+  </li><li><a href="https://pa3fwm.nl/technotes/tn27a-voltmeter.html">The ICL7106 voltmeter chip and how to accelerate it</a>
+  </li><li><a href="https://pa3fwm.nl/technotes/tn27c-resistoroverload.html">Destructive peak dissipation in a resistor</a>
+  </li><li><a href="https://pa3fwm.nl/technotes/tn28-heaviside-transmission-lines.html">Oliver Heaviside and the theory of transmission lines</a>
+  </li><li><a href="https://pa3fwm.nl/technotes/tn29a-dim-bulb-tester.html">The dim bulb tester</a>
+  </li><li><a href="https://pa3fwm.nl/technotes/tn29c-slot-antenna.html">Slot antennas</a>
+  </li><li><a href="https://pa3fwm.nl/technotes/tn29d-island-antenna.html">Island as an antenna</a>
+  </li><li><a href="https://pa3fwm.nl/technotes/tn31-morse-timing.html">Timing of morse code</a>
+  </li><li><a href="https://pa3fwm.nl/technotes/tn32-thermal-noise.html">Thermal noise</a>
+  </li><li><a href="https://pa3fwm.nl/technotes/tn33a-ethernet-hardware.html">Ethernet hardware and its reuse for amateur radio</a>
+  </li><li><a href="https://pa3fwm.nl/technotes/tn33b-cable-attenuation.html">Attenuation in cables</a>
+  </li><li><a href="https://pa3fwm.nl/technotes/tn34-gilbert-cell-mixer.html">Gilbert cell mixers</a>
+  </li><li><a href="https://pa3fwm.nl/technotes/tn35-transistor-symbols.html">Schematic symbols for transistors</a>
+  </li><li><a href="https://pa3fwm.nl/technotes/tn36-zwischenbasis.html">The Zwischenbasis circuit and its use in active loop antennas</a>
+  </li><li><a href="https://pa3fwm.nl/technotes/tn37-dual-emitter-transistors.html">Dual-emitter transistors</a>
+  </li><li><a href="https://pa3fwm.nl/technotes/tn38-longwave-reference.html">EA153k longwave frequency reference receiver</a>
+  </li><li><a href="https://pa3fwm.nl/technotes/tn39-intermodulation-measurement.html">Intermodulation measurement</a>
+  </li><li><a href="https://pa3fwm.nl/technotes/tn40-combiners-splitters.html">Combiners and splitters</a>
+  </li><li><a href="https://pa3fwm.nl/technotes/tn42a-si5351-programming.html">Understanding and enhancing Si5351 programming</a>
+  </li><li><a href="https://pa3fwm.nl/technotes/tn42b-si5351-analysis.html">Si5351 analysis and operation</a>
+  </li><li><a href="https://pa3fwm.nl/technotes/tn41-opamp-active-antenna.html">Opamp-based active antenna</a>
+  </li></ul>
+</li></ul>
+</div>
+
+<div class="main">
+
+<h1>The polyphase mixer</h1>
+<em>Pieter-Tjerk de Boer, PA3FWM <a href="mailto:web@pa3fwm.nl">web@pa3fwm.nl</a></em>
+<p>
+(This is an adapted version of part of an article I wrote for the Dutch
+amateur radio magazine <em>Electron</em>, May 2018.)
+</p><p>
+
+
+</p><h2>Mixer with roots in Twente</h2>
+
+Two reviews [5,6] of the new Airspy HF+ SDR emphasize that it uses a special mixer,
+based on a design from the University of Twente (UT) in the Netherlands.
+This mixer has good large-signal properties and needs less preselection than other mixers because it
+inherently suppresses harmonics.
+As my day job happens to be at the UT, though not in the group which designed this mixer,
+there's ample reason to discuss this mixer here.
+<p>
+
+The mixer is based on work of the IC Design (ICD) group at the UT.
+Much work of this group is about chips for radio applications, including mixers,
+and <a href="https://www.youtube.com/watch?v=iteDDypL8Do">their designs and ideas have ended up in chips used by e.g. many cell phones</a>.
+And now also in this amateur radio SDR.
+</p><p>
+
+(However, sometimes it goes the other way, from amateur radio to science.
+A couple of years ago I told my ICD colleagues about the "Tayloe mixer",
+which is popular for homebrew soundcard-based shortwave SDRs like the Softrock designs;
+it was designed (and patented) by Dan Tayloe N7VE.
+My discussions with the ICD colleagues led to a joint scientific study of the properties of this
+circuit [4], and realisation in experimental chips.)
+
+</p><h2>The polyphase mixer</h2>
+
+<img src="The%20polyphase%20mixer_files/tn17fig3a.png">
+The mixer in the Airspy HF+ is a so-called polyphase mixer.
+To explain how this circuit works, we first return to the well-known Tayloe-mixer,
+see the top-left part of the below figure.
+The Tayloe mixer consists of a switch which rotates at a rate given by the oscillator frequency,
+and sequentially connects the antenna to the four capacitors.
+Each capacitor thus lags its predecessor by 90 degrees.
+Differential amplifiers combine the signals that are 180 degrees out of phase;
+this leads to two output signals, called I (in phase) and Q (quadrature).
+Using those signals, one can distinguish input signals above and below the oscillator frequency (cf. [11]).
+<p>
+
+A disadvantage of the Tayloe mixer is that it also responds to odd harmonics of the oscillator frequency.
+This is illustrated in the lower part of the figure.
+We assume the mixer runs at 1 MHz, so the switch rotates 1 million times per second.
+We ignore the influence of the resistor and the capacitors and just consider how the signal is "chopped up".
+We only look at the 0 and 180 degrees outputs (C1 and C3);
+the other two outputs do exactly the same thing, but 90 degrees later.
+As the switch rotates, the antenna is first connect to C1 during a quarter of the period,
+then a quarter period to C2, and so on.
+The I output signal is the voltage on C1 <i>minus</i> that on C3.
+Effectively the antenna signal is passed on to the I output during a quarter period,
+then not during a quarter period, then again during a quarter period but now inverted,
+and finally again not during a quarter period.
+In other words, we effectively multiply the input signal by +1, then by 0, then by -1, and finally by 0 again.
+This is the "effective LO signal" in the figure.
+</p><p>
+
+If we take a 1 MHz sine wave as the input signal and multiply this by the effective LO signal,
+we get the wavevorm at bottom left in the figure: two positive quarter sine waves.
+After low-pass filtering this (the effect of capacitors C1 and C3), something positive remains.
+That's good: 1 MHz is mixed to a non-zero DC voltage.
+If we were to feed 1.001 MHz to the input, its phase would drift w.r.t. that of the 1.000 MHz LO signal;
+as a consequence, the "DC" output voltage would go up and down with the difference frequency,
+being 1 kHz, exactly as we expect a mixer to do.
+</p><p>
+
+In the center, we see what would happen with an input signal of 2 MHz.
+We see that multiplying this by the effective LO signal results in a positive and a negative
+half sine wave.
+After low-pass filtering, these two halves would cancel, leaving no DC voltage.
+So this mixer does not respond to the second harmonic.
+</p><p>
+
+At the right, we see the same graphs but for an input signal of 3 MHz.
+Multiplying this by our effective LO signal now results in a somewhat more complicated waveform,
+which however is more often positive than negative, so also after low-pass filtering something non-zero remains.
+Thus, our mixer (unfortunately) does respond to signals near the third harmonic of its LO signal.
+</p><p>
+
+In practice this means that if one uses the Tayloe mixer to mix e.g. the 7 MHz band to audio frequencies
+(for further SDR processing via a computer's soundcard),
+also signals in the 21 MHz band will be received.
+To get rid of the 21 MHz signals, a low-pass or band-pass filter between antenna and mixer is needed.
+</p><p>
+
+This happens because the step-shaped effective LO signal also contains the third (and fifth and higher) harmonics.
+If we would mix (multiply) by a pure sine wave, without harmonics, this problem would not occur.
+But technically this is harder to do: it's easier to make a very linear <i>switching</i> mixer than
+one that multiplies by exactly a sinewave.
+</p><p>
+
+<img src="The%20polyphase%20mixer_files/tn17fig3b.png">
+The idea behind the polyphase mixer is to <i>approximate</i> the sinewave by a step-shaped waveform
+in which more harmonics are suppressed.
+This is sketched in the right-most part of the above figure.
+We see that the new step-shaped curve does not have just 4 steps, as in the Tayloe mixer, but 8.
+And the levels being used are not just +1, 0 and -1, but also + and - 0.707,
+or actually √2/2.
+If we do the same calculations as before with a 3 MHz input signal, the resulting output waveform (shown at bottom right)
+is even more complicated than before, but this waveform is symmetric:
+equally much positive as negative.
+After a low-pass filter nothing remains: the mixer no longer responds to the third harmonic!
+A different way of understanding this is by observing that the step-shaped effective LO signal now looks
+more like a sinewave; so much more that the third harmonic is zero, as in fact are all harmonics
+from 2nd up to and including 6th.
+</p><p>
+
+B.t.w., suppressing harmonics in a mixer by using such a step-shaped waveform seems to have been a hobbyist/amateur invention
+(in the context of an FM stereo encoder) around 1988, independently re-invented by professionals about 13
+years later (see [9]).
+</p><p>
+
+One can do even better than with 8 steps.
+We could use a switch with 16 steps and make an effective LO signal in which even more harmonics are suppressed:
+with 16 correctly chosen steps all harmonics from the 2nd up to and including the 14th can be suppressed.
+</p><p>
+
+</p><div style="clear:both"></div>
+<img src="The%20polyphase%20mixer_files/tn17fig4.png">
+
+Another option for improvement is sketched in the adjacent figure: we're back to switches with 8 positions,
+but we now have three of them.
+The coefficients 0.7 and 1 now occur both before and after the switches.
+Effectively, we now apply the same step-shaped sequence twice, once before and once after the switches.
+Doing it only once, either before or after the switches, already suffices to suppress the harmonics
+perfectly; but doing it twice improves the total suppression if the suppression of the separate stages
+is not perfect, e.g. due to manufacturing tolerances.
+<p>
+
+In all these diagrams I purposely didn't specify how to implement those factors 0.7 and the adders in hardware.
+One could do it with resistors, as in the Tayloe circuit, but in integrated circuits other techniques are
+preferred, e.g. voltage-to-current converters at the input and current-to-voltage converters at the output
+as adders.
+Furthermore, integer coefficients are preferred instead of √2/2 = 0.7071...; e.g.
+5/7 = 0.714... or 2/3 = 0.66... .
+Using these approximations does result in less than perfect harmonic suppression,
+which again speaks in favor of using two stages as shown above.
+</p><p>
+
+The Airspy HF+ features an STA709 made by STMicroelectronics (formerly SGS Thomson).
+The exact internals of that STA709 are not made public.
+The small piece of datasheet that is public only shows a very rough block diagram.
+According to [5] and [6] it contains a polyphase harmonic rejection mixer based on a design of the University of Twente.
+But this could be realized in different ways; e.g. like Tayloe, directly at the antenna,
+or with a buffer which can then also give the appropriate multiplication factors
+(like in the Twente patent [7] or the PhD thesis [8]).
+According to the Airspy website, "up to" the 21st harmonic is suppressed.
+But that does not seem to match the statement elsewhere that 16 phases are used,
+because with 16 phase one fundamentally cannot suppress the 15th and 17th harmonic,
+because of aliasing.
+Hopefully someday more information about the innards of this chip will be revealed...
+
+
+</p><h2>References:</h2>
+<br>
+[4] Michiel Soer, Eric Klumperink, Pieter-Tjerk de Boer, Frank van Vliet, Bram Nauta:
+<a href="https://ris.utwente.nl/ws/files/6541817/Soer._IEEE_Transactions_on_Circuits_and_Syst_2010.pdf">Unified
+Frequency Domain Analysis of Switched-Series-RC Passive Mixers and Samplers</a>; IEEE TCAS-I, 2010.
+
+<br>
+[5] Mike Richards, G4WNC: The Airspy HF+ SDR receiver; RadCom 2/2018.
+
+<br>
+[6] Nils Schiffhauer, DK8OK: Ein neues SDR-Konzept: Airspy HF+; Funkamateur 2/2018.
+
+<br>
+[7] <a href="https://patents.google.com/patent/US20110298521">Patent US20110298521</a>
+
+
+<br>
+[8] Zhiyu Ru: 
+<a href="https://research.utwente.nl/en/publications/frequency-translation-techniques-for-interference-robust-software">Frequency Translation Techniques for Interference-Robust Software-Defined radio receivers</a>; PhD thesis, University of Twente, 2009.
+
+<br>
+[9] Pieter-Tjerk de Boer, Mark S. Oude Alink, Eric A.M. Klumperink:
+<a href="https://research.utwente.nl/en/publications/simplified-harmonic-rejection-mixer-analysis-and-design-based-on-">Simplified Harmonic Rejection Mixer Analysis and Design Based on a Filtered Periodic Impulse Model</a>;
+IEEE Transactions on Circuits and Systems II, 2021.
+</div>
+
+<hr>
+<font size="-1">
+Text and pictures on this page are copyright 2018, 2022, P.T. de Boer, web@pa3fwm.nl .
+<br>
+Republication is only allowed with my explicit permission.
+</font>
+
+
+
+
+
+
+</body></html>
