@@ -6195,7 +6195,6 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "046f817c-07b5-44cd-929b-661148b799f4")
 		(property "Reference" "#PWR0933"
 			(at 185.42 196.85 0)
@@ -6208,14 +6207,15 @@
 				)
 			)
 		)
-		(property "Value" "-3.5V_OPAMPS"
-			(at 185.42 187.96 0)
+		(property "Value" "-3.5V_RX_OPAMPS"
+			(at 175.26 187.96 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
