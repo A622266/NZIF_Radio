@@ -11658,7 +11658,6 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "8c8562a6-7bfe-4a34-ad87-5d875c639b38")
 		(property "Reference" "#PWR0936"
 			(at 195.58 110.49 0)
@@ -11671,14 +11670,15 @@
 				)
 			)
 		)
-		(property "Value" "+3.3V_LOUDSPEAKER"
-			(at 195.58 101.6 0)
+		(property "Value" "+5V_LOUDSPEAKER"
+			(at 189.484 102.108 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
