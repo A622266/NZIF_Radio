@@ -5471,11 +5471,12 @@
 		)
 		(uuid "3e1d4ff3-9d2a-4332-b24a-4ca1268f9c38")
 	)
-	(text "Tx switches are 3V"
+	(text "Tx switches are 3.3V"
 		(exclude_from_sim no)
 		(at 395.732 17.78 0)
 		(effects
 			(font
+				(face "Standard Symbols PS")
 				(size 1.27 1.27)
 			)
 		)
@@ -6040,10 +6041,6 @@
 		(uuid "e229ef9b-ba4b-416c-9a43-deba2dba8dfd")
 	)
 	(no_connect
-		(at 186.69 100.33)
-		(uuid "ec3c50e7-f0c6-485c-b1b3-c28f050e5c43")
-	)
-	(no_connect
 		(at 186.69 62.23)
 		(uuid "f3dae167-7ef0-458b-84d8-1d31f7a59c50")
 	)
@@ -6439,7 +6436,7 @@
 	)
 	(wire
 		(pts
-			(xy 41.91 27.94) (xy 41.91 35.56)
+			(xy 36.83 24.13) (xy 36.83 31.75)
 		)
 		(stroke
 			(width 0)
@@ -6756,6 +6753,16 @@
 			(type default)
 		)
 		(uuid "40e0089a-2231-44e7-8429-272f17bdfc81")
+	)
+	(wire
+		(pts
+			(xy 66.04 33.02) (xy 66.04 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "40e08060-74a2-4b98-984f-3e78a148b968")
 	)
 	(wire
 		(pts
@@ -7619,7 +7626,7 @@
 	)
 	(wire
 		(pts
-			(xy 21.59 27.94) (xy 21.59 35.56)
+			(xy 21.59 20.32) (xy 21.59 27.94)
 		)
 		(stroke
 			(width 0)
@@ -9039,7 +9046,7 @@
 	)
 	(wire
 		(pts
-			(xy 62.23 27.94) (xy 62.23 35.56)
+			(xy 53.34 27.94) (xy 53.34 35.56)
 		)
 		(stroke
 			(width 0)
@@ -9348,7 +9355,7 @@
 		(uuid "4d8996d6-4865-4685-8604-e56cef7102d6")
 	)
 	(label "1.8V"
-		(at 21.59 35.56 90)
+		(at 21.59 27.94 90)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9428,7 +9435,7 @@
 		(uuid "68b48f30-102f-4657-836c-0bee7f78cde7")
 	)
 	(label "3.3V"
-		(at 62.23 35.56 90)
+		(at 53.34 35.56 90)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9578,7 +9585,7 @@
 		(uuid "855ac69a-eaf0-467d-8cd0-b68f14bf4ee3")
 	)
 	(label "2.5V"
-		(at 41.91 35.56 90)
+		(at 36.83 31.75 90)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9606,6 +9613,16 @@
 			(justify left bottom)
 		)
 		(uuid "9310f594-94ca-4679-98d0-bf34af3e2d82")
+	)
+	(label "5V"
+		(at 66.04 40.64 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "96f30b8b-aefa-4a81-a038-4aad21a7870e")
 	)
 	(label "rx_counter_clock"
 		(at 232.41 140.97 0)
@@ -9727,7 +9744,7 @@
 		)
 		(uuid "b5038d0e-f573-4fd9-9067-44faa3c4bab1")
 	)
-	(label "3V"
+	(label "3.3V"
 		(at 408.94 20.32 180)
 		(effects
 			(font
@@ -10095,6 +10112,17 @@
 		)
 		(uuid "37c426f7-9376-4e87-9d97-098b3336aa43")
 	)
+	(hierarchical_label "PLL1_OUT"
+		(shape output)
+		(at 186.69 100.33 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "3c3378d4-361d-49ce-a40b-bd301f3eb696")
+	)
 	(hierarchical_label "rx_phase_135"
 		(shape output)
 		(at 295.91 59.69 0)
@@ -10394,7 +10422,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 62.23 27.94 0)
+		(at 53.34 27.94 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -10405,7 +10433,7 @@
 		(fields_autoplaced yes)
 		(uuid "02a0e4d4-469d-4b23-a428-8a8c7cd40772")
 		(property "Reference" "#PWR0718"
-			(at 62.23 31.75 0)
+			(at 53.34 31.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10416,7 +10444,7 @@
 			)
 		)
 		(property "Value" "+3.3V_CLOCKTREE"
-			(at 62.23 22.86 0)
+			(at 53.34 22.86 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10426,7 +10454,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 62.23 27.94 0)
+			(at 53.34 27.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10437,7 +10465,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 62.23 27.94 0)
+			(at 53.34 27.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10448,7 +10476,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 62.23 27.94 0)
+			(at 53.34 27.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11808,7 +11836,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 41.91 27.94 0)
+		(at 36.83 24.13 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -11819,7 +11847,7 @@
 		(fields_autoplaced yes)
 		(uuid "1bc5f18a-921e-4e08-8089-4055f2440729")
 		(property "Reference" "#PWR0708"
-			(at 41.91 31.75 0)
+			(at 36.83 27.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11830,7 +11858,7 @@
 			)
 		)
 		(property "Value" "+2.5V_CLOCKTREE"
-			(at 41.91 22.86 0)
+			(at 36.83 19.05 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11840,7 +11868,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 41.91 27.94 0)
+			(at 36.83 24.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11851,7 +11879,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 41.91 27.94 0)
+			(at 36.83 24.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11862,7 +11890,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 41.91 27.94 0)
+			(at 36.83 24.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15936,7 +15964,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 21.59 27.94 0)
+		(at 21.59 20.32 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -15947,7 +15975,7 @@
 		(fields_autoplaced yes)
 		(uuid "5f204110-3cd7-4f52-8a5c-48c9ad21a508")
 		(property "Reference" "#PWR0701"
-			(at 21.59 31.75 0)
+			(at 21.59 24.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15958,7 +15986,7 @@
 			)
 		)
 		(property "Value" "+1.8V_CLOCKTREE"
-			(at 21.59 22.86 0)
+			(at 21.59 15.24 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15968,7 +15996,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 21.59 27.94 0)
+			(at 21.59 20.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15979,7 +16007,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 21.59 27.94 0)
+			(at 21.59 20.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15990,7 +16018,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 21.59 27.94 0)
+			(at 21.59 20.32 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16112,6 +16140,84 @@
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/79014999-6129-417a-b831-cb9e4a5873fe"
 					(reference "R703")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 66.04 33.02 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "617654c2-1ac1-46bc-a168-51c8241b933a")
+		(property "Reference" "#PWR0766"
+			(at 66.04 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+5V_RX_MIXER"
+			(at 66.04 27.94 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 66.04 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 66.04 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 66.04 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c525d59c-b8f2-4fe3-9164-b10e24ff88c9")
+		)
+		(instances
+			(project "nzif"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/79014999-6129-417a-b831-cb9e4a5873fe"
+					(reference "#PWR0766")
 					(unit 1)
 				)
 			)
