@@ -2931,6 +2931,16 @@
 	)
 	(wire
 		(pts
+			(xy 213.36 123.19) (xy 215.9 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "024d2147-2ee0-4af0-bf08-7e6828efa6fe")
+	)
+	(wire
+		(pts
 			(xy 232.41 45.72) (xy 232.41 39.37)
 		)
 		(stroke
@@ -2938,16 +2948,6 @@
 			(type default)
 		)
 		(uuid "04bc674f-6610-44d3-908a-8e77eddc893a")
-	)
-	(wire
-		(pts
-			(xy 213.36 123.19) (xy 215.9 123.19)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "084c4adf-c731-48a2-ac62-e4b12bb0d5fd")
 	)
 	(wire
 		(pts
@@ -2978,6 +2978,16 @@
 			(type default)
 		)
 		(uuid "1511a910-10a3-4eed-bb7d-02ece2bb4da2")
+	)
+	(wire
+		(pts
+			(xy 215.9 123.19) (xy 215.9 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "18d578cc-07f2-4f76-aeaf-a7c71082abcc")
 	)
 	(wire
 		(pts
@@ -3558,16 +3568,6 @@
 			(type default)
 		)
 		(uuid "8b229527-8528-46cd-bc5c-514b8acc23cf")
-	)
-	(wire
-		(pts
-			(xy 215.9 123.19) (xy 215.9 125.73)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8ec2177b-82e6-40d9-afbd-be420d6c16b7")
 	)
 	(wire
 		(pts
@@ -9159,10 +9159,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "0427091e-0e9c-4675-807b-6f6d0a605fc1")
 		(property "Reference" "R1219"
-			(at 193.04 137.1599 0)
+			(at 182.118 138.938 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9226,84 +9225,6 @@
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/27cecad5-c0fc-4afc-95d0-cabdd6a56668"
 					(reference "R1219")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 215.9 125.73 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "1256063e-c50a-4542-b072-b01ee7bee9fb")
-		(property "Reference" "#PWR01017"
-			(at 215.9 132.08 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 215.9 130.81 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 215.9 125.73 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 215.9 125.73 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 215.9 125.73 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "39664629-379e-4c54-a5b4-096544636ab3")
-		)
-		(instances
-			(project "nzif"
-				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/27cecad5-c0fc-4afc-95d0-cabdd6a56668"
-					(reference "#PWR01017")
 					(unit 1)
 				)
 			)
@@ -9887,6 +9808,7 @@
 		)
 		(pin "33"
 			(uuid "0999a684-f83f-436a-8f8a-3c000041fcac")
+			(alternate "GND")
 		)
 		(instances
 			(project "nzif"
@@ -10989,6 +10911,84 @@
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/27cecad5-c0fc-4afc-95d0-cabdd6a56668"
 					(reference "#PWR01019")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 215.9 125.73 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9893e38f-712d-4624-99a7-a613e2f3ba97")
+		(property "Reference" "#PWR01247"
+			(at 215.9 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 215.9 130.81 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 215.9 125.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 215.9 125.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 215.9 125.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "3ef9086f-3127-4961-87ab-310d8e7dee4f")
+		)
+		(instances
+			(project "nzif"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/27cecad5-c0fc-4afc-95d0-cabdd6a56668"
+					(reference "#PWR01247")
 					(unit 1)
 				)
 			)
