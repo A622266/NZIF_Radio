@@ -193,4 +193,3 @@ The radio uses 8-phase mixing for HF bands (up to 10m) to maximize harmonic supp
 - `nzif/...` — KiCad schematic source files for the NZIF board.
 - `firmware/...` — Pico firmware and USB/CAT bring-up support.
 - `.claude/...` — agent files used for review workflows.
-
