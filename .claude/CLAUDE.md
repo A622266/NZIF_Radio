@@ -2,7 +2,7 @@
 
 Near-zero-IF radio architecture built around an 8-phase harmonic rejection polyphase mixer and audio-rate ADC/DAC signal processing.
 
-This board is the NZIF core: it converts differential RF into low-frequency quadrature baseband, then digitizes and processes the result with audio-rate converters and a SigmaDSP. The RF front end, PA, and post-PA output filters are implemented on a separate board; the receive and transmit mixer/baseband cores are on this board.
+This board is the NZIF core: it converts differential RF into low-frequency quadrature baseband, then digitizes and processes the result with audio-rate converters and a SigmaDSP. The RF front-end board handles the PA, T/R switch, a band-switched quasi-elliptic LPF bank shared between TX and RX, a directional coupler for SWR and power measurement at the antenna port, and two receive-path high-pass filters that together form a band-specific preselector. The receive and transmit mixer/baseband cores are on this board.
 
 ## Design goals
 
@@ -11,6 +11,9 @@ This board is the NZIF core: it converts differential RF into low-frequency quad
 - Avoid a conventional high-IF architecture: the design is near-zero-IF, using 192 kHz ADC/DAC sampling with a digital NCO offset to stay away from DC and 1/f noise.
 - Keep the Rx and Tx front end compact and fully differential, while placing the PA and post-PA filters on a separate board.
 - Preserve differential signal flow from the RF mixer through the driver amps and into the audio-rate converters.
+- Share a quasi-elliptic post-PA LPF bank between TX and RX on the RF front-end board: on transmit it suppresses PA harmonics for regulatory compliance; on receive the same bank acts as a band-specific preselector with deep notch traps at adjacent-band interference sources.
+- Place a directional coupler at the antenna interface (after the LPF bank) for accurate forward/reflected power and SWR measurement at the clean fundamental; use a calibration tap to inject a spectrally clean reference tone into the receive path for I/Q calibration.
+- Apply strategically placed high-pass filters in the receive chain: a fixed ~1.6 MHz filter to block AM broadcast on all bands, and a switched ~9 MHz filter to suppress lower-band interference on 30m and above.
 
 ## Architecture overview
 
@@ -38,7 +41,9 @@ Because the converters are audio-rate, the RF conversion chain moves entirely in
 ## How the receive signal flows
 
 ```
-Antenna/RF board → SMA (J101) → 1:1 balun → RF+ / RF-
+Antenna → Directional coupler (~0.2 dB through) → ZWAS LPF bank (band-switched preselector)
+    → T/R switch → HP-1 (~1.6 MHz, fixed) → HP-2 (~9 MHz, switched 30m+)
+    → SMA (J101) → 1:1 balun → RF+ / RF-
     → SN74CBT3125C quad switch arrays (×4)
         controlled by phase_0, phase_45, … phase_315
         ├─ BB_0    → ADA4625-2 unity-gain buffer
@@ -70,7 +75,12 @@ Mic → ADAU1361 ADC → ADAU1467 DSP (Weaver SSB / CW shaping)
     → SN74CBTLV3125 switch arrays
         driven by same phase_0 … phase_315 clock lines
     → 8-phase RF reconstruction → RF output
-    → External PA board and post-PA LPF bank → antenna
+    → RF front-end board: pre-driver → PA → T/R switch
+    → ZWAS quasi-elliptic LPF bank (7 filters, harmonic rejection)
+    → Directional coupler → antenna
+        ├─ Fwd port → detector → Pi Pico ADC (forward power / SWR)
+        ├─ Rev port → detector → Pi Pico ADC (reflected power / SWR)
+        └─ Tap → HMC1118 → RX path (I/Q calibration reference)
 ```
 
 ## What is on this board
@@ -144,6 +154,64 @@ Generates the LO and the eight phase-control signals for both the Rx and Tx mixe
 ### `nzif/power_switching_reg.kicad_sch`
 
 - **LT8330** boost converter and **ADP2302/ADP2303** switching regulators for digital rails.
+
+## RF front-end board
+
+The RF front-end board sits between the antenna and the NZIF core and contains all antenna-interface, preselector, PA, and power-measurement functions. It implements the same front-end architecture used in a companion HF superheterodyne transceiver — both designs share this topology at the antenna interface.
+
+### T/R switch
+
+Fast RF switch routing the antenna between receive and transmit paths. Low insertion loss (< 0.3 dB); fast enough for break-in CW operation.
+
+### HP-1 (~1.6 MHz, fixed, receive path only)
+
+Always-in high-pass filter immediately after the T/R switch in the receive path. Blocks AM broadcast (0.535–1.705 MHz), which otherwise passes even through the widest ZWAS LPF (LPF-1 at 2.5 MHz cutoff). Not in the TX path.
+
+### HP-2 (~9 MHz, switched, receive path only)
+
+Pi Pico activates this filter on 30m and above. Rejects 40m (7–7.3 MHz), 80m, and 160m interference when operating on higher bands. At a 9 MHz cutoff, the 40m band edge (7.3 MHz = 0.81× the cutoff) sees 30–40 dB rejection from a 7-pole LC high-pass filter; the 30m band (10.1 MHz = 1.12× the cutoff) passes with < 0.3 dB insertion loss. Together with the ZWAS LP filter, HP-2 creates an effective two-sided passband window (9 MHz to the ZWAS LP cutoff) on 30m and above without requiring a switched bandpass filter bank. Not in the TX path.
+
+### ZWAS quasi-elliptic LPF bank (dual-purpose, shared TX/RX)
+
+Seven switched quasi-elliptic low-pass filters using the Tonne/Elsie ZWAS technique. Each filter is a Chebyshev LPF with one shunt LC trap at the 2nd harmonic of the band group's highest frequency. Pi Pico selects the correct filter by band; the same selection serves TX and RX.
+
+**On transmit:** The trap provides deep notch rejection of the 2nd PA harmonic for regulatory compliance. The LP rolloff handles higher-order harmonics. Together they meet FCC Part 97 spurious emission requirements at 100 W output.
+
+**On receive:** The same trap falls at exactly the next adjacent amateur band up — the most common strong-signal interference source — providing a deep notch preselector. The 80m LPF traps 40m; the 40m LPF traps 20m; and so on.
+
+| Filter | Bands | LP cutoff | ZWAS trap | TX: 2nd harmonic rejected | RX: adjacent-band trap |
+|--------|-------|-----------|-----------|--------------------------|------------------------|
+| LPF-1 | 160m | 2.5 MHz | 3.6 MHz | 2× 1.8 MHz = 3.6 MHz ✓ | 80m lower edge (near trap) |
+| LPF-2 | 80m | 5.0 MHz | 7.0 MHz | 2× 3.5 MHz = 7.0 MHz ✓ | **40m — deep notch** |
+| LPF-3 | 40m | 9.0 MHz | 14.0 MHz | 2× 7.0 MHz = 14.0 MHz ✓ | **20m — deep notch** |
+| LPF-4 | 30m, 20m | 16 MHz | 28.0 MHz | 2× 14 MHz = 28 MHz ✓ | 10m |
+| LPF-5 | 17m, 15m | 22 MHz | 36 MHz | 2× 18 MHz = 36 MHz ✓ | 12m/10m edge |
+| LPF-6 | 12m, 10m | 32 MHz | 50 MHz | 2× 25 MHz = 50 MHz ✓ | 6m — deep notch |
+| LPF-7 | 6m | 60 MHz | 108 MHz | 2× 54 MHz = 108 MHz ✓ | FM broadcast (88–108 MHz) |
+
+### Directional coupler
+
+Dual-transformer design positioned between the ZWAS LPF bank and the antenna, where the signal is a clean fundamental with harmonics already suppressed at a defined 50 Ω interface. Present in both TX and RX paths; through-path insertion loss ~0.2 dB on receive.
+
+- **Forward port**: Coupled to a Schottky diode peak detector; DC output drives a Pi Pico ADC input for forward power measurement.
+- **Reflected port**: Coupled to a second Schottky diode peak detector; DC output drives a Pi Pico ADC input for reflected power and SWR display. Fold-back protection is implemented in Pi Pico firmware.
+- **Calibration tap**: A third coupled port samples the transmitted signal at low level. An HMC1118 switch routes this tap into the NZIF receive path for I/Q calibration — the tone has already passed through the ZWAS LPF, so it is spectrally clean and within the operating band.
+
+### Effective receive preselector passband (HP-1 + HP-2 + ZWAS)
+
+| Band | HP-2 | ZWAS filter | Effective window | Key rejections |
+|------|------|-------------|-----------------|----------------|
+| 160m | Bypass | LPF-1: 2.5 MHz / trap 3.6 MHz | 1.6–2.5 MHz | 80m (near trap + rolloff), all above |
+| 80m | Bypass | LPF-2: 5.0 MHz / trap 7.0 MHz | 1.6–5.0 MHz | **40m deep notch**, all above |
+| 60m | Bypass | LPF-3: 9.0 MHz / trap 14.0 MHz | 1.6–9.0 MHz | 20m deep notch, 30m rolloff |
+| 40m | Bypass | LPF-3: 9.0 MHz / trap 14.0 MHz | 1.6–9.0 MHz | **20m deep notch**, 30m rolloff |
+| 30m | In (9 MHz) | LPF-4: 16 MHz / trap 28.0 MHz | **9–16 MHz** | 40m (30–40 dB), 80m/160m; 10m trap |
+| 20m | In (9 MHz) | LPF-4: 16 MHz / trap 28.0 MHz | **9–16 MHz** | 40m (30–40 dB), 80m/160m; 10m trap |
+| 17m | In (9 MHz) | LPF-5: 22 MHz / trap 36 MHz | **9–22 MHz** | 40m, SW broadcast, 80m/160m; 12m/10m trap |
+| 15m | In (9 MHz) | LPF-5: 22 MHz / trap 36 MHz | **9–22 MHz** | Same as 17m |
+| 12m | In (9 MHz) | LPF-6: 32 MHz / trap 50 MHz | **9–32 MHz** | 40m, SW, 20m; 6m trap |
+| 10m | In (9 MHz) | LPF-6: 32 MHz / trap 50 MHz | **9–32 MHz** | Same as 12m |
+| 6m | In (9 MHz) | LPF-7: 60 MHz / trap 108 MHz | **9–60 MHz** | 40m, SW broadcast, FM broadcast trap |
 
 ## LO chain
 
@@ -257,6 +325,7 @@ The NZIF receive chain has no dedicated on-board LNA between the antenna port an
 | NC2030 (measured) | ~12 | +28.5 | >45 dB (phasing) | ~0.13 | CW only, 2 bands, narrow audio preamp |
 | Traditional superhet | 8–12 | +15–25 | Good (with roofing filter) | 10–15 | Crystal roofing filter limits IMD |
 | Direct sampling | 5–7 | +35+ | Excellent (digital) | 15–25 | High-speed ADCs required |
+| Companion HF superhet (KISS, calc.) | ~6.2 | +33 / +42 (LNA bypassed) | ≥70 dB (IF architecture) | ~10–15 | Identical front-end board; bring-up measurements will benchmark NZIF |
 
 **NZIF advantages:**
 - No IF filter bank or crystal roofing filter.
