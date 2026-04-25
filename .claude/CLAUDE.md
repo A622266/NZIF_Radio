@@ -1,198 +1,331 @@
 # NZIF Radio
 
-Near-zero-IF radio architecture built around an 8-phase harmonic rejection mixer and audio-rate ADC/DAC signal processing.
+Near-zero-IF radio architecture built around an 8-phase harmonic rejection polyphase mixer and audio-rate ADC/DAC signal processing.
 
-This board is the NZIF core: it converts differential RF into low-frequency quadrature baseband, then digitizes and processes the result with audio-rate converters and a SigmaDSP. The RF front end, PA, and post-PA output filters are intended to be implemented on a separate board, while the receive and transmit mixer/baseband cores are on this board.
+This board is the NZIF core: it converts differential RF into low-frequency quadrature baseband, then digitizes and processes the result with audio-rate converters and a SigmaDSP. The RF front end, PA, and post-PA output filters are implemented on a separate board; the receive and transmit mixer/baseband cores are on this board.
 
 ## Design goals
 
-- Suppress the 3rd, 5th, and 7th LO harmonics with an 8-phase harmonic rejection mixer.
-- Minimize the amount of RF selectivity required on this board by using polyphase mixing and phase-domain harmonic suppression.
-- Avoid a conventional high-IF architecture; the design is near-zero-IF and uses 192 kHz ADC/DAC sampling with a digital NCO offset to stay away from DC and 1/f noise.
-- Keep the Rx and Tx front end compact and differential, while placing the PA and post-PA filters on a separate board.
-- Preserve fully differential signal flow from the RF mixer through the driver amps and into the audio-rate converters.
-
-## Architecture comparison
-
-This radio is intended as a near-zero-IF alternative to several common HF receiver/transmitter front-end approaches:
-
-- **Traditional superheterodyne with roofing filters:** uses fixed IF filtering and narrowband RF/IF selectivity to reject images and spurs. NZIF reduces analog filtering on the core board by using phase-domain harmonic rejection and digital NCO offset instead of relying on a large IF filter bank.
-- **Tayloe/quadrature sampling detectors:** provide simple direct-conversion I/Q sampling with low component count, but they typically need more external filtering and are more sensitive to LO feedthrough and image issues. NZIF extends the switching-mixer concept with eight-phase commutation and differential baseband reconstruction for stronger harmonic suppression.
-- **Norcal 2030 / direct sampling approaches:** use fast ADCs to digitize HF directly and shift selectivity into the digital domain. NZIF trades the very high ADC sample rate for affordable 192 kHz audio-rate converters and a polyphase analog front end, keeping the digital processing simpler while still using DSP-based NCO and baseband demodulation.
+- Suppress the 3rd, 5th, and 7th LO harmonics with an 8-phase harmonic rejection mixer, reducing reliance on RF bandpass filters on this board.
+- Use polyphase mixing and phase-domain harmonic suppression to minimize analog RF selectivity requirements.
+- Avoid a conventional high-IF architecture: the design is near-zero-IF, using 192 kHz ADC/DAC sampling with a digital NCO offset to stay away from DC and 1/f noise.
+- Keep the Rx and Tx front end compact and fully differential, while placing the PA and post-PA filters on a separate board.
+- Preserve differential signal flow from the RF mixer through the driver amps and into the audio-rate converters.
 
 ## Architecture overview
 
 ### Core concept
 
-The NZIF board uses an 8-phase commutating mixer topology on receive and transmit. In the receive path, differential RF (`RF+`, `RF-`) is sampled by eight phase-shifted switch networks, producing:
+The NZIF board uses an 8-phase commutating mixer topology on receive and transmit. In the receive path, differential RF (`RF+`, `RF-`) is sampled by eight phase-shifted switch networks, producing eight baseband phase taps. Opposite phases are then recombined into four differential channels for ADC conversion:
 
-- `BB_0`, `BB_45`, `BB_90`, `BB_135`
-- `BB_180`, `BB_225`, `BB_270`, `BB_315`
+- `BB_0` / `BB_180` → `P0_IN+` / `P0_IN-`
+- `BB_45` / `BB_225` → `P45_IN+` / `P45_IN-`
+- `BB_90` / `BB_270` → `P90_IN+` / `P90_IN-`
+- `BB_135` / `BB_315` → `P135_IN+` / `P135_IN-`
 
-These eight outputs are then recombined into four differential baseband channels for ADC conversion. The eight-phase approach suppresses odd-order LO harmonics and reduces the need for large RF filter banks on this board.
+The eight-phase approach provides phase-domain cancellation of odd-order LO harmonics (3rd, 5th, 7th) and reduces the need for RF bandpass filtering on this board.
 
 ### Near-zero-IF operation
 
-This is not a classic zero-IF design; it is a near-zero-IF architecture:
+This is not a classic zero-IF design:
 
-- ADC and DAC converters run at `192 kHz`.
-- The digital signal path uses an NCO frequency offset so the useful baseband is shifted away from DC.
-- That offset avoids LO leakage and low-frequency 1/f noise while preserving complex I/Q demodulation.
+- ADC and DAC converters run at 192 kHz.
+- The ADAU1467 DSP uses a digital NCO to shift the effective center frequency away from DC.
+- That offset avoids LO leakage and 1/f noise while preserving complex I/Q demodulation.
 
-Because the converter sample rate is audio-rate, the RF conversion chain is intentionally moved into the phase-domain mixer and the digital domain, rather than using a traditional RF or IF sampling architecture.
+Because the converters are audio-rate, the RF conversion chain moves entirely into the phase-domain mixer and the digital domain — there is no IF filter bank.
+
+## How the receive signal flows
+
+```
+Antenna/RF board → SMA (J101) → 1:1 balun → RF+ / RF-
+    → SN74CBT3125C quad switch arrays (×4)
+        controlled by phase_0, phase_45, … phase_315
+        ├─ BB_0    → ADA4625-2 unity-gain buffer
+        ├─ BB_45   → ADA4625-2 unity-gain buffer
+        ├─ BB_90   → ADA4625-2 unity-gain buffer
+        ├─ BB_135  → ADA4625-2 unity-gain buffer
+        ├─ BB_180  → ADA4625-2 unity-gain buffer
+        ├─ BB_225  → ADA4625-2 unity-gain buffer
+        ├─ BB_270  → ADA4625-2 unity-gain buffer
+        └─ BB_315  → ADA4625-2 unity-gain buffer
+    → top sheet pairs opposite phases into differential channels:
+        BB_0/BB_180   → P0_IN+/P0_IN-
+        BB_45/BB_225  → P45_IN+/P45_IN-
+        BB_90/BB_270  → P90_IN+/P90_IN-
+        BB_135/BB_315 → P135_IN+/P135_IN-
+    → ADA4945-1 fully differential amplifiers (×4)
+        → P0_FDA+/P0_FDA-, P45_FDA+/P45_FDA-,
+          P90_FDA+/P90_FDA-, P135_FDA+/P135_FDA-
+    → ADAU1979 4-channel 24-bit ADC (192 kHz)
+    → ADAU1467 SigmaDSP: I/Q correction, NCO offset, filter, demodulate
+    → ADAU1361 audio codec → headphone/speaker
+```
+
+## How the transmit signal flows
+
+```
+Mic → ADAU1361 ADC → ADAU1467 DSP (Weaver SSB / CW shaping)
+    → ADAU1962A 12-ch DAC (I/Q baseband, 192 kHz)
+    → SN74CBTLV3125 switch arrays
+        driven by same phase_0 … phase_315 clock lines
+    → 8-phase RF reconstruction → RF output
+    → External PA board and post-PA LPF bank → antenna
+```
 
 ## What is on this board
 
 ### `nzif/rx_mixer.kicad_sch`
 
-- Implements the receive 8-phase polyphase mixer.
-- Uses SN74CBT3125 switch arrays (`U107`, `U108`, `U112`, `U113`) to commutate the differential RF input onto 8 phase-tagged baseband nodes.
-- Each baseband node is buffered by an ADA4625 unity-gain stage and becomes one of the `BB_x` outputs.
-- The eight phase-control lines are:
-  - `phase_0`, `phase_45`, `phase_90`, `phase_135`
-  - `phase_180`, `phase_225`, `phase_270`, `phase_315`
+Implements the receive 8-phase polyphase mixer.
+
+- Four **SN74CBT3125CPW** quad bus-switch ICs commutate the differential RF input (`RF+`/`RF-`) onto eight phase-tagged baseband nodes. Two switch ICs handle the `RF+` half of the differential signal; two handle `RF-`. The eight phase-control lines (`phase_0`, `phase_45`, … `phase_315`) are driven from the clock tree.
+- Each baseband node is buffered by one section of an **ADA4625-2** unity-gain op-amp. The ADA4625-2 is a dual JFET-input op-amp (3.3 nV/√Hz input noise, rail-to-rail output) that isolates the high-impedance switch nodes from the downstream differential signal chain and prevents charge injection from disturbing adjacent phase taps.
 
 ### `nzif/rx_driver_amps.kicad_sch`
 
-- Converts the eight phase outputs into four differential analog channels.
-- Provides buffering, gain conditioning, and ADC drive for the `ADAU1979` 4-channel ADC.
-- Maps the signals into:
-  - `P0_FDA+` / `P0_FDA-`
-  - `P45_FDA+` / `P45_FDA-`
-  - `P90_FDA+` / `P90_FDA-`
-  - `P135_FDA+` / `P135_FDA-`
+Converts the eight single-ended phase outputs into four differential channels for the ADC.
+
+- Four **ADA4945-1** fully differential amplifiers condition the signals. Each ADA4945-1 takes a pair of opposite-phase single-ended inputs and produces a differential output directly suitable for the ADAU1979 differential input. Gain is set by the Rf/Rg resistor network on each channel.
+- Outputs: `P0_FDA+/P0_FDA-`, `P45_FDA+/P45_FDA-`, `P90_FDA+/P90_FDA-`, `P135_FDA+/P135_FDA-`.
 
 ### `nzif/adcs.kicad_sch`
 
-- Contains the ADAU1979 4-channel audio ADC.
-- The ADC digitizes the four differential baseband pairs from the driver amps.
-- Supports the 192 kHz sampling rate needed for near-zero-IF offset operation.
+- Contains the **ADAU1979** 4-channel 24-bit audio ADC.
+- Digitizes the four differential baseband pairs at 192 kHz.
+- The ADAU1979 is chosen for its 4.5 Vrms differential input range, which provides headroom against strong-signal transients before any AGC correction occurs.
 
 ### `nzif/dacs.kicad_sch`
 
-- Contains the ADAU1962A 12-channel DAC.
-- Generates the analog transmit I/Q channels for the TX mixer stage.
-- Also runs at 192 kHz to match the Rx architecture and support digital NCO-based transmit modulation.
+- Contains the **ADAU1962A** 12-channel 24-bit audio DAC.
+- Generates the analog transmit I/Q channels for the TX mixer at 192 kHz.
+- The 12-channel output provides multiple differential pairs for the TX baseband; the same I2S/TDM protocol used by the ADAU1979 connects directly to the ADAU1467.
+
+### `nzif/tx_mixer.kicad_sch`
+
+- Implements the transmit 8-phase RF reconstruction mixer.
+- Uses **SN74CBTLV3125** bus-switch arrays (the 3.3 V-rated LV variant, matched to DAC output levels) to commutate the I/Q baseband onto the 8-phase RF reconstruction network.
+- Uses the same `phase_0` … `phase_315` control lines as the receive mixer.
 
 ### `nzif/dsp.kicad_sch`
 
-- Contains the `ADAU1467` SigmaDSP.
-- Performs I/Q demodulation, NCO frequency offset, filtering, AGC, audio routing, and TX modulation.
-- Interfaces to the audio ADC and DAC serial data streams.
+- Contains the **ADAU1467** SigmaDSP (dual-core, 294 MHz).
+- Programmed via SigmaStudio (graphical block-diagram, no traditional firmware).
+- Receive functions: I/Q DC offset correction, gain and phase trim, NCO fine-tuning (±96 kHz), digital FIR/IIR selectivity filtering, AGC, SSB/CW/AM demodulation (Weaver method).
+- Transmit functions: Weaver SSB encoding, CW keying-envelope shaping, TX I/Q baseband generation.
+- The Pi Pico writes calibration coefficients and NCO frequency words to ADAU1467 parameter RAM over I2C.
 
 ### `nzif/clock_tree.kicad_sch`
 
-- Generates the required clocking and phased LO signals.
-- Provides the phase-control signals for the 8-phase mixer(s).
+Generates the LO and the eight phase-control signals for both the Rx and Tx mixers.
+
+- **AD9523-1** clock generator provides both the RF LO and the system audio MCLK from a single on-chip VCO. The VCO-path outputs drive the phase distribution logic; a separate reference-path output provides a stable fixed MCLK to all audio ICs, completely independent of LO tuning.
+- **CTS_535_TCXO** provides the precision reference clock for the AD9523-1 PLL.
+- **SN74AUC16374** (16-bit D flip-flop register) latches the phase-select control words and distributes the phase clock edges to the mixer switch gates.
+- **SN74CBT3253 / SN74CBTLV3253** multiplexers route the phase-clocked outputs to the correct switch control lines.
 
 ### `nzif/microcontroller.kicad_sch`
 
-- Hosts the controller and I/O for mode selection, board control, and peripheral function.
-- Likely contains the Pi Pico or equivalent MCU used for configuration and monitoring.
+- Contains a **Raspberry Pi Pico** (RP2040, dual-core Arm Cortex-M0+, 133 MHz, 264 kB SRAM, 2 MB flash).
+- Controls frequency tuning (programs the AD9523-1 via SPI), manages band changes, runs the I/Q calibration routine, handles front-panel input (rotary encoder, buttons, display), and presents a Hamlib-compatible UART CAT port for logging software.
 
-## How the receive signal flows
+### `nzif/audio_subsystem.kicad_sch`
 
-1. Antenna/RF front end on the separate board delivers differential RF to this board.
-2. The RF is converted to `RF+` / `RF-` and fed into the Rx mixer.
-3. The 8-phase mixer samples the RF onto eight phase nodes.
-4. ADA4625 buffers convert these internal nodes into `BB_0`..`BB_315` outputs.
-5. The top sheet pairs opposite phases into four differential channels:
-   - `BB_0` / `BB_180` → `P0_IN+` / `P0_IN-`
-   - `BB_45` / `BB_225` → `P45_IN+` / `P45_IN-`
-   - `BB_90` / `BB_270` → `P90_IN+` / `P90_IN-`
-   - `BB_135` / `BB_315` → `P135_IN+` / `P135_IN-`
-6. The driver amps condition the signals and output them as `P*_FDA+/-`.
-7. The ADAU1979 ADC digitizes the four differential channels.
-8. The ADAU1467 processes the digital I/Q data with an NCO offset, filters, and demodulates audio.
+- Contains the **ADAU1361** stereo audio codec.
+- On receive: DAC output drives headphone/speaker with demodulated audio from the ADAU1467.
+- On transmit: ADC input digitizes the microphone and feeds the ADAU1467 DSP.
 
-## How the transmit signal flows
+### `nzif/power_ldos.kicad_sch`
 
-1. The ADAU1467 DSP generates the TX I/Q audio streams.
-2. The ADAU1962A DAC converts the digital I/Q stream to analog.
-3. The TX mixer sheet takes the DAC outputs and uses the same or analogous phase-control scheme to create RF.
-4. The RF output is then sent to the external PA board and post-PA filters.
+- **LT3045** ultra-low-noise positive LDO (2 μVrms) for precision analog and RF rails.
+- **LT3094** ultra-low-noise negative LDO for the bipolar op-amp supply rails.
+- LDO choice is driven by the ADC noise floor and LO phase noise — both track supply noise on the precision analog rails.
+
+### `nzif/power_switching_reg.kicad_sch`
+
+- **LT8330** boost converter and **ADP2302/ADP2303** switching regulators for digital rails.
+
+## LO chain
+
+```
+CTS_535_TCXO → AD9523-1 PLL → LO output   (VCO path → SN74AUC16374 phase register
+                                             → SN74CBT3253/CBTLV3253 phase muxes
+                                             → phase_0 … phase_315 → mixer switch gates)
+                            → MCLK output  (reference path, fixed ~12.288 MHz
+                                             → ADAU1979, ADAU1467, ADAU1962A, ADAU1361)
+```
+
+The AD9523-1 VCO is tuned by the Pi Pico (via SPI) to the operating frequency. A divider chain produces the 8-phase clock signals at 8× the LO frequency — equal to 8× the RF frequency for direct-conversion operation. The reference-path MCLK output is completely decoupled from VCO tuning, so retuning the LO does not disturb the audio clock.
+
+**6m phase-mode transition:** For 8-phase operation at 50 MHz RF, the phase register clock must run at 8 × 50 MHz = 400 MHz. The SN74AUC16374 (rated to approximately 250 MHz in the AUC logic family) cannot operate reliably at this rate. The clock tree therefore switches to 4-phase operation for the 6m band (50–54 MHz), requiring only 200 MHz — within the register's operating range. Four-phase operation maintains adequate harmonic rejection (>40 dB) while respecting the component speed limit.
 
 ## Why 8-phase harmonic rejection?
 
-- Each of the eight phase taps samples the RF with a different LO phase.
-- When the eight outputs are recombined, the odd-order LO harmonics cancel strongly.
-- This provides suppression of the 3rd, 5th, and 7th LO harmonics without relying on a large RF bandpass bank on the core board.
-- The result is a radio architecture that can depend less on discrete RF selectivity on this board and instead uses phase-domain suppression plus an external PA/filter board for final RF conditioning.
+A conventional 2-phase (single-switch) commutating mixer has a square-wave LO that contains odd harmonics. The 3rd harmonic at −9.5 dBc (amplitude ratio 1/3) causes a mixing response to signals at f_RF/3 — an unwanted reception at 1/3 of the operating frequency, suppressed only by external bandpass filtering.
 
-## Why this is called near-zero-IF
+The 8-phase architecture cancels these harmonics by phase. Each of the eight switch taps samples the RF with a LO phase that is an integer multiple of 45°. When the eight outputs are recombined, the harmonic responses cancel as rotating phasor sums:
 
-- The architecture does not use a high-frequency IF or a fixed IF filter.
-- The ADC and DAC are audio-rate devices running at 192 kHz.
-- A digital NCO moves the effective center frequency away from DC in the digital domain.
-- This keeps the useful baseband signal away from DC, which avoids LO leakage and low-frequency noise issues that are common in pure zero-IF designs.
+- **3rd harmonic:** each tap's 3rd-harmonic component is phase-shifted by 3 × 45° = 135° relative to adjacent taps. Summing eight equal phasors separated by 135° gives a vector sum of zero. Theoretical rejection: >60 dB.
+- **5th harmonic:** 5 × 45° = 225° per step; vector sum ≈ 0. Theoretical rejection: >50 dB.
+- **7th harmonic:** 7 × 45° = 315° per step; vector sum ≈ 0. Theoretical rejection: >45 dB.
 
-## LO Band Plan and Coverage
+In practice the rejection is limited by phase and amplitude matching across the SN74CBT3125 switch array, PCB trace symmetry, and timing accuracy of the phase clock distribution. Well-designed 8-phase boards typically achieve 40–55 dB rejection. The 9th harmonic (9 × 45° = 405° ≡ 45°) is not cancelled and passes through — its product at f_RF/9 is far from any amateur band for most HF frequencies.
 
-The NZIF radio covers all amateur HF bands (160m through 10m) plus 6m using 8-phase harmonic rejection mixing, with a transition to 4-phase operation on 6m due to component speed limitations. The local oscillator (LO) is tuned directly to the operating frequency in 100 kHz tiles, with the ADAU1467 DSP NCO providing ±96 kHz fine tuning within each tile. This ensures complete frequency coverage across all bands.
+## Why near-zero-IF?
 
-The radio uses 8-phase mixing for HF bands (up to 10m) to maximize harmonic suppression. On 6m (50-54 MHz), it switches to 4-phase operation because the TI 16374 clock divider used in the phase generation cannot operate reliably above 250 MHz, which would be required for 8-phase switching at these frequencies.
+- No high-frequency IF or fixed IF filter is required, which eliminates a switched crystal or SAW filter bank.
+- The ADC and DAC are audio-rate (192 kHz), keeping component cost and complexity low compared to RF-sampling architectures that require multi-GSPS ADCs.
+- A digital NCO in the ADAU1467 moves the effective receive center frequency away from DC, avoiding LO leakage and 1/f noise that degrade pure zero-IF designs.
+- The ±96 kHz NCO range, combined with 100 kHz LO tuning steps, provides continuous coverage of all HF amateur bands without gaps.
 
-| Band | Frequency Range (MHz) | LO Range (MHz) | Phase Mode | NCO Offset Range (kHz) | Coverage Notes |
-|------|----------------------|----------------|------------|-------------------------|----------------|
-| 160m | 1.800 - 2.000 | 1.800 - 2.000 | 8-phase | ±96 | Complete coverage with 100 kHz tiles |
-| 80m  | 3.500 - 4.000 | 3.500 - 4.000 | 8-phase | ±96 | Includes CW and SSB segments |
-| 60m  | 5.330 - 5.405 | 5.330 - 5.405 | 8-phase | ±96 | Channelized band, full coverage |
-| 40m  | 7.000 - 7.300 | 7.000 - 7.300 | 8-phase | ±96 | Complete coverage |
-| 30m  | 10.100 - 10.150 | 10.100 - 10.150 | 8-phase | ±96 | Narrow band, full coverage |
-| 20m  | 14.000 - 14.350 | 14.000 - 14.350 | 8-phase | ±96 | Complete coverage |
-| 17m  | 18.068 - 18.168 | 18.068 - 18.168 | 8-phase | ±96 | Narrow band, full coverage |
-| 15m  | 21.000 - 21.450 | 21.000 - 21.450 | 8-phase | ±96 | Complete coverage |
-| 12m  | 24.890 - 24.990 | 24.890 - 24.990 | 8-phase | ±96 | Narrow band, full coverage |
-| 10m  | 28.000 - 29.700 | 28.000 - 29.700 | 8-phase | ±96 | Complete coverage including WARC segments |
-| 6m   | 50.000 - 54.000 | 50.000 - 54.000 | 4-phase | ±96 | Reduced to 4-phase due to TI 16374 speed limit |
+## Architecture comparison
 
-**Notes on the band plan:**
-- Each 100 kHz tile provides ±96 kHz NCO tuning range, ensuring continuous coverage without gaps.
-- The 8-phase to 4-phase transition on 6m maintains adequate harmonic rejection while respecting component limitations.
-- LO tuning is handled by the clock tree, with the DSP managing NCO offsets for precise frequency control.
+**Traditional superheterodyne with roofing filters** (Elecraft K3, Icom IC-7610): uses a fixed IF and crystal roofing filter to remove out-of-band power before the second mixer. System IIP3 typically +15–25 dBm (limited by the active first mixer before the roofing filter). Crystal filters are expensive speciality parts. NZIF relies on phase-domain harmonic rejection and high switch linearity rather than analog selectivity, achieving IMD performance through linearity rather than filtering.
 
-## Performance Characteristics
+**Tayloe/quadrature sampling detectors** (4-phase commutating switch at RF → DC): low component count, directly produce I/Q baseband. More sensitive to LO feedthrough and image issues than an 8-phase design. NZIF extends the commutating-switch concept to eight phases, providing stronger odd-harmonic rejection at the cost of a more complex clock distribution.
 
-### System Noise Figure and Dynamic Range
+**NorCal NC2030 (Tayloe, N7VE):** The closest published benchmark — a 4-phase direct-conversion phasing receiver with a narrow-band audio preamp (1.5 kHz BW). Measured: MDS −135 dBm (→ system NF ≈ 12 dB at 500 Hz BW), system IIP3 ≈ +28.5 dBm (from IP3 DR plateau = 109 dB), BDR 119–142 dB across 2–20 kHz spacing. The NC2030's narrow audio preamp rejects far-off blockers before the compression point — a genuine direct-conversion architectural advantage. NZIF targets comparable IIP3 with 8-phase harmonic rejection in place of the analog phasing network.
 
-The NZIF architecture achieves competitive noise figure and linearity through its differential polyphase mixer and high-performance audio converters:
+**Direct sampling:** samples HF at very high ADC rates and moves all selectivity into the digital domain. Maximum flexibility but requires multi-GSPS ADCs (high cost, ~15–25 W). NZIF achieves a comparable digital-first philosophy with audio-rate converters by using a polyphase analog front end and NCO offset.
 
-- **System NF:** Estimated 6.5–8.0 dB across HF bands (mixer conversion loss ~4 dB, ADC contribution ~2–3 dB, DSP processing gain).
-- **System IIP3:** +28 to +35 dBm (limited by mixer switches and ADC input stage; differential design provides excellent symmetry).
-- **ADC SNR:** 110–115 dB (ADAU1979 at 192 kHz sampling, with 4-channel averaging improving effective SNR by 3 dB).
-- **DAC THD+N:** <0.005% (ADAU1962A at 192 kHz, 12-channel differential output).
+## Key component rationale
 
-The near-zero-IF approach avoids DC-related noise issues common in pure zero-IF designs, while the 192 kHz sample rate provides sufficient bandwidth for SSB/CW signals with digital filtering.
+| Part | Role | Why this part |
+|------|------|---------------|
+| SN74CBT3125CPW | Rx polyphase mixer switches | Logic-level LO drive; four switches per IC; rated 5 V for Rx chain; low on-resistance CMOS bus switch |
+| SN74CBTLV3125 | Tx polyphase mixer switches | Same topology as Rx, 3.3 V-rated LV variant to match DAC output levels |
+| ADA4625-2 | Baseband node buffers (Rx mixer) | Dual JFET op-amp, 3.3 nV/√Hz, unity-gain stable; isolates high-impedance switch nodes from the differential driver chain without loading the switching node |
+| ADA4945-1 | Rx differential driver amps | Fully differential amplifier; converts single-ended phase-buffer outputs to the differential signal required by ADAU1979; maintains fully balanced path from mixer to ADC |
+| ADAU1979 | 4-channel 24-bit Rx ADC | 4.5 Vrms differential input range prevents ADC clipping during strong-signal transients; 192 kHz max sample rate; I2S/TDM connects directly to ADAU1467 |
+| ADAU1962A | 12-channel 24-bit Tx DAC | Multi-channel differential DAC for Tx I/Q baseband; I2S/TDM from ADAU1467; same Analog Devices audio ecosystem ensures compatible clocking and protocol |
+| ADAU1467 | SigmaDSP core | 294 MHz dual-core fixed-point DSP; SigmaStudio graphical programming; integrates NCO, FIR/IIR filter bank, AGC, I/Q calibration, and demodulation in one chip; direct I2C parameter RAM access for runtime calibration updates |
+| AD9523-1 | Clock generator | 14 independent outputs; single VCO generates both the variable RF LO and a fixed audio MCLK via the reference-path output; −226 dBc/Hz FOM; eliminates a separate audio oscillator |
+| CTS_535_TCXO | Frequency reference | < 2 ppm TCXO stability adequate for amateur digital modes without oven complexity |
+| Raspberry Pi Pico (RP2040) | Radio controller | Dual-core Arm M0+; SPI for AD9523-1; I2C for ADAU1467 parameter RAM; GPIO for band switching; USB for CAT; low cost, widely available |
+| LT3045 / LT3094 | Precision LDOs | 2 μVrms output noise; required to keep supply noise below the ADC noise floor and avoid degrading LO phase noise on precision analog rails |
 
-### Harmonic Rejection
+## LO band plan and coverage
 
-The 8-phase mixer provides strong suppression of LO harmonics:
+The NZIF radio covers all amateur HF bands (160m through 10m) plus 6m. The LO is tuned directly to the operating frequency in 100 kHz tiles; the ADAU1467 NCO provides ±96 kHz fine-tuning within each tile, ensuring continuous coverage without gaps.
 
-- **3rd harmonic:** >60 dB rejection (phase-domain cancellation).
-- **5th harmonic:** >50 dB rejection.
-- **7th harmonic:** >45 dB rejection.
+8-phase mixing is used through 10m. On 6m (50–54 MHz), the clock tree switches to 4-phase operation because 8-phase would require the phase register to operate at 400 MHz, beyond the SN74AUC16374's rated speed.
 
-On 6m, 4-phase operation maintains >40 dB rejection for key harmonics while respecting the TI 16374 speed limit.
+| Band | Frequency range (MHz) | LO range (MHz) | Phase mode | NCO range (kHz) | Coverage |
+|------|-----------------------|----------------|------------|-----------------|----------|
+| 160m | 1.800 – 2.000 | 1.800 – 2.000 | 8-phase | ±96 | Complete |
+| 80m  | 3.500 – 4.000 | 3.500 – 4.000 | 8-phase | ±96 | CW and SSB |
+| 60m  | 5.330 – 5.405 | 5.330 – 5.405 | 8-phase | ±96 | Channelized, full coverage |
+| 40m  | 7.000 – 7.300 | 7.000 – 7.300 | 8-phase | ±96 | Complete |
+| 30m  | 10.100 – 10.150 | 10.100 – 10.150 | 8-phase | ±96 | Complete |
+| 20m  | 14.000 – 14.350 | 14.000 – 14.350 | 8-phase | ±96 | Complete |
+| 17m  | 18.068 – 18.168 | 18.068 – 18.168 | 8-phase | ±96 | Complete |
+| 15m  | 21.000 – 21.450 | 21.000 – 21.450 | 8-phase | ±96 | Complete |
+| 12m  | 24.890 – 24.990 | 24.890 – 24.990 | 8-phase | ±96 | Complete |
+| 10m  | 28.000 – 29.700 | 28.000 – 29.700 | 8-phase | ±96 | Complete |
+| 6m   | 50.000 – 54.000 | 50.000 – 54.000 | 4-phase | ±96 | Reduced to 4-phase (clock rate limit) |
 
-### Comparison to Other HF Receiver Architectures
+## Performance characteristics
 
-| Architecture | NF (dB) | IIP3 (dBm) | Harmonic Rejection | Power (W) | Cost | Notes |
-|--------------|---------|------------|-------------------|-----------|------|-------|
-| NZIF (8-phase) | 6.5–8.0 | +30 | Excellent (>60 dB odd harmonics) | 5–8 | Medium | Polyphase mixer, audio-rate converters, digital NCO |
-| Traditional Superhet | 8–12 | +20 | Good (with filters) | 10–15 | High | Requires IF filters, multiple mixers |
-| Tayloe Quadrature | 7–10 | +25 | Moderate (LO feedthrough issues) | 6–10 | Low | Simple, but sensitive to LO leakage |
-| Direct Sampling (e.g., Norcal 2030) | 5–7 | +40 | Excellent (digital) | 15–25 | High | High-speed ADCs, complex DSP |
+### Signal chain and noise figure
+
+The NZIF receive chain has no dedicated on-board LNA between the antenna port and the polyphase mixer. Noise figure and linearity are set by the SN74CBT3125 switch conversion loss and the ADA4625-2 / ADA4945-1 input noise.
+
+**Estimated figures (cascade analysis; bring-up measurement required):**
+
+- **System NF:** ~6–9 dB. Polyphase mixer conversion loss approximately 6 dB (dominated by switch Rds(on) and signal distribution to eight phases); ADA4625-2 contributes ~2–3 dB NF at baseband. Any gain provided by the RF front-end board directly improves this figure.
+- **System IIP3:** Estimated +25–35 dBm at the antenna port. The SN74CBT3125 is not characterized as an RF mixer component; IIP3 must be measured during bring-up.
+- **Harmonic rejection:** Theoretical >60 dB (3rd), >50 dB (5th), >45 dB (7th). Practical expectation for a well-built board: 40–55 dB, limited by switch Rds(on) matching and phase-clock timing accuracy.
+- **ADC SNR:** 110–115 dB (ADAU1979 at 192 kHz, 24-bit).
+- **DAC THD+N:** < 0.005% (ADAU1962A at 192 kHz, 12-channel differential).
+
+### Comparison to published benchmarks
+
+| Metric | NC2030 (measured) | NZIF (estimated) |
+|--------|-------------------|-----------------|
+| System NF | ~12 dB (from MDS = −135 dBm at 500 Hz BW) | ~6–9 dB |
+| System IIP3 | +28.5 dBm (from IP3 DR plateau = 109 dB) | +25–35 dBm (TBD) |
+| Harmonic rejection | >45 dB (phasing network) | >40–55 dB (8-phase cancellation) |
+| Instantaneous BW | ~1.5 kHz (audio preamp) | ±96 kHz (ADC + NCO) |
+| Modes | CW only (2 bands) | All modes, all HF + 6m |
+| Power | ~0.13 W | ~5–8 W |
+
+**Caveat:** All NZIF figures are calculated estimates. NC2030's are bench-measured. Bring-up measurement is required to validate NZIF performance.
+
+| Architecture | NF (dB) | IIP3 (dBm) | Harmonic rejection | Power (W) | Notes |
+|---|---|---|---|---|---|
+| NZIF (8-phase, est.) | 6–9 | +25–35 (est.) | 40–55 dB odd harmonics | 5–8 | No on-board LNA; measured values TBD |
+| NC2030 (measured) | ~12 | +28.5 | >45 dB (phasing) | ~0.13 | CW only, 2 bands, narrow audio preamp |
+| Traditional superhet | 8–12 | +15–25 | Good (with roofing filter) | 10–15 | Crystal roofing filter limits IMD |
+| Direct sampling | 5–7 | +35+ | Excellent (digital) | 15–25 | High-speed ADCs required |
 
 **NZIF advantages:**
+- No IF filter bank or crystal roofing filter.
 - Lower power and cost than direct sampling.
-- Better harmonic rejection than Tayloe or basic quadrature.
-- Simpler analog front-end than traditional superhet.
-- Full differential signal path preserves CMRR and linearity.
+- 8-phase operation reduces need for RF preselector on this board.
+- Fully differential signal path from mixer to ADC.
 
-**NZIF trade-offs:**
-- Requires external RF selectivity (PA/filter board).
+**NZIF limitations:**
+- No on-board LNA: NF depends on any gain provided by the RF front-end board.
+- SN74CBT3125 not characterized as an RF mixer — IIP3 unverified until bring-up.
+- Phase control timing critical: switch drive skew directly degrades harmonic rejection.
 - 192 kHz sample rate limits instantaneous bandwidth vs. direct sampling.
-- Phase control timing critical for harmonic rejection.
+
+## Software architecture
+
+### Raspberry Pi Pico (RP2040) — radio control
+
+Programs the AD9523-1 LO frequency (via SPI), manages band-boundary transitions, controls the I/Q calibration routine at power-up and on each band change, drives band/antenna switching, handles the front panel (rotary encoder, buttons, display), and presents a Hamlib-compatible UART CAT port for logging software.
+
+### ADAU1467 (SigmaDSP) — baseband processing
+
+Receives 24-bit I/Q samples from the ADAU1979 at 192 kHz. SigmaStudio blocks implement in sequence:
+
+- **I/Q correction matrix**: DC offset subtraction, gain trim, and phase trim applied before any demodulation. Coefficients written by the Pi Pico via I2C parameter RAM.
+- **NCO**: digital quadrature oscillator (±96 kHz range) for fine frequency offset between AD9523-1 PLL steps.
+- **Weaver demodulator**: the 8-phase mixer provides the first quadrature mixing stage. The ADAU1467 completes the Weaver second stage — a second NCO at the audio center frequency followed by matched lowpass filters. Summing selects USB; subtracting selects LSB.
+- **Selectivity filters**: the lowpass filters following the second Weaver mixing stage define channel bandwidth. Multiple widths (2.4 kHz SSB, 500 Hz CW, 6 kHz AM) selectable by the Pi Pico over I2C.
+- **AGC**: operates after the narrowband filter; drives the attenuator control for fast AGC.
+
+On transmit: the ADAU1467 accepts microphone audio from the ADAU1361, applies Weaver SSB encoding, generates CW keying envelopes, and outputs I/Q baseband to the ADAU1962A DAC.
+
+### I/Q calibration (Pi Pico, runs at power-up and each band change)
+
+The polyphase mixer introduces DC offset (CMOS switch charge injection), I/Q gain imbalance (Rds(on) mismatch), and I/Q phase imbalance (clock distribution skew). The ADAU1467 applies a 2×2 correction matrix:
+
+```
+I_corr = I_raw − DC_I
+Q_corr = (I_raw − DC_I) × sin(ε) + (Q_raw − DC_Q) × cos(ε) × g
+```
+
+Two methods in sequence:
+
+1. **Noise covariance** (fast, no RF stimulus): thermal noise has equal power on I and Q and zero cross-correlation. The Pi Pico reads ADAU1467 accumulated I/Q statistics (I2C readback cells), computes the correction matrix, and writes it to parameter RAM. Converges in < 1 s.
+2. **Tone injection**: Pi Pico programs a known NCO offset and injects a reference tone. Residual image power from ADAU1467 readback registers guides coefficient iteration until image rejection ≥ 50 dB.
+
+## Open items
+
+The schematic review (see `nzif/docs/schematic_review_report.md`) identified critical issues that must be resolved before layout. **Status: HOLD — do not proceed to layout freeze until Critical items are resolved.**
+
+Key critical issues:
+
+1. **Power symbol IDs on custom rails**: wrong library IDs cause netlist cross-connections that short rails and would destroy components.
+2. **LT3045 feedback resistors**: missing "k" suffix causes values to read as 49.9 Ω instead of 49.9 kΩ — all affected LDO rails produce near-zero voltage.
+3. **LT8330 / ADP2303 feedback**: wrong resistor values produce incorrect output voltages.
+4. **AD9523-1 VCXO control (R701)**: 1 kΩ value gives 11 kΩ total load, below the 20 kΩ minimum — PLL will not lock.
+5. **U706 part/value mismatch**: SN74CBT3253 (5 V rated) symbol vs. SN74CBTLV3253 (3.6 V max) value — wrong device at 5 V will be destroyed.
+6. **ADAU1962A AVDD label**: "2.5V" on AVDD pins (minimum 3.0 V) — DAC out of spec.
+7. **LT3045/LT3094 output capacitors**: 4.7 µF fitted; 10 µF minimum for LDO stability — LDOs will oscillate.
+8. **TX mixer RF reconstruction filter absent**: required before the PA interface.
+9. **ADA4945-1 feedback capacitors**: all DNP — oscillation risk at the differential driver outputs.
+
+## Recommended review path
+
+1. Read `nzif/rx_mixer.kicad_sch` and `rxmixer.md` to understand the 8-phase receive mixer.
+2. Review `nzif/rx_driver_amps.kicad_sch` and `nzif/adcs.kicad_sch` for the ADC path (note: driver amps are ADA4945-1 FDAs).
+3. Review `nzif/dacs.kicad_sch` and `nzif/tx_mixer.kicad_sch` for the transmit I/Q and RF generation path.
+4. Review `nzif/clock_tree.kicad_sch` for phase generation (AD9523-1 + SN74AUC16374 + SN74CBT3253).
+5. Check `nzif/power_ldos.kicad_sch` and `nzif/power_switching_reg.kicad_sch` — multiple Critical issues identified.
+6. Use `nzif/docs/schematic_review_report.md` for the full list of open issues before any layout work.
 
 ## Links to the main schematic sheets
 
@@ -203,36 +336,18 @@ On 6m, 4-phase operation maintains >40 dB rejection for key harmonics while resp
 - `nzif/adcs.kicad_sch` — ADAU1979 ADC interface.
 - `nzif/dacs.kicad_sch` — ADAU1962A DAC interface.
 - `nzif/dsp.kicad_sch` — ADAU1467 DSP and audio/serial signal flow.
-- `nzif/clock_tree.kicad_sch` — phase clocking and timing.
-- `nzif/microcontroller.kicad_sch` — control logic and board housekeeping.
-
-## Practical notes from the current design state
-
-- The receive mixer uses eight `phase_*` control lines and four `SN74CBT3125` switch ICs to implement the polyphase sampling network.
-- The baseband outputs are buffered with `ADA4625` op-amps.
-- The `ADAU1979` ADC is the chosen receive converter; the `ADAU1962A` DAC is the chosen transmit converter.
-- The board is intended to interface to external RF front-end and PA hardware; it does not include the final TX PA or the high-power transmit filter bank.
-- The `nzif/docs/schematic_review_report.md` file contains review findings for the ADAU1962A supply routing, ADAU1979 TDM mode, and clocking details that should be confirmed during bring-up.
-
-## Relationship to other architectures
-
-- Traditional roofing-filter superheterodyne radios rely on multiple narrowband IF filters and a cascade of analog selectivity stages. NZIF instead pushes selectivity into the phase-domain mixer and DSP path.
-- Tayloe-style quadrature sampling detectors are low-cost and direct-conversion, but they often need stronger external front-end filtering and can suffer from LO feedthrough. NZIF uses eight phase taps and differential mixing to suppress odd LO harmonics and reduce analog filtering requirements.
-- Norcal 2030-style direct sampling radios sample HF at very high rates and use digital filters. NZIF achieves a related digital-first mindset with much lower audio-rate converters by using an analog polyphase mixer and a digital NCO offset to move the useful band away from DC.
-
-## Recommended review path
-
-1. Read `nzif/rx_mixer.kicad_sch` and `rxmixer.md` to understand the 8-phase receive mixer.
-2. Review `nzif/rx_driver_amps.kicad_sch` and `nzif/adcs.kicad_sch` for the ADC path.
-3. Review `nzif/dacs.kicad_sch` and `nzif/tx_mixer.kicad_sch` for the transmit I/Q and RF generation path.
-4. Confirm clocking and phase generation in `nzif/clock_tree.kicad_sch`.
-5. Use `nzif/docs/schematic_review_report.md` for current design issues and correctness checks.
+- `nzif/clock_tree.kicad_sch` — phase clocking and timing (AD9523-1, SN74AUC16374, SN74CBT3253).
+- `nzif/microcontroller.kicad_sch` — Raspberry Pi Pico control logic.
+- `nzif/audio_subsystem.kicad_sch` — ADAU1361 audio codec (mic/speaker interface).
+- `nzif/power_ldos.kicad_sch` — LT3045/LT3094 LDO regulators.
+- `nzif/power_switching_reg.kicad_sch` — LT8330/ADP2302/ADP2303 switching supplies.
 
 ## Files in this repo
 
-- `README.md` — this file.
-- `NOTES.md` — supplemental design notes and narrative references.
-- `rxmixer.md` — existing detailed description of the receive 8-phase mixer.
-- `nzif/...` — KiCad schematic source files for the NZIF board.
+- `README.md` — user-facing design document (same content as this file).
+- `NOTES.md` — supplemental design notes and signal-flow derivations.
+- `rxmixer.md` — detailed description of the receive 8-phase mixer.
+- `nzif/...` — KiCad schematic source files.
+- `nzif/docs/schematic_review_report.md` — schematic review findings (Critical items block layout freeze).
 - `firmware/...` — Pico firmware and USB/CAT bring-up support.
 - `.claude/...` — agent files used for review workflows.
