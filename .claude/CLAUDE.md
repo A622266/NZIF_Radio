@@ -259,13 +259,13 @@ The `init_clock` is a Pico GPIO toggled in firmware at a few kHz — well below 
 | Counter feedback to D1 | Q8 | Q4 |
 | Phase pulse width | 45° (1/8 RF period) | 90° (1/4 RF period) |
 | Maximum counter clock | ~240 MHz (at 30 MHz RF, 10m) | 216 MHz (at 54 MHz RF, 6m) |
-| Odd harmonic cancellation | 3rd and 5th cancelled by DSP combining | None — 3rd harmonic passes at full amplitude |
+| Odd harmonic cancellation | 3rd, 5th, and 7th cancelled by DSP combining | 3rd and 7th cancelled; 5th passes |
 
 The SN74AUC16374 is rated to a maximum VCC of 2.7V, operated here at 2.5V. At 8× RF for 10m the counter clock reaches ~240 MHz; for 6m, 8-phase would require 400–432 MHz which exceeds the device rating. Switching to 4-phase keeps the clock at ≤216 MHz with margin.
 
-In 8-phase mode the ADAU1467 DSP combines the four differential ADC channels with weights [1, 1/√2, 0, −1/√2] for I and [0, 1/√2, 1, 1/√2] for Q. This phasor sum cancels the 3rd and 5th harmonic mixing responses. The 7th harmonic is not cancelled by this four-channel architecture — the differential pairing of opposite phases causes the 7th harmonic signature to be identical to the fundamental's, making them indistinguishable with four channels. In practice the 7th harmonic response (to signals at f_LO/7) is suppressed by the ZWAS preselector LPF, whose cutoff frequency is below f_LO/7 for all HF bands.
+In 8-phase mode the four differential ADC channels (each formed by pairing a phase tap with its 180°-opposite) have linearly independent response vectors for k=1, 3, 5, and 7 — they are distinct rows of the 8-point DFT matrix. The ADAU1467 DSP applies complex combining weights that simultaneously pass the fundamental while zeroing all three harmonic responses. The first unrejected harmonic is the 9th (response to signals at f_LO/9), which falls far outside any amateur band for HF frequencies.
 
-In 4-phase mode (6m) the DSP uses I = ch1−ch3, Q = ch2−ch4. This recovers I and Q correctly but provides no odd-harmonic cancellation — the 3rd harmonic response (to signals near 17m, ~18 MHz) passes at full amplitude. For most 6m operating conditions the 17m signal level is low enough to be acceptable, but strong 17m signals can create baseband interference.
+In 4-phase mode (6m) the active taps are only at 0°, 90°, 180°, 270° (Q5–Q8 are quenched). Because the tap spacing is 90°, the 5th harmonic produces the same response vector as the fundamental [1, j, −1, −j], making them indistinguishable. The 3rd and 7th harmonics share the orthogonal vector [1, −j, −1, j] and are both cancelled together. The practical consequence on 6m is a spurious response to signals at f_LO/5 ≈ 10–10.8 MHz (30m band). The HP-2 filter (9 MHz cutoff, active on 6m) provides only modest attenuation at 10 MHz, so strong 30m signals can create interference on 6m in 4-phase mode.
 
 ## Why 8-phase harmonic rejection?
 
