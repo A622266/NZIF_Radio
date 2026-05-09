@@ -5552,16 +5552,6 @@
 	)
 	(wire
 		(pts
-			(xy 106.68 101.6) (xy 106.68 102.87)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a85d71ef-e1b5-493e-9cc7-3c237a9b551c")
-	)
-	(wire
-		(pts
 			(xy 92.71 243.84) (xy 92.71 246.38)
 		)
 		(stroke
@@ -6042,6 +6032,16 @@
 	)
 	(wire
 		(pts
+			(xy 77.47 90.17) (xy 77.47 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "de5800f9-31dc-437f-90a1-49ace4fb29d4")
+	)
+	(wire
+		(pts
 			(xy 153.67 213.36) (xy 162.56 213.36)
 		)
 		(stroke
@@ -6312,6 +6312,16 @@
 	)
 	(wire
 		(pts
+			(xy 106.68 101.6) (xy 106.68 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fc1df29f-f06b-411e-b1f2-b2875c952365")
+	)
+	(wire
+		(pts
 			(xy 143.51 213.36) (xy 143.51 215.9)
 		)
 		(stroke
@@ -6556,13 +6566,13 @@
 			"SUVORK5CYII="
 		)
 	)
-	(label "AVDD2"
-		(at 77.47 90.17 270)
+	(label "3.3V"
+		(at 77.47 95.25 90)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
 		(uuid "0b063107-2e42-41b1-8234-2552adfaa7ce")
 	)
@@ -6576,13 +6586,13 @@
 		)
 		(uuid "17eaccde-d207-4ca6-8866-f6ac44cd9934")
 	)
-	(label "AVDD3"
-		(at 106.68 102.87 270)
+	(label "3.3V"
+		(at 106.68 106.68 90)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
 		(uuid "1b0bec5e-3832-4656-84e3-2c7d445e49ae")
 	)

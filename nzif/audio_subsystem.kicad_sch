@@ -2035,6 +2035,16 @@
 	)
 	(wire
 		(pts
+			(xy 288.29 76.2) (xy 292.1 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3d3aa012-9da6-44da-88c2-a32634f0aef2")
+	)
+	(wire
+		(pts
 			(xy 269.24 73.66) (xy 269.24 81.28)
 		)
 		(stroke
@@ -2645,7 +2655,7 @@
 	)
 	(wire
 		(pts
-			(xy 279.4 76.2) (xy 275.59 76.2)
+			(xy 275.59 76.2) (xy 283.21 76.2)
 		)
 		(stroke
 			(width 0)
@@ -2966,7 +2976,7 @@
 	)
 	(hierarchical_label "MIC_IN_EXT"
 		(shape input)
-		(at 279.4 76.2 0)
+		(at 292.1 76.2 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4458,6 +4468,97 @@
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/91ace161-62c2-4ad0-a80e-f8c3c9bc5e50"
 					(reference "R1201")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 285.75 76.2 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "51015829-d4f8-4b33-9028-ef1618141922")
+		(property "Reference" "R1229"
+			(at 285.75 69.85 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0"
+			(at 285.75 72.39 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 285.75 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 285.75 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor, small US symbol"
+			(at 285.75 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey Part #" ""
+			(at 285.75 76.2 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "62c0e411-246d-4e80-958c-f574923ba523")
+		)
+		(pin "2"
+			(uuid "b2cfb5ac-5ff6-4598-96e9-fbdafab4df14")
+		)
+		(instances
+			(project "nzif"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/91ace161-62c2-4ad0-a80e-f8c3c9bc5e50"
+					(reference "R1229")
 					(unit 1)
 				)
 			)
