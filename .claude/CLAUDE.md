@@ -131,8 +131,19 @@ Generates the LO and the eight phase-control signals for both the Rx and Tx mixe
 
 - **AD9523-1** clock generator provides both the RF LO and the system audio MCLK from a single on-chip VCO. The VCO-path outputs drive the phase distribution logic; a separate reference-path output provides a stable fixed MCLK to all audio ICs, completely independent of LO tuning.
 - **CTS_535_TCXO** provides the precision reference clock for the AD9523-1 PLL.
-- **SN74AUC16374** (16-bit D flip-flop register) latches the phase-select control words and distributes the phase clock edges to the mixer switch gates.
-- **SN74CBT3253 / SN74CBTLV3253** multiplexers route the phase-clocked outputs to the correct switch control lines.
+- **SN74AUC16374** (16-bit D flip-flop, 2.5V supply) is wired as two independent 8-stage ring counters — one for Rx and one for Tx, using the IC's two independent 8-bit banks. Each counter is a shift-register loop: D2=Q1, D3=Q2, …, D8=Q7, with Q8 (8-phase) or Q4 (4-phase) fed back to D1. A single '1' circulating through the active stages produces the non-overlapping phase pulses that drive the mixer switches.
+- **SN74AUC08** quad AND gates (one IC per counter, 2.5V supply) gate the D5–D8 shift connections. When `PHASE_SEL_8` is high, all 8 stages circulate normally (8-phase mode). When `PHASE_SEL_8` is low, D5–D8 are forced to zero, quenching stages 5–8 so only a 4-stage ring (Q1–Q4) remains active (4-phase mode).
+- **SN74CBTLV3253** dual 4:1 analog mux (2.5V supply, U705=Rx, U706=Tx) selects both the D1 data input and the counter clock on each band change and during initialisation. The Pico drives S0/S1 (`RX_UC_ADDR0/1`, `TX_UC_ADDR0/1`) to choose one of four modes:
+
+  | S1:S0 | D1 source | Clock source | Purpose |
+  |-------|-----------|--------------|---------|
+  | 0,0 | GND | `init_clock` (Pico GPIO) | Clear — flush 0s through all stages |
+  | 0,1 | 2.5V | `init_clock` | Seed — inject one '1' into D1 |
+  | 1,0 | Q4 (`counter_feedback_4`) | `high_speed_clock` (AD9523-1) | 4-phase run (6m band) |
+  | 1,1 | Q8 (`counter_feedback_8`) | `high_speed_clock` | 8-phase run (160m–10m) |
+
+- **SN74LVC8T245** dual-supply level translators (U704=Rx, U707=Tx, VCC_A=2.5V, VCC_B=3.3V) convert the 2.5V ring counter Q outputs to the 3.3V levels required by the mixer bus switches, producing `rx_phase_0`…`rx_phase_315` and `tx_phase_0`…`tx_phase_315`.
+- **`PHASE_SEL_8`** (Pico GPIO at 3.3V) is divided to ~2.5V by R1226 (10 kΩ series) and R1227 (33 kΩ to GND) before reaching the AUC08 AND gate inputs, keeping the signal within the AUC08 absolute-maximum input of VCC+0.5V = 3.0V at its 2.5V supply.
 
 ### `nzif/microcontroller.kicad_sch`
 
@@ -216,16 +227,45 @@ Dual-transformer design positioned between the ZWAS LPF bank and the antenna, wh
 ## LO chain
 
 ```
-CTS_535_TCXO → AD9523-1 PLL → LO output   (VCO path → SN74AUC16374 phase register
-                                             → SN74CBT3253/CBTLV3253 phase muxes
+CTS_535_TCXO → AD9523-1 PLL → LO output   (VCO path → SN74AUC16374 ring counters (2.5V)
+                                             → SN74AUC08 AND gates (phase-mode select)
+                                             → SN74CBTLV3253 init/run mux
+                                             → SN74LVC8T245 level shifters (2.5V → 3.3V)
                                              → phase_0 … phase_315 → mixer switch gates)
                             → MCLK output  (reference path, fixed ~12.288 MHz
                                              → ADAU1979, ADAU1467, ADAU1962A, ADAU1361)
 ```
 
-The AD9523-1 VCO is tuned by the Pi Pico (via SPI) to the operating frequency. A divider chain produces the 8-phase clock signals at 8× the LO frequency — equal to 8× the RF frequency for direct-conversion operation. The reference-path MCLK output is completely decoupled from VCO tuning, so retuning the LO does not disturb the audio clock.
+The AD9523-1 VCO is tuned by the Pi Pico (via SPI) to the operating frequency. The reference-path MCLK output is completely decoupled from VCO tuning, so retuning the LO does not disturb the audio clock.
 
-**6m phase-mode transition:** For 8-phase operation at 50 MHz RF, the phase register clock must run at 8 × 50 MHz = 400 MHz. The SN74AUC16374 (rated to approximately 250 MHz in the AUC logic family) cannot operate reliably at this rate. The clock tree therefore switches to 4-phase operation for the 6m band (50–54 MHz), requiring only 200 MHz — within the register's operating range. Four-phase operation maintains adequate harmonic rejection (>40 dB) while respecting the component speed limit.
+### Ring counter initialisation
+
+The SN74AUC16374 ring counters can power up in any state. Before the mixers are enabled on every power-up and band change, the Pico runs the following sequence using the 3253 mux and a slow `init_clock` GPIO:
+
+1. **Clear** (S=00, 9+ `init_clock` pulses): D1=GND; clocks 0s through all 8 stages, flushing any spurious bit patterns.
+2. **Seed** (S=01, 1 `init_clock` pulse): D1=2.5V; loads a single '1' into Q1 with all other stages already 0.
+3. **Set phase mode**: assert `PHASE_SEL_8` high (8-phase) or low (4-phase). The AND gates latch the D5–D8 gating before the high-speed clock starts.
+4. **Run** (S=10 for 4-phase, S=11 for 8-phase): switches D1 to the Q4 or Q8 feedback net and the clock source to `high_speed_clock` from the AD9523-1. The single '1' circulates freely at LO rate.
+
+The `init_clock` is a Pico GPIO toggled in firmware at a few kHz — well below any setup/hold concern. `PHASE_SEL_8` must be asserted before switching S to the run state so that stages 5–8 are quenched before Q4 feedback is engaged in 4-phase mode.
+
+### 8-phase vs 4-phase mode
+
+| Parameter | 8-phase (160m–10m) | 4-phase (6m) |
+|-----------|-------------------|--------------|
+| AD9523-1 output divider | ÷8, clock = 8× RF | ÷4, clock = 4× RF |
+| Active ring stages | 8 (Q1–Q8) | 4 (Q1–Q4) |
+| `PHASE_SEL_8` / D5–D8 | High — pass Q4–Q7 | Low — forced 0 |
+| Counter feedback to D1 | Q8 | Q4 |
+| Phase pulse width | 45° (1/8 RF period) | 90° (1/4 RF period) |
+| Maximum counter clock | ~240 MHz (at 30 MHz RF, 10m) | 216 MHz (at 54 MHz RF, 6m) |
+| Odd harmonic cancellation | 3rd, 5th, and 7th cancelled by DSP combining | 3rd and 7th cancelled; 5th passes |
+
+The SN74AUC16374 is rated to a maximum VCC of 2.7V, operated here at 2.5V. At 8× RF for 10m the counter clock reaches ~240 MHz; for 6m, 8-phase would require 400–432 MHz which exceeds the device rating. Switching to 4-phase keeps the clock at ≤216 MHz with margin.
+
+In 8-phase mode the four differential ADC channels (each formed by pairing a phase tap with its 180°-opposite) have linearly independent response vectors for k=1, 3, 5, and 7 — they are distinct rows of the 8-point DFT matrix. The ADAU1467 DSP applies complex combining weights that simultaneously pass the fundamental while zeroing all three harmonic responses. The first unrejected harmonic is the 9th (response to signals at f_LO/9), which falls far outside any amateur band for HF frequencies.
+
+In 4-phase mode (6m) the active taps are only at 0°, 90°, 180°, 270° (Q5–Q8 are quenched). Because the tap spacing is 90°, the 5th harmonic produces the same response vector as the fundamental [1, j, −1, −j], making them indistinguishable. The 3rd and 7th harmonics share the orthogonal vector [1, −j, −1, j] and are both cancelled together. The practical consequence on 6m is a spurious response to signals at f_LO/5 ≈ 10–10.8 MHz (30m band). The HP-2 filter (9 MHz cutoff, active on 6m) provides only modest attenuation at 10 MHz, so strong 30m signals can create interference on 6m in 4-phase mode.
 
 ## Why 8-phase harmonic rejection?
 

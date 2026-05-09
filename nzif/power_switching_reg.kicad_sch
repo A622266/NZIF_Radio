@@ -11,6 +11,129 @@
 		(company "Andy McCann KA3KAF and Doug McCann KA3KAG")
 	)
 	(lib_symbols
+		(symbol "Connector:TestPoint"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.762)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "TP"
+				(at 0 6.858 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TestPoint"
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 5.08 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 5.08 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "test point"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "test point tp"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Pin* Test*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "TestPoint_0_1"
+				(circle
+					(center 0 3.302)
+					(radius 0.762)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TestPoint_1_1"
+				(pin passive line
+					(at 0 0 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:C_Small"
 			(pin_numbers
 				(hide yes)
@@ -1792,6 +1915,12 @@
 		(uuid "22d9ef73-af0f-45b2-8068-3a84a74286bf")
 	)
 	(junction
+		(at 201.93 78.74)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "26b40dc0-15f8-40d1-b779-3b01e4ce2593")
+	)
+	(junction
 		(at 213.36 184.15)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1876,6 +2005,12 @@
 		(uuid "55a648c7-cdf3-4f06-81eb-51416e9992ec")
 	)
 	(junction
+		(at 200.66 29.21)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "58da0ca0-907f-4c05-8a8b-aed73da8811c")
+	)
+	(junction
 		(at 111.76 125.73)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1930,6 +2065,12 @@
 		(uuid "883aa89f-95c4-47c5-a898-d46f915185e9")
 	)
 	(junction
+		(at 213.36 177.8)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8b6b98c8-3d01-4ff5-9aec-506c6b0b376c")
+	)
+	(junction
 		(at 223.52 29.21)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1964,6 +2105,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9b066f3d-0840-4ca5-83e6-c428cde7357b")
+	)
+	(junction
+		(at 203.2 128.27)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a26fdfaa-dc0b-4df1-a31e-ec292c8b67ec")
 	)
 	(junction
 		(at 171.45 85.09)
@@ -2425,6 +2572,16 @@
 	)
 	(wire
 		(pts
+			(xy 201.93 69.85) (xy 201.93 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "39b40657-49fe-4d92-9061-0ffd46266de8")
+	)
+	(wire
+		(pts
 			(xy 154.94 95.25) (xy 154.94 96.52)
 		)
 		(stroke
@@ -2475,7 +2632,7 @@
 	)
 	(wire
 		(pts
-			(xy 198.12 128.27) (xy 209.55 128.27)
+			(xy 198.12 128.27) (xy 203.2 128.27)
 		)
 		(stroke
 			(width 0)
@@ -2765,7 +2922,7 @@
 	)
 	(wire
 		(pts
-			(xy 194.31 29.21) (xy 205.74 29.21)
+			(xy 194.31 29.21) (xy 200.66 29.21)
 		)
 		(stroke
 			(width 0)
@@ -2865,6 +3022,16 @@
 	)
 	(wire
 		(pts
+			(xy 198.12 177.8) (xy 213.36 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "72defaf6-ce57-40b2-8966-678e443a0d77")
+	)
+	(wire
+		(pts
 			(xy 209.55 128.27) (xy 209.55 130.81)
 		)
 		(stroke
@@ -2922,6 +3089,16 @@
 			(type default)
 		)
 		(uuid "7ddf69e9-4346-471f-8129-23c40345ab43")
+	)
+	(wire
+		(pts
+			(xy 200.66 20.32) (xy 200.66 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "828e92ba-f86e-46a3-b9a6-ef1a9622f537")
 	)
 	(wire
 		(pts
@@ -3245,6 +3422,16 @@
 	)
 	(wire
 		(pts
+			(xy 201.93 78.74) (xy 209.55 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "abd06ff2-9bc7-4217-97e8-1247a14bdd92")
+	)
+	(wire
+		(pts
 			(xy 171.45 198.12) (xy 213.36 198.12)
 		)
 		(stroke
@@ -3305,13 +3492,23 @@
 	)
 	(wire
 		(pts
-			(xy 198.12 78.74) (xy 209.55 78.74)
+			(xy 198.12 78.74) (xy 201.93 78.74)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "b334bb00-3ea7-4fc9-93c4-e8efc91ec78d")
+	)
+	(wire
+		(pts
+			(xy 213.36 177.8) (xy 218.44 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b40257f0-8c34-4a05-9018-8f80b0d379d3")
 	)
 	(wire
 		(pts
@@ -3322,16 +3519,6 @@
 			(type default)
 		)
 		(uuid "b550bda9-6b37-4aac-ae26-bc785535dcb0")
-	)
-	(wire
-		(pts
-			(xy 218.44 177.8) (xy 213.36 177.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b74eb721-3384-4cd3-9e1d-4e37da04cc5c")
 	)
 	(wire
 		(pts
@@ -3362,6 +3549,16 @@
 			(type default)
 		)
 		(uuid "bd0fe050-f0ba-4fc7-aca6-1b58041bf235")
+	)
+	(wire
+		(pts
+			(xy 203.2 128.27) (xy 209.55 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c1741b38-4bcd-4d78-9cbb-ad46b43b215d")
 	)
 	(wire
 		(pts
@@ -3445,6 +3642,16 @@
 	)
 	(wire
 		(pts
+			(xy 203.2 120.65) (xy 203.2 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cca3b134-7785-44fa-8677-77bda545848e")
+	)
+	(wire
+		(pts
 			(xy 226.06 21.59) (xy 226.06 24.13)
 		)
 		(stroke
@@ -3482,6 +3689,16 @@
 			(type default)
 		)
 		(uuid "d081e5ec-9009-4bff-ba47-de457fc758a8")
+	)
+	(wire
+		(pts
+			(xy 198.12 168.91) (xy 198.12 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d111d0fe-26b2-41c4-ba32-d2f75e251e82")
 	)
 	(wire
 		(pts
@@ -3672,6 +3889,16 @@
 			(type default)
 		)
 		(uuid "ef08bf38-42ea-49cc-8818-ade3ceb24689")
+	)
+	(wire
+		(pts
+			(xy 200.66 29.21) (xy 205.74 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f01eb610-bbe2-42ba-9c7b-d899e2d53db2")
 	)
 	(wire
 		(pts
@@ -5090,10 +5317,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "0ecbeea8-fd00-4047-b01c-4fb3fecc802d")
 		(property "Reference" "R1113"
-			(at 229.87 139.6999 0)
+			(at 229.362 137.414 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5103,7 +5329,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" ""
+		(property "Value" "10k"
 			(at 228.854 139.954 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5836,10 +6062,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "259563f7-e0c0-4936-9e0a-abb32cae5b00")
 		(property "Reference" "R1109"
-			(at 226.06 40.6399 0)
+			(at 225.552 38.608 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5849,7 +6074,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" ""
+		(property "Value" "10k"
 			(at 225.044 40.894 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6020,10 +6245,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "304d0bfd-9d3f-4062-9865-d491c96a73ce")
 		(property "Reference" "R1110"
-			(at 229.87 82.5499 0)
+			(at 229.108 80.01 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6033,7 +6257,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" ""
+		(property "Value" "64.9k"
 			(at 228.6 82.296 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6118,10 +6342,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "3175e07b-7feb-47e4-abd0-de20982f0f27")
 		(property "Reference" "R1108"
-			(at 226.06 33.0199 0)
+			(at 225.298 30.226 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6131,7 +6354,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" ""
+		(property "Value" "40.2k"
 			(at 224.79 32.766 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7819,6 +8042,85 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 200.66 20.32 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "70450ccf-9488-4f55-934b-33e920e72d89")
+		(property "Reference" "TP1201"
+			(at 203.2 15.7479 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 203.2 18.2879 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 205.74 20.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 205.74 20.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 200.66 20.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "303d33d1-58c2-4045-a1b4-e1f120e85310")
+		)
+		(instances
+			(project "nzif"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/3655e9dc-6764-4ce9-aa9b-ed58af2a1dde"
+					(reference "TP1201")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_Small_US")
 		(at 199.39 222.25 0)
 		(unit 1)
@@ -8257,10 +8559,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "7c50213b-94b1-464c-9e24-cedcb540998e")
 		(property "Reference" "R1111"
-			(at 229.87 90.1699 0)
+			(at 228.6 87.376 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8270,7 +8571,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" ""
+		(property "Value" "10k"
 			(at 228.854 90.424 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9080,6 +9381,85 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 203.2 120.65 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "962199b5-abb3-4a14-8c54-a5ef3141bcb9")
+		(property "Reference" "TP1203"
+			(at 205.74 116.0779 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 205.74 118.6179 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 208.28 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 208.28 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 203.2 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e346e922-eced-499a-b58d-88b05faa9080")
+		)
+		(instances
+			(project "nzif"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/3655e9dc-6764-4ce9-aa9b-ed58af2a1dde"
+					(reference "TP1203")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 171.45 143.51 0)
 		(unit 1)
@@ -9578,6 +9958,85 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 198.12 168.91 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b70080c0-0599-47da-8899-df126b1eb540")
+		(property "Reference" "TP1204"
+			(at 200.66 164.3379 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 200.66 166.8779 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 203.2 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 203.2 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 198.12 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ec574b5c-838c-4fcc-9ec3-74a85c4beecb")
+		)
+		(instances
+			(project "nzif"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/3655e9dc-6764-4ce9-aa9b-ed58af2a1dde"
+					(reference "TP1204")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Small")
 		(at 125.73 81.28 0)
 		(unit 1)
@@ -9848,6 +10307,85 @@
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/3655e9dc-6764-4ce9-aa9b-ed58af2a1dde"
 					(reference "#PWR01126")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 201.93 69.85 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c19b32b6-4b91-4635-bb80-64f547948767")
+		(property "Reference" "TP1202"
+			(at 204.47 65.2779 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 204.47 67.8179 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 207.01 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 207.01 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 201.93 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "2b6df3bc-c42e-4c91-a2b5-f09485071cb5")
+		)
+		(instances
+			(project "nzif"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/3655e9dc-6764-4ce9-aa9b-ed58af2a1dde"
+					(reference "TP1202")
 					(unit 1)
 				)
 			)
@@ -10530,10 +11068,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "e5595ba5-570d-4f16-a0ce-5008b53ae2b2")
 		(property "Reference" "R1112"
-			(at 229.87 132.0799 0)
+			(at 229.362 130.048 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10543,7 +11080,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" ""
+		(property "Value" "90.9k"
 			(at 228.6 131.826 0)
 			(show_name no)
 			(do_not_autoplace no)
