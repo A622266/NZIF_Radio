@@ -2624,7 +2624,9 @@
 						(type none)
 					)
 				)
-				(pin unspecified line
+			)
+			(symbol "FZT951TA_1_1"
+				(pin passive line
 					(at 0 0 0)
 					(length 2.54)
 					(name ""
@@ -2642,7 +2644,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin passive line
 					(at 7.62 5.08 270)
 					(length 2.54)
 					(name ""
@@ -2660,7 +2662,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin passive line
 					(at 7.62 -5.08 90)
 					(length 2.54)
 					(name ""
@@ -10340,14 +10342,15 @@
 				)
 			)
 		)
-		(property "Value" "+3.3V_CONVERTER"
-			(at 58.42 132.08 0)
+		(property "Value" "+3.3V_CONVERTERS"
+			(at 60.96 135.8899 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
