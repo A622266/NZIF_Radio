@@ -6816,9 +6816,10 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "43d3a788-f25a-4650-8009-5ab37c3dc23b")
 		(property "Reference" "R1106"
-			(at 195.58 213.36 0)
+			(at 201.93 213.3599 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6829,7 +6830,7 @@
 			)
 		)
 		(property "Value" "1M"
-			(at 200.66 214.376 0)
+			(at 201.93 215.8999 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8130,27 +8131,28 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "71da4848-e0d4-4608-8999-8173912a75c1")
 		(property "Reference" "R1107"
-			(at 195.58 220.98 0)
+			(at 196.85 220.9799 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(property "Value" "191k"
-			(at 200.914 222.504 0)
+			(at 196.85 223.5199 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
