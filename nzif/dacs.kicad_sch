@@ -3053,6 +3053,16 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "make 1%"
+		(exclude_from_sim no)
+		(at 248.412 140.716 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "130704a7-2465-40c4-9752-a077a209f507")
+	)
 	(text "check jumpers"
 		(exclude_from_sim no)
 		(at 78.74 131.318 0)
@@ -6614,7 +6624,7 @@
 		)
 		(uuid "0b063107-2e42-41b1-8234-2552adfaa7ce")
 	)
-	(label "2.5"
+	(label "2.5V"
 		(at 260.35 138.43 180)
 		(effects
 			(font
@@ -8875,7 +8885,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "0.iu"
+		(property "Value" "0.1u"
 			(at 236.22 219.8369 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10995,7 +11005,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "0.iu"
+		(property "Value" "0.1u"
 			(at 218.44 243.9669 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12160,7 +12170,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "0.iu"
+		(property "Value" "0.1u"
 			(at 218.44 219.8369 0)
 			(show_name no)
 			(do_not_autoplace no)

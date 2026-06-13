@@ -5966,6 +5966,16 @@
 		)
 		(uuid "3e1d4ff3-9d2a-4332-b24a-4ca1268f9c38")
 	)
+	(text "Be sure to use 3.3V version of these switches"
+		(exclude_from_sim no)
+		(at 369.316 172.974 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "4093ea41-b1ca-439e-9674-5091d2dcafc3")
+	)
 	(text "1Q4"
 		(exclude_from_sim no)
 		(at 247.904 61.468 0)
@@ -6005,6 +6015,26 @@
 			)
 		)
 		(uuid "b49d5047-1c3f-4600-9832-b1189fdc4334")
+	)
+	(text "Be sure to use 3.3V version of these switches"
+		(exclude_from_sim no)
+		(at 369.824 114.046 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "d19ed9e0-39de-4351-9d82-ab809b7d390b")
+	)
+	(text "NC per datasheet"
+		(exclude_from_sim no)
+		(at 26.416 109.728 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "e7ae5a04-43fd-422e-8927-d798f7bf96c9")
 	)
 	(text "2Q8"
 		(exclude_from_sim no)
@@ -8248,7 +8278,7 @@
 	)
 	(wire
 		(pts
-			(xy 78.74 72.39) (xy 90.17 72.39)
+			(xy 74.93 72.39) (xy 86.36 72.39)
 		)
 		(stroke
 			(width 0)
@@ -8818,7 +8848,7 @@
 	)
 	(wire
 		(pts
-			(xy 95.25 72.39) (xy 105.41 72.39)
+			(xy 91.44 72.39) (xy 105.41 72.39)
 		)
 		(stroke
 			(width 0)
@@ -9245,6 +9275,16 @@
 			(type default)
 		)
 		(uuid "b146fb11-7f3f-4948-a48b-3fcb0acd2b73")
+	)
+	(wire
+		(pts
+			(xy 96.52 59.69) (xy 105.41 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b26dd31c-49ed-45e5-868e-d6850cfe8aca")
 	)
 	(wire
 		(pts
@@ -9818,6 +9858,16 @@
 	)
 	(wire
 		(pts
+			(xy 96.52 60.96) (xy 96.52 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d3e1f9dc-db90-4352-91d8-ef7cb5a71028")
+	)
+	(wire
+		(pts
 			(xy 347.98 118.11) (xy 356.87 118.11)
 		)
 		(stroke
@@ -10378,6 +10428,16 @@
 	)
 	(wire
 		(pts
+			(xy 105.41 59.69) (xy 105.41 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fbc09ba1-2722-40a7-a506-9d00898eb4cb")
+	)
+	(wire
+		(pts
 			(xy 27.94 44.45) (xy 21.59 44.45)
 		)
 		(stroke
@@ -10907,7 +10967,7 @@
 		(uuid "7774f88a-5f38-408d-ad40-d01dd61d6961")
 	)
 	(label "LDO_VCO"
-		(at 78.74 72.39 0)
+		(at 74.93 72.39 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -15989,7 +16049,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 92.71 72.39 90)
+		(at 88.9 72.39 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -16000,7 +16060,7 @@
 		(fields_autoplaced yes)
 		(uuid "3d62164b-4ab8-412a-a353-6baa8139869c")
 		(property "Reference" "C726"
-			(at 92.7163 66.04 90)
+			(at 88.9063 66.04 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -16010,7 +16070,7 @@
 			)
 		)
 		(property "Value" "1000p"
-			(at 92.7163 68.58 90)
+			(at 88.9063 68.58 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -16020,7 +16080,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
-			(at 92.71 72.39 0)
+			(at 88.9 72.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16031,7 +16091,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 92.71 72.39 0)
+			(at 88.9 72.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16042,7 +16102,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 92.71 72.39 0)
+			(at 88.9 72.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16053,7 +16113,7 @@
 			)
 		)
 		(property "Digikey Part #" ""
-			(at 92.71 72.39 90)
+			(at 88.9 72.39 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18335,7 +18395,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74cbt3253"
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/sn74cb3t3253.pdf?ts=1780818613823&ref_url=https%253A%252F%252Fwww.google.com%252F"
 			(at 367.03 204.47 0)
 			(hide yes)
 			(show_name no)
@@ -19538,7 +19598,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74cbt3253"
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/sn74cb3t3253.pdf?ts=1780818613823&ref_url=https%253A%252F%252Fwww.google.com%252F"
 			(at 367.03 146.05 0)
 			(hide yes)
 			(show_name no)
@@ -22190,7 +22250,7 @@
 				)
 			)
 		)
-		(property "Value" "1k"
+		(property "Value" "20k"
 			(at 33.02 189.23 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23852,7 +23912,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 105.41 69.85 270)
+		(at 96.52 66.04 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -23863,7 +23923,7 @@
 		(fields_autoplaced yes)
 		(uuid "c2ee7d01-a04d-40c2-bc7a-1487ad34cef7")
 		(property "Reference" "#PWR0731"
-			(at 99.06 69.85 0)
+			(at 96.52 72.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23874,18 +23934,18 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 101.6 69.8499 90)
+			(at 99.06 67.3099 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 105.41 69.85 0)
+			(at 96.52 66.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23896,7 +23956,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 105.41 69.85 0)
+			(at 96.52 66.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -23907,7 +23967,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 105.41 69.85 0)
+			(at 96.52 66.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26689,6 +26749,99 @@
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/79014999-6129-417a-b831-cb9e4a5873fe"
 					(reference "#PWR0755")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 96.52 63.5 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f4a750ba-96e7-4a23-9131-7479142e5d41")
+		(property "Reference" "C754"
+			(at 99.06 62.2235 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "0.33u"
+			(at 99.06 64.7635 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
+			(at 96.52 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 96.52 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 96.52 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey Part #" ""
+			(at 96.52 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "9a2f6c10-3e17-4e3b-a07e-38980bf39c60")
+		)
+		(pin "2"
+			(uuid "a5bf463f-7747-44bf-b2a7-bb9023856562")
+		)
+		(instances
+			(project "nzif"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/79014999-6129-417a-b831-cb9e4a5873fe"
+					(reference "C754")
 					(unit 1)
 				)
 			)

@@ -2745,7 +2745,7 @@
 		)
 		(uuid "59e381da-d685-4a15-a230-34d6b58ca568")
 	)
-	(label "DVDOUT"
+	(label "DVDDOUT"
 		(at 129.54 109.22 0)
 		(effects
 			(font
@@ -2795,7 +2795,7 @@
 		)
 		(uuid "6fb9f3e8-ea09-4991-a521-26b1ae16762c")
 	)
-	(label "DVDOUT"
+	(label "DVDDOUT"
 		(at 173.99 127 0)
 		(effects
 			(font
@@ -4135,103 +4135,6 @@
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/91ace161-62c2-4ad0-a80e-f8c3c9bc5e50"
 					(reference "C1210")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Polarized")
-		(at 270.51 139.7 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim yes)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "44525c0a-465e-4017-a123-a628399d0558")
-		(property "Reference" "C1216"
-			(at 269.621 132.08 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "220u"
-			(at 269.621 134.62 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
-			(at 274.32 138.7348 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 270.51 139.7 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Polarized capacitor"
-			(at 270.51 139.7 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Digikey Part #" ""
-			(at 270.51 139.7 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "548c6004-09c0-4430-9d43-81a543c571bb")
-		)
-		(pin "1"
-			(uuid "4447faca-30a3-4364-be7f-d3dc6dc4030d")
-		)
-		(instances
-			(project "audio_subsystem"
-				(path "/faf8925a-a6e8-4b62-a2aa-22bbad3fd9d1"
-					(reference "C13")
-					(unit 1)
-				)
-			)
-			(project "nzif"
-				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/91ace161-62c2-4ad0-a80e-f8c3c9bc5e50"
-					(reference "C1216")
 					(unit 1)
 				)
 			)
@@ -5805,6 +5708,97 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C_Polarized")
+		(at 270.51 139.7 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b28b7895-a6f4-4b86-977d-11d9ddc01446")
+		(property "Reference" "C1216"
+			(at 269.621 132.08 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "220u"
+			(at 269.621 134.62 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:CP_Elec_6.3x7.7"
+			(at 274.32 138.7348 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.nichicon.co.jp/english/series_items/catalog_pdf/e-uwt.pdf"
+			(at 270.51 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Polarized capacitor"
+			(at 270.51 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey Part #" "UWT1C221MCL1GS "
+			(at 270.51 139.7 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "3dc9c4c3-3ec6-4e86-bf3d-7ef0dd4ff203")
+		)
+		(pin "1"
+			(uuid "7e516b12-6986-45a3-964c-ab281a8e52c9")
+		)
+		(instances
+			(project "nzif"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/91ace161-62c2-4ad0-a80e-f8c3c9bc5e50"
+					(reference "C1216")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 156.21 74.93 0)
 		(unit 1)
@@ -6276,7 +6270,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1u"
+		(property "Value" "47u"
 			(at 270.51 165.1062 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6552,7 +6546,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:CP_Elec_6.3x7.7"
 			(at 274.32 126.0348 0)
 			(hide yes)
 			(show_name no)
@@ -6563,7 +6557,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.nichicon.co.jp/english/series_items/catalog_pdf/e-uwt.pdf"
 			(at 270.51 127 0)
 			(hide yes)
 			(show_name no)
@@ -6585,7 +6579,7 @@
 				)
 			)
 		)
-		(property "Digikey Part #" ""
+		(property "Digikey Part #" "UWT1C221MCL1GS "
 			(at 270.51 127 90)
 			(hide yes)
 			(show_name no)
