@@ -290,210 +290,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:L_Iron_Small"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0.254)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "L"
-				(at 1.27 1.016 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "L_Iron_Small"
-				(at 1.27 -1.27 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Inductor with iron core, small symbol"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "inductor choke coil reactor magnetic"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "Choke_* *Coil* Inductor_* L_*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "L_Iron_Small_0_1"
-				(arc
-					(start 0 2.032)
-					(mid 0.5058 1.524)
-					(end 0 1.016)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 1.016)
-					(mid 0.5058 0.508)
-					(end 0 0)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 0)
-					(mid 0.5058 -0.508)
-					(end 0 -1.016)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 -1.016)
-					(mid 0.5058 -1.524)
-					(end 0 -2.032)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 2.032) (xy 0.762 -2.032)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.016 -2.032) (xy 1.016 2.032)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "L_Iron_Small_1_1"
-				(pin passive line
-					(at 0 2.54 270)
-					(length 0.508)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -2.54 90)
-					(length 0.508)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Device:L_Small"
 			(pin_numbers
 				(hide yes)
@@ -1445,6 +1241,612 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "nzif_radio_symbol_library:8018_74489430027"
+			(pin_names
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "L"
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "8018_74489430027"
+				(at 12.7 22.86 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "nzif_footprints:L_Wurth_WE-TDC-8018"
+				(at 12.7 20.32 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Datasheet" "https://www.we-online.com/catalog/datasheet/74489430027.pdf?ki"
+				(at 12.7 17.78 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Description" "SMT Shielded Coupled Inductor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer" "Wurth Elektronik"
+				(at 12.7 15.24 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Manufacturer URL" "https://www.we-online.com"
+				(at 12.7 12.7 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Published Date" "20250604"
+				(at 12.7 10.16 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Match Code" "WE-TDC"
+				(at 12.7 7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Part Number" "74489430027"
+				(at 12.7 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Size" "8018"
+				(at 12.7 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Mounting Technology" "SMT"
+				(at 12.7 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "n" "1:1"
+				(at 12.7 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "IR (A)" "1.85"
+				(at 12.7 -5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "IR 2 (A)" "1.85"
+				(at 12.7 -7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "ISAT (A)" "3.0"
+				(at 12.7 -10.16 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "ISAT1 (A)" "3.0"
+				(at 12.7 -12.7 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "ISAT2 (A)" "3.0"
+				(at 12.7 -15.24 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "RDC1 typ (mΩ)" "69.5"
+				(at 12.7 -17.78 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "RDC2 typ (mΩ)" "69.5"
+				(at 12.7 -20.32 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "RDC1 max (mΩ)" "80.5"
+				(at 12.7 -22.86 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "RDC2 max (mΩ)" "80.5"
+				(at 12.7 -25.4 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "fres 1 (MHz)" "65"
+				(at 12.7 -27.94 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Critical Parameter" "1.85 A"
+				(at 0 -7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "SMT"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "*WE-TDC*8018*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "8018_74489430027_0_1"
+				(circle
+					(center -3.048 1.524)
+					(radius 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(circle
+					(center -3.048 -1.27)
+					(radius 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 2.032) (xy -2.54 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 0.508) (xy 2.54 0.508)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 -2.032) (xy -2.54 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -1.524 2.032)
+					(mid -2.032 1.5262)
+					(end -2.54 2.032)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -2.54 -2.032)
+					(mid -2.032 -1.5262)
+					(end -1.524 -2.032)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -0.508 2.032)
+					(mid -1.016 1.5262)
+					(end -1.524 2.032)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -1.524 -2.032)
+					(mid -1.016 -1.5262)
+					(end -0.508 -2.032)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0.508 2.032)
+					(mid 0 1.5262)
+					(end -0.508 2.032)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -0.508 -2.032)
+					(mid 0 -1.5262)
+					(end 0.508 -2.032)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 1.524 2.032)
+					(mid 1.016 1.5262)
+					(end 0.508 2.032)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0.508 -2.032)
+					(mid 1.016 -1.5262)
+					(end 1.524 -2.032)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 2.54 2.032)
+					(mid 2.032 1.5262)
+					(end 1.524 2.032)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 1.524 -2.032)
+					(mid 2.032 -1.5262)
+					(end 2.54 -2.032)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 2.54) (xy 2.54 2.032)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 -0.508) (xy -2.54 -0.508)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 -2.032) (xy 2.54 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "8018_74489430027_1_1"
+				(pin passive line
+					(at -5.08 2.54 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -2.54 180)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -2.54 0)
+					(length 2.54)
+					(name "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 2.54 180)
+					(length 2.54)
+					(name "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "nzif_radio_symbol_library:LT8330xS6"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -1901,6 +2303,18 @@
 		(uuid "937b0bfe-3a68-481d-81ef-3e05c009b74c")
 	)
 	(junction
+		(at 191.77 184.15)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0cbeac41-ebb3-4d41-87db-e3dc00841121")
+	)
+	(junction
+		(at 160.02 184.15)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "10778cc6-7581-4eeb-95a9-b2c305610947")
+	)
+	(junction
 		(at 223.52 36.83)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1919,10 +2333,16 @@
 		(uuid "1d1f9b6f-6587-492c-bdfb-4a60adfe3d82")
 	)
 	(junction
+		(at 179.07 184.15)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1ff1190b-f13d-43a3-86d5-06610309b8b1")
+	)
+	(junction
 		(at 143.51 184.15)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "22d9ef73-af0f-45b2-8068-3a84a74286bf")
+		(uuid "208c5881-3eb4-430e-b72c-077af23747f7")
 	)
 	(junction
 		(at 201.93 78.74)
@@ -1953,6 +2373,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "363d1e29-5806-4c29-bce0-f47950f528e3")
+	)
+	(junction
+		(at 162.56 184.15)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "36481f4f-fc46-4629-b22e-8254a554376a")
 	)
 	(junction
 		(at 111.76 63.5)
@@ -2069,6 +2495,12 @@
 		(uuid "825076c4-6a04-4fcd-aa5a-631d44dbfc9e")
 	)
 	(junction
+		(at 171.45 184.15)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "84722eac-3e23-4246-9b1d-73fc9b49ca91")
+	)
+	(junction
 		(at 228.6 123.19)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2153,12 +2585,6 @@
 		(uuid "b9789d2b-6085-4e06-b794-24a0f5f1b564")
 	)
 	(junction
-		(at 154.94 184.15)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c16e528a-1907-4575-88eb-67e5cf984ce8")
-	)
-	(junction
 		(at 186.69 128.27)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2195,16 +2621,16 @@
 		(uuid "d5c5cb85-f345-4b5d-93df-859758085e5a")
 	)
 	(junction
+		(at 147.32 184.15)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d81b1a1d-3a54-4cf4-8c4e-ccb8a56d80ec")
+	)
+	(junction
 		(at 194.31 29.21)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "dc8a0fc9-3b34-4b9c-9c01-240dd8d57c66")
-	)
-	(junction
-		(at 171.45 184.15)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "dc8ef3de-c0ad-46d3-9ade-f91b212b0c08")
 	)
 	(junction
 		(at 167.64 29.21)
@@ -2252,6 +2678,26 @@
 	)
 	(wire
 		(pts
+			(xy 168.91 184.15) (xy 171.45 184.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0a4c6ded-1a7f-49f3-a142-a709349d17e1")
+	)
+	(wire
+		(pts
+			(xy 160.02 181.61) (xy 160.02 184.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0b4d153d-f785-47b8-a1ef-422d7aca0fff")
+	)
+	(wire
+		(pts
 			(xy 227.33 73.66) (xy 228.6 73.66)
 		)
 		(stroke
@@ -2272,16 +2718,6 @@
 	)
 	(wire
 		(pts
-			(xy 143.51 184.15) (xy 146.05 184.15)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0d70e83d-d20e-469f-9592-2ac2f4026f17")
-	)
-	(wire
-		(pts
 			(xy 134.62 133.35) (xy 139.7 133.35)
 		)
 		(stroke
@@ -2289,6 +2725,16 @@
 			(type default)
 		)
 		(uuid "0dfeb7ed-9bc0-4bea-9a56-3eb20aecb5d0")
+	)
+	(wire
+		(pts
+			(xy 147.32 186.69) (xy 148.59 186.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0fd949e5-0846-4451-aa41-518b5b774471")
 	)
 	(wire
 		(pts
@@ -2319,16 +2765,6 @@
 			(type default)
 		)
 		(uuid "11935cb7-c2d9-43d5-adf3-3f36b83f655d")
-	)
-	(wire
-		(pts
-			(xy 143.51 199.39) (xy 143.51 184.15)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "129880e8-7d16-4604-b570-a587e55c4270")
 	)
 	(wire
 		(pts
@@ -2372,6 +2808,16 @@
 	)
 	(wire
 		(pts
+			(xy 158.75 181.61) (xy 160.02 181.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "15744455-7b98-4eb6-92e7-b3f366a5a54a")
+	)
+	(wire
+		(pts
 			(xy 228.6 120.65) (xy 228.6 123.19)
 		)
 		(stroke
@@ -2409,16 +2855,6 @@
 			(type default)
 		)
 		(uuid "1a51185e-24e4-4453-958e-85e7cbbed66e")
-	)
-	(wire
-		(pts
-			(xy 154.94 184.15) (xy 160.02 184.15)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1bd969f1-a59d-46b9-8d3e-a02d09283157")
 	)
 	(wire
 		(pts
@@ -2502,6 +2938,16 @@
 	)
 	(wire
 		(pts
+			(xy 179.07 184.15) (xy 179.07 186.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2c1cf5d6-d7ea-408d-b0fc-950ffdeb1524")
+	)
+	(wire
+		(pts
 			(xy 134.62 125.73) (xy 134.62 128.27)
 		)
 		(stroke
@@ -2519,6 +2965,16 @@
 			(type default)
 		)
 		(uuid "2dc34e3a-b1ed-4938-bb61-bf28a0e954ee")
+	)
+	(wire
+		(pts
+			(xy 180.34 181.61) (xy 179.07 181.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2ff0b245-2488-47f7-92d2-674baac33e06")
 	)
 	(wire
 		(pts
@@ -2559,6 +3015,16 @@
 			(type default)
 		)
 		(uuid "35f8c7ec-d456-48e2-a143-04b3df27d492")
+	)
+	(wire
+		(pts
+			(xy 143.51 184.15) (xy 147.32 184.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3665bd9d-481e-49ea-b0e7-1ade5c2768c3")
 	)
 	(wire
 		(pts
@@ -2662,16 +3128,6 @@
 	)
 	(wire
 		(pts
-			(xy 154.94 207.01) (xy 154.94 184.15)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "468f0534-1f12-443f-8d8b-8b181ff79fd7")
-	)
-	(wire
-		(pts
 			(xy 171.45 189.23) (xy 171.45 184.15)
 		)
 		(stroke
@@ -2702,33 +3158,23 @@
 	)
 	(wire
 		(pts
-			(xy 165.1 184.15) (xy 171.45 184.15)
+			(xy 179.07 186.69) (xy 180.34 186.69)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "4cf39c72-8113-488a-ba56-7bce7a6196b3")
+		(uuid "4d191767-1913-4ba6-a4c2-f6568af42108")
 	)
 	(wire
 		(pts
-			(xy 153.67 207.01) (xy 154.94 207.01)
+			(xy 153.67 207.01) (xy 162.56 207.01)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "4d243bd6-265d-4308-90d9-6402ee7c4a7e")
-	)
-	(wire
-		(pts
-			(xy 194.31 184.15) (xy 199.39 184.15)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4d3d4007-1535-4012-918c-7827ba4c79ec")
 	)
 	(wire
 		(pts
@@ -2812,6 +3258,16 @@
 	)
 	(wire
 		(pts
+			(xy 162.56 207.01) (xy 162.56 184.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "55af40ea-16c3-491f-857f-1821e8ff29fc")
+	)
+	(wire
+		(pts
 			(xy 111.76 63.5) (xy 96.52 63.5)
 		)
 		(stroke
@@ -2862,6 +3318,16 @@
 	)
 	(wire
 		(pts
+			(xy 191.77 184.15) (xy 199.39 184.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "632d21f9-4846-46eb-a746-2a4e6d66b5f0")
+	)
+	(wire
+		(pts
 			(xy 163.83 39.37) (xy 161.29 39.37)
 		)
 		(stroke
@@ -2869,6 +3335,16 @@
 			(type default)
 		)
 		(uuid "648edf10-cb5b-459b-a4e0-ef483d71d7d5")
+	)
+	(wire
+		(pts
+			(xy 191.77 181.61) (xy 191.77 184.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "64e7d3ec-941d-4b67-9e9b-24ea38f6bc83")
 	)
 	(wire
 		(pts
@@ -3082,16 +3558,6 @@
 	)
 	(wire
 		(pts
-			(xy 171.45 184.15) (xy 189.23 184.15)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7897ca84-8fe8-47e2-b553-ea48f84f316e")
-	)
-	(wire
-		(pts
 			(xy 167.64 101.6) (xy 167.64 88.9)
 		)
 		(stroke
@@ -3099,6 +3565,16 @@
 			(type default)
 		)
 		(uuid "7ddf69e9-4346-471f-8129-23c40345ab43")
+	)
+	(wire
+		(pts
+			(xy 160.02 184.15) (xy 160.02 186.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7ecc1ec0-482b-4e5f-871e-52b545648422")
 	)
 	(wire
 		(pts
@@ -3172,6 +3648,16 @@
 	)
 	(wire
 		(pts
+			(xy 160.02 184.15) (xy 162.56 184.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "891e867d-7645-4b41-a741-f3f27e783676")
+	)
+	(wire
+		(pts
 			(xy 125.73 76.2) (xy 111.76 76.2)
 		)
 		(stroke
@@ -3219,6 +3705,36 @@
 			(type default)
 		)
 		(uuid "90342bcf-348d-4ced-b4cd-8ae12608e7a0")
+	)
+	(wire
+		(pts
+			(xy 171.45 184.15) (xy 179.07 184.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "908c5e60-b4af-41fe-be61-db544138bf37")
+	)
+	(wire
+		(pts
+			(xy 162.56 184.15) (xy 163.83 184.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "911f5288-cb04-4e75-a95d-926c925a685b")
+	)
+	(wire
+		(pts
+			(xy 158.75 186.69) (xy 160.02 186.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "931c6c71-cfbd-46cd-a8b4-8cb580cdfa07")
 	)
 	(wire
 		(pts
@@ -3272,6 +3788,16 @@
 	)
 	(wire
 		(pts
+			(xy 190.5 181.61) (xy 191.77 181.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "97ffba54-1d1a-4700-a222-a0cb3eb18b78")
+	)
+	(wire
+		(pts
 			(xy 111.76 76.2) (xy 111.76 63.5)
 		)
 		(stroke
@@ -3309,6 +3835,16 @@
 			(type default)
 		)
 		(uuid "99a71be0-ae36-4b04-8ad8-90a96ad9aaf4")
+	)
+	(wire
+		(pts
+			(xy 179.07 181.61) (xy 179.07 184.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9a3bcbf0-e14e-4d0a-8fbd-99c0e72cece6")
 	)
 	(wire
 		(pts
@@ -3359,6 +3895,16 @@
 			(type default)
 		)
 		(uuid "a14dc141-6bee-427b-8ecc-a568d186ac01")
+	)
+	(wire
+		(pts
+			(xy 147.32 184.15) (xy 147.32 186.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a2ebb05c-cd61-4f1a-9e1d-fdd2a556792f")
 	)
 	(wire
 		(pts
@@ -3472,16 +4018,6 @@
 	)
 	(wire
 		(pts
-			(xy 154.94 184.15) (xy 151.13 184.15)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "af752749-e918-40f8-a3f4-ec7af3f0ef97")
-	)
-	(wire
-		(pts
 			(xy 186.69 78.74) (xy 198.12 78.74)
 		)
 		(stroke
@@ -3579,6 +4115,16 @@
 			(type default)
 		)
 		(uuid "c1dfbac2-7320-4143-a6b7-c4397cfe5ce9")
+	)
+	(wire
+		(pts
+			(xy 191.77 184.15) (xy 191.77 186.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c48ee536-2fd8-4cbf-8622-9ddda50945d6")
 	)
 	(wire
 		(pts
@@ -3682,6 +4228,16 @@
 	)
 	(wire
 		(pts
+			(xy 191.77 186.69) (xy 190.5 186.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cfd9944f-011c-407f-8a48-ff26566dc647")
+	)
+	(wire
+		(pts
 			(xy 213.36 177.8) (xy 213.36 184.15)
 		)
 		(stroke
@@ -3719,6 +4275,16 @@
 			(type default)
 		)
 		(uuid "d1970431-d898-425b-affe-2dff676b4f73")
+	)
+	(wire
+		(pts
+			(xy 147.32 181.61) (xy 147.32 184.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d44ded7a-2a34-4802-9110-f9897c469050")
 	)
 	(wire
 		(pts
@@ -3852,6 +4418,16 @@
 	)
 	(wire
 		(pts
+			(xy 148.59 181.61) (xy 147.32 181.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eb975d60-7468-47c7-8117-6fa5d94d2b09")
+	)
+	(wire
+		(pts
 			(xy 179.07 29.21) (xy 182.88 29.21)
 		)
 		(stroke
@@ -3969,6 +4545,16 @@
 			(type default)
 		)
 		(uuid "f7954042-7288-4701-ba32-6d7f3fad2abc")
+	)
+	(wire
+		(pts
+			(xy 143.51 184.15) (xy 143.51 199.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fa77ce4d-9b27-4299-a258-553608963478")
 	)
 	(wire
 		(pts
@@ -6160,92 +6746,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:L_Iron_Small")
-		(at 191.77 184.15 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "2e6327cd-8f3e-4a84-8176-59f926d6f33a")
-		(property "Reference" "L1105"
-			(at 191.77 177.8 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "2.7u"
-			(at 191.77 180.34 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 191.77 184.15 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/74489430027/2445599"
-			(at 191.77 184.15 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Inductor with iron core, small symbol"
-			(at 191.77 184.15 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "a68a209f-27a6-45a2-818b-291035ca4bf3")
-		)
-		(pin "1"
-			(uuid "dc9bd7b4-c8fb-475e-919d-bdaed4312ba8")
-		)
-		(instances
-			(project "power_switching_reg"
-				(path "/c493ce63-5f0e-4f7e-8352-532a4eb9255e"
-					(reference "L1")
-					(unit 1)
-				)
-			)
-			(project "nzif"
-				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/3655e9dc-6764-4ce9-aa9b-ed58af2a1dde"
-					(reference "L1105")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R_Small_US")
 		(at 227.33 82.55 0)
 		(unit 1)
@@ -7975,6 +8475,322 @@
 		)
 	)
 	(symbol
+		(lib_id "nzif_radio_symbol_library:8018_74489430027")
+		(at 153.67 184.15 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6c1ffeae-3a83-432e-af26-4a6a8c5bef02")
+		(property "Reference" "L1201"
+			(at 153.289 176.53 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "8018_74489430027"
+			(at 166.37 161.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "nzif_footprints:L_Wurth_WE-TDC-8018"
+			(at 166.37 163.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Datasheet" "https://www.we-online.com/catalog/datasheet/74489430027.pdf?ki"
+			(at 166.37 166.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Description" "SMT Shielded Coupled Inductor"
+			(at 153.67 184.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Wurth Elektronik"
+			(at 166.37 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Manufacturer URL" "https://www.we-online.com"
+			(at 166.37 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Published Date" "20250604"
+			(at 166.37 173.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Match Code" "WE-TDC"
+			(at 166.37 176.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Part Number" "74489430027"
+			(at 166.37 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Size" "8018"
+			(at 166.37 181.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Mounting Technology" "SMT"
+			(at 166.37 184.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "n" "1:1"
+			(at 166.37 186.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "IR (A)" "1.85"
+			(at 166.37 189.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "IR 2 (A)" "1.85"
+			(at 166.37 191.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "ISAT (A)" "3.0"
+			(at 166.37 194.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "ISAT1 (A)" "3.0"
+			(at 166.37 196.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "ISAT2 (A)" "3.0"
+			(at 166.37 199.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "RDC1 typ (mΩ)" "69.5"
+			(at 166.37 201.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "RDC2 typ (mΩ)" "69.5"
+			(at 166.37 204.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "RDC1 max (mΩ)" "80.5"
+			(at 166.37 207.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "RDC2 max (mΩ)" "80.5"
+			(at 166.37 209.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "fres 1 (MHz)" "65"
+			(at 166.37 212.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Critical Parameter" "1.85 A"
+			(at 153.289 179.07 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "4"
+			(uuid "b5f22f69-5c1c-45fd-a9af-fae972830aec")
+		)
+		(pin "3"
+			(uuid "8f06621a-8ee7-4bdb-9527-9f56a7b0a2de")
+		)
+		(pin "1"
+			(uuid "12f7aaac-5578-4b94-a463-26c57b3c5b9b")
+		)
+		(pin "2"
+			(uuid "07eae599-6511-428e-a327-f0636e8ba04e")
+		)
+		(instances
+			(project "nzif"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/3655e9dc-6764-4ce9-aa9b-ed58af2a1dde"
+					(reference "L1201")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:PWR_FLAG")
 		(at 228.6 71.12 0)
 		(unit 1)
@@ -8757,7 +9573,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 162.56 184.15 90)
+		(at 166.37 184.15 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim yes)
@@ -8767,7 +9583,7 @@
 		(dnp no)
 		(uuid "84df1758-e4cb-469e-bbc5-90df701fbc5e")
 		(property "Reference" "C1106"
-			(at 160.528 182.372 0)
+			(at 164.338 182.372 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8778,7 +9594,7 @@
 			)
 		)
 		(property "Value" "1u"
-			(at 164.338 182.626 0)
+			(at 168.148 182.626 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8789,7 +9605,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
-			(at 162.56 184.15 0)
+			(at 166.37 184.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8800,7 +9616,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 162.56 184.15 0)
+			(at 166.37 184.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8811,7 +9627,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 162.56 184.15 0)
+			(at 166.37 184.15 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8821,7 +9637,7 @@
 			)
 		)
 		(property "Digikey Part #" ""
-			(at 162.56 184.15 0)
+			(at 166.37 184.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10398,6 +11214,322 @@
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/3655e9dc-6764-4ce9-aa9b-ed58af2a1dde"
 					(reference "TP1202")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "nzif_radio_symbol_library:8018_74489430027")
+		(at 185.42 184.15 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cba78c8e-d73e-462a-b5cd-3d5199a3ed06")
+		(property "Reference" "L1202"
+			(at 185.039 176.53 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "8018_74489430027"
+			(at 198.12 161.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "nzif_footprints:L_Wurth_WE-TDC-8018"
+			(at 198.12 163.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Datasheet" "https://www.we-online.com/catalog/datasheet/74489430027.pdf?ki"
+			(at 198.12 166.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Description" "SMT Shielded Coupled Inductor"
+			(at 185.42 184.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Wurth Elektronik"
+			(at 198.12 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Manufacturer URL" "https://www.we-online.com"
+			(at 198.12 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Published Date" "20250604"
+			(at 198.12 173.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Match Code" "WE-TDC"
+			(at 198.12 176.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Part Number" "74489430027"
+			(at 198.12 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Size" "8018"
+			(at 198.12 181.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Mounting Technology" "SMT"
+			(at 198.12 184.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "n" "1:1"
+			(at 198.12 186.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "IR (A)" "1.85"
+			(at 198.12 189.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "IR 2 (A)" "1.85"
+			(at 198.12 191.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "ISAT (A)" "3.0"
+			(at 198.12 194.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "ISAT1 (A)" "3.0"
+			(at 198.12 196.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "ISAT2 (A)" "3.0"
+			(at 198.12 199.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "RDC1 typ (mΩ)" "69.5"
+			(at 198.12 201.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "RDC2 typ (mΩ)" "69.5"
+			(at 198.12 204.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "RDC1 max (mΩ)" "80.5"
+			(at 198.12 207.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "RDC2 max (mΩ)" "80.5"
+			(at 198.12 209.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "fres 1 (MHz)" "65"
+			(at 198.12 212.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Critical Parameter" "1.85 A"
+			(at 185.039 179.07 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "4"
+			(uuid "05979576-af56-444d-a557-de0d8ff9bae0")
+		)
+		(pin "3"
+			(uuid "e3dc3e75-62f8-4d6d-8559-84a5de7904ee")
+		)
+		(pin "1"
+			(uuid "def33e24-7231-49aa-a504-58342b85c3a9")
+		)
+		(pin "2"
+			(uuid "e4f6b4a5-4302-4e45-b7f7-707f1e382980")
+		)
+		(instances
+			(project "nzif"
+				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/3655e9dc-6764-4ce9-aa9b-ed58af2a1dde"
+					(reference "L1202")
 					(unit 1)
 				)
 			)
@@ -12272,91 +13404,6 @@
 			(project "nzif"
 				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/3655e9dc-6764-4ce9-aa9b-ed58af2a1dde"
 					(reference "R1102")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:L_Iron_Small")
-		(at 148.59 184.15 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "ffef5bb3-2d25-471e-b4e6-2c1538db2b64")
-		(property "Reference" "L1101"
-			(at 148.59 177.8 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "2.7u"
-			(at 149.098 173.736 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 148.59 184.15 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/74489430027/2445599"
-			(at 148.59 184.15 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Inductor with iron core, small symbol"
-			(at 148.59 184.15 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "46e31ed6-8e31-4035-844d-91614530daa7")
-		)
-		(pin "1"
-			(uuid "4b0828a5-902d-4509-a772-31d48ca15e01")
-		)
-		(instances
-			(project ""
-				(path "/c493ce63-5f0e-4f7e-8352-532a4eb9255e"
-					(reference "L2")
-					(unit 1)
-				)
-			)
-			(project "nzif"
-				(path "/fe42ca2f-2bb8-4d5a-9e84-807788ed632f/3655e9dc-6764-4ce9-aa9b-ed58af2a1dde"
-					(reference "L1101")
 					(unit 1)
 				)
 			)

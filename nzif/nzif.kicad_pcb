@@ -8780,7 +8780,6 @@
 			)
 		)
 		(property ki_fp_filters "Choke_* *Coil* Inductor_* L_*")
-		(path "/3655e9dc-6764-4ce9-aa9b-ed58af2a1dde/ffef5bb3-2d25-471e-b4e6-2c1538db2b64")
 		(sheetname "/Power_Switching_Reg/")
 		(sheetfile "power_switching_reg.kicad_sch")
 		(units
@@ -13073,6 +13072,520 @@
 		)
 		(embedded_fonts no)
 		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
+	(footprint "nzif_footprints:L_Wurth_WE-TDC-8018"
+		(layer "F.Cu")
+		(uuid "108bba6e-32a9-4e73-aeba-e85c1a61ad3f")
+		(at -50.175 172.145)
+		(descr "Shielded Coupled Inductor, body 8x8x1.8mm, https://www.we-online.com/en/components/products/WE-TDC#/articles/WE-TDC-8018")
+		(tags "SMT")
+		(property "Reference" "L1202"
+			(at 0 -5.8 0)
+			(unlocked yes)
+			(layer "F.SilkS")
+			(uuid "63a5a384-e15a-4a6e-8282-79d0ecadec3c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "8018_74489430027"
+			(at 0 5.5 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "72089b85-1a01-4804-8305-5bb44e6f53a2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.we-online.com/catalog/datasheet/74489430027.pdf?ki"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "fafb18f9-a6b4-434b-8cc0-2ced71992697")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "SMT Shielded Coupled Inductor"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3051b643-a609-468e-a6db-cfcc54801c73")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Wurth Elektronik"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "571eb45b-9c9d-4103-a38c-37723d8e4115")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer URL" "https://www.we-online.com"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "494dd1f4-1580-484f-9c29-f49c8003dfc1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Published Date" "20250604"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2635542d-9ee3-4263-aed8-ef27ed50342c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Match Code" "WE-TDC"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "bd0ab0de-e06c-48ec-999e-f000df9e7e5d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Part Number" "74489430027"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6b1e5563-f03f-4a33-b9ae-47befbe1b061")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Size" "8018"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c28a7b1c-8ec5-484d-9600-df015b99f9dc")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mounting Technology" "SMT"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a891ba71-4fd4-4ff6-809d-fb418f60fc80")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "n" "1:1"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5f6e665b-e49d-414a-a396-9177bded053c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "IR (A)" "1.85"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9155c4c4-2c18-4c55-8292-47aa822a3afc")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "IR 2 (A)" "1.85"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "96f4d3d8-d550-4c0c-ac41-cb16e9267b5f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "ISAT (A)" "3.0"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5786ede7-9dad-478e-add2-ebc675d5ee7b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "ISAT1 (A)" "3.0"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "db70d2e1-c5df-4a28-b1fa-855f3ac08e54")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "ISAT2 (A)" "3.0"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "270de285-4ca1-4b5e-ac7d-2acb0c9c967c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "RDC1 typ (mΩ)" "69.5"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2f11f17f-437c-4170-9a91-7bfec720e338")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "RDC2 typ (mΩ)" "69.5"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "553f7378-eb43-4611-b91a-b37ede9358de")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "RDC1 max (mΩ)" "80.5"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "03c9f4b8-14d7-4e7a-9b85-e6ee1ca6348e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "RDC2 max (mΩ)" "80.5"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d9f185d8-1b8a-46e7-ae46-a9631fcdb69d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "fres 1 (MHz)" "65"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "56787d4b-421d-495c-94f5-06dc247f44ef")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Critical Parameter" "1.85 A"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9d6a9d90-d908-488c-9c78-0dd88aca2bb2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "*WE-TDC*8018*")
+		(path "/3655e9dc-6764-4ce9-aa9b-ed58af2a1dde/cba78c8e-d73e-462a-b5cd-3d5199a3ed06")
+		(sheetname "/Power_Switching_Reg/")
+		(sheetfile "power_switching_reg.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "3" "4" "2")
+			)
+		)
+		(attr smd)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_line
+			(start -3.71 -2.05)
+			(end -2.11 -3.65)
+			(stroke
+				(width 0.12)
+				(type default)
+			)
+			(layer "F.SilkS")
+			(uuid "e2419c2d-d1f6-4619-abb2-bd964f862e79")
+		)
+		(fp_line
+			(start -3.71 2.05)
+			(end -2.11 3.65)
+			(stroke
+				(width 0.12)
+				(type default)
+			)
+			(layer "F.SilkS")
+			(uuid "a6ce5af8-e7e9-449c-9998-4e2f002722cb")
+		)
+		(fp_line
+			(start -1.8 -4.835)
+			(end 1.8 -4.835)
+			(stroke
+				(width 0.12)
+				(type default)
+			)
+			(layer "F.SilkS")
+			(uuid "ef740f10-273e-4ec9-92e6-d89e5d069985")
+		)
+		(fp_line
+			(start 2.11 3.65)
+			(end 3.71 2.05)
+			(stroke
+				(width 0.12)
+				(type default)
+			)
+			(layer "F.SilkS")
+			(uuid "437febc6-b0b8-405a-a13c-3719f6120e55")
+		)
+		(fp_line
+			(start 3.71 -2.05)
+			(end 2.11 -3.65)
+			(stroke
+				(width 0.12)
+				(type default)
+			)
+			(layer "F.SilkS")
+			(uuid "7b46776d-9c54-434f-9570-b6b5aa1c2140")
+		)
+		(fp_rect
+			(start -4.75 -4.75)
+			(end 4.75 4.75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "a28952cf-d7ad-45be-bb48-d8202aa34a2a")
+		)
+		(fp_line
+			(start -4 -1.6)
+			(end -4 1.6)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "5c977b2a-00d1-49b6-bf73-fba05f366aea")
+		)
+		(fp_line
+			(start -1.6 -4)
+			(end -4 -1.6)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "915dbd37-34e1-40ed-8f0b-d96ad6cfb3f8")
+		)
+		(fp_line
+			(start -1.6 4)
+			(end -4 1.6)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "adf17510-d98b-43cf-8928-38c4c88193ca")
+		)
+		(fp_line
+			(start -1.6 4)
+			(end 1.6 4)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "b71d1667-5c41-4e25-8c63-d0a499715070")
+		)
+		(fp_line
+			(start 1.6 -4)
+			(end -1.6 -4)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "a252eaf1-eec3-4b61-8a8d-78301903512a")
+		)
+		(fp_line
+			(start 1.6 -4)
+			(end 4 -1.6)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "5a8d7a30-324d-4ae3-b39a-78ecbb3fa448")
+		)
+		(fp_line
+			(start 1.6 4)
+			(end 4 1.6)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "ec2237d9-79eb-4074-a5e5-871ec6c79dee")
+		)
+		(fp_line
+			(start 4 1.6)
+			(end 4 -1.6)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "8b458d2e-f127-4926-a2d6-655c39d7fc91")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(uuid "b98142a3-065f-448a-8112-0d5a9ae484fb")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.075)
+				)
+			)
+		)
+		(pad "1" smd rect
+			(at 0 -3.8)
+			(size 3.6 1.4)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net "Net-(D1104-A)")
+			(pinfunction "1_1")
+			(pintype "passive")
+			(uuid "83fc7e10-545b-43b5-8fb3-8069361b6456")
+		)
+		(pad "2" smd rect
+			(at -3.8 0)
+			(size 1.4 3.6)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net "/-5V")
+			(pinfunction "2_2")
+			(pintype "passive")
+			(uuid "ef9348ca-413b-4176-a011-cfcc505399e5")
+		)
+		(pad "3" smd rect
+			(at 0 3.8)
+			(size 3.6 1.4)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net "Net-(D1104-A)")
+			(pinfunction "3_3")
+			(pintype "passive")
+			(uuid "8f55a9d5-dce4-4231-bfd5-fd20c179305c")
+		)
+		(pad "4" smd rect
+			(at 3.8 0)
+			(size 1.4 3.6)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net "/-5V")
+			(pinfunction "4_4")
+			(pintype "passive")
+			(uuid "910f408b-45d9-4530-94d3-8e3509f5e0fe")
+		)
+		(embedded_fonts no)
+		(model "${WE_3DMODEL_DIR}/Inductor_SMD_Wurth.3dshapes/L_Wurth_WE-TDC-8018.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -101707,6 +102220,520 @@
 		)
 		(embedded_fonts no)
 		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
+	(footprint "nzif_footprints:L_Wurth_WE-TDC-8018"
+		(layer "F.Cu")
+		(uuid "a205df83-cc75-478f-8ea6-61ce57758e7e")
+		(at -60.725 172.145)
+		(descr "Shielded Coupled Inductor, body 8x8x1.8mm, https://www.we-online.com/en/components/products/WE-TDC#/articles/WE-TDC-8018")
+		(tags "SMT")
+		(property "Reference" "L1201"
+			(at 0 -5.8 0)
+			(unlocked yes)
+			(layer "F.SilkS")
+			(uuid "8fa7fb27-2902-45e8-819d-aa8405db3153")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "8018_74489430027"
+			(at 0 5.5 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "79e4c6e6-a748-4b96-bc8d-257a123a0ace")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.we-online.com/catalog/datasheet/74489430027.pdf?ki"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0a7270af-c97f-433b-b3a4-5906a841d46e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "SMT Shielded Coupled Inductor"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "65f80e86-309e-478e-8940-d6c3f02652ae")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Wurth Elektronik"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "876e1c1a-ecd7-4047-b8fc-1264b0f4f900")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer URL" "https://www.we-online.com"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1aba5657-6c2e-4b3a-a8f1-eda35b953404")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Published Date" "20250604"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b25a50bd-bc2c-4299-b71a-9080c4671874")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Match Code" "WE-TDC"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a1caecfa-130d-4573-bb29-19af2adf4e53")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Part Number" "74489430027"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "32030a05-64c6-423d-bf27-ef10af6b39ec")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Size" "8018"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "12b8d98e-4611-4866-adc2-6a59789a3076")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mounting Technology" "SMT"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b9487400-2842-461b-b0e1-96f12ce945ed")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "n" "1:1"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "00b4df22-d8a6-4f8b-8fbd-c667581a9f1b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "IR (A)" "1.85"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c5eec169-430a-4370-a0bc-7218d2f13d94")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "IR 2 (A)" "1.85"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2502a859-cd51-4f92-8125-1b246e624ffe")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "ISAT (A)" "3.0"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9e2e19b4-525c-4cb1-b315-b46784c3cecb")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "ISAT1 (A)" "3.0"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f42492b8-ed00-454c-be4a-d7405e23a139")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "ISAT2 (A)" "3.0"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8b6787f9-64e1-41cf-ba51-be1edc8c5062")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "RDC1 typ (mΩ)" "69.5"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "dfce6785-81f6-40af-8e03-5def64a1be2f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "RDC2 typ (mΩ)" "69.5"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a4ae5729-8391-41e9-9ddc-226856a0c17a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "RDC1 max (mΩ)" "80.5"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c1ddf3e6-3fde-4ccd-8c22-6aacdd0cdf90")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "RDC2 max (mΩ)" "80.5"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "238a7ac6-7497-41b3-aa2f-db77ff710ad6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "fres 1 (MHz)" "65"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e016c5b5-f5df-444c-ba03-836d6e7b473b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Critical Parameter" "1.85 A"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ecd0463c-bfa6-48ab-baa3-2ef990552a33")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "*WE-TDC*8018*")
+		(path "/3655e9dc-6764-4ce9-aa9b-ed58af2a1dde/6c1ffeae-3a83-432e-af26-4a6a8c5bef02")
+		(sheetname "/Power_Switching_Reg/")
+		(sheetfile "power_switching_reg.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "3" "4" "2")
+			)
+		)
+		(attr smd)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_line
+			(start -3.71 -2.05)
+			(end -2.11 -3.65)
+			(stroke
+				(width 0.12)
+				(type default)
+			)
+			(layer "F.SilkS")
+			(uuid "2940b35f-71b6-4d53-86ef-19939f517532")
+		)
+		(fp_line
+			(start -3.71 2.05)
+			(end -2.11 3.65)
+			(stroke
+				(width 0.12)
+				(type default)
+			)
+			(layer "F.SilkS")
+			(uuid "3ee680d2-7900-48c8-83f4-080d23a3ea5a")
+		)
+		(fp_line
+			(start -1.8 -4.835)
+			(end 1.8 -4.835)
+			(stroke
+				(width 0.12)
+				(type default)
+			)
+			(layer "F.SilkS")
+			(uuid "e78471e6-01f8-463e-b87f-b364a2cafee6")
+		)
+		(fp_line
+			(start 2.11 3.65)
+			(end 3.71 2.05)
+			(stroke
+				(width 0.12)
+				(type default)
+			)
+			(layer "F.SilkS")
+			(uuid "477a2fe4-3b81-43f7-94bb-cbb8b1c1708e")
+		)
+		(fp_line
+			(start 3.71 -2.05)
+			(end 2.11 -3.65)
+			(stroke
+				(width 0.12)
+				(type default)
+			)
+			(layer "F.SilkS")
+			(uuid "a8728bef-725b-46a2-8951-71b712d48bb1")
+		)
+		(fp_rect
+			(start -4.75 -4.75)
+			(end 4.75 4.75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "aa9422e4-30a1-4698-bef6-319de4046061")
+		)
+		(fp_line
+			(start -4 -1.6)
+			(end -4 1.6)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "ef720a82-f663-4a45-815c-fb0ff4ddf89f")
+		)
+		(fp_line
+			(start -1.6 -4)
+			(end -4 -1.6)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "aaace939-dfe6-4265-be05-0457a5574a7a")
+		)
+		(fp_line
+			(start -1.6 4)
+			(end -4 1.6)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "bf1174d2-af04-4c78-92a9-bcfc6612fd49")
+		)
+		(fp_line
+			(start -1.6 4)
+			(end 1.6 4)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "f5e6b16a-f20e-4122-939b-eace71153488")
+		)
+		(fp_line
+			(start 1.6 -4)
+			(end -1.6 -4)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "c05db366-dbf0-4dd2-b2cb-9d79a57b79f3")
+		)
+		(fp_line
+			(start 1.6 -4)
+			(end 4 -1.6)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "d5d28e1c-d5ce-402f-b84a-ec4577f4a842")
+		)
+		(fp_line
+			(start 1.6 4)
+			(end 4 1.6)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "60577d5b-1072-4531-98f9-91335f8d8050")
+		)
+		(fp_line
+			(start 4 1.6)
+			(end 4 -1.6)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "000d7531-683d-4056-b0bd-8d8f6746080e")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(uuid "6843e1ff-6d4e-40c8-bec8-e0434f5684d8")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.075)
+				)
+			)
+		)
+		(pad "1" smd rect
+			(at 0 -3.8)
+			(size 3.6 1.4)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net "/6_-_16V")
+			(pinfunction "1_1")
+			(pintype "passive")
+			(uuid "a8933934-161c-4fdb-85c7-34471fcf05a0")
+		)
+		(pad "2" smd rect
+			(at -3.8 0)
+			(size 1.4 3.6)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net "Net-(U1101-SW)")
+			(pinfunction "2_2")
+			(pintype "passive")
+			(uuid "bbd85643-3f9c-43a7-b047-f1aed6e5239a")
+		)
+		(pad "3" smd rect
+			(at 0 3.8)
+			(size 3.6 1.4)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net "/6_-_16V")
+			(pinfunction "3_3")
+			(pintype "passive")
+			(uuid "4c81b524-f02a-41f1-99a4-7e2bea2ed434")
+		)
+		(pad "4" smd rect
+			(at 3.8 0)
+			(size 1.4 3.6)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net "Net-(U1101-SW)")
+			(pinfunction "4_4")
+			(pintype "passive")
+			(uuid "c58ce989-f61f-4ccb-89fb-01f62b7f8cad")
+		)
+		(embedded_fonts no)
+		(model "${WE_3DMODEL_DIR}/Inductor_SMD_Wurth.3dshapes/L_Wurth_WE-TDC-8018.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
