@@ -1,0 +1,246 @@
+(footprint "L_Wurth_WE-TDC-8038"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "Shielded Coupled Inductor, body 8x8x3.8mm, https://www.we-online.com/en/components/products/WE-TDC#/articles/WE-TDC-8038")
+	(tags "SMT")
+	(property "Reference" "REF**"
+		(at 0 -5.8 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "00fa8d61-0eb1-4969-9f12-0a38a2b1a1d8")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "L_Wurth_WE-TDC-8038"
+		(at 0 5.5 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "75a5387e-bbd9-4404-aad4-8db0e82e0944")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "960eda0b-23ac-4807-af35-00c8d7dae405")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "bc7c1fa0-12aa-4d27-ae18-852b751eaac8")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -3.71 -2.05)
+		(end -2.11 -3.65)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "6f290e98-a32f-4c27-81c8-52babe0b507a")
+	)
+	(fp_line
+		(start -3.71 2.05)
+		(end -2.11 3.65)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "1f5f10ef-6cf4-4823-a21a-61171109d9e3")
+	)
+	(fp_line
+		(start -1.8 -4.835)
+		(end 1.8 -4.835)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "5bbd8a46-a842-4808-ac8a-6efb07a2d1ad")
+	)
+	(fp_line
+		(start 2.11 3.65)
+		(end 3.71 2.05)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "4b513e90-2dda-4c5e-8f0d-74172848ea7f")
+	)
+	(fp_line
+		(start 3.71 -2.05)
+		(end 2.11 -3.65)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "8d7a62cd-1724-45ca-bd3f-a87645a15296")
+	)
+	(fp_rect
+		(start -4.75 -4.75)
+		(end 4.75 4.75)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "492b8567-07ad-4cb7-8c84-9c82ba026758")
+	)
+	(fp_line
+		(start -4 -1.6)
+		(end -4 1.6)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "3a3a9fa1-a20e-4e3c-bf8a-cbce4050a86e")
+	)
+	(fp_line
+		(start -1.6 -4)
+		(end -4 -1.6)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "4c0dadd1-013e-425d-8d90-76bed47dcb7c")
+	)
+	(fp_line
+		(start -1.6 4)
+		(end -4 1.6)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "a9f0ad46-6ebc-4690-ab60-216b19d66929")
+	)
+	(fp_line
+		(start -1.6 4)
+		(end 1.6 4)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "5fc4fd56-5a4f-4315-b3c9-5f2e36a725dd")
+	)
+	(fp_line
+		(start 1.6 -4)
+		(end -1.6 -4)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "47db236b-4e10-4bce-ac4a-4996c0129ccd")
+	)
+	(fp_line
+		(start 1.6 -4)
+		(end 4 -1.6)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "9a935c3b-8c8e-4d1a-93d5-c392b01fbe01")
+	)
+	(fp_line
+		(start 1.6 4)
+		(end 4 1.6)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "5dc38e7c-c145-43c7-9845-17a9056a398a")
+	)
+	(fp_line
+		(start 4 1.6)
+		(end 4 -1.6)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "ad420ec2-3e47-45b5-9686-992464f28510")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "aad00ede-2cf8-420b-9ea9-40f66644ac51")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.075)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at 0 -3.8)
+		(size 3.6 1.4)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "1a62b0f4-209c-4ac3-9ec6-28b743ab5ab4")
+	)
+	(pad "2" smd rect
+		(at -3.8 0)
+		(size 1.4 3.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "70271ba3-fb24-45cd-ad8a-c2dc8a36ffb5")
+	)
+	(pad "3" smd rect
+		(at 0 3.8)
+		(size 3.6 1.4)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "98cf41ba-35b2-4190-91ef-ed5fb4682aa8")
+	)
+	(pad "4" smd rect
+		(at 3.8 0)
+		(size 1.4 3.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "8d0bd7f5-780e-4b5a-a171-bda2e52d04dd")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/nzif_3D_models/L_Wurth_WE-TDC-8018.wrl"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)
