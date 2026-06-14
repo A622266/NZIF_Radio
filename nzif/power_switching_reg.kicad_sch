@@ -1880,6 +1880,16 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "Wurth WE-TDC 8018 74489430027"
+		(exclude_from_sim no)
+		(at 172.974 173.228 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "8209034e-9b2c-4a4f-acb7-a050ad86a3ac")
+	)
 	(text "These passive values all need to be properly calculated using the datasheet. \nThe target voltages are 8V, 6V, 4V"
 		(exclude_from_sim no)
 		(at 164.846 60.452 0)
@@ -6171,7 +6181,7 @@
 				)
 			)
 		)
-		(property "Value" "2.7u Wurth WE-TDC 8018 74489430027"
+		(property "Value" "2.7u"
 			(at 191.77 180.34 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6192,7 +6202,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/74489430027/2445599"
 			(at 191.77 184.15 0)
 			(hide yes)
 			(show_name no)
@@ -12288,7 +12298,7 @@
 				)
 			)
 		)
-		(property "Value" "2.7u Wurth WE-TDC 8018 74489430027"
+		(property "Value" "2.7u"
 			(at 149.098 173.736 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12298,7 +12308,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TerminalBlock:TerminalBlock_MaiXu_MX126-5.0-02P_1x02_P5.00mm"
+		(property "Footprint" ""
 			(at 148.59 184.15 0)
 			(hide yes)
 			(show_name no)
@@ -12309,7 +12319,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/74489430027/2445599"
 			(at 148.59 184.15 0)
 			(hide yes)
 			(show_name no)
