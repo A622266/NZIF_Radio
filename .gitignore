@@ -14,6 +14,11 @@ thumbs.db
 # Build artifacts (if any)
 build/
 
+# C build output (nzif/meter_display host harness)
+*.o
+*.obj
+*.exe
+
 # KiCad
 *.kicad_prl
 *-backups/

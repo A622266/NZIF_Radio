@@ -1,0 +1,1137 @@
+<title>NZIF Panel Meter</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+
+<style>
+/* ------------------------------------------------------------------
+   NZIF Panel Meter — bring-up prototype
+   Single-theme by intent: this is a lamp-lit instrument on a black
+   crackle panel. Every colour is painted explicitly so the page holds
+   on either host ground.
+   ------------------------------------------------------------------ */
+:root {
+  --panel:      #16151300;
+  --panel-1:    #1a1917;   /* crackle-finish panel */
+  --panel-2:    #211f1c;   /* raised surface */
+  --panel-3:    #2a2724;   /* control well */
+  --bezel:      #0d0c0b;
+  --bezel-hi:   #3a3631;
+  --rule:       #302c28;
+  --alu:        #b9b4a9;   /* brushed aluminium silkscreen */
+  --alu-dim:    #8b867c;
+  --ink-warm:   #6f6a60;
+  --lamp:       #ff8c33;   /* the panel indicator */
+  --amber:      #e8a33d;
+  --amber-hot:  #ffdc94;
+  --face-ink:   #1c1610;
+  --good:       #7fb069;
+  --warn:       #d99a2b;
+  --crit:       #c85a3c;
+
+  --f-face: "Barlow Condensed", "Arial Narrow", sans-serif;
+  --f-ui:   "IBM Plex Sans", system-ui, sans-serif;
+  --f-num:  "IBM Plex Mono", ui-monospace, monospace;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--panel-1);
+  background-image:
+    radial-gradient(120% 80% at 50% -10%, #232120 0%, #16151300 60%),
+    repeating-linear-gradient(0deg, #00000010 0 2px, #ffffff04 2px 3px);
+  color: var(--alu);
+  font-family: var(--f-ui);
+  font-size: 14px;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+.wrap {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 28px 20px 64px;
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+
+/* ---------------- header ---------------- */
+
+header { display: flex; flex-direction: column; gap: 4px; }
+
+.eyebrow {
+  font-family: var(--f-face);
+  font-size: 13px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--ink-warm);
+}
+h1 {
+  margin: 0;
+  font-family: var(--f-face);
+  font-weight: 500;
+  font-size: 34px;
+  letter-spacing: 0.02em;
+  color: #d6d1c6;
+  text-wrap: balance;
+}
+.sub { margin: 2px 0 0; max-width: 62ch; color: var(--alu-dim); }
+
+/* ---------------- the meter ---------------- */
+
+.bezel {
+  position: relative;
+  background: linear-gradient(160deg, #262320 0%, var(--bezel) 55%, #0a0908 100%);
+  border-radius: 3px;
+  padding: 26px;
+  box-shadow:
+    inset 0 1px 0 var(--bezel-hi),
+    inset 0 0 0 1px #000,
+    0 18px 40px -18px #000;
+}
+/* mitred inner frame, as on the real panel cut-out */
+.bezel::before {
+  content: "";
+  position: absolute;
+  inset: 14px;
+  border-radius: 2px;
+  background: linear-gradient(200deg, #000 0%, #1b1917 100%);
+  box-shadow: inset 0 2px 6px #000;
+}
+.glass {
+  position: relative;
+  border-radius: 2px;
+  overflow: hidden;
+  line-height: 0;
+  box-shadow: 0 0 0 1px #000, 0 0 22px -4px #ff9c4020;
+}
+canvas { display: block; width: 100%; height: auto; }
+
+/* glass sheen over the face */
+.glass::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(102deg,
+    #ffffff14 0%, #ffffff05 26%, #00000000 42%, #00000012 100%);
+}
+
+/* ---------------- readout strip ---------------- */
+
+.readouts {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  background: var(--rule);
+  border: 1px solid var(--rule);
+}
+.ro { background: var(--panel-2); padding: 11px 14px; display: flex; flex-direction: column; gap: 3px; }
+.ro-k {
+  font-family: var(--f-face);
+  font-size: 12px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--ink-warm);
+}
+.ro-v {
+  font-family: var(--f-num);
+  font-size: 19px;
+  font-variant-numeric: tabular-nums;
+  color: #e2ddd2;
+}
+.ro-v.lamp { color: var(--lamp); }
+.ro-sm { font-family: var(--f-num); font-size: 12px; color: var(--alu-dim); font-variant-numeric: tabular-nums; }
+
+/* ---------------- controls ---------------- */
+
+.bench { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; align-items: start; }
+@media (max-width: 760px) {
+  .bench { grid-template-columns: 1fr; }
+  .readouts { grid-template-columns: repeat(2, 1fr); }
+}
+
+.card {
+  background: var(--panel-2);
+  border: 1px solid var(--rule);
+  padding: 16px 16px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.card > h2 {
+  margin: 0;
+  font-family: var(--f-face);
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--alu-dim);
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--rule);
+}
+
+.field { display: flex; flex-direction: column; gap: 6px; }
+.field-head { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; }
+label.k {
+  font-family: var(--f-face);
+  font-size: 13px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--alu-dim);
+}
+.val { font-family: var(--f-num); font-size: 13px; color: #ddd8cd; font-variant-numeric: tabular-nums; }
+.hint { font-size: 12px; color: var(--ink-warm); line-height: 1.45; }
+
+/* sliders — machined-slot look */
+input[type="range"] {
+  -webkit-appearance: none; appearance: none;
+  width: 100%; height: 20px; background: transparent; cursor: pointer; margin: 0;
+}
+input[type="range"]::-webkit-slider-runnable-track {
+  height: 4px; background: #100f0e; border: 1px solid #000;
+  box-shadow: inset 0 1px 2px #000, 0 1px 0 #3a3631;
+}
+input[type="range"]::-moz-range-track {
+  height: 4px; background: #100f0e; border: 1px solid #000;
+  box-shadow: inset 0 1px 2px #000, 0 1px 0 #3a3631;
+}
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none; appearance: none;
+  width: 13px; height: 20px; margin-top: -9px;
+  background: linear-gradient(180deg, #cfcabf 0%, #8d887e 48%, #625d55 100%);
+  border: 1px solid #000; border-radius: 1px;
+  box-shadow: 0 1px 3px #000;
+}
+input[type="range"]::-moz-range-thumb {
+  width: 13px; height: 20px;
+  background: linear-gradient(180deg, #cfcabf 0%, #8d887e 48%, #625d55 100%);
+  border: 1px solid #000; border-radius: 1px;
+}
+input[type="range"]:focus-visible { outline: 2px solid var(--lamp); outline-offset: 3px; }
+
+/* segmented buttons */
+.seg { display: flex; flex-wrap: wrap; gap: 1px; background: var(--rule); border: 1px solid var(--rule); }
+.seg button {
+  flex: 1 1 auto;
+  font-family: var(--f-face);
+  font-size: 13px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 7px 10px;
+  background: var(--panel-3);
+  color: var(--alu-dim);
+  border: 0;
+  cursor: pointer;
+  transition: background .12s, color .12s;
+  white-space: nowrap;
+}
+.seg button:hover { background: #333029; color: var(--alu); }
+.seg button[aria-pressed="true"] { background: #4a3a22; color: #ffcf8a; box-shadow: inset 0 0 0 1px #6b5227; }
+.seg button:focus-visible { outline: 2px solid var(--lamp); outline-offset: -2px; }
+
+/* T/R switch — the one place colour is spent */
+.tr {
+  display: flex; align-items: center; gap: 12px;
+  background: var(--panel-3); border: 1px solid var(--rule); padding: 10px 12px;
+}
+.tr button {
+  font-family: var(--f-face); font-size: 15px; letter-spacing: 0.18em; text-transform: uppercase;
+  padding: 8px 18px; border: 1px solid #000; cursor: pointer;
+  background: linear-gradient(180deg, #34302a, #201d1a); color: var(--alu-dim);
+}
+.tr button[aria-pressed="true"] {
+  background: linear-gradient(180deg, #8c3a16, #5e2409);
+  color: #ffd9b8; text-shadow: 0 0 8px #ff8c3388;
+  box-shadow: 0 0 14px -2px #ff6a1a88, inset 0 1px 0 #ffffff22;
+}
+.tr button:focus-visible { outline: 2px solid var(--lamp); outline-offset: 2px; }
+.lampdot {
+  width: 9px; height: 9px; border-radius: 50%;
+  background: #2a1a10; box-shadow: inset 0 0 3px #000; margin-left: auto;
+}
+.lampdot.on { background: var(--lamp); box-shadow: 0 0 10px 2px #ff6a1a99, inset 0 0 3px #ffffff66; }
+.tr .k { margin: 0; }
+
+.check { display: flex; align-items: flex-start; gap: 9px; cursor: pointer; }
+.check input { margin: 3px 0 0; accent-color: var(--lamp); width: 15px; height: 15px; flex: none; }
+.check span { font-size: 13px; color: var(--alu-dim); }
+
+/* ---------------- calibration table ---------------- */
+
+.tablewrap { overflow-x: auto; border: 1px solid var(--rule); }
+table { border-collapse: collapse; width: 100%; font-family: var(--f-num); font-size: 12.5px; }
+th, td { padding: 6px 12px; text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+th:first-child, td:first-child { text-align: left; }
+thead th {
+  background: var(--panel-3); color: var(--alu-dim);
+  font-family: var(--f-face); font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; font-weight: 500;
+}
+tbody tr { border-top: 1px solid var(--rule); background: var(--panel-2); }
+tbody td { color: #cdc8bd; }
+tbody td.dim { color: var(--ink-warm); }
+
+/* ---------------- notes ---------------- */
+
+.notes { display: flex; flex-direction: column; gap: 14px; border-top: 1px solid var(--rule); padding-top: 20px; }
+.notes h2 {
+  margin: 0; font-family: var(--f-face); font-size: 15px; font-weight: 600;
+  letter-spacing: 0.2em; text-transform: uppercase; color: var(--alu-dim);
+}
+.notes p { margin: 0; max-width: 68ch; color: var(--alu-dim); }
+.notes code { font-family: var(--f-num); font-size: 12.5px; color: #d8c39a; }
+.flag {
+  border-left: 2px solid var(--warn);
+  padding: 2px 0 2px 14px;
+  color: var(--alu-dim);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .lampdot, .tr button { transition: none; }
+}
+</style>
+
+<div class="wrap">
+
+  <header>
+    <div class="eyebrow">NZIF Radio &middot; Front panel &middot; Bring-up prototype</div>
+    <h1>Virtual moving-coil meter</h1>
+    <p class="sub">
+      S-units on receive, SWR on transmit, one needle. Driven here by synthetic data so the
+      face artwork and the movement ballistics can be trimmed before anything is wired to the
+      ADAU1467 or the coupler detectors.
+    </p>
+  </header>
+
+  <div class="bezel">
+    <div class="glass">
+      <canvas id="meter" width="1760" height="600" role="img"
+        aria-label="Analogue-style panel meter showing S-units and SWR on a lamp-lit amber face"></canvas>
+    </div>
+  </div>
+
+  <div class="readouts">
+    <div class="ro">
+      <div class="ro-k">Mode</div>
+      <div class="ro-v" id="ro-mode">Receive</div>
+      <div class="ro-sm" id="ro-band">20 m &middot; trim +0.0 dB</div>
+    </div>
+    <div class="ro">
+      <div class="ro-k">Reading</div>
+      <div class="ro-v lamp" id="ro-read">S7</div>
+      <div class="ro-sm" id="ro-read2">&minus;85.0 dBm</div>
+    </div>
+    <div class="ro">
+      <div class="ro-k">At antenna</div>
+      <div class="ro-v" id="ro-ant">&minus;85.0 dBm</div>
+      <div class="ro-sm" id="ro-ant2">1.3 &micro;V into 50 &Omega;</div>
+    </div>
+    <div class="ro">
+      <div class="ro-k">Needle</div>
+      <div class="ro-v" id="ro-needle">0.564</div>
+      <div class="ro-sm" id="ro-needle2">&minus;2.1&deg; &middot; settled</div>
+    </div>
+  </div>
+
+  <div class="bench">
+
+    <!-- ---------------- signal source ---------------- -->
+    <div class="card">
+      <h2>Signal source</h2>
+
+      <div class="tr">
+        <span class="k" style="font-family:var(--f-face);font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--alu-dim)">T/R</span>
+        <button id="btn-rx" aria-pressed="true">Receive</button>
+        <button id="btn-tx" aria-pressed="false">Transmit</button>
+        <span class="lampdot" id="tx-lamp" title="Transmit indicator"></span>
+      </div>
+
+      <!-- RX controls -->
+      <div id="rx-controls" style="display:flex;flex-direction:column;gap:14px">
+        <div class="field">
+          <div class="field-head">
+            <label class="k" for="sig">Antenna signal</label>
+            <span class="val" id="sig-val">&minus;85 dBm</span>
+          </div>
+          <input type="range" id="sig" min="-127" max="-20" step="0.5" value="-85">
+          <div class="hint">S9 &equals; &minus;73 dBm at 50 &Omega;; one S-unit &equals; 6 dB, so S1 &equals; &minus;121 dBm.</div>
+        </div>
+
+        <div class="field">
+          <label class="k">Scenario</label>
+          <div class="seg" id="scenarios">
+            <button data-sc="manual" aria-pressed="true">Manual</button>
+            <button data-sc="noise" aria-pressed="false">Band noise</button>
+            <button data-sc="ssb" aria-pressed="false">SSB speech</button>
+            <button data-sc="cw" aria-pressed="false">CW 20 wpm</button>
+            <button data-sc="qsb" aria-pressed="false">QSB fade</button>
+          </div>
+          <div class="hint" id="sc-hint">Slider sets a steady carrier level.</div>
+        </div>
+
+        <div class="field">
+          <label class="k">Band</label>
+          <div class="seg" id="bands"></div>
+          <div class="hint">Per-band trim compensates front-end gain and mixer conversion loss, which are not flat from 160&nbsp;m to 6&nbsp;m.</div>
+        </div>
+      </div>
+
+      <!-- TX controls -->
+      <div id="tx-controls" style="display:none;flex-direction:column;gap:14px">
+        <div class="field">
+          <div class="field-head">
+            <label class="k" for="pfwd">Forward power</label>
+            <span class="val" id="pfwd-val">100 W</span>
+          </div>
+          <input type="range" id="pfwd" min="0" max="120" step="1" value="100">
+        </div>
+
+        <div class="field">
+          <div class="field-head">
+            <label class="k" for="swr">Load mismatch</label>
+            <span class="val" id="swr-val">1.5 : 1</span>
+          </div>
+          <input type="range" id="swr" min="1" max="6" step="0.05" value="1.5">
+          <div class="hint">True SWR at the antenna port. The meter has to recover this from two detector voltages.</div>
+        </div>
+
+        <label class="check">
+          <input type="checkbox" id="lin" checked>
+          <span>Linearise the Schottky detectors. Off, the firmware naively assumes a square-root
+          law and the reading goes wrong at low power &mdash; the error this prototype exists to expose.</span>
+        </label>
+      </div>
+    </div>
+
+    <!-- ---------------- movement ---------------- -->
+    <div class="card">
+      <h2>Movement &amp; ballistics</h2>
+
+      <div class="field">
+        <div class="field-head">
+          <label class="k" for="fn">Natural frequency</label>
+          <span class="val" id="fn-val">2.20 Hz</span>
+        </div>
+        <input type="range" id="fn" min="0.4" max="6" step="0.05" value="2.2">
+        <div class="hint">How fast the movement can respond. Real panel meters land near 2&ndash;3&nbsp;Hz.</div>
+      </div>
+
+      <div class="field">
+        <div class="field-head">
+          <label class="k" for="zeta">Damping ratio &zeta;</label>
+          <span class="val" id="zeta-val">0.65</span>
+        </div>
+        <input type="range" id="zeta" min="0.2" max="1.4" step="0.01" value="0.65">
+        <div class="hint" id="zeta-hint">Under-damped &mdash; overshoots then settles, like a real movement.</div>
+      </div>
+
+      <div class="field">
+        <div class="field-head">
+          <label class="k" for="avg">AGC averaging</label>
+          <span class="val" id="avg-val">25 ms</span>
+        </div>
+        <input type="range" id="avg" min="0" max="400" step="5" value="25">
+        <div class="hint">Only here to take the edge off ADC noise &mdash; the movement is already
+        a heavy filter. Turn it up and it flattens the overshoot: on a step to S7, overshoot falls
+        from 6.8&nbsp;% of the step at 0&nbsp;ms to almost nothing by 100&nbsp;ms.</div>
+      </div>
+
+      <label class="check">
+        <input type="checkbox" id="peak">
+        <span>Peak hold with slow decay. The Model&nbsp;540 has none &mdash; an open question in the README.</span>
+      </label>
+
+      <label class="check">
+        <input type="checkbox" id="stops" checked>
+        <span>Mechanical end stops. The needle pegs and loses energy rather than passing the scale.</span>
+      </label>
+
+      <div class="field">
+        <label class="k">Scale anchors &mdash; S-unit arc</label>
+        <div class="tablewrap">
+          <table>
+            <thead>
+              <tr><th>Mark</th><th>dBm</th><th>Sweep</th><th>Angle</th></tr>
+            </thead>
+            <tbody id="cal-body"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="notes">
+    <h2>What this prototype settles, and what it does not</h2>
+
+    <p>
+      The S-unit tick positions come from measuring the label spacing in the reference photograph.
+      They are <em>not</em> linear in dB: S1 to S9 occupies about 70&nbsp;% of the sweep for 48&nbsp;dB,
+      while &plus;10 / &plus;20 / &plus;30 are packed into the remaining 30&nbsp;% for 30&nbsp;dB. The
+      spacing also tightens as it climbs within the S-unit region itself. Both are encoded as an anchor
+      table with linear interpolation between anchors, so single marks can be nudged without disturbing
+      the rest.
+    </p>
+
+    <p class="flag">
+      The reference photograph is taken at an angle, with lamp glare across the face. The anchor
+      values above are good to perhaps a couple of percent of sweep &mdash; enough to build against,
+      not enough to cut artwork from. A straight-on scan of the face would let these be tightened.
+    </p>
+
+    <p>
+      The SWR marks are not measured from the photograph at all. A moving-coil movement deflects on
+      reflected <em>voltage</em>, so the marks fall where <code>&rho; &equals; (SWR&minus;1)/(SWR&plus;1)</code>
+      puts them &mdash; 1:1 at rest, 2:1 a third of the way up, 3:1 at half, 5:1 at two thirds, and the scale
+      running to an unreachable open circuit at full deflection. That reproduces the bunching visible at the
+      top of the reference face without any guesswork, and it is what the real instrument is doing.
+    </p>
+
+    <p>
+      Detector handling is modelled rather than assumed. A Schottky detector is square-law at low
+      drive and linear at high drive; here that transition is
+      <code>V &equals; V&#8342; &middot; x / &radic;(1&plus;x)</code> with <code>x &equals; P/P&#8342;</code>,
+      which is invertible in closed form. Turning the linearisation off in the panel above shows the
+      reading the firmware would produce if it assumed a plain square-root law throughout &mdash; correct
+      near full power, badly wrong at low drive, which is exactly when someone is tuning up.
+    </p>
+
+    <p>
+      Not yet addressed: display hardware and rendering target are still open, so nothing here commits
+      to a panel size or an interface. The face artwork is drawn to a canvas at device resolution and
+      the geometry is parameterised, so it can be re-scaled once that decision lands.
+    </p>
+  </div>
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  /* ==================================================================
+     Scale calibration
+     ------------------------------------------------------------------
+     Anchors measured from label positions in the reference photograph
+     of the Ten-Tec Model 540 face. `f` is fraction of total needle
+     sweep, 0 at the left stop (S1) and 1 at full scale (S9+30).
+     Adjust individual rows here to trim the face; interpolation
+     between anchors is linear and monotonic.
+     ================================================================== */
+
+  var S9_DBM = -73;          // S9 reference at the antenna, 50 ohm
+  var DB_PER_S = 6;          // one S-unit
+
+  var S_ANCHORS = [
+    { label: "1",   db: -48, f: 0.000 },   // dB relative to S9
+    { label: "3",   db: -36, f: 0.205 },
+    { label: "5",   db: -24, f: 0.393 },
+    { label: "7",   db: -12, f: 0.564 },
+    { label: "9",   db:   0, f: 0.701 },
+    { label: "+10", db:  10, f: 0.769 },
+    { label: "+20", db:  20, f: 0.897 },
+    { label: "+30", db:  30, f: 1.000 }
+  ];
+
+  // SWR marks: a moving-coil movement deflects on reflected voltage,
+  // so position follows rho = (SWR-1)/(SWR+1) directly.
+  var SWR_MARKS = [1, 1.5, 2, 2.5, 3, 4, 5];
+  var SWR_LABELLED = { 1: "1", 2: "2", 3: "3", 5: "5" };
+
+  var BANDS = [
+    { name: "160m", trim:  1.8 }, { name: "80m", trim:  1.1 },
+    { name: "40m",  trim:  0.4 }, { name: "30m", trim:  0.0 },
+    { name: "20m",  trim:  0.0 }, { name: "17m", trim: -0.3 },
+    { name: "15m",  trim: -0.6 }, { name: "12m", trim: -1.0 },
+    { name: "10m",  trim: -1.4 }, { name: "6m",  trim: -3.2 }
+  ];
+
+  // Piecewise-linear map: dB relative to S9 -> fraction of sweep.
+  function dbToFraction(db) {
+    var a = S_ANCHORS;
+    if (db <= a[0].db) return 0;
+    if (db >= a[a.length - 1].db) return 1;
+    for (var i = 0; i < a.length - 1; i++) {
+      if (db <= a[i + 1].db) {
+        var t = (db - a[i].db) / (a[i + 1].db - a[i].db);
+        return a[i].f + t * (a[i + 1].f - a[i].f);
+      }
+    }
+    return 1;
+  }
+
+  function swrToFraction(swr) {
+    if (!isFinite(swr) || swr < 1) return 0;
+    return (swr - 1) / (swr + 1);          // = rho
+  }
+
+  /* ==================================================================
+     Detector model
+     ------------------------------------------------------------------
+     Schottky peak detector: square-law at low drive, linear at high.
+        V(P) = Vk * x / sqrt(1 + x),  x = P / Pk
+     As x -> 0,  V ~ Vk*x       (output proportional to power)
+     As x -> inf, V ~ Vk*sqrt(x) (output proportional to voltage)
+     Invertible in closed form, which is what makes it usable in
+     firmware without a lookup table.
+     ================================================================== */
+
+  var COUPLING_DB = 30;      // directional coupler, forward/reverse ports
+  var P_KNEE = 2e-5;         // W at the detector, transition point
+  var V_KNEE = 0.35;         // V at the knee
+
+  function detectorVolts(pWatts) {
+    if (pWatts <= 0) return 0;
+    var x = pWatts / P_KNEE;
+    return V_KNEE * x / Math.sqrt(1 + x);
+  }
+
+  // Exact inverse: r = V/Vk, r^2 (1+x) = x^2  ->  x = (r^2 + sqrt(r^4 + 4r^2)) / 2
+  function detectorWatts(v) {
+    if (v <= 0) return 0;
+    var r2 = (v / V_KNEE) * (v / V_KNEE);
+    return P_KNEE * (r2 + Math.sqrt(r2 * r2 + 4 * r2)) / 2;
+  }
+
+  // What firmware gets wrong if it assumes a plain linear (sqrt) detector.
+  function naiveWatts(v) {
+    var r = v / V_KNEE;
+    return P_KNEE * r * r;
+  }
+
+  /* ==================================================================
+     State
+     ================================================================== */
+
+  var st = {
+    tx: false,
+    scenario: "manual",
+    sigDbm: -85,
+    band: 4,                 // 20 m
+    pfwd: 100,
+    swrTrue: 1.5,
+    linearise: true,
+    fn: 2.2,
+    zeta: 0.65,
+    avgMs: 25,
+    peakHold: false,
+    endStops: true
+  };
+
+  // Needle physics state
+  var theta = 0;             // position, in fraction-of-sweep units
+  var omega = 0;             // velocity
+  var smoothed = 0;          // AGC-averaged target
+  var peak = 0;
+  var t = 0;                 // scenario clock, seconds
+  var displayReading = { main: "", sub: "" };
+
+  /* ==================================================================
+     Scenario generators -> instantaneous dBm at the antenna
+     ================================================================== */
+
+  var noiseState = -108;
+
+  function scenarioDbm(dt) {
+    var base = st.sigDbm;
+    switch (st.scenario) {
+      case "noise": {
+        // Random walk around the band noise floor with occasional crashes.
+        noiseState += (Math.random() - 0.5) * 60 * dt;
+        noiseState += (-108 - noiseState) * 1.2 * dt;
+        return noiseState + (Math.random() - 0.5) * 3;
+      }
+      case "ssb": {
+        // Speech envelope: syllabic bursts with a fast attack, slower decay.
+        var syl = Math.sin(t * 5.1) * Math.sin(t * 1.7) * Math.sin(t * 0.63);
+        var env = Math.max(0, syl);
+        env = Math.pow(env, 0.55);
+        var floor = -112;
+        return floor + (base - floor) * env + (Math.random() - 0.5) * 1.5;
+      }
+      case "cw": {
+        // 20 wpm: dot = 1.2/20 = 60 ms. PARIS-ish keying pattern.
+        var dot = 0.06;
+        var pattern = [1, 0, 1, 1, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0];
+        var idx = Math.floor((t / dot) % pattern.length);
+        var on = pattern[idx] === 1;
+        return on ? base : -115;
+      }
+      case "qsb": {
+        // Slow fading, two beating components.
+        var fade = 0.55 * Math.sin(t * 0.42) + 0.45 * Math.sin(t * 0.17 + 1.1);
+        return base + fade * 14 + (Math.random() - 0.5) * 1.2;
+      }
+      default:
+        return base;
+    }
+  }
+
+  /* ==================================================================
+     Target computation
+     ================================================================== */
+
+  function computeTarget(dt) {
+    if (!st.tx) {
+      var dbm = scenarioDbm(dt) + BANDS[st.band].trim;
+      var rel = dbm - S9_DBM;                 // dB relative to S9
+      var f = dbToFraction(rel);
+
+      // Reading text
+      var main, sub;
+      if (rel >= 0) {
+        main = "S9 + " + Math.round(rel) + " dB";
+      } else {
+        var s = 9 + rel / DB_PER_S;
+        var sInt = Math.max(0, Math.floor(s));
+        var over = (s - sInt) * DB_PER_S;
+        main = sInt < 1 ? "below S1"
+             : "S" + sInt + (over >= 1 ? " + " + over.toFixed(0) + " dB" : "");
+      }
+      sub = dbm.toFixed(1) + " dBm";
+      displayReading = { main: main, sub: sub, raw: dbm, f: f };
+      return f;
+    }
+
+    // ---- transmit: recover SWR from two detector voltages ----
+    var pf = st.pfwd;
+    var rho = (st.swrTrue - 1) / (st.swrTrue + 1);
+    var pr = pf * rho * rho;
+
+    var coup = Math.pow(10, -COUPLING_DB / 10);
+    var vf = detectorVolts(pf * coup);
+    var vr = detectorVolts(pr * coup);
+
+    // Add a little ADC noise so the reading is not artificially perfect.
+    vf = Math.max(0, vf + (Math.random() - 0.5) * 0.0008);
+    vr = Math.max(0, vr + (Math.random() - 0.5) * 0.0008);
+
+    var inv = st.linearise ? detectorWatts : naiveWatts;
+    var pfEst = inv(vf), prEst = inv(vr);
+
+    var swrEst, f, main, sub;
+    if (pfEst < 1e-7 || pf < 0.5) {
+      // Below usable drive the ratio is meaningless — hold at rest.
+      swrEst = NaN;
+      f = 0;
+      main = "—";
+      sub = "no drive";
+    } else {
+      var rhoEst = Math.sqrt(Math.min(0.999, prEst / pfEst));
+      swrEst = (1 + rhoEst) / (1 - rhoEst);
+      f = swrToFraction(swrEst);
+      main = swrEst > 9.9 ? "> 10 : 1" : swrEst.toFixed(2) + " : 1";
+      sub = (pfEst / coup).toFixed(0) + " W fwd";
+    }
+    displayReading = { main: main, sub: sub, raw: swrEst, f: f };
+    return f;
+  }
+
+  /* ==================================================================
+     Movement integration
+     ------------------------------------------------------------------
+        theta'' = wn^2 (target - theta) - 2 zeta wn theta'
+     Integrated semi-implicitly at a fixed 1 ms sub-step so the
+     behaviour does not change with frame rate.
+     ================================================================== */
+
+  function integrate(target, dt) {
+    // AGC averaging ahead of the movement
+    if (st.avgMs > 0) {
+      var alpha = 1 - Math.exp(-dt / (st.avgMs / 1000));
+      smoothed += (target - smoothed) * alpha;
+    } else {
+      smoothed = target;
+    }
+
+    var applied = smoothed;
+    if (st.peakHold) {
+      peak = Math.max(peak - 0.22 * dt, smoothed);
+      applied = peak;
+    }
+
+    var wn = 2 * Math.PI * st.fn;
+    var steps = Math.max(1, Math.min(60, Math.ceil(dt / 0.001)));
+    var h = dt / steps;
+    for (var i = 0; i < steps; i++) {
+      var acc = wn * wn * (applied - theta) - 2 * st.zeta * wn * omega;
+      omega += acc * h;
+      theta += omega * h;
+
+      if (st.endStops) {
+        if (theta < 0) { theta = 0; if (omega < 0) omega *= -0.18; }
+        if (theta > 1.04) { theta = 1.04; if (omega > 0) omega *= -0.18; }
+      }
+    }
+  }
+
+  /* ==================================================================
+     Face rendering
+     ================================================================== */
+
+  var cv = document.getElementById("meter");
+  var ctx = cv.getContext("2d");
+
+  // Logical face geometry. Pivot sits below the visible face, as on the
+  // real instrument, so the needle base runs off the bottom edge.
+  var W = 880, H = 300;
+  var CX = 440, CY = 655, R = 535;
+  var SWEEP = 27 * Math.PI / 180;      // half-angle
+
+  function angleFor(f) { return -Math.PI / 2 + (f * 2 - 1) * SWEEP; }
+  function px(a, r) { return { x: CX + r * Math.cos(a), y: CY + r * Math.sin(a) }; }
+
+  // The face is static artwork: render it once to an offscreen buffer and
+  // blit it each frame. Redrawing it live would make the paper texture
+  // shimmer and would waste most of the frame budget.
+  var faceBuf = document.createElement("canvas");
+  var fctx = faceBuf.getContext("2d");
+  var renderScale = 1;
+
+  function sizeCanvas() {
+    var dpr = Math.min(window.devicePixelRatio || 1, 2.5);
+    var cssW = cv.parentNode.clientWidth || W;
+    var scale = cssW / W;
+    renderScale = scale * dpr;
+    cv.width = Math.round(W * renderScale);
+    cv.height = Math.round(H * renderScale);
+    cv.style.height = (H * scale) + "px";
+    ctx.setTransform(renderScale, 0, 0, renderScale, 0, 0);
+
+    faceBuf.width = cv.width;
+    faceBuf.height = cv.height;
+    fctx.setTransform(renderScale, 0, 0, renderScale, 0, 0);
+    renderFace();
+  }
+
+  // Draw the static face into the offscreen buffer.
+  function renderFace() {
+    var saved = ctx;
+    ctx = fctx;
+    drawFace();
+    ctx = saved;
+  }
+
+  function blitFace() {
+    ctx.save();
+    ctx.setTransform(1, 0, 0, 1, 0, 0);
+    ctx.clearRect(0, 0, cv.width, cv.height);
+    ctx.drawImage(faceBuf, 0, 0);
+    ctx.restore();
+  }
+
+  function drawFace() {
+    ctx.clearRect(0, 0, W, H);
+
+    // ---- lamp-lit amber ground; hotspot left of centre, as in the photo
+    var g = ctx.createRadialGradient(300, 205, 20, 340, 190, 560);
+    g.addColorStop(0.00, "#fff0c4");
+    g.addColorStop(0.16, "#ffd98a");
+    g.addColorStop(0.44, "#f0ad4c");
+    g.addColorStop(0.78, "#d98c31");
+    g.addColorStop(1.00, "#b96f22");
+    ctx.fillStyle = g;
+    ctx.fillRect(0, 0, W, H);
+
+    // faint paper tooth
+    ctx.globalAlpha = 0.05;
+    ctx.fillStyle = "#6b3b10";
+    for (var i = 0; i < 220; i++) {
+      ctx.fillRect(Math.random() * W, Math.random() * H, 1.4, 1.4);
+    }
+    ctx.globalAlpha = 1;
+
+    var ink = "#1c1610";
+
+    // ---- main scale arc
+    ctx.strokeStyle = ink;
+    ctx.lineWidth = 1.6;
+    ctx.beginPath();
+    ctx.arc(CX, CY, R, angleFor(0), angleFor(1));
+    ctx.stroke();
+
+    // ---- S-unit ticks (above the arc)
+    ctx.lineCap = "butt";
+    for (var s = 1; s <= 9; s++) {
+      var relDb = (s - 9) * DB_PER_S;
+      drawTick(dbToFraction(relDb), R, R + 15, 1.5, ink);
+    }
+    for (var d = 10; d <= 30; d += 10) {
+      drawTick(dbToFraction(d), R, R + 15, 1.5, ink);
+    }
+    // half-unit minor ticks below S9
+    for (var hs = 1.5; hs < 9; hs += 1) {
+      drawTick(dbToFraction((hs - 9) * DB_PER_S), R, R + 8, 1.1, ink);
+    }
+    // 5 dB minors above S9
+    for (var hd = 5; hd < 30; hd += 5) {
+      if (hd % 10 !== 0) drawTick(dbToFraction(hd), R, R + 8, 1.1, ink);
+    }
+
+    // ---- S labels, sitting above the arc, upright-ish
+    ctx.fillStyle = ink;
+    ctx.textAlign = "center";
+    ctx.textBaseline = "middle";
+    S_ANCHORS.forEach(function (a) {
+      if (a.label === "1") return;                 // crowded at the stop
+      var ang = angleFor(a.f);
+      var p = px(ang, R + 33);
+      ctx.save();
+      ctx.translate(p.x, p.y);
+      ctx.rotate(ang + Math.PI / 2);               // radial, like the real face
+      ctx.font = "600 21px " + FACEFONT;
+      ctx.fillText(a.label, 0, 0);
+      ctx.restore();
+    });
+
+    // ---- SWR ticks and labels (below the arc)
+    SWR_MARKS.forEach(function (v) {
+      var f = swrToFraction(v);
+      var major = Object.prototype.hasOwnProperty.call(SWR_LABELLED, v);
+      drawTick(f, R - (major ? 15 : 8), R, major ? 1.5 : 1.1, ink);
+      if (major) {
+        var ang = angleFor(f);
+        var p = px(ang, R - 32);
+        ctx.save();
+        ctx.translate(p.x, p.y);
+        ctx.rotate(ang + Math.PI / 2);
+        ctx.font = "500 19px " + FACEFONT;
+        ctx.fillText(SWR_LABELLED[v], 0, 0);
+        ctx.restore();
+      }
+    });
+
+    // ---- scale names, as silkscreened on the original
+    ctx.font = "500 22px " + FACEFONT;
+    ctx.textAlign = "left";
+    ctx.save();
+    var sp = px(angleFor(0.02), R + 52);
+    ctx.translate(sp.x - 6, sp.y - 10);
+    ctx.rotate(-0.30);
+    ctx.letterSpacing = "2px";
+    ctx.fillText("S UNITS", 0, 0);
+    ctx.restore();
+
+    ctx.save();
+    var wp = px(angleFor(0.99), R - 46);
+    ctx.translate(wp.x - 26, wp.y + 16);
+    ctx.rotate(0.30);
+    ctx.letterSpacing = "2px";
+    ctx.fillText("SWR", 0, 0);
+    ctx.restore();
+    ctx.letterSpacing = "0px";
+  }
+
+  function drawTick(f, r0, r1, w, colour) {
+    var a = angleFor(f);
+    var p0 = px(a, r0), p1 = px(a, r1);
+    ctx.strokeStyle = colour;
+    ctx.lineWidth = w;
+    ctx.beginPath();
+    ctx.moveTo(p0.x, p0.y);
+    ctx.lineTo(p1.x, p1.y);
+    ctx.stroke();
+  }
+
+  function drawNeedle(f) {
+    var a = angleFor(Math.max(-0.02, Math.min(1.06, f)));
+    var tip = px(a, R + 26);
+    var base = px(a, R - 300);
+
+    // shadow cast onto the face by the needle, offset by the lamp position
+    ctx.save();
+    ctx.strokeStyle = "rgba(90, 45, 10, 0.22)";
+    ctx.lineWidth = 4.5;
+    ctx.lineCap = "round";
+    ctx.beginPath();
+    ctx.moveTo(base.x + 4, base.y + 3);
+    ctx.lineTo(tip.x + 4, tip.y + 3);
+    ctx.stroke();
+    ctx.restore();
+
+    // the needle itself — tapers toward the tip
+    var grad = ctx.createLinearGradient(base.x, base.y, tip.x, tip.y);
+    grad.addColorStop(0, "#0f0c08");
+    grad.addColorStop(1, "#241c12");
+    ctx.strokeStyle = grad;
+    ctx.lineCap = "round";
+    ctx.lineWidth = 3.4;
+    ctx.beginPath();
+    ctx.moveTo(base.x, base.y);
+    ctx.lineTo(px(a, R - 40).x, px(a, R - 40).y);
+    ctx.stroke();
+
+    ctx.lineWidth = 2.1;
+    ctx.beginPath();
+    ctx.moveTo(px(a, R - 44).x, px(a, R - 44).y);
+    ctx.lineTo(tip.x, tip.y);
+    ctx.stroke();
+  }
+
+  var FACEFONT = '"Barlow Condensed", "Arial Narrow", sans-serif';
+
+  /* ==================================================================
+     UI wiring
+     ================================================================== */
+
+  var $ = function (id) { return document.getElementById(id); };
+
+  function press(container, attr, value) {
+    Array.prototype.forEach.call(container.querySelectorAll("button"), function (b) {
+      b.setAttribute("aria-pressed", String(b.dataset[attr] === value));
+    });
+  }
+
+  // Bands
+  var bandsEl = $("bands");
+  BANDS.forEach(function (b, i) {
+    var btn = document.createElement("button");
+    btn.textContent = b.name;
+    btn.dataset.band = String(i);
+    btn.setAttribute("aria-pressed", String(i === st.band));
+    btn.addEventListener("click", function () {
+      st.band = i;
+      press(bandsEl, "band", String(i));
+    });
+    bandsEl.appendChild(btn);
+  });
+
+  // Scenarios
+  var SC_HINTS = {
+    manual: "Slider sets a steady carrier level.",
+    noise:  "Band noise wandering around the floor. The movement should breathe, not twitch.",
+    ssb:    "Syllabic speech envelope. Ballistics are judged here more than anywhere else.",
+    cw:     "Keyed carrier at 20 wpm. Too little damping and the needle rattles.",
+    qsb:    "Slow fading. Two beating components, tens of seconds apart."
+  };
+  var scEl = $("scenarios");
+  scEl.addEventListener("click", function (e) {
+    var b = e.target.closest("button");
+    if (!b) return;
+    st.scenario = b.dataset.sc;
+    press(scEl, "sc", st.scenario);
+    $("sc-hint").textContent = SC_HINTS[st.scenario];
+  });
+
+  // T/R
+  function setTx(on) {
+    st.tx = on;
+    $("btn-rx").setAttribute("aria-pressed", String(!on));
+    $("btn-tx").setAttribute("aria-pressed", String(on));
+    $("tx-lamp").classList.toggle("on", on);
+    $("rx-controls").style.display = on ? "none" : "flex";
+    $("tx-controls").style.display = on ? "flex" : "none";
+    $("ro-mode").textContent = on ? "Transmit" : "Receive";
+    peak = 0;
+  }
+  $("btn-rx").addEventListener("click", function () { setTx(false); });
+  $("btn-tx").addEventListener("click", function () { setTx(true); });
+
+  // Sliders
+  function slider(id, key, fmt) {
+    var el = $(id), out = $(id + "-val");
+    function sync() {
+      st[key] = parseFloat(el.value);
+      if (out) out.textContent = fmt(st[key]);
+    }
+    el.addEventListener("input", sync);
+    sync();
+  }
+  slider("sig",  "sigDbm",  function (v) { return "−" + Math.abs(v).toFixed(0) + " dBm"; });
+  slider("pfwd", "pfwd",    function (v) { return v.toFixed(0) + " W"; });
+  slider("swr",  "swrTrue", function (v) { return v.toFixed(2) + " : 1"; });
+  slider("fn",   "fn",      function (v) { return v.toFixed(2) + " Hz"; });
+  slider("avg",  "avgMs",   function (v) { return v.toFixed(0) + " ms"; });
+  slider("zeta", "zeta",    function (v) { return v.toFixed(2); });
+
+  $("zeta").addEventListener("input", function () {
+    var z = st.zeta, h = $("zeta-hint");
+    h.textContent = z < 0.55 ? "Lightly damped — visible ringing after a step."
+                  : z < 0.9  ? "Under-damped — overshoots then settles, like a real movement."
+                  : z < 1.05 ? "Near critical — fastest approach without overshoot."
+                             : "Over-damped — sluggish, reads as a cheap meter.";
+  });
+
+  $("lin").addEventListener("change", function (e) { st.linearise = e.target.checked; });
+  $("peak").addEventListener("change", function (e) { st.peakHold = e.target.checked; peak = theta; });
+  $("stops").addEventListener("change", function (e) { st.endStops = e.target.checked; });
+
+  // Calibration table
+  var calBody = $("cal-body");
+  S_ANCHORS.forEach(function (a) {
+    var tr = document.createElement("tr");
+    var deg = (angleFor(a.f) + Math.PI / 2) * 180 / Math.PI;
+    tr.innerHTML =
+      "<td>" + (a.label.charAt(0) === "+" ? "S9 " + a.label : "S" + a.label) + "</td>" +
+      "<td>" + (S9_DBM + a.db).toFixed(0) + "</td>" +
+      "<td>" + a.f.toFixed(3) + "</td>" +
+      "<td class='dim'>" + (deg >= 0 ? "+" : "−") + Math.abs(deg).toFixed(1) + "°</td>";
+    calBody.appendChild(tr);
+  });
+
+  /* ==================================================================
+     Main loop
+     ================================================================== */
+
+  var last = performance.now();
+  var settleTimer = 0;
+
+  function frame(now) {
+    var dt = Math.min(0.05, (now - last) / 1000);
+    last = now;
+    t += dt;
+
+    var target = computeTarget(dt);
+    integrate(target, dt);
+
+    blitFace();
+    drawNeedle(theta);
+
+    // ---- readouts
+    $("ro-read").textContent = displayReading.main;
+    $("ro-read2").textContent = displayReading.sub;
+
+    if (st.tx) {
+      $("ro-ant").textContent = st.pfwd.toFixed(0) + " W";
+      var rl = st.swrTrue > 1.001
+        ? (-20 * Math.log10((st.swrTrue - 1) / (st.swrTrue + 1))).toFixed(1) + " dB return loss"
+        : "matched";
+      $("ro-ant2").textContent = rl;
+      $("ro-band").textContent = BANDS[st.band].name + " · " +
+        (st.linearise ? "linearised" : "raw detector");
+    } else {
+      var dbm = displayReading.raw;
+      $("ro-ant").textContent = "−" + Math.abs(dbm).toFixed(1) + " dBm";
+      var uv = Math.sqrt(Math.pow(10, dbm / 10) * 1e-3 * 50) * 1e6;
+      $("ro-ant2").textContent = (uv < 1 ? uv.toFixed(2) : uv.toFixed(1)) + " µV into 50 Ω";
+      $("ro-band").textContent = BANDS[st.band].name + " · trim " +
+        (BANDS[st.band].trim >= 0 ? "+" : "−") +
+        Math.abs(BANDS[st.band].trim).toFixed(1) + " dB";
+    }
+
+    $("ro-needle").textContent = theta.toFixed(3);
+    var moving = Math.abs(omega) > 0.02;
+    settleTimer = moving ? 0 : settleTimer + dt;
+    $("ro-needle2").textContent =
+      ((angleFor(theta) + Math.PI / 2) * 180 / Math.PI).toFixed(1) + "° · " +
+      (settleTimer > 0.25 ? "settled" : "moving");
+
+    requestAnimationFrame(frame);
+  }
+
+  window.addEventListener("resize", sizeCanvas);
+
+  // Wait for the face font so the silkscreen lettering does not flash a fallback.
+  function start() {
+    sizeCanvas();
+    setTx(false);
+    requestAnimationFrame(frame);
+  }
+  if (document.fonts && document.fonts.ready) {
+    document.fonts.ready.then(start).catch(start);
+  } else {
+    start();
+  }
+})();
+</script>

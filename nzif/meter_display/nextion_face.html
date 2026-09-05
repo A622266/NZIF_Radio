@@ -1,0 +1,580 @@
+<title>Nextion Face Studio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+
+<style>
+/* Panel-accurate studio for the NZIF meter on a Nextion NX4832T035.
+   Single-theme by intent: an instrument bench, painted explicitly. */
+:root{
+  --panel-1:#171614; --panel-2:#201e1b; --panel-3:#2a2724;
+  --rule:#332f2b; --alu:#bab5aa; --alu-dim:#8b867c; --dim:#6d6860;
+  --lamp:#ff8c33; --warn:#d99a2b; --good:#7fb069; --crit:#c85a3c;
+  --f-face:"Barlow Condensed","Arial Narrow",sans-serif;
+  --f-ui:"IBM Plex Sans",system-ui,sans-serif;
+  --f-num:"IBM Plex Mono",ui-monospace,monospace;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;background:var(--panel-1);
+  background-image:radial-gradient(120% 70% at 50% -10%,#242220 0%,#17161400 60%);
+  color:var(--alu);font-family:var(--f-ui);font-size:14px;line-height:1.55;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:1080px;margin:0 auto;padding:26px 20px 60px;display:flex;flex-direction:column;gap:24px}
+.eyebrow{font-family:var(--f-face);font-size:13px;letter-spacing:.22em;text-transform:uppercase;color:var(--dim)}
+h1{margin:0;font-family:var(--f-face);font-weight:500;font-size:32px;letter-spacing:.02em;color:#d8d3c8;text-wrap:balance}
+.sub{margin:2px 0 0;max-width:64ch;color:var(--alu-dim)}
+
+.views{display:flex;flex-wrap:wrap;gap:26px;align-items:flex-start}
+.view{display:flex;flex-direction:column;gap:8px}
+.view h2{margin:0;font-family:var(--f-face);font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:var(--dim)}
+.screen{
+  /* the physical bezel of the Nextion module */
+  background:#0b0a09;padding:9px;border-radius:4px;
+  box-shadow:inset 0 1px 0 #38342f,0 14px 30px -16px #000;line-height:0;
+}
+canvas{display:block;image-rendering:pixelated}
+.phys{font-family:var(--f-num);font-size:11.5px;color:var(--dim)}
+
+.bench{display:grid;grid-template-columns:1fr 1fr;gap:18px;align-items:start}
+@media(max-width:820px){.bench{grid-template-columns:1fr}}
+.card{background:var(--panel-2);border:1px solid var(--rule);padding:15px 15px 17px;display:flex;flex-direction:column;gap:13px}
+.card>h2{margin:0;font-family:var(--f-face);font-size:14px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--alu-dim);padding-bottom:9px;border-bottom:1px solid var(--rule)}
+.field{display:flex;flex-direction:column;gap:5px}
+.field-head{display:flex;justify-content:space-between;align-items:baseline;gap:10px}
+label.k{font-family:var(--f-face);font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--alu-dim)}
+.val{font-family:var(--f-num);font-size:13px;color:#ddd8cd;font-variant-numeric:tabular-nums}
+.hint{font-size:12px;color:var(--dim);line-height:1.45}
+
+input[type=range]{-webkit-appearance:none;appearance:none;width:100%;height:20px;background:transparent;cursor:pointer;margin:0}
+input[type=range]::-webkit-slider-runnable-track{height:4px;background:#100f0e;border:1px solid #000;box-shadow:inset 0 1px 2px #000,0 1px 0 #3a3631}
+input[type=range]::-moz-range-track{height:4px;background:#100f0e;border:1px solid #000}
+input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;appearance:none;width:12px;height:19px;margin-top:-9px;background:linear-gradient(180deg,#cfcabf,#8d887e 48%,#625d55);border:1px solid #000;border-radius:1px}
+input[type=range]::-moz-range-thumb{width:12px;height:19px;background:linear-gradient(180deg,#cfcabf,#8d887e 48%,#625d55);border:1px solid #000;border-radius:1px}
+input[type=range]:focus-visible{outline:2px solid var(--lamp);outline-offset:3px}
+
+.seg{display:flex;flex-wrap:wrap;gap:1px;background:var(--rule);border:1px solid var(--rule)}
+.seg button{flex:1 1 auto;font-family:var(--f-face);font-size:13px;letter-spacing:.12em;text-transform:uppercase;padding:7px 10px;background:var(--panel-3);color:var(--alu-dim);border:0;cursor:pointer;white-space:nowrap}
+.seg button:hover{background:#35322b;color:var(--alu)}
+.seg button[aria-pressed=true]{background:#4a3a22;color:#ffcf8a;box-shadow:inset 0 0 0 1px #6b5227}
+.seg button:focus-visible{outline:2px solid var(--lamp);outline-offset:-2px}
+.check{display:flex;align-items:flex-start;gap:9px;cursor:pointer}
+.check input{margin:3px 0 0;accent-color:var(--lamp);width:15px;height:15px;flex:none}
+.check span{font-size:12.5px;color:var(--alu-dim)}
+
+.act{display:flex;gap:9px;flex-wrap:wrap}
+.act button{font-family:var(--f-face);font-size:14px;letter-spacing:.14em;text-transform:uppercase;padding:9px 16px;border:1px solid #000;cursor:pointer;background:linear-gradient(180deg,#3a352e,#241f1b);color:var(--alu)}
+.act button:hover{background:linear-gradient(180deg,#4a443b,#2c2723)}
+.act button:focus-visible{outline:2px solid var(--lamp);outline-offset:2px}
+.note{font-size:12px;color:var(--dim)}
+
+table{border-collapse:collapse;width:100%;font-family:var(--f-num);font-size:12.5px}
+th,td{padding:6px 10px;text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+th:first-child,td:first-child{text-align:left}
+thead th{background:var(--panel-3);color:var(--alu-dim);font-family:var(--f-face);font-size:12px;letter-spacing:.14em;text-transform:uppercase;font-weight:500}
+tbody tr{border-top:1px solid var(--rule);background:var(--panel-2)}
+tbody td{color:#cdc8bd}
+td.ok{color:var(--good)} td.warn{color:var(--warn)} td.bad{color:var(--crit)}
+.tablewrap{overflow-x:auto;border:1px solid var(--rule)}
+
+.notes{display:flex;flex-direction:column;gap:13px;border-top:1px solid var(--rule);padding-top:18px}
+.notes h2{margin:0;font-family:var(--f-face);font-size:14px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--alu-dim)}
+.notes p{margin:0;max-width:70ch;color:var(--alu-dim)}
+.notes code{font-family:var(--f-num);font-size:12.5px;color:#d8c39a}
+.flag{border-left:2px solid var(--warn);padding:2px 0 2px 13px}
+</style>
+
+<div class="wrap">
+
+  <header>
+    <div class="eyebrow">NZIF Radio &middot; NX4832T035 &middot; 480 &times; 320</div>
+    <h1>Meter face at panel resolution</h1>
+    <p class="sub">
+      The same meter, drawn at the exact pixel size of the Nextion 3.5&Prime; panel.
+      3.5&Prime; at 480&times;320 is 6.5 pixels per millimetre, so detail that reads
+      well on a monitor can disappear on the glass. This is where that gets checked.
+    </p>
+  </header>
+
+  <div class="views">
+    <div class="view">
+      <h2>1:1 &mdash; actual pixels</h2>
+      <div class="screen"><canvas id="c1" width="480" height="320"></canvas></div>
+      <div class="phys">73.4 &times; 49.0 mm visible &middot; 6.54 px/mm</div>
+    </div>
+    <div class="view">
+      <h2>2&times; &mdash; for inspection</h2>
+      <div class="screen"><canvas id="c2" width="960" height="640" style="width:480px;height:320px"></canvas></div>
+      <div class="phys">same buffer, nearest-neighbour</div>
+    </div>
+  </div>
+
+  <div class="bench">
+    <div class="card">
+      <h2>Drive</h2>
+
+      <div class="field">
+        <label class="k">Mode</label>
+        <div class="seg" id="mode">
+          <button data-m="rx" aria-pressed="true">Receive</button>
+          <button data-m="tx" aria-pressed="false">Transmit</button>
+        </div>
+      </div>
+
+      <div class="field" id="rx-f">
+        <div class="field-head">
+          <label class="k" for="sig">Signal</label><span class="val" id="sig-val">&minus;85 dBm</span>
+        </div>
+        <input type="range" id="sig" min="-127" max="-20" step="0.5" value="-85">
+      </div>
+
+      <div class="field" id="tx-f" style="display:none">
+        <div class="field-head">
+          <label class="k" for="swr">SWR</label><span class="val" id="swr-val">2.00 : 1</span>
+        </div>
+        <input type="range" id="swr" min="1" max="6" step="0.05" value="2">
+      </div>
+
+      <div class="field">
+        <label class="k">Animate</label>
+        <div class="seg" id="anim">
+          <button data-a="off" aria-pressed="true">Hold</button>
+          <button data-a="ssb" aria-pressed="false">SSB</button>
+          <button data-a="cw" aria-pressed="false">CW</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Face detail</h2>
+
+      <div class="field">
+        <label class="k">Tick density</label>
+        <div class="seg" id="ticks">
+          <button data-t="full" aria-pressed="false">As photographed</button>
+          <button data-t="reduced" aria-pressed="true">Reduced</button>
+          <button data-t="minimal" aria-pressed="false">Minimal</button>
+        </div>
+        <div class="hint" id="tick-hint">
+          Half-unit ticks dropped. At 6.5&nbsp;px/mm the minor ticks below S9 sit about
+          3&nbsp;px apart and merge into a smudge.
+        </div>
+      </div>
+
+      <div class="field">
+        <div class="field-head">
+          <label class="k" for="numsz">Numeral size</label><span class="val" id="numsz-val">15 px</span>
+        </div>
+        <input type="range" id="numsz" min="9" max="22" step="1" value="15">
+        <div class="hint">15&nbsp;px is 2.3&nbsp;mm tall on the glass &mdash; about the smallest
+        that stays readable at arm's length.</div>
+      </div>
+
+      <label class="check"><input type="checkbox" id="swept" ><span>Show the needle's swept band &mdash; the pixels that must be restored every frame.</span></label>
+      <label class="check"><input type="checkbox" id="flat"><span>Flat-shade the swept band, so the needle can be undrawn with a single background colour.</span></label>
+      <label class="check"><input type="checkbox" id="readout" checked><span>Reserve the lower strip for digital readouts.</span></label>
+
+      <div class="act">
+        <button id="save-bg">Save background PNG</button>
+        <button id="save-shot">Save current frame</button>
+      </div>
+      <div class="note" id="save-note">
+        The background is the asset you import into the Nextion Editor as a full-screen
+        picture. Saving works when this file is opened locally; it is blocked in the
+        published view.
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Redraw cost per frame</h2>
+    <div class="tablewrap">
+      <table>
+        <thead><tr><th>Approach</th><th>Pixels</th><th>Commands</th><th>Bytes</th><th>At 30 Hz</th></tr></thead>
+        <tbody id="cost"></tbody>
+      </table>
+    </div>
+    <div class="hint">
+      Byte counts assume the Nextion command form plus its three 0xFF terminators.
+      &ldquo;At 30&nbsp;Hz&rdquo; is the resulting UART load; the panel's own drawing time
+      is separate and is what the built-in gauge actually trips over.
+    </div>
+  </div>
+
+  <div class="notes">
+    <h2>What this panel changes</h2>
+    <p>
+      The Nextion is not a framebuffer. It runs its own firmware and its own 48&nbsp;MHz MCU,
+      holds the artwork in its 16&nbsp;MB of flash, and takes drawing instructions over UART.
+      The Pico never sends pixels &mdash; it sends a needle angle. That suits
+      <code>meter.c</code> exactly, since it already emits a sweep fraction and draws nothing.
+    </p>
+    <p class="flag">
+      The one thing that does not survive contact with this panel is the built-in Gauge
+      component. It repaints its whole bounding square every update &mdash; on the order of
+      20,000 pixels &mdash; which both flickers and throttles the update rate. The needle is
+      also a plain straight line, so the tapered Ten-Tec needle is not available through it.
+    </p>
+    <p>
+      The workable method is to draw the needle with <code>line</code> and undraw it by
+      restoring the background underneath. That is cheap only if the restore is cheap, which
+      is what the swept-band option above is for: over a flat colour you can undraw with a
+      second <code>line</code> in the background colour, roughly 140 pixels a frame. Over the
+      amber gradient and the scale printing you cannot, and you need <code>xpic</code> to put
+      the artwork back from the stored picture &mdash; correct, but a rectangle at a time.
+    </p>
+    <p>
+      Splitting the needle into short segments keeps those rectangles small: the cost table
+      above compares the options as you change the face. The trade is honest and visual
+      &mdash; a flat band under the needle is cheaper and faster, and costs you the lamp glow
+      exactly where the eye is looking.
+    </p>
+  </div>
+</div>
+
+<script>
+(function(){
+  "use strict";
+
+  /* ---------- scale calibration: identical to meter.c ---------- */
+  var S9=-73, DBPS=6;
+  var ANCH=[
+    {l:"1",  db:-48, f:0.000},{l:"3",  db:-36, f:0.205},
+    {l:"5",  db:-24, f:0.393},{l:"7",  db:-12, f:0.564},
+    {l:"9",  db:  0, f:0.701},{l:"+10",db: 10, f:0.769},
+    {l:"+20",db: 20, f:0.897},{l:"+30",db: 30, f:1.000}
+  ];
+  function dbmSweep(d){
+    var r=d-S9,i,t;
+    if(r<=ANCH[0].db)return 0; if(r>=ANCH[ANCH.length-1].db)return 1;
+    for(i=0;i<ANCH.length-1;i++){
+      if(r<=ANCH[i+1].db){t=(r-ANCH[i].db)/(ANCH[i+1].db-ANCH[i].db);
+        return ANCH[i].f+t*(ANCH[i+1].f-ANCH[i].f);}
+    }
+    return 1;
+  }
+  function swrSweep(s){ return s>=1 ? (s-1)/(s+1) : 0; }
+  var SWR_MARKS=[1,1.5,2,2.5,3,4,5], SWR_LBL={1:"1",2:"2",3:"3",5:"5"};
+
+  /* ---------- panel geometry, 480 x 320 ----------
+     The Ten-Tec face is a wide shallow rectangle; this panel is 3:2. The meter
+     takes the upper band and the remainder becomes a readout strip.          */
+  var W=480,H=320;
+  var FACE_H_FULL=320, FACE_H_STRIP=232;
+  var CX=240, CY=500, R=440;
+  var SWEEP=27*Math.PI/180;
+  var NEEDLE_OUT=22, NEEDLE_IN=250;
+
+  function ang(f){ return -Math.PI/2+(f*2-1)*SWEEP; }
+  function P(a,r){ return {x:CX+r*Math.cos(a), y:CY+r*Math.sin(a)}; }
+
+  var FF='"Barlow Condensed","Arial Narrow",sans-serif';
+  var MF='"IBM Plex Mono",monospace';
+
+  var st={mode:"rx",sig:-85,swr:2,anim:"off",ticks:"reduced",numsz:15,
+          swept:false,flat:false,readout:true};
+
+  /* ---------- background (static artwork) ---------- */
+  var bg=document.createElement("canvas"); bg.width=W; bg.height=H;
+  var bx=bg.getContext("2d");
+
+  function faceH(){ return st.readout?FACE_H_STRIP:FACE_H_FULL; }
+
+  function drawBackground(){
+    var fh=faceH(),g,i,s,d;
+    bx.clearRect(0,0,W,H);
+
+    /* lamp-lit amber, hotspot left of centre as on the real instrument */
+    g=bx.createRadialGradient(165,150,14,190,140,430);
+    g.addColorStop(0.00,"#fff0c4"); g.addColorStop(0.16,"#ffd98a");
+    g.addColorStop(0.44,"#f0ad4c"); g.addColorStop(0.78,"#d98c31");
+    g.addColorStop(1.00,"#b96f22");
+    bx.fillStyle=g; bx.fillRect(0,0,W,fh);
+
+    /* optional flat band under the needle sweep */
+    if(st.flat){
+      bx.save();
+      bx.beginPath();
+      bx.arc(CX,CY,R-6,ang(0)-0.02,ang(1)+0.02);
+      bx.arc(CX,CY,R-NEEDLE_IN,ang(1)+0.02,ang(0)-0.02,true);
+      bx.closePath();
+      bx.fillStyle="#e9a742";
+      bx.fill();
+      bx.restore();
+    }
+
+    var ink="#1c1610";
+
+    /* scale arc */
+    bx.strokeStyle=ink; bx.lineWidth=1.4;
+    bx.beginPath(); bx.arc(CX,CY,R,ang(0),ang(1)); bx.stroke();
+
+    /* ticks — density depends on what survives at this resolution */
+    function tick(f,r0,r1,w){
+      var a=ang(f),p0=P(a,r0),p1=P(a,r1);
+      bx.strokeStyle=ink; bx.lineWidth=w;
+      bx.beginPath(); bx.moveTo(p0.x,p0.y); bx.lineTo(p1.x,p1.y); bx.stroke();
+    }
+    if(st.ticks==="full"){
+      for(s=1;s<=9;s++) tick(dbmSweep(S9+(s-9)*DBPS),R,R+11,1.4);
+      for(s=1.5;s<9;s+=1) tick(dbmSweep(S9+(s-9)*DBPS),R,R+6,1);
+      for(d=10;d<=30;d+=10) tick(dbmSweep(S9+d),R,R+11,1.4);
+      for(d=5;d<30;d+=5) if(d%10) tick(dbmSweep(S9+d),R,R+6,1);
+    }else if(st.ticks==="reduced"){
+      for(s=1;s<=9;s++) tick(dbmSweep(S9+(s-9)*DBPS),R,R+11,1.4);
+      for(d=10;d<=30;d+=10) tick(dbmSweep(S9+d),R,R+11,1.4);
+    }else{
+      [1,3,5,7,9].forEach(function(u){ tick(dbmSweep(S9+(u-9)*DBPS),R,R+11,1.6); });
+      for(d=10;d<=30;d+=10) tick(dbmSweep(S9+d),R,R+11,1.6);
+    }
+
+    /* S labels */
+    bx.fillStyle=ink; bx.textAlign="center"; bx.textBaseline="middle";
+    ANCH.forEach(function(a){
+      if(a.l==="1") return;
+      if(st.ticks==="minimal" && (a.l==="+10")) return;
+      var an=ang(a.f), p=P(an,R+11+st.numsz*0.85);
+      bx.save(); bx.translate(p.x,p.y); bx.rotate(an+Math.PI/2);
+      bx.font="600 "+st.numsz+"px "+FF;
+      bx.fillText(a.l,0,0); bx.restore();
+    });
+
+    /* SWR ticks and labels below the arc */
+    SWR_MARKS.forEach(function(v){
+      var f=swrSweep(v), major=Object.prototype.hasOwnProperty.call(SWR_LBL,v);
+      if(!major && st.ticks==="minimal") return;
+      tick(f,R-(major?11:6),R,major?1.4:1);
+      if(major){
+        var an=ang(f), p=P(an,R-11-st.numsz*0.8);
+        bx.save(); bx.translate(p.x,p.y); bx.rotate(an+Math.PI/2);
+        bx.font="500 "+(st.numsz-1)+"px "+FF;
+        bx.fillText(SWR_LBL[v],0,0); bx.restore();
+      }
+    });
+
+    /* silkscreened scale names */
+    bx.font="600 "+(st.numsz+1)+"px "+FF;
+    bx.textAlign="left";
+    bx.save(); var sp=P(ang(0.03),R+11+st.numsz*1.9);
+    bx.translate(sp.x-2,sp.y); bx.rotate(-0.30);
+    bx.fillText("S UNITS",0,0); bx.restore();
+
+    bx.save(); var wp=P(ang(0.985),R-11-st.numsz*1.8);
+    bx.translate(wp.x-18,wp.y+4); bx.rotate(0.30);
+    bx.fillText("SWR",0,0); bx.restore();
+
+    /* readout strip */
+    if(st.readout){
+      bx.fillStyle="#100f0e"; bx.fillRect(0,fh,W,H-fh);
+      bx.fillStyle="#2b2724"; bx.fillRect(0,fh,W,1);
+      for(i=1;i<3;i++){ bx.fillStyle="#232020"; bx.fillRect(i*(W/3),fh+10,1,H-fh-20); }
+    }
+  }
+
+  /* ---------- needle + live readouts ---------- */
+  function drawNeedle(ctx,f){
+    var a=ang(Math.max(-0.02,Math.min(1.06,f)));
+    var tip=P(a,R+NEEDLE_OUT), base=P(a,R-NEEDLE_IN);
+
+    if(!st.flat){
+      ctx.save();
+      ctx.strokeStyle="rgba(90,45,10,0.20)"; ctx.lineWidth=3; ctx.lineCap="round";
+      ctx.beginPath(); ctx.moveTo(base.x+2,base.y+2); ctx.lineTo(tip.x+2,tip.y+2); ctx.stroke();
+      ctx.restore();
+    }
+    ctx.strokeStyle="#14100a"; ctx.lineCap="round";
+    ctx.lineWidth=2.6;
+    var mid=P(a,R-34);
+    ctx.beginPath(); ctx.moveTo(base.x,base.y); ctx.lineTo(mid.x,mid.y); ctx.stroke();
+    ctx.lineWidth=1.7;
+    ctx.beginPath(); ctx.moveTo(mid.x,mid.y); ctx.lineTo(tip.x,tip.y); ctx.stroke();
+  }
+
+  function sweptBand(ctx){
+    ctx.save();
+    ctx.beginPath();
+    ctx.arc(CX,CY,R+NEEDLE_OUT,ang(0),ang(1));
+    ctx.arc(CX,CY,R-NEEDLE_IN,ang(1),ang(0),true);
+    ctx.closePath();
+    ctx.fillStyle="rgba(255,60,60,0.20)";
+    ctx.fill();
+    ctx.strokeStyle="rgba(255,80,60,0.75)"; ctx.lineWidth=1; ctx.stroke();
+    ctx.restore();
+  }
+
+  function fmtS(d){
+    var r=d-S9,s,si,ov;
+    if(r>=0) return "S9+"+Math.round(r);
+    s=9+r/DBPS; if(s<1) return "< S1";
+    si=Math.floor(s); ov=(s-si)*DBPS;
+    return "S"+si+(ov>=1?"+"+Math.round(ov):"");
+  }
+
+  function drawReadouts(ctx){
+    if(!st.readout) return;
+    var fh=faceH(), y=fh+(H-fh)/2, cw=W/3;
+    var cells = st.mode==="rx"
+      ? [["SIGNAL",fmtS(st.sig)],["dBm",st.sig.toFixed(0)],["BAND","20 m"]]
+      : [["SWR",st.swr.toFixed(2)+":1"],["FWD","100 W"],["BAND","20 m"]];
+    ctx.textAlign="center";
+    cells.forEach(function(c,i){
+      ctx.fillStyle="#6d6860"; ctx.textBaseline="alphabetic";
+      ctx.font="500 11px "+FF;
+      ctx.fillText(c[0],cw*i+cw/2,y-6);
+      ctx.fillStyle="#ffb45e"; ctx.textBaseline="top";
+      ctx.font="500 21px "+MF;
+      ctx.fillText(c[1],cw*i+cw/2,y-1);
+    });
+  }
+
+  /* ---------- movement (same model as meter.c) ---------- */
+  var theta=0,omega=0,smooth=0,t0=performance.now(),tsec=0;
+  var FN=2.2, ZETA=0.65, AVG=25;
+
+  function target(){
+    if(st.mode==="tx") return swrSweep(st.swr);
+    var d=st.sig;
+    if(st.anim==="ssb"){
+      var e=Math.max(0,Math.sin(tsec*5.1)*Math.sin(tsec*1.7)*Math.sin(tsec*0.63));
+      e=Math.pow(e,0.55); d=-112+(st.sig+112)*e;
+    }else if(st.anim==="cw"){
+      var pat=[1,0,1,0,1,1,1,0,0,0,1,0,1,1,1,0];
+      d=pat[Math.floor(tsec/0.06)%pat.length]?st.sig:-115;
+    }
+    return dbmSweep(d);
+  }
+
+  function step(dt){
+    var tg=target(),wn=2*Math.PI*FN,n,h,i,acc;
+    smooth += (tg-smooth)*(1-Math.exp(-dt/(AVG/1000)));
+    n=Math.max(1,Math.min(60,Math.ceil(dt/0.001))); h=dt/n;
+    for(i=0;i<n;i++){
+      acc=wn*wn*(smooth-theta)-2*ZETA*wn*omega;
+      omega+=acc*h; theta+=omega*h;
+      if(theta<0){theta=0; if(omega<0)omega*=-0.18;}
+      if(theta>1.04){theta=1.04; if(omega>0)omega*=-0.18;}
+    }
+  }
+
+  /* ---------- redraw cost model ---------- */
+  function costRows(){
+    /* needle length in pixels, and its bounding box at worst tilt */
+    var len=NEEDLE_OUT+NEEDLE_IN;
+    var a=ang(1), dx=Math.abs(Math.cos(a))*len, dy=Math.abs(Math.sin(a))*len;
+    var bboxFull=Math.round((dx+6)*(dy+6));
+    var segs=10, segPx=0, i;
+    for(i=0;i<segs;i++){
+      segPx += Math.round((dx/segs+6)*(dy/segs+6));
+    }
+    var gaugeSide=2*(R+NEEDLE_OUT);
+    return [
+      {n:"Built-in Gauge component", px:Math.round(Math.PI/4*gaugeSide*gaugeSide/4),
+       cmd:1, bytes:14, warn:"bad", note:""},
+      {n:"line + undraw in flat colour", px:len*2, cmd:2, bytes:2*34, warn:"ok"},
+      {n:"line + xpic one bounding box", px:bboxFull, cmd:2, bytes:34+30, warn:"warn"},
+      {n:"line + xpic in 10 segments", px:segPx, cmd:11, bytes:34+10*30, warn:"ok"}
+    ];
+  }
+
+  function renderCost(){
+    var tb=document.getElementById("cost");
+    tb.innerHTML="";
+    costRows().forEach(function(r){
+      var tr=document.createElement("tr");
+      var bps=r.bytes*30;
+      tr.innerHTML="<td>"+r.n+"</td>"+
+        "<td class='"+r.warn+"'>"+r.px.toLocaleString()+"</td>"+
+        "<td>"+r.cmd+"</td>"+
+        "<td>"+r.bytes+"</td>"+
+        "<td>"+(bps/1024).toFixed(1)+" kB/s</td>";
+      tb.appendChild(tr);
+    });
+  }
+
+  /* ---------- compose ---------- */
+  var c1=document.getElementById("c1"), x1=c1.getContext("2d");
+  var c2=document.getElementById("c2"), x2=c2.getContext("2d");
+  x2.imageSmoothingEnabled=false;
+
+  var bgDirty=true;
+  function frame(now){
+    var dt=Math.min(0.05,(now-t0)/1000); t0=now; tsec+=dt;
+    if(bgDirty){ drawBackground(); renderCost(); bgDirty=false; }
+    step(dt);
+
+    x1.clearRect(0,0,W,H);
+    x1.drawImage(bg,0,0);
+    if(st.swept) sweptBand(x1);
+    drawNeedle(x1,theta);
+    drawReadouts(x1);
+
+    x2.clearRect(0,0,c2.width,c2.height);
+    x2.drawImage(c1,0,0,W,H,0,0,c2.width,c2.height);
+
+    requestAnimationFrame(frame);
+  }
+
+  /* ---------- UI ---------- */
+  function $(i){ return document.getElementById(i); }
+  function press(el,attr,v){
+    Array.prototype.forEach.call(el.querySelectorAll("button"),function(b){
+      b.setAttribute("aria-pressed",String(b.dataset[attr]===v));
+    });
+  }
+  $("mode").addEventListener("click",function(e){
+    var b=e.target.closest("button"); if(!b)return;
+    st.mode=b.dataset.m; press($("mode"),"m",st.mode);
+    $("rx-f").style.display=st.mode==="rx"?"flex":"none";
+    $("tx-f").style.display=st.mode==="tx"?"flex":"none";
+  });
+  $("anim").addEventListener("click",function(e){
+    var b=e.target.closest("button"); if(!b)return;
+    st.anim=b.dataset.a; press($("anim"),"a",st.anim);
+  });
+  var TH={
+    full:"Every tick from the photograph. Below S9 the half-unit marks land about 3 px apart and merge.",
+    reduced:"Half-unit ticks dropped, one tick per S-unit. This is the honest maximum for 480×320.",
+    minimal:"Labelled marks only. Cleanest on the glass, but the scale stops reading as a meter face."
+  };
+  $("ticks").addEventListener("click",function(e){
+    var b=e.target.closest("button"); if(!b)return;
+    st.ticks=b.dataset.t; press($("ticks"),"t",st.ticks);
+    $("tick-hint").textContent=TH[st.ticks]; bgDirty=true;
+  });
+  $("sig").addEventListener("input",function(e){
+    st.sig=parseFloat(e.target.value);
+    $("sig-val").textContent="−"+Math.abs(st.sig).toFixed(0)+" dBm";
+  });
+  $("swr").addEventListener("input",function(e){
+    st.swr=parseFloat(e.target.value);
+    $("swr-val").textContent=st.swr.toFixed(2)+" : 1";
+  });
+  $("numsz").addEventListener("input",function(e){
+    st.numsz=parseInt(e.target.value,10);
+    $("numsz-val").textContent=st.numsz+" px";
+    bgDirty=true;
+  });
+  ["swept","flat","readout"].forEach(function(k){
+    $(k).addEventListener("change",function(e){ st[k]=e.target.checked; bgDirty=true; });
+  });
+
+  function save(canvas,name){
+    try{
+      canvas.toBlob(function(b){
+        var u=URL.createObjectURL(b),a=document.createElement("a");
+        a.href=u; a.download=name; document.body.appendChild(a); a.click();
+        document.body.removeChild(a); setTimeout(function(){URL.revokeObjectURL(u);},2000);
+      },"image/png");
+    }catch(err){
+      $("save-note").textContent="Saving is blocked here — open the local file to export.";
+    }
+  }
+  $("save-bg").addEventListener("click",function(){ drawBackground(); save(bg,"nzif_meter_bg_480x320.png"); });
+  $("save-shot").addEventListener("click",function(){ save(c1,"nzif_meter_frame.png"); });
+
+  function start(){ renderCost(); requestAnimationFrame(frame); }
+  if(document.fonts&&document.fonts.ready){ document.fonts.ready.then(start).catch(start); }
+  else { start(); }
+})();
+</script>
